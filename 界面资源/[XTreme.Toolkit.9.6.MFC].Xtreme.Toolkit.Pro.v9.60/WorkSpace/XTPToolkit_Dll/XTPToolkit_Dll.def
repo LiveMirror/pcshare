@@ -1,0 +1,7 @@
+; XTPToolkit_Dll.def : Declares the module parameters for the DLL.
+
+;LIBRARY      "XTPToolkit_Dll"
+;DESCRIPTION  'XTPToolkit_Dll Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here

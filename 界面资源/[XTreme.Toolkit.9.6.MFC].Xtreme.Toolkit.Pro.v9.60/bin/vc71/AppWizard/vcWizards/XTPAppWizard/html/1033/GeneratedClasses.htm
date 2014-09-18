@@ -1,0 +1,1649 @@
+<!- (c) 2001 Microsoft Corporation -->
+<HTML DIR="LTR">
+
+<HEAD>
+	<TITLE>MFC Application Wizard</TITLE>
+	<META NAME="vs_targetSchema" CONTENT="http://schemas.microsoft.com/intellisense/ie5">
+	<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+	<STYLE TYPE="text/css">@import url();</STYLE>
+	<SCRIPT>
+		var strURL = "../../../";
+		strURL += window.external.GetHostLocale();
+		strURL += "/NewStyles.css";
+		document.styleSheets(0).imports(0).href = strURL;
+	</SCRIPT>
+</HEAD>
+
+<BODY BGCOLOR="BUTTONFACE" TOPMARGIN="0" LEFTMARGIN="0" RIGHTMARGIN="0" BOTTOMMARGIN="0" ONLOAD="InitDocument(document);" ONKEYDOWN="if (!bValidating) OnKey();" ONKEYPRESS="if (!bValidating) OnPress();">
+
+<TABLE CLASS="ONE" HEIGHT="100%" WIDTH="100%" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+<COL WIDTH="178"><COL>
+
+  <!--OPEN OF INTRODUCTORY INFORMATION TABLE//-->
+  <TR VALIGN="TOP">
+	<TD HEIGHT="79" WIDTH="100%" COLSPAN="2">
+	 <TABLE CLASS="TWO" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+	 <COL WIDTH="12"><COL><COL WIDTH="12">
+	  <TR>
+	   <TD VALIGN="TOP" HEIGHT="12" WIDTH="12">
+	  	&nbsp;
+	   </TD>
+	   <TD VALIGN="TOP" HEIGHT="12">
+	  	&nbsp;
+	   </TD>
+	   <TD VALIGN="TOP" HEIGHT="12" WIDTH="12">
+	  	&nbsp;
+	   </TD>
+	   <TD CLASS="IMAGE" VALIGN="BOTTOM" WIDTH="110" ROWSPAN="2">
+		 <DIV CLASS="SMALLA" ID="GENERATED_CLASSES_IMAGE">
+		 	<IMG CLASS="SMALL" SRC="../../Images/GeneratedClasses.gif" WIDTH="98" HEIGHT="70" ALT="" BORDER="0">
+		 </DIV>
+	   </TD>
+	   <TD VALIGN="TOP" HEIGHT="12" WIDTH="6" ROWSPAN="2">
+	  	&nbsp;
+	   </TD>
+	  </TR>
+	 
+	  <TR>
+	   <TD VALIGN="TOP" HEIGHT="65" WIDTH="12">
+	  	&nbsp;
+	   </TD>
+	   <TD VALIGN="TOP" HEIGHT="65">
+		<H4 CLASS="HEAD" ID="HEAD">Generated Classes</H4>
+		<P CLASS="SUBHEAD" ID="SUBHEAD">Review generated classes and specify base classes for your application.</P>
+	   </TD>
+	   <TD VALIGN="TOP" HEIGHT="65" WIDTH="12">
+	  	&nbsp;
+	   </TD>
+	  </TR>
+	 
+	  <TR>
+	   <TD VALIGN="TOP" CLASS="RULE" COLSPAN="5" HEIGHT="2">
+		<TABLE BORDER="0" WIDTH="100%" HEIGHT="1" CELLPADDING="0" CELLSPACING="0">
+	  	 <TR VALIGN="TOP">
+	  	  <TD HEIGHT="1" WIDTH="100%" BGCOLOR="BUTTONSHADOW"></TD>
+	  	  <TD HEIGHT="1" WIDTH="1" BGCOLOR="WINDOW"></TD>
+	  	 </TR>
+		</TABLE>
+	   </TD>
+	  </TR>
+	 </TABLE>
+	</TD>
+  </TR>
+  <!--CLOSE OF INTRODUCTORY INFORMATION TABLE//-->
+
+  <!--OPEN OF NAVIGATION, CONTENT, AND BUTTON TABLES//-->
+  <TR VALIGN="TOP">
+	<TD CLASS="Three" VALIGN="TOP" HEIGHT="100%" WIDTH="178">
+	 <TABLE CLASS="fixedSize" HEIGHT="100%" WIDTH="178" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+  	  <TR VALIGN="TOP">
+	   <TD CLASS="threeCustom" VALIGN="TOP" STYLE="BACKGROUND-IMAGE: URL(../../Images/MFC_Background.gif);">
+	   <!--OPEN OF NAVIGATION TABLE//-->
+	
+	    <TABLE CLASS="THREE" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+		<COL WIDTH="12"><COL WIDTH="166"><COL WIDTH="1">
+		 <TR>
+	   	  <TD VALIGN="TOP" COLSPAN="3" HEIGHT="12">
+	  		&nbsp;
+		  </TD>
+		 </TR>
+		 <TR>
+	   	  <TD VALIGN="TOP" HEIGHT="100%" WIDTH="12">
+	  		&nbsp;
+		  </TD>
+	   	  <TD VALIGN="TOP" HEIGHT="100%" WIDTH="165">
+	   	  <!--OPEN OF NAVIGATIONAL LINKS//-->
+	  		
+			<DIV CLASS="LINK">
+			 <TABLE WIDTH="166" HEIGHT="28" BORDER="0" CELLPADDING="0" CELLSPACING="0" CLASS="LINKTEXT">
+			  <TR VALIGN="MIDDLE">
+	  		   <TD WIDTH="162">
+				<SPAN CLASS="ACTIVELINK" ID="Default" TITLE="Examine an overview of selections." onClick="bValidating = true; if (!ValidateInput()) { bVaidating = false; return; } Next(document, 'Default.htm');" TABINDEX="1">Overview</SPAN>
+			   </TD>
+	  		   <TD WIDTH="4">
+			  	<IMG SRC="../../Images/spacer.gif" HEIGHT="1" WIDTH="4">
+			   </TD>
+			  </TR>
+			 </TABLE>
+			</DIV>
+	  		
+			<DIV CLASS="LINK">
+			 <TABLE WIDTH="166" HEIGHT="28" BORDER="0" CELLPADDING="0" CELLSPACING="0" CLASS="LINKTEXT">
+			  <TR VALIGN="MIDDLE">
+	  		   <TD WIDTH="162">
+				<SPAN CLASS="ACTIVELINK" ID="AppType" TITLE="Specify Document/View architecture support, language and interface style options for your application." onClick="bValidating = true; if (!ValidateInput()) { bVaidating = false; return; } Next(document, 'AppType.htm');" TABINDEX="2">Application Type</SPAN>
+			   </TD>
+	  		   <TD WIDTH="4">
+			  	<IMG SRC="../../Images/spacer.gif" HEIGHT="1" WIDTH="4">
+			   </TD>
+			  </TR>
+			 </TABLE>
+			</DIV>
+	  		
+			<DIV CLASS="LINK">
+			 <TABLE WIDTH="166" HEIGHT="28" BORDER="0" CELLPADDING="0" CELLSPACING="0" CLASS="LINKTEXTINDENT">
+			  <TR VALIGN="MIDDLE">
+	  		   <TD WIDTH="162">
+				<SPAN CLASS="ACTIVELINK" ID="CompoundDoc" TITLE="Specify OLE container or server options and active document support." onClick="onClick(this);" TABINDEX="3">Compound Document Support</SPAN>
+			   </TD>
+	  		   <TD WIDTH="4">
+			  	<IMG SRC="../../Images/spacer.gif" HEIGHT="1" WIDTH="4">
+			   </TD>
+			  </TR>
+			 </TABLE>
+			</DIV>
+	  		
+			<DIV CLASS="LINK">
+			 <TABLE WIDTH="166" HEIGHT="28" BORDER="0" CELLPADDING="0" CELLSPACING="0" CLASS="LINKTEXTINDENT">
+			  <TR VALIGN="MIDDLE">
+	  		   <TD WIDTH="162">
+				<SPAN CLASS="ACTIVELINK" ID="DocTemp" TITLE="Specify values for your application's document template to use when creating a new document." onClick="onClick(this);" TABINDEX="4">Document Template Strings</SPAN>
+			   </TD>
+	  		   <TD WIDTH="4">
+			  	<IMG SRC="../../Images/spacer.gif" HEIGHT="1" WIDTH="4">
+			   </TD>
+			  </TR>
+			 </TABLE>
+			</DIV>
+	  		
+			<DIV CLASS="LINK">
+			 <TABLE WIDTH="166" HEIGHT="28" BORDER="0" CELLPADDING="0" CELLSPACING="0" CLASS="LINKTEXT">
+			  <TR VALIGN="MIDDLE">
+	  		   <TD WIDTH="162">
+				<SPAN CLASS="ACTIVELINK" ID="DBSupport" TITLE="Specify database support, including any data source." onClick="onClick(this);" TABINDEX="5">Database Support</SPAN>
+			   </TD>
+	  		   <TD WIDTH="4">
+			  	<IMG SRC="../../Images/spacer.gif" HEIGHT="1" WIDTH="4">
+			   </TD>
+			  </TR>
+			 </TABLE>
+			</DIV>
+	  		
+			<DIV CLASS="LINK">
+			 <TABLE WIDTH="166" HEIGHT="28" BORDER="0" CELLPADDING="0" CELLSPACING="0" CLASS="LINKTEXT">
+			  <TR VALIGN="MIDDLE">
+	  		   <TD WIDTH="162">
+				<SPAN CLASS="ACTIVELINK" ID="UIFeatures" TITLE="Specify options that control the look and feel of your application." onClick="bValidating = true; if (!ValidateInput()) { bVaidating = false; return; } Next(document, 'UIFeatures.htm');" TABINDEX="6">User Interface Features</SPAN>
+			   </TD>
+	  		   <TD WIDTH="4">
+			  	<IMG SRC="../../Images/spacer.gif" HEIGHT="1" WIDTH="4">
+			   </TD>
+			  </TR>
+			 </TABLE>
+			</DIV>
+	  		
+			<DIV CLASS="LINK">
+			 <TABLE WIDTH="166" HEIGHT="28" BORDER="0" CELLPADDING="0" CELLSPACING="0" CLASS="LINKTEXT">
+			  <TR VALIGN="MIDDLE">
+	  		   <TD WIDTH="162">
+				<SPAN CLASS="ACTIVELINK" ID="Advanced" TITLE="Specify additional support to build into your application." onClick="bValidating = true; if (!ValidateInput()) { bVaidating = false; return; } Next(document, 'Advanced.htm');" TABINDEX="7">Advanced Features</SPAN>
+			   </TD>
+	  		   <TD WIDTH="4">
+			  	<IMG SRC="../../Images/spacer.gif" HEIGHT="1" WIDTH="4">
+			   </TD>
+			  </TR>
+			 </TABLE>
+			</DIV>
+
+			<DIV CLASS="LINK">
+			 <TABLE WIDTH="166" HEIGHT="28" BORDER="0" CELLPADDING="0" CELLSPACING="0" CLASS="LINKTEXT">
+			  <TR VALIGN="MIDDLE">
+	  		   <TD WIDTH="162">
+				<SPAN CLASS="ACTIVELINK" ID="XTToolkitPro" TITLE="Specify Xtreme Toolkit Pro General Settings" onClick="onClick(this);" TABINDEX="7">Toolkit Pro Features</SPAN>
+			   </TD>
+	  		   <TD WIDTH="4">
+			  	<IMG SRC="../../Images/spacer.gif" HEIGHT="1" WIDTH="4">
+			   </TD>
+			  </TR>
+			 </TABLE>
+			</DIV>
+		  	<DIV CLASS="LINKSELECTED">
+	 	   	 <SPAN CLASS="VERTLINE1">
+			  <IMG SRC="../../Images/spacer.gif" WIDTH="1" HEIGHT="1" ALT="" BORDER="0">
+			 </SPAN>
+			 <SPAN CLASS="HORILINE1">
+			  <TABLE WIDTH="167" HEIGHT="100%" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+			   <TR VALIGN="TOP">
+			    <TD CLASS="DOTTEDLINE" HEIGHT="1">
+				</TD>
+			   </TR>
+			   <TR VALIGN="TOP">
+			    <TD HEIGHT="100%">
+				 <IMG SRC="../../Images/spacer.gif" WIDTH="165" HEIGHT="28" ALT="" BORDER="0">
+			    </TD>
+			   </TR>
+			   <TR VALIGN="TOP">
+			    <TD CLASS="DOTTEDLINE" HEIGHT="1">
+			    </TD>
+			   </TR>
+			  </TABLE>
+			 </SPAN>
+			 <TABLE WIDTH="160" HEIGHT="28" BORDER="0" CELLPADDING="0" CELLSPACING="0" CLASS="LINKTEXTSELECTED">
+			  <TR VALIGN="MIDDLE">
+			   <TD WIDTH="156">
+				<SPAN ID="GeneratedClasses" TITLE="Review generated classes and specify base classes for your application.">Generated Classes</SPAN>
+			   </TD>
+			   <TD WIDTH="4">
+				<IMG SRC="../../Images/spacer.gif" HEIGHT="1" WIDTH="4">
+			   </TD>
+			  </TR>
+			 </TABLE>
+			</DIV>
+			
+	   	  <!--CLOSE OF NAVIGATIONAL LINKS//-->
+		  </TD>
+		  <TD WIDTH="1">
+		   <DIV CLASS="VERTLINE">
+			 <IMG SRC="../../Images/spacer.gif" WIDTH="1" HEIGHT="1" ALT="" BORDER="0">
+		   </DIV>
+		  </TD>
+		 </TR>
+		 </TABLE>
+		</TD>
+	   </TR>
+	   </TABLE>
+			
+	   <!--CLOSE OF NAVIGATION TABLE//-->
+	   </TD>
+  
+	   <TD VALIGN="TOP" HEIGHT="100%">
+	   <!--OPEN OF CONTENT AND BUTTON TABLE//-->
+	   
+	   	<TABLE CLASS="ONE" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+		<COL WIDTH="100%">
+		 <TR VALIGN="TOP">
+		  <TD HEIGHT="100%">
+	   	  <!--OPEN OF CONTENT//-->
+		  
+		  	<TABLE CLASS="CONTENT" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+			<COL WIDTH="12"><COL WIDTH="398"><COL WIDTH="12">
+ 			 <TR>
+  			  <TD VALIGN="TOP" HEIGHT="12" COLSPAN="3">
+  				&nbsp;
+  			  </TD>
+ 			 </TR>
+			 
+ 			 <TR>
+  			  <TD VALIGN="TOP" WIDTH="12">
+  				&nbsp;
+  			  </TD>
+  			  <TD VALIGN="TOP">
+ 				<SPAN CLASS="itemTextTop" TITLE="Created application classes based on your Wizard choices." ID="AUT_ID" >
+	  				<LABEL ID="GENERATED_CLASSES_TEXT" FOR="CLASS_NAMES"><U>G</U>enerated classes:</LABEL>
+	  				<BR>
+	  				<SELECT CLASS="sideBtn" SIZE="5" ID="CLASS_NAMES" ACCESSKEY="g" TITLE="Created application classes based on your Wizard choices." onChange="OnSelectClass();" TABINDEX="8">
+		  			 <OPTION ID="VIEW_CLASS"></OPTION>
+		  			 <OPTION ID="APP_CLASS"></OPTION>
+		  			 <OPTION ID="DOC_CLASS"></OPTION>
+		  			 <OPTION ID="MAIN_FRAME_CLASS"></OPTION>
+		  			 <OPTION ID="CHILD_FRAME_CLASS"></OPTION>
+		  			 <OPTION ID="ROWSET_CLASS"></OPTION>
+		  			 <OPTION ID="DIALOG_CLASS"></OPTION>
+		  			 <OPTION ID="DIALOG_AUTO_PROXY_CLASS"></OPTION>
+		  			 <OPTION ID="CONTAINER_ITEM_CLASS"></OPTION>
+		  			 <OPTION ID="SERVER_ITEM_CLASS"></OPTION>
+		  			 <OPTION ID="INPLACE_FRAME_CLASS"></OPTION>
+		  			 <OPTION ID="TREE_VIEW_CLASS"></OPTION>
+		  			 <OPTION ID="WND_VIEW_CLASS"></OPTION>
+	  				</SELECT>
+				</SPAN>
+  			  </TD>
+  			  <TD VALIGN="TOP" WIDTH="12">
+  				&nbsp;
+			  </TD>
+ 		  	 </TR>
+			 
+ 			 <TR>
+  			  <TD VALIGN="TOP" HEIGHT="17" COLSPAN="3">
+  				&nbsp;
+  			  </TD>
+ 			 </TR>
+			 
+			 <TR>
+  			  <TD VALIGN="TOP" WIDTH="12">
+  				&nbsp;
+  			  </TD>
+  			  <TD VALIGN="TOP">
+ 				<TABLE CLASS="FixedSize" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+				<COL WIDTH="193"><COL WIDTH="12"><COL WIDTH="193">
+ 	 			 <TR>
+  	  			  <TD VALIGN="TOP">
+  					<SPAN CLASS="itemText" ID="CLASS_NAME_TEXT" TITLE="Name of the class you selected.">
+	  	 			 <LABEL ID="CLASS_TEXT" FOR="CLASS_NAME">C<U>l</U>ass name:</LABEL>
+	  	 			 <BR>
+	  	 			 <INPUT CLASS="sideBtn" ID="CLASS_NAME" ACCESSKEY="l" TITLE="Name of the class you selected." NAME="ClassName" TYPE="text" TABINDEX="9" onblur="ValidateAndUpdate(this.id, this.value);">
+					</SPAN>
+	
+					<P CLASS="ElementSpacer2">&nbsp;</P>
+	
+   					<SPAN CLASS="itemText" ID="base_title" TITLE="Base class for the selected class.">
+	  	 			 <LABEL ID="BASE_CLASS_TEXT" FOR="BASES">B<U>a</U>se class:</LABEL>
+	  	 			 <BR>
+	  	 			 <SELECT CLASS="sideBtn" SIZE="1" ID="BASES" ACCESSKEY="a" TITLE="Base class for the selected class." onChange="OnBase();" TABINDEX="11"></SELECT>
+					 </SPAN>
+	  			  </TD>
+	  			  <TD VALIGN="TOP" WIDTH="12">
+  					&nbsp;
+  	  			  </TD>
+	  			  <TD VALIGN="TOP">
+  					<SPAN CLASS="itemText" ID="header_title" TITLE="Header file for the selected class.">
+	  	 			 <LABEL ID="HEADER_TEXT" FOR="HEADER_FILE">.h fil<U>e</U>:</LABEL>
+	  	 			 <BR>
+	  	 			 <INPUT CLASS="sideBtn" ID="HEADER_FILE" ACCESSKEY="e" TITLE="Header file for the selected class." NAME="HeaderFile" TYPE="text" TABINDEX="10" onblur="ValidateAndUpdate(this.id, this.value);">
+					</SPAN>
+
+					<P CLASS="ElementSpacer2">&nbsp;</P>
+	
+   					<SPAN CLASS="itemText" ID="impl_title" TITLE="Name of file containing class implementation.">
+	  		 		 <LABEL ID="IMPLEMENTATION_TEXT" FOR="IMPL_FILE">.cp<U>p</U> file:</LABEL>
+	  	 			 <BR>
+	  	 			 <INPUT CLASS="sideBtn" ID="IMPL_FILE" ACCESSKEY="p" TITLE="Name of file containing class implementation." NAME="ImplFile" TYPE="text" TABINDEX="12" onblur="ValidateAndUpdate(this.id, this.value);">
+					</SPAN>
+	  			  </TD>
+ 	 			 </TR>
+				</TABLE>
+  			  </TD>
+ 	   		  <TD VALIGN="TOP" WIDTH="12">
+  				&nbsp;
+  			  </TD>
+ 			 </TR>
+			 
+ 			 <TR>
+  			  <TD VALIGN="TOP" HEIGHT="100%" COLSPAN="3">
+  				&nbsp;
+  			  </TD>
+ 			 </TR>
+			</TABLE>
+			
+	   	  <!--CLOSE OF CONTENT//-->
+		  </TD>
+		 </TR>
+		 <TR VALIGN="BOTTOM">
+		  <TD HEIGHT="48">
+	   	  <!--OPEN OF BUTTON HTML//-->
+		  
+		  	<TABLE HEIGHT="48" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+			<COL WIDTH="12"><COL><COL WIDTH="75"><COL WIDTH="4"><COL WIDTH="75"><COL WIDTH="4"><COL WIDTH="75"><COL WIDTH="12">
+			 <TR>
+  			  <TD VALIGN="TOP" CLASS="RULE" COLSPAN="8" HEIGHT="2">
+				<TABLE BORDER="0" WIDTH="100%" HEIGHT="1" CELLPADDING="0" CELLSPACING="0">
+  	 			 <TR VALIGN="TOP">
+  	  			  <TD HEIGHT="1" WIDTH="100%" BGCOLOR="BUTTONSHADOW"></TD>
+  	  			  <TD HEIGHT="1" WIDTH="1" BGCOLOR="WINDOW"></TD>
+  	 			 </TR>
+				</TABLE>
+  			  </TD>
+ 			  </TR>
+ 
+ 			  <TR>
+  			  <TD VALIGN="TOP" HEIGHT="11" COLSPAN="8">
+  				&nbsp;
+  			  </TD>
+ 			 </TR>
+ 
+ 			<TR>
+  			  <TD VALIGN="MIDDLE" HEIGHT="23" WIDTH="12">
+  				&nbsp;
+  			  </TD>
+  			  <TD VALIGN="TOP" HEIGHT="23">
+  				&nbsp;
+  			  </TD>
+  			  <TD VALIGN="MIDDLE" HEIGHT="23" WIDTH="75">
+  				<BUTTON CLASS="BUTTONS" ID="FinishBtn" onClick="OnFinish(document);">Finish</BUTTON>
+  			  </TD>
+  			  <TD VALIGN="MIDDLE" HEIGHT="23" WIDTH="4">
+  				&nbsp;
+  			  </TD>
+  			  <TD VALIGN="MIDDLE" HEIGHT="23" WIDTH="75">
+  				<BUTTON CLASS="BUTTONS" ID="CancelBtn" onClick="window.external.Finish(document, 'cancel');">Cancel</BUTTON>
+  			  </TD>
+  			  <TD VALIGN="MIDDLE" HEIGHT="23" WIDTH="4">
+  				&nbsp;
+  			  </TD>
+  			  <TD VALIGN="MIDDLE" HEIGHT="23" WIDTH="75">
+  				<BUTTON CLASS="BUTTONS" ID="HelpBtn" onClick="window.external.OnHelp('vc.appwiz.mfc.exe.classes');">Help</BUTTON>
+  			  </TD>
+  			  <TD VALIGN="MIDDLE" HEIGHT="23" WIDTH="12">
+  				&nbsp;
+  			  </TD>
+ 			 </TR>
+ 
+ 			 <TR>
+  			  <TD VALIGN="TOP" HEIGHT="12" COLSPAN="8">
+  				&nbsp;
+  			  </TD>
+ 			 </TR>
+			</TABLE>
+			
+	   	  <!--CLOSE OF BUTTON HTML//-->
+		  </TD>
+		 </TR>
+		</TABLE>
+	
+  	<!--CLOSE OF NAVIGATION, CONTENT, AND BUTTON TABLES//-->
+ 	</TD>
+  </TR>
+</TABLE>
+
+</BODY>
+</HTML>
+
+<SCRIPT LANGUAGE="JSCRIPT">
+
+var tab_array = new Array();
+tab_array[0] = Default;
+tab_array[1] = AppType;
+tab_array[2] = CompoundDoc;
+tab_array[3] = DocTemp;
+tab_array[4] = DBSupport;
+tab_array[5] = UIFeatures;
+tab_array[6] = Advanced;
+tab_array[7] = XTToolkitPro;
+tab_array[8] = GeneratedClasses;
+
+function InitDocument(document)
+{
+	setDirection();
+	window.external.Load(document);
+	InitTabs();
+	PopulateClasses();
+	CLASS_NAMES.selectedIndex = 0;
+	OnSelectClass();
+}
+
+function InitTabs()
+{
+	MouseOut(DBSupport);
+	MouseOut(CompoundDoc);
+	MouseOut(DocTemp);
+	MouseOut(XTToolkitPro);
+	XTToolkitPro.className = "activelink";
+
+	if (window.external.FindSymbol("APP_TYPE_DLG"))
+	{
+		XTToolkitPro.className = "inactivelink";
+	}
+}
+
+function Next(document, linkto)
+{
+	bValidating = true;
+	if (!ValidateInput())
+	{
+		bValidating = false;
+		return;
+	}
+
+	if (!CheckBase())
+		return;
+
+	window.external.Next(document, linkto);
+}
+
+function onClick(obj)
+{
+	if (obj == null || typeof(obj) == "undefined")
+		return;
+
+	if (obj.id == "DBSupport")
+	{
+		if (!window.external.FindSymbol("APP_TYPE_DLG"))
+		{ 
+			bValidating = true;
+			
+			if (!ValidateInput())
+			{
+				bValidating = false;
+				return;
+			}
+			
+			bValidating = false;
+
+			Next(document, "DBSupport.htm"); 
+		}
+	}
+	if (obj.id == "XTToolkitPro")
+	{
+		if (!window.external.FindSymbol("APP_TYPE_DLG"))
+		{ 
+			Next(document, "XTToolkitPro.htm"); 
+		}
+	}
+	if (obj.id == "CompoundDoc")
+	{
+		if (window.external.FindSymbol("DOCVIEW") && !window.external.IsSymbolDisabled("DOCVIEW"))
+		{ 
+			bValidating = true;
+			
+			if (!ValidateInput())
+			{
+				bValidating = false;
+				
+				return;
+			}
+			
+			bValidating = false;
+
+			Next(document, "CompoundDoc.htm"); 
+		}
+	}
+	if (obj.id == "DocTemp")
+	{
+		if (window.external.FindSymbol("DOCVIEW") && !window.external.IsSymbolDisabled("DOCVIEW"))
+		{ 
+			bValidating = true;
+			
+			if (!ValidateInput())
+			{
+				bValidating = false;
+				
+				return;
+			}
+			
+			bValidating = false;
+
+			Next(document, "DocTemp.htm"); 
+		}
+	}
+}
+
+function CheckDataSource()
+{
+	if (window.external.FindSymbol("DB_CONNECTION_STRING") == "" && window.external.FindSymbol("OLEDB"))
+	{
+		L_Err1_Text = "You must specify a data source when database view option is selected";
+		window.external.ReportError(L_Err1_Text);
+		return false;
+	}
+	return true;
+}
+
+function OnFinish(document)
+{
+	bValidating = true;
+	if (!ValidateInput())
+	{
+		bValidating = false;
+		return;
+	}
+	
+	if (!CheckDataSource())
+		return;
+
+	if (!CheckBase())
+		return;
+
+	if (window.external.FindSymbol("ACTIVE_DOC_SERVER"))
+	{
+		var strExtension = window.external.FindSymbol("FILE_EXTENSION");
+		if (strExtension == "")
+		{
+			L_Err2_Text = "You must specify a Document File Extension in the Document Template Strings page";
+			window.external.ReportError(L_Err2_Text);
+			return;
+		}
+	}
+
+	OnWizFinish(document);
+}
+
+function OnSelectClass()
+{
+	UpdateFields();
+	PopulateBases();
+}
+
+function UpdateSymbol(strId, strVal)
+{
+	var oClasses = document.all.tags("SELECT").item("CLASS_NAMES");
+	var strClass = oClasses.options[oClasses.selectedIndex].id;
+
+	switch(strClass)
+	{
+		case "VIEW_CLASS":
+		{
+			if (strId == "CLASS_NAME")
+			{
+				window.external.AddSymbol("VIEW_CLASS", strVal);
+				VIEW_CLASS.value = strVal;
+				VIEW_CLASS.text = strVal;
+			}
+			else if (strId == "HEADER_FILE")
+				window.external.AddSymbol("VIEW_HEADER", strVal);
+			else
+				window.external.AddSymbol("VIEW_IMPL", strVal);
+			break;
+		}
+		case "APP_CLASS":
+		{
+			if (strId == "CLASS_NAME")
+			{
+				window.external.AddSymbol("APP_CLASS", strVal);
+				APP_CLASS.value = strVal;
+				APP_CLASS.text = strVal;
+			}
+			else if (strId == "HEADER_FILE")
+				window.external.AddSymbol("APP_HEADER", strVal);
+			else
+				window.external.AddSymbol("APP_IMPL", strVal);
+			break;
+		}
+		case "DOC_CLASS":
+		{
+			if (strId == "CLASS_NAME")
+			{
+				window.external.AddSymbol("DOC_CLASS", strVal);
+				DOC_CLASS.value = strVal;
+				DOC_CLASS.text = strVal;
+			}
+			else if (strId == "HEADER_FILE")
+				window.external.AddSymbol("DOC_HEADER", strVal);
+			else
+				window.external.AddSymbol("DOC_IMPL", strVal);
+			break;
+		}
+		case "MAIN_FRAME_CLASS":
+		{
+			if (strId == "CLASS_NAME")
+			{
+				window.external.AddSymbol("MAIN_FRAME_CLASS", strVal);
+				MAIN_FRAME_CLASS.value = strVal;
+				MAIN_FRAME_CLASS.text = strVal;
+			}
+			else if (strId == "HEADER_FILE")
+				window.external.AddSymbol("MAIN_FRAME_HEADER", strVal);
+			else
+				window.external.AddSymbol("MAIN_FRAME_IMPL", strVal);
+			break;
+		}
+		case "CHILD_FRAME_CLASS":
+		{
+			if (strId == "CLASS_NAME")
+			{
+				window.external.AddSymbol("CHILD_FRAME_CLASS", strVal);
+				CHILD_FRAME_CLASS.value = strVal;
+				CHILD_FRAME_CLASS.text = strVal;
+			}
+			else if (strId == "HEADER_FILE")
+				window.external.AddSymbol("CHILD_FRAME_HEADER", strVal);
+			else
+				window.external.AddSymbol("CHILD_FRAME_IMPL", strVal);
+			break;
+		}
+		case "ROWSET_CLASS":
+		{
+			if (strId == "CLASS_NAME")
+			{
+				window.external.AddSymbol("ROWSET_CLASS", strVal);
+				ROWSET_CLASS.value = strVal;
+				ROWSET_CLASS.text = strVal;
+			}
+			else if (strId == "HEADER_FILE")
+				window.external.AddSymbol("ROWSET_HEADER", strVal);
+			else
+				window.external.AddSymbol("ROWSET_IMPL", strVal);
+			break;
+		}
+		case "DIALOG_CLASS":
+		{
+			if (strId == "CLASS_NAME")
+			{
+				window.external.AddSymbol("DIALOG_CLASS", strVal);
+				DIALOG_CLASS.value = strVal;
+				DIALOG_CLASS.text = strVal;
+			}
+			else if (strId == "HEADER_FILE")
+				window.external.AddSymbol("DIALOG_HEADER", strVal);
+			else
+				window.external.AddSymbol("DIALOG_IMPL", strVal);
+			break;
+		}
+		case "DIALOG_AUTO_PROXY_CLASS":
+		{
+			if (strId == "CLASS_NAME")
+			{
+				window.external.AddSymbol("DIALOG_AUTO_PROXY_CLASS", strVal);
+				DIALOG_AUTO_PROXY_CLASS.value = strVal;
+				DIALOG_AUTO_PROXY_CLASS.text = strVal;
+			}
+			else if (strId == "HEADER_FILE")
+				window.external.AddSymbol("DIALOG_AUTO_PROXY_HEADER", strVal);
+			else
+				window.external.AddSymbol("DIALOG_AUTO_PROXY_IMPL", strVal);
+			break;
+		}
+		case "CONTAINER_ITEM_CLASS":
+		{
+			if (strId == "CLASS_NAME")
+			{
+				window.external.AddSymbol("CONTAINER_ITEM_CLASS", strVal);
+				CONTAINER_ITEM_CLASS.value = strVal;
+				CONTAINER_ITEM_CLASS.text = strVal;
+			}
+			else if (strId == "HEADER_FILE")
+				window.external.AddSymbol("CONTAINER_ITEM_HEADER", strVal);
+			else
+				window.external.AddSymbol("CONTAINER_ITEM_IMPL", strVal);
+			break;
+		}
+		case "SERVER_ITEM_CLASS":
+		{
+			if (strId == "CLASS_NAME")
+			{
+				window.external.AddSymbol("SERVER_ITEM_CLASS", strVal);
+				SERVER_ITEM_CLASS.value = strVal;
+				SERVER_ITEM_CLASS.text = strVal;
+			}
+			else if (strId == "HEADER_FILE")
+				window.external.AddSymbol("SERVER_ITEM_HEADER", strVal);
+			else
+				window.external.AddSymbol("SERVER_ITEM_IMPL", strVal);
+			break;
+		}
+		case "INPLACE_FRAME_CLASS":
+		{
+			if (strId == "CLASS_NAME")
+			{
+				window.external.AddSymbol("INPLACE_FRAME_CLASS", strVal);
+				INPLACE_FRAME_CLASS.value = strVal;
+				INPLACE_FRAME_CLASS.text = strVal;
+			}
+			else if (strId == "HEADER_FILE")
+				window.external.AddSymbol("INPLACE_FRAME_HEADER", strVal);
+			else
+				window.external.AddSymbol("INPLACE_FRAME_IMPL", strVal);
+			break;
+		}
+		case "TREE_VIEW_CLASS":
+		{
+			if (strId == "CLASS_NAME")
+			{
+				window.external.AddSymbol("TREE_VIEW_CLASS", strVal);
+				TREE_VIEW_CLASS.value = strVal;
+				TREE_VIEW_CLASS.text = strVal;
+			}
+			else if (strId == "HEADER_FILE")
+				window.external.AddSymbol("TREE_VIEW_HEADER", strVal);
+			else
+				window.external.AddSymbol("TREE_VIEW_IMPL", strVal);
+			break;
+		}
+		case "WND_VIEW_CLASS":
+		{
+			if (strId == "CLASS_NAME")
+			{
+				window.external.AddSymbol("WND_VIEW_CLASS", strVal);
+				WND_VIEW_CLASS.value = strVal;
+				WND_VIEW_CLASS.text = strVal;
+			}
+			else if (strId == "HEADER_FILE")
+				window.external.AddSymbol("WND_VIEW_HEADER", strVal);
+			else
+				window.external.AddSymbol("WND_VIEW_IMPL", strVal);
+			break;
+		}
+		default:
+			break;
+	}
+}
+
+
+function OnBase()
+{
+	var oBases = document.all.tags("SELECT").item("BASES");
+	var strBase = oBases.options[oBases.selectedIndex].value;
+
+	if (strBase == "CDialog")
+	{
+		window.external.AddSymbol("HTML_DIALOG", false);
+		window.external.AddSymbol("DIALOG_BASE_CLASS", "CDialog");
+		return;
+	}
+	else if (strBase == "CDHtmlDialog")
+	{
+		window.external.AddSymbol("HTML_DIALOG", true);
+		window.external.AddSymbol("DIALOG_BASE_CLASS", "CDHtmlDialog");
+		return;
+	}
+
+	window.external.AddSymbol("SCROLL_VIEW", false);
+	window.external.AddSymbol("FORM_VIEW", false);
+	window.external.AddSymbol("LIST_VIEW", false);
+	window.external.AddSymbol("TREE_VIEW", false);
+	window.external.AddSymbol("RICH_EDIT_VIEW", false);
+	window.external.AddSymbol("EDIT_VIEW", false);
+	window.external.AddSymbol("HTML_VIEW", false);
+	window.external.AddSymbol("HTML_EDITVIEW", false);
+	window.external.AddSymbol("OLEDB_RECORD_VIEW", false);
+	window.external.AddSymbol("ODBC_RECORD_VIEW", false);
+
+	if (strBase == "CRichEditView")
+	{
+		if( ! ( window.external.FindSymbol("CONTAINER_SERVER") || window.external.FindSymbol("CONTAINER") ) )
+			window.external.AddSymbol("CONTAINER", true);
+
+		window.external.AddSymbol("RICH_EDIT_VIEW", true);
+		window.external.AddSymbol("DOC_BASE_CLASS", "CRichEditDoc");
+
+		if (window.external.FindSymbol("CONTAINER") || window.external.FindSymbol("CONTAINER_SERVER"))
+			window.external.AddSymbol("CONTAINER_ITEM_BASE_CLASS", "CRichEditCntrItem");
+	}
+	else
+	{
+		if (window.external.FindSymbol("CONTAINER"))
+			window.external.AddSymbol("DOC_BASE_CLASS", "COleDocument");
+		else
+		{
+			if (window.external.FindSymbol("CONTAINER_SERVER") || window.external.FindSymbol("MINI_SERVER") || window.external.FindSymbol("FULL_SERVER"))
+				window.external.AddSymbol("DOC_BASE_CLASS", "COleServerDoc");
+			else
+				window.external.AddSymbol("DOC_BASE_CLASS", "CDocument");
+		}
+
+		switch(strBase)
+		{
+			case "CView":
+				break;
+			case "CScrollView":
+				window.external.AddSymbol("SCROLL_VIEW", true);
+				break;
+			case "CFormView":
+				window.external.AddSymbol("FORM_VIEW", true);
+				break;
+			case "CListView":
+				window.external.AddSymbol("LIST_VIEW", true);
+				window.external.AddSymbol("PRINTING", false);
+				break;
+			case "CTreeView":
+				window.external.AddSymbol("TREE_VIEW", true);
+				window.external.AddSymbol("PRINTING", false);
+				break;
+			case "CEditView":
+				window.external.AddSymbol("EDIT_VIEW", true);
+				break;
+			case "CHtmlView":
+				window.external.AddSymbol("HTML_VIEW", true);
+				break;
+			case "CHtmlEditView":
+				window.external.AddSymbol("HTML_EDITVIEW", true);
+				window.external.AddSymbol("DOC_BASE_CLASS", "CHtmlEditDoc");
+				window.external.AddSymbol("FILE_EXTENSION", "htm");
+				window.external.AddSymbol("FILTER_NAME", "Web Pages (*.htm)");
+				window.external.AddSymbol("HAS_SUFFIX", true);
+				break;
+			case "CRecordView":
+				window.external.AddSymbol("ODBC_RECORD_VIEW", true);
+				break;
+			case "COleDBRecordView":
+				window.external.AddSymbol("OLEDB_RECORD_VIEW", true);
+				break;
+			default:
+				break;
+		}
+	}
+	window.external.AddSymbol("VIEW_BASE_CLASS", strBase);
+}
+
+function PopulateClasses()
+{
+	var oElement = document.all.tags("SELECT").item("CLASS_NAMES");
+	if ( oElement != null )
+	{
+		for ( i = 0; i < oElement.options.length; i++ )
+		{
+			if (FilterClass(oElement.options[i].id))
+			{
+				oElement.options.remove(i);
+				i--;
+			}
+			else
+			{
+				var className = window.external.FindSymbol(oElement.options[i].id);
+				oElement.options[i].value = className;
+				oElement.options[i].text = className;
+			}
+		}
+	}
+	oElement.options[0].selected = true;
+}
+
+function FilterClass(id)
+{
+	var bFilter = true;
+
+	switch(id)
+	{
+		case "APP_CLASS":
+			bFilter = false;
+			break;
+		case "VIEW_CLASS":
+		case "DOC_CLASS":
+			if (!window.external.FindSymbol("APP_TYPE_DLG"))
+				if (window.external.FindSymbol("DOCVIEW") && !window.external.IsSymbolDisabled("DOCVIEW"))
+					bFilter = false;
+			break;
+		case "MAIN_FRAME_CLASS":
+			if (!window.external.FindSymbol("APP_TYPE_DLG"))
+				bFilter = false;
+			break;
+		case "CHILD_FRAME_CLASS":
+			if (!window.external.FindSymbol("APP_TYPE_DLG"))
+				if (window.external.FindSymbol("APP_TYPE_MDI"))
+					bFilter = false;
+			break;
+		case "ROWSET_CLASS":
+			if (window.external.FindSymbol("OLEDB") || window.external.FindSymbol("ODBC"))
+				bFilter = false;
+			break;
+		case "DIALOG_CLASS":
+			if (window.external.FindSymbol("APP_TYPE_DLG"))
+				bFilter = false;
+			break;
+		case "DIALOG_AUTO_PROXY_CLASS":
+			if (window.external.FindSymbol("APP_TYPE_DLG"))
+				if (window.external.FindSymbol("AUTOMATION"))
+					bFilter = false;
+			break;
+		case "CONTAINER_ITEM_CLASS":
+			if (window.external.FindSymbol("CONTAINER_SERVER") || window.external.FindSymbol("CONTAINER"))
+				bFilter = false;
+			break;
+		case "SERVER_ITEM_CLASS":
+		case "INPLACE_FRAME_CLASS":
+			if (window.external.FindSymbol("CONTAINER_SERVER") || window.external.FindSymbol("FULL_SERVER") || window.external.FindSymbol("MINI_SERVER"))
+				bFilter = false;
+			break;
+		case "TREE_VIEW_CLASS":
+			if (!window.external.FindSymbol("APP_TYPE_DLG"))
+				if (window.external.FindSymbol("PROJECT_STYLE_EXPLORER"))
+					bFilter = false;
+			break;
+		case "WND_VIEW_CLASS":
+			if (!window.external.FindSymbol("APP_TYPE_DLG"))
+				if (!window.external.FindSymbol("DOCVIEW") || window.external.IsSymbolDisabled("DOCVIEW"))
+					bFilter = false;
+			break;
+		default:
+			break;
+	}
+
+	return bFilter;
+}
+
+function PopulateBases()
+{
+	var oBases = document.all.tags("SELECT").item("BASES");
+	if ( oBases != null)
+	{
+		RemoveAllOptions(oBases);
+	}
+
+	var oClasses = document.all.tags("SELECT").item("CLASS_NAMES");
+	var strID = ""
+	if ( oClasses != null)
+	{
+		strID = oClasses.options[oClasses.selectedIndex].id;
+	}
+
+	switch(strID)
+	{
+		case "VIEW_CLASS":
+		{
+			PopulateViewBases(oBases);
+			var strViewBaseClass = window.external.FindSymbol("VIEW_BASE_CLASS");
+			SetSelection(oBases, strViewBaseClass);
+			break;
+		}
+		case "APP_CLASS":
+		{
+			var oOption = document.createElement("OPTION");
+			oOption.value = "CWinApp";
+			oOption.text = "CWinApp";
+			oBases.add(oOption);
+			break;
+		}
+		case "DOC_CLASS":
+		{
+			var oOption = document.createElement("OPTION");
+			if (window.external.FindSymbol("VIEW_BASE_CLASS") == "CHtmlEditView")
+			{
+				oOption.value = "CHtmlEditDoc";
+				oOption.text = "CHtmlEditDoc";
+			}
+			else if (window.external.FindSymbol("COMPOUND_DOC_NONE"))
+			{
+				oOption.value = "CDocument";
+				oOption.text = "CDocument";
+			}
+			else
+			{
+				if (window.external.FindSymbol("CONTAINER"))
+				{
+					oOption.value = "COleDocument";
+					oOption.text = "COleDocument";
+				}
+				else
+				{
+					oOption.value = "COleServerDoc";
+					oOption.text = "COleServerDoc";
+				}
+			}
+			oBases.add(oOption);
+			break;
+		}
+		case "MAIN_FRAME_CLASS":
+		{
+			var oOption = document.createElement("OPTION");
+			if (window.external.FindSymbol("APP_TYPE_MDI"))
+			{
+				oOption.value = "CMDIFrameWnd";
+				oOption.text = "CMDIFrameWnd";
+			}
+			else
+			{
+				oOption.value = "CFrameWnd";
+				oOption.text = "CFrameWnd";
+			}
+			oBases.add(oOption);
+			break;
+		}
+		case "CHILD_FRAME_CLASS":
+		{
+			var oOption = document.createElement("OPTION");
+			oOption.value = "CMDIChildWnd";
+			oOption.text = "CMDIChildWnd";
+			oBases.add(oOption);
+			break;
+		}
+		case "ROWSET_CLASS":
+		{
+			var oOption = document.createElement("OPTION");
+			if( window.external.FindSymbol("ODBC") )
+			{
+				oOption.value = "CRecordset";
+				oOption.text = "CRecordset";
+			}
+			else
+			{
+				oOption.value = " ";
+				oOption.text = " ";
+			}
+			oBases.add(oOption);
+			break;
+		}
+		case "DIALOG_CLASS":
+		{
+			var strDialogBase = window.external.FindSymbol("DIALOG_BASE_CLASS");
+			var oOption = document.createElement("OPTION");
+			oOption.value = strDialogBase;
+			oOption.text = strDialogBase;
+			oBases.add(oOption);
+			
+			strDialogBase = (strDialogBase == "CDialog") ? "CDHtmlDialog" : "CDialog";
+			oOption = document.createElement("OPTION");
+			oOption.value = strDialogBase;
+			oOption.text = strDialogBase;
+			oBases.add(oOption);
+			break;
+		}
+		case "DIALOG_AUTO_PROXY_CLASS":
+		{
+			var oOption = document.createElement("OPTION");
+			oOption.value = "CCmdTarget";
+			oOption.text = "CCmdTarget";
+			oBases.add(oOption);
+			break;
+		}
+		case "CONTAINER_ITEM_CLASS":
+		{
+			var oOption = document.createElement("OPTION");
+			if (window.external.FindSymbol("RICH_EDIT_VIEW"))
+			{
+				oOption.value = "CRichEditCntrItem";
+				oOption.text = "CRichEditCntrItem";
+			}
+			else
+			{
+				if (window.external.FindSymbol("ACTIVE_DOC_CONTAINER"))
+				{
+					oOption.value = "COleDocObjectItem";
+					oOption.text = "COleDocObjectItem";
+				}
+				else
+				{
+					oOption.value = "COleClientItem";
+					oOption.text = "COleClientItem";
+				}
+			}
+			oBases.add(oOption);
+			break;
+		}
+		case "SERVER_ITEM_CLASS":
+		{
+			var oOption = document.createElement("OPTION");
+			if (window.external.FindSymbol("ACTIVE_DOC_SERVER"))
+			{
+				oOption.value = "CDocObjectServerItem";
+				oOption.text = "CDocObjectServerItem";
+			}
+			else
+			{
+				oOption.value = "COleServerItem";
+				oOption.text = "COleServerItem";
+			}
+			oBases.add(oOption);
+			break;
+		}
+		case "INPLACE_FRAME_CLASS":
+		{
+			var oOption = document.createElement("OPTION");
+			if (window.external.FindSymbol("ACTIVE_DOC_SERVER"))
+			{
+				oOption.value = "COleDocIPFrameWnd";
+				oOption.text = "COleDocIPFrameWnd";
+			}
+			else
+			{
+				oOption.value = "COleIPFrameWnd";
+				oOption.text = "COleIPFrameWnd";
+			}
+			oBases.add(oOption);
+			break;
+		}
+		case "TREE_VIEW_CLASS":
+		{
+			var oOption = document.createElement("OPTION");
+			oOption.value = "CTreeView";
+			oOption.text = "CTreeView";
+			oBases.add(oOption);
+			break;
+		}
+		case "WND_VIEW_CLASS":
+		{
+			var oOption = document.createElement("OPTION");
+			oOption.value = "CWnd";
+			oOption.text = "CWnd";
+			oBases.add(oOption);
+			break;
+		}
+		default:
+			break;
+	}
+	if (oBases.options.length == 1)
+	{
+		oBases.disabled = true;
+		base_title.disabled = true;
+	}
+	else
+	{
+		oBases.disabled = false;
+		base_title.disabled = false;
+	}
+}
+
+function PopulateViewBases(oBases)
+{
+	var oOption = document.createElement("OPTION");
+	if (window.external.FindSymbol("DOCVIEW") && !window.external.IsSymbolDisabled("DOCVIEW"))
+	{
+		// Adding Base classes in Alphabetical order, so we don't have to sort, later.
+
+		if (!window.external.FindSymbol("CONTAINER") && !window.external.FindSymbol("CONTAINER_SERVER"))
+		{
+			if (!window.external.FindSymbol("SPLITTER"))
+			{
+ 				oOption = document.createElement("OPTION");
+				oOption.value = "CEditView";
+				oOption.text = "CEditView";
+				oBases.add(oOption);
+			}
+		}
+		oOption = document.createElement("OPTION");
+		oOption.value = "CFormView";
+		oOption.text = "CFormView";
+		oBases.add(oOption);
+
+		if (!window.external.FindSymbol("CONTAINER") && !window.external.FindSymbol("CONTAINER_SERVER"))
+		{
+			if (!window.external.FindSymbol("SPLITTER"))
+			{
+				oOption = document.createElement("OPTION");
+				oOption.value = "CHtmlEditView";
+				oOption.text = "CHtmlEditView";
+				oBases.add(oOption);
+			}
+
+			oOption = document.createElement("OPTION");
+			oOption.value = "CHtmlView";
+			oOption.text = "CHtmlView";
+			oBases.add(oOption);
+		}
+
+		oOption = document.createElement("OPTION");
+		oOption.value = "CListView";
+		oOption.text = "CListView";
+		oBases.add(oOption);
+
+		if (window.external.FindSymbol("OLEDB"))
+		{
+			oOption = document.createElement("OPTION");
+			oOption.value = "COleDBRecordView";
+			oOption.text = "COleDBRecordView";
+			oBases.add(oOption);
+		}
+
+		if (window.external.FindSymbol("ODBC"))
+		{
+			oOption = document.createElement("OPTION");
+			oOption.value = "CRecordView";
+			oOption.text = "CRecordView";
+			oBases.add(oOption);
+		}
+
+		oOption = document.createElement("OPTION");
+		oOption.value = "CRichEditView";
+		oOption.text = "CRichEditView";
+		oBases.add(oOption);
+
+		oOption = document.createElement("OPTION");
+		oOption.value = "CScrollView";
+		oOption.text = "CScrollView";
+		oBases.add(oOption);
+
+		oOption = document.createElement("OPTION");
+		oOption.value = "CTreeView";
+		oOption.text = "CTreeView";
+		oBases.add(oOption);
+
+		oOption = document.createElement("OPTION");
+		oOption.value = "CView";
+		oOption.text = "CView";
+		oBases.add(oOption);
+
+	}
+}
+
+function UpdateFields()
+{
+	var strID = "";
+	var Inputs = document.all.tags("INPUT");
+	var oClasses = document.all.tags("SELECT").item("CLASS_NAMES");
+	if ( oClasses != null)
+	{
+		strID = oClasses.options[oClasses.selectedIndex].id;
+		var strClassName = oClasses.options[oClasses.selectedIndex].text;
+		var classname = Inputs.item("ClassName");
+		classname.value = strClassName;
+	}
+
+	var strHeader = "";
+	var strImpl = "";
+	var headerField = Inputs.item("HeaderFile");
+	var implField = Inputs.item("ImplFile");
+	headerField.disabled = false;
+	implField.disabled = false;
+	header_title.disabled = false;
+	impl_title.disabled = false;
+
+	switch(strID)
+	{
+		case "VIEW_CLASS":
+		{
+			strHeader = window.external.FindSymbol("VIEW_HEADER");
+			strImpl = window.external.FindSymbol("VIEW_IMPL");
+			break;
+		}
+		case "APP_CLASS":
+		{
+			strHeader = window.external.FindSymbol("APP_HEADER");
+			strImpl = window.external.FindSymbol("APP_IMPL");
+			headerField.disabled = true;
+			implField.disabled = true;
+			header_title.disabled = true;
+			impl_title.disabled = true;
+			break;
+		}
+		case "DOC_CLASS":
+		{
+			strHeader = window.external.FindSymbol("DOC_HEADER");
+			strImpl = window.external.FindSymbol("DOC_IMPL");
+			break;
+		}
+		case "MAIN_FRAME_CLASS":
+		{
+			strHeader = window.external.FindSymbol("MAIN_FRAME_HEADER");
+			strImpl = window.external.FindSymbol("MAIN_FRAME_IMPL");
+			break;
+		}
+		case "CHILD_FRAME_CLASS":
+		{
+			strHeader = window.external.FindSymbol("CHILD_FRAME_HEADER");
+			strImpl = window.external.FindSymbol("CHILD_FRAME_IMPL");
+			break;
+		}
+		case "ROWSET_CLASS":
+		{
+			strHeader = window.external.FindSymbol("ROWSET_HEADER");
+			strImpl = window.external.FindSymbol("ROWSET_IMPL");
+			break;
+		}
+		case "DIALOG_CLASS":
+		{
+			strHeader = window.external.FindSymbol("DIALOG_HEADER");
+			strImpl = window.external.FindSymbol("DIALOG_IMPL");
+			break;
+		}
+		case "DIALOG_AUTO_PROXY_CLASS":
+		{
+			strHeader = window.external.FindSymbol("DIALOG_AUTO_PROXY_HEADER");
+			strImpl = window.external.FindSymbol("DIALOG_AUTO_PROXY_IMPL");
+			break;
+		}
+		case "CONTAINER_ITEM_CLASS":
+		{
+			strHeader = window.external.FindSymbol("CONTAINER_ITEM_HEADER");
+			strImpl = window.external.FindSymbol("CONTAINER_ITEM_IMPL");
+			break;
+		}
+		case "SERVER_ITEM_CLASS":
+		{
+			strHeader = window.external.FindSymbol("SERVER_ITEM_HEADER");
+			strImpl = window.external.FindSymbol("SERVER_ITEM_IMPL");
+			break;
+		}
+		case "INPLACE_FRAME_CLASS":
+		{
+			strHeader = window.external.FindSymbol("INPLACE_FRAME_HEADER");
+			strImpl = window.external.FindSymbol("INPLACE_FRAME_IMPL");
+			break;
+		}
+		case "TREE_VIEW_CLASS":
+		{
+			strHeader = window.external.FindSymbol("TREE_VIEW_HEADER");
+			strImpl = window.external.FindSymbol("TREE_VIEW_IMPL");
+			break;
+		}
+		case "WND_VIEW_CLASS":
+		{
+			strHeader = window.external.FindSymbol("WND_VIEW_HEADER");
+			strImpl = window.external.FindSymbol("WND_VIEW_IMPL");
+			break;
+		}
+		default:
+			break;
+	}
+
+	headerField.value = strHeader;
+	implField.text = strImpl;
+	implField.value = strImpl;
+}
+
+function RemoveAllOptions(oList)
+{
+	for ( i = 0; i < oList.options.length; i++ )
+	{
+		oList.remove(i);
+		i--;
+	}
+}
+
+function CheckForDuplicates(strID, strVal)
+{
+	var strHeader = "";
+	var strImpl = "";
+	var oClasses = document.all.tags("SELECT").item("CLASS_NAMES");
+
+	// Get the value for the class_name, header_file and impl_file for everything else other than the option selected.
+	// Compare the value against the value for the selected option.
+
+	for (i = 0; i < oClasses.length; i++)
+	{
+		if (oClasses.options[i].id == oClasses.options[oClasses.selectedIndex].id)
+			continue;
+
+		if (strID == "CLASS_NAME")
+		{
+			if (oClasses.options[i].value == strVal)
+			{
+				L_Class_Text = "Class ";
+				L_Err3_Text = " already exists";
+				oErrObj = new Error(L_Class_Text + strVal + L_Err3_Text);
+				SetErrorInfo(oErrObj);
+				return false;
+			}
+		}
+		if (strID == "HEADER_FILE")
+		{
+			switch(oClasses.options[i].id)
+			{
+				case "VIEW_CLASS":
+					strHeader = window.external.FindSymbol("VIEW_HEADER");
+					break;
+				case "APP_CLASS":
+					strHeader = window.external.FindSymbol("APP_HEADER");
+					break;
+				case "DOC_CLASS":
+					strHeader = window.external.FindSymbol("DOC_HEADER");
+					break;
+				case "MAIN_FRAME_CLASS":
+					strHeader = window.external.FindSymbol("MAIN_FRAME_HEADER");
+					break;
+				case "CHILD_FRAME_CLASS":
+					strHeader = window.external.FindSymbol("CHILD_FRAME_HEADER");
+					break;
+				case "ROWSET_CLASS":
+					strHeader = window.external.FindSymbol("ROWSET_HEADER");
+					break;
+				case "DIALOG_CLASS":
+					strHeader = window.external.FindSymbol("DIALOG_HEADER");
+					break;
+				case "DIALOG_AUTO_PROXY_CLASS":
+					strHeader = window.external.FindSymbol("DIALOG_AUTO_PROXY_HEADER");
+					break;
+				case "CONTAINER_ITEM_CLASS":
+					strHeader = window.external.FindSymbol("CONTAINER_ITEM_HEADER");
+					break;
+				case "SERVER_ITEM_CLASS":
+					strHeader = window.external.FindSymbol("SERVER_ITEM_HEADER");
+					break;
+				case "INPLACE_FRAME_CLASS":
+					strHeader = window.external.FindSymbol("INPLACE_FRAME_HEADER");
+					break;
+				case "TREE_VIEW_CLASS":
+					strHeader = window.external.FindSymbol("TREE_VIEW_HEADER");
+					break;
+				case "WND_VIEW_CLASS":
+					strHeader = window.external.FindSymbol("WND_VIEW_HEADER");
+					break;
+				default:
+					break;
+			}
+			if (strHeader == strVal)
+			{
+				L_File1_Text = "File ";
+				L_Err4_Text = " already exists";
+				oErrObj = new Error(L_File1_Text + strVal + L_Err4_Text);
+				SetErrorInfo(oErrObj);
+				return false;
+			}
+		}
+
+		if (strID == "IMPL_FILE")
+		{
+			switch(oClasses.options[i].id)
+			{
+				case "VIEW_CLASS":
+					strImpl = window.external.FindSymbol("VIEW_IMPL");
+					break;
+				case "APP_CLASS":
+					strImpl = window.external.FindSymbol("APP_IMPL");
+					break;
+				case "DOC_CLASS":
+					strImpl = window.external.FindSymbol("DOC_IMPL");
+					break;
+				case "MAIN_FRAME_CLASS":
+					strImpl = window.external.FindSymbol("MAIN_FRAME_IMPL");
+					break;
+				case "CHILD_FRAME_CLASS":
+					strImpl = window.external.FindSymbol("CHILD_FRAME_IMPL");
+					break;
+				case "ROWSET_CLASS":
+					strImpl = window.external.FindSymbol("ROWSET_IMPL");
+					break;
+				case "DIALOG_CLASS":
+					strImpl = window.external.FindSymbol("DIALOG_IMPL");
+					break;
+				case "DIALOG_AUTO_PROXY_CLASS":
+					strImpl = window.external.FindSymbol("DIALOG_AUTO_PROXY_IMPL");
+					break;
+				case "CONTAINER_ITEM_CLASS":
+					strImpl = window.external.FindSymbol("CONTAINER_ITEM_IMPL");
+					break;
+				case "SERVER_ITEM_CLASS":
+					strImpl = window.external.FindSymbol("SERVER_ITEM_IMPL");
+					break;
+				case "INPLACE_FRAME_CLASS":
+					strImpl = window.external.FindSymbol("INPLACE_FRAME_IMPL");
+					break;
+				case "TREE_VIEW_CLASS":
+					strImpl = window.external.FindSymbol("TREE_VIEW_IMPL");
+					break;
+				case "WND_VIEW_CLASS":
+					strImpl = window.external.FindSymbol("WND_VIEW_IMPL");
+					break;
+				default:
+					break;
+			}
+			if (strImpl == strVal)
+			{
+				L_File2_Text = "File ";
+				L_Err5_Text = " already exists";
+				oErrObj = new Error(L_File2_Text + strVal + L_Err5_Text);
+				SetErrorInfo(oErrObj);
+				return false;
+			}
+		}
+	}
+	return true;
+}
+
+function CheckBase()
+{
+	if (window.external.FindSymbol("VIEW_BASE_CLASS") == "CFormView")
+	{
+		var L_Prompt1_Text = "No printing support will be available for CFormView";
+		if (window.external.YesNoAlert(L_Prompt1_Text))
+		{
+			window.external.AddSymbol("VIEW_BASE_CLASS", "CFormView");
+			window.external.AddSymbol("PRINTING", false);
+			return true;
+		}
+		else
+		{
+			if (!BASES.disabled)
+				BASES.focus();
+			return false;
+		}
+	}
+	return true;
+}
+
+function SetSelection(SelectObj, strItem)
+{
+	if (SelectObj != null)
+	{
+		var coll = SelectObj.options;
+		var nLen = coll.length;
+		for (n = 0; n < nLen; n++)
+		{
+			if (coll.item(n).text == strItem)
+			{
+				SelectObj.selectedIndex = n;
+				break;
+			}
+		}
+	}
+}
+
+function ValidateInput()
+{
+	var oInvalid = null;
+
+	if (!Validate(CLASS_NAME))
+		oInvalid = CLASS_NAME;
+
+	if (oInvalid == null)
+		if (!Validate(HEADER_FILE))
+			oInvalid = HEADER_FILE;
+
+	if (oInvalid == null)
+		if (!Validate(IMPL_FILE))
+			oInvalid = IMPL_FILE;
+
+	if (oInvalid != null)
+	{
+		window.external.ReportError();
+		oInvalid.focus();
+		return false;
+	}
+	return true;
+}
+
+function Validate(obj)
+{
+	var bValid = true;
+	switch(obj.id)
+	{
+		case "CLASS_NAME":
+			{
+				bValid = window.external.dte.VCLanguageManager.ValidateIdentifier(obj.value) &&
+					!window.external.dte.VCLanguageManager.IsReservedName(obj.value);
+				if (bValid)
+					bValid = CheckForDuplicates(obj.id, obj.value);
+			}	
+			break;
+		case "HEADER_FILE":
+			{
+				bValid = window.external.dte.VCLanguageManager.ValidateFileName(obj.value);
+				if (bValid)
+					bValid = CheckForDuplicates(obj.id, obj.value);
+			}
+			break;
+		case "IMPL_FILE":
+			{
+				bValid = window.external.dte.VCLanguageManager.ValidateFileName(obj.value, vsCMValidateFileExtCppSource);
+				if (bValid)
+					bValid = CheckForDuplicates(obj.id, obj.value);
+			}
+			break;
+		default:
+			break;
+	}
+
+	if (typeof(bValid) == "undefined")
+		bValid = false;
+
+	return bValid;
+}
+function ValidateAndUpdate(SymbolID, SymbolVal)
+{
+	bValidating = true;
+	if (!ValidateInput()) 
+	{
+		bValidating = false; 
+		return; 
+	} 
+	UpdateSymbol(SymbolID, SymbolVal);
+}
+
+</SCRIPT>
+<SCRIPT ID="INCLUDE_SCRIPT" LANGUAGE="JSCRIPT"></SCRIPT>
+<SCRIPT ID="INCLUDE_COMMON" LANGUAGE="JSCRIPT"></SCRIPT>
+<SCRIPT>
+	var strPath = "../../../";
+	strPath += window.external.GetHostLocale();
+	var strScriptPath = strPath + "/Script.js";
+	var strCommonPath = strPath + "/Common.js";
+	document.scripts("INCLUDE_SCRIPT").src = strScriptPath;
+	document.scripts("INCLUDE_COMMON").src = strCommonPath;
+</SCRIPT>

@@ -1,0 +1,417 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "XTPCommandBarsResource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_THAI, SUBLANG_DEFAULT
+#pragma code_page(874)
+#endif //_WIN32
+
+#ifndef _XTP_NO_BINARY_RESOURCES
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+XTP_IDR_TOOLBAR_TOOLS   BITMAP     DISCARDABLE        "CommandBars/res/ImageEditorIcons.bmp"
+XTP_IDR_TOOLBAR_TOOLS32 BITMAP     DISCARDABLE        "CommandBars/res/ImageEditorIcons32.bmp "
+XTP_IDB_MENUBAR_ICONS   BITMAP     DISCARDABLE        "CommandBars/res/MenuBarIcons.bmp"
+XTP_ID_CUSTOMIZE_CHANGEBUTTONIMAGE BITMAP     DISCARDABLE        "CommandBars/res/UserIcons.bmp"
+XTP_ID_WORKSAPCE_NEWHORIZONTAL BITMAP     DISCARDABLE        "CommandBars/res/TabGroups.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+XTP_IDC_COMMANDBARS_DRAGCOPY CURSOR     DISCARDABLE        "CommandBars/res/dragcopypro.cur"
+XTP_IDC_COMMANDBARS_DRAGMOVE CURSOR     DISCARDABLE        "CommandBars/res/dragmovepro.cur"
+XTP_IDC_COMMANDBARS_DRAGDELETE CURSOR     DISCARDABLE        "CommandBars/res/dragdeletepro.cur"
+XTP_IDC_COMMANDBARS_LINE CURSOR     DISCARDABLE        "CommandBars/res/line.cur"
+XTP_IDC_COMMANDBARS_PICKCOLOR CURSOR     DISCARDABLE        "CommandBars/res/pickcolor.cur"
+XTP_IDC_COMMANDBARS_FILLCOLOR CURSOR     DISCARDABLE        "CommandBars/res/fillcolor.cur"
+XTP_IDC_COMMANDBARS_PENCIL CURSOR     DISCARDABLE        "CommandBars/res/pencil.cur"
+XTP_IDC_WORKSAPCE_NEW   CURSOR     DISCARDABLE        "CommandBars/res/WorksapceNew.cur"
+XTP_IDC_WORKSAPCE_DELETE CURSOR     DISCARDABLE        "CommandBars/res/WorksapceDelete.cur"
+
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+XTP_IDD_IMAGEEDITOR_DIALOG DIALOGEX 0, 0, 253, 185
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "ตัวแก้ไขปุ่ม"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "รูปภาพ",IDC_STATIC,7,7,23,8
+    GROUPBOX        "สี",IDC_STATIC,102,106,80,71
+    GROUPBOX        "ย้าย",IDC_STATIC,101,72,81,31
+    GROUPBOX        "แสดงตัวอย่าง",IDC_STATIC,7,106,86,71
+    GROUPBOX        "เครื่องมือ",IDC_STATIC,101,9,81,60
+    DEFPUSHBUTTON   "ตกลง",IDOK,193,7,50,14
+    PUSHBUTTON      "ยกเลิก",IDCANCEL,193,25,50,14
+    CONTROL         "",XTP_IDC_STATIC_PICTURE,"Static",SS_BLACKFRAME | 
+                    SS_NOTIFY,7,17,86,80
+    CTEXT           "",XTP_IDC_STATIC_PREVIEW,14,117,73,54,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    LTEXT           "โปร่งใส",IDC_STATIC,135,156,39,8
+    LTEXT           "",XTP_ID_CLR_ERASE,116,153,15,15,SS_NOTIFY
+    CTEXT           "เครื่องมือ",XTP_IDC_STATIC_TOOLS,112,21,60,43,SS_CENTERIMAGE | 
+                    NOT WS_VISIBLE | WS_BORDER
+    CTEXT           "ย้าย",XTP_IDC_STATIC_MOVE,111,83,62,12,SS_CENTERIMAGE | 
+                    NOT WS_VISIBLE | WS_BORDER
+    CONTROL         "",XTP_ID_CLR_PICKER,"Static",SS_LEFTNOWORDWRAP | 
+                    SS_NOTIFY | WS_GROUP,109,144,15,15
+    CTEXT           "สี",XTP_IDC_STATIC_COLORS,107,121,68,12,
+                    SS_CENTERIMAGE | NOT WS_VISIBLE | WS_BORDER
+END
+
+XTP_IDD_PAGE_KEYBOARD DIALOG DISCARDABLE  0, 0, 238, 150
+ STYLE WS_CHILD | WS_CAPTION
+CAPTION "แป้นพิมพ์"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "คำสั่ง:",XTP_IDC_TXT_COMMANDS,2,28,38,8
+    LISTBOX         XTP_IDC_LBOX_ACCEL_COMMANDS,2,39,93,74,LBS_HASSTRINGS | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "การกำหนดคีย์:",XTP_IDC_TXT_ASSIGNMENTS,100,28,67,8
+    LISTBOX         XTP_IDC_LBOX_KEYS,100,38,75,49,LBS_HASSTRINGS | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "กดแป้นพิมพ์ลัดใหม่:",XTP_IDC_TXT_NEWKEY,100,91,76,8
+    EDITTEXT        XTP_IDC_EDIT_SHORTCUTKEY,100,101,75,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "กำหนดค่า",XTP_IDC_BTN_ASSIGN,179,39,55,14
+    PUSHBUTTON      "เอาออก",XTP_IDC_BTN_REMOVE,179,56,55,14
+    PUSHBUTTON      "ตั้งค่าใหม่ทั้งหมด",XTP_IDC_BTN_ACCEL_RESET,179,73,55,14
+    LTEXT           "คำอธิบาย:",XTP_IDC_TXT_DESC_TITLE,2,119,38,8
+    LTEXT           "",XTP_IDC_TXT_DESC_OVERVIEW,2,129,173,19,0,
+                    WS_EX_STATICEDGE
+    LTEXT           "ประเภท:",IDC_STATIC,2,5,31,8
+    COMBOBOX        XTP_IDC_COMBO_CATEGORY,2,15,93,147,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+XTP_IDD_PAGE_TOOLBARS DIALOG DISCARDABLE  0, 0, 238, 150
+ STYLE WS_CHILD | WS_CAPTION
+CAPTION "แถบเครื่องมือ"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "แถบเครื่องมือ:",IDC_STATIC,4,5,45,8
+    LISTBOX         XTP_IDC_LIST_TOOLBARS,4,15,157,131,LBS_OWNERDRAWFIXED | 
+                    LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "สร้าง...",XTP_IDC_BUTTON_NEW,165,15,70,14
+    PUSHBUTTON      "เปลี่ยนชื่อ...",XTP_IDC_BUTTON_RENAME,165,33,70,14
+    PUSHBUTTON      "ลบ",XTP_IDC_BUTTON_DELETE,165,51,70,14
+    PUSHBUTTON      "ตั้งค่าใหม่...",XTP_IDC_BUTTON_RESET,165,69,70,14
+END
+
+XTP_IDD_PAGE_OPTIONS DIALOG DISCARDABLE  0, 0, 238, 150
+ STYLE WS_CHILD | WS_CAPTION
+CAPTION "ตัวเลือก"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "เมนูและแถบเครื่องมือดัดแปลง",IDC_STATIC,7,5,110,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,122,9,101,1
+    CONTROL         "ให้แสดงเมนูทั้งหมดเสมอ",XTP_IDC_CHECK_FULL_MENUS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,17,207,10
+    CONTROL         "แสดงเมนูทั้งหมดหลังจากหน่วงเวลาสั้นๆ",
+                    XTP_IDC_CHECK_AFTERDELAY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,28,29,195,10
+    PUSHBUTTON      "ตั้งค่าข้อมูลการใช้เมนูและแถบเครื่องมือใหม่",
+                    XTP_IDC_BUTTON_RESETDATA,16,42,139,14
+    LTEXT           "อื่นๆ",IDC_STATIC,7,70,18,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,29,74,194,1
+    CONTROL         "ไอคอนขนาดใหญ่",XTP_IDC_CHECK_LARGEICONS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,16,82,207,10
+    CONTROL         "แสดงคำแนะนำบนหน้าจอสำหรับแถบเครื่องมือ",XTP_IDC_CHECK_SCREENTTIPS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,93,207,10
+    CONTROL         "แสดงแป้นพิมพ์ลัดในคำแนะนำบนหน้าจอ",
+                    XTP_IDC_CHECK_SHORTCUTS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,28,104,195,10
+    LTEXT           "การเคลื่อนไหวของเมนู:",IDC_STATIC,16,117,73,8
+    COMBOBOX        XTP_IDC_COMBO_ANIMATION,95,115,79,65,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+XTP_IDD_PAGE_COMMANDS DIALOG DISCARDABLE  0, 0, 238, 150
+ STYLE WS_CHILD | WS_CAPTION
+CAPTION "คำสั่ง"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "เพื่อที่จะเพิ่มคำสั่งให้แถบเครื่องมือ ต้องเลือกประเภทคำสั่งที่ต้องการ ลากออกมาจากกล่องโต้ตอบ และนำไปวางที่แถบเครื่องมือ",
+                    IDC_STATIC,4,5,220,19
+    LTEXT           "ประเภท:",IDC_STATIC,4,25,38,8
+    LISTBOX         XTP_IDC_LIST_CATEGORIES,4,35,81,103,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "คำสั่ง:",IDC_STATIC,90,25,38,8
+    LISTBOX         XTP_IDC_LIST_COMMANDS,90,35,143,103,LBS_OWNERDRAWFIXED | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+XTP_IDD_NEWTOOLBAR DIALOG DISCARDABLE  0, 0, 186, 52
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "สร้างแถบเครื่องมือ"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "ชื่อแถบเครื่องมือ:",IDC_STATIC,4,4,100,8
+    EDITTEXT        XTP_IDC_EDIT_TOOLBARNAME,4,15,178,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "ตกลง",IDOK,78,34,50,14
+    PUSHBUTTON      "ยกเลิก",IDCANCEL,132,34,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+XTP_IDR_CUSTOMIZEMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "กำหนดเอง"
+    BEGIN
+        MENUITEM "ตั้งค่าใหม่",                      XTP_ID_CUSTOMIZE_RESET
+        MENUITEM "ลบ",                     XTP_ID_CUSTOMIZE_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "ชื่อ:",                      XTP_ID_CUSTOMIZE_NAME
+        MENUITEM SEPARATOR
+        MENUITEM "คัดลอกรูปบนปุ่ม",          XTP_ID_CUSTOMIZE_COPYBUTTONIMAGE
+
+        MENUITEM "วางรูปบนปุ่ม",         XTP_ID_CUSTOMIZE_PASTEBUTTONIMAGE
+
+        MENUITEM "ตั้งค่ารูปบนปุ่มใหม่",         XTP_ID_CUSTOMIZE_RESETBUTTONIMAGE
+
+        MENUITEM "แก้ไขรูปบนปุ่ม...",       XTP_ID_CUSTOMIZE_EDITBUTTONIMAGE
+
+        MENUITEM "เปลี่ยนภาพลักษณ์ของปุ่ม",        XTP_ID_CUSTOMIZE_CHANGEBUTTONIMAGE
+
+        MENUITEM SEPARATOR
+        MENUITEM "ลักษณะเริ่มต้น",              XTP_ID_CUSTOMIZE_DEFAULTSTYLE
+
+        MENUITEM "เฉพาะข้อความ",                  XTP_ID_CUSTOMIZE_TEXTONLY
+        MENUITEM "รูปและข้อความ",             XTP_ID_CUSTOMIZE_IMAGEANDTEXT
+
+        MENUITEM SEPARATOR
+        MENUITEM "เริ่มกลุ่ม",              XTP_ID_CUSTOMIZE_BEGINAGROUP
+    END
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "XTPCommandBarsResource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_ADDORREMOVE     "เพิ่มหรือเอาปุ่มออก"
+    XTP_IDS_CUSTOMIZE_CLOSE "ปิด"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CUSTOMIZE       "กำหนดเอง"
+    XTP_IDS_NEWMENU         "สร้างเมนู"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CONFIRM_RESETDATA 
+                            "การกระทำนี้จะลบบันทึกของคำสั่งที่คุณใช้ในโปรแกรมประยุกต์นี้ และคืนค่าชุดของคำสั่งที่มองเห็นได้กลับไปยังเมนูและแถบเครื่องมือ การกระทำนี้จะไม่ยกเลิกการกำหนดเองใดๆ ที่ชัดเจน คุณแน่ใจที่จะทำหรือไม่"
+    XTP_IDS_INVALID_NUMBER  "ตัวเลขนี้ไม่ถูกต้อง"
+    XTP_IDS_INVALID_FONTSIZE "ตัวเลขต้องอยู่ระหว่าง 1 ถึง 1638"
+    XTP_IDS_CONFIRM_RESET   "คุณแน่ใจว่าต้องการตั้งค่าใหม่ให้กับการเปลี่ยนแปลงที่ได้ทำไว้กับ '%s' แถบเครื่องมือ หรือไม่"
+    XTP_IDS_BUILTINMENUS    "เมนูที่มีอยู่แล้วภายใน"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CUSTOM_BAR      "กำหนดเอง %d"
+    XTP_IDS_ERROR_BLANKNAME "ชื่อของแถบเครื่องมือไม่สามารถเป็นที่ว่างได้ กรุณาใส่ชื่อด้วย"
+    XTP_IDS_ERROR_LIMIT     "Sorry you have reached your limit."
+    XTP_IDS_ERROR_EXISTS    "มีแถบเครื่องมือชื่อ '%s' อยู่แล้ว กรุณาใส่ชื่ออื่น"
+    XTP_IDS_RENAMETOOLBAR   "การเปลี่ยนชื่อแถบเครื่องมือ"
+    XTP_IDS_CONFIRM_DELETE  "คุณแน่ใจหรือไม่ที่จะลบแถบเครื่องมือ '%s'"
+    XTP_IDS_ALLCOMMANDS     "คำสั่งทั้งหมด"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_ID_CUSTOMIZE        "\nกำหนดเอง..."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CLR_INDIGO      "คราม"
+    XTP_IDS_CLR_GRAY80      "เทา-80%"
+    XTP_IDS_CLR_DARK_RED    "แดงเข้ม"
+    XTP_IDS_CLR_ORANGE      "ส้ม"
+    XTP_IDS_CLR_DARK_YELLOW "เหลืองเข้ม"
+    XTP_IDS_CLR_GREEN       "เขียว"
+    XTP_IDS_CLR_TEAL        "เขียวหัวเป็ด"
+    XTP_IDS_CLR_BLUE        "น้ำเงิน"
+    XTP_IDS_CLR_BLUEGRAY    "น้ำเงินเทา"
+    XTP_IDS_CLR_GRAY50      "เทา-50%"
+    XTP_IDS_CLR_RED         "แดง"
+    XTP_IDS_CLR_LIGHTORANGE "ส้มอ่อน"
+    XTP_IDS_CLR_LIME        "เขียวมะนาว"
+    XTP_IDS_CLR_SEA_GREEN   "เขียวน้ำทะเล"
+    XTP_IDS_CLR_AQUA        "ฟ้าอมเขียว"
+    XTP_IDS_CLR_LIGHT_BLUE  "น้ำเงินอ่อน"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CLR_VIOLET      "ม่วง"
+    XTP_IDS_CLR_GRAY40      "เทา-40%"
+    XTP_IDS_CLR_PINK        "ชมพู"
+    XTP_IDS_CLR_GOLD        "ทอง"
+    XTP_IDS_CLR_YELLOW      "เหลือง"
+    XTP_IDS_CLR_BRIGHT_GREEN "เขียวอ่อน"
+    XTP_IDS_CLR_TURQUOISE   "ฟ้าเทอร์คอยส์"
+    XTP_IDS_CLR_SKY_BLUE    "ฟ้าท้องฟ้า"
+    XTP_IDS_CLR_PLUM        "ม่วงพลัม"
+    XTP_IDS_CLR_GRAY25      "เทา-25%"
+    XTP_IDS_CLR_ROSE        "ชมพูกุหลาบ"
+    XTP_IDS_CLR_TAN         "แทน"
+    XTP_IDS_CLR_LIGHT_YELLOW "เหลืองอ่อน"
+    XTP_IDS_CLR_LIGHT_GREEN "เขียวอ่อน"
+    XTP_IDS_CLR_LIGHT_TURQUOISE "ฟ้าอ่อนเทอร์คอยส์"
+    XTP_IDS_CLR_PALE_BLUE   "น้ำเงินซีด"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CLR_BLACK       "ดำ"
+    XTP_IDS_CLR_BROWN       "น้ำตาล"
+    XTP_IDS_CLR_OLIVE_GREEN "เขียวมะกอก"
+    XTP_IDS_CLR_DARK_GREEN  "เขียวเข้ม"
+    XTP_IDS_CLR_DARK_TEAL   "เขียวหัวเป็ดเข้ม"
+    XTP_IDS_CLR_DARK_BLUE   "น้ำเงินเข้ม"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CLR_LAVENDER    "ม่วงลาเวนเดอร์"
+    XTP_IDS_CLR_WHITE       "ขาว"
+    XTP_IDS_CLR_GRAY        "เทา"
+    XTP_IDS_CLR_MAROON      "แดงเลือดหมู"
+    XTP_IDS_CLR_OLIVE       "เขียวใบมะกอก"
+    XTP_IDS_CLR_NAVY        "น้ำเงินกรมท่า"
+    XTP_IDS_CLR_PURPLE      "ม่วง"
+    XTP_IDS_CLR_SILVER      "เงิน"
+    XTP_IDS_CLR_FUCHSIA     "บานเย็น"
+    XTP_IDS_CLR_NOFILL      "ไม่เติม\nไม่เติม"
+    XTP_IDS_AUTOMATIC       "สีอัตโนมัติ\nสีอัตโนมัติ"
+    XTP_IDS_MORE_COLORS     "สีเพิ่มเติม..."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CONFIRM_KEYBOARD 
+                            "Are you sure you want to reset the key assignments?  This action will remove all custom key assignments at the text level."
+    XTP_IDS_CONFIRM_REASSIGN 
+                            "This shortcut is currently assigned.\nDo you want to re-assign this shortcut?"
+    XTP_IDS_CONFIRM_UPDATE  "Due to a software update the toolbar '%s' has changed. Would you like to reset your customized toolbar and load the new one?"
+    XTP_IDS_CUSTOMIZE_RESET "ตั้งค่าใหม่"
+    XTP_IDS_IMAGEEDITOR_FILTER 
+                            "แฟ้มรูปภาพทั้งหมด|*.bmp;*.wmf;*.emf;*.ico;*.dib;*.cur;*.gif;*.jpg|Bitmaps(*.Bmp;*.Dib)|*.bmp;*.dib|Metafiles(*.Wmf;*.Emf)|*.wmf;*.emf|ไอคอน(*.Ico;*.Cur)|*.ico;*.cur|GIF(*.Gif)|*.gif|JPEG(*.Jpg)|*.jpg|ทุกแฟ้ม(*.*)|*.*||"
+    XTP_ID_TOOLBAR_EXPAND   "\nตัวเลือกแถบเครื่องมือ"
+    XTP_ID_TOOLBAR_HIDE     "\nปิด"
+    XTP_ID_MENUBAR_CLOSE    "\nปิดหน้าต่าง"
+    XTP_ID_MENUBAR_RESTORE  "\nหน้าต่างขนาดเดิม"
+    XTP_ID_MENUBAR_MINIMIZE "\nย่อหน้าต่างให้เล็กสุด"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_ID_BUTTON_PENCIL    "\nดินสอ"
+    XTP_ID_BUTTON_FILL      "\nเติมสี"
+    XTP_ID_BUTTON_GETCOLOR  "\nเลือกสี"
+    XTP_ID_BUTTON_LINE      "\nเส้น"
+    XTP_ID_BUTTON_RECTANGLE "\nสี่เหลี่ยม"
+    XTP_ID_BUTTON_CIRCLE    "\nวงรี"
+    XTP_ID_BUTTON_COPY      "\nคัดลอก"
+    XTP_ID_BUTTON_PASTE     "\nวาง"
+    XTP_ID_BUTTON_CLEAR     "\nล้าง"
+    XTP_ID_BUTTON_UNDO      "\nเลิกทำ"
+    XTP_ID_BUTTON_REDO      "\nทำซ้ำ"
+    XTP_ID_BUTTON_OPEN      "\nนำเข้าจากแฟ้ม"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_ANIMATION_SYSDEF "(ค่าเริ่มต้นระบบ)"
+    XTP_IDS_ANIMATION_RANDOM "สุ่ม"
+    XTP_IDS_ANIMATION_UNFOLD "คลี่"
+    XTP_IDS_ANIMATION_SLIDE "ภาพนิ่ง"
+    XTP_IDS_ANIMATION_FADE  "เลือน"
+    XTP_IDS_ANIMATION_NONE  "ไม่มี"
+    XTP_ID_WORKSAPCE_MOVEPREVIOUS "\nMove to P&revious Tab Group"
+    XTP_ID_WORKSAPCE_MOVENEXT "\nMove to Ne&xt Tab Group"
+    XTP_ID_WORKSAPCE_NEWHORIZONTAL "\nNew Hori&zontal Tab Group"
+    XTP_ID_WORKSAPCE_NEWVERTICAL "\nNew &Vertical Tab Group"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_ID_WORKSAPCE_CANCEL "ยกเลิก"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

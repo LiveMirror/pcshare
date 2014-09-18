@@ -1,0 +1,79 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include <XTPResourceDll.h>
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_HEBREW, SUBLANG_DEFAULT
+#pragma code_page(1255)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDC_LANG_ARABIC         "ערבית (ערב הסעודית)"
+    XTP_IDC_LANG_CHINESE_PRC    "סינית (סין)"
+    XTP_IDC_LANG_CHINESE_TAIWAN "סינית (טיוואן)"
+    XTP_IDC_LANG_CROATIAN       "קרואטית"
+    XTP_IDC_LANG_CZECH          "צ'כית"
+    XTP_IDC_LANG_DANISH         "דנית"
+    XTP_IDC_LANG_DUTCH          "הולנדית"
+    XTP_IDC_LANG_ENGLISH        "אנגלית (ארצות הברית)"
+    XTP_IDC_LANG_ESTONIAN       "אסטונית"
+    XTP_IDC_LANG_FINNISH        "פינית"
+    XTP_IDC_LANG_FRENCH         "צרפתית (צרפת)‏‏"
+    XTP_IDC_LANG_GERMAN         "גרמנית (גרמניה)‏‏"
+    XTP_IDC_LANG_GREEK          "יוונית"
+    XTP_IDC_LANG_HEBREW         "עברית"
+    XTP_IDC_LANG_HUNGARIAN      "הונגרית"
+    XTP_IDC_LANG_ITALIAN        "איטלקית (איטליה)‏‏"
+    XTP_IDC_LANG_JAPANESE       "יפנית"
+    XTP_IDC_LANG_KOREAN         "קוריאנית"
+    XTP_IDC_LANG_LATVIAN        "לטבית"
+    XTP_IDC_LANG_LITHUANIAN     "ליטאית"
+    XTP_IDC_LANG_NORWEGIAN      "נורווגית (Bokmal)"
+    XTP_IDC_LANG_POLISH         "פולנית"
+    XTP_IDC_LANG_PORTUGUESE     "פורטוגזית (פורטוגל)"
+    XTP_IDC_LANG_PORTUGUESE_BR  "פורטוגזית (ברזיל)"
+    XTP_IDC_LANG_ROMANIAN       "רומנית"
+    XTP_IDC_LANG_RUSSIAN        "רוסית"
+    XTP_IDC_LANG_SLOVAK         "סלובקית"
+    XTP_IDC_LANG_SLOVENIAN      "סלובנית"
+    XTP_IDC_LANG_SPANISH        "ספרדית (ספרד - ספרדית מודרנית)"
+    XTP_IDC_LANG_SWEDISH        "שוודית"
+    XTP_IDC_LANG_THAI           "תאי"
+    XTP_IDC_LANG_UKRAINIAN      "אוקראינית"
+END
+
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+#include "res\XTPResource.rc2"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,639 @@
+<!- (c) 2001 Microsoft Corporation -->
+<HTML DIR="LTR">
+
+<HEAD>
+	<TITLE>MFC Application Wizard</TITLE>
+	<META NAME="vs_targetSchema" CONTENT="http://schemas.microsoft.com/intellisense/ie5">
+	<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+	<STYLE TYPE="text/css">@import url();</STYLE>
+	<SCRIPT>
+		var strURL = "../../../";
+		strURL += window.external.GetHostLocale();
+		strURL += "/NewStyles.css";
+		document.styleSheets(0).imports(0).href = strURL;
+	</SCRIPT>
+</HEAD>
+
+<BODY BGCOLOR="BUTTONFACE" TOPMARGIN="0" LEFTMARGIN="0" RIGHTMARGIN="0" BOTTOMMARGIN="0" ONLOAD="InitDocument(document);" ONKEYDOWN="if (!bValidating) OnKey();" ONKEYPRESS="if (!bValidating) OnPress();">
+
+<TABLE CLASS="ONE" HEIGHT="100%" WIDTH="100%" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+<COL WIDTH="178"><COL>
+
+  <!--OPEN OF INTRODUCTORY INFORMATION TABLE//-->
+  <TR VALIGN="TOP">
+	<TD HEIGHT="79" WIDTH="100%" COLSPAN="2">
+	 <TABLE CLASS="TWO" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+	 <COL WIDTH="12"><COL><COL WIDTH="12">
+	  <TR>
+	   <TD VALIGN="TOP" HEIGHT="12" WIDTH="12">
+	  	&nbsp;
+	   </TD>
+	   <TD VALIGN="TOP" HEIGHT="12">
+	  	&nbsp;
+	   </TD>
+	   <TD VALIGN="TOP" HEIGHT="12" WIDTH="12">
+	  	&nbsp;
+	   </TD>
+	   <TD CLASS="IMAGE" VALIGN="BOTTOM" WIDTH="110" ROWSPAN="2">
+		<DIV CLASS="SMALLA" ID="SINGLE_DOC_IMAGE">
+		 <IMG CLASS="SMALL" SRC="..\..\Images\SingleDocument.gif" HEIGHT="70" WIDTH="98" ALT="">
+		</DIV>
+		<DIV CLASS="SMALL" ID="CONTEXT_HELP_IMAGE">
+		 <IMG CLASS="SMALL" SRC="../../Images/AdvContextHelp.gif" HEIGHT="70" WIDTH="98" ALT="">
+		</DIV>
+	   </TD>
+	   <TD VALIGN="TOP" HEIGHT="12" WIDTH="6" ROWSPAN="2">
+	  	&nbsp;
+	   </TD>
+	  </TR>
+	 
+	  <TR>
+	   <TD VALIGN="TOP" HEIGHT="65" WIDTH="12">
+	  	&nbsp;
+	   </TD>
+	   <TD VALIGN="TOP" HEIGHT="65">
+		<H4 CLASS="HEAD" ID="HEAD">Advanced Features</H4>
+		<P CLASS="SUBHEAD" ID="SUBHEAD">Specify additional support to build into your application.</P>
+	   </TD>
+	   <TD VALIGN="TOP" HEIGHT="65" WIDTH="12">
+	  	&nbsp;
+	   </TD>
+	  </TR>
+	 
+	  <TR>
+	   <TD VALIGN="TOP" CLASS="RULE" COLSPAN="5" HEIGHT="2">
+		<TABLE BORDER="0" WIDTH="100%" HEIGHT="1" CELLPADDING="0" CELLSPACING="0">
+	  	 <TR VALIGN="TOP">
+	  	  <TD HEIGHT="1" WIDTH="100%" BGCOLOR="BUTTONSHADOW"></TD>
+	  	  <TD HEIGHT="1" WIDTH="1" BGCOLOR="WINDOW"></TD>
+	  	 </TR>
+		</TABLE>
+	   </TD>
+	  </TR>
+	 </TABLE>
+	</TD>
+  </TR>
+  <!--CLOSE OF INTRODUCTORY INFORMATION TABLE//-->
+
+  <!--OPEN OF NAVIGATION, CONTENT, AND BUTTON TABLES//-->
+  <TR VALIGN="TOP">
+	<TD CLASS="Three" VALIGN="TOP" HEIGHT="100%" WIDTH="178">
+	 <TABLE CLASS="fixedSize" HEIGHT="100%" WIDTH="178" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+  	  <TR VALIGN="TOP">
+	   <TD CLASS="threeCustom" VALIGN="TOP" STYLE="BACKGROUND-IMAGE: URL(../../Images/MFC_Background.gif);">
+	   <!--OPEN OF NAVIGATION TABLE//-->
+	
+	    <TABLE CLASS="THREE" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+		<COL WIDTH="12"><COL WIDTH="166"><COL WIDTH="1">
+		 <TR>
+	   	  <TD VALIGN="TOP" COLSPAN="3" HEIGHT="12">
+	  		&nbsp;
+		  </TD>
+		 </TR>
+		 <TR>
+	   	  <TD VALIGN="TOP" HEIGHT="100%" WIDTH="12">
+	  		&nbsp;
+		  </TD>
+	   	  <TD VALIGN="TOP" HEIGHT="100%" WIDTH="165">
+	   	  <!--OPEN OF NAVIGATIONAL LINKS//-->
+	  		
+			<DIV CLASS="LINK">
+			 <TABLE WIDTH="166" HEIGHT="28" BORDER="0" CELLPADDING="0" CELLSPACING="0" CLASS="LINKTEXT">
+			  <TR VALIGN="MIDDLE">
+	  		   <TD WIDTH="162">
+				<SPAN CLASS="ACTIVELINK" ID="Default" TITLE="Examine an overview of selections." onClick="Next(document, 'Default.htm');" TABINDEX="1">Overview</SPAN>
+			   </TD>
+	  		   <TD WIDTH="4">
+			  	<IMG SRC="../../Images/spacer.gif" HEIGHT="1" WIDTH="4">
+			   </TD>
+			  </TR>
+			 </TABLE>
+			</DIV>
+	  		
+			<DIV CLASS="LINK">
+			 <TABLE WIDTH="166" HEIGHT="28" BORDER="0" CELLPADDING="0" CELLSPACING="0" CLASS="LINKTEXT">
+			  <TR VALIGN="MIDDLE">
+	  		   <TD WIDTH="162">
+				<SPAN CLASS="ACTIVELINK" ID="AppType" TITLE="Specify Document/View architecture support, language and interface style options for your application." onClick="Next(document, 'AppType.htm');" TABINDEX="2">Application Type</SPAN>
+			   </TD>
+	  		   <TD WIDTH="4">
+			  	<IMG SRC="../../Images/spacer.gif" HEIGHT="1" WIDTH="4">
+			   </TD>
+			  </TR>
+			 </TABLE>
+			</DIV>
+	  		
+			<DIV CLASS="LINK">
+			 <TABLE WIDTH="166" HEIGHT="28" BORDER="0" CELLPADDING="0" CELLSPACING="0" CLASS="LINKTEXTINDENT">
+			  <TR VALIGN="MIDDLE">
+	  		   <TD WIDTH="162">
+				<SPAN CLASS="ACTIVELINK" ID="CompoundDoc" TITLE="Specify OLE container or server options and active document support." onClick="onClick(this);" TABINDEX="3">Compound Document Support</SPAN>
+			   </TD>
+	  		   <TD WIDTH="4">
+			  	<IMG SRC="../../Images/spacer.gif" HEIGHT="1" WIDTH="4">
+			   </TD>
+			  </TR>
+			 </TABLE>
+			</DIV>
+	  		
+			<DIV CLASS="LINK">
+			 <TABLE WIDTH="166" HEIGHT="28" BORDER="0" CELLPADDING="0" CELLSPACING="0" CLASS="LINKTEXTINDENT">
+			  <TR VALIGN="MIDDLE">
+	  		   <TD WIDTH="162">
+				<SPAN CLASS="ACTIVELINK" ID="DocTemp" TITLE="Specify values for your application's document template to use when creating a new document." onClick="onClick(this);" TABINDEX="4">Document Template Strings</SPAN>
+			   </TD>
+	  		   <TD WIDTH="4">
+			  	<IMG SRC="../../Images/spacer.gif" HEIGHT="1" WIDTH="4">
+			   </TD>
+			  </TR>
+			 </TABLE>
+			</DIV>
+	  		
+			<DIV CLASS="LINK">
+			 <TABLE WIDTH="166" HEIGHT="28" BORDER="0" CELLPADDING="0" CELLSPACING="0" CLASS="LINKTEXT">
+			  <TR VALIGN="MIDDLE">
+	  		   <TD WIDTH="162">
+				<SPAN CLASS="ACTIVELINK" ID="DBSupport" TITLE="Specify database support, including any data source." onClick="onClick(this);" TABINDEX="5">Database Support</SPAN>
+			   </TD>
+	  		   <TD WIDTH="4">
+			  	<IMG SRC="../../Images/spacer.gif" HEIGHT="1" WIDTH="4">
+			   </TD>
+			  </TR>
+			 </TABLE>
+			</DIV>
+	  		
+			<DIV CLASS="LINK">
+			 <TABLE WIDTH="166" HEIGHT="28" BORDER="0" CELLPADDING="0" CELLSPACING="0" CLASS="LINKTEXT">
+			  <TR VALIGN="MIDDLE">
+	  		   <TD WIDTH="162">
+				<SPAN CLASS="ACTIVELINK" ID="UIFeatures" TITLE="Specify options that control the look and feel of your application." onClick="Next(document, 'UIFeatures.htm');" TABINDEX="6">User Interface Features</SPAN>
+			   </TD>
+	  		   <TD WIDTH="4">
+			  	<IMG SRC="../../Images/spacer.gif" HEIGHT="1" WIDTH="4">
+			   </TD>
+			  </TR>
+			 </TABLE>
+			</DIV>
+
+		  	<DIV CLASS="LINKSELECTED">
+	 	   	 <SPAN CLASS="VERTLINE1">
+			  <IMG SRC="../../Images/spacer.gif" WIDTH="1" HEIGHT="1" ALT="" BORDER="0">
+			 </SPAN>
+			 <SPAN CLASS="HORILINE1">
+			  <TABLE WIDTH="167" HEIGHT="100%" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+			   <TR VALIGN="TOP">
+			    <TD CLASS="DOTTEDLINE" HEIGHT="1">
+				</TD>
+			   </TR>
+			   <TR VALIGN="TOP">
+			    <TD HEIGHT="100%">
+				 <IMG SRC="../../Images/spacer.gif" WIDTH="165" HEIGHT="28" ALT="" BORDER="0">
+			    </TD>
+			   </TR>
+			   <TR VALIGN="TOP">
+			    <TD CLASS="DOTTEDLINE" HEIGHT="1">
+			    </TD>
+			   </TR>
+			  </TABLE>
+			 </SPAN>
+			 <TABLE WIDTH="160" HEIGHT="28" BORDER="0" CELLPADDING="0" CELLSPACING="0" CLASS="LINKTEXTSELECTED">
+			  <TR VALIGN="MIDDLE">
+			   <TD WIDTH="156">
+				<SPAN ID="Advanced" TITLE="Specify additional support to build into your application.">Advanced Features</SPAN>
+			   </TD>
+			   <TD WIDTH="4">
+				<IMG SRC="../../Images/spacer.gif" HEIGHT="1" WIDTH="4">
+			   </TD>
+			  </TR>
+			 </TABLE>
+			</DIV>
+	  		
+			<DIV CLASS="LINK">
+			 <TABLE WIDTH="166" HEIGHT="28" BORDER="0" CELLPADDING="0" CELLSPACING="0" CLASS="LINKTEXT">
+			  <TR VALIGN="MIDDLE">
+	  		   <TD WIDTH="162">
+				<SPAN CLASS="ACTIVELINK" ID="XTToolkitPro" TITLE="Specify Xtreme Toolkit Pro General Settings" onClick="onClick(this);" TABINDEX="7">Toolkit Pro Features</SPAN>
+			   </TD>
+	  		   <TD WIDTH="4">
+			  	<IMG SRC="../../Images/spacer.gif" HEIGHT="1" WIDTH="4">
+			   </TD>
+			  </TR>
+			 </TABLE>
+			</DIV>
+
+			<DIV CLASS="LINK">
+			 <TABLE WIDTH="166" HEIGHT="28" BORDER="0" CELLPADDING="0" CELLSPACING="0" CLASS="LINKTEXT">
+			  <TR VALIGN="MIDDLE">
+	  		   <TD WIDTH="162">
+				<SPAN CLASS="ACTIVELINK" ID="GeneratedClasses" TITLE="Review generated classes and specify base classes for your application." onClick="Next(document, 'GeneratedClasses.htm');" TABINDEX="8">Generated Classes</SPAN>
+			   </TD>
+	  		   <TD WIDTH="4">
+			  	<IMG SRC="../../Images/spacer.gif" HEIGHT="1" WIDTH="4">
+			   </TD>
+			  </TR>
+			 </TABLE>
+			</DIV>
+			
+	   	  <!--CLOSE OF NAVIGATIONAL LINKS//-->
+		  </TD>
+		  <TD WIDTH="1">
+		   <DIV CLASS="VERTLINE">
+			 <IMG SRC="../../Images/spacer.gif" WIDTH="1" HEIGHT="1" ALT="" BORDER="0">
+		   </DIV>
+		  </TD>
+		 </TR>
+		 </TABLE>
+		</TD>
+	   </TR>
+	   </TABLE>
+			
+	   <!--CLOSE OF NAVIGATION TABLE//-->
+	   </TD>
+  
+	   <TD VALIGN="TOP" HEIGHT="100%">
+	   <!--OPEN OF CONTENT AND BUTTON TABLE//-->
+	   
+	   	<TABLE CLASS="ONE" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+		<COL WIDTH="100%">
+		 <TR VALIGN="TOP">
+		  <TD HEIGHT="100%">
+	   	  <!--OPEN OF CONTENT//-->
+		  
+		  	<TABLE CLASS="CONTENT" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+			<COL WIDTH="12"><COL WIDTH="193"><COL WIDTH="12"><COL WIDTH="193"><COL WIDTH="12">
+ 			 <TR>
+  			  <TD VALIGN="TOP" HEIGHT="12" COLSPAN="5">
+  				&nbsp;
+  			  </TD>
+			 </TR>
+ 
+ 			 <TR>
+  			  <TD VALIGN="TOP" WIDTH="12">
+  				&nbsp;
+  			  </TD>
+  			  <TD VALIGN="TOP">
+ 				<SPAN CLASS="itemTextTop" ID="FILE_EXTENSION_TEXT" TITLE="The file extension for application documents.">
+	  				 <LABEL ID="SELECT_FEATURED_TEXT" FOR="FILE_EXTENSION">Advanced features:</LABEL>
+	  
+	  				 <P CLASS="Spacer">&nbsp;</P>
+	  
+	  				 <INPUT TYPE="checkbox" CLASS="CheckBoxA" ACCESSKEY="e" ID="CONTEXT_HELP" TITLE="Select this option if you want AppWizard to generate a set of help files for context-sensitive help." onPropertychange="OnHelpFormatSelection();">
+	  	 			 <DIV CLASS="itemTextCheckboxB" ID="CONTEXT_HELP_TEXT" TITLE="Select this option if you want AppWizard to generate a set of help files for context-sensitive help.">
+		  			   <LABEL ID="HELP_TEXT" FOR="CONTEXT_HELP">Context-sensitive H<U>e</U>lp</LABEL>
+	  	 			 </DIV>
+	  
+	  				 <BR>
+	  
+	  				 <INPUT CLASS="RadioIndent" TYPE="radio" NAME="helpstyle" ID="HELPSTYLE_WINHELP" ACCESSKEY="f" TITLE="WinHelp Format.">
+	  				 <DIV CLASS="itemTextRadioIndentB" ID="WinHelpStyle" TITLE="Generate help files in WinHelp format.">
+	  				  <LABEL ID="WINHELP_TEXT" FOR="HELPSTYLE_WINHELP">WinHelp <U>F</U>ormat</LABEL>
+	  			 	 </DIV>
+	  
+	  				 <BR>
+	  
+	  				 <INPUT CLASS="RadioIndent" TYPE="radio" NAME="helpstyle" ID="HELPSTYLE_HTML" ACCESSKEY="l" TITLE="HTML Format.">
+	  				 <DIV CLASS="itemTextRadioIndentB" ID="HTMLStyle" TITLE="Generate help files in HTML format.">
+	  				  <LABEL ID="HTML_TEXT" FOR="HELPSTYLE_HTML">HTM<U>L</U> Help format</LABEL>
+	  			 	 </DIV>
+	  
+	  				 <BR>
+	  
+	  				 <INPUT TYPE="checkbox" CLASS="CheckBoxA" ACCESSKEY="p" ID="PRINTING" TITLE="Select this option if you want AppWizard to generate the code to handle the print, print setup, and print preview commands by calling member functions in the CView class from the MFC library. (Available only for programs with the Doc View architecture.) AppWizard also adds commands for these functions to the program's menu. By default, programs have printing support.">
+	  	 			 <DIV CLASS="itemTextCheckboxB" ID="print_title" TITLE="Select this option if you want AppWizard to generate the code to handle the print, print setup, and print preview commands by calling member functions in the CView class from the MFC library. (Available only for programs with the Doc View architecture.) AppWizard also adds commands for these functions to the program's menu. By default, programs have printing support.">
+		  			  <LABEL ID="PRINT_TEXT" FOR="PRINTING"><U>P</U>rinting and print preview</LABEL>
+	  	 			 </DIV>
+	  
+	  				 <BR>
+	  
+	  				 <INPUT TYPE="checkbox" CLASS="CheckBoxA" ACCESSKEY="u" ID="AUTOMATION" TITLE="Allow your application to expose objects to scripting tools and other applications.">
+	  	 			 <DIV CLASS="itemTextCheckboxB" ID="auto_title" TITLE="Allow your application to expose objects to scripting tools and other applications.">
+		  			  <LABEL ID="AUTOMATION_TEXT" FOR="AUTOMATION">A<U>u</U>tomation</LABEL>
+	  	 			 </DIV>
+	  
+	  				 <BR>
+	  
+	  				 <INPUT TYPE="checkbox" CLASS="CheckBoxA" ACCESSKEY="r" ID="ACTIVEX_CONTROLS" TITLE="Enables you to include Active X controls in your application.">
+	  	 			 <DIV CLASS="itemTextCheckboxB" ID="ACTIVEX_ENABLE_TEXT" TITLE="Enables you to include Active X controls in your application.">
+	  	  			  <LABEL ID="ACTIVEX_TEXT" FOR="ACTIVEX_CONTROLS">ActiveX cont<U>r</U>ols</LABEL>
+	  	 			 </DIV>
+	  
+	  				 <BR>
+	  
+	  				 <INPUT TYPE="checkbox" CLASS="CheckBoxA" ACCESSKEY="i" ID="MAPI" TITLE="Enables MAPI support, including direct calls to MAPI functions from your application.">
+	  	 			 <DIV CLASS="itemTextCheckboxB" ID="mapi_title" TITLE="Enables MAPI support, including direct calls to MAPI functions from your application.">
+		  			  <LABEL ID="MAPI_TEXT" FOR="MAPI">MAP<U>I</U> (Messaging API)</LABEL>
+	  	 			 </DIV>
+	  
+	  				 <BR>
+	  
+	  				 <INPUT TYPE="checkbox" CLASS="CheckBoxA" ACCESSKEY="w" ID="SOCKETS" TITLE="Enables the appropriate header files, libraries, and the MFC Windows Sockets specification.">
+ 	  	 			 <DIV CLASS="itemTextCheckboxB" ID="ENABLE_SOCKETS_TEXT" TITLE="Enables the appropriate header files, libraries, and the MFC Windows Sockets specification.">
+		  			  <LABEL ID="SOCKETS_TEXT" FOR="SOCKETS"><U>W</U>indows sockets</LABEL>
+	  	 			 </DIV>
+	  
+					 <BR>	  
+
+	  				 <INPUT TYPE="checkbox" CLASS="CheckBoxA" ACCESSKEY="a" ID="ACCESSIBILITY" TITLE="Enables Active Accessibility support.">
+ 	  	 			 <DIV CLASS="itemTextCheckboxB" ID="ENABLE_ACCESSIBILITY_TEXT" TITLE="Enables Active Accessibility support.">
+		  			  <LABEL ID="ACCESSIBILITY_TEXT" FOR="ACCESSIBILITY">Active <U>A</U>ccessibility</LABEL>
+	  	 			 </DIV>
+	  
+					 <BR>	  
+
+	  				 <INPUT TYPE="checkbox" CLASS="CheckBoxA" ACCESSKEY="m" ID="MANIFEST" TITLE="Generates an Application Manifest which enables the new Common Controls shipped with Windows XP.">
+ 	  	 			 <DIV CLASS="itemTextCheckboxB" ID="ENABLE_MANIFEST_TEXT" TITLE="Generates an Application Manifest which enables the new Common Controls shipped with Windows XP.">
+		  			  <LABEL ID="MANIFEST_TEXT" FOR="MANIFEST">Common Control <U>M</U>anifest</LABEL>
+	  	 			 </DIV>
+				</SPAN>
+  			  </TD>
+  			  <TD VALIGN="TOP" WIDTH="12">
+  				&nbsp;
+  			  </TD>
+  			  <TD VALIGN="TOP">
+    			<SPAN CLASS="itemTextTop" ID="mru_title">
+	 		 		 <LABEL ID="NUMFILES_TEXT" FOR="MRU_SIZE"><U>N</U>umber of files on recent file list:</LABEL>
+	  	 			 <BR>
+	  	 			 <SELECT CLASS="sidebtnNoWidth" ID="MRU_SIZE" ACCESSKEY="n" TITLE="" SIZE="1">
+		  			  <OPTION VALUE="0">0</OPTION>
+		  			  <OPTION VALUE="1">1</OPTION>
+		  			  <OPTION VALUE="2">2</OPTION>
+		  			  <OPTION VALUE="3">3</OPTION>
+		  			  <OPTION VALUE="4" SELECTED>4</OPTION>
+		  			  <OPTION VALUE="5">5</OPTION>
+		  			  <OPTION VALUE="6">6</OPTION>
+		  			  <OPTION VALUE="7">7</OPTION>
+		  			  <OPTION VALUE="8">8</OPTION>
+		  			  <OPTION VALUE="9">9</OPTION>
+		  			  <OPTION VALUE="10">10</OPTION>
+		  			  <OPTION VALUE="11">11</OPTION>
+		  			  <OPTION VALUE="12">12</OPTION>
+		  			  <OPTION VALUE="13">13</OPTION>
+		  			  <OPTION VALUE="14">14</OPTION>
+		  			  <OPTION VALUE="15">15</OPTION>
+		  			  <OPTION VALUE="16">16</OPTION>
+	   	 			 </SELECT>
+				</SPAN>
+  			  </TD>
+  			  <TD VALIGN="TOP" WIDTH="12">
+  				&nbsp;
+  			  </TD>
+ 			 </TR>
+			</TABLE>
+			
+	   	  <!--CLOSE OF CONTENT//-->
+		  </TD>
+		 </TR>
+		 <TR VALIGN="BOTTOM">
+		  <TD HEIGHT="48">
+	   	  <!--OPEN OF BUTTON HTML//-->
+		  
+		  	<TABLE HEIGHT="48" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+			<COL WIDTH="12"><COL><COL WIDTH="75"><COL WIDTH="4"><COL WIDTH="75"><COL WIDTH="4"><COL WIDTH="75"><COL WIDTH="12">
+			 <TR>
+  			  <TD VALIGN="TOP" CLASS="RULE" COLSPAN="8" HEIGHT="2">
+				<TABLE BORDER="0" WIDTH="100%" HEIGHT="1" CELLPADDING="0" CELLSPACING="0">
+  	 			 <TR VALIGN="TOP">
+  	  			  <TD HEIGHT="1" WIDTH="100%" BGCOLOR="BUTTONSHADOW"></TD>
+  	  			  <TD HEIGHT="1" WIDTH="1" BGCOLOR="WINDOW"></TD>
+  	 			 </TR>
+				</TABLE>
+  			  </TD>
+ 			  </TR>
+ 
+ 			  <TR>
+  			  <TD VALIGN="TOP" HEIGHT="11" COLSPAN="8">
+  				&nbsp;
+  			  </TD>
+ 			 </TR>
+ 
+ 			<TR>
+  			  <TD VALIGN="MIDDLE" HEIGHT="23" WIDTH="12">
+  				&nbsp;
+  			  </TD>
+  			  <TD VALIGN="TOP" HEIGHT="23">
+  				&nbsp;
+  			  </TD>
+  			  <TD VALIGN="MIDDLE" HEIGHT="23" WIDTH="75">
+  				<BUTTON CLASS="BUTTONS" ID="FinishBtn" onClick="OnFinish(document);">Finish</BUTTON>
+  			  </TD>
+  			  <TD VALIGN="MIDDLE" HEIGHT="23" WIDTH="4">
+  				&nbsp;
+  			  </TD>
+  			  <TD VALIGN="MIDDLE" HEIGHT="23" WIDTH="75">
+  				<BUTTON CLASS="BUTTONS" ID="CancelBtn" onClick="window.external.Finish(document, 'cancel');">Cancel</BUTTON>
+  			  </TD>
+  			  <TD VALIGN="MIDDLE" HEIGHT="23" WIDTH="4">
+  				&nbsp;
+  			  </TD>
+  			  <TD VALIGN="MIDDLE" HEIGHT="23" WIDTH="75">
+  				<BUTTON CLASS="BUTTONS" ID="HelpBtn" onClick="window.external.OnHelp('vc.appwiz.mfc.exe.advanced');">Help</BUTTON>
+  			  </TD>
+  			  <TD VALIGN="MIDDLE" HEIGHT="23" WIDTH="12">
+  				&nbsp;
+  			  </TD>
+ 			 </TR>
+ 
+ 			 <TR>
+  			  <TD VALIGN="TOP" HEIGHT="12" COLSPAN="8">
+  				&nbsp;
+  			  </TD>
+ 			 </TR>
+			</TABLE>
+			
+	   	  <!--CLOSE OF BUTTON HTML//-->
+		  </TD>
+		 </TR>
+		</TABLE>
+	
+  	<!--CLOSE OF NAVIGATION, CONTENT, AND BUTTON TABLES//-->
+ 	</TD>
+  </TR>
+</TABLE>
+
+</BODY>
+</HTML>
+
+<SCRIPT LANGUAGE="JSCRIPT">
+
+var tab_array = new Array();
+tab_array[0] = Default;
+tab_array[1] = AppType;
+tab_array[2] = CompoundDoc;
+tab_array[3] = DocTemp;
+tab_array[4] = DBSupport;
+tab_array[5] = UIFeatures;
+tab_array[6] = Advanced;
+tab_array[7] = XTToolkitPro;
+tab_array[8] = GeneratedClasses;
+
+function InitDocument(document)
+{
+	setDirection();
+	InitTabs();
+	window.external.Load(document);
+	InitControls();
+	ToggleImage();
+}
+
+function InitTabs()
+{
+	MouseOut(DBSupport);
+	MouseOut(CompoundDoc);
+	MouseOut(DocTemp);
+	MouseOut(XTToolkitPro);
+	CONTEXT_HELP.focus();
+	XTToolkitPro.className = "activelink";
+	if (window.external.FindSymbol("APP_TYPE_DLG"))
+	{
+		XTToolkitPro.className = "inactivelink";
+	}
+}
+
+function Next(document, linkto)
+{
+	window.external.Next(document, linkto);
+}
+
+function onClick(obj)
+{
+	if (obj == null || typeof(obj) == "undefined")
+		return;
+
+	if (obj.id == "DBSupport")
+	{
+		if (!window.external.FindSymbol("APP_TYPE_DLG"))
+		{ 
+			Next(document, "DBSupport.htm"); 
+		}
+	}
+	if (obj.id == "XTToolkitPro")
+	{
+		if (!window.external.FindSymbol("APP_TYPE_DLG"))
+		{ 
+			Next(document, "XTToolkitPro.htm"); 
+		}
+	}
+	if (obj.id == "CompoundDoc")
+	{
+		if (window.external.FindSymbol("DOCVIEW") && !window.external.IsSymbolDisabled("DOCVIEW"))
+		{ 
+			Next(document, "CompoundDoc.htm"); 
+		}
+	}
+	if (obj.id == "DocTemp")
+	{
+		if (window.external.FindSymbol("DOCVIEW") && !window.external.IsSymbolDisabled("DOCVIEW"))
+		{ 
+			Next(document, "DocTemp.htm"); 
+		}
+	}
+}
+
+function InitControls()
+{
+	MAPI.disabled = false;
+	mapi_title.disabled = false;
+	PRINTING.disabled = false;
+	print_title.disabled = false;
+	AUTOMATION.disabled = false;
+	auto_title.disabled = false;
+	MRU_SIZE.disabled = false;
+	mru_title.disabled = false;
+
+	if ((!window.external.FindSymbol("DOCVIEW") || window.external.IsSymbolDisabled("DOCVIEW")) && !window.external.FindSymbol("APP_TYPE_DLG"))
+	{
+		AUTOMATION.disabled = true;
+		AUTOMATION.checked = false;
+		auto_title.disabled = true;
+	}
+	if (window.external.FindSymbol("APP_TYPE_DLG") || !window.external.FindSymbol("DOCVIEW") || window.external.IsSymbolDisabled("DOCVIEW"))
+	{
+		MAPI.disabled = true;
+		MAPI.checked = false;
+		mapi_title.disabled = true;
+		PRINTING.disabled = true;
+		PRINTING.checked = false;
+		print_title.disabled = true;
+		MRU_SIZE.disabled = true;
+		mru_title.disabled = true;
+	}
+	if (window.external.FindSymbol("VIEW_BASE_CLASS") == "CFormView")
+	{
+		PRINTING.disabled = true;
+		PRINTING.checked = false;
+		print_title.disabled = true;
+	}
+	OnHelpFormatSelection();
+}
+
+function CheckDataSource()
+{
+	if (window.external.FindSymbol("DB_CONNECTION_STRING") == "" && ( window.external.FindSymbol("OLEDB") || window.external.FindSymbol("ODBC") ) )
+	{
+		L_Err1_Text = "You must specify a data source when database view option is selected";
+		window.external.ReportError(L_Err1_Text);
+		return false;
+	}
+	return true;
+}
+
+function OnFinish(document)
+{
+	if (!CheckDataSource())
+		return;
+
+	if (window.external.FindSymbol("ACTIVE_DOC_SERVER"))
+	{
+		var strExtension = window.external.FindSymbol("FILE_EXTENSION");
+		if (strExtension == "")
+		{
+			L_Err2_Text = "You must specify a Document File Extension in the Document Template Strings page";
+			window.external.ReportError(L_Err2_Text);
+			return;
+		}
+	}
+	OnWizFinish(document);
+}
+
+function OnHelpFormatSelection()
+{
+	HELPSTYLE_WINHELP.disabled = true;
+	WinHelpStyle.disabled = true;
+	HELPSTYLE_HTML.disabled = true;
+	HTMLStyle.disabled = true;
+
+	if (CONTEXT_HELP.checked)
+	{
+		HELPSTYLE_WINHELP.disabled = false;
+		WinHelpStyle.disabled = false;
+		HELPSTYLE_HTML.disabled = false;
+		HTMLStyle.disabled = false;
+		window.external.AddSymbol("CONTEXT_HELP", true );
+	}
+	else
+		window.external.AddSymbol("CONTEXT_HELP", false );
+
+	ToggleImage();
+}
+
+function ToggleImage()
+{
+	CONTEXT_HELP_IMAGE.style.display = "none";
+	SINGLE_DOC_IMAGE.style.display = "none";
+	if (CONTEXT_HELP.checked)
+		CONTEXT_HELP_IMAGE.style.display = "block";
+	else
+		SINGLE_DOC_IMAGE.style.display = "block";
+}
+
+</SCRIPT>
+<SCRIPT ID="INCLUDE_SCRIPT" LANGUAGE="JSCRIPT"></SCRIPT>
+<SCRIPT ID="INCLUDE_COMMON" LANGUAGE="JSCRIPT"></SCRIPT>
+<SCRIPT>
+	var strPath = "../../../";
+	strPath += window.external.GetHostLocale();
+	var strScriptPath = strPath + "/Script.js";
+	var strCommonPath = strPath + "/Common.js";
+	document.scripts("INCLUDE_SCRIPT").src = strScriptPath;
+	document.scripts("INCLUDE_COMMON").src = strCommonPath;
+</SCRIPT>

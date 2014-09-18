@@ -1,0 +1,253 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Button.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\CjSample.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_BUTTON_DIALOG DIALOGEX 0, 0, 326, 215
+STYLE WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Codejock Button Style Sample"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Regular",IDC_GBOX_REGULAR,7,7,93,67
+    PUSHBUTTON      "&Settings",IDC_BUTTON1,16,19,76,20
+    PUSHBUTTON      "Fin&d",IDC_BUTTON2,16,43,76,20
+    GROUPBOX        "Two Rows ",IDC_GBOX_TWOROWS,7,79,93,100
+    PUSHBUTTON      "Help",IDC_BUTTON3,16,94,76,35
+    PUSHBUTTON      "R&un...",IDC_BUTTON4,16,134,76,35
+    CONTROL         "Windows Classic",IDC_RAD_CLASSIC,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,117,26,69,10
+    CONTROL         "Microsoft Office XP",IDC_RAD_OFFICE_XP,"Button",
+                    BS_AUTORADIOBUTTON,117,38,77,10
+    CONTROL         "Microsoft Office 2003",IDC_RAD_OFFICE_2003,"Button",
+                    BS_AUTORADIOBUTTON,117,50,83,10
+    CONTROL         "Enable Windows XP Themes",IDC_CHK_WINXP_THEMES,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,210,26,108,10
+    CONTROL         "Enable Word Theme",IDC_CHK_WORD_THEME,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,210,37,81,10
+    LTEXT           "Border Style",IDC_TXT_BORDER,113,79,39,8
+    CONTROL         "",IDC_FRAME_BORDER,"Static",SS_BLACKFRAME | SS_SUNKEN,
+                    157,83,43,1
+    CONTROL         "&Normal",IDC_RAD_NORMAL,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,117,93,38,10
+    CONTROL         "Sem&i-Flat",IDC_RAD_SEMIFLAT,"Button",
+                    BS_AUTORADIOBUTTON,117,106,45,10
+    CONTROL         "&Flat",IDC_RAD_FLAT,"Button",BS_AUTORADIOBUTTON,117,119,
+                    27,10
+    LTEXT           "Justification",IDC_TXT_JUST,205,79,38,8
+    CONTROL         "",IDC_FRAME_JUST,"Static",SS_BLACKFRAME | SS_SUNKEN,250,
+                    82,69,1
+    CONTROL         "&Left Justified",IDC_RAD_LEFT,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,210,95,55,10
+    CONTROL         "&Center Justified",IDC_RAD_CENTER,"Button",
+                    BS_AUTORADIOBUTTON,210,106,64,10
+    CONTROL         "&Right Justified",IDC_RAD_RIGHT,"Button",
+                    BS_AUTORADIOBUTTON,210,117,60,10
+    LTEXT           "General Options",IDC_TXT_GENERAL,113,138,52,8
+    CONTROL         "",IDC_FRAME_GENERAL,"Static",SS_BLACKFRAME | SS_SUNKEN,
+                    169,141,150,1
+    CONTROL         "&Enabled",IDC_CHK_ENABLED,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,117,152,42,10
+    CONTROL         "Show Focus",IDC_CHK_FOCUS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,117,165,55,10
+    CONTROL         "Hilite pressed",IDC_CHK_HILITE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,210,152,58,10
+    CONTROL         "Hide Icons",IDC_HIDEICONS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,210,165,50,10
+    PUSHBUTTON      "Done",IDOK,252,194,67,14,WS_GROUP
+    CONTROL         "Alpha Icons",IDC_CHK_ALPHA,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,210,49,53,10
+    LTEXT           "Button Theme ",IDC_TXT_THEME,113,7,48,8
+    CONTROL         "",IDC_FRAME_THEME,"Static",SS_BLACKFRAME | SS_SUNKEN,
+                    165,11,154,1
+    CONTROL         "Toggle Buttons",IDC_CHECK_TOGGLE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,117,178,64,10
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Button MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Button\0"
+            VALUE "LegalCopyright", "©1998-2004 Codejock Software, All Rights Reserved.\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Button.EXE\0"
+            VALUE "ProductName", "Button Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_BUTTON_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 319
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 208
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_IMAGELIST           BITMAP  DISCARDABLE     "res\\imagelist.bmp"
+IDB_OK                  BITMAP  DISCARDABLE     "res\\ok.bmp"
+IDB_ALPHA_SETTINGS      BITMAP  DISCARDABLE     "res\\AlphaSettings.bmp"
+IDB_ALPHA_FIND          BITMAP  DISCARDABLE     "res\\AlphaFind.bmp"
+IDB_ALPHA_HELP          BITMAP  DISCARDABLE     "res\\AlphaHelp.bmp"
+IDB_ALPHA_RUN           BITMAP  DISCARDABLE     "res\\AlphaRun.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About Button Style Sample..."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Codejock Button Style Sample"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\Button.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,441 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "XTResource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_UKRAINIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+#ifndef _XTP_NO_BINARY_RESOURCES
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+XT_IDC_DRAGMOVE         CURSOR     DISCARDABLE        "Controls/res/dragmove.cur"
+XT_IDC_HAND             CURSOR     DISCARDABLE        "Controls/res/hand.cur"
+XT_IDC_DRAGNONE         CURSOR     DISCARDABLE        "Controls/res/dragnone.cur"
+XT_IDC_HANDNONE         CURSOR     DISCARDABLE        "Controls/res/handnone.cur"
+XT_IDC_DRAGCOPY         CURSOR     DISCARDABLE        "Controls/res/dragcopy.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+XT_IDB_BTN_OUT          BITMAP     DISCARDABLE        "Controls/res/btn_out.bmp"
+XT_IDB_LIGHTBULB        BITMAP     FIXED IMPURE       "Controls/res/lightbulb.bmp"
+XT_IDB_LISTEDIT         BITMAP     DISCARDABLE        "Controls/res/btn_listedit.bmp"
+XT_IDB_FONTTYPE         BITMAP     DISCARDABLE        "Controls/res/font.bmp"
+XT_IDB_SCROLL_ARW       BITMAP     DISCARDABLE        "Controls/res/scroll.bmp"
+XT_IDB_CHECKLISTBOX     BITMAP     FIXED IMPURE       "Controls/res/checklist.bmp"
+XT_IDB_CHECKLISTBOX_3D  BITMAP     FIXED IMPURE       "Controls/res/checklist_3d.bmp"
+XTP_IDB_TASKPANEL_GRIPPER BITMAP     DISCARDABLE        "Controls/res/TaskPanelGripper.bmp"
+XTP_IDB_TASKPANEL_GRIPPER_SPECIAL BITMAP     DISCARDABLE        "Controls/res/TaskPanelGripperSpecial.bmp"
+XT_IDR_TBAR_HDR         BITMAP     DISCARDABLE        "Controls/res/tbar_hdr.bmp"
+XT_IDR_TBAR_OUT         BITMAP     MOVEABLE PURE      "Controls/res/tbar_out.bmp"
+XT_IDR_TBAR_HEXEDIT     BITMAP     DISCARDABLE        "Controls/res/tbar_hex.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+XT_IDI_XTREME           ICON       DISCARDABLE        "res\\xtreme.ico"
+XTP_IDI_SHORTCUTS_EXPAND_ALPHA ICON       DISCARDABLE        "Controls/res/exp_alpha.ico"
+XTP_IDI_SHORTCUTS_EXPAND_NORMAL ICON       DISCARDABLE        "Controls/res/exp_normal.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+XT_IDR_TBAR_HDR TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      XT_IDC_SORTASC
+    BUTTON      XT_IDC_SORTDSC
+    SEPARATOR
+    BUTTON      XT_IDC_ALIGNLEFT
+    BUTTON      XT_IDC_ALIGNCENTER
+    BUTTON      XT_IDC_ALIGNRIGHT
+END
+
+XT_IDR_TBAR_OUT TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      XT_IDC_LARGEICON
+    BUTTON      XT_IDC_SMALLICON
+END
+
+XT_IDR_TBAR_HEXEDIT TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_EDIT_UNDO
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_EDIT_CLEAR
+END
+
+#endif
+
+#ifndef _XTP_NO_COMMONCONTROLS_RESOURCES
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+XT_IDD_TIPOFTHEDAY DIALOGEX 0, 0, 279, 157
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Полезный совет"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Закрити",IDOK,221,136,50,14
+    CONTROL         "&Показывать подсказки при запуске",XT_IDC_CHK_DAYTIP_SHOW,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,140,78,10
+    PUSHBUTTON      "Следующий совет",XT_IDC_BTN_DAYTIP_NEXT,162,136,50,14
+    CONTROL         "",XT_IDC_BTN_DAYTIP_BORDER,"Static",SS_GRAYFRAME | NOT 
+                    WS_VISIBLE,8,7,263,123
+END
+
+XT_IDD_COLORCUSTOM DIALOG DISCARDABLE  0, 0, 147, 161
+STYLE WS_CHILD | WS_DISABLED | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | 
+    WS_CAPTION
+CAPTION "Вибіркова"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Кольори:",XT_IDC_TXT_COLORS,2,4,43,10
+    CONTROL         "",XT_IDC_CLR_WND,"Static",SS_BLACKFRAME | WS_TABSTOP,3,
+                    15,119,86
+    CONTROL         "",XT_IDC_CLR_LUM,"Static",SS_BLACKFRAME | WS_TABSTOP,
+                    126,15,20,86
+    LTEXT           "Відтінок:",XT_IDC_TXT_HUE,7,108,18,8
+    EDITTEXT        XT_IDC_EDIT_HUE,33,106,33,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",XT_IDC_SPIN_HUE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,57,105,
+                    10,14
+    LTEXT           "Насичення:",XT_IDC_TXT_SAT,7,125,21,8
+    EDITTEXT        XT_IDC_EDIT_SAT,33,122,33,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin2",XT_IDC_SPIN_SAT,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,57,122,
+                    10,14
+    LTEXT           "Яскравість:",XT_IDC_TXT_LUM,7,140,23,8
+    EDITTEXT        XT_IDC_EDIT_LUM,33,138,33,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin3",XT_IDC_SPIN_LUM,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,57,137,
+                    10,14
+    LTEXT           "Червоний:",XT_IDC_TXT_RED,73,108,23,8
+    EDITTEXT        XT_IDC_EDIT_RED,97,106,33,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",XT_IDC_SPIN_RED,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,121,105,
+                    11,14
+    LTEXT           "Зелений:",XT_IDC_TXT_GREEN,73,125,23,8
+    EDITTEXT        XT_IDC_EDIT_GREEN,97,122,33,13,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin2",XT_IDC_SPIN_GREEN,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,121,122,
+                    11,14
+    LTEXT           "Синій:",XT_IDC_TXT_BLUE,73,140,23,8
+    EDITTEXT        XT_IDC_EDIT_BLUE,97,138,33,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin3",XT_IDC_SPIN_BLUE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,121,137,
+                    11,14
+END
+
+XT_IDD_COLORSTANDARD DIALOG DISCARDABLE  0, 0, 147, 161
+STYLE WS_CHILD | WS_DISABLED | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | 
+    WS_CAPTION
+CAPTION "(Стандартний випуск)"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Кольори:",XT_IDC_TXT_COLORS,2,4,43,10
+    CONTROL         "",XT_IDC_CLR_HEX,"Static",SS_BLACKFRAME | WS_TABSTOP,0,
+                    15,147,145
+END
+
+XT_IDD_WINDOWLIST DIALOG DISCARDABLE  0, 0, 301, 164
+STYLE WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Рядом"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "&Выберите окно:",IDC_STATIC,7,7,147,8
+    LISTBOX         XT_IDC_LBOX_WINDOWS,7,17,216,140,LBS_SORT | 
+                    LBS_OWNERDRAWFIXED | LBS_HASSTRINGS | 
+                    LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | WS_VSCROLL | 
+                    WS_HSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Перехід до вікна",XT_IDC_BTN_ACTIVATE,233,7,62,14
+    PUSHBUTTON      "ОК",IDOK,233,24,62,14
+    PUSHBUTTON      "Зберегти",XT_IDC_BTN_SAVE,233,41,62,14
+    PUSHBUTTON      "Закрыть окно",XT_IDC_BTN_CLOSEWINDOWS,233,58,62,14
+    PUSHBUTTON      "Каскадом",XT_IDC_BTN_CASCADE,233,75,62,14
+    PUSHBUTTON      "Згори донизу",XT_IDC_BTN_TILEHORZ,233,92,62,14
+    PUSHBUTTON      "Зліва направо",XT_IDC_BTN_TILEVERT,233,109,62,14
+    PUSHBUTTON      "Згорнути",XT_IDC_BTN_MINIMIZE,233,126,62,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+XT_IDM_POPUP MENU DISCARDABLE 
+BEGIN
+    POPUP "RClickOutlookBar"
+    BEGIN
+        MENUITEM "Дрібні значки",                XT_IDC_SMALLICON
+        MENUITEM "Великі значки",                XT_IDC_LARGEICON
+    END
+    POPUP "RClickHexEdit"
+    BEGIN
+        MENUITEM "Скасувати",                       ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "видалення до буфера обміну",                        ID_EDIT_CUT
+        MENUITEM "копіювання",                       ID_EDIT_COPY
+        MENUITEM "Paste",                      ID_EDIT_PASTE
+        MENUITEM "Видалити",                     ID_EDIT_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "виділення всіх об'єктів",                 ID_EDIT_SELECT_ALL
+    END
+    POPUP "RClickHeader"
+    BEGIN
+        MENUITEM "Сортування за зростанням",              XT_IDC_SORTASC
+        MENUITEM "Сортування за спаданням",             XT_IDC_SORTDSC
+        MENUITEM SEPARATOR
+        POPUP "Вирівнювання"
+        BEGIN
+            MENUITEM "За лівим краєм",                  XT_IDC_ALIGNLEFT
+            MENUITEM "Вирівняти по центру",                XT_IDC_ALIGNCENTER
+            MENUITEM "За правим краєм",                 XT_IDC_ALIGNRIGHT
+        END
+    END
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "XTResource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDC_BTN_NEW          "Створити"
+    XT_IDC_BTN_DELETE       "Видалити"
+    XT_IDC_BTN_UP           "Вгору"
+    XT_IDC_BTN_DOWN         "Вниз"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDS_REG_SETTINGS     "Settings"
+    XT_IDS_REG_WNDPOS       "Window Position"
+    XT_IDS_REG_COLINFO      "Column Info"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDS_NAME             "Назва"
+    XT_IDS_SIZE             "Розмір"
+    XT_IDS_TYPE             "Тип"
+    XT_IDS_MODIFIED         "Змінено"
+    XT_IDS_COLOR_AUTO       "Авто"
+    XT_IDS_COLOR_CUST       "Настройка..."
+    XT_IDS_SELDIR           "Выберите папку:"
+    XT_IDS_DOT              "..."
+    XT_IDS_DEFEXT           "*.*"
+    XT_IDS_DEFFILT          "Все файлы (*.*)|*.*||"
+    XT_IDS_DEFTITLE         "Имя каталога:"
+    XT_IDS_CLICKKEEPOPEN    "Щоб не закрилося"
+    XT_IDS_SE_0             "В операционной системе недостаточно памяти либо ресурсов."
+    XT_IDS_SE_ERR_FNF       "Указанный файл не найден."
+    XT_IDS_SE_ERR_PNF       "Указанный путь не верен."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDS_SE_ERR_ACCESSDENIED 
+                            "Операционная система запрещает доступ к указанному файлу."
+    XT_IDS_SE_ERR_OOM       "Не хватает памяти для завершения операции."
+    XT_IDS_SE_ERR_BAD_FORMAT 
+                            "Неверный exe-файл (не Win32® .exe или ошибка в образе .exe)."
+    XT_IDS_SE_ERR_SHARE     "Ошибка совместного доступа."
+    XT_IDS_SE_ERR_ASSOCINCOMPLETE 
+                            "Ассоциация с именем файла не полная либо испорчена."
+    XT_IDS_SE_ERR_DDETIMEOUT 
+                            "DDE транзакция не выполнена по истечении тайм-аута запроса."
+    XT_IDS_SE_ERR_DDEFAIL   "DDE транзакция не выполнена."
+    XT_IDS_SE_ERR_DDEBUSY   "DDE транзакция не выполнена из-за выполнения других DDE транзакций."
+    XT_IDS_SE_ERR_NOASSOC   "Ни одна из программ не связана с данным расширением имени файла."
+    XT_IDS_SE_ERR_DLLNOTFOUND 
+                            "Указанная загружаемая библиотека(dll) не найдена."
+    XT_IDS_SE_ERR_UNKOWN    "Неизвестная ошибка %d."
+    XT_IDS_CLR_BLACK        "Чорний"
+    XT_IDS_CLR_BROWN        "Коричневий"
+    XT_IDS_CLR_OLIVE_GREEN  "Оливковий"
+    XT_IDS_CLR_DARK_GREEN   "Темно-зелений"
+    XT_IDS_CLR_DARK_TEAL    "Темно-сизий"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDC_SORTASC          "Сортировка по убыванию\nСортировка по убыванию"
+    XT_IDC_SORTDSC          "Сортировка по убыванию\nСортировка по убыванию"
+    XT_IDC_ALIGNLEFT        "Выравнивание абзаца по левому полю\nПо левому краю"
+    XT_IDC_ALIGNCENTER      "Выравнивание абзаца по центру между полями\nПо центру"
+    XT_IDC_ALIGNRIGHT       "Выравнивание абзаца по правому полю\nПо правому краю"
+    XT_IDC_LARGEICON        "Отображение крупных значков\nКрупные значки"
+    XT_IDC_SMALLICON        "Отображение мелких значков\nМелкие значки"
+    XT_IDC_REMOVEITEM       "Видалити з панелі Outlook"
+    XT_IDC_RENAMEITEM       "Перейменувати ярлик"
+    XT_IDC_REMOVEGROUP      "Видалити групу"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDC_RENAMEGROUP      "Перейменувати групу"
+    XT_IDS_HEX              "Шестнадцатеричный файл"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDS_STD_COLORS       "Стандартні кольори"
+    XT_IDS_TIPTEXT          "Підказка"
+    XT_IDS_DIDYOUKNOW       "Чи знаєте ви..."
+    XT_IDS_FILE_ABSENT      "Указанный файл не существует."
+    XT_IDS_FILE_CORRUPT     "Ошибка чтения файла."
+    XT_IDS_COLOR_CAPTION    "Кольори"
+    XT_IDS_NEW              "Створити"
+    XT_IDS_CURRENT          "Текущий"
+    XT_IDS_DIRECTORIES      "Каталоги:"
+    XT_IDS_FILES            "Файлы:"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDS_CLR_DARK_BLUE    "Темно-синій"
+    XT_IDS_CLR_INDIGO       "Індиго"
+    XT_IDS_CLR_GRAY80       "Сірий 80%"
+    XT_IDS_CLR_DARK_RED     "Темно-червоний"
+    XT_IDS_CLR_ORANGE       "Оранжевий"
+    XT_IDS_CLR_DARK_YELLOW  "Коричнево-зелений"
+    XT_IDS_CLR_GREEN        "Зелений"
+    XT_IDS_CLR_TEAL         "Синьо-зелений"
+    XT_IDS_CLR_BLUE         "Синій"
+    XT_IDS_CLR_BLUEGRAY     "Сизий"
+    XT_IDS_CLR_GRAY50       "Сірий 50%"
+    XT_IDS_CLR_RED          "Червоний"
+    XT_IDS_CLR_LIGHTORANGE  "Світло-оранжевий"
+    XT_IDS_CLR_LIME         "Свiтло-зелений"
+    XT_IDS_CLR_SEA_GREEN    "Смарагдовий"
+    XT_IDS_CLR_AQUA         "Темно-бірюзовий"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDS_CLR_LIGHT_BLUE   "Темно-блакитний"
+    XT_IDS_CLR_VIOLET       "Фіолетовий"
+    XT_IDS_CLR_GRAY40       "Сірий 40%"
+    XT_IDS_CLR_PINK         "Ліловий"
+    XT_IDS_CLR_GOLD         "Золото"
+    XT_IDS_CLR_YELLOW       "Жовтий"
+    XT_IDS_CLR_BRIGHT_GREEN "Яскраво-зелений"
+    XT_IDS_CLR_TURQUOISE    "Бірюзовий"
+    XT_IDS_CLR_SKY_BLUE     "Блакитний"
+    XT_IDS_CLR_PLUM         "Вишневий"
+    XT_IDS_CLR_GRAY25       "Сірий 25%"
+    XT_IDS_CLR_ROSE         "Рожевий"
+    XT_IDS_CLR_TAN          "Світло-коричневий"
+    XT_IDS_CLR_LIGHT_YELLOW "Світло-жовтий"
+    XT_IDS_CLR_LIGHT_GREEN  "Блідо-зелений"
+    XT_IDS_CLR_LIGHT_TURQUOISE "Світло-бірюзовий"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDS_CLR_PALE_BLUE    "Блідо-блакитний"
+    XT_IDS_CLR_LAVENDER     "Бузковий"
+    XT_IDS_CLR_WHITE        "Білий"
+    XT_IDS_CLR_GRAY         "Темно-сірий"
+    XT_IDS_CLR_MAROON       "Темно-червоний"
+    XT_IDS_CLR_OLIVE        "Оливковий"
+    XT_IDS_CLR_NAVY         "Темно-синій"
+    XT_IDS_CLR_PURPLE       "Фіолетовий"
+    XT_IDS_CLR_SILVER       "Срібло"
+    XT_IDS_CLR_FUCHSIA      "Рожевий"
+    XT_IDS_CLR_NOFILL       "відмова від заливки"
+    XT_IDS_CLR_NOFILL_TIP   "Немає кольору"
+    XT_IDS_AUTOMATIC        "Авто"
+    XT_IDS_AUTOMATIC_TIP    "Автоколір"
+    XT_IDS_MORE_COLORS      "Інші кольори..."
+    XT_IDS_MORE_COLORS_TIP  "Додаткові кольори"
+END
+
+#endif
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_ID_SHORTCUT_SHOW_MORE "Показать больше кнопок"
+    XTP_ID_SHORTCUT_SHOW_FEWER "Показать меньше кнопок"
+    XTP_IDS_SHORTCUT_CONFIGURE "Настройка"
+END
+
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

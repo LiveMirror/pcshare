@@ -1,0 +1,53 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: PcLKey - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\shesh\LOCALS~1\Temp\RSPF5.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "PCLKEY_EXPORTS" /Fp"Release/PcLKey.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\开发代码\普通定做\PcLKey\Lzw.cpp"
+"D:\开发代码\普通定做\PcLKey\MyFunc.cpp"
+"D:\开发代码\普通定做\PcLKey\MyKeyMTrans.cpp"
+"D:\开发代码\普通定做\PcLKey\PcLKey.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\shesh\LOCALS~1\Temp\RSPF5.tmp" 
+Creating temporary file "C:\DOCUME~1\shesh\LOCALS~1\Temp\RSPF6.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "PCLKEY_EXPORTS" /Fp"Release/PcLKey.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\开发代码\普通定做\PcLKey\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\shesh\LOCALS~1\Temp\RSPF6.tmp" 
+Creating temporary file "C:\DOCUME~1\shesh\LOCALS~1\Temp\RSPF7.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /dll /incremental:no /pdb:"Release/PcLkey.pdb" /machine:I386 /def:".\PcLKey.def" /out:"../bin/update/PcLkey.dll" /implib:"Release/PcLkey.lib" /OPT:NOWIN98 
+".\Release\Lzw.obj"
+".\Release\MyFunc.obj"
+".\Release\MyKeyMTrans.obj"
+".\Release\PcLKey.obj"
+".\Release\StdAfx.obj"
+]
+Creating command line "link.exe @C:\DOCUME~1\shesh\LOCALS~1\Temp\RSPF7.tmp"
+<h3>Output Window</h3>
+Compiling...
+StdAfx.cpp
+Compiling...
+Lzw.cpp
+MyFunc.cpp
+MyKeyMTrans.cpp
+PcLKey.cpp
+Generating Code...
+Linking...
+   Creating library Release/PcLkey.lib and object Release/PcLkey.exp
+PcLkey.exp : warning LNK4070: /OUT:dghuyyjo.dll directive in .EXP differs from output filename "../bin/update/PcLkey.dll"; ignoring directive
+
+
+
+<h3>Results</h3>
+PcLkey.dll - 0 error(s), 1 warning(s)
+</pre>
+</body>
+</html>

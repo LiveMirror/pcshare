@@ -1,0 +1,130 @@
+font.title
+{
+	FONT-WEIGHT: bold;
+	FONT-SIZE: 18px
+}
+td
+{
+	FONT-SIZE: 11px;
+	FONT-FAMILY: Tahoma,Verdana,Arial,Helvetica,Sans-Serif
+}
+td.pageheading
+{
+	COLOR: #ffffff
+}
+h3
+{
+	COLOR: #0347bf;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+a
+{
+	COLOR: #0347bf;
+	TEXT-DECORATION: none
+}
+a:active
+{
+	COLOR: #ff9900;
+	TEXT-DECORATION: none
+}
+a:hover
+{
+	COLOR: #ff9900;
+	TEXT-DECORATION: none
+}
+a:visited
+{
+	
+}
+body
+{
+  margin: 0px;
+  background-color: #ffffff;
+}
+body, .normal
+{
+	FONT-SIZE: 11px;
+	FONT-FAMILY: Tahoma,Verdana,Arial,Helvetica,Sans-Serif
+}
+.infotable
+{
+	BACKGROUND-COLOR: #f0f0e0;
+	BORDER-BOTTOM: #ffffff 0px solid;
+	BORDER-COLLAPSE: collapse;
+	BORDER-LEFT: #ffffff 0px solid;
+	BORDER-RIGHT: #ffffff 0px solid;
+	BORDER-TOP: #ffffff 0px solid;
+	FONT-SIZE: 100%;
+	MARGIN-LEFT: 10px
+}
+.issuetable
+{
+	BACKGROUND-COLOR: #ffffe8;
+	BORDER-COLLAPSE: collapse;
+	COLOR: #000000;
+	FONT-SIZE: 100%;
+	MARGIN-BOTTOM: 10px;
+	MARGIN-LEFT: 13px;
+	MARGIN-TOP: 0px
+}
+.issuetitle
+{
+	BACKGROUND-COLOR: #ffffff;
+	BORDER-BOTTOM: #dcdcdc 1px solid;
+	BORDER-TOP: #dcdcdc 1px;
+	COLOR: #003366;
+	FONT-WEIGHT: normal
+}
+.header
+{
+	BACKGROUND-COLOR: #0347BF;
+	BORDER-BOTTOM: #ffffff 1px solid;
+	BORDER-LEFT: #ffffff 1px solid;
+	BORDER-RIGHT: #ffffff 1px solid;
+	BORDER-TOP: #ffffff 1px solid;
+	COLOR: #ffffff;
+	FONT-FAMILY: "Verdana", sans-serif;
+	FONT-SIZE: 100%;
+	FONT-WEIGHT: bold
+}
+.issuehdr
+{
+	BACKGROUND-COLOR: #E0EBF5;
+	BORDER-BOTTOM: #dcdcdc 1px solid;
+	BORDER-TOP: #dcdcdc 1px solid;
+	COLOR: #000000;
+	FONT-WEIGHT: normal
+}
+.issuenone
+{
+	BACKGROUND-COLOR: #ffffff;
+	BORDER-BOTTOM: 0px;
+	BORDER-LEFT: 0px;
+	BORDER-RIGHT: 0px;
+	BORDER-TOP: 0px;
+	COLOR: #000000;
+	FONT-WEIGHT: normal
+}
+.content
+{
+	BACKGROUND-COLOR: #a4c2f5;
+	BORDER-BOTTOM: #ffffff 1px solid;
+	BORDER-LEFT: #ffffff 1px solid;
+	BORDER-RIGHT: #ffffff 1px solid;
+	BORDER-TOP: #ffffff 1px solid;
+	PADDING-LEFT: 3px;
+	FONT-FAMILY: "Verdana", sans-serif;
+	FONT-SIZE: 100%;
+}
+.issuecontent
+{
+	BACKGROUND-COLOR: #ffffff;
+	BORDER-BOTTOM: #dcdcdc 1px solid;
+	BORDER-TOP: #dcdcdc 1px solid;
+	PADDING-LEFT: 3px
+}
+.expandable
+{
+	CURSOR: hand
+}

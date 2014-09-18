@@ -1,0 +1,54 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: NetServer - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Release/NetServer.res" /d "NDEBUG" /d "_AFXDLL" "E:\WORK\2010年备份\20100411\开发代码\版本工具\NetServer\NetServer.rc"" 
+Creating temporary file "C:\DOCUME~1\shesh\LOCALS~1\Temp\RSP6.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Release/" /Fp"Release/NetServer.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"E:\WORK\2010年备份\20100411\开发代码\版本工具\NetServer\MySocket.cpp"
+"E:\WORK\2010年备份\20100411\开发代码\版本工具\NetServer\NetServer.cpp"
+"E:\WORK\2010年备份\20100411\开发代码\版本工具\NetServer\NetServerDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\shesh\LOCALS~1\Temp\RSP6.tmp" 
+Creating temporary file "C:\DOCUME~1\shesh\LOCALS~1\Temp\RSP7.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Release/" /Fp"Release/NetServer.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"E:\WORK\2010年备份\20100411\开发代码\版本工具\NetServer\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\shesh\LOCALS~1\Temp\RSP7.tmp" 
+Creating temporary file "C:\DOCUME~1\shesh\LOCALS~1\Temp\RSP8.tmp" with contents
+[
+Ws2_32.lib Shlwapi.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/NetServer.pdb" /machine:I386 /out:"Release/NetServer.exe" 
+".\Release\MySocket.obj"
+".\Release\NetServer.obj"
+".\Release\NetServerDlg.obj"
+".\Release\StdAfx.obj"
+".\Release\NetServer.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\shesh\LOCALS~1\Temp\RSP8.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+MySocket.cpp
+NetServer.cpp
+NetServerDlg.cpp
+Generating Code...
+Linking...
+Creating command line "bscmake.exe /nologo /o"Release/NetServer.bsc"  ".\Release\StdAfx.sbr" ".\Release\MySocket.sbr" ".\Release\NetServer.sbr" ".\Release\NetServerDlg.sbr""
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+NetServer.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

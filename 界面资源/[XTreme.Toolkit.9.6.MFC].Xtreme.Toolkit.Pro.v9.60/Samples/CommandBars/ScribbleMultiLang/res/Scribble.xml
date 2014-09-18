@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<Resources>
+	<Resource id="9300" type="string" value="&amp;Добавить или удалить кнопки" />
+	<Resource id="9304" type="dialog" value="DIALOG 0, 0, 230, 150 CAPTION &quot;Панели &amp;инструментов&quot; STYLE 0x40C00040 FONT 8, &quot;MS Sans Serif&quot;
+{
+  STATIC &quot;Па&amp;нели инструментов:&quot;, 65535, 4, 5, 86, 8, 0x50020000
+  LISTBOX &quot;&quot;, 9305, 4, 15, 150, 131, 0x50A10151
+  BUTTON &quot;Со&amp;здать...&quot;, 9308, 158, 15, 70, 14, 0x50010000
+  BUTTON &quot;П&amp;ереименовать...&quot;, 9309, 158, 33, 70, 14, 0x50010000
+  BUTTON &quot;&amp;Удалить&quot;, 9310, 158, 51, 70, 14, 0x50010000
+  BUTTON &quot;С&amp;брос...&quot;, 9311, 158, 69, 70, 14, 0x50010000
+}" />
+	<Resource id="9307" type="string" value="Закрыть" />
+	<Resource id="9312" type="string" value="Настройка" />
+	<Resource id="9313" type="dialog" value="DIALOG 0, 0, 230, 150 CAPTION &quot;&amp;Команды&quot; STYLE 0x40C00040 FONT 8, &quot;MS Sans Serif&quot;
+{
+  STATIC &quot;Чтобы добавить команду на панель инструментов, выберите категорию и перетащите команду из этого окна на панель.&quot;, 65535, 4, 5, 220, 19, 0x50020000
+  STATIC &quot;Кате&amp;гории:&quot;, 65535, 4, 25, 38, 8, 0x50020000
+  LISTBOX &quot;&quot;, 9338, 4, 35, 81, 103, 0x50A10101
+  STATIC &quot;Ко&amp;манды:&quot;, 65535, 90, 25, 38, 8, 0x50020000
+  LISTBOX &quot;&quot;, 9327, 90, 35, 140, 103, 0x50A10111
+}" />
+	<Resource id="9314" type="string" value="Новое меню" />
+	<Resource id="9328" type="dialog" value="DIALOG 0, 0, 186, 52 CAPTION &quot;Создание панели инструментов&quot; STYLE 0x80C800C0 FONT 8, &quot;MS Sans Serif&quot;
+{
+  STATIC &quot;Панель &amp;инструментов:&quot;, 65535, 4, 4, 119, 8, 0x50020000
+  EDIT &quot;&quot;, 9329, 4, 15, 178, 12, 0x50810080
+  BUTTON &quot;ОК&quot;, 1, 78, 34, 50, 14, 0x50010001
+  BUTTON &quot;Отмена&quot;, 2, 132, 34, 50, 14, 0x50010000
+}" />
+	<Resource id="9330" type="string" value="Настраиваемая %d" />
+	<Resource id="9331" type="string" value="Необходимо ввести имя панели инструментов." />
+	<Resource id="9332" type="string" value="Извините, ваш лимит исчерпан." />
+	<Resource id="9333" type="string" value="Панель инструментов '%s' уже существует. Укажите другое имя." />
+	<Resource id="9334" type="string" value="Переименование панели" />
+	<Resource id="9335" type="string" value="Удалить панель инструментов '%s'?" />
+	<Resource id="9336" type="menu" value="MENU
+{
+POPUP &quot;Настройка&quot;
+{
+MENUITEM &quot;С&amp;брос&quot;, 9315
+MENUITEM &quot;&amp;Удалить&quot;, 9316
+MENUITEM SEPARATOR
+MENUITEM &quot;Им&amp;я:&quot;, 9317
+MENUITEM SEPARATOR
+MENUITEM &quot;&amp;Копировать значок на кнопке&quot;, 9318
+MENUITEM &quot;Вст&amp;авить значок для кнопки&quot;, 9319
+MENUITEM &quot;&amp;Восстановить значок на кнопке&quot;, 9320
+MENUITEM &quot;&amp;Изменить значок на кнопке...&quot;, 9321
+MENUITEM &quot;Выбрать з&amp;начок для кнопки&quot;, 9322
+MENUITEM SEPARATOR
+MENUITEM &quot;&amp;Основной стиль&quot;, 9323
+MENUITEM &quot;Тол&amp;ько текст&quot;, 9325
+MENUITEM &quot;Значок и &amp;текст&quot;, 9324
+MENUITEM SEPARATOR
+MENUITEM &quot;Начать &amp;группу&quot;, 9326
+}
+}" />
+	<Resource id="9337" type="string" value="Все команды" />
+	<Resource id="9339" type="dialog" value="DIALOG 0, 0, 230, 150 CAPTION &quot;П&amp;араметры&quot; STYLE 0x40C00040 FONT 8, &quot;MS Sans Serif&quot;
+{
+  STATIC &quot;Настраиваемые меню и панели инструментов&quot;, 65535, 7, 5, 160, 8, 0x50020000
+  STATIC &quot;&quot;, 65535, 171, 9, 53, 1, 0x50000010
+  BUTTON &quot;Всегда показывать полные &amp;меню&quot;, 9340, 16, 17, 207, 10, 0x50010003
+  BUTTON &quot;Показывать &amp;полные меню после короткой задержки&quot;, 9341, 28, 29, 195, 10, 0x50010003
+  BUTTON &quot;С&amp;брос&quot;, 9342, 16, 42, 60, 14, 0x50010000
+  STATIC &quot;Другие&quot;, 65535, 7, 70, 28, 8, 0x50020000
+  STATIC &quot;&quot;, 65535, 35, 74, 194, 1, 0x50000010
+  BUTTON &quot;Крупны&amp;е значки&quot;, 9343, 16, 82, 207, 10, 0x50010003
+  BUTTON &quot;&amp;Отображать подсказки для кнопок&quot;, 9344, 16, 93, 207, 10, 0x50010003
+  BUTTON &quot;Вклю&amp;чить в подсказки сочетания клавиш&quot;, 9345, 28, 104, 195, 10, 0x50010003
+  STATIC &quot;&amp;Эффект при выводе меню:&quot;, 65535, 16, 120, 94, 8, 0x50020000
+  COMBOBOX &quot;&quot;, 9410, 113, 117, 81, 65, 0x50210003
+}" />
+	<Resource id="9346" type="string" value="Будут удалены сведения о командах, использованных в данном приложении, и восстановлен набор команд по умолчанию, отображаемых в меню и на панелях инструментов.  Все явные настройки будут сохранены.   Выполнить операцию?" />
+	<Resource id="9347" type="string" value="Указано неверное число." />
+	<Resource id="9348" type="string" value="Число должно лежать в диапазоне от 1 до 1638." />
+	<Resource id="9349" type="string" value="Отменить изменения панели инструментов '%s'?" />
+	<Resource id="9350" type="string" value="Встроенные меню" />
+	<Resource id="9351" type="dialog" value="DIALOG 0, 0, 253, 185 CAPTION &quot;Редактор кнопок&quot; STYLE 0x90C800C0 FONT 8, &quot;MS Sans Serif&quot;
+{
+  STATIC &quot;Рисунок&quot;, 65535, 7, 7, 35, 8, 0x50020000
+  BUTTON &quot;Цвета&quot;, 65535, 102, 106, 80, 71, 0x50000007
+  BUTTON &quot;Перемещение&quot;, 65535, 101, 72, 81, 31, 0x50000007
+  BUTTON &quot;Просмотр&quot;, 65535, 7, 106, 86, 71, 0x50000007
+  BUTTON &quot;Инструменты&quot;, 65535, 101, 9, 81, 60, 0x50000007
+  BUTTON &quot;ОК&quot;, 1, 193, 7, 50, 14, 0x50010001
+  BUTTON &quot;Отмена&quot;, 2, 193, 25, 50, 14, 0x50010000
+  STATIC &quot;&quot;, 9361, 7, 17, 86, 80, 0x50000107
+  STATIC &quot;&quot;, 9362, 14, 117, 73, 54, 0x50020201
+  STATIC &quot;Удалить&quot;, 65535, 135, 156, 39, 8, 0x50020000
+  STATIC &quot;&quot;, 9359, 116, 153, 15, 15, 0x50020100
+  STATIC &quot;Инструменты&quot;, 9358, 112, 21, 60, 43, 0x40820201
+  STATIC &quot;Перемещение&quot;, 9354, 111, 83, 62, 12, 0x40820201
+  STATIC &quot;&quot;, 9360, 109, 144, 15, 15, 0x5002010C
+  STATIC &quot;Цвета&quot;, 9357, 107, 121, 68, 12, 0x40820201
+}" />
+	<Resource id="9363" type="string" value="\nКарандаш" />
+	<Resource id="9364" type="string" value="\nЗаливка" />
+	<Resource id="9365" type="string" value="\nВыбор цвета" />
+	<Resource id="9366" type="string" value="\nЛиния" />
+	<Resource id="9367" type="string" value="\nПрямоугольник" />
+	<Resource id="9368" type="string" value="\nЭллипс" />
+	<Resource id="9369" type="string" value="\nКопировать" />
+	<Resource id="9370" type="string" value="\nВставить" />
+	<Resource id="9371" type="string" value="\nОчистить" />
+	<Resource id="9372" type="string" value="\nОтменить" />
+	<Resource id="9373" type="string" value="\nВернуть" />
+	<Resource id="9374" type="string" value="\nЗагрузить" />
+	<Resource id="9379" type="dialog" value="DIALOG 0, 0, 230, 150 CAPTION &quot;&amp;Клавиатура&quot; STYLE 0x40C00040 FONT 8, &quot;MS Sans Serif&quot;
+{
+  STATIC &quot;Ко&amp;манды:&quot;, 9380, 2, 28, 38, 8, 0x50020000
+  LISTBOX &quot;&quot;, 9381, 2, 39, 93, 74, 0x50A10141
+  STATIC &quot;У&amp;же назначены:&quot;, 9382, 100, 28, 67, 8, 0x50020000
+  LISTBOX &quot;&quot;, 9383, 100, 38, 75, 49, 0x50A10141
+  STATIC &quot;&amp;Новая клавиша:&quot;, 9384, 100, 91, 76, 8, 0x50020000
+  EDIT &quot;&quot;, 9385, 100, 101, 75, 12, 0x50810080
+  BUTTON &quot;Н&amp;азначить&quot;, 9386, 179, 39, 49, 14, 0x50010000
+  BUTTON &quot;&amp;Удалить&quot;, 9387, 179, 56, 49, 14, 0x50010000
+  BUTTON &quot;С&amp;брос&quot;, 9388, 179, 73, 49, 14, 0x50010000
+  STATIC &quot;Описание:&quot;, 9389, 2, 119, 38, 8, 0x50020000
+  STATIC &quot;&quot;, 9390, 2, 129, 173, 19, 0x50020000
+  STATIC &quot;Ка&amp;тегория:&quot;, 65535, 2, 5, 50, 8, 0x50020000
+  COMBOBOX &quot;&quot;, 9391, 2, 15, 93, 147, 0x50210003
+}" />
+	<Resource id="9392" type="string" value="Вы действительно хотите сбросить назначения клавиш? Это действие удалит все индивидуальные назначения клавиш на текстовом уровне." />
+	<Resource id="9393" type="string" value="Эта комбинация клавиш уже используется\nНазначать новою команду для этой комбинации клавиш?" />
+	<Resource id="9394" type="string" value="Due to a software update the toolbar '%s' has changed. Would you like to reset your customized toolbar and load the new one?" />
+	<Resource id="9395" type="string" value="Сброс" />
+	<Resource id="9396" type="string" value="Все файлы рисунков|*.bmp;*.wmf;*.emf;*.ico;*.dib;*.cur;*.gif;*.jpg|Точечные(*.Bmp;*.Dib)|*.bmp;*.dib|Мета-файлы(*.Wmf;*.Emf)|*.wmf;*.emf|Значки(*.Ico;*.Cur)|*.ico;*.cur|GIF(*.Gif)|*.gif|JPEG(*.Jpg)|*.jpg|Все файлы(*.*)|*.*||" />
+	<Resource id="9400" type="string" value="\nПараметры панелей инструментов" />
+	<Resource id="9401" type="string" value="\nЗакрыть" />
+	<Resource id="9403" type="string" value="\nЗакрыть окно" />
+	<Resource id="9404" type="string" value="\nВосстановить окно" />
+	<Resource id="9405" type="string" value="\nСвернуть окно" />
+	<Resource id="9411" type="string" value="(По умолчанию)" />
+	<Resource id="9412" type="string" value="Случайный выбор" />
+	<Resource id="9413" type="string" value="Развертывание" />
+	<Resource id="9414" type="string" value="Соскальзывание" />
+	<Resource id="9415" type="string" value="Угасание" />
+	<Resource id="9416" type="string" value="Нет" />
+	<Resource id="9420" type="string" value="\nПереместить в предыдыдущую группу" />
+	<Resource id="9421" type="string" value="\nПереместить в следующую группу" />
+	<Resource id="9422" type="string" value="\nНовая горизонтальная группа" />
+	<Resource id="9423" type="string" value="\nНовая вертикальная группа" />
+	<Resource id="9424" type="string" value="Отмена" />
+	<Resource id="9450" type="string" value="Черный" />
+	<Resource id="9451" type="string" value="Коричневый" />
+	<Resource id="9452" type="string" value="Оливковый" />
+	<Resource id="9453" type="string" value="Темно-зеленый" />
+	<Resource id="9454" type="string" value="Темно-сизый" />
+	<Resource id="9455" type="string" value="Темно-синий" />
+	<Resource id="9456" type="string" value="Индиго" />
+	<Resource id="9457" type="string" value="Серый 80%" />
+	<Resource id="9458" type="string" value="Темно-красный" />
+	<Resource id="9459" type="string" value="Оранжевый" />
+	<Resource id="9460" type="string" value="Коричнево-зеленый" />
+	<Resource id="9461" type="string" value="Зеленый" />
+	<Resource id="9462" type="string" value="Сине-зеленый" />
+	<Resource id="9463" type="string" value="Синий" />
+	<Resource id="9464" type="string" value="Сизый" />
+	<Resource id="9465" type="string" value="Серый 50%" />
+	<Resource id="9466" type="string" value="Красный" />
+	<Resource id="9467" type="string" value="Светло-оранжевый" />
+	<Resource id="9468" type="string" value="Травяной" />
+	<Resource id="9469" type="string" value="Изумрудный" />
+	<Resource id="9470" type="string" value="Темно-бирюзовый" />
+	<Resource id="9471" type="string" value="Темно-голубой" />
+	<Resource id="9472" type="string" value="Фиолетовый" />
+	<Resource id="9473" type="string" value="Серый 40%" />
+	<Resource id="9474" type="string" value="Лиловый" />
+	<Resource id="9475" type="string" value="Золотистый" />
+	<Resource id="9476" type="string" value="Желтый" />
+	<Resource id="9477" type="string" value="Ярко-зеленый" />
+	<Resource id="9478" type="string" value="Бирюзовый" />
+	<Resource id="9479" type="string" value="Голубой" />
+	<Resource id="9480" type="string" value="Вишневый" />
+	<Resource id="9481" type="string" value="Серый 25%" />
+	<Resource id="9482" type="string" value="Розовый" />
+	<Resource id="9483" type="string" value="Светло-коричневый" />
+	<Resource id="9484" type="string" value="Светло-желтый" />
+	<Resource id="9485" type="string" value="Бледно-зеленый" />
+	<Resource id="9486" type="string" value="Светло-бирюзовый" />
+	<Resource id="9487" type="string" value="Бледно-голубой" />
+	<Resource id="9488" type="string" value="Сиреневый" />
+	<Resource id="9489" type="string" value="Белый" />
+	<Resource id="9490" type="string" value="Темно-серый" />
+	<Resource id="9491" type="string" value="Малиновый" />
+	<Resource id="9492" type="string" value="Оливковый" />
+	<Resource id="9493" type="string" value="Темно-синий" />
+	<Resource id="9494" type="string" value="Сиреневый" />
+	<Resource id="9495" type="string" value="Серебро" />
+	<Resource id="9496" type="string" value="Розовый" />
+	<Resource id="9497" type="string" value="отказ от заливки\nотказ от заливки" />
+	<Resource id="9498" type="string" value="Автоцвет\nАвтоцвет" />
+	<Resource id="9499" type="string" value="Дополнительные цвета..." />
+	<Resource id="35001" type="string" value="\n&amp;Настройка..." />
+	<Resource id="128" type="menu" value="MENU
+{
+POPUP &quot;&amp;Файл&quot;
+{
+MENUITEM &quot;&amp;Новый	Ctrl+N&quot;, 57600
+MENUITEM &quot;&amp;Открыть...	Ctrl+O&quot;, 57601
+MENUITEM &quot;Recent File&quot;, 57616
+MENUITEM SEPARATOR
+MENUITEM &quot;&amp;Выход&quot;, 57665
+}
+POPUP &quot;&amp;Языки&quot;
+{
+MENUITEM &quot;Английский&quot;, 32775
+MENUITEM &quot;Немецкий&quot;, 32776
+MENUITEM &quot;Японский&quot;, 32777
+MENUITEM &quot;Арабский&quot;, 32778
+MENUITEM &quot;Русский&quot;, 32779
+}
+POPUP &quot;&amp;Вид&quot;
+{
+MENUITEM &quot;Тулбар&quot;, 59392
+MENUITEM &quot;Строка статуса&quot;, 59393
+}
+POPUP &quot;&amp;Помощь&quot;
+{
+MENUITEM &quot;&amp;Оглавление&quot;, 57667
+MENUITEM SEPARATOR
+MENUITEM &quot;&amp;О Scribble...&quot;, 57664
+}
+}" />
+	<Resource id="129" type="menu" value="MENU
+{
+POPUP &quot;&amp;Файл&quot;
+{
+MENUITEM &quot;&amp;Новый	Ctrl+N&quot;, 57600
+MENUITEM &quot;&amp;Открыть...	Ctrl+O&quot;, 57601
+MENUITEM &quot;&amp;Закрыть&quot;, 57602
+MENUITEM &quot;&amp;Сохранить	Ctrl+S&quot;, 57603
+MENUITEM &quot;Сохранить как...&quot;, 57604
+MENUITEM SEPARATOR
+MENUITEM &quot;&amp;Печать...	Ctrl+P&quot;, 57607
+MENUITEM SEPARATOR
+MENUITEM &quot;Послать по почте...&quot;, 57612
+MENUITEM SEPARATOR
+MENUITEM &quot;Recent File&quot;, 57616
+MENUITEM SEPARATOR
+MENUITEM &quot;&amp;Выход&quot;, 57665
+}
+POPUP &quot;&amp;Языки&quot;
+{
+MENUITEM &quot;Английский&quot;, 32775
+MENUITEM &quot;Немецкий&quot;, 32776
+MENUITEM &quot;Японский&quot;, 32777
+MENUITEM &quot;Арабский&quot;, 32778
+MENUITEM &quot;Русский&quot;, 32779
+}
+POPUP &quot;&amp;Редактор&quot;
+{
+MENUITEM &quot;&amp;Отмена	Ctrl+Z&quot;, 57643
+MENUITEM SEPARATOR
+MENUITEM &quot;&amp;Стереть	Ctrl+X&quot;, 57635
+MENUITEM &quot;&amp;Копировать	Ctrl+C&quot;, 57634
+MENUITEM &quot;&amp;Вставить	Ctrl+V&quot;, 57637
+MENUITEM &quot;Удалить все&quot;, 57633
+}
+POPUP &quot;&amp;Карандаш&quot;
+{
+MENUITEM &quot;&amp;Толщина&quot;, 32772
+MENUITEM &quot;Параметры...&quot;, 32773
+}
+POPUP &quot;&amp;Вид&quot;
+{
+MENUITEM &quot;Тулбар&quot;, 59392
+MENUITEM &quot;Строка статуса&quot;, 59393
+}
+POPUP &quot;Окна&quot;
+{
+MENUITEM &quot;&amp;Новое окно&quot;, 57648
+MENUITEM &quot;&amp;Каскад&quot;, 57650
+MENUITEM &quot;&amp;Черепица&quot;, 57651
+}
+POPUP &quot;&amp;Помощь&quot;
+{
+MENUITEM &quot;&amp;Оглавление&quot;, 57667
+MENUITEM SEPARATOR
+MENUITEM &quot;&amp;О Scribble...&quot;, 57664
+}
+}" />
+	<Resource id="57600" type="string" value="Новый" />
+	<Resource id="57601" type="string" value="Открыть" />
+	<Resource id="57603" type="string" value="Сохранить" />
+	<Resource id="57607" type="string" value="Печать" />
+	<Resource id="32772" type="string" value="Размер" />
+	<Resource id="32775" type="string" value="Английский" />
+	<Resource id="32776" type="string" value="Немецкий" />
+	<Resource id="32777" type="string" value="Японский" />
+	<Resource id="32778" type="string" value="Арабский" />
+	<Resource id="32779" type="string" value="Русский" />
+	<Resource id="57664" type="string" value="О Программе" />
+	<Resource id="57669" type="string" value="Справка" />
+	<Resource id="100" type="dialog" value="DIALOG 0, 0, 246, 151 CAPTION &quot;О Программе Scribble&quot; STYLE 0x80C800C0 FONT 8, &quot;MS Sans Serif&quot;
+{
+  STATIC &quot;Scribble Мультиязыковой&quot;, 1005, 88, 74, 151, 10, 0x50020000
+  BUTTON &quot;OK&quot;, 1, 169, 130, 70, 14, 0x50030001
+  STATIC &quot;Язык: Русский&quot;, 1003, 88, 104, 151, 8, 0x50020000
+  STATIC &quot;Multiple-Language Resource File Sample&quot;, 1004, 88, 83, 151, 10, 0x50020000
+  STATIC 133, 65535, 7, 74, 75, 37, 0x5000000E
+  STATIC &quot;Copyright ©2004 Codejock Software, All Rights Reserved&quot;, 1002, 28, 41, 190, 8, 0x50020001
+  STATIC &quot;http://www.codejock.com&quot;, 1000, 28, 50, 190, 8, 0x50020001
+  STATIC 101, 65535, 28, 7, 190, 31, 0x5000000E
+  STATIC &quot;&quot;, 65535, 7, 120, 232, 1, 0x50000010
+  STATIC &quot;&quot;, 65535, 8, 66, 231, 1, 0x50000010
+}" />
+</Resources>

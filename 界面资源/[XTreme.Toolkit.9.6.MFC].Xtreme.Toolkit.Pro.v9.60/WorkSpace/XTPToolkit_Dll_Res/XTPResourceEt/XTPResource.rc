@@ -1,0 +1,78 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include <XTPResourceDll.h>
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ESTONIAN, SUBLANG_DEFAULT
+#pragma code_page(1257)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDC_LANG_ARABIC         "Araabia (Saudi Araabia)"
+    XTP_IDC_LANG_CHINESE_PRC    "Hiina (Hiina Rahvavabariik)"
+    XTP_IDC_LANG_CHINESE_TAIWAN "Hiina (Taiwan)"
+    XTP_IDC_LANG_CROATIAN       "Horvaadi"
+    XTP_IDC_LANG_CZECH          "Tðehhi"
+    XTP_IDC_LANG_DANISH         "Taani"
+    XTP_IDC_LANG_DUTCH          "Hollandi"
+    XTP_IDC_LANG_ENGLISH        "Inglise (USA)"
+    XTP_IDC_LANG_ESTONIAN       "Eesti"
+    XTP_IDC_LANG_FINNISH        "Soome"
+    XTP_IDC_LANG_FRENCH         "Prantsuse (Prantsusmaa)"
+    XTP_IDC_LANG_GERMAN         "Saksa (Saksamaa)"
+    XTP_IDC_LANG_GREEK          "Kreeka"
+    XTP_IDC_LANG_HEBREW         "Heebrea"
+    XTP_IDC_LANG_HUNGARIAN      "Ungari"
+    XTP_IDC_LANG_ITALIAN        "Itaalia (Itaalia)"
+    XTP_IDC_LANG_JAPANESE       "Jaapani"
+    XTP_IDC_LANG_KOREAN         "Korea"
+    XTP_IDC_LANG_LATVIAN        "Läti"
+    XTP_IDC_LANG_LITHUANIAN     "Leedu"
+    XTP_IDC_LANG_NORWEGIAN      "Norra (bokmal)"
+    XTP_IDC_LANG_POLISH         "Poola"
+    XTP_IDC_LANG_PORTUGUESE     "Portugali (Portugal)"
+    XTP_IDC_LANG_PORTUGUESE_BR  "Portugali (Brasiilia)"
+    XTP_IDC_LANG_ROMANIAN       "Rumeenia"
+    XTP_IDC_LANG_RUSSIAN        "Vene"
+    XTP_IDC_LANG_SLOVAK         "Slovaki"
+    XTP_IDC_LANG_SLOVENIAN      "Sloveeni"
+    XTP_IDC_LANG_SPANISH        "Hispaania"
+    XTP_IDC_LANG_SWEDISH        "Rootsi"
+    XTP_IDC_LANG_THAI           "Tai"
+    XTP_IDC_LANG_UKRAINIAN      "Ukraina"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+#include "res\XTPResource.rc2"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

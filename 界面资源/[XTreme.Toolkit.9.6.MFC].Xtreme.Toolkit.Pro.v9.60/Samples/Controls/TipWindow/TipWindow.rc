@@ -1,0 +1,224 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\TipWindow.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\CjSample.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_TIPWINDOW_DIALOG DIALOGEX 0, 0, 401, 229
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Codejock Tip Window Sample"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "&Show Tip",IDC_BTN_SHOWTIP,176,6,61,14
+    GROUPBOX        "Tip Window Text: ",IDC_STATIC,176,26,215,70
+    LTEXT           "Title:",IDC_STATIC,189,38,122,8
+    EDITTEXT        IDC_EDIT_TIPTITLE,189,48,196,14,ES_AUTOHSCROLL
+    LTEXT           "Message (use \\n for multiple lines):",IDC_STATIC,189,
+                    64,113,8
+    EDITTEXT        IDC_EDIT_TIPTEXT,189,74,196,14,ES_AUTOHSCROLL
+    GROUPBOX        "Tip Window Colors:",IDC_STATIC,176,101,215,36
+    PUSHBUTTON      "Back",IDC_CLR_BACK,189,115,61,14
+    PUSHBUTTON      "Text",IDC_CLR_TEXT,255,115,61,14
+    GROUPBOX        "Text Placement: ",IDC_STATIC,176,143,215,46
+    LTEXT           "Margins:",IDC_STATIC,189,156,28,8
+    LTEXT           "cx:",IDC_STATIC,222,156,10,8
+    EDITTEXT        IDC_EDIT_CX,238,153,30,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_CX,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_ARROWKEYS,256,153,11,12
+    LTEXT           "cy:",IDC_STATIC,270,156,10,8
+    EDITTEXT        IDC_EDIT_CY,284,153,30,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin2",IDC_SPIN_CY,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_ARROWKEYS,302,153,11,12
+    LTEXT           "Spacing:",IDC_STATIC,189,173,29,8
+    EDITTEXT        IDC_EDIT_LINESPACE,222,171,36,12,ES_AUTOHSCROLL
+    LTEXT           "Window Timeout (0 to disable):",IDC_STATIC,176,197,98,8
+    EDITTEXT        IDC_EDIT_TIMEOUT,176,207,43,14,ES_RIGHT | ES_AUTOHSCROLL
+    PUSHBUTTON      "Exit",IDCANCEL,330,6,61,14
+    CONTROL         "Thick Border",IDC_CHK_THICKBORDER,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,289,212,96,8
+    CONTROL         "Alpha Shadowing",IDC_CHK_ALPHASHADOWING,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,289,202,96,8
+    CONTROL         "Shadow",IDC_CHK_SHADOW,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,289,192,96,8
+    LTEXT           "millisecs",IDC_STATIC,221,209,26,10
+    LTEXT           "pixels between title and message",IDC_STATIC,260,173,
+                    104,8
+    CONTROL         "List1",IDC_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,7,16,161,159
+    LTEXT           "Window Delay:",IDC_STATIC,15,191,49,8
+    EDITTEXT        IDC_EDIT_DELAY,15,201,43,14,ES_RIGHT | ES_AUTOHSCROLL
+    LTEXT           "millisecs",IDC_STATIC,61,203,26,10
+    CONTROL         "Move below cursor",IDC_CHK_MOVEBELOWCURSOR,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,6,79,8
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "TipWindow MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "TipWindow\0"
+            VALUE "LegalCopyright", "©1998-2004 Codejock Software, All Rights Reserved.\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "TipWindow.EXE\0"
+            VALUE "ProductName", "TipWindow Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_TIPWINDOW_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 394
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 222
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About Tip Window Sample..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\TipWindow.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

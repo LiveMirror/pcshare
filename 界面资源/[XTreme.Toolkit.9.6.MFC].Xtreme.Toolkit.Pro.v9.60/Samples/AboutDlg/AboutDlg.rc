@@ -1,0 +1,126 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "Resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "Resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// 24
+//
+
+#if !defined(ID_MFCLOC_MANIFEST)  // VS2005
+
+IDR_MANIFEST            24      DISCARDABLE     "res\\manifest.xml"
+
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG FIXED IMPURE  0, 0, 204, 134
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About Sample Application"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Xtreme Toolkit Version",IDC_TXT_TITLE,7,42,176,8,
+                    SS_NOPREFIX
+    DEFPUSHBUTTON   "OK",IDOK,127,113,70,14,WS_GROUP
+    CONTROL         101,IDC_STATIC,"Static",SS_BITMAP,7,7,190,31
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDFRAME,7,78,190,27
+    LTEXT           "©2004 Codejock Software, All Rights Reserved",
+                    IDC_TXT_COPYRIGHT,7,64,173,8
+    LTEXT           "http://www.codejock.com",IDC_TXT_URL,50,92,135,8
+    LTEXT           "support@codejock.com",IDC_TXT_EMAIL,50,83,135,8
+    RTEXT           "email:",IDC_STATIC,14,83,32,8
+    RTEXT           "website:",IDC_STATIC,14,92,32,8
+    LTEXT           "Sample Application",IDC_TXT_APPNAME,7,52,176,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDC_CJLOGO              BITMAP  FIXED IMPURE    "res\\cj_logo.bmp"
+
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 197
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 127
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

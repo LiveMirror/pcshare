@@ -1,0 +1,893 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+#include "XTPResource.h"
+
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "#include ""XTPResource.h""\r\n"
+    "\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\CommandBarsDesigner.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_PANE_TOOLBARS       BITMAP  DISCARDABLE     "res\\PaneToolbars.bmp"
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+IDB_BITMAP_PANEICONS    BITMAP  DISCARDABLE     "res\\PaneIcons.bmp"
+IDB_PANE_TOOLBARS_ICONS BITMAP  DISCARDABLE     "res\\PaneToobarsTreeIcons.bmp"
+IDR_PANE_PROPERTIES     BITMAP  DISCARDABLE     "res\\PaneProperties.bmp"
+IDR_PANE_CONTROLS       BITMAP  DISCARDABLE     "res\\PaneControls.bmp"
+IDR_EMBEDDEDFRAME       BITMAP  DISCARDABLE     "res\\Embedded.bmp"
+IDR_PANE_ICONS          BITMAP  DISCARDABLE     "res\\PaneImages.bmp"
+IDB_OPTIONS             BITMAP  MOVEABLE PURE   "res\\PropertyIcons.bmp"
+IDR_PANE_ACCELERATORS   BITMAP  DISCARDABLE     "res\\PaneAccelerators.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_PANE_TOOLBARS TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_PANETOOLBARS_ADD
+    BUTTON      ID_PANETOOLBARS_DELETE
+END
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_DESIGN_MODE
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+IDR_PANE_PROPERTIES TOOLBAR DISCARDABLE  16, 16
+BEGIN
+    BUTTON      ID_PANEPROPERIES_CATEGORIZED
+    BUTTON      ID_PANEPROPERIES_ALPHABETIC
+    SEPARATOR
+    BUTTON      ID_PANEPROPERIES_PAGES
+END
+
+IDR_PANE_CONTROLS TOOLBAR DISCARDABLE  16, 16
+BEGIN
+    BUTTON      ID_PANECONTROLS_ADD
+    BUTTON      ID_PANECONTROLS_DELETE
+    SEPARATOR
+    BUTTON      ID_PANECONTROLS_UP
+    BUTTON      ID_PANECONTROLS_DOWN
+END
+
+IDR_EMBEDDEDFRAME TOOLBAR DISCARDABLE  16, 16
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+END
+
+IDR_PANE_ICONS TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_PANEICONS_NEW
+    BUTTON      ID_PANEICONS_CLEAR
+    BUTTON      ID_PANEICONS_EDIT
+    SEPARATOR
+    BUTTON      ID_PANEICONS_IMPORT_AND_EXPORT
+END
+
+IDR_PANE_ACCELERATORS TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_PANEACELLERATORS_NEW
+    BUTTON      ID_PANEACELLERATORS_DELETE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\CjSample.ico"
+IDR_COMMANTYPE          ICON    DISCARDABLE     "res\\CommandBarsDesignerDoc.ico"
+IDI_ICONEMPTY           ICON    DISCARDABLE     "res\\IconEmpty.ico"
+IDI_FORM                ICON    DISCARDABLE     "res\\form.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        POPUP "Export"
+        BEGIN
+            MENUITEM "XML Document",                ID_FILE_EXPORT_XMLDOCUMENT
+
+        END
+        POPUP "Import"
+        BEGIN
+            MENUITEM "XML Document",                ID_FILE_IMPORT_XMLDOCUMENT
+
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM SEPARATOR
+        MENUITEM "&Find",                       ID_EDIT_FIND
+        MENUITEM "&Replace",                    ID_EDIT_REPLACE
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "Toolbars Pane",               ID_VIEW_TOOLBARSPANE
+        MENUITEM "Controls Pane",               ID_VIEW_CONTROLSPANE
+        MENUITEM "Accelerators",                ID_VIEW_ACCELERATORS
+        MENUITEM "Icons Pane",                  ID_VIEW_ICONSPANE
+        MENUITEM "Properties",                  ID_VIEW_PROPERTIES
+        MENUITEM SEPARATOR
+        POPUP "Toolbars"
+        BEGIN
+            MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        END
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "CommandBars"
+    BEGIN
+        MENUITEM "&Settings...",                ID_COMMANDBARS_SETTINGS
+        MENUITEM "&Resource Symbols...",        ID_COMMANDBARS_RESOURCESYMBOLS
+
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+        MENUITEM SEPARATOR
+        MENUITEM "Window List",                 XTP_ID_WINDOWLIST
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About Command Bars Designer...", ID_APP_ABOUT
+    END
+END
+
+IDR_EMBEDDEDFRAME MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&View"
+    BEGIN
+        POPUP "Toolbars"
+        BEGIN
+            MENUITEM "&Toolbars",                   ID_VIEW_TOOLBAR
+        END
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&Cascade",                    ID_WINDOW_CASCADE
+        MENUITEM "&Tile",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Arrange Icons",              ID_WINDOW_ARRANGE
+        MENUITEM SEPARATOR
+        MENUITEM "Window List",                 XTP_ID_WINDOWLIST
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About Command Bars Designer...", ID_APP_ABOUT
+    END
+END
+
+IDR_PANE_ICONS_IMPORT_AND_EXPORT MENU DISCARDABLE 
+BEGIN
+    POPUP "Import and Export"
+    BEGIN
+        MENUITEM "Import From XML",             ID_IMPORTANDEXPORT_IMPORTFROMXML
+
+        MENUITEM "Export To XML",               ID_IMPORTANDEXPORT_EXPORTTOXML
+
+        MENUITEM SEPARATOR
+        MENUITEM "Import From Bitmap",          ID_IMPORTANDEXPORT_IMPORTFROMBITMAP
+
+        MENUITEM "Export To Bitmap",            ID_IMPORTANDEXPORT_EXPORTTOBITMAP
+
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "A",            ID_EDIT_SELECT_ALL,     VIRTKEY, CONTROL, NOINVERT
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "F",            ID_EDIT_FIND,           VIRTKEY, CONTROL, NOINVERT
+    "H",            ID_EDIT_REPLACE,        VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_F4,          ID_VIEW_PROPERTIES,     VIRTKEY, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+END
+
+IDR_EMBEDDEDFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "CommandBarsDesigner MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "CommandBarsDesigner\0"
+            VALUE "LegalCopyright", "©2004 Codejock Software, All Rights Reserved\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "CommandBarsDesigner.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "CommandBarsDesigner Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_CONTROLS_NEW DIALOG DISCARDABLE  0, 0, 173, 105
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "New Control"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "&Caption:",IDC_STATIC,7,8,27,8
+    EDITTEXT        IDC_EDIT_CAPTION,38,7,128,12,ES_AUTOHSCROLL
+    LTEXT           "C&ategory:",IDC_STATIC,7,24,31,8
+    COMBOBOX        IDC_COMBO_CATEGORY,41,22,125,76,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&ID:",IDC_STATIC,7,41,10,8
+    COMBOBOX        IDC_COMBO_ID,22,39,144,59,CBS_DROPDOWN | CBS_AUTOHSCROLL | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&Type:",IDC_STATIC,7,57,19,8
+    COMBOBOX        IDC_COMBO_TYPE,31,55,135,54,CBS_DROPDOWNLIST | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,55,84,50,14
+END
+
+IDD_DIALOG_TOOLBARS_NEW DIALOG DISCARDABLE  0, 0, 174, 67
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "New Toolbar"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "&Caption:",IDC_STATIC,7,8,27,8
+    EDITTEXT        IDC_EDIT_CAPTION,38,7,128,12,ES_AUTOHSCROLL
+    LTEXT           "&ID:",IDC_STATIC,7,24,10,8
+    EDITTEXT        IDC_EDIT_ID,22,22,145,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,62,46,50,14
+END
+
+IDD_DIALOG_ACCELERATOR_NEW DIALOG DISCARDABLE  0, 0, 174, 67
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Accel properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "&ID:",IDC_STATIC,7,9,10,8
+    COMBOBOX        IDC_COMBO_ID,23,7,144,59,CBS_DROPDOWNLIST | 
+                    CBS_AUTOHSCROLL | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&Shortcut:",IDC_STATIC,7,24,30,8
+    EDITTEXT        IDC_EDIT_CAPTION,42,23,125,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,62,46,50,14
+END
+
+IDD_DIALOG_ICON_NEW DIALOG DISCARDABLE  0, 0, 173, 81
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "New Icon"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "&ID:",IDC_STATIC,7,7,10,8
+    COMBOBOX        IDC_COMBO_ID,22,7,144,59,CBS_DROPDOWN | CBS_AUTOHSCROLL | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,61,60,50,14
+    GROUPBOX        "Device",IDC_STATIC,7,23,159,29
+    LTEXT           "Width:",IDC_STATIC,12,35,22,8
+    COMBOBOX        IDC_COMBO_WIDTH,36,32,48,42,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO_HEIGHT,113,32,48,42,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Height:",IDC_STATIC,88,34,24,8
+END
+
+IDD_DIALOG_LIST_EDITOR DIALOG DISCARDABLE  0, 0, 216, 139
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "List Editor"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Enter the strings in the collection (one per line):",
+                    IDC_STATIC,7,7,148,8
+    EDITTEXT        IDC_EDIT_LIST,7,20,202,89,ES_MULTILINE | ES_WANTRETURN | 
+                    WS_VSCROLL | WS_HSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,55,118,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,110,118,50,14
+END
+
+IDD_DIALOG_PROPERTYPAGES DIALOG DISCARDABLE  0, 0, 350, 194
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Tree1",IDC_LIST_OPTIONS,"SysTreeView32",WS_BORDER | 
+                    WS_TABSTOP,4,4,106,159
+    DEFPUSHBUTTON   "OK",IDOK,239,173,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,293,173,50,14
+    CONTROL         "",IDC_WORKSPACE,"Static",SS_BLACKFRAME | NOT WS_VISIBLE,
+                    117,4,226,153
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,119,163,224,1
+END
+
+IDD_DIALOG_RESOURCE_SYMBOLS DIALOG DISCARDABLE  0, 0, 270, 179
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Resource Symbols"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Name",IDC_STATIC_NAME,7,6,20,8
+    LTEXT           "Value",IDC_STATIC_VALUE,126,6,36,8
+    LTEXT           "In Use",IDC_STATIC_USED,169,6,27,10
+    LISTBOX         IDC_LIST_USEDBY,7,122,199,50,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "Close",IDOK,213,6,50,14
+    PUSHBUTTON      "New",IDC_BUTTON_NEW,213,23,50,14
+    PUSHBUTTON      "Delete",IDC_BUTTON_DELETE,213,40,50,14
+    PUSHBUTTON      "&Export",IDC_BUTTON_IMPORT,213,57,50,14
+    LTEXT           "Used by:",IDC_STATIC,7,111,30,10
+    LISTBOX         IDC_LIST_IDS,7,16,199,86,LBS_SORT | LBS_OWNERDRAWFIXED | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DIALOG_RESOURCE_NEW DIALOG DISCARDABLE  0, 0, 179, 73
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "New Symbol"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Name:",IDC_STATIC,7,7,22,8
+    EDITTEXT        IDC_EDIT_NAME,7,17,99,13,ES_UPPERCASE | ES_AUTOHSCROLL
+    LTEXT           "Value:",IDC_STATIC,7,39,41,8
+    EDITTEXT        IDC_EDIT_VALUE,7,49,99,14,ES_AUTOHSCROLL | ES_NUMBER
+    DEFPUSHBUTTON   "OK",IDOK,122,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,122,24,50,14
+END
+
+IDD_DIALOG_ICON_BITMAP DIALOG DISCARDABLE  0, 0, 324, 138
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Export"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "",IDC_STATIC_IMAGES,"Static",SS_BLACKRECT | NOT 
+                    WS_VISIBLE,7,7,310,43
+    LTEXT           "&ID:",IDC_STATIC,7,59,10,8
+    COMBOBOX        IDC_COMBO_ID,22,57,144,59,CBS_DROPDOWNLIST | 
+                    CBS_AUTOHSCROLL | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&Device:",IDC_STATIC,7,78,28,8
+    COMBOBOX        IDC_COMBO_DEVICE,37,76,129,90,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "S&tate:",IDC_STATIC,173,59,23,11
+    COMBOBOX        IDC_COMBO_STATE,197,57,120,59,CBS_DROPDOWNLIST | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&Mask Color:",IDC_STATIC,173,78,39,8
+    COMBOBOX        IDC_COMBO_MASK,217,76,100,26,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "&Save",IDOK,109,117,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,164,117,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_DIALOG_CONTROLS_NEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 166
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 98
+    END
+
+    IDD_DIALOG_TOOLBARS_NEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 167
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 60
+    END
+
+    IDD_DIALOG_ACCELERATOR_NEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 167
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 60
+    END
+
+    IDD_DIALOG_ICON_NEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 166
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 74
+    END
+
+    IDD_DIALOG_LIST_EDITOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 209
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 132
+    END
+
+    IDD_DIALOG_PROPERTYPAGES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 307
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 175
+    END
+
+    IDD_DIALOG_RESOURCE_SYMBOLS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 263
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 172
+    END
+
+    IDD_DIALOG_RESOURCE_NEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 172
+        VERTGUIDE, 106
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 66
+    END
+
+    IDD_DIALOG_ICON_BITMAP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 317
+        VERTGUIDE, 166
+        VERTGUIDE, 173
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 131
+        HORZGUIDE, 70
+        HORZGUIDE, 76
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DIALOG_ICON_NEW DLGINIT
+BEGIN
+    IDC_COMBO_WIDTH, 0x403, 3, 0
+0x3631, "\000" 
+    IDC_COMBO_WIDTH, 0x403, 3, 0
+0x3432, "\000" 
+    IDC_COMBO_WIDTH, 0x403, 3, 0
+0x3233, "\000" 
+    IDC_COMBO_HEIGHT, 0x403, 3, 0
+0x3631, "\000" 
+    IDC_COMBO_HEIGHT, 0x403, 3, 0
+0x3432, "\000" 
+    IDC_COMBO_HEIGHT, 0x403, 3, 0
+0x3233, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE initialization failed.  Make sure that the OLE libraries are the correct version."
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "Codejock Command Bars Designer\nForm\nForm\nXtreme Command Bars Files (.xcb)\n.xcb\nCommandBarsDesigner.Document\nComman Document"
+    IDR_PANE_TOOLBARS       "Toolbars"
+    IDR_PANE_PROPERTIES     "Properties"
+    IDR_PANE_CONTROLS       "Controls"
+    IDR_PANE_ACCELERATORS   "Accelerators"
+    IDR_PANE_ICONS          "Icons"
+    IDR_EMBEDDEDFRAME       "Untitled"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Codejock Command Bars Designer"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap\nCascade Windows"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_TILE_VERT     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    AFX_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_PANECONTROLS_ADD     "\nAdd Control"
+    ID_PANETOOLBARS_ADD     "\nAdd"
+    ID_PANEPROPERIES_CATEGORIZED "\nCategorized"
+    ID_PANEPROPERIES_ALPHABETIC "\nAlphabetic"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_GRID_CATEGORY_APPEARANCE "Appearance"
+    ID_GRID_ITEM_COMMANDBAR_TITLE "Title\nThe Title of the Command Bar"
+    ID_GRID_ITEM_COMMANDBAR_VISIBLE "Visible"
+    ID_GRID_ITEM_COMMANDBAR_TEAROFF "Tear-off Popup"
+    ID_GRID_ITEM_COMMANDBAR_TEAROFF_CAPTION "Caption"
+    ID_GRID_ITEM_COMMANDBAR_TEAROFF_ID "ID"
+    ID_GRID_ITEM_COMMANDBAR_TEAROFF_WIDTH "Width"
+    ID_GRID_ITEM_CONTROL_CAPTION "Caption"
+    ID_GRID_ITEM_CONTROL_DESCRIPTION "Description"
+    ID_GRID_ITEM_CONTROL_TOOLTIP "ToolTip"
+    ID_GRID_ITEM_CONTROL_TYPE "Type"
+    ID_GRID_ITEM_CONTROL_STYLE "Style"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_GRID_ITEM_CONTROL_BEGINGROUP "Begin Group"
+    ID_GRID_ITEM_CONTROL_CATEGORY "Category"
+    ID_GRID_ITEM_CONTROL_ID "ID"
+    ID_GRID_ITEM_CONTROL_ICONID "Icon ID"
+    ID_GRID_ITEM_COMMANDBAR_ID "ID"
+    ID_GRID_ITEM_COMMANDBAR_CUSTOMIZABLE "Customizable"
+    ID_GRID_ITEM_CONTROL_LIST "List"
+    ID_GRID_ITEM_COMMANDBAR_ICON_SIZE "Icon Size"
+    ID_GRID_ITEM_CONTROL_WIDTH "Width"
+    ID_GRID_ITEM_CONTROL_DROPDOWNWIDTH "DropDownWidth"
+    ID_GRID_ITEM_CONTROL_DROPDOWNSTYLE "DropDownStyle"
+    ID_GRID_ITEM_CONTROL_LABELED "Show Label"
+    ID_GRID_ITEM_CONTROL_VISIBILITY "Visibility"
+    ID_GRID_ITEM_THEME      "Paint Theme"
+    ID_GRID_ITEM_COMMANDBAR_FLAGS "Docking Flags"
+    ID_GRID_ITEM_COMMANDBAR_STRETCH "Stretch Flags"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_GRID_ITEM_ICONS_SHADOW "Show icons shadow"
+    ID_GRID_ITEM_ICONS_FADED "Use faded icons"
+    ID_GRID_ITEM_CONTROL_FLAGS "Flags"
+    ID_GRID_ITEM_COMMANDBAR_POPUPTOOLBAR "Popup Toolbar"
+    ID_GRID_ITEM_COMMANDBAR_WIDTH "Width"
+    ID_GRID_ITEM_CONTROL_CLOSESUBMENUONCLICK "CloseSubMenuOnClick"
+    ID_GRID_ITEM_CONTROL_READONLY "Read Only"
+    ID_PANECONTROLS_UP      "\nMove Up"
+    ID_PANECONTROLS_DOWN    "\nMove Down"
+    ID_PANECONTROLS_DELETE  "\nDelete"
+    ID_PANETOOLBARS_DELETE  "\nDelete"
+    ID_PANEICONS_CLEAR      "\nClear"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_PANEICONS_EDIT       "\nEdit"
+    ID_PANEPROPERIES_PAGES  "\nProperty Pages"
+    ID_PANEACELLERATORS_NEW "\nNew"
+    ID_PANEACELLERATORS_DELETE "\nDelete"
+    ID_DESIGN_MODE          "Design Mode\nDesign Mode"
+    ID_PANEICONS_IMPORT_AND_EXPORT "Import and Export"
+    ID_GRID_ITEM_COMMANDBAR_CLOSEABLE "Closeable"
+    ID_GRID_CATEGORY_BEHAVIOR "Behavior"
+    ID_GRID_CATEGORY_DATA   "Data"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_GRID_ITEM_COMMANDBAR_CONTEXTMENUPRESENT "Context Menu Present"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\CommandBarsDesigner.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

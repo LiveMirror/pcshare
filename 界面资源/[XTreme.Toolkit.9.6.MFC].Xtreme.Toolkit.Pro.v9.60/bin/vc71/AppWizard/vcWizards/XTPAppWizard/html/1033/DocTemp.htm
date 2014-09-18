@@ -1,0 +1,770 @@
+<!- (c) 2001 Microsoft Corporation -->
+<HTML DIR="LTR">
+
+<HEAD>
+	<TITLE>MFC Application Wizard</TITLE>
+	<META NAME="vs_targetSchema" CONTENT="http://schemas.microsoft.com/intellisense/ie5">
+	<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+	<STYLE TYPE="text/css">@import url();</STYLE>
+	<SCRIPT>
+		var strURL = "../../../";
+		strURL += window.external.GetHostLocale();
+		strURL += "/NewStyles.css";
+		document.styleSheets(0).imports(0).href = strURL;
+	</SCRIPT>
+</HEAD>
+
+<BODY BGCOLOR="BUTTONFACE" TOPMARGIN="0" LEFTMARGIN="0" RIGHTMARGIN="0" BOTTOMMARGIN="0" ONLOAD="InitDocument(document);" ONKEYDOWN="if (!bValidating) OnKey();" ONKEYPRESS="if (!bValidating) OnPress();">
+
+<TABLE CLASS="ONE" HEIGHT="100%" WIDTH="100%" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+<COL WIDTH="178"><COL>
+
+  <!--OPEN OF INTRODUCTORY INFORMATION TABLE//-->
+  <TR VALIGN="TOP">
+	<TD HEIGHT="79" WIDTH="100%" COLSPAN="2">
+	 <TABLE CLASS="TWO" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+	 <COL WIDTH="12"><COL><COL WIDTH="12">
+	  <TR>
+	   <TD VALIGN="TOP" HEIGHT="12" WIDTH="12">
+	  	&nbsp;
+	   </TD>
+	   <TD VALIGN="TOP" HEIGHT="12">
+	  	&nbsp;
+	   </TD>
+	   <TD VALIGN="TOP" HEIGHT="12" WIDTH="12">
+	  	&nbsp;
+	   </TD>
+	   <TD CLASS="IMAGE" VALIGN="BOTTOM" WIDTH="110" ROWSPAN="2">
+		<DIV CLASS="SMALLA" ID="SINGLE_DOC_IMAGE">
+		 <IMG CLASS="SMALL" SRC="../../Images/DocTemplateString.gif" WIDTH="98" HEIGHT="70" ALT="" BORDER="0">
+		</DIV>
+	   </TD>
+	   <TD VALIGN="TOP" HEIGHT="12" WIDTH="6" ROWSPAN="2">
+	  	&nbsp;
+	   </TD>
+	  </TR>
+	 
+	  <TR>
+	   <TD VALIGN="TOP" HEIGHT="65" WIDTH="12">
+	  	&nbsp;
+	   </TD>
+	   <TD VALIGN="TOP" HEIGHT="65">
+		<H4 CLASS="HEAD" ID="HEAD">Document Template Strings</H4>
+		<P CLASS="SUBHEAD" ID="SUBHEAD">Specify values for your application's document template to use when creating a new document.</P>
+	   </TD>
+	   <TD VALIGN="TOP" HEIGHT="65" WIDTH="12">
+	  	&nbsp;
+	   </TD>
+	  </TR>
+	 
+	  <TR>
+	   <TD VALIGN="TOP" CLASS="RULE" COLSPAN="5" HEIGHT="2">
+		<TABLE BORDER="0" WIDTH="100%" HEIGHT="1" CELLPADDING="0" CELLSPACING="0">
+	  	 <TR VALIGN="TOP">
+	  	  <TD HEIGHT="1" WIDTH="100%" BGCOLOR="BUTTONSHADOW"></TD>
+	  	  <TD HEIGHT="1" WIDTH="1" BGCOLOR="WINDOW"></TD>
+	  	 </TR>
+		</TABLE>
+	   </TD>
+	  </TR>
+	 </TABLE>
+	</TD>
+  </TR>
+  <!--CLOSE OF INTRODUCTORY INFORMATION TABLE//-->
+
+  <!--OPEN OF NAVIGATION, CONTENT, AND BUTTON TABLES//-->
+  <TR VALIGN="TOP">
+	<TD CLASS="Three" VALIGN="TOP" HEIGHT="100%" WIDTH="178">
+	 <TABLE CLASS="fixedSize" HEIGHT="100%" WIDTH="178" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+  	  <TR VALIGN="TOP">
+	   <TD CLASS="threeCustom" VALIGN="TOP" STYLE="BACKGROUND-IMAGE: URL(../../Images/MFC_Background.gif);">
+	   <!--OPEN OF NAVIGATION TABLE//-->
+	
+	    <TABLE CLASS="THREE" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+		<COL WIDTH="12"><COL WIDTH="166"><COL WIDTH="1">
+		 <TR>
+	   	  <TD VALIGN="TOP" COLSPAN="3" HEIGHT="12">
+	  		&nbsp;
+		  </TD>
+		 </TR>
+		 <TR>
+	   	  <TD VALIGN="TOP" HEIGHT="100%" WIDTH="12">
+	  		&nbsp;
+		  </TD>
+	   	  <TD VALIGN="TOP" HEIGHT="100%" WIDTH="165">
+	   	  <!--OPEN OF NAVIGATIONAL LINKS//-->
+	  		
+			<DIV CLASS="LINK">
+			 <TABLE WIDTH="166" HEIGHT="28" BORDER="0" CELLPADDING="0" CELLSPACING="0" CLASS="LINKTEXT">
+			  <TR VALIGN="MIDDLE">
+	  		   <TD WIDTH="162">
+				<SPAN CLASS="ACTIVELINK" ID="Default" TITLE="Examine an overview of selections." onClick="bValidating = true; if (!ValidateInput()) { bVaidating = false; return; } Next(document, 'Default.htm');" TABINDEX="1">Overview</SPAN>
+			   </TD>
+	  		   <TD WIDTH="4">
+			  	<IMG SRC="../../Images/spacer.gif" HEIGHT="1" WIDTH="4">
+			   </TD>
+			  </TR>
+			 </TABLE>
+			</DIV>
+	  		
+			<DIV CLASS="LINK">
+			 <TABLE WIDTH="166" HEIGHT="28" BORDER="0" CELLPADDING="0" CELLSPACING="0" CLASS="LINKTEXT">
+			  <TR VALIGN="MIDDLE">
+	  		   <TD WIDTH="162">
+				<SPAN CLASS="ACTIVELINK" ID="AppType" TITLE="Specify Document/View architecture support, language and interface style options for your application." onClick="bValidating = true; if (!ValidateInput()) { bVaidating = false; return; } Next(document, 'AppType.htm');" TABINDEX="2">Application Type</SPAN>
+			   </TD>
+	  		   <TD WIDTH="4">
+			  	<IMG SRC="../../Images/spacer.gif" HEIGHT="1" WIDTH="4">
+			   </TD>
+			  </TR>
+			 </TABLE>
+			</DIV>
+	  		
+			<DIV CLASS="LINK">
+			 <TABLE WIDTH="166" HEIGHT="28" BORDER="0" CELLPADDING="0" CELLSPACING="0" CLASS="LINKTEXTINDENT">
+			  <TR VALIGN="MIDDLE">
+	  		   <TD WIDTH="162">
+				<SPAN CLASS="ACTIVELINK" ID="CompoundDoc" TITLE="Specify OLE container or server options and active document support." onClick="bValidating = true; if (!ValidateInput()) { bVaidating = false; return; } onClick(this);" TABINDEX="3">Compound Document Support</SPAN>
+			   </TD>
+	  		   <TD WIDTH="4">
+			  	<IMG SRC="../../Images/spacer.gif" HEIGHT="1" WIDTH="4">
+			   </TD>
+			  </TR>
+			 </TABLE>
+			</DIV>
+
+		  	<DIV CLASS="LINKSELECTED">
+	 	   	 <SPAN CLASS="VERTLINE1">
+			  <IMG SRC="../../Images/spacer.gif" WIDTH="1" HEIGHT="1" ALT="" BORDER="0">
+			 </SPAN>
+			 <SPAN CLASS="HORILINE1">
+			  <TABLE WIDTH="167" HEIGHT="100%" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+			   <TR VALIGN="TOP">
+			    <TD CLASS="DOTTEDLINE" HEIGHT="1">
+				</TD>
+			   </TR>
+			   <TR VALIGN="TOP">
+			    <TD HEIGHT="100%">
+				 <IMG SRC="../../Images/spacer.gif" WIDTH="165" HEIGHT="28" ALT="" BORDER="0">
+			    </TD>
+			   </TR>
+			   <TR VALIGN="TOP">
+			    <TD CLASS="DOTTEDLINE" HEIGHT="1">
+			    </TD>
+			   </TR>
+			  </TABLE>
+			 </SPAN>
+			 <TABLE WIDTH="160" HEIGHT="28" BORDER="0" CELLPADDING="0" CELLSPACING="0" CLASS="LINKTEXTSELECTEDINDENT">
+			  <TR VALIGN="MIDDLE">
+			   <TD WIDTH="156">
+				<SPAN ID="DocTemp" TITLE="Specify values for your application's document template to use when creating a new document.">Document Template Strings</SPAN>
+			   </TD>
+			   <TD WIDTH="4">
+				<IMG SRC="../../Images/spacer.gif" HEIGHT="1" WIDTH="4">
+			   </TD>
+			  </TR>
+			 </TABLE>
+			</DIV>
+	  		
+			<DIV CLASS="LINK">
+			 <TABLE WIDTH="166" HEIGHT="28" BORDER="0" CELLPADDING="0" CELLSPACING="0" CLASS="LINKTEXT">
+			  <TR VALIGN="MIDDLE">
+	  		   <TD WIDTH="162">
+				<SPAN CLASS="ACTIVELINK" ID="DBSupport" TITLE="Specify database support, including any data source." onClick="bValidating = true; if (!ValidateInput()) { bVaidating = false; return; } onClick(this);" TABINDEX="4">Database Support</SPAN>
+			   </TD>
+	  		   <TD WIDTH="4">
+			  	<IMG SRC="../../Images/spacer.gif" HEIGHT="1" WIDTH="4">
+			   </TD>
+			  </TR>
+			 </TABLE>
+			</DIV>
+	  		
+			<DIV CLASS="LINK">
+			 <TABLE WIDTH="166" HEIGHT="28" BORDER="0" CELLPADDING="0" CELLSPACING="0" CLASS="LINKTEXT">
+			  <TR VALIGN="MIDDLE">
+	  		   <TD WIDTH="162">
+				<SPAN CLASS="ACTIVELINK" ID="UIFeatures" TITLE="Specify options that control the look and feel of your application." onClick="bValidating = true; if (!ValidateInput()) { bVaidating = false; return; } Next(document, 'UIFeatures.htm');" TABINDEX="5">User Interface Features</SPAN>
+			   </TD>
+	  		   <TD WIDTH="4">
+			  	<IMG SRC="../../Images/spacer.gif" HEIGHT="1" WIDTH="4">
+			   </TD>
+			  </TR>
+			 </TABLE>
+			</DIV>
+	  		
+			<DIV CLASS="LINK">
+			 <TABLE WIDTH="166" HEIGHT="28" BORDER="0" CELLPADDING="0" CELLSPACING="0" CLASS="LINKTEXT">
+			  <TR VALIGN="MIDDLE">
+	  		   <TD WIDTH="162">
+				<SPAN CLASS="ACTIVELINK" ID="Advanced" TITLE="Specify additional support to build into your application." onClick="bValidating = true; if (!ValidateInput()) { bVaidating = false; return; } Next(document, 'Advanced.htm');" TABINDEX="6">Advanced Features</SPAN>
+			   </TD>
+	  		   <TD WIDTH="4">
+			  	<IMG SRC="../../Images/spacer.gif" HEIGHT="1" WIDTH="4">
+			   </TD>
+			  </TR>
+			 </TABLE>
+			</DIV>
+	  		
+			<DIV CLASS="LINK">
+			 <TABLE WIDTH="166" HEIGHT="28" BORDER="0" CELLPADDING="0" CELLSPACING="0" CLASS="LINKTEXT">
+			  <TR VALIGN="MIDDLE">
+	  		   <TD WIDTH="162">
+				<SPAN CLASS="ACTIVELINK" ID="XTToolkitPro" TITLE="Specify Xtreme Toolkit Pro General Settings" onClick="onClick(this);" TABINDEX="7">Toolkit Pro Features</SPAN>
+			   </TD>
+	  		   <TD WIDTH="4">
+			  	<IMG SRC="../../Images/spacer.gif" HEIGHT="1" WIDTH="4">
+			   </TD>
+			  </TR>
+			 </TABLE>
+			</DIV>
+			<DIV CLASS="LINK">
+			 <TABLE WIDTH="166" HEIGHT="28" BORDER="0" CELLPADDING="0" CELLSPACING="0" CLASS="LINKTEXT">
+			  <TR VALIGN="MIDDLE">
+	  		   <TD WIDTH="162">
+				<SPAN CLASS="ACTIVELINK" ID="GeneratedClasses" TITLE="Review generated classes and specify base classes for your application." onClick="bValidating = true; if (!ValidateInput()) { bVaidating = false; return; } Next(document, 'GeneratedClasses.htm');" TABINDEX="9">Generated Classes</SPAN>
+			   </TD>
+	  		   <TD WIDTH="4">
+			  	<IMG SRC="../../Images/spacer.gif" HEIGHT="1" WIDTH="4">
+			   </TD>
+			  </TR>
+			 </TABLE>
+			</DIV>
+			
+	   	  <!--CLOSE OF NAVIGATIONAL LINKS//-->
+		  </TD>
+		  <TD WIDTH="1">
+		   <DIV CLASS="VERTLINE">
+			 <IMG SRC="../../Images/spacer.gif" WIDTH="1" HEIGHT="1" ALT="" BORDER="0">
+		   </DIV>
+		  </TD>
+		 </TR>
+		 </TABLE>
+		</TD>
+	   </TR>
+	   </TABLE>
+			
+	   <!--CLOSE OF NAVIGATION TABLE//-->
+	   </TD>
+  
+	   <TD VALIGN="TOP" HEIGHT="100%">
+	   <!--OPEN OF CONTENT AND BUTTON TABLE//-->
+	   
+	   	<TABLE CLASS="ONE" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+		<COL WIDTH="100%">
+		 <TR VALIGN="TOP">
+		  <TD HEIGHT="100%">
+	   	  <!--OPEN OF CONTENT//-->
+		  
+		  	<TABLE CLASS="CONTENT" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+			<COL WIDTH="12"><COL WIDTH="398"><COL WIDTH="12">
+ 			 <TR>
+  			  <TD VALIGN="TOP" HEIGHT="9" COLSPAN="3">
+  				&nbsp;
+  			  </TD>
+ 			 </TR>
+ 
+ 			 <TR>
+  			  <TD VALIGN="TOP" WIDTH="12">
+  				&nbsp;
+  			  </TD>
+			  <TD VALIGN="TOP">
+ 				<TABLE CLASS="CONTENTLINE" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+				<COL><COL WIDTH="4"><COL>
+ 	 			 <TR>
+  	  			  <TD VALIGN="TOP">
+	  				<NOBR><P CLASS="ItemTextTop" ID="NON_LOC_STRINGS"><B>Nonlocalized strings</B></P></NOBR>
+	  			  </TD>
+  	      		  <TD VALIGN="MIDDLE" WIDTH="4">
+  					&nbsp;
+  	      		  </TD>
+  	  			  <TD VALIGN="MIDDLE" WIDTH="100%">
+ 	    			<TABLE CLASS="CONTENTLINE1" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+ 	    			 <TR>
+  	      			  <TD VALIGN="MIDDLE" WIDTH="100%">
+  						<DIV CLASS="InLineA"></DIV>
+	  					<DIV CLASS="InLineB"></DIV>
+	      			  </TD>
+		 			 </TR>
+					</TABLE>
+	  			  </TD>
+	 			 </TR>
+				</TABLE>
+  			  </TD>
+			  <TD VALIGN="TOP" WIDTH="12">
+  				&nbsp;
+  			  </TD>
+ 			 </TR>
+ 
+ 			 <TR>
+  			  <TD VALIGN="TOP" HEIGHT="9" COLSPAN="3">
+  				&nbsp;
+  			  </TD>
+ 			 </TR>
+ 
+ 			 <TR>
+  			  <TD VALIGN="TOP" WIDTH="12">
+  				&nbsp;
+  			  </TD>
+ 		 	  <TD VALIGN="TOP">
+ 				<TABLE CLASS="FixedSize" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+				<COL WIDTH="8"><COL WIDTH="185"><COL WIDTH="12"><COL WIDTH="185"><COL WIDTH="8">
+ 		 			<TR>
+  		  			  <TD VALIGN="TOP" WIDTH="8">
+  						 &nbsp;
+  	 	 			  </TD>
+					  <TD VALIGN="TOP">
+  						<SPAN CLASS="itemText" ID="FILE_EXTENSION_TEXT" TITLE="The file extension for application documents.">
+	    	 			 <LABEL ID="EXTENSION_TEXT" FOR="FILE_EXTENSION">File e<u>x</u>tension:</LABEL>
+	    	 			 <BR>
+	    	 			 <INPUT CLASS="sideBtnB" TYPE="text" NAME="FileExt" ID="FILE_EXTENSION" ACCESSKEY="x" onPropertychange="SetFilter();" TITLE="The file extension for application documents." TABINDEX="8">
+	  					 </SPAN>
+	 	 			  </TD>
+					  <TD VALIGN="TOP" WIDTH="12">
+  						&nbsp;
+  		  			  </TD>
+				  	  <TD VALIGN="TOP">
+  						<SPAN CLASS="itemText" ID="IDENTIFIER_TEXT" TITLE="Identifier for the document type to be stored in the Windows registration database.">
+	    	 			 <LABEL ID="ID_TEXT" FOR="FILE_TYPE_ID">File type <U>I</U>D:</LABEL>
+	    	 			 <BR>
+	    	 			 <INPUT CLASS="sideBtnB" TYPE="text" NAME="FileID" ID="FILE_TYPE_ID" ACCESSKEY="i" TITLE="Identifier for the document type to be stored in the Windows registration database." TABINDEX="9">
+	  					 </SPAN>
+		  			  </TD>
+  		  			  <TD VALIGN="TOP" WIDTH="8">
+  						&nbsp;
+  	 	 			  </TD>
+ 		 			</TR>
+				</TABLE>
+  			  </TD>
+			  <TD VALIGN="TOP" WIDTH="12">
+  				&nbsp;
+  			  </TD>
+ 			 </TR>
+ 
+ 			 <TR>
+  			  <TD VALIGN="TOP" HEIGHT="17" COLSPAN="3">
+  				&nbsp;
+  			  </TD>
+ 			 </TR>
+ 
+ 			 <TR>
+  			  <TD VALIGN="TOP" WIDTH="12">
+  				&nbsp;
+  			  </TD>
+  			  <TD VALIGN="TOP">
+ 				<TABLE CLASS="CONTENTLINE" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+				<COL><COL WIDTH="4"><COL>
+ 	 			 <TR>
+  	  			  <TD VALIGN="TOP">
+	  				<NOBR><P ID="LOC_STRINGS"><B>Localized strings</B></P></NOBR>
+	  			  </TD>
+  	      		  <TD VALIGN="MIDDLE" WIDTH="4">
+  					&nbsp;
+  	      		  </TD>
+  	  			  <TD VALIGN="MIDDLE" WIDTH="100%">
+ 	    			<TABLE CLASS="CONTENTLINE1" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+ 	    			 <TR>
+  	      			  <TD VALIGN="MIDDLE" WIDTH="100%">
+  						<DIV CLASS="InLineA"></DIV>
+	  					<DIV CLASS="InLineB"></DIV>
+	      			  </TD>
+		 			 </TR>
+					</TABLE>
+	  			  </TD>
+	 			 </TR>
+				</TABLE>
+  			  </TD>
+ 	 		  <TD VALIGN="TOP" WIDTH="12">
+  				&nbsp;
+  			  </TD>
+ 			 </TR>
+ 
+ 			 <TR>
+  			  <TD VALIGN="TOP" HEIGHT="9" COLSPAN="3">
+  				&nbsp;
+  			  </TD>
+ 			 </TR>
+ 
+ 			 <TR>
+  			  <TD VALIGN="TOP" WIDTH="12">
+  				&nbsp;
+  			  </TD>
+  			  <TD VALIGN="TOP">
+ 				<TABLE CLASS="FixedSize" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+				<COL WIDTH="8"><COL WIDTH="185"><COL WIDTH="12"><COL WIDTH="185"><COL WIDTH="8">
+ 		 			<TR>
+  		  			  <TD VALIGN="TOP" WIDTH="8">
+  						&nbsp;
+  	 	 			  </TD>
+  	 	 			   <TD VALIGN="TOP">
+  						<SPAN CLASS="itemText" DISABLED>
+	    	 			 <LABEL ID="LANG_TEXT" FOR="LANGUAGE_NAME">Language:</LABEL>
+	    	 			 <BR>
+	    	 			 <INPUT CLASS="sideBtnB" ID="LANGUAGE_NAME" TITLE="" READONLY>
+	  					</SPAN>
+	
+	  					<P CLASS="ElementSpacer2">&nbsp;</P>
+	  
+	 					<SPAN CLASS="itemText" ID="ROOT_NAME_TEXT" TITLE="Root name for new document file. Default is &quot;Project&quot;.">
+	    	 			 <LABEL ID="DOC_TYPE_TEXT" FOR="DOC_TYPE_NAME">Doc <U>t</U>ype name:</LABEL>
+	    	 			 <BR>
+	    	 			 <INPUT CLASS="sideBtnB" TYPE="text" NAME="DocTypeName" ID="DOC_TYPE_NAME" ACCESSKEY="t" TITLE="Root name for new document file. Default is &quot;Untitled&quot;." TABINDEX="11">
+	  					</SPAN>
+	
+	  					<P CLASS="ElementSpacer2">&nbsp;</P>
+	  
+	  					<SPAN CLASS="itemText" ID="SHORT_NAME_TEXT" TITLE="Short name of this document type as, &quot;Worksheet&quot;.">
+	    	 			 <LABEL ID="NEW_SHORT_NAME_TEXT" FOR="FILE_NEW_NAME_SHORT">File new <U>s</U>hort name:</LABEL>
+	    	 			 <BR>
+	    	 			 <INPUT CLASS="sideBtnB" TYPE="text" NAME="FileNameShort" ID="FILE_NEW_NAME_SHORT" ACCESSKEY="s" TITLE="Short name of this document type as, &quot;Worksheet&quot;." TABINDEX="13">
+	  					</SPAN>
+	 	 			  </TD>
+	  				  <TD VALIGN="TOP" WIDTH="12">
+  						&nbsp;
+  		  			  </TD>
+	  				  <TD VALIGN="TOP">
+  						<SPAN CLASS="itemText" ID="MAIN_FRAME_CAPTION_TEXT" TITLE="The text to appear at the top of the main application frame; usually the name of your application.">
+	    	 			 <LABEL ID="MAIN_FRAME_TEXT" FOR="MAIN_FRAME_CAPTION">Main frame ca<U>p</U>tion:</LABEL>
+	    	 			 <BR>
+	    	 			 <INPUT CLASS="sideBtnB" TYPE="text" NAME="MainFrCap" ID="MAIN_FRAME_CAPTION" ACCESSKEY="p" TITLE="The text to appear at the top of the main application frame; usually the name of your application." TABINDEX="10">
+	  	 				</SPAN>
+	
+	  					<P CLASS="ElementSpacer2">&nbsp;</P>
+  
+						<SPAN CLASS="itemText" ID="DOCTYPE_WILDCARD_TEXT" TITLE="Document type and wildcard filter, such as, &quot;Worksheets (*.xls)&quot;.">
+	 	  	 			 <LABEL ID="FILTER_TEXT" FOR="FILTER_NAME">Filter <U>n</U>ame:</LABEL>
+	  		 			 <BR>
+	  		 			 <INPUT CLASS="sideBtnB" TYPE="text" NAME="FilterName" ID="FILTER_NAME" ACCESSKEY="n" TITLE="Document type and wildcard filter, such as, &quot;Worksheets (*.xls)&quot;." TABINDEX="12">
+						</SPAN>
+	
+	  					<P CLASS="ElementSpacer2">&nbsp;</P>
+	  
+						<SPAN CLASS="itemText" ID="DOC_NAME_TEXT" TITLE="Name of the document type to be stored in the registration database.">
+	  		 			 <LABEL ID="LONG_NAME_TEXT" FOR="FILE_NEW_NAME_LONG">File type <U>l</U>ong name:</LABEL>
+	  		 			 <BR>
+	  		 			 <INPUT CLASS="sideBtnB" TYPE="text" NAME="FileNameLong" ID="FILE_NEW_NAME_LONG" ACCESSKEY="l" TITLE="Name of the document type to be stored in the registration database." TABINDEX="14">
+    					</SPAN>
+		  			  </TD>
+  		  			  <TD VALIGN="TOP" WIDTH="8">
+  						&nbsp;
+  	 	 			  </TD>
+ 		 			</TR>
+				</TABLE>
+  			  </TD>
+  			  <TD VALIGN="TOP" WIDTH="12">
+  				&nbsp;
+  			  </TD>
+			 </TR>
+ 
+ 			 <TR>
+  			  <TD VALIGN="TOP" WIDTH="12" HEIGHT="100%">
+  				&nbsp;
+  			  </TD>
+  			  <TD VALIGN="TOP" HEIGHT="100%">
+  				&nbsp;
+  			  </TD>
+  			  <TD VALIGN="TOP" WIDTH="12" HEIGHT="100%">
+  				&nbsp;
+  			  </TD>
+ 			 </TR>
+			</TABLE>
+			
+	   	  <!--CLOSE OF CONTENT//-->
+		  </TD>
+		 </TR>
+		 <TR VALIGN="BOTTOM">
+		  <TD HEIGHT="48">
+	   	  <!--OPEN OF BUTTON HTML//-->
+		  
+		  	<TABLE HEIGHT="48" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+			<COL WIDTH="12"><COL><COL WIDTH="75"><COL WIDTH="4"><COL WIDTH="75"><COL WIDTH="4"><COL WIDTH="75"><COL WIDTH="12">
+			 <TR>
+  			  <TD VALIGN="TOP" CLASS="RULE" COLSPAN="8" HEIGHT="2">
+				<TABLE BORDER="0" WIDTH="100%" HEIGHT="1" CELLPADDING="0" CELLSPACING="0">
+  	 			 <TR VALIGN="TOP">
+  	  			  <TD HEIGHT="1" WIDTH="100%" BGCOLOR="BUTTONSHADOW"></TD>
+  	  			  <TD HEIGHT="1" WIDTH="1" BGCOLOR="WINDOW"></TD>
+  	 			 </TR>
+				</TABLE>
+  			  </TD>
+ 			  </TR>
+ 
+ 			  <TR>
+  			  <TD VALIGN="TOP" HEIGHT="11" COLSPAN="8">
+  				&nbsp;
+  			  </TD>
+ 			 </TR>
+ 
+ 			<TR>
+  			  <TD VALIGN="MIDDLE" HEIGHT="23" WIDTH="12">
+  				&nbsp;
+  			  </TD>
+  			  <TD VALIGN="TOP" HEIGHT="23">
+  				&nbsp;
+  			  </TD>
+  			  <TD VALIGN="MIDDLE" HEIGHT="23" WIDTH="75">
+  				<BUTTON CLASS="BUTTONS" ID="FinishBtn" onClick="OnFinish(document);">Finish</BUTTON>
+  			  </TD>
+  			  <TD VALIGN="MIDDLE" HEIGHT="23" WIDTH="4">
+  				&nbsp;
+  			  </TD>
+  			  <TD VALIGN="MIDDLE" HEIGHT="23" WIDTH="75">
+  				<BUTTON CLASS="BUTTONS" ID="CancelBtn" onClick="window.external.Finish(document, 'cancel');">Cancel</BUTTON>
+  			  </TD>
+  			  <TD VALIGN="MIDDLE" HEIGHT="23" WIDTH="4">
+  				&nbsp;
+  			  </TD>
+  			  <TD VALIGN="MIDDLE" HEIGHT="23" WIDTH="75">
+  				<BUTTON CLASS="BUTTONS" ID="HelpBtn" onClick="window.external.OnHelp('vc.appwiz.mfc.exe.doctemp');">Help</BUTTON>
+  			  </TD>
+  			  <TD VALIGN="MIDDLE" HEIGHT="23" WIDTH="12">
+  				&nbsp;
+  			  </TD>
+ 			 </TR>
+ 
+ 			 <TR>
+  			  <TD VALIGN="TOP" HEIGHT="12" COLSPAN="8">
+  				&nbsp;
+  			  </TD>
+ 			 </TR>
+			</TABLE>
+			
+	   	  <!--CLOSE OF BUTTON HTML//-->
+		  </TD>
+		 </TR>
+		</TABLE>
+	
+  	<!--CLOSE OF NAVIGATION, CONTENT, AND BUTTON TABLES//-->
+ 	</TD>
+  </TR>
+</TABLE>
+
+</BODY>
+</HTML>
+
+<SCRIPT LANGUAGE="JSCRIPT">
+
+var tab_array = new Array();
+tab_array[0] = Default;
+tab_array[1] = AppType;
+tab_array[2] = CompoundDoc;
+tab_array[3] = DocTemp;
+tab_array[4] = DBSupport;
+tab_array[5] = UIFeatures;
+tab_array[6] = Advanced;
+tab_array[7] = XTToolkitPro;
+tab_array[8] = GeneratedClasses;
+
+var ProjName = window.external.FindSymbol("PROJECT_NAME");
+
+function InitDocument(document)
+{
+	setDirection();
+	InitTabs();
+	window.external.Load(document);
+
+	var max = new Number;
+	max = window.external.FindSymbol("MAX_DOC_TYPE_NAME");
+	DOC_TYPE_NAME.maxLength = max;
+
+	max = window.external.FindSymbol("MAX_FILE_NEW_NAME_SHORT");
+	FILE_NEW_NAME_SHORT.maxLength = max;
+
+	max = window.external.FindSymbol("MAX_FILE_TYPE_ID");
+	FILE_TYPE_ID.maxLength = max;
+
+	max = window.external.FindSymbol("MAX_FILE_NEW_NAME_LONG");
+	FILE_NEW_NAME_LONG.maxLength = max;
+
+	max = window.external.FindSymbol("MAX_FILTER_NAME");
+	FILTER_NAME.maxLength = max;
+}
+
+function InitTabs()
+{
+	MouseOut(DBSupport);
+	MouseOut(CompoundDoc);
+	MouseOut(XTToolkitPro);
+
+	XTToolkitPro.className = "activelink";
+
+	if (window.external.FindSymbol("APP_TYPE_DLG"))
+	{
+		XTToolkitPro.className = "inactivelink";
+	}
+}
+
+function Next(document, linkto)
+{
+	window.external.Next(document, linkto);
+}
+
+function onClick(obj)
+{
+	if (obj == null || typeof(obj) == "undefined")
+		return;
+
+	if (obj.id == "DBSupport")
+	{
+		if (!window.external.FindSymbol("APP_TYPE_DLG"))
+			Next(document, "DBSupport.htm"); 
+	}
+	if (obj.id == "XTToolkitPro")
+	{
+		if (!window.external.FindSymbol("APP_TYPE_DLG"))
+		{ 
+			Next(document, "XTToolkitPro.htm"); 
+		}
+	}
+	if (obj.id == "CompoundDoc")
+	{
+		if (window.external.FindSymbol("DOCVIEW") && !window.external.IsSymbolDisabled("DOCVIEW"))
+			Next(document, "CompoundDoc.htm"); 
+	}
+}
+
+function CheckDataSource()
+{
+	if (window.external.FindSymbol("DB_CONNECTION_STRING") == "" && ( window.external.FindSymbol("OLEDB") || window.external.FindSymbol("ODBC") ) )
+	{
+		L_Err1_Text = "You must specify a data source when database view option is selected";
+		window.external.ReportError(L_Err1_Text);
+		return false;
+	}
+	return true;
+}
+
+function OnFinish(document)
+{
+	bValidating = true;
+	if (!ValidateInput())
+	{
+		bValidating = false;
+		return;
+	}
+
+	if (!CheckDataSource())
+		return;
+
+	if (window.external.FindSymbol("ACTIVE_DOC_SERVER"))
+	{
+		var strExtension = window.external.FindSymbol("FILE_EXTENSION");
+		if (strExtension == "")
+		{
+			L_Err2_Text = "Active document server option is selected.  You must specify a Document File Extension";
+			window.external.ReportError(L_Err2_Text);
+			FILE_EXTENSION.focus();
+			return;
+		}
+	}
+	OnWizFinish(document);
+}
+
+function SetFilter()
+{
+	var strExtension = TrimStr(FILE_EXTENSION.value);
+	window.external.AddSymbol("FILE_EXTENSION", strExtension);
+	if (strExtension == "")
+	{
+		FILTER_NAME.value = strExtension;
+		window.external.AddSymbol("HAS_SUFFIX", false);
+	}
+	else
+	{
+		FILTER_NAME.value = ProjName + " Files (*." + strExtension + ")";
+		window.external.AddSymbol("HAS_SUFFIX", true);
+	}
+}
+
+function ValidateInput()
+{
+	var oInvalid = null;
+
+	if (!Validate(FILE_EXTENSION))
+		oInvalid = FILE_EXTENSION;
+
+	if (oInvalid == null)
+		if (!Validate(FILE_TYPE_ID))
+			oInvalid = FILE_TYPE_ID;
+
+	if (oInvalid == null)
+		if (!Validate(DOC_TYPE_NAME))
+			oInvalid = DOC_TYPE_NAME;
+
+	if (oInvalid == null)
+		if (!Validate(FILTER_NAME))
+			oInvalid = FILTER_NAME;
+
+	if (oInvalid == null)
+		if (!Validate(FILE_NEW_NAME_SHORT))
+			oInvalid = FILE_NEW_NAME_SHORT;
+
+	if (oInvalid == null)
+		if (!Validate(FILE_NEW_NAME_LONG))
+			oInvalid = FILE_NEW_NAME_LONG;
+
+	if (oInvalid != null)
+	{
+		window.external.ReportError();
+		oInvalid.focus();
+		return false;
+	}
+	return true;
+}
+
+function ValidateFileExtention(strExt)
+{
+	if(!window.external.dte.VCLanguageManager.ValidateFileName(strExt, vsCMValidateFileExtNone))
+		return false;
+
+	if(strExt.charAt(strExt.length - 1) == '.')
+	{
+		L_Err3_Text = "File extention cannot end with a dot.";
+		oErrObj = new Error(L_Err3_Text);
+		SetErrorInfo(oErrObj);
+		return false;
+	}
+	return true;
+}
+
+function Validate(obj)
+{
+	var bValid = true;
+	switch(obj.id)
+	{
+		case "FILE_EXTENSION":
+		{
+			if (!FILE_EXTENSION.value.length)
+			{
+				bValid = true;
+				break;
+			}
+			bValid = ValidateFileExtention(obj.value);
+			break;
+		}
+		case "DOC_TYPE_NAME":
+			bValid = window.external.dte.VCLanguageManager.ValidateQualifiedName(obj.value);
+			break;
+		case "FILE_TYPE_ID":
+			bValid = window.external.IsValidProgID(obj.value);
+			break;
+		default:
+			break;
+	}
+
+	if (typeof(bValid) == "undefined")
+		bValid = false;
+
+	return bValid;
+}
+
+</SCRIPT>
+<SCRIPT ID="INCLUDE_SCRIPT" LANGUAGE="JSCRIPT"></SCRIPT>
+<SCRIPT ID="INCLUDE_COMMON" LANGUAGE="JSCRIPT"></SCRIPT>
+<SCRIPT>
+	var strPath = "../../../";
+	strPath += window.external.GetHostLocale();
+	var strScriptPath = strPath + "/Script.js";
+	var strCommonPath = strPath + "/Common.js";
+	document.scripts("INCLUDE_SCRIPT").src = strScriptPath;
+	document.scripts("INCLUDE_COMMON").src = strCommonPath;
+</SCRIPT>

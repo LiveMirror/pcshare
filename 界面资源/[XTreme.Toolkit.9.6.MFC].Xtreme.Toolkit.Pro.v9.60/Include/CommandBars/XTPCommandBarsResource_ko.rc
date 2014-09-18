@@ -1,0 +1,417 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "XTPCommandBarsResource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifndef _XTP_NO_BINARY_RESOURCES
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+XTP_IDR_TOOLBAR_TOOLS   BITMAP     DISCARDABLE        "CommandBars/res/ImageEditorIcons.bmp"
+XTP_IDR_TOOLBAR_TOOLS32 BITMAP     DISCARDABLE        "CommandBars/res/ImageEditorIcons32.bmp "
+XTP_IDB_MENUBAR_ICONS   BITMAP     DISCARDABLE        "CommandBars/res/MenuBarIcons.bmp"
+XTP_ID_CUSTOMIZE_CHANGEBUTTONIMAGE BITMAP     DISCARDABLE        "CommandBars/res/UserIcons.bmp"
+XTP_ID_WORKSAPCE_NEWHORIZONTAL BITMAP     DISCARDABLE        "CommandBars/res/TabGroups.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+XTP_IDC_COMMANDBARS_DRAGCOPY CURSOR     DISCARDABLE        "CommandBars/res/dragcopypro.cur"
+XTP_IDC_COMMANDBARS_DRAGMOVE CURSOR     DISCARDABLE        "CommandBars/res/dragmovepro.cur"
+XTP_IDC_COMMANDBARS_DRAGDELETE CURSOR     DISCARDABLE        "CommandBars/res/dragdeletepro.cur"
+XTP_IDC_COMMANDBARS_LINE CURSOR     DISCARDABLE        "CommandBars/res/line.cur"
+XTP_IDC_COMMANDBARS_PICKCOLOR CURSOR     DISCARDABLE        "CommandBars/res/pickcolor.cur"
+XTP_IDC_COMMANDBARS_FILLCOLOR CURSOR     DISCARDABLE        "CommandBars/res/fillcolor.cur"
+XTP_IDC_COMMANDBARS_PENCIL CURSOR     DISCARDABLE        "CommandBars/res/pencil.cur"
+XTP_IDC_WORKSAPCE_NEW   CURSOR     DISCARDABLE        "CommandBars/res/WorksapceNew.cur"
+XTP_IDC_WORKSAPCE_DELETE CURSOR     DISCARDABLE        "CommandBars/res/WorksapceDelete.cur"
+
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+XTP_IDD_IMAGEEDITOR_DIALOG DIALOGEX 0, 0, 253, 185
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "단추 편집기"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "그림",IDC_STATIC,7,7,23,8
+    GROUPBOX        "색",IDC_STATIC,102,106,80,71
+    GROUPBOX        "이동",IDC_STATIC,101,72,81,31
+    GROUPBOX        "미리 보기",IDC_STATIC,7,106,86,71
+    GROUPBOX        "도구",IDC_STATIC,101,9,81,60
+    DEFPUSHBUTTON   "확인",IDOK,193,7,50,14
+    PUSHBUTTON      "취소",IDCANCEL,193,25,50,14
+    CONTROL         "",XTP_IDC_STATIC_PICTURE,"Static",SS_BLACKFRAME | 
+                    SS_NOTIFY,7,17,86,80
+    CTEXT           "",XTP_IDC_STATIC_PREVIEW,14,117,73,54,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    LTEXT           "투명",IDC_STATIC,135,156,39,8
+    LTEXT           "",XTP_ID_CLR_ERASE,116,153,15,15,SS_NOTIFY
+    CTEXT           "도구",XTP_IDC_STATIC_TOOLS,112,21,60,43,SS_CENTERIMAGE | 
+                    NOT WS_VISIBLE | WS_BORDER
+    CTEXT           "이동",XTP_IDC_STATIC_MOVE,111,83,62,12,SS_CENTERIMAGE | 
+                    NOT WS_VISIBLE | WS_BORDER
+    CONTROL         "",XTP_ID_CLR_PICKER,"Static",SS_LEFTNOWORDWRAP | 
+                    SS_NOTIFY | WS_GROUP,109,144,15,15
+    CTEXT           "색",XTP_IDC_STATIC_COLORS,107,121,68,12,
+                    SS_CENTERIMAGE | NOT WS_VISIBLE | WS_BORDER
+END
+
+XTP_IDD_PAGE_KEYBOARD DIALOG DISCARDABLE  0, 0, 230, 150
+STYLE WS_CHILD | WS_CAPTION
+CAPTION "키보드"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "명령:",XTP_IDC_TXT_COMMANDS,2,28,38,8
+    LISTBOX         XTP_IDC_LBOX_ACCEL_COMMANDS,2,39,93,74,LBS_HASSTRINGS | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "키 할당:",XTP_IDC_TXT_ASSIGNMENTS,100,28,67,8
+    LISTBOX         XTP_IDC_LBOX_KEYS,100,38,75,49,LBS_HASSTRINGS | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "새 바로 가기 키:",XTP_IDC_TXT_NEWKEY,100,91,76,8
+    EDITTEXT        XTP_IDC_EDIT_SHORTCUTKEY,100,101,75,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "할당",XTP_IDC_BTN_ASSIGN,179,39,49,14
+    PUSHBUTTON      "제거",XTP_IDC_BTN_REMOVE,179,56,49,14
+    PUSHBUTTON      "모두 원래대로",XTP_IDC_BTN_ACCEL_RESET,179,73,49,14
+    LTEXT           "설명:",XTP_IDC_TXT_DESC_TITLE,2,119,38,8
+    LTEXT           "",XTP_IDC_TXT_DESC_OVERVIEW,2,129,173,19,0,
+                    WS_EX_STATICEDGE
+    LTEXT           "범주:",IDC_STATIC,2,5,31,8
+    COMBOBOX        XTP_IDC_COMBO_CATEGORY,2,15,93,147,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+XTP_IDD_PAGE_TOOLBARS DIALOG DISCARDABLE  0, 0, 230, 150
+STYLE WS_CHILD | WS_CAPTION
+CAPTION "도구 모음"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "도구 모음:",IDC_STATIC,4,5,31,8
+    LISTBOX         XTP_IDC_LIST_TOOLBARS,4,15,150,131,LBS_OWNERDRAWFIXED | 
+                    LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "새로 만들기...",XTP_IDC_BUTTON_NEW,158,15,70,14
+    PUSHBUTTON      "이름 바꾸기...",XTP_IDC_BUTTON_RENAME,158,33,70,14
+    PUSHBUTTON      "삭제",XTP_IDC_BUTTON_DELETE,158,51,70,14
+    PUSHBUTTON      "원래대로...",XTP_IDC_BUTTON_RESET,158,69,70,14
+END
+
+XTP_IDD_PAGE_OPTIONS DIALOG DISCARDABLE  0, 0, 230, 150
+STYLE WS_CHILD | WS_CAPTION
+CAPTION "옵션"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "즐겨 쓰는 메뉴 및 도구 모음",IDC_STATIC,7,5,110,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,122,9,101,1
+    CONTROL         "항상 모든 메뉴 표시",XTP_IDC_CHECK_FULL_MENUS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,17,207,10
+    CONTROL         "자동으로 메뉴 확장",
+                    XTP_IDC_CHECK_AFTERDELAY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,28,29,195,10
+    PUSHBUTTON      "메뉴 및 도구 모음 사용 현황 데이터를 원래대로",
+                    XTP_IDC_BUTTON_RESETDATA,16,42,156,14
+    LTEXT           "기타",IDC_STATIC,7,70,18,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,29,74,194,1
+    CONTROL         "큰 아이콘으로 표시",XTP_IDC_CHECK_LARGEICONS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,16,82,207,10
+    CONTROL         "도구 모음에 스크린 팁 표시",XTP_IDC_CHECK_SCREENTTIPS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,93,207,10
+    CONTROL         "스크린 팁에 바로 가기 키 표시",
+                    XTP_IDC_CHECK_SHORTCUTS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,28,104,195,10
+    LTEXT           "메뉴 애니메이션:",IDC_STATIC,16,117,56,8
+    COMBOBOX        XTP_IDC_COMBO_ANIMATION,76,115,79,65,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+XTP_IDD_PAGE_COMMANDS DIALOG DISCARDABLE  0, 0, 230, 150
+STYLE WS_CHILD | WS_CAPTION
+CAPTION "명령"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "명령을 도구 모음에 추가하려면 범주를 선택한 후 추가하고자 하는 명령을 이 대화 상자로부터 도구 모음으로 끕니다.",
+                    IDC_STATIC,4,5,220,19
+    LTEXT           "범주:",IDC_STATIC,4,25,38,8
+    LISTBOX         XTP_IDC_LIST_CATEGORIES,4,35,81,103,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "명령:",IDC_STATIC,90,25,38,8
+    LISTBOX         XTP_IDC_LIST_COMMANDS,90,35,140,103,LBS_OWNERDRAWFIXED | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+XTP_IDD_NEWTOOLBAR DIALOG DISCARDABLE  0, 0, 186, 52
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "새 도구 모음"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "도구 모음 이름:",IDC_STATIC,4,4,100,8
+    EDITTEXT        XTP_IDC_EDIT_TOOLBARNAME,4,15,178,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "확인",IDOK,78,34,50,14
+    PUSHBUTTON      "취소",IDCANCEL,132,34,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+XTP_IDR_CUSTOMIZEMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "사용자 지정"
+    BEGIN
+        MENUITEM "원래대로",                      XTP_ID_CUSTOMIZE_RESET
+        MENUITEM "삭제",                     XTP_ID_CUSTOMIZE_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "이름:",                      XTP_ID_CUSTOMIZE_NAME
+        MENUITEM SEPARATOR
+        MENUITEM "단추 모양 복사",          XTP_ID_CUSTOMIZE_COPYBUTTONIMAGE
+
+        MENUITEM "단추 모양 붙여넣기",         XTP_ID_CUSTOMIZE_PASTEBUTTONIMAGE
+
+        MENUITEM "단추 모양 원래대로",         XTP_ID_CUSTOMIZE_RESETBUTTONIMAGE
+
+        MENUITEM "단추 모양 편집...",       XTP_ID_CUSTOMIZE_EDITBUTTONIMAGE
+
+        MENUITEM "단추 모양 변경",        XTP_ID_CUSTOMIZE_CHANGEBUTTONIMAGE
+
+        MENUITEM SEPARATOR
+        MENUITEM "기본 스타일",              XTP_ID_CUSTOMIZE_DEFAULTSTYLE
+
+        MENUITEM "텍스트만",                  XTP_ID_CUSTOMIZE_TEXTONLY
+        MENUITEM "이미지 및 텍스트",             XTP_ID_CUSTOMIZE_IMAGEANDTEXT
+
+        MENUITEM SEPARATOR
+        MENUITEM "그룹 시작",              XTP_ID_CUSTOMIZE_BEGINAGROUP
+    END
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "XTPCommandBarsResource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_ADDORREMOVE     "단추 추가/제거"
+    XTP_IDS_CUSTOMIZE_CLOSE "닫기"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CUSTOMIZE       "사용자 지정"
+    XTP_IDS_NEWMENU         "새 메뉴"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CONFIRM_RESETDATA 
+                            "이 응용 프로그램에서 사용한 명령 기록을 삭제하고 메뉴와 도구 모음에 표시될 명령의 기본값을 저장합니다. 사용자가 사용했던 메뉴나 도구 모음으로 돌아갈 수 없습니다. 계속하시겠습니까?"
+    XTP_IDS_INVALID_NUMBER  "숫자가 잘못되었습니다."
+    XTP_IDS_INVALID_FONTSIZE "숫자는 1에서 1638 사이여야 합니다."
+    XTP_IDS_CONFIRM_RESET   "Are you sure you want to reset the changes made to the '%s' toolbar?"
+    XTP_IDS_BUILTINMENUS    "기본 제공 메뉴"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CUSTOM_BAR      "사용자 정의 %d"
+    XTP_IDS_ERROR_BLANKNAME "도구 모음 이름을 지정해야 합니다. 이름을 입력하십시오."
+    XTP_IDS_ERROR_LIMIT     "죄송하지만 한계에 도달했습니다."
+    XTP_IDS_ERROR_EXISTS    "'%s' 도구 모음이 이미 있습니다. 다른 이름을 선택하십시오."
+    XTP_IDS_RENAMETOOLBAR   "도구 모음 이름 바꾸기"
+    XTP_IDS_CONFIRM_DELETE  "'%s' 도구 모음을 삭제하시겠습니까?"
+    XTP_IDS_ALLCOMMANDS     "모든 명령"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_ID_CUSTOMIZE        "\n사용자 정의..."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CLR_INDIGO      "남색"
+    XTP_IDS_CLR_GRAY80      "회색-80%"
+    XTP_IDS_CLR_DARK_RED    "진한 빨강"
+    XTP_IDS_CLR_ORANGE      "주황"
+    XTP_IDS_CLR_DARK_YELLOW "진한 노랑"
+    XTP_IDS_CLR_GREEN       "녹색"
+    XTP_IDS_CLR_TEAL        "청록"
+    XTP_IDS_CLR_BLUE        "파랑"
+    XTP_IDS_CLR_BLUEGRAY    "청회색"
+    XTP_IDS_CLR_GRAY50      "회색-50%"
+    XTP_IDS_CLR_RED         "빨강"
+    XTP_IDS_CLR_LIGHTORANGE "연한 주황"
+    XTP_IDS_CLR_LIME        "라임"
+    XTP_IDS_CLR_SEA_GREEN   "해록"
+    XTP_IDS_CLR_AQUA        "바다색"
+    XTP_IDS_CLR_LIGHT_BLUE  "연한 파랑"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CLR_VIOLET      "보라"
+    XTP_IDS_CLR_GRAY40      "회색-40%"
+    XTP_IDS_CLR_PINK        "분홍"
+    XTP_IDS_CLR_GOLD        "황금색"
+    XTP_IDS_CLR_YELLOW      "노랑"
+    XTP_IDS_CLR_BRIGHT_GREEN "밝은 녹색"
+    XTP_IDS_CLR_TURQUOISE   "옥색"
+    XTP_IDS_CLR_SKY_BLUE    "하늘색"
+    XTP_IDS_CLR_PLUM        "진한 보라"
+    XTP_IDS_CLR_GRAY25      "회색-25%"
+    XTP_IDS_CLR_ROSE        "다홍"
+    XTP_IDS_CLR_TAN         "황갈색"
+    XTP_IDS_CLR_LIGHT_YELLOW "연한 노랑"
+    XTP_IDS_CLR_LIGHT_GREEN "연한 녹색"
+    XTP_IDS_CLR_LIGHT_TURQUOISE "연한 옥색"
+    XTP_IDS_CLR_PALE_BLUE   "흐린 파랑"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CLR_BLACK       "검정"
+    XTP_IDS_CLR_BROWN       "밤색"
+    XTP_IDS_CLR_OLIVE_GREEN "황록색"
+    XTP_IDS_CLR_DARK_GREEN  "진한 녹색"
+    XTP_IDS_CLR_DARK_TEAL   "진한 청록"
+    XTP_IDS_CLR_DARK_BLUE   "진한 파랑"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CLR_LAVENDER    "연보라"
+    XTP_IDS_CLR_WHITE       "흰색"
+    XTP_IDS_CLR_GRAY        "회색"
+    XTP_IDS_CLR_MAROON      "적갈색"
+    XTP_IDS_CLR_OLIVE       "올리브"
+    XTP_IDS_CLR_NAVY        "짙은 파랑"
+    XTP_IDS_CLR_PURPLE      "자주"
+    XTP_IDS_CLR_SILVER      "은색"
+    XTP_IDS_CLR_FUCHSIA     "밝은 자홍"
+    XTP_IDS_CLR_NOFILL      "채우기 없음\n채우기 없음"
+    XTP_IDS_AUTOMATIC       "자동 색\n자동 색"
+    XTP_IDS_MORE_COLORS     "다른 색..."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CONFIRM_KEYBOARD 
+                            "정말로 키 할당을  지울까요?  다음 단계에서 모든 사용자 키 할당을 제거할 것입니다."
+    XTP_IDS_CONFIRM_REASSIGN 
+                            "This shortcut is currently assigned.\nDo you want to re-assign this shortcut?"
+    XTP_IDS_CONFIRM_UPDATE  "Due to a software update the toolbar '%s' has changed. Would you like to reset your customized toolbar and load the new one?"
+    XTP_IDS_CUSTOMIZE_RESET "원래대로"
+    XTP_IDS_IMAGEEDITOR_FILTER 
+                            "그림 불러오기|bmp|모든 그림 파일|*.bmp;*.wmf;*.emf;*.ico;*.dib;*.cur;*.gif;*.jpg|비트맵(*.Bmp;*.Dib)|*.bmp;*.dib|메타 파일(*.Wmf;*.Emf)|*.wmf;*.emf|아이콘(*.Ico;*.Cur)|*.ico;*.cur|GIF(*.Gif)|*.gif|JPEG(*.Jpg)|*.jpg|모든 파일(*.*)|*.*||"
+    XTP_ID_TOOLBAR_EXPAND   "\n도구 모음 옵션"
+    XTP_ID_TOOLBAR_HIDE     "\n닫기"
+    XTP_ID_MENUBAR_CLOSE    "\n창 닫기"
+    XTP_ID_MENUBAR_RESTORE  "\n창 복원"
+    XTP_ID_MENUBAR_MINIMIZE "\n창 최소화"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_ID_BUTTON_PENCIL    "\n연필"
+    XTP_ID_BUTTON_FILL      "\n채우기 색"
+    XTP_ID_BUTTON_GETCOLOR  "\n색 선택"
+    XTP_ID_BUTTON_LINE      "\n선"
+    XTP_ID_BUTTON_RECTANGLE "\n사각형"
+    XTP_ID_BUTTON_CIRCLE    "\n타원"
+    XTP_ID_BUTTON_COPY      "\n복사"
+    XTP_ID_BUTTON_PASTE     "\n붙여넣기"
+    XTP_ID_BUTTON_CLEAR     "\n지우기"
+    XTP_ID_BUTTON_UNDO      "\n실행 취소"
+    XTP_ID_BUTTON_REDO      "\n다시 실행"
+    XTP_ID_BUTTON_OPEN      "\n""파일에서 가져오기"""
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_ANIMATION_SYSDEF "(시스템 기본값)"
+    XTP_IDS_ANIMATION_RANDOM "임의"
+    XTP_IDS_ANIMATION_UNFOLD "펼치기"
+    XTP_IDS_ANIMATION_SLIDE "슬라이드"
+    XTP_IDS_ANIMATION_FADE  "페이드"
+    XTP_IDS_ANIMATION_NONE  "없음"
+    XTP_ID_WORKSAPCE_MOVEPREVIOUS "\n이전 탭 그룹으로 이동"
+    XTP_ID_WORKSAPCE_MOVENEXT "\n다음 탭 그룹으로 이동"
+    XTP_ID_WORKSAPCE_NEWHORIZONTAL "\n새 가로 탭 그룹"
+    XTP_ID_WORKSAPCE_NEWVERTICAL "\n새 세로 탭 그룹"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_ID_WORKSAPCE_CANCEL "취소"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

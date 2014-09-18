@@ -1,0 +1,78 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include <XTPResourceDll.h>
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ARABIC, SUBLANG_ARABIC_SAUDI_ARABIA
+#pragma code_page(1256)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDC_LANG_ARABIC         "«·⁄—»Ì… («·„„·ﬂ… «·⁄—»Ì… «·”⁄ÊœÌ…)"
+    XTP_IDC_LANG_CHINESE_PRC    "«·’Ì‰Ì… (Ã„ÂÊ—Ì… «·’Ì‰ «·‘⁄»Ì…)"
+    XTP_IDC_LANG_CHINESE_TAIWAN "«·’Ì‰Ì… ( «ÌÊ«‰)"
+    XTP_IDC_LANG_CROATIAN       "«·ﬂ—Ê« Ì…"
+    XTP_IDC_LANG_CZECH          "«· ‘ÌﬂÌ…"
+    XTP_IDC_LANG_DANISH         "«·œ«‰„«—ﬂÌ…"
+    XTP_IDC_LANG_DUTCH          "«·ÂÊ·‰œÌ…"
+    XTP_IDC_LANG_ENGLISH        "«·≈‰Ã·Ì“Ì… («·Ê·«Ì«  «·„ Õœ…)"
+    XTP_IDC_LANG_ESTONIAN       "«·√” Ê‰Ì…"
+    XTP_IDC_LANG_FINNISH        "«·›‰·‰œÌ…"
+    XTP_IDC_LANG_FRENCH         "«·›—‰”Ì… (›—‰”«)"
+    XTP_IDC_LANG_GERMAN         "«·√·„«‰Ì… (√·„«‰Ì«)"
+    XTP_IDC_LANG_GREEK          "«·ÌÊ‰«‰Ì…"
+    XTP_IDC_LANG_HEBREW         "«·⁄»—Ì…"
+    XTP_IDC_LANG_HUNGARIAN      "«·„Ã—Ì…"
+    XTP_IDC_LANG_ITALIAN        "«·≈Ìÿ«·Ì… (≈Ìÿ«·Ì«)"
+    XTP_IDC_LANG_JAPANESE       "«·Ì«»«‰Ì…"
+    XTP_IDC_LANG_KOREAN         "«·ﬂÊ—Ì…"
+    XTP_IDC_LANG_LATVIAN        "«··« ›Ì…"
+    XTP_IDC_LANG_LITHUANIAN     "«··Ì Ê«‰Ì…"
+    XTP_IDC_LANG_NORWEGIAN      "«·‰—ÊÌÃÌ… (»Êﬂ„«·)"
+    XTP_IDC_LANG_POLISH         "«·»Ê·‰œÌ…"
+    XTP_IDC_LANG_PORTUGUESE     "«·»— €«·Ì… («·»— €«·)"
+    XTP_IDC_LANG_PORTUGUESE_BR  "«·»— €«·Ì… («·»—«“Ì·)"
+    XTP_IDC_LANG_ROMANIAN       "«·—Ê„«‰Ì…"
+    XTP_IDC_LANG_RUSSIAN        "«·—Ê”Ì…"
+    XTP_IDC_LANG_SLOVAK         "«·”·Ê›«ﬂÌ…"
+    XTP_IDC_LANG_SLOVENIAN      "«·”·Ê›Ì‰Ì…"
+    XTP_IDC_LANG_SPANISH        "«·√”»«‰Ì… (√”»«‰Ì« - «·ÕœÌÀ…)"
+    XTP_IDC_LANG_SWEDISH        "«·”ÊÌœÌ…"
+    XTP_IDC_LANG_THAI           "«· «Ì·«‰œÌ…"
+    XTP_IDC_LANG_UKRAINIAN      "«·√Êﬂ—«‰Ì…"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+#include "res\XTPResource.rc2"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

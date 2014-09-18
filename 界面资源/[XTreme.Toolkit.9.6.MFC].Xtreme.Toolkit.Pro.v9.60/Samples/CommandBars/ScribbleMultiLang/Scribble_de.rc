@@ -1,0 +1,561 @@
+
+
+#define APSTUDIO_READONLY_SYMBOLS
+
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_GERMAN, SUBLANG_GERMAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_FLAG                BITMAP     DISCARDABLE        "res\\german.bmp"
+IDR_MAINFRAME           BITMAP     MOVEABLE PURE      "res\\Tlb.bmp"
+IDC_CJLOGO              BITMAP     FIXED IMPURE       "res\\cj_logo.bmp"
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#include ""res\\Scribble.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#include ""afxolesv.rc""       // OLE server resources\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\CjSample.ico"
+IDR_SCRIBBTYPE          ICON    DISCARDABLE        "res\\ScribDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_PEN_THICK_OR_THIN
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+    BUTTON      ID_CONTEXT_HELP
+    SEPARATOR
+    BUTTON      ID_LANGUAGE_ENGLISH
+    BUTTON      ID_LANGUAGE_GERMAN
+    BUTTON      ID_LANGUAGE_JAPANESE
+    BUTTON      ID_LANGUAGE_ARABIC
+    BUTTON      ID_LANGUAGE_RUSSIAN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_DUMMY MENU DISCARDABLE 
+BEGIN
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+END
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&Datei"
+    BEGIN
+        MENUITEM "&Neu\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "Ö&ffnen...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "Druckereinric&htung...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Zuletzt bearbeitete Datei",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "&Beenden",                       ID_APP_EXIT
+    END
+    POPUP "Sprache"
+    BEGIN
+        MENUITEM "Englisch",                     ID_LANGUAGE_ENGLISH
+        MENUITEM "Deutsch",                      ID_LANGUAGE_GERMAN
+        MENUITEM "Japanisch",                    ID_LANGUAGE_JAPANESE
+        MENUITEM "Arabisch",                      ID_LANGUAGE_ARABIC
+        MENUITEM "Russian",                     ID_LANGUAGE_RUSSIAN
+    END
+    POPUP "&Ansicht"
+    BEGIN
+        MENUITEM "&Symbolleiste",                    ID_VIEW_TOOLBAR
+        MENUITEM "S&tatusleiste",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Hilfe"
+    BEGIN
+        MENUITEM "&Hilfethemen",                ID_HELP_FINDER
+        MENUITEM SEPARATOR
+        MENUITEM "&Über Scribble...",          ID_APP_ABOUT
+    END
+END
+
+IDR_SCRIBBTYPE MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&Datei"
+    BEGIN
+        MENUITEM "&Neu\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "Ö&ffnen...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Schließen",                      ID_FILE_CLOSE
+        MENUITEM "&Speichern\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Speichern &unter...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Drucken...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Seitenansic&ht",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "Druckereinric&htung...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Na&chricht senden...",                    ID_FILE_SEND_MAIL
+        MENUITEM SEPARATOR
+        MENUITEM "Zuletzt bearbeitete Datei",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "&Beenden",                       ID_APP_EXIT
+    END
+    POPUP "Sprache"
+    BEGIN
+        MENUITEM "Englisch",                     ID_LANGUAGE_ENGLISH
+        MENUITEM "Deutsch",                      ID_LANGUAGE_GERMAN
+        MENUITEM "Japanisch",                    ID_LANGUAGE_JAPANESE
+        MENUITEM "Arabisch",                      ID_LANGUAGE_ARABIC
+        MENUITEM "Russian",                     ID_LANGUAGE_RUSSIAN
+    END
+    POPUP "&Stift"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM "Alle löschen",                  ID_EDIT_CLEAR_ALL
+    END
+    POPUP "&Stift"
+    BEGIN
+        MENUITEM "Thick &Line",                 ID_PEN_THICK_OR_THIN
+        MENUITEM "Pen &Widths...",              ID_PEN_WIDTHS
+    END
+    POPUP "&Ansicht"
+    BEGIN
+        MENUITEM "&Symbolleiste",                    ID_VIEW_TOOLBAR
+        MENUITEM "S&tatusleiste",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Fenster"
+    BEGIN
+        MENUITEM "&Neues Fenster",                 ID_WINDOW_NEW
+        MENUITEM "Überlappend",                    ID_WINDOW_CASCADE
+        MENUITEM "&Teilen",                       ID_WINDOW_TILE_HORZ
+        MENUITEM "&Symbole anordnen",              ID_WINDOW_ARRANGE
+		MENUITEM "Window List",                 35000
+    END
+    POPUP "&Hilfe"
+    BEGIN
+        MENUITEM "&Hilfethemen",                ID_HELP_FINDER
+        MENUITEM SEPARATOR
+        MENUITEM "&Über Scribble...",          ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_F1,          ID_HELP,                VIRTKEY, NOINVERT
+    VK_F1,          ID_CONTEXT_HELP,        VIRTKEY, SHIFT, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 246, 151
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Über Scribble"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Scribble Version 1.0",IDC_STATIC_SCRIBBLE,88,74,151,10
+    DEFPUSHBUTTON   "OK",IDOK,169,130,70,14,WS_GROUP
+    LTEXT           "Sparche:  GERMAN",IDC_STATIC_LANGUAGE,88,104,151,8
+    LTEXT           "Beispiel:  Mehrsprachige Ressourcen Datei",
+                    IDC_STATIC_MULLANG,88,83,151,10
+    CONTROL         132,IDC_STATIC,"Static",SS_BITMAP,7,74,75,37
+    CTEXT           "Copyright ©2004 Codejock Software, All Rights Reserved",
+                    IDC_TXT_COPYRIGHT,28,41,190,8
+    CTEXT           "http://www.codejock.com",IDC_TXT_URL,28,50,190,8
+    CONTROL         101,IDC_STATIC,"Static",SS_BITMAP,28,7,190,31
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,7,120,232,1
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,8,66,231,1
+END
+
+IDD_PEN_WIDTHS DIALOG DISCARDABLE  0, 0, 203, 65
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Strifbreiten:"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,148,7,50,14
+    PUSHBUTTON      "Abbrechen",IDCANCEL,148,24,50,14
+    PUSHBUTTON      "Standard",IDC_DEFAULT_PEN_WIDTHS,148,41,50,14
+    LTEXT           "Dünne Stiftbreite:",IDC_STATIC_THIN,10,12,70,10
+    LTEXT           "Dicke Stiftbreite:",IDC_STATIC_THICK,10,33,70,10
+    EDITTEXT        IDC_THIN_PEN_WIDTH,86,12,40,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_THICK_PEN_WIDTH,86,33,40,13,ES_AUTOHSCROLL
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040704B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "SCRIBBLE MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "SCRIBBLE\0"
+            VALUE "LegalCopyright", "Copyright © 1998\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "SCRIBBLE.EXE\0"
+            VALUE "ProductName", "SCRIBBLE Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x0409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 239
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 144
+    END
+
+    IDD_PEN_WIDTHS, DIALOG
+    BEGIN
+        LEFTMARGIN, 10
+        RIGHTMARGIN, 198
+        VERTGUIDE, 1
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_SCRIBBTYPE          "\nScribb\nScribb\nScribble Files (*.scb)\n.SCB\nScribble.Document\nScribb Document"
+    IDS_STANDARD            "Standard"
+    IDS_MENUBAR             "Menüleiste"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Skizze"
+    AFX_IDS_IDLEMESSAGE     "Hilfe erhalten Sie durch Drücken von F1"
+    AFX_IDS_HELPMODEMESSAGE "Auswählen eines Objekts, für das Sie Hilfe benötigen"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "GROSS"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "ÜB"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Neues Dokument erstellen\nNeu"
+    ID_FILE_OPEN            "Vorhandenes Dokument öffnen\nÖffnen"
+    ID_FILE_CLOSE           "Aktives Dokument schließen\nSchließen"
+    ID_FILE_SAVE            "Aktives Dokument speichern\nSpeichern"
+    ID_FILE_SAVE_AS         "Aktives Dokument unter neuem Namen speichern\nSpeichern unter"
+    ID_FILE_PAGE_SETUP      "Ändern der Druckoptionen\nSeite einrichten"
+    ID_FILE_PRINT_SETUP     "Ändern der Drucker- und Druckoptionen\nDruckereinrichtung"
+    ID_FILE_PRINT           "Drucken des aktiven Dokuments\nDrucken"
+    ID_FILE_PRINT_PREVIEW   "Ganze Seiten anzeigen\nSeitenansicht"
+    ID_FILE_UPDATE          "Aktualisiert den Container zur Anzeige von Änderungen.\nAktualisieren"
+    ID_FILE_SAVE_COPY_AS    "Speichert eine Kopie des aktiven Dokuments unter neuem Namen.\nKopie speichern"
+    ID_FILE_SEND_MAIL       "Versendet das aktive Dokument mittels elektronischer Post.\nNachricht senden"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Programminformationen, Versionsnummer und Urheberrechte anzeigen\nInfo"
+    ID_APP_EXIT             "Anwendung beenden; Dokumente nach Rückfrage speichern\nBeenden"
+    ID_HELP_INDEX           "Öffnet die Hilfefunktion.\nHilfethemen"
+    ID_HELP_FINDER          "Anzeigen von Hilfethemen\nHilfethemen"
+    ID_HELP_USING           "Zeigt Anweisungen zum Umgang mit der Hilfe an.\nHilfe"
+    ID_CONTEXT_HELP         "Anzeigen der Hilfe für Schaltflächen, Menüs und Fenster, die angeklickt wurden\nHilfe"
+    ID_HELP                 "Zeigt Hilfe zum aktuellen Vorgang oder Befehl an.\nHilfe"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Dieses Dokument öffnen"
+    ID_FILE_MRU_FILE2       "Dieses Dokument öffnen"
+    ID_FILE_MRU_FILE3       "Dieses Dokument öffnen"
+    ID_FILE_MRU_FILE4       "Dieses Dokument öffnen"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Umschalten zum nächsten Fensterbereich\nNächster Bereich"
+    ID_PREV_PANE            "Umschalten zum vorhergehenden Fensterbereich\nVorhergehender Bereich"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_NEW           "Öffnen eines weiteren Fensters für das aktive Dokument\nNeues Fenster"
+    ID_WINDOW_ARRANGE       "Anordnen der Symbole am unteren Rand des Fensters\nSymbole anordnen"
+    ID_WINDOW_CASCADE       "Anordnen der Fenster, so daß diese überlappen\nFenster überlappen"
+    ID_WINDOW_TILE_HORZ     "Anordnen der Fenster als nichtüberlappende Ausschnitte\nFenster teilen"
+    ID_WINDOW_TILE_VERT     "Anordnen der Fenster als nichtüberlappende Ausschnitte\nFenster teilen"
+    ID_WINDOW_SPLIT         "Aktives Fenster in Bereiche aufteilen\nTeilen"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Auswahl löschen\nLöschen"
+    ID_EDIT_CLEAR_ALL       "Alle löschen"
+    ID_EDIT_COPY            "Kopieren der Auswahl in die Zwischenablage\nKopieren"
+    ID_EDIT_CUT             "Ausschneiden der Auswahl und Ablegen in der Zwischenablage\nAusschneiden"
+    ID_EDIT_FIND            "Suchen des angegebenen Texts\nSuchen"
+    ID_EDIT_PASTE           "Inhalt der Zwischenablage einfügen\nEinfügen"
+    ID_EDIT_REPEAT          "Letzte Aktion wiederholen\nWiederholen"
+    ID_EDIT_REPLACE         "Ersetzen bestimmter Textstellen durch anderen Text\nErsetzen"
+    ID_EDIT_SELECT_ALL      "Gesamtes Dokument markieren\nAlles markieren"
+    ID_EDIT_UNDO            "Widerrufen der letzten Aktion\nRückgängig"
+    ID_EDIT_REDO            "Erneutes Ausführen der zuletzt widerrufenen Aktion\nWiederherstellen"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Ein- oder Ausblenden der Symbolleiste\nSymbolleiste ein-/ausblenden"
+    ID_VIEW_STATUS_BAR      "Ein- oder Ausblenden der Statuszeile\nStatuszeile ein-/ausblenden"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Fenstergröße ändern"
+    AFX_IDS_SCMOVE          "Fensterposition ändern"
+    AFX_IDS_SCMINIMIZE      "Fenster zu Symbol minimieren"
+    AFX_IDS_SCMAXIMIZE      "Fenster in voller Größe darstellen"
+    AFX_IDS_SCNEXTWINDOW    "Umschalten zum nächsten Dokumentfenster"
+    AFX_IDS_SCPREVWINDOW    "Umschalten zum vorhergehenden Dokumentfenster"
+    AFX_IDS_SCCLOSE         "Schließen des aktiven Fensters mit Aufforderung zum Speichern von Dokumenten"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Fenster in normaler Größe darstellen"
+    AFX_IDS_SCTASKLIST      "Task-Liste aktivieren"
+    AFX_IDS_MDICHILD        "Aktivieren dieses Fensters"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Seitenansicht-Modus schließen\nSeitenansicht abbrechen"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_DESKACCESSORY   "Öffnet das ausgewählte Element"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_PEN_THICK_OR_THIN    "Umschaltfläche\nUmschaltfläche"
+    ID_PEN_WIDTHS           "Sets the size of the thin and thick pen"
+    ID_LANGUAGE_ENGLISH     "English\nEnglish"
+    ID_LANGUAGE_GERMAN      "German\nGerman"
+    ID_LANGUAGE_JAPANESE    "Japanese\nJapanese"
+    ID_LANGUAGE_ARABIC      "Arabic\nArabic"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+       // OLE server resources
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

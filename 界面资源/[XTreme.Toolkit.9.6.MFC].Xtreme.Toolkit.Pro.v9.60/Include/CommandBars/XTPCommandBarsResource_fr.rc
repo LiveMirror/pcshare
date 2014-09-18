@@ -1,0 +1,417 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "XTPCommandBarsResource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_FRENCH, SUBLANG_FRENCH
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifndef _XTP_NO_BINARY_RESOURCES
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+XTP_IDR_TOOLBAR_TOOLS   BITMAP     DISCARDABLE        "CommandBars/res/ImageEditorIcons.bmp"
+XTP_IDR_TOOLBAR_TOOLS32 BITMAP     DISCARDABLE        "CommandBars/res/ImageEditorIcons32.bmp "
+XTP_IDB_MENUBAR_ICONS   BITMAP     DISCARDABLE        "CommandBars/res/MenuBarIcons.bmp"
+XTP_ID_CUSTOMIZE_CHANGEBUTTONIMAGE BITMAP     DISCARDABLE        "CommandBars/res/UserIcons.bmp"
+XTP_ID_WORKSAPCE_NEWHORIZONTAL BITMAP     DISCARDABLE        "CommandBars/res/TabGroups.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+XTP_IDC_COMMANDBARS_DRAGCOPY CURSOR     DISCARDABLE        "CommandBars/res/dragcopypro.cur"
+XTP_IDC_COMMANDBARS_DRAGMOVE CURSOR     DISCARDABLE        "CommandBars/res/dragmovepro.cur"
+XTP_IDC_COMMANDBARS_DRAGDELETE CURSOR     DISCARDABLE        "CommandBars/res/dragdeletepro.cur"
+XTP_IDC_COMMANDBARS_LINE CURSOR     DISCARDABLE        "CommandBars/res/line.cur"
+XTP_IDC_COMMANDBARS_PICKCOLOR CURSOR     DISCARDABLE        "CommandBars/res/pickcolor.cur"
+XTP_IDC_COMMANDBARS_FILLCOLOR CURSOR     DISCARDABLE        "CommandBars/res/fillcolor.cur"
+XTP_IDC_COMMANDBARS_PENCIL CURSOR     DISCARDABLE        "CommandBars/res/pencil.cur"
+XTP_IDC_WORKSAPCE_NEW   CURSOR     DISCARDABLE        "CommandBars/res/WorksapceNew.cur"
+XTP_IDC_WORKSAPCE_DELETE CURSOR     DISCARDABLE        "CommandBars/res/WorksapceDelete.cur"
+
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+XTP_IDD_IMAGEEDITOR_DIALOG DIALOGEX 0, 0, 253, 185
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Éditeur de boutons"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "Image",IDC_STATIC,7,7,23,8
+    GROUPBOX        "Couleurs",IDC_STATIC,102,106,80,71
+    GROUPBOX        "Déplacer",IDC_STATIC,101,72,81,31
+    GROUPBOX        "Aperçu",IDC_STATIC,7,106,86,71
+    GROUPBOX        "Outils",IDC_STATIC,101,9,81,60
+    DEFPUSHBUTTON   "OK",IDOK,193,7,50,14
+    PUSHBUTTON      "Annuler",IDCANCEL,193,25,50,14
+    CONTROL         "",XTP_IDC_STATIC_PICTURE,"Static",SS_BLACKFRAME | 
+                    SS_NOTIFY,7,17,86,80
+    CTEXT           "",XTP_IDC_STATIC_PREVIEW,14,117,73,54,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    LTEXT           "Transparent",IDC_STATIC,135,156,39,8
+    LTEXT           "",XTP_ID_CLR_ERASE,116,153,15,15,SS_NOTIFY
+    CTEXT           "Outils",XTP_IDC_STATIC_TOOLS,112,21,60,43,SS_CENTERIMAGE | 
+                    NOT WS_VISIBLE | WS_BORDER
+    CTEXT           "Déplacer",XTP_IDC_STATIC_MOVE,111,83,62,12,SS_CENTERIMAGE | 
+                    NOT WS_VISIBLE | WS_BORDER
+    CONTROL         "",XTP_ID_CLR_PICKER,"Static",SS_LEFTNOWORDWRAP | 
+                    SS_NOTIFY | WS_GROUP,109,144,15,15
+    CTEXT           "Couleurs",XTP_IDC_STATIC_COLORS,107,121,68,12,
+                    SS_CENTERIMAGE | NOT WS_VISIBLE | WS_BORDER
+END
+
+XTP_IDD_PAGE_KEYBOARD DIALOG DISCARDABLE  0, 0, 255, 150
+ STYLE WS_CHILD | WS_CAPTION
+CAPTION "Clavier"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Commandes :",XTP_IDC_TXT_COMMANDS,2,28,43,8
+    LISTBOX         XTP_IDC_LBOX_ACCEL_COMMANDS,2,39,93,74,LBS_HASSTRINGS | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Affectation de touches:",XTP_IDC_TXT_ASSIGNMENTS,100,28,74,8
+    LISTBOX         XTP_IDC_LBOX_KEYS,100,38,75,49,LBS_HASSTRINGS | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Appuyez sur une nouvelle touche de raccourci :",XTP_IDC_TXT_NEWKEY,100,91,151,8
+    EDITTEXT        XTP_IDC_EDIT_SHORTCUTKEY,100,101,75,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Affecter",XTP_IDC_BTN_ASSIGN,179,39,70,14
+    PUSHBUTTON      "Supprimer",XTP_IDC_BTN_REMOVE,179,56,70,14
+    PUSHBUTTON      "&Rétablir tout",XTP_IDC_BTN_ACCEL_RESET,179,73,70,14
+    LTEXT           "Description :",XTP_IDC_TXT_DESC_TITLE,2,119,40,8
+    LTEXT           "",XTP_IDC_TXT_DESC_OVERVIEW,2,129,173,19,0,
+                    WS_EX_STATICEDGE
+    LTEXT           "Catégorie :",IDC_STATIC,2,5,35,8
+    COMBOBOX        XTP_IDC_COMBO_CATEGORY,2,15,93,147,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+XTP_IDD_PAGE_TOOLBARS DIALOG DISCARDABLE  0, 0, 255, 150
+ STYLE WS_CHILD | WS_CAPTION
+CAPTION "Barres d'outils"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Barres d'outils :",IDC_STATIC,4,5,48,8
+    LISTBOX         XTP_IDC_LIST_TOOLBARS,4,15,175,131,LBS_OWNERDRAWFIXED | 
+                    LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "Nouvelle...",XTP_IDC_BUTTON_NEW,182,15,70,14
+    PUSHBUTTON      "Renommer...",XTP_IDC_BUTTON_RENAME,182,33,70,14
+    PUSHBUTTON      "Supprimer",XTP_IDC_BUTTON_DELETE,182,51,70,14
+    PUSHBUTTON      "Réinitialiser...",XTP_IDC_BUTTON_RESET,182,69,70,14
+END
+
+XTP_IDD_PAGE_OPTIONS DIALOG DISCARDABLE  0, 0, 255, 150
+ STYLE WS_CHILD | WS_CAPTION
+CAPTION "Options"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Menus et barres d'outils personnalisés",IDC_STATIC,7,5,119,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,133,9,116,1
+    CONTROL         "Toujours afficher les menus dans leur intégralité",XTP_IDC_CHECK_FULL_MENUS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,17,207,10
+    CONTROL         "Afficher les menus entiers après un court délai",
+                    XTP_IDC_CHECK_AFTERDELAY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,28,29,195,10
+    PUSHBUTTON      "Rétablir les données d'utilisation des menus et des barres d'outils",
+                    XTP_IDC_BUTTON_RESETDATA,9,42,213,14
+    LTEXT           "Autre",IDC_STATIC,7,70,18,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,29,74,220,2
+    CONTROL         "Grandes icônes",XTP_IDC_CHECK_LARGEICONS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,16,82,207,10
+    CONTROL         "Afficher les Info-bulles",XTP_IDC_CHECK_SCREENTTIPS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,93,207,10
+    CONTROL         "Afficher les touches de raccourci dans les Info-bulles",
+                    XTP_IDC_CHECK_SHORTCUTS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,28,104,195,10
+    LTEXT           "Animations de menus :",IDC_STATIC,16,117,71,8
+    COMBOBOX        XTP_IDC_COMBO_ANIMATION,90,115,79,65,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+XTP_IDD_PAGE_COMMANDS DIALOG DISCARDABLE  0, 0, 255, 150
+ STYLE WS_CHILD | WS_CAPTION
+CAPTION "Commandes"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Pour ajouter une commande à une barre d'outils : sélectionnez une catégorie et glissez-la hors de la boîte de dialogue vers la barre d'outils.",
+                    IDC_STATIC,4,5,220,25
+    LTEXT           "Catégories :",IDC_STATIC,4,33,38,8
+    LISTBOX         XTP_IDC_LIST_CATEGORIES,4,43,81,103,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Commandes :",IDC_STATIC,90,33,43,8
+    LISTBOX         XTP_IDC_LIST_COMMANDS,90,43,161,103,LBS_OWNERDRAWFIXED | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+XTP_IDD_NEWTOOLBAR DIALOG DISCARDABLE  0, 0, 186, 52
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Nouvelle barre d'outils"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Nom de la barre d'outils :",IDC_STATIC,4,4,100,8
+    EDITTEXT        XTP_IDC_EDIT_TOOLBARNAME,4,15,178,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,78,34,50,14
+    PUSHBUTTON      "Annuler",IDCANCEL,132,34,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+XTP_IDR_CUSTOMIZEMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "Personnaliser"
+    BEGIN
+        MENUITEM "Rétablir",                      XTP_ID_CUSTOMIZE_RESET
+        MENUITEM "Supprimer",                     XTP_ID_CUSTOMIZE_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "Nom :",                      XTP_ID_CUSTOMIZE_NAME
+        MENUITEM SEPARATOR
+        MENUITEM "Copier l'image du bouton",          XTP_ID_CUSTOMIZE_COPYBUTTONIMAGE
+
+        MENUITEM "Coller l'image du bouton",         XTP_ID_CUSTOMIZE_PASTEBUTTONIMAGE
+
+        MENUITEM "Rétablir l'image du bouton",         XTP_ID_CUSTOMIZE_RESETBUTTONIMAGE
+
+        MENUITEM "Éditeur de boutons...",       XTP_ID_CUSTOMIZE_EDITBUTTONIMAGE
+
+        MENUITEM "Modifier l'image du bouton",        XTP_ID_CUSTOMIZE_CHANGEBUTTONIMAGE
+
+        MENUITEM SEPARATOR
+        MENUITEM "Par défaut",              XTP_ID_CUSTOMIZE_DEFAULTSTYLE
+
+        MENUITEM "Texte seulement",                  XTP_ID_CUSTOMIZE_TEXTONLY
+        MENUITEM "Image et texte",             XTP_ID_CUSTOMIZE_IMAGEANDTEXT
+
+        MENUITEM SEPARATOR
+        MENUITEM "Nouveau groupe",              XTP_ID_CUSTOMIZE_BEGINAGROUP
+    END
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "XTPCommandBarsResource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_ADDORREMOVE     "Ajouter/supprimer des boutons"
+    XTP_IDS_CUSTOMIZE_CLOSE "Fermer"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CUSTOMIZE       "Personnaliser"
+    XTP_IDS_NEWMENU         "Nouveau menu"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CONFIRM_RESETDATA 
+                            "Ceci supprimera l'historique des dernières commandes utilisées et rétablira l'ensemble des commandes visibles par défaut pour les menus et les barres d'outils.  Les personnalisations apportées ne seront néanmoins pas annulées. Voulez-vous continuer ?"
+    XTP_IDS_INVALID_NUMBER  "Nombre entier incorrect."
+    XTP_IDS_INVALID_FONTSIZE "La taille de police doit être comprise entre 1 et 1638. Entrez une valeur comprise entre 1 et 1638."
+    XTP_IDS_CONFIRM_RESET   "Êtes-vous sûr(e) de vouloir annuler les modifications apportées à la barre d'outils « |0 » ?"
+    XTP_IDS_BUILTINMENUS    "Menus prédéfinis"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CUSTOM_BAR      "Personnalisé %d"
+    XTP_IDS_ERROR_BLANKNAME "Le nom de la barre d'outils ne peut pas être vide. Veuillez taper un nom."
+    XTP_IDS_ERROR_LIMIT     "Désolé, vous avez atteint la limite."
+    XTP_IDS_ERROR_EXISTS    "Une barre d'outils porte déjà le nom « | ». Veuillez en taper un autre."
+    XTP_IDS_RENAMETOOLBAR   "Renommer la barre d'outils"
+    XTP_IDS_CONFIRM_DELETE  "Êtes-vous sûr(e) de vouloir supprimer la barre d'outils « | » ?"
+    XTP_IDS_ALLCOMMANDS     "Toutes les commandes"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_ID_CUSTOMIZE        "\nPersonnaliser..."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CLR_INDIGO      "Indigo"
+    XTP_IDS_CLR_GRAY80      "Gris - 80 %"
+    XTP_IDS_CLR_DARK_RED    "Rouge foncé"
+    XTP_IDS_CLR_ORANGE      "Orange"
+    XTP_IDS_CLR_DARK_YELLOW "Marron clair"
+    XTP_IDS_CLR_GREEN       "Vert"
+    XTP_IDS_CLR_TEAL        "Bleu-vert"
+    XTP_IDS_CLR_BLUE        "Bleu"
+    XTP_IDS_CLR_BLUEGRAY    "Bleu gris"
+    XTP_IDS_CLR_GRAY50      "Gris - 50 %"
+    XTP_IDS_CLR_RED         "Rouge"
+    XTP_IDS_CLR_LIGHTORANGE "Orange clair"
+    XTP_IDS_CLR_LIME        "Citron vert"
+    XTP_IDS_CLR_SEA_GREEN   "Vert marin"
+    XTP_IDS_CLR_AQUA        "Vert d'eau"
+    XTP_IDS_CLR_LIGHT_BLUE  "Bleu clair"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CLR_VIOLET      "Violet"
+    XTP_IDS_CLR_GRAY40      "Gris - 40 %"
+    XTP_IDS_CLR_PINK        "Rose"
+    XTP_IDS_CLR_GOLD        "Or"
+    XTP_IDS_CLR_YELLOW      "Jaune"
+    XTP_IDS_CLR_BRIGHT_GREEN "Vert brillant"
+    XTP_IDS_CLR_TURQUOISE   "Turquoise"
+    XTP_IDS_CLR_SKY_BLUE    "Bleu ciel"
+    XTP_IDS_CLR_PLUM        "Prune"
+    XTP_IDS_CLR_GRAY25      "Gris - 25 %"
+    XTP_IDS_CLR_ROSE        "Rose saumon"
+    XTP_IDS_CLR_TAN         "Brun"
+    XTP_IDS_CLR_LIGHT_YELLOW "Jaune clair"
+    XTP_IDS_CLR_LIGHT_GREEN "Vert clair"
+    XTP_IDS_CLR_LIGHT_TURQUOISE "Turquoise clair"
+    XTP_IDS_CLR_PALE_BLUE   "Bleu moyen"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CLR_BLACK       "Noir"
+    XTP_IDS_CLR_BROWN       "Marron"
+    XTP_IDS_CLR_OLIVE_GREEN "Vert olive"
+    XTP_IDS_CLR_DARK_GREEN  "Vert foncé"
+    XTP_IDS_CLR_DARK_TEAL   "Bleu-vert foncé"
+    XTP_IDS_CLR_DARK_BLUE   "Bleu foncé"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CLR_LAVENDER    "Lavande"
+    XTP_IDS_CLR_WHITE       "Blanc"
+    XTP_IDS_CLR_GRAY        "Gris"
+    XTP_IDS_CLR_MAROON      "Marron"
+    XTP_IDS_CLR_OLIVE       "Marron clair"
+    XTP_IDS_CLR_NAVY        "Bleu foncé"
+    XTP_IDS_CLR_PURPLE      "Violet"
+    XTP_IDS_CLR_SILVER      "Argent"
+    XTP_IDS_CLR_FUCHSIA     "Magenta"
+    XTP_IDS_CLR_NOFILL      "Aucun remplissage\nAucun remplissage"
+    XTP_IDS_AUTOMATIC       "Couleur automatique\nCouleur automatique"
+    XTP_IDS_MORE_COLORS     "Couleurs supplémentaires..."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CONFIRM_KEYBOARD 
+                            "Etes-vous sûr que vous voulez rétablir les raccourcis clavier ? Cette action va effacer tous les raccourcis personnalisés au niveau de texte."
+    XTP_IDS_CONFIRM_REASSIGN 
+                            "This shortcut is currently assigned.\nDo you want to re-assign this shortcut?"
+    XTP_IDS_CONFIRM_UPDATE  "Due to a software update the toolbar '%s' has changed. Would you like to reset your customized toolbar and load the new one?"
+    XTP_IDS_CUSTOMIZE_RESET "Rétablir"
+    XTP_IDS_IMAGEEDITOR_FILTER 
+                            "Tous les fichiers Image|*.bmp;*.wmf;*.emf;*.ico;*.dib;*.cur;*.gif;*.jpg|Images en mode point(*.Bmp;*.Dib)|*.bmp;*.dib|Métafichiers(*.Wmf;*.Emf)|*.wmf;*.emf|Icônes(*.Ico;*.Cur)|*.ico;*.cur|GIF(*.Gif)|*.gif|JPEG(*.Jpg)|*.jpg|Tous les fichiers(*.*)|*.*||"
+    XTP_ID_TOOLBAR_EXPAND   "\nOptions de barre d'outils"
+    XTP_ID_TOOLBAR_HIDE     "\nFermer"
+    XTP_ID_MENUBAR_CLOSE    "\nFermer la fenêtre"
+    XTP_ID_MENUBAR_RESTORE  "\nRestaurer la fenêtre"
+    XTP_ID_MENUBAR_MINIMIZE "\nRéduire la fenêtre"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_ID_BUTTON_PENCIL    "\nCrayon"
+    XTP_ID_BUTTON_FILL      "\nCouleur de remplissage"
+    XTP_ID_BUTTON_GETCOLOR  "\nRécupérer une couleur"
+    XTP_ID_BUTTON_LINE      "\nTrait"
+    XTP_ID_BUTTON_RECTANGLE "\nRectangle"
+    XTP_ID_BUTTON_CIRCLE    "\nEllipse"
+    XTP_ID_BUTTON_COPY      "\nCopier"
+    XTP_ID_BUTTON_PASTE     "\nColler"
+    XTP_ID_BUTTON_CLEAR     "\nEffacer"
+    XTP_ID_BUTTON_UNDO      "\nAnnuler"
+    XTP_ID_BUTTON_REDO      "\nRétablir"
+    XTP_ID_BUTTON_OPEN      "\nImporter depuis un fichier"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_ANIMATION_SYSDEF "(Système par défaut)"
+    XTP_IDS_ANIMATION_RANDOM "Aléatoire"
+    XTP_IDS_ANIMATION_UNFOLD "Déroulement"
+    XTP_IDS_ANIMATION_SLIDE "Diapositive"
+    XTP_IDS_ANIMATION_FADE  "Décoloré"
+    XTP_IDS_ANIMATION_NONE  "Aucun"
+    XTP_ID_WORKSAPCE_MOVEPREVIOUS "\nDéplacer vers Group d'Onglets &Précédent"
+    XTP_ID_WORKSAPCE_MOVENEXT "\nDéplacer vers Group d'Onglets &Suivant"
+    XTP_ID_WORKSAPCE_NEWHORIZONTAL "\nNouveau Groupe d'Onglets &Horizontal"
+    XTP_ID_WORKSAPCE_NEWVERTICAL "\nNouveau Groupe d'Onglets &Vertical"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_ID_WORKSAPCE_CANCEL "Annuler"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

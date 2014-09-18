@@ -1,0 +1,54 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: PcSocksServer - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Debug/PcSocksServer.res" /d "_DEBUG" /d "_AFXDLL" "E:\开发代码\版本工具\PcSocksServer\PcSocksServer.rc"" 
+Creating temporary file "C:\DOCUME~1\shesh\LOCALS~1\Temp\RSP714.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/PcSocksServer.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\开发代码\版本工具\PcSocksServer\MySocksModule.cpp"
+"E:\开发代码\版本工具\PcSocksServer\PcSocksServer.cpp"
+"E:\开发代码\版本工具\PcSocksServer\PcSocksServerDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\shesh\LOCALS~1\Temp\RSP714.tmp" 
+Creating temporary file "C:\DOCUME~1\shesh\LOCALS~1\Temp\RSP715.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/PcSocksServer.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\开发代码\版本工具\PcSocksServer\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\shesh\LOCALS~1\Temp\RSP715.tmp" 
+Creating temporary file "C:\DOCUME~1\shesh\LOCALS~1\Temp\RSP716.tmp" with contents
+[
+Shlwapi.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/PcSocksServer.pdb" /debug /machine:I386 /out:"Debug/PcSocksServer.exe" /pdbtype:sept 
+".\Debug\MySocksModule.obj"
+".\Debug\PcSocksServer.obj"
+".\Debug\PcSocksServerDlg.obj"
+".\Debug\StdAfx.obj"
+".\Debug\PcSocksServer.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\shesh\LOCALS~1\Temp\RSP716.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+MySocksModule.cpp
+PcSocksServer.cpp
+PcSocksServerDlg.cpp
+Generating Code...
+Linking...
+Creating command line "bscmake.exe /nologo /o"Debug/PcSocksServer.bsc"  ".\Debug\StdAfx.sbr" ".\Debug\MySocksModule.sbr" ".\Debug\PcSocksServer.sbr" ".\Debug\PcSocksServerDlg.sbr""
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+PcSocksServer.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,863 @@
+<!- (c) 2001 Microsoft Corporation -->
+<HTML DIR="LTR">
+
+<HEAD>
+	<TITLE>MFC Application Wizard</TITLE>
+	<META NAME="vs_targetSchema" CONTENT="http://schemas.microsoft.com/intellisense/ie5">
+	<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+	<STYLE TYPE="text/css">@import url();</STYLE>
+	<SCRIPT>
+		var strURL = "../../../";
+		strURL += window.external.GetHostLocale();
+		strURL += "/NewStyles.css";
+		document.styleSheets(0).imports(0).href = strURL;
+	</SCRIPT>
+</HEAD>
+
+<BODY BGCOLOR="BUTTONFACE" TOPMARGIN="0" LEFTMARGIN="0" RIGHTMARGIN="0" BOTTOMMARGIN="0" ONLOAD="InitDocument(document);" ONKEYDOWN="if (!bValidating) OnKey();" ONKEYPRESS="if (!bValidating) OnPress();">
+
+<TABLE CLASS="ONE" HEIGHT="100%" WIDTH="100%" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+<COL WIDTH="178"><COL>
+
+  <!--OPEN OF INTRODUCTORY INFORMATION TABLE//-->
+  <TR VALIGN="TOP">
+	<TD HEIGHT="79" WIDTH="100%" COLSPAN="2">
+	 <TABLE CLASS="TWO" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+	 <COL WIDTH="12"><COL><COL WIDTH="12">
+	  <TR>
+	   <TD VALIGN="TOP" HEIGHT="12" WIDTH="12">
+	  	&nbsp;
+	   </TD>
+  
+	   <TD VALIGN="TOP" HEIGHT="12">
+	  	&nbsp;
+	   </TD>
+  
+	   <TD VALIGN="TOP" HEIGHT="12" WIDTH="12">
+	  	&nbsp;
+	   </TD>
+	   <TD CLASS="IMAGE" VALIGN="BOTTOM" WIDTH="110" ROWSPAN="2">
+		<DIV CLASS="SMALLA" ID="DB_SUPPORT_NONE_IMAGE">
+		 <IMG CLASS="SMALL" SRC="../../Images/DatabaseNone.gif" WIDTH="98" HEIGHT="70" ALT="" BORDER="0">
+		</DIV>
+		<DIV CLASS="SMALL" ID="DB_SUPPORT_HEADER_ONLY_IMAGE">
+		 <IMG CLASS="SMALL" SRC="../../Images/HeaderOnly.gif" WIDTH="98" HEIGHT="70" ALT="" BORDER="0">
+		</DIV>			
+		<DIV CLASS="SMALL" ID="DB_VIEW_NO_FILE_IMAGE">
+		 <IMG CLASS="SMALL" SRC="../../Images/DatabaseWithout.gif" WIDTH="98" HEIGHT="70" ALT="" BORDER="0">
+		</DIV>
+		<DIV CLASS="SMALL" ID="DB_VIEW_WITH_FILE_IMAGE">
+		 <IMG CLASS="SMALL" SRC="../../Images/DatabaseWith.gif" WIDTH="98" HEIGHT="70" ALT="" BORDER="0">
+		</DIV>
+	   </TD>
+	  
+	   <TD VALIGN="TOP" HEIGHT="12" WIDTH="6" ROWSPAN="2">
+	  	&nbsp;
+	   </TD>
+	  </TR>
+	 
+	  <TR>
+	   <TD VALIGN="TOP" HEIGHT="65" WIDTH="12">
+	  	&nbsp;
+	   </TD>
+	  
+	   <TD VALIGN="TOP" HEIGHT="65">
+		<H4 CLASS="HEAD" ID="HEAD">Database Support</H4>
+		<P CLASS="SUBHEAD" ID="SUBHEAD">Specify database support, including any data source.</P>
+	   </TD>
+	  
+	   <TD VALIGN="TOP" HEIGHT="65" WIDTH="12">
+	  	&nbsp;
+	   </TD>
+	  </TR>
+	 
+	  <TR>
+	   <TD VALIGN="TOP" CLASS="RULE" COLSPAN="5" HEIGHT="2">
+		<TABLE BORDER="0" WIDTH="100%" HEIGHT="1" CELLPADDING="0" CELLSPACING="0">
+	  	 <TR VALIGN="TOP">
+	  	  <TD HEIGHT="1" WIDTH="100%" BGCOLOR="BUTTONSHADOW"></TD>
+	  	  <TD HEIGHT="1" WIDTH="1" BGCOLOR="WINDOW"></TD>
+	  	 </TR>
+		</TABLE>
+	   </TD>
+	  </TR>
+	 </TABLE>
+	</TD>
+  </TR>
+  <!--CLOSE OF INTRODUCTORY INFORMATION TABLE//-->
+
+  <!--OPEN OF NAVIGATION, CONTENT, AND BUTTON TABLES//-->
+  <TR VALIGN="TOP">
+	<TD CLASS="Three" VALIGN="TOP" HEIGHT="100%" WIDTH="178">
+	 <TABLE CLASS="fixedSize" HEIGHT="100%" WIDTH="178" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+  	  <TR VALIGN="TOP">
+	   <TD CLASS="threeCustom" VALIGN="TOP" STYLE="BACKGROUND-IMAGE: URL(../../Images/MFC_Background.gif);">
+	   <!--OPEN OF NAVIGATION TABLE//-->
+	
+	    <TABLE CLASS="THREE" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+		<COL WIDTH="12"><COL WIDTH="166"><COL WIDTH="1">
+		 <TR>
+	   	  <TD VALIGN="TOP" COLSPAN="3" HEIGHT="12">
+	  		&nbsp;
+		  </TD>
+		 </TR>
+		 <TR>
+	   	  <TD VALIGN="TOP" HEIGHT="100%" WIDTH="12">
+	  		&nbsp;
+		  </TD>
+	   	  <TD VALIGN="TOP" HEIGHT="100%" WIDTH="165">
+	   	  <!--OPEN OF NAVIGATIONAL LINKS//-->
+	  		
+			<DIV CLASS="LINK">
+			 <TABLE WIDTH="166" HEIGHT="28" BORDER="0" CELLPADDING="0" CELLSPACING="0" CLASS="LINKTEXT">
+			  <TR VALIGN="MIDDLE">
+	  		   <TD WIDTH="162">
+				<SPAN CLASS="ACTIVELINK" ID="Default" TITLE="Examine an overview of selections." onClick="Next(document, 'Default.htm');" TABINDEX="1">Overview</SPAN>
+			   </TD>
+	  		   <TD WIDTH="4">
+			  	<IMG SRC="../../Images/spacer.gif" HEIGHT="1" WIDTH="4">
+			   </TD>
+			  </TR>
+			 </TABLE>
+			</DIV>
+	  		
+			<DIV CLASS="LINK">
+			 <TABLE WIDTH="166" HEIGHT="28" BORDER="0" CELLPADDING="0" CELLSPACING="0" CLASS="LINKTEXT">
+			  <TR VALIGN="MIDDLE">
+	  		   <TD WIDTH="162">
+				<SPAN CLASS="ACTIVELINK" ID="AppType" TITLE="Specify Document/View architecture support, language and interface style options for your application." onClick="Next(document, 'AppType.htm');" TABINDEX="2">Application Type</SPAN>
+			   </TD>
+	  		   <TD WIDTH="4">
+			  	<IMG SRC="../../Images/spacer.gif" HEIGHT="1" WIDTH="4">
+			   </TD>
+			  </TR>
+			 </TABLE>
+			</DIV>
+				  		
+			<DIV CLASS="LINK">
+			 <TABLE WIDTH="166" HEIGHT="28" BORDER="0" CELLPADDING="0" CELLSPACING="0" CLASS="LINKTEXTINDENT">
+			  <TR VALIGN="MIDDLE">
+	  		   <TD WIDTH="162">
+				<SPAN CLASS="ACTIVELINK" ID="CompoundDoc" TITLE="Specify OLE container or server options and active document support." onClick="onClick(this);" TABINDEX="3">Compound Document Support</SPAN>
+			   </TD>
+	  		   <TD WIDTH="4">
+			  	<IMG SRC="../../Images/spacer.gif" HEIGHT="1" WIDTH="4">
+			   </TD>
+			  </TR>
+			 </TABLE>
+			</DIV>
+	  		
+			<DIV CLASS="LINK">
+			 <TABLE WIDTH="166" HEIGHT="28" BORDER="0" CELLPADDING="0" CELLSPACING="0" CLASS="LINKTEXTINDENT">
+			  <TR VALIGN="MIDDLE">
+	  		   <TD WIDTH="162">
+				<SPAN CLASS="ACTIVELINK" ID="DocTemp" TITLE="Specify values for your application's document template to use when creating a new document." onClick="onClick(this);" TABINDEX="4">Document Template Strings</SPAN>
+			   </TD>
+	  		   <TD WIDTH="4">
+			  	<IMG SRC="../../Images/spacer.gif" HEIGHT="1" WIDTH="4">
+			   </TD>
+			  </TR>
+			 </TABLE>
+			</DIV>
+
+		  	<DIV CLASS="LINKSELECTED">
+	 	   	 <SPAN CLASS="VERTLINE1">
+			  <IMG SRC="../../Images/spacer.gif" WIDTH="1" HEIGHT="1" ALT="" BORDER="0">
+			 </SPAN>
+			 <SPAN CLASS="HORILINE1">
+			  <TABLE WIDTH="167" HEIGHT="100%" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+			   <TR VALIGN="TOP">
+			    <TD CLASS="DOTTEDLINE" HEIGHT="1">
+				</TD>
+			   </TR>
+			   <TR VALIGN="TOP">
+			    <TD HEIGHT="100%">
+				 <IMG SRC="../../Images/spacer.gif" WIDTH="165" HEIGHT="28" ALT="" BORDER="0">
+			    </TD>
+			   </TR>
+			   <TR VALIGN="TOP">
+			    <TD CLASS="DOTTEDLINE" HEIGHT="1">
+			    </TD>
+			   </TR>
+			  </TABLE>
+			 </SPAN>
+			 <TABLE WIDTH="160" HEIGHT="28" BORDER="0" CELLPADDING="0" CELLSPACING="0" CLASS="LINKTEXTSELECTED">
+			  <TR VALIGN="MIDDLE">
+			   <TD WIDTH="156">
+				<SPAN ID="DBSupport" TITLE="Specify database support, including any data source.">Database Support</SPAN>
+			   </TD>
+			   <TD WIDTH="4">
+				<IMG SRC="../../Images/spacer.gif" HEIGHT="1" WIDTH="4">
+			   </TD>
+			  </TR>
+			 </TABLE>
+			</DIV>
+	  		
+			<DIV CLASS="LINK">
+			 <TABLE WIDTH="166" HEIGHT="28" BORDER="0" CELLPADDING="0" CELLSPACING="0" CLASS="LINKTEXT">
+			  <TR VALIGN="MIDDLE">
+	  		   <TD WIDTH="162">
+				<SPAN CLASS="ACTIVELINK" ID="UIFeatures" TITLE="Specify options that control the look and feel of your application." onClick="Next(document, 'UIFeatures.htm');" TABINDEX="5">User Interface Features</SPAN>
+			   </TD>
+	  		   <TD WIDTH="4">
+			  	<IMG SRC="../../Images/spacer.gif" HEIGHT="1" WIDTH="4">
+			   </TD>
+			  </TR>
+			 </TABLE>
+			</DIV>
+	  		
+			<DIV CLASS="LINK">
+			 <TABLE WIDTH="166" HEIGHT="28" BORDER="0" CELLPADDING="0" CELLSPACING="0" CLASS="LINKTEXT">
+			  <TR VALIGN="MIDDLE">
+	  		   <TD WIDTH="162">
+				<SPAN CLASS="ACTIVELINK" ID="Advanced" TITLE="Specify additional support to build into your application." onClick="Next(document, 'Advanced.htm');" TABINDEX="6">Advanced Features</SPAN>
+			   </TD>
+	  		   <TD WIDTH="4">
+			  	<IMG SRC="../../Images/spacer.gif" HEIGHT="1" WIDTH="4">
+			   </TD>
+			  </TR>
+			 </TABLE>
+			</DIV>
+	  		
+			<DIV CLASS="LINK">
+			 <TABLE WIDTH="166" HEIGHT="28" BORDER="0" CELLPADDING="0" CELLSPACING="0" CLASS="LINKTEXT">
+			  <TR VALIGN="MIDDLE">
+	  		   <TD WIDTH="162">
+				<SPAN CLASS="ACTIVELINK" ID="XTToolkitPro" TITLE="Specify Xtreme Toolkit Pro General Settings" onClick="onClick(this);" TABINDEX="7">Toolkit Pro Features</SPAN>
+			   </TD>
+	  		   <TD WIDTH="4">
+			  	<IMG SRC="../../Images/spacer.gif" HEIGHT="1" WIDTH="4">
+			   </TD>
+			  </TR>
+			 </TABLE>
+			</DIV>
+			<DIV CLASS="LINK">
+			 <TABLE WIDTH="166" HEIGHT="28" BORDER="0" CELLPADDING="0" CELLSPACING="0" CLASS="LINKTEXT">
+			  <TR VALIGN="MIDDLE">
+	  		   <TD WIDTH="162">
+				<SPAN CLASS="ACTIVELINK" ID="GeneratedClasses" TITLE="Review generated classes and specify base classes for your application." onClick="Next(document, 'GeneratedClasses.htm');" TABINDEX="9">Generated Classes</SPAN>
+			   </TD>
+	  		   <TD WIDTH="4">
+			  	<IMG SRC="../../Images/spacer.gif" HEIGHT="1" WIDTH="4">
+			   </TD>
+			  </TR>
+			 </TABLE>
+			</DIV>
+			
+	   	  <!--CLOSE OF NAVIGATIONAL LINKS//-->
+		  </TD>
+		  <TD WIDTH="1">
+		   <DIV CLASS="VERTLINE">
+			 <IMG SRC="../../Images/spacer.gif" WIDTH="1" HEIGHT="1" ALT="" BORDER="0">
+		   </DIV>
+		  </TD>
+		 </TR>
+		 </TABLE>
+		</TD>
+	   </TR>
+	   </TABLE>
+			
+	   <!--CLOSE OF NAVIGATION TABLE//-->
+	   </TD>
+  
+	   <TD VALIGN="TOP" HEIGHT="100%">
+	   <!--OPEN OF CONTENT AND BUTTON TABLE//-->
+	   
+	   	<TABLE CLASS="ONE" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+		<COL WIDTH="100%">
+		 <TR VALIGN="TOP">
+		  <TD HEIGHT="100%">
+	   	  <!--OPEN OF CONTENT//-->
+		  
+		  	<TABLE CLASS="CONTENT" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+			<COL WIDTH="12"><COL WIDTH="193"><COL WIDTH="12"><COL WIDTH="193"><COL WIDTH="12">
+ 			 <TR>
+  			  <TD VALIGN="TOP" HEIGHT="12" COLSPAN="5">
+  				&nbsp;
+  			  </TD>
+ 			 </TR>
+ 
+ 			 <TR>
+  			  <TD VALIGN="TOP" WIDTH="12">
+  				&nbsp;
+  			  </TD>
+			  <TD VALIGN="TOP">
+ 				<SPAN CLASS="itemTextTop" ID="FILE_EXTENSION_TEXT" TITLE="Specifies the level of database support.">
+	  				 <LABEL ID="SELECT_DB_SUPPORT_TEXT" FOR="FILE_EXTENSION">Database support:</LABEL>
+	  				 <P CLASS="Spacer">&nbsp;</P>
+	  
+	  				 <INPUT TYPE="radio" CLASS="radio" NAME="dbsupport" ID="DB_SUPPORT_NONE" ACCESSKEY="n" TITLE="Specifies no database support. (Default)" onPropertychange="OnDBSupport(this);">
+	  	 			 <DIV CLASS="itemTextRadioB" ID="SELECT_NO_DB_TEXT" TITLE="Specifies no database support. (Default)">
+	  	  			  <LABEL ID="NO_DB_TEXT" FOR="DB_SUPPORT_NONE"><U>N</U>one</LABEL>
+	  	 			 </DIV>
+	  
+	  				 <BR>
+	  
+	  				 <INPUT TYPE="radio" CLASS="radio" NAME="dbsupport" ID="DB_SUPPORT_HEADER_ONLY" ACCESSKEY="o" TITLE="Specifies support for storing database or recordset objects in documents and views." onPropertychange="OnDBSupport(this);">
+	  	 			 <DIV CLASS="itemTextRadioB" ID="SELECT_HEADER_ONLY_TEXT" TITLE="Specifies support for storing database or recordset objects in documents and views.">
+		  			  <LABEL ID="HEADER_ONLY_TEXT" FOR="DB_SUPPORT_HEADER_ONLY">Header files <U>o</U>nly</LABEL>
+	  				 </DIV>
+	  
+	  				 <BR>
+	  
+	  				 <INPUT TYPE="radio" CLASS="radio" NAME="dbsupport" ID="DB_VIEW_NO_FILE" ACCESSKEY="v" TITLE="Specifies database document support and multiple recordset views, but no serialization." onPropertychange="OnDBSupport(this);">
+	  	 			 <DIV CLASS="itemTextRadioB" ID="db_no_file_title" TITLE="Specifies database document support and multiple recordset views, but no serialization.">
+		  			  <LABEL ID="NO_FILES_TEXT" FOR="DB_VIEW_NO_FILE">Database <U>v</U>iew without file support</LABEL>
+	  	 			 </DIV>
+	  
+	  				 <BR>
+	  
+	  				 <INPUT TYPE="radio" CLASS="radio" NAME="dbsupport" ID="DB_VIEW_WITH_FILE" ACCESSKEY="t" TITLE="Full database document support, including serialization and document-related menu commands." onPropertychange="OnDBSupport(this);">
+	  	 			 <DIV CLASS="itemTextRadioB" ID="db_with_file_title" TITLE="Full database document support, including serialization and document-related menu commands.">
+		  			  <LABEL ID="WITH_FILES_TEXT" FOR="DB_VIEW_WITH_FILE">Da<U>t</U>abase view with file support</LABEL>
+	  	 			 </DIV>
+				</SPAN>
+
+				<P CLASS="ElementSpacer7">&nbsp;</P>
+					
+  				<SPAN CLASS="itemText" ID="sctype" TITLE="Specifies the client type.">
+	  				 <LABEL ID="SELECT_CLIENT_TEXT" FOR="FILE_EXTENSION">Client type:</LABEL>
+	  				 <P CLASS="Spacer">&nbsp;</P>
+	  
+	  				 <INPUT TYPE="radio" CLASS="radio" NAME="odbcsupport" ID="DB_SUPPORT_OLEDB" ACCESSKEY="l" TITLE="Specifies OLEDB client." onPropertychange="OnODBCSupport(this);">
+	  	 			 <DIV CLASS="itemTextRadioB" TITLE="Specifies OLEDB client." ID="db_oledb">
+	  	  			  <LABEL ID="OLE_DB_TEXT" FOR="DB_SUPPORT_OLEDB">O<U>L</U>E DB</LABEL>
+	  	 			 </DIV>
+	  
+	  				 <BR>
+	  
+	  				 <INPUT TYPE="radio" CLASS="radio" NAME="odbcsupport" ID="DB_SUPPORT_ODBC" ACCESSKEY="d" TITLE="Specifies ODBC client." onPropertychange="OnODBCSupport(this);">
+	  	 			 <DIV CLASS="itemTextRadioB" TITLE="Specifies ODBC client." ID="db_odbc">
+		  			  <LABEL ID="ODBC_TEXT" FOR="DB_SUPPORT_ODBC">O<U>D</U>BC</LABEL>
+	  				 </DIV>
+				</SPAN>
+
+				<P CLASS="ElementSpacer18">&nbsp;</P>
+  
+   				<SPAN CLASS="itemText" ID="sdstitle">Data source:
+	  				 <P CLASS="Spacer">&nbsp;</P>
+	  
+	  				 <BUTTON CLASS="buttonClass" ID="DatSupBtn" DISABLED ACCESSKEY="s" TYPE="BUTTON" VALUE="Data Source" TITLE="For database view, specify an existing database as the application data source." onClick="SelectDataSource();">Data <U>S</U>ource...</BUTTON>
+				</SPAN>
+  			  </TD>
+			  <TD VALIGN="TOP" WIDTH="12">
+  				&nbsp;
+  			  </TD>
+ 			  <TD VALIGN="TOP">
+ 				<SPAN CLASS="itemTextTop" TITLE="">
+	  				 <INPUT CLASS="CheckBox" TYPE="checkbox" ID="ATTRIBUTED" ACCESSKEY="a" TITLE="Creates an OLEDB attributed class that can access an OLEDB data source." CLASS="SINGLECHECKBOX">
+	  	 			 <DIV CLASS="itemTextCheckboxA" TITLE="Creates an OLEDB attributed class that can access an OLEDB data source." ID="ATTRIBUTED_TITLE">
+	      			  <LABEL ID="ATTRIBUTED_TEXT" FOR="ATTRIBUTED">Generate <U>a</U>ttributed database class</LABEL>
+		 			 </DIV>
+					 </SPAN>
+	
+					<P CLASS="ElementSpacer">&nbsp;</P>
+					
+  					<SPAN CLASS="itemText" TITLE="Automatically bind to all columns in your table." ID="AUT_ID" >
+	  				 <INPUT CLASS="CheckBox" TYPE="checkbox" ID="BIND_ALL_COLUMNS" ACCESSKEY="b" TITLE="" CLASS="SINGLECHECKBOX">
+	  	 			 <DIV CLASS="itemTextCheckboxA" TITLE="Automatically bind to all columns in your table." ID="BINDCOLUMNSTITLE">
+	      			  <LABEL ID="BIND_ALL_TEXT" FOR="BIND_ALL_COLUMNS"><U>B</U>ind all columns</LABEL>
+		 			 </DIV>
+				</SPAN>
+
+				<P CLASS="ElementSpacer18">&nbsp;</P>
+					
+  				<SPAN ID="recordsetType" CLASS="itemText">
+	  				 <LABEL ID="SELECT_TYPE_TEXT" FOR="recordsetType">Type:</LABEL>
+	  				 <P CLASS="Spacer">&nbsp;</P>
+	  
+	  				 <INPUT TYPE="radio" CLASS="radio" NAME="type" ID="DYNASET" ACCESSKEY="y" TITLE="Recordset stays synchronized with the data source.">
+	  	 			 <DIV CLASS="itemTextRadioB" TITLE="Recordset stays synchronized with the data source." ID="AUT_ID1" >
+	  	  			  <LABEL ID="DYNASET_TEXT" FOR="DYNASET">D<U>y</U>naset</LABEL>
+	  	 			 </DIV>
+	  
+	  				 <BR>
+	  
+	  				 <INPUT TYPE="radio" CLASS="radio" NAME="type" ID="SNAPSHOT" ACCESSKEY="p" TITLE="Recordset reflects a static view of the data as it existed at the time the snapshot was created.">
+	  	 			 <DIV CLASS="itemTextRadioB" TITLE="Recordset reflects a static view of the data as it existed at the time the snapshot was created." ID="AUT_ID2" >
+		  			  <LABEL ID="SNAPSHOT_TEXT" FOR="SNAPSHOT">Sna<U>p</U>shot</LABEL>
+	  				 </DIV>
+				</SPAN>
+	
+				<P CLASS="ElementSpacer">&nbsp;</P>
+	
+     			<SPAN CLASS="itemText" TITLE="">
+      				 <SPAN CLASS="SideBtnHidden" ID="DB_SUPPORT_INFO" TITLE="" READONLY>
+	     			  <LABEL ID="DB_SUPPORT_INFO_TEXT" FOR="DB_SUPPORT_INFO"></LABEL>
+					 </SPAN>
+	 			</SPAN>
+  			  </TD>
+			  <TD VALIGN="TOP" WIDTH="12">
+  				&nbsp;
+  			  </TD>
+ 			 </TR>
+			</TABLE>
+			
+	   	  <!--CLOSE OF CONTENT//-->
+		  </TD>
+		 </TR>
+		 <TR VALIGN="BOTTOM">
+		  <TD HEIGHT="48">
+	   	  <!--OPEN OF BUTTON HTML//-->
+		  
+		  	<TABLE HEIGHT="48" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+			<COL WIDTH="12"><COL><COL WIDTH="75"><COL WIDTH="4"><COL WIDTH="75"><COL WIDTH="4"><COL WIDTH="75"><COL WIDTH="12">
+			 <TR>
+  			  <TD VALIGN="TOP" CLASS="RULE" COLSPAN="8" HEIGHT="2">
+				<TABLE BORDER="0" WIDTH="100%" HEIGHT="1" CELLPADDING="0" CELLSPACING="0">
+  	 			 <TR VALIGN="TOP">
+  	  			  <TD HEIGHT="1" WIDTH="100%" BGCOLOR="BUTTONSHADOW"></TD>
+  	  			  <TD HEIGHT="1" WIDTH="1" BGCOLOR="WINDOW"></TD>
+  	 			 </TR>
+				</TABLE>
+  			  </TD>
+ 			  </TR>
+ 
+ 			  <TR>
+  			  <TD VALIGN="TOP" HEIGHT="11" COLSPAN="8">
+  				&nbsp;
+  			  </TD>
+ 			 </TR>
+ 
+ 			<TR>
+  			  <TD VALIGN="MIDDLE" HEIGHT="23" WIDTH="12">
+  				&nbsp;
+  			  </TD>
+  			  <TD VALIGN="TOP" HEIGHT="23">
+  				&nbsp;
+  			  </TD>
+  			  <TD VALIGN="MIDDLE" HEIGHT="23" WIDTH="75">
+  				<BUTTON CLASS="BUTTONS" ID="FinishBtn" onClick="OnFinish(document);">Finish</BUTTON>
+  			  </TD>
+  			  <TD VALIGN="MIDDLE" HEIGHT="23" WIDTH="4">
+  				&nbsp;
+  			  </TD>
+  			  <TD VALIGN="MIDDLE" HEIGHT="23" WIDTH="75">
+  				<BUTTON CLASS="BUTTONS" ID="CancelBtn" onClick="window.external.Finish(document, 'cancel');">Cancel</BUTTON>
+  			  </TD>
+  			  <TD VALIGN="MIDDLE" HEIGHT="23" WIDTH="4">
+  				&nbsp;
+  			  </TD>
+  			  <TD VALIGN="MIDDLE" HEIGHT="23" WIDTH="75">
+  				<BUTTON CLASS="BUTTONS" ID="HelpBtn" onClick="window.external.OnHelp('vc.appwiz.mfc.exe.database');">Help</BUTTON>
+  			  </TD>
+  			  <TD VALIGN="MIDDLE" HEIGHT="23" WIDTH="12">
+  				&nbsp;
+  			  </TD>
+ 			 </TR>
+ 
+ 			 <TR>
+  			  <TD VALIGN="TOP" HEIGHT="12" COLSPAN="8">
+  				&nbsp;
+  			  </TD>
+ 			 </TR>
+			</TABLE>
+			
+	   	  <!--CLOSE OF BUTTON HTML//-->
+		  </TD>
+		 </TR>
+		</TABLE>
+	
+  	<!--CLOSE OF NAVIGATION, CONTENT, AND BUTTON TABLES//-->
+ 	</TD>
+  </TR>
+</TABLE>
+
+</BODY>
+</HTML>
+
+<SCRIPT LANGUAGE="JSCRIPT">
+
+var bDataSourceDlg = false;
+
+var tab_array = new Array();
+tab_array[0] = Default;
+tab_array[1] = AppType;
+tab_array[2] = CompoundDoc;
+tab_array[3] = DocTemp;
+tab_array[4] = DBSupport;
+tab_array[5] = UIFeatures;
+tab_array[6] = Advanced;
+tab_array[7] = XTToolkitPro;
+tab_array[8] = GeneratedClasses;
+
+function InitDocument(document)
+{
+	setDirection();
+	DB_SUPPORT_NONE.focus();
+	var strConnectionString = window.external.FindSymbol("DB_CONNECTION_STRING" ); 
+	//Preserve the connection string.
+	
+	InitTabs();
+	recordsetType.disabled = true;
+	SNAPSHOT.disabled = true;
+	DYNASET.disabled = true;
+	DB_SUPPORT_OLEDB.disabled = false;
+	db_oledb.disabled = false;
+	DB_SUPPORT_ODBC.disabled = false;
+	db_odbc.disabled = false;
+	sctype.disabled = false;
+	window.external.Load(document);
+	DB_VIEW_NO_FILE.disabled = false;
+	db_no_file_title.disabled = false;
+	DB_VIEW_WITH_FILE.disabled = false;
+	db_with_file_title.disabled = false;
+	ATTRIBUTED.disabled = true;
+	ATTRIBUTED_TITLE.disabled = true;
+	BIND_ALL_COLUMNS.disabled = true;
+	BINDCOLUMNSTITLE.disabled = true;
+	if (!window.external.FindSymbol("DOCVIEW") || window.external.IsSymbolDisabled("DOCVIEW"))
+	{
+		DB_VIEW_NO_FILE.disabled = true;
+		db_no_file_title.disabled = true;
+		DB_VIEW_WITH_FILE.disabled = true;
+		db_with_file_title.disabled = true;
+		MouseOut(DatSupBtn);
+	}
+	else
+	{
+		if ( DB_VIEW_WITH_FILE.checked || DB_VIEW_NO_FILE.checked ) 
+		{
+			if( DB_SUPPORT_ODBC.checked )
+			{
+				recordsetType.disabled = false;
+				SNAPSHOT.disabled = false;
+				DYNASET.disabled = false;
+				BIND_ALL_COLUMNS.disabled = false;
+				BINDCOLUMNSTITLE.disabled = false;
+			}
+			else
+			{
+				ATTRIBUTED_TITLE.disabled = false;
+				ATTRIBUTED.disabled = false;
+			}
+		}
+	}
+
+	if (DB_SUPPORT_NONE.checked)
+	{
+		DB_SUPPORT_OLEDB.disabled = true;
+		db_oledb.disabled = true;
+		DB_SUPPORT_ODBC.disabled = true;
+		db_odbc.disabled = true;
+		sctype.disabled = true;
+	}
+	window.external.AddSymbol("DB_CONNECTION_STRING", strConnectionString ); 
+	// restore the connection string
+	ToggleImage();
+}
+
+function InitTabs()
+{
+	MouseOut(CompoundDoc);
+	MouseOut(DocTemp);
+	MouseOut(XTToolkitPro);
+	XTToolkitPro.className = "activelink";
+
+	if (window.external.FindSymbol("APP_TYPE_DLG"))
+	{
+		XTToolkitPro.className = "inactivelink";
+	}
+}
+
+function Next(document, linkto)
+{
+	if (!CheckDBSupport())
+		return;
+
+	if (!CheckDataSource())
+		return;
+
+	window.external.Next(document, linkto);
+}
+
+function onClick(obj)
+{
+	if (obj == null || typeof(obj) == "undefined")
+		return;
+
+	if (obj.id == "CompoundDoc")
+	{
+		if (window.external.FindSymbol("DOCVIEW") && !window.external.IsSymbolDisabled("DOCVIEW"))
+		{ 
+			Next(document, "CompoundDoc.htm"); 
+		}
+	}
+	if (obj.id == "DocTemp")
+	{
+		if (window.external.FindSymbol("DOCVIEW") && !window.external.IsSymbolDisabled("DOCVIEW"))
+		{ 
+			Next(document, "DocTemp.htm"); 
+		}
+	}
+}
+
+function CheckDBSupport()
+{
+	if (DB_VIEW_NO_FILE.checked && window.external.FindSymbol("APP_TYPE_MDI"))
+	{
+		var L_Prompt1_Text = "Selecting a database view without file support forces your project to use the Single Document Interface.";
+		if (window.external.YesNoAlert(L_Prompt1_Text))
+		{
+			window.external.AddSymbol("APP_TYPE_MDI", false);
+			window.external.AddSymbol("APP_TYPE_SDI", true);
+			window.external.AddSymbol("MAIN_FRAME_BASE_CLASS", "CFrameWnd");
+			window.external.AddSymbol("XTP_MAIN_FRAME_BASE_CLASS", "CXTPFrameWnd");
+			return true;
+		}
+		else
+		{
+			DB_VIEW_NO_FILE.checked = false;
+			DB_VIEW_WITH_FILE.checked = true;
+			return false;
+		}
+	}
+	return true;
+}
+
+function CheckDataSource()
+{
+	if (window.external.FindSymbol("DB_CONNECTION_STRING") == "" && (DB_VIEW_WITH_FILE.checked || DB_VIEW_NO_FILE.checked))
+	{
+		var L_ErrMsg1_Text = "You must specify a data source when database view option is selected";
+		window.external.ReportError( L_ErrMsg1_Text );
+		return false;
+	}
+	return true;
+}
+
+function OnFinish(document)
+{
+	if (!CheckDBSupport())
+		return;
+
+	if (!CheckDataSource())
+		return;
+
+	if (window.external.FindSymbol("ACTIVE_DOC_SERVER"))
+	{
+		if (window.external.FindSymbol("FILE_EXTENSION") == "")
+		{
+			var L_ErrMsg2_Text = "You must specify a Document File Extension in the Document Template Strings page";
+			window.external.ReportError( L_ErrMsg2_Text );
+			return;
+		}
+	}
+	OnWizFinish(document);
+}
+
+function OnODBCSupport(obj)
+{
+	DB_SUPPORT_INFO.value = "";
+	window.external.AddSymbol("DB_CONNECTION_STRING", "" );
+	ATTRIBUTED.disabled = true;
+	ATTRIBUTED_TITLE.disabled = true;
+
+	recordsetType.disabled = true;
+	SNAPSHOT.disabled = true;
+	DYNASET.disabled = true;
+	BIND_ALL_COLUMNS.disabled = true;
+	BINDCOLUMNSTITLE.disabled = true;
+
+	if( DB_VIEW_WITH_FILE.checked || DB_VIEW_NO_FILE.checked )
+	{
+		if (DB_SUPPORT_OLEDB.checked)
+		{
+			window.external.AddSymbol("OLEDB", true);
+			window.external.AddSymbol("ODBC", false);
+			window.external.AddSymbol("OLEDB_RECORD_VIEW", true);
+			window.external.AddSymbol("ODBC_RECORD_VIEW", false);
+			window.external.AddSymbol("VIEW_BASE_CLASS", "COleDBRecordView");
+			window.external.AddSymbol("LIST_VIEW", false);
+			ATTRIBUTED.disabled = false;
+			ATTRIBUTED_TITLE.disabled = false;
+		}
+		else
+		{
+			window.external.AddSymbol("OLEDB", false);
+			window.external.AddSymbol("ODBC", true);
+			window.external.AddSymbol("OLEDB_RECORD_VIEW", false);
+			window.external.AddSymbol("ODBC_RECORD_VIEW", true);
+			window.external.AddSymbol("VIEW_BASE_CLASS", "CRecordView");
+			window.external.AddSymbol("LIST_VIEW", false);
+			recordsetType.disabled = false;
+			SNAPSHOT.disabled = false;
+			DYNASET.disabled = false;
+			BIND_ALL_COLUMNS.disabled = false;
+			BINDCOLUMNSTITLE.disabled = false;
+		}
+	}
+	MouseOut(DatSupBtn);
+}
+
+function OnDBSupport(obj)
+{
+	if (obj.id == "DB_VIEW_NO_FILE")
+	{
+		if (!CheckDBSupport())
+			return;
+	}
+
+	DB_SUPPORT_OLEDB.disabled = false;
+	db_oledb.disabled = false;
+	DB_SUPPORT_ODBC.disabled = false;
+	db_odbc.disabled = false;
+	sctype.disabled = false;
+	DB_SUPPORT_INFO.disabled = false;
+	ATTRIBUTED.disabled = false;
+	BIND_ALL_COLUMNS.disabled = true;
+	BINDCOLUMNSTITLE.disabled = true;
+
+	if (DB_VIEW_WITH_FILE.checked || DB_VIEW_NO_FILE.checked)
+	{
+		if( DB_SUPPORT_ODBC.checked )
+		{
+			DB_SUPPORT_OLEDB.checked = false;
+			DB_SUPPORT_ODBC.checked = true;
+			window.external.AddSymbol("OLEDB", false);
+			window.external.AddSymbol("ODBC", true);
+			window.external.AddSymbol("OLEDB_RECORD_VIEW", false);
+			window.external.AddSymbol("ODBC_RECORD_VIEW", true);
+			window.external.AddSymbol("LIST_VIEW", false);
+			window.external.AddSymbol("VIEW_BASE_CLASS", "CRecordView");
+			BIND_ALL_COLUMNS.disabled = false;
+			BINDCOLUMNSTITLE.disabled = false;
+		}
+		else
+		{
+			DB_SUPPORT_OLEDB.checked = true;
+			DB_SUPPORT_ODBC.checked = false;
+			window.external.AddSymbol("OLEDB", true);
+			window.external.AddSymbol("ODBC", false);
+			window.external.AddSymbol("OLEDB_RECORD_VIEW", true);
+			window.external.AddSymbol("ODBC_RECORD_VIEW", false);
+			window.external.AddSymbol("LIST_VIEW", false);
+			window.external.AddSymbol("VIEW_BASE_CLASS", "COleDBRecordView");
+		}
+	}
+	else if( DB_SUPPORT_HEADER_ONLY.checked )
+	{
+		window.external.AddSymbol("OLEDB", false);
+		window.external.AddSymbol("ODBC", false);
+		window.external.AddSymbol("OLEDB_RECORD_VIEW", false);
+		window.external.AddSymbol("ODBC_RECORD_VIEW", false);
+
+		if (window.external.FindSymbol("LIST_VIEW"))
+			window.external.AddSymbol("VIEW_BASE_CLASS", "CListView");
+		else
+			window.external.AddSymbol("VIEW_BASE_CLASS", "CView");
+
+		DB_SUPPORT_INFO.disabled = true;
+		ATTRIBUTED.disabled = true;
+		recordsetType.disabled = true;
+		SNAPSHOT.disabled = true;
+		DYNASET.disabled = true;
+		BIND_ALL_COLUMNS.disabled = true;
+		BINDCOLUMNSTITLE.disabled = true;
+	}
+	else
+	{
+		window.external.AddSymbol("OLEDB", false);
+		window.external.AddSymbol("ODBC", false);
+		window.external.AddSymbol("OLEDB_RECORD_VIEW", false);
+		window.external.AddSymbol("ODBC_RECORD_VIEW", false);
+
+		if (window.external.FindSymbol("LIST_VIEW"))
+			window.external.AddSymbol("VIEW_BASE_CLASS", "CListView");
+		else
+			window.external.AddSymbol("VIEW_BASE_CLASS", "CView");
+
+		DB_SUPPORT_INFO.disabled = true;
+		ATTRIBUTED.disabled = true;
+		recordsetType.disabled = true;
+		SNAPSHOT.disabled = true;
+		DYNASET.disabled = true;
+		BIND_ALL_COLUMNS.disabled = true;
+		BINDCOLUMNSTITLE.disabled = true;
+
+		DB_SUPPORT_OLEDB.disabled = true;
+		db_oledb.disabled = true;
+		DB_SUPPORT_ODBC.disabled = true;
+		db_odbc.disabled = true;
+		sctype.disabled = true;
+	}
+
+	MouseOut(DatSupBtn);
+	ToggleImage();
+}
+
+function SelectDataSource()
+{
+	try
+	{
+		if (DB_VIEW_WITH_FILE.checked || DB_VIEW_NO_FILE.checked)
+		{
+			bDataSourceDlg = true;
+			var L_Message1_Text = "You have selected a data source.";
+			if( DB_SUPPORT_OLEDB.checked )
+			{
+				if (window.external.SelectDataSource() != "")
+				{
+					DB_SUPPORT_INFO.value = L_Message1_Text;
+				}
+			}
+			else
+			{
+				if (window.external.SelectODBCDatabase() != "")
+				{
+					DB_SUPPORT_INFO.value = L_Message1_Text;
+				}
+			}
+			bDataSourceDlg = false;
+		}
+	}
+	catch(e)
+	{
+		L_Err_Text = "Error in SelectDataSource()";
+		if (e.description.length != 0)
+		{
+			L_Err_Text += ": ";
+			L_Err_Text += e.description;
+		}
+		window.external.ReportError(L_Err_Text);
+		return;
+	}
+}
+
+function ToggleImage()
+{
+	DB_SUPPORT_NONE_IMAGE.style.display = "none"; 
+	DB_SUPPORT_HEADER_ONLY_IMAGE.style.display = "none"; 
+	DB_VIEW_NO_FILE_IMAGE.style.display = "none"; 
+	DB_VIEW_WITH_FILE_IMAGE.style.display = "none"; 
+
+	if (DB_SUPPORT_NONE.checked)
+	{
+		DB_SUPPORT_NONE_IMAGE.style.display = "block"; 
+		return;
+	}
+	if (DB_SUPPORT_HEADER_ONLY.checked)
+	{
+		DB_SUPPORT_HEADER_ONLY_IMAGE.style.display = "block"; 
+		return;
+	}
+	if (DB_VIEW_NO_FILE.checked)
+	{
+		DB_VIEW_NO_FILE_IMAGE.style.display = "block"; 
+		return;
+	}
+	if (DB_VIEW_WITH_FILE.checked)
+		DB_VIEW_WITH_FILE_IMAGE.style.display = "block"; 
+}
+
+</SCRIPT>
+<SCRIPT ID="INCLUDE_SCRIPT" LANGUAGE="JSCRIPT"></SCRIPT>
+<SCRIPT ID="INCLUDE_COMMON" LANGUAGE="JSCRIPT"></SCRIPT>
+<SCRIPT>
+	var strPath = "../../../";
+	strPath += window.external.GetHostLocale();
+	var strScriptPath = strPath + "/Script.js";
+	var strCommonPath = strPath + "/Common.js";
+	document.scripts("INCLUDE_SCRIPT").src = strScriptPath;
+	document.scripts("INCLUDE_COMMON").src = strCommonPath;
+</SCRIPT>

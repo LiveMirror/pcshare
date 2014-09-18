@@ -1,0 +1,65 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "XTPResourceArSa", ".\XTPResourceArSa\XTPResourceArSa_vc71.vcproj", "{11927133-4173-4948-1238-561986779936}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "XTPResourceCs", ".\XTPResourceCs\XTPResourceCs_vc71.vcproj", "{76425439-1731-8635-8292-966722812785}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "XTPResourceDa", ".\XTPResourceDa\XTPResourceDa_vc71.vcproj", "{48178759-8882-5732-1298-752739786237}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "XTPResourceDe", ".\XTPResourceDe\XTPResourceDe_vc71.vcproj", "{66648579-6644-9524-3125-689311463684}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "XTPResourceEl", ".\XTPResourceEl\XTPResourceEl_vc71.vcproj", "{91465224-4791-8627-8766-817264773634}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "XTPResourceEn", ".\XTPResourceEn\XTPResourceEn_vc71.vcproj", "{56763629-1458-2313-6839-313989825483}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "XTPResourceEs", ".\XTPResourceEs\XTPResourceEs_vc71.vcproj", "{29526941-8519-9419-9736-198997799934}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "XTPResourceEt", ".\XTPResourceEt\XTPResourceEt_vc71.vcproj", "{23751923-6164-2199-4155-951878396275}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "XTPResourceFi", ".\XTPResourceFi\XTPResourceFi_vc71.vcproj", "{72713414-4428-2395-6394-254432686331}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "XTPResourceFr", ".\XTPResourceFr\XTPResourceFr_vc71.vcproj", "{13975163-2977-4889-7969-674567847174}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "XTPResourceHe", ".\XTPResourceHe\XTPResourceHe_vc71.vcproj", "{19864131-8138-3178-7464-335266692632}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "XTPResourceHr", ".\XTPResourceHr\XTPResourceHr_vc71.vcproj", "{13298113-6782-6678-2783-396146399873}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "XTPResourceHu", ".\XTPResourceHu\XTPResourceHu_vc71.vcproj", "{26245978-9579-6467-4982-364774341683}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "XTPResourceIt", ".\XTPResourceIt\XTPResourceIt_vc71.vcproj", "{57417637-7138-7151-5566-883819493336}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "XTPResourceJa", ".\XTPResourceJa\XTPResourceJa_vc71.vcproj", "{72718463-7173-2953-5577-617426436656}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "XTPResourceKo", ".\XTPResourceKo\XTPResourceKo_vc71.vcproj", "{65144545-4636-5543-9896-569496133817}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "XTPResourceLt", ".\XTPResourceLt\XTPResourceLt_vc71.vcproj", "{99869289-2882-3746-5547-798259443957}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "XTPResourceLv", ".\XTPResourceLv\XTPResourceLv_vc71.vcproj", "{65367585-9541-6432-4619-283986575716}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "XTPResourceNl", ".\XTPResourceNl\XTPResourceNl_vc71.vcproj", "{52257654-6691-6632-3115-854684439354}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "XTPResourceNo", ".\XTPResourceNo\XTPResourceNo_vc71.vcproj", "{56482636-4354-8222-7434-816675936614}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "XTPResourcePl", ".\XTPResourcePl\XTPResourcePl_vc71.vcproj", "{81317379-2411-7324-4175-145438356654}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "XTPResourcePt", ".\XTPResourcePt\XTPResourcePt_vc71.vcproj", "{76564493-6682-8512-5719-427637259943}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "XTPResourcePtBr", ".\XTPResourcePtBr\XTPResourcePtBr_vc71.vcproj", "{63453461-3742-7691-4214-188346914591}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "XTPResourceRo", ".\XTPResourceRo\XTPResourceRo_vc71.vcproj", "{66788543-1496-1391-8533-141326612742}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "XTPResourceRu", ".\XTPResourceRu\XTPResourceRu_vc71.vcproj", "{91514287-8552-8484-5374-278179921891}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "XTPResourceSk", ".\XTPResourceSk\XTPResourceSk_vc71.vcproj", "{56812583-6219-3189-3347-764815163649}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "XTPResourceSl", ".\XTPResourceSl\XTPResourceSl_vc71.vcproj", "{53892651-3471-2379-2733-435514927297}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "XTPResourceSv", ".\XTPResourceSv\XTPResourceSv_vc71.vcproj", "{56146633-1124-4969-6152-387584514548}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "XTPResourceTh", ".\XTPResourceTh\XTPResourceTh_vc71.vcproj", "{71952377-8289-3162-3812-515347934598}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "XTPResourceUk", ".\XTPResourceUk\XTPResourceUk_vc71.vcproj", "{46369783-6848-6758-1975-911174166347}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "XTPResourceZhCn", ".\XTPResourceZhCn\XTPResourceZhCn_vc71.vcproj", "{33249741-3198-5957-1461-772772821995}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "XTPResourceZhTw", ".\XTPResourceZhTw\XTPResourceZhTw_vc71.vcproj", "{37584834-1652-8547-5789-634753527246}"
+EndProject

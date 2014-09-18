@@ -1,0 +1,285 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE  
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE  
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE  
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+	"\r\n"
+	"#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_[!output LANG_SUFFIX])\r\n"
+	"LANGUAGE [!output PRIMARY_LANG_ID], [!output SUB_LANG_ID]\r\n"
+	"#pragma code_page([!output CODE_PAGE])\r\n"
+	"#include ""[!output RES_PATH]\\[!output PROJECT_NAME].rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+	"#include ""afxres.rc""  	// Standard components\r\n"
+	"#endif\r\n"
+[!if AUTOMATION]
+    "1 TYPELIB ""[!output PROJECT_NAME].tlb""\r\n"
+[!endif]
+    "\0"
+END
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // APSTUDIO_INVOKED
+
+
+[!if APP_TYPE_DLG]
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON         "res\\[!output PROJECT_NAME].ico"
+[!endif]
+
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_[!output LANG_SUFFIX])
+LANGUAGE [!output PRIMARY_LANG_ID], [!output SUB_LANG_ID]
+#pragma code_page([!output CODE_PAGE])
+
+[!if APP_TYPE_DLG]
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+[!if ABOUT_BOX]
+
+IDD_ABOUTBOX DIALOGEX   0, 0, 235, 55
+STYLE DS_MODALFRAME | DS_SHELLFONT | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About [!output PROJECT_NAME]"
+FONT [!output ABOUTBOX_FONT_SIZE], "MS Shell Dlg"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "[!output PROJECT_NAME] Version 1.0",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) [!output YEAR]",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7, 50,16,WS_GROUP
+END
+[!endif]
+
+[!if HTML_DIALOG]
+/////////////////////////////////////////////////////////////////////////////
+//
+// HTML
+//
+
+IDR_HTML_[!output UPPER_CASE_SAFE_PROJECT_NAME]_DIALOG    HTML         "[!output PROJECT_NAME].htm"
+
+/////////////////////////////////////////////////////////////////////////////
+
+IDD_[!output UPPER_CASE_SAFE_PROJECT_NAME]_DIALOG DIALOGEX  0, 0, 320, 200 
+STYLE DS_SHELLFONT | WS_POPUP | WS_VISIBLE | WS_CAPTION
+[!if MAIN_FRAME_THICK_FRAME]
+ | WS_THICKFRAME
+[!else]
+ | DS_MODALFRAME
+[!endif]
+[!if MAIN_FRAME_SYSTEM_MENU]
+ | WS_SYSMENU
+[!endif]
+[!if MAIN_FRAME_MINIMIZE_BOX]
+ | WS_MINIMIZEBOX
+[!endif]
+[!if MAIN_FRAME_MAXIMIZE_BOX]
+ | WS_MAXIMIZEBOX
+[!endif]
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "[!output DIALOG_TITLE]"
+FONT 8, "MS Shell Dlg"
+BEGIN
+END
+[!else]
+IDD_[!output UPPER_CASE_SAFE_PROJECT_NAME]_DIALOG DIALOGEX  0, 0, 320, 200 
+STYLE DS_SHELLFONT | WS_POPUP | WS_VISIBLE | WS_CAPTION
+[!if MAIN_FRAME_THICK_FRAME]
+ | WS_THICKFRAME
+[!else]
+ | DS_MODALFRAME
+[!endif]
+[!if MAIN_FRAME_SYSTEM_MENU]
+ | WS_SYSMENU
+[!endif]
+[!if MAIN_FRAME_MINIMIZE_BOX]
+ | WS_MINIMIZEBOX
+[!endif]
+[!if MAIN_FRAME_MAXIMIZE_BOX]
+ | WS_MAXIMIZEBOX
+[!endif]
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "[!output DIALOG_TITLE]"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,263,7,50,16
+    PUSHBUTTON      "Cancel",IDCANCEL,263,25,50,16
+[!if CONTEXT_HELP]
+    PUSHBUTTON      "&Help",ID_HELP,263,44,50,16
+[!endif]
+	CTEXT           "TODO: Place dialog controls here.",IDC_STATIC,10,96,300,8
+END
+[!endif]
+[!endif]
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO     VERSIONINFO
+  FILEVERSION       1,0,0,1
+  PRODUCTVERSION    1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+	BLOCK "StringFileInfo"
+	BEGIN
+        BLOCK "0[!output HEX_LCID]0[!output HEX_CODE_PAGE]"
+		BEGIN 
+            VALUE "CompanyName", "TODO: <Company name>"
+            VALUE "FileDescription", "TODO: <File description>"
+			VALUE "FileVersion",     "1.0.0.1"
+			VALUE "InternalName",    "[!output PROJECT_NAME].exe"
+            VALUE "LegalCopyright", "TODO: (c) <Company name>.  All rights reserved."
+			VALUE "OriginalFilename","[!output PROJECT_NAME].exe"
+            VALUE "ProductName", "TODO: <Product name>"
+			VALUE "ProductVersion",  "1.0.0.1"
+		END
+	END
+	BLOCK "VarFileInfo" 
+	BEGIN 
+		VALUE "Translation", 0x[!output HEX_LCID], [!output CODE_PAGE]
+    END
+END
+
+[!if APP_TYPE_DLG]
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO  
+BEGIN
+[!if ABOUT_BOX]
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+[!endif]
+    IDD_[!output UPPER_CASE_SAFE_PROJECT_NAME]_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 313
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 193 
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+[!if ABOUT_BOX]
+STRINGTABLE  
+BEGIN
+    IDS_ABOUTBOX            "&About [!output PROJECT_NAME]..."
+END
+[!endif]
+[!endif]
+[!if APP_TYPE_DLG]
+[!if SOCKETS || AUTOMATION]
+
+STRINGTABLE  
+BEGIN
+[!if AUTOMATION || ACCESSIBILITY]
+	IDP_OLE_INIT_FAILED   	"OLE initialization failed.  Make sure that the OLE libraries are the correct version."
+[!endif]
+[!if SOCKETS]
+	IDP_SOCKETS_INIT_FAILED	"Windows sockets initialization failed."
+[!endif]
+END
+[!endif]
+[!else]
+[!if SOCKETS]
+
+STRINGTABLE  
+BEGIN
+	IDP_SOCKETS_INIT_FAILED	"Windows sockets initialization failed."
+END
+[!endif]
+[!endif]
+
+
+#endif
+[!if MANIFEST]
+
+IDR_MANIFEST	RT_MANIFEST	"res\\[!output PROJECT_NAME].manifest"
+[!endif]
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_[!output LANG_SUFFIX])
+LANGUAGE [!output PRIMARY_LANG_ID], [!output SUB_LANG_ID]
+#pragma code_page([!output CODE_PAGE])
+#include "[!output RES_PATH]\\[!output PROJECT_NAME].rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"  	// Standard components
+#endif
+[!if AUTOMATION]
+
+1 TYPELIB "[!output PROJECT_NAME].tlb"
+[!endif]
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

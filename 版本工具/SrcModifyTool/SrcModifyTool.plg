@@ -1,0 +1,51 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: SrcModifyTool - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Debug/SrcModifyTool.res" /d "_DEBUG" /d "_AFXDLL" "D:\开发代码\版本工具\SrcModifyTool\SrcModifyTool.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP338.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/SrcModifyTool.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\开发代码\版本工具\SrcModifyTool\SrcModifyTool.cpp"
+"D:\开发代码\版本工具\SrcModifyTool\SrcModifyToolDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP338.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP339.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/SrcModifyTool.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\开发代码\版本工具\SrcModifyTool\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP339.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP33A.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/SrcModifyTool.pdb" /debug /machine:I386 /out:"Debug/SrcModifyTool.exe" /pdbtype:sept 
+".\Debug\SrcModifyTool.obj"
+".\Debug\SrcModifyToolDlg.obj"
+".\Debug\StdAfx.obj"
+".\Debug\SrcModifyTool.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP33A.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+SrcModifyTool.cpp
+SrcModifyToolDlg.cpp
+Generating Code...
+Linking...
+Creating command line "bscmake.exe /nologo /o"Debug/SrcModifyTool.bsc"  ".\Debug\StdAfx.sbr" ".\Debug\SrcModifyTool.sbr" ".\Debug\SrcModifyToolDlg.sbr""
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+SrcModifyTool.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

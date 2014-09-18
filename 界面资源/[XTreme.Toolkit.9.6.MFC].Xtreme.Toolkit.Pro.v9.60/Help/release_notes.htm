@@ -1,0 +1,1728 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<title>Codejock Software Release Notes</title>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<link rel="stylesheet" type="text/css" title="default" href="includes/default.css"><script type="text/javascript">
+function outliner () {
+  oMe = window.event.srcElement
+  //get child element
+  var child = document.all[event.srcElement.getAttribute("child",false)];
+  //if child element exists, expand or collapse it.
+  if (null != child)
+    //child.className = child.className == "collapsed" ? "expanded" : "collapsed";
+    child.style.display = "none" == child.style.display ? "" : "none";
+}
+function changepic() {
+  uMe = window.event.srcElement;
+  var check = uMe.src.toLowerCase();
+  if (check.lastIndexOf("plus.gif") != -1) {
+    uMe.src = "images/minus.gif"
+  }
+  else {
+    uMe.src = "images/plus.gif"
+  }
+}
+function OnProductChanged(index) {
+  var i, child ;
+  for(i = 0; i < document.all.length; i++){
+    child = document.all(i)
+    //alert(child.tagName);
+    if (child.id != null) if (child.id.indexOf("divproduct") == 0) {
+      child.style.display = child.id.indexOf("divproduct_" + index) != 0? "none" : "";
+    }
+  }
+}
+function OnCategoryChanged(index) {
+  var i, child ;
+  for(i = 0; i < document.all.length; i++){
+    child = document.all(i)
+    //alert(child.tagName);
+    if (child.id != null) if (child.id.indexOf("divcategory") == 0) {
+      child.style.display = child.id.indexOf("divcategory_" + index) != 0? "none" : "";
+    }
+  }				
+}
+</script></head>
+<body onclick="outliner();">
+<table width="100%" bgcolor="#0347BF" cellSpacing="0" cellPadding="5" border="0" class="pageheading">
+<tr>
+<td width="48"><img src="images/notes.gif" border="0" width="48" height="48"></td>
+<td class="pageheading" height="61" nowrap="1"><font class="title">Release Notes</font><br>for Xtreme Toolkit Professional Edition product line</td>
+</tr>
+</table>
+<div style="width:575px;padding:10px;">
+Codejock Software's Xtreme Toolkit Professional Edition product line release notes include updated information for the documentation provided with the 
+Xtreme Toolkit Professional Edition product line.  The information contained in this document may be more up-to-date than the information that is provided 
+in the Help system.</div>
+<div style="width:100%;padding-left:10px;padding-right:20px;">
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><img src="images/pixel.gif" width="16" height="16"></td>
+<td valign="top" style="background-image: url('images/dotsep.gif'); width: 100%; padding-left: 5px;"></td>
+</tr>
+<tr>
+<td valign="top"><img src="images/bluearrow.gif"></td>
+<td valign="top" style="padding-left: 5px;"><b>Select a Component Category:</b><br><div style="padding-top:2px;">To get started, select the development platform you will be working with from the Component Category list.</div></td>
+</tr>
+<tr>
+<td valign="top"><img src="images/pixel.gif" width="16" height="16"></td>
+<td valign="top" style="width: 100%; padding-left: 5px;padding-top: 10px;">
+<div style="padding-bottom: 0px;"><input style="cursor: pointer; cursor: hand;" type="radio" id="mfc" name="dev" onclick="OnCategoryChanged('mfc');" checked="1"><label style="cursor: pointer; cursor: hand;" for="mfc">Visual C++ Components</label></div>
+<div style="padding-bottom: 0px;"><input style="cursor: pointer; cursor: hand;" type="radio" id="ax" name="dev" onclick="OnCategoryChanged('ax');"><label style="cursor: pointer; cursor: hand;" for="ax">Active-X Components for Visual Basic and .NET</label></div>
+</td>
+</tr>
+</table>
+</div>
+<div style="width:100%;padding-left:10px;padding-right:20px;">
+<table border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top"><img src="images/pixel.gif" width="16" height="16"></td>
+<td valign="top" style="background-image: url('images/dotsep.gif'); width: 100%; padding-left: 5px;"></td>
+</tr>
+<tr>
+<td valign="top"><img src="images/bluearrow.gif"></td>
+<td valign="top" style="padding-left: 5px;"><B>Select Product to Filter:</B><br><div style="padding-top:2px;">
+Select the product that you are interesed in from list below.</div></td>
+</tr>
+<tr>
+<td valign="top"><img src="images/pixel.gif" width="16" height="16"></td>
+<td valign="top" style="width: 100%; padding-left: 5px;padding-top: 10px;"><select class="normal" name="prod" onchange="OnProductChanged(this.value);"><option value="">--- all products ---</option>
+<option value="xtp">Xtreme Toolkit Pro</option>
+<option value="xsp">Xtreme Suite Pro</option>
+<option value="xcb">Xtreme Command Bars</option>
+<option value="xpg">Xtreme Property Grid</option>
+<option value="xdp">Xtreme Docking Pane</option>
+<option value="xrc">Xtreme Report Control</option></select></td>
+</tr>
+</table>
+</div>
+<div style="width:100%;padding:10px;">
+<table cellpadding="2" cellspacing="0" width="98%" border="1" bordercolor="white" class="infotable">
+<tr>
+<td nowrap="1" class="header" width="25%">Release</td>
+<td nowrap="1" class="header" width="75%">Date</td>
+</tr>
+<tr class="row">
+<td class="content"><IMG alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div9.60.1">Version 9.60.1</td>
+<td class="content">March 3, 2005</td>
+</tr>
+<tr id="div9.60.1" bgcolor="#ffffff">
+<td colspan="2" style="padding-top: 10px;padding-bottom: 10px;">
+<div id="divcategory_mfc_9.60.1" style="display:">
+<div id="divproduct_xtp_mfc_9.60.1_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_xtp_mfc_9.60.1_body"><i>Xtreme Toolkit Pro</i></div>
+<div style="padding-left: 20px;" id="div_xtp_mfc_9.60.1_body">
+<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+<tr>
+<td width="20" class="issuehdr" align="right">#</td>
+<td width="100" class="issuehdr" nowrap="1">Type</td>
+<td class="issuehdr">Description</td></tr>
+<tr><td class="issuecontent" align="right">1</td><td class="issuecontent">New feature</td><td class="issuecontent">XTPTaskPanelItemAllowDrag enumerator added for TaskPanel drag operations</td></tr>
+<tr><td class="issuecontent" align="right">2</td><td class="issuecontent">New feature</td><td class="issuecontent">CXTPPropExchangeEnumerator added to enumerate child sections for XML node</td></tr>
+<tr><td class="issuecontent" align="right">3</td><td class="issuecontent">New feature</td><td class="issuecontent">CXTPTaskPanel::SetSingleSelection added to allow only one item to be selected in Task Panel; XTP_TPN_FOCUSEDITEMCHANGED notification added</td></tr>
+<tr><td class="issuecontent" align="right">4</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed bug in CXTPStatusBarIconPane::SetPaneIcon that did not destroy the icon if it already existed.  Added DestroyIcon to CXTPStatusBarIconPane::SetPaneIcon to fix 	memory leak.</td></tr>
+<tr><td class="issuecontent" align="right">5</td><td class="issuecontent">New feature</td><td class="issuecontent">XTP_TPN_DBLCLICK added for XTPWM_TASKPANEL_NOTIFY</td></tr>
+<tr><td class="issuecontent" align="right">6</td><td class="issuecontent">Sample update</td><td class="issuecontent">Fixed a few bugs in the Grep sample that would allow a blank popup to be displayed that would not go away, and a bug that caused text in the list to overlap.</td></tr>
+<tr><td class="issuecontent" align="right">7</td><td class="issuecontent">Sample update</td><td class="issuecontent">Fixed a bug in the Multi-Language Scribble sample that would cause an assertion error when Arabic was selected as the language and a menu item was selected.</td></tr>
+<tr><td class="issuecontent" align="right">8</td><td class="issuecontent">Sample update</td><td class="issuecontent">Fixed a bug that cause the Toolbox sample not to compile.</td></tr>
+<tr><td class="issuecontent" align="right">9</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed bug in TaskPanel::EnsureVisible that would cause incorrect scrolling</td></tr>
+<tr><td class="issuecontent" align="right">10</td><td class="issuecontent">New feature</td><td class="issuecontent">Added CXTMenuListBox::EnableMenuItem to provide the ability to enable or disable menu items in the CXTMenuListBox control</td></tr>
+<tr><td class="issuecontent" align="right">11</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Eliminated the prompting to save dialog when the CXTWindowList::OnBtnSave button was pressed in the CXTPWindowList control</td></tr>
+<tr><td class="issuecontent" align="right">12</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed problem with call stack when using CXTShadowWnd</td></tr>
+</table></div></div>
+<div id="divproduct_xcb_mfc_9.60.1_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_xcb_mfc_9.60.1_body"><i>Xtreme Command Bars</i></div>
+<div style="padding-left: 20px;" id="div_xcb_mfc_9.60.1_body">
+<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+<tr>
+<td width="20" class="issuehdr" align="right">#</td>
+<td width="100" class="issuehdr" nowrap="1">Type</td>
+<td class="issuehdr">Description</td></tr>
+<tr><td class="issuecontent" align="right">1</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed bug in DesignerStudio when the "Add Control" button was clicked the application would crash</td></tr>
+</table></div></div>
+<div id="divproduct_xpg_mfc_9.60.1_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_xpg_mfc_9.60.1_body"><i>Xtreme Property Grid</i></div>
+<div style="padding-left: 20px;" id="div_xpg_mfc_9.60.1_body">
+<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+<tr>
+<td width="20" class="issuehdr" align="right">#</td>
+<td width="100" class="issuehdr" nowrap="1">Type</td>
+<td class="issuehdr">Description</td></tr>
+<tr><td class="issuecontent" align="right">1</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Improved drawing themed expand and combo buttons, Whidbey theme now use themed buttons. Little improvments in all themes</td></tr>
+<tr><td class="issuecontent" align="right">2</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed bug where the grid was not updated after the description was set of a selected item.</td></tr>
+</table></div></div>
+<div id="divproduct_xdp_mfc_9.60.1_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_xdp_mfc_9.60.1_body"><i>Xtreme Docking Pane</i></div>
+<div style="padding-left: 20px;" id="div_xdp_mfc_9.60.1_body">
+<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+<tr>
+<td width="20" class="issuehdr" align="right">#</td>
+<td width="100" class="issuehdr" nowrap="1">Type</td>
+<td class="issuehdr">Description</td></tr>
+<tr><td class="issuecontent" align="right">1</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed bug in Dynamic Pane sample that cause an unhandled exception when the pane caption was right-clicked.</td></tr>
+<tr><td class="issuecontent" align="right">2</td><td class="issuecontent">New feature</td><td class="issuecontent"><a href="images/screen_newthemes.gif">Reworked NativeWinXP theme. Added themed close and pin buttons, Added xtpPaneThemeShortcutBar2003 and xtpPaneThemeExplorer themes</a></td></tr>
+<tr><td class="issuecontent" align="right">3</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed bug that displayed a splitter mouse cursor when a pane could not be resized</td></tr>
+<tr><td class="issuecontent" align="right">4</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Tracking MinMax now works with AutoHide windows</td></tr>
+</table></div></div>
+<div id="divproduct_xrc_mfc_9.60.1_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_xrc_mfc_9.60.1_body"><i>Xtreme Report Control</i></div>
+<div style="padding-left: 20px;" id="div_xrc_mfc_9.60.1_body">
+<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+<tr>
+<td width="20" class="issuehdr" align="right">#</td>
+<td width="100" class="issuehdr" nowrap="1">Type</td>
+<td class="issuehdr">Description</td></tr>
+<tr><td class="issuecontent" align="right">1</td><td class="issuecontent">New feature</td><td class="issuecontent">CXTPReportControl::DoPropExchange added</td></tr>
+<tr><td class="issuecontent" align="right">2</td><td class="issuecontent">New feature</td><td class="issuecontent">CXTPReportSelectedRows::IsChanged/SetChanged added</td></tr>
+<tr><td class="issuecontent" align="right">3</td><td class="issuecontent">New feature</td><td class="issuecontent">DT_NOPREFIX added for each DrawText call</td></tr>
+<tr><td class="issuecontent" align="right">4</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed m_clrIndentControl color in non luna theme</td></tr>
+<tr><td class="issuecontent" align="right">5</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed bug where text containing an ampersand would be displayed differently than the tooltip</td></tr>
+</table></div></div>
+</div>
+<div id="divcategory_ax_9.60.1" style="display:none">
+<div id="divproduct_xsp_ax_9.60.1_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_xsp_ax_9.60.1_body"><i>Xtreme Suite Pro</i></div>
+<div style="padding-left: 20px;" id="div_xsp_ax_9.60.1_body">
+<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+<tr>
+<td width="20" class="issuehdr" align="right">#</td>
+<td width="100" class="issuehdr" nowrap="1">Type</td>
+<td class="issuehdr">Description</td></tr>
+<tr><td class="issuecontent" align="right">1</td><td class="issuecontent">New feature</td><td class="issuecontent">XTPTaskPanelItemAllowDrag enumerator added for TaskPanel drag operations.  The TaskPanel::AllowDrag, TaskPanelGroupItem::AllowDrag, TaskPanelGroup::AllowDrag, and TaskPanelItem::AllowDrag properties have changed from type boolean to type XTPTaskPanelItemAllowDrag.</td></tr>
+<tr><td class="issuecontent" align="right">2</td><td class="issuecontent">New feature</td><td class="issuecontent">TabPaintManager::SetIconSize method added</td></tr>
+<tr><td class="issuecontent" align="right">3</td><td class="issuecontent">New feature</td><td class="issuecontent">TaskPanel::ItemDblClick, TaskPanel::FocusedItemChanged events added; TaskPanel::FocusedItem, TaskPanel::SingleSelection properties added</td></tr>
+<tr><td class="issuecontent" align="right">4</td><td class="issuecontent">New feature</td><td class="issuecontent">Pressing the F1 key with the cursor on a Codejock keyword will now open up the help file and the help page for the keyword will be displayed</td></tr>
+<tr><td class="issuecontent" align="right">5</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed some VB.NET, C# samples. MS ImageList replaced to Codejock ImageManager in .NET samples</td></tr>
+<tr><td class="issuecontent" align="right">6</td><td class="issuecontent">Sample update</td><td class="issuecontent">Added email sample to Outlook 2003 sample</td></tr>
+<tr><td class="issuecontent" align="right">7</td><td class="issuecontent">New feature</td><td class="issuecontent"> Added XTPTabColorWhidbey to XTPTabColorStyle enumeration</td></tr>
+<tr><td class="issuecontent" align="right">8</td><td class="issuecontent">Sample update</td><td class="issuecontent">Updated TabManager sample with new Whidbey theme</td></tr>
+<tr><td class="issuecontent" align="right">9</td><td class="issuecontent">New feature</td><td class="issuecontent">Added XPCOLOR_LABEL and XPCOLOR_STATICFRAME to the XTPColorManagerColor enumeration</td></tr>
+<tr><td class="issuecontent" align="right">10</td><td class="issuecontent">New feature</td><td class="issuecontent">ImageManager::AddBitmap added</td></tr>
+<tr><td class="issuecontent" align="right">11</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed bug in that would cause incorrect scrolling when the items are navigated using the up and down arrow keys.</td></tr>
+<tr><td class="issuecontent" align="right">12</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed bug in TaskPanel.Icons collection that would offset the icon count by 1 causing the wrong icon to display.</td></tr>
+</table></div></div>
+<div id="divproduct_xcb_ax_9.60.1_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_xcb_ax_9.60.1_body"><i>Xtreme Command Bars</i></div>
+<div style="padding-left: 20px;" id="div_xcb_ax_9.60.1_body">
+<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+<tr>
+<td width="20" class="issuehdr" align="right">#</td>
+<td width="100" class="issuehdr" nowrap="1">Type</td>
+<td class="issuehdr">Description</td></tr>
+<tr><td class="issuecontent" align="right">1</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed bug in DesignerStudio when the "Add Control" button was clicked the application would crash</td></tr>
+<tr><td class="issuecontent" align="right">2</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed bug that caused popup menus not to close when using CommandBars in an Internet Explorer band and multiple instances of the browser are open</td></tr>
+<tr><td class="issuecontent" align="right">3</td><td class="issuecontent">New feature</td><td class="issuecontent">Options.MaxPopupWidth property added to control maximum available popup bar width</td></tr>
+<tr><td class="issuecontent" align="right">4</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed bug with LoadStateFromXML where it would not load icons into the CommandBars.DesignerControls collection when StateOptions.SerializeImages was True</td></tr>
+<tr><td class="issuecontent" align="right">5</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed bug that would calculate the popup menu caption width before the Update event was fired.  The caused some captions to be displayed incorrectly.</td></tr>
+</table></div></div>
+<div id="divproduct_xpg_ax_9.60.1_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_xpg_ax_9.60.1_body"><i>Xtreme Property Grid</i></div>
+<div style="padding-left: 20px;" id="div_xpg_ax_9.60.1_body">
+<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+<tr>
+<td width="20" class="issuehdr" align="right">#</td>
+<td width="100" class="issuehdr" nowrap="1">Type</td>
+<td class="issuehdr">Description</td></tr>
+<tr><td class="issuecontent" align="right">1</td><td class="issuecontent">New feature</td><td class="issuecontent">Added PropertyGridItem::Remove method</td></tr>
+<tr><td class="issuecontent" align="right">2</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Improved drawing themed expand and combo buttons, Whidbey theme now use themed buttons. Little improvments in all themes</td></tr>
+<tr><td class="issuecontent" align="right">3</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed bug where the grid was not updated after the description was set of a selected item.</td></tr>
+</table></div></div>
+<div id="divproduct_xdp_ax_9.60.1_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_xdp_ax_9.60.1_body"><i>Xtreme Docking Pane</i></div>
+<div style="padding-left: 20px;" id="div_xdp_ax_9.60.1_body">
+<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+<tr>
+<td width="20" class="issuehdr" align="right">#</td>
+<td width="100" class="issuehdr" nowrap="1">Type</td>
+<td class="issuehdr">Description</td></tr>
+<tr><td class="issuecontent" align="right">1</td><td class="issuecontent">New feature</td><td class="issuecontent"><a href="images/screen_newthemes.gif">Reworked NativeWinXP theme. Added themed close and pin buttons, Added xtpPaneThemeShortcutBar2003 and xtpPaneThemeExplorer themes</a></td></tr>
+<tr><td class="issuecontent" align="right">2</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed bug that displayed a splitter mouse cursor when a pane could not be resized</td></tr>
+<tr><td class="issuecontent" align="right">3</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Tracking MinMax now works with AutoHide windows</td></tr>
+</table></div></div>
+<div id="divproduct_xrc_ax_9.60.1_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_xrc_ax_9.60.1_body"><i>Xtreme Report Control</i></div>
+<div style="padding-left: 20px;" id="div_xrc_ax_9.60.1_body">
+<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+<tr>
+<td width="20" class="issuehdr" align="right">#</td>
+<td width="100" class="issuehdr" nowrap="1">Type</td>
+<td class="issuehdr">Description</td></tr>
+<tr><td class="issuecontent" align="right">1</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed m_clrIndentControl color in non luna theme</td></tr>
+<tr><td class="issuecontent" align="right">2</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed bug where text containing an ampersand would be displayed differently than the tooltip</td></tr>
+<tr><td class="issuecontent" align="right">3</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed bug where SelectionChanged event would fire when clicking on the currently selected item</td></tr>
+<tr><td class="issuecontent" align="right">4</td><td class="issuecontent">New feature</td><td class="issuecontent">Added ReportPaintManager::DrawSortTriangleAlways property</td></tr>
+</table></div></div>
+</div>
+</td></tr>
+<tr class="row">
+<td class="content"><IMG alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div9.60">Version 9.60</td>
+<td class="content">February 15, 2005</td>
+</tr>
+<tr id="div9.60" bgcolor="#ffffff">
+<td colspan="2" style="padding-top: 10px;padding-bottom: 10px;">
+<div id="divcategory_mfc_9.60" style="display:">
+<div id="divproduct_xtp_mfc_9.60_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_xtp_mfc_9.60_body"><i>Xtreme Toolkit Pro</i></div>
+<div style="padding-left: 20px;" id="div_xtp_mfc_9.60_body">
+<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+<tr>
+<td width="20" class="issuehdr" align="right">#</td>
+<td width="100" class="issuehdr" nowrap="1">Type</td>
+<td class="issuehdr">Description</td></tr>
+<tr><td class="issuecontent" align="right">1</td><td class="issuecontent">Important!</td><td class="issuecontent">Much of the source code has been cleaned up and reformatted with this release. This includes formatting changes made to common naming conventions for enumerations, structures and global functions. As a result many commonly used identifiers are now depreciated.  To provide support for depreciated naming conventions you can add the following line of code to your stdafx.h file #define _XTP_INCLUDE_DEPRECIATED just before the line #include "ToolkitPro.h". See XTPDepreciated.h for a complete list of identifiers that have been affected</td></tr>
+<tr><td class="issuecontent" align="right">2</td><td class="issuecontent">New feature</td><td class="issuecontent">Added Themes support for standard controls. Added CXTMenuListBox, CXTTabCtrlTheme, CXTFlatControlsTheme, CXTCaptionTheme, CXTFlatTabCtrlTheme</td></tr>
+<tr><td class="issuecontent" align="right">3</td><td class="issuecontent">New feature</td><td class="issuecontent">Added constans for TrayIcon to support BaloonTip without latest PlatformSDK</td></tr>
+<tr><td class="issuecontent" align="right">4</td><td class="issuecontent">Fixing source</td><td class="issuecontent">CXTSplitterWnd::SetActivePane was declared as protected. Moved to public section</td></tr>
+<tr><td class="issuecontent" align="right">5</td><td class="issuecontent">Fixing source</td><td class="issuecontent">fixed errors and warnings for Intel(r) C++ compiler</td></tr>
+<tr><td class="issuecontent" align="right">6</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed All button themes to support GetChecked/SetChecked. Sample updated</td></tr>
+<tr><td class="issuecontent" align="right">7</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed bug in XTTreeCtrl when both TVS_TRACKSELECT and TVS_CHECKBOXES used</td></tr>
+<tr><td class="issuecontent" align="right">8</td><td class="issuecontent">New feature</td><td class="issuecontent">CXTPTabPaintManager::m_bDrawTextPathEllipsis variable added</td></tr>
+<tr><td class="issuecontent" align="right">9</td><td class="issuecontent">New feature</td><td class="issuecontent">Changes to support IA64</td></tr>
+<tr><td class="issuecontent" align="right">10</td><td class="issuecontent">New feature</td><td class="issuecontent">CXTPImageManager::RemoveIcon added, CXTPImageManager::SetIcon(UINT) added</td></tr>
+<tr><td class="issuecontent" align="right">11</td><td class="issuecontent">New feature</td><td class="issuecontent">Added Checked Icon in ImageManager collection. (xtpImageChecked)</td></tr>
+<tr><td class="issuecontent" align="right">12</td><td class="issuecontent">New feature</td><td class="issuecontent"><a href="images/screen_xml.gif">Added CXTPPropExchange supported by TaskPanel, CommanBars, DockingPane. Updated ToolboxSample</a></td></tr>
+<tr><td class="issuecontent" align="right">13</td><td class="issuecontent">Sample update</td><td class="issuecontent"><a href="images/screen_office2003.gif">Added Office2003 theme for GUI_Outlook sample</a></td></tr>
+<tr><td class="issuecontent" align="right">14</td><td class="issuecontent">New feature</td><td class="issuecontent">Added new xtpTaskPanelThemeShortcutBarOffice2003</td></tr>
+<tr><td class="issuecontent" align="right">15</td><td class="issuecontent">Sample update</td><td class="issuecontent">Grep sample added</td></tr>
+</table></div></div>
+<div id="divproduct_xsp_mfc_9.60_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_xsp_mfc_9.60_body"><i>Xtreme Suite Pro</i></div>
+<div style="padding-left: 20px;" id="div_xsp_mfc_9.60_body">
+<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+<tr>
+<td width="20" class="issuehdr" align="right">#</td>
+<td width="100" class="issuehdr" nowrap="1">Type</td>
+<td class="issuehdr">Description</td></tr>
+<tr><td class="issuecontent" align="right">1</td><td class="issuecontent">New feature</td><td class="issuecontent">CommandBarsDesigner: Added Import from/Export to XML; Import/Export to bitmap added</td></tr>
+<tr><td class="issuecontent" align="right">2</td><td class="issuecontent">New feature</td><td class="issuecontent"><a href="images/screen_whidbey.gif">added XML Layout tab for CommandBarsDesigner</a></td></tr>
+</table></div></div>
+<div id="divproduct_xcb_mfc_9.60_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_xcb_mfc_9.60_body"><i>Xtreme Command Bars</i></div>
+<div style="padding-left: 20px;" id="div_xcb_mfc_9.60_body">
+<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+<tr>
+<td width="20" class="issuehdr" align="right">#</td>
+<td width="100" class="issuehdr" nowrap="1">Type</td>
+<td class="issuehdr">Description</td></tr>
+<tr><td class="issuecontent" align="right">1</td><td class="issuecontent">New feature</td><td class="issuecontent"><a href="images/screen_dialogbar.gif">CXTPDialogBar added. see CustomThemes sample</a></td></tr>
+<tr><td class="issuecontent" align="right">2</td><td class="issuecontent">New feature</td><td class="issuecontent">Added WM_PRINT message handler to support AnimateWindow routines</td></tr>
+<tr><td class="issuecontent" align="right">3</td><td class="issuecontent">New feature</td><td class="issuecontent">Added CXTPCommandBars::RemoveAll method; CXTPCommandBars::SetToolBarClass, CXTPCommandBars::SetMenuBarClass, CXTPCommandBars::SetPopupBarClass static members</td></tr>
+<tr><td class="issuecontent" align="right">4</td><td class="issuecontent">New feature</td><td class="issuecontent">Added CXTPPopupBar* CXTPCustomizeSheet::GetContextMenu(); added CXTPImageManager* CXTPCustomizeSheet::GetCustomIcons();</td></tr>
+<tr><td class="issuecontent" align="right">5</td><td class="issuecontent">New feature</td><td class="issuecontent">CXTPStatusBars merged with CXTStatusBar</td></tr>
+<tr><td class="issuecontent" align="right">6</td><td class="issuecontent">New feature</td><td class="issuecontent"><a href="images/screen_xml.gif">All serialize methods removed to DoPropExchange to allow serialize to registry/archive/XML</a></td></tr>
+<tr><td class="issuecontent" align="right">7</td><td class="issuecontent">New feature</td><td class="issuecontent">Added support of IAccessible interface to enable "Magnifier" and "Narrator" tools</td></tr>
+<tr><td class="issuecontent" align="right">8</td><td class="issuecontent">New feature</td><td class="issuecontent">Enhances in NativeWinXP theme</td></tr>
+<tr><td class="issuecontent" align="right">9</td><td class="issuecontent">New feature</td><td class="issuecontent"><a href="images/screen_whidbey.gif">Whidbey theme moved to source code (xtpThemeWhidbey)</a></td></tr>
+<tr><td class="issuecontent" align="right">10</td><td class="issuecontent">New feature</td><td class="issuecontent">Added ability to resize ComboBox and Edit controls by user in Customize mode</td></tr>
+<tr><td class="issuecontent" align="right">11</td><td class="issuecontent">New feature</td><td class="issuecontent">xtpFlagControlStretched added</td></tr>
+<tr><td class="issuecontent" align="right">12</td><td class="issuecontent">New feature</td><td class="issuecontent">ReadOnly property added for Edit control</td></tr>
+<tr><td class="issuecontent" align="right">13</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Bug in ComboBox where if any string with an ampersand is added to the dropdown list the ampersand would be replaced with an underscore</td></tr>
+</table></div></div>
+<div id="divproduct_xpg_mfc_9.60_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_xpg_mfc_9.60_body"><i>Xtreme Property Grid</i></div>
+<div style="padding-left: 20px;" id="div_xpg_mfc_9.60_body">
+<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+<tr>
+<td width="20" class="issuehdr" align="right">#</td>
+<td width="100" class="issuehdr" nowrap="1">Type</td>
+<td class="issuehdr">Description</td></tr>
+<tr><td class="issuecontent" align="right">1</td><td class="issuecontent">New feature</td><td class="issuecontent"> virtual CXTPProperyGrid::CreateView added to support custom View class</td></tr>
+<tr><td class="issuecontent" align="right">2</td><td class="issuecontent">New feature</td><td class="issuecontent"> added virtual CXTPPropertyGrid::OnBeforeInsert method</td></tr>
+<tr><td class="issuecontent" align="right">3</td><td class="issuecontent">New feature</td><td class="issuecontent">added CXTPPropertyGridItemConstraint class, added new CXTPPropertyGridItemEnum and CXTPPropertyGridItemFlags classes (see sample)</td></tr>
+<tr><td class="issuecontent" align="right">4</td><td class="issuecontent">New feature</td><td class="issuecontent"><a href="images/screen_propertycategory.gif">CXTPPropertyGridItemCategory added</a></td></tr>
+<tr><td class="issuecontent" align="right">5</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed problem with Date item with "%m/%d/%Y" format instead of "%d/%m/%Y"</td></tr>
+<tr><td class="issuecontent" align="right">6</td><td class="issuecontent">New feature</td><td class="issuecontent">InsertChildItem and InsertCategory methods added</td></tr>
+<tr><td class="issuecontent" align="right">7</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Added DT_NOPREFIX for each DrawText call</td></tr>
+<tr><td class="issuecontent" align="right">8</td><td class="issuecontent">New feature</td><td class="issuecontent">xtpGridThemeWhidbey added</td></tr>
+<tr><td class="issuecontent" align="right">9</td><td class="issuecontent">Fixing source</td><td class="issuecontent"><a href="images/screen_propertyverbs.gif">Verbs collection added </a></td></tr>
+</table></div></div>
+<div id="divproduct_xdp_mfc_9.60_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_xdp_mfc_9.60_body"><i>Xtreme Docking Pane</i></div>
+<div style="padding-left: 20px;" id="div_xdp_mfc_9.60_body">
+<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+<tr>
+<td width="20" class="issuehdr" align="right">#</td>
+<td width="100" class="issuehdr" nowrap="1">Type</td>
+<td class="issuehdr">Description</td></tr>
+<tr><td class="issuecontent" align="right">1</td><td class="issuecontent">New feature</td><td class="issuecontent">CXTPDockingPaneLayout::Serialize method added</td></tr>
+<tr><td class="issuecontent" align="right">2</td><td class="issuecontent">New feature</td><td class="issuecontent">Added CXTPDockingPaneManager::m_bCloseGroupOnButtonClick = FALSE; CXTPDockingPaneManager::m_bHideGroupOnButtonClick = TRUE;</td></tr>
+<tr><td class="issuecontent" align="right">3</td><td class="issuecontent">New feature</td><td class="issuecontent"><a href="images/screen_whidbey.gif"> Whidbey theme moved to source code.	xtpPaneThemeWhidbey(ThemeWhidbey fo ActiveX)</a></td></tr>
+</table></div></div>
+<div id="divproduct_xrc_mfc_9.60_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_xrc_mfc_9.60_body"><i>Xtreme Report Control</i></div>
+<div style="padding-left: 20px;" id="div_xrc_mfc_9.60_body">
+<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+<tr>
+<td width="20" class="issuehdr" align="right">#</td>
+<td width="100" class="issuehdr" nowrap="1">Type</td>
+<td class="issuehdr">Description</td></tr>
+<tr><td class="issuecontent" align="right">1</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fix to allow more than 32000 records</td></tr>
+<tr><td class="issuecontent" align="right">2</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed scrollbar issue</td></tr>
+<tr><td class="issuecontent" align="right">3</td><td class="issuecontent">New feature</td><td class="issuecontent">ShowHeader property added</td></tr>
+<tr><td class="issuecontent" align="right">4</td><td class="issuecontent">New feature</td><td class="issuecontent">Added Virtual List support. Added VirtualList sample</td></tr>
+<tr><td class="issuecontent" align="right">5</td><td class="issuecontent">Sample update</td><td class="issuecontent">added Multiline sample for ReportControl</td></tr>
+</table></div></div>
+</div>
+<div id="divcategory_ax_9.60" style="display:none">
+<div id="divproduct_xsp_ax_9.60_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_xsp_ax_9.60_body"><i>Xtreme Suite Pro</i></div>
+<div style="padding-left: 20px;" id="div_xsp_ax_9.60_body">
+<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+<tr>
+<td width="20" class="issuehdr" align="right">#</td>
+<td width="100" class="issuehdr" nowrap="1">Type</td>
+<td class="issuehdr">Description</td></tr>
+<tr><td class="issuecontent" align="right">1</td><td class="issuecontent">New feature</td><td class="issuecontent">CommandBarsDesigner: Added Import from/Export to XML; Import/Export to bitmap added</td></tr>
+<tr><td class="issuecontent" align="right">2</td><td class="issuecontent">New feature</td><td class="issuecontent"><a href="images/screen_whidbey.gif">added XML Layout tab for CommandBarsDesigner</a></td></tr>
+<tr><td class="issuecontent" align="right">3</td><td class="issuecontent">New feature</td><td class="issuecontent">ColorManager added for each *GlobalSettings class</td></tr>
+<tr><td class="issuecontent" align="right">4</td><td class="issuecontent">Sample update</td><td class="issuecontent">added TaskPanel drag'n'drop sample</td></tr>
+<tr><td class="issuecontent" align="right">5</td><td class="issuecontent">New feature</td><td class="issuecontent">ShortcutBar::MouseUp event added</td></tr>
+<tr><td class="issuecontent" align="right">6</td><td class="issuecontent">New feature</td><td class="issuecontent">TabPaintManager::ColorSet class added</td></tr>
+<tr><td class="issuecontent" align="right">7</td><td class="issuecontent">New feature</td><td class="issuecontent">TaskPanel::ColorSet property added</td></tr>
+<tr><td class="issuecontent" align="right">8</td><td class="issuecontent">New feature</td><td class="issuecontent">TaskPanel::LockRedraw property added</td></tr>
+<tr><td class="issuecontent" align="right">9</td><td class="issuecontent">New feature</td><td class="issuecontent">Added Checked Icon in ImageManager collection. (xtpImageChecked)</td></tr>
+<tr><td class="issuecontent" align="right">10</td><td class="issuecontent">New feature</td><td class="issuecontent">TaskPanel::BeginDrag, TaskPanel::ItemDrop, TaskPanel::GroupExpanding, TaskPane::GroupExpanded events added</td></tr>
+<tr><td class="issuecontent" align="right">11</td><td class="issuecontent">Fixing source</td><td class="issuecontent">TabControlItem::Tag changed to variant type</td></tr>
+<tr><td class="issuecontent" align="right">12</td><td class="issuecontent">Sample update</td><td class="issuecontent">Upated Outlook 2003 sample to illustrate how to use the ShortcutBar_ExpandButtonDown event.  This is used to create a custom popup menu</td></tr>
+<tr><td class="issuecontent" align="right">13</td><td class="issuecontent">New feature</td><td class="issuecontent">Added xtpTaskPanelThemeShortcutBarOffice2003 theme to XTPTaskPanelVisualTheme enumeration.  ToolBox sample updated with new theme</td></tr>
+<tr><td class="issuecontent" align="right">14</td><td class="issuecontent">New feature</td><td class="issuecontent">Added TaskPanelGroupItem::Handle property</td></tr>
+<tr><td class="issuecontent" align="right">15</td><td class="issuecontent">New feature</td><td class="issuecontent">Added TaskPanelGroupItem::Tag property</td></tr>
+<tr><td class="issuecontent" align="right">16</td><td class="issuecontent">New feature</td><td class="issuecontent">Added TaskPanelGroup::Tag property</td></tr>
+<tr><td class="issuecontent" align="right">17</td><td class="issuecontent">New feature</td><td class="issuecontent">Added TaskPanelGroup::SetIconSize method</td></tr>
+<tr><td class="issuecontent" align="right">18</td><td class="issuecontent">New feature</td><td class="issuecontent">Added ShortcutBarItem::HitTest method</td></tr>
+<tr><td class="issuecontent" align="right">19</td><td class="issuecontent">New feature</td><td class="issuecontent">Added ShortcutCaption::GradientColorLight, ShortcutCaption::GradientColorDark, and ShortcutCaption::GradientHorizontal properties</td></tr>
+<tr><td class="issuecontent" align="right">20</td><td class="issuecontent">New feature</td><td class="issuecontent">Added PopupControlItem::IconIndex property and PopupControl::Icons property</td></tr>
+<tr><td class="issuecontent" align="right">21</td><td class="issuecontent">New feature</td><td class="issuecontent">Added ImageManagerIcons::AddIcons method</td></tr>
+<tr><td class="issuecontent" align="right">22</td><td class="issuecontent">New feature</td><td class="issuecontent">Added TabPaintManager::DrawTextPathEllipsis property</td></tr>
+<tr><td class="issuecontent" align="right">23</td><td class="issuecontent">New feature</td><td class="issuecontent">Added TabPaintManager::DrawTextNoPrefix property</td></tr>
+<tr><td class="issuecontent" align="right">24</td><td class="issuecontent">New feature</td><td class="issuecontent">Added TabPaintManager::Font property</td></tr>
+<tr><td class="issuecontent" align="right">25</td><td class="issuecontent">New feature</td><td class="issuecontent">Added TabPaintManager::ColorSet method</td></tr>
+<tr><td class="issuecontent" align="right">26</td><td class="issuecontent">Sample update</td><td class="issuecontent">Updated PopupControl sample to show how to display multiple popups</td></tr>
+<tr><td class="issuecontent" align="right">27</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed bug that would not allow a label control to be placed on top of a ShortcutCaption control</td></tr>
+</table></div></div>
+<div id="divproduct_xcb_ax_9.60_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_xcb_ax_9.60_body"><i>Xtreme Command Bars</i></div>
+<div style="padding-left: 20px;" id="div_xcb_ax_9.60_body">
+<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+<tr>
+<td width="20" class="issuehdr" align="right">#</td>
+<td width="100" class="issuehdr" nowrap="1">Type</td>
+<td class="issuehdr">Description</td></tr>
+<tr><td class="issuecontent" align="right">1</td><td class="issuecontent">New feature</td><td class="issuecontent">TabPaintManager::Font property added </td></tr>
+<tr><td class="issuecontent" align="right">2</td><td class="issuecontent">New feature</td><td class="issuecontent"><a href="images/screen_dialogbar.gif">DialogBar class added.  MDISample updated</a></td></tr>
+<tr><td class="issuecontent" align="right">3</td><td class="issuecontent">New feature</td><td class="issuecontent">CommandBarComboBox::ItemData property added</td></tr>
+<tr><td class="issuecontent" align="right">4</td><td class="issuecontent">New feature</td><td class="issuecontent">Added LoadFromXMLString, SaveToXMLString methods</td></tr>
+<tr><td class="issuecontent" align="right">5</td><td class="issuecontent">Sample update</td><td class="issuecontent">Added LoadFromXMLString and SaveToXMLStringUpdated sample to Customizable project</td></tr>
+<tr><td class="issuecontent" align="right">6</td><td class="issuecontent">New feature</td><td class="issuecontent">"Edit verb" added for Commandbars context menu</td></tr>
+<tr><td class="issuecontent" align="right">7</td><td class="issuecontent">New feature</td><td class="issuecontent">Added ICustomizeOptions::CustomIcons, added ICustomizeOptions::ContextMenu, 
+				   added CommandBars::CustomizedControl, added CommandBars::DeleteAll method</td></tr>
+<tr><td class="issuecontent" align="right">8</td><td class="issuecontent">Sample update</td><td class="issuecontent">Updated MDISample to illustrate how to use ICustomizeOptions::ContextMenu and ICustomizeOptions::CustomIcons</td></tr>
+<tr><td class="issuecontent" align="right">9</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Changed CommandBarsOptions::AltDragCustomization from type long to type Boolean</td></tr>
+<tr><td class="issuecontent" align="right">10</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed bug with whatsthishelp where help would no longer be displayed when CommandBars object was added to the form</td></tr>
+<tr><td class="issuecontent" align="right">11</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed bug that would crash Visual Basic if 2 CommandBar objects were on sample form. (Only first object will be used, all others will be ignored.)</td></tr>
+<tr><td class="issuecontent" align="right">12</td><td class="issuecontent">New feature</td><td class="issuecontent">Added support of IAccessible interface to enable "Magnifier" and "Narrator" tools</td></tr>
+<tr><td class="issuecontent" align="right">13</td><td class="issuecontent">New feature</td><td class="issuecontent">Enhances in NativeWinXP theme</td></tr>
+<tr><td class="issuecontent" align="right">14</td><td class="issuecontent">New feature</td><td class="issuecontent"><a href="images/screen_whidbey.gif">Whidbey theme moved to source code (xtpThemeWhidbey)</a></td></tr>
+<tr><td class="issuecontent" align="right">15</td><td class="issuecontent">New feature</td><td class="issuecontent">Added ability to resize ComboBox and Edit controls by user in Customize mode</td></tr>
+<tr><td class="issuecontent" align="right">16</td><td class="issuecontent">New feature</td><td class="issuecontent">xtpFlagControlStretched added</td></tr>
+<tr><td class="issuecontent" align="right">17</td><td class="issuecontent">New feature</td><td class="issuecontent">ReadOnly property added for Edit control</td></tr>
+<tr><td class="issuecontent" align="right">18</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Bug in ComboBox where if any string with an ampersand is added to the dropdown list the ampersand would be replaced with an underscore</td></tr>
+</table></div></div>
+<div id="divproduct_xpg_ax_9.60_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_xpg_ax_9.60_body"><i>Xtreme Property Grid</i></div>
+<div style="padding-left: 20px;" id="div_xpg_ax_9.60_body">
+<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+<tr>
+<td width="20" class="issuehdr" align="right">#</td>
+<td width="100" class="issuehdr" nowrap="1">Type</td>
+<td class="issuehdr">Description</td></tr>
+<tr><td class="issuecontent" align="right">1</td><td class="issuecontent">New feature</td><td class="issuecontent">Added bindings for Date items</td></tr>
+<tr><td class="issuecontent" align="right">2</td><td class="issuecontent">New feature</td><td class="issuecontent">PropertyGridItem.Id property added</td></tr>
+<tr><td class="issuecontent" align="right">3</td><td class="issuecontent">Fixing source</td><td class="issuecontent">FindItem method now searches for Caption or ID only.  The Tag property is no longer used</td></tr>
+<tr><td class="issuecontent" align="right">4</td><td class="issuecontent">Fixing source</td><td class="issuecontent">PropetyGridItem::Tag property changed to type Variant, now it is used for user defined data</td></tr>
+<tr><td class="issuecontent" align="right">5</td><td class="issuecontent">New feature</td><td class="issuecontent">Added PropertyGridItemConstraint class, added new PropertyItemEnum and PropertyItemEnumFlags. VB Sample updated</td></tr>
+<tr><td class="issuecontent" align="right">6</td><td class="issuecontent">New feature</td><td class="issuecontent"><a href="images/screen_propertycategory.gif">PropertyItemCategory type added</a></td></tr>
+<tr><td class="issuecontent" align="right">7</td><td class="issuecontent">New feature</td><td class="issuecontent">PropertyGridItemPicture added. PicturePath property added for PropertyGridItemPicture</td></tr>
+<tr><td class="issuecontent" align="right">8</td><td class="issuecontent">New feature</td><td class="issuecontent">NavigateItems property added</td></tr>
+<tr><td class="issuecontent" align="right">9</td><td class="issuecontent">Sample update</td><td class="issuecontent">Updated VB sample to show how to use NavigateItems property</td></tr>
+<tr><td class="issuecontent" align="right">10</td><td class="issuecontent">Sample update</td><td class="issuecontent">Updated VB sample to illustrate how to use the Verbs colletion</td></tr>
+<tr><td class="issuecontent" align="right">11</td><td class="issuecontent">New feature</td><td class="issuecontent">Added VerbsHeight Property and VerbClick event</td></tr>
+<tr><td class="issuecontent" align="right">12</td><td class="issuecontent">New feature</td><td class="issuecontent">Added PropertyGridUpdateContext class, added BeginUpdate and EndUpdate methods.  See help for detailed explanation</td></tr>
+<tr><td class="issuecontent" align="right">13</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed problem with Date item with "%m/%d/%Y" format instead of "%d/%m/%Y"</td></tr>
+<tr><td class="issuecontent" align="right">14</td><td class="issuecontent">New feature</td><td class="issuecontent">InsertChildItem and InsertCategory methods added</td></tr>
+<tr><td class="issuecontent" align="right">15</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Added DT_NOPREFIX for each DrawText call</td></tr>
+<tr><td class="issuecontent" align="right">16</td><td class="issuecontent">New feature</td><td class="issuecontent">xtpGridThemeWhidbey added</td></tr>
+<tr><td class="issuecontent" align="right">17</td><td class="issuecontent">Fixing source</td><td class="issuecontent"><a href="images/screen_propertyverbs.gif">Verbs collection added </a></td></tr>
+</table></div></div>
+<div id="divproduct_xdp_ax_9.60_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_xdp_ax_9.60_body"><i>Xtreme Docking Pane</i></div>
+<div style="padding-left: 20px;" id="div_xdp_ax_9.60_body">
+<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+<tr>
+<td width="20" class="issuehdr" align="right">#</td>
+<td width="100" class="issuehdr" nowrap="1">Type</td>
+<td class="issuehdr">Description</td></tr>
+<tr><td class="issuecontent" align="right">1</td><td class="issuecontent">New feature</td><td class="issuecontent"><a href="images/screen_whidbey.gif"> Whidbey theme moved to source code.	xtpPaneThemeWhidbey(ThemeWhidbey fo ActiveX)</a></td></tr>
+<tr><td class="issuecontent" align="right">2</td><td class="issuecontent">New feature</td><td class="issuecontent">DockingPane::RClick event added</td></tr>
+<tr><td class="issuecontent" align="right">3</td><td class="issuecontent">New feature</td><td class="issuecontent">TabPaintManager::Font property added </td></tr>
+<tr><td class="issuecontent" align="right">4</td><td class="issuecontent">New feature</td><td class="issuecontent">DockingPanePaintManager::CaptionFont property added</td></tr>
+<tr><td class="issuecontent" align="right">5</td><td class="issuecontent">New feature</td><td class="issuecontent">DockingPanePaintManager::HighlighActiveCaption property added</td></tr>
+<tr><td class="issuecontent" align="right">6</td><td class="issuecontent">New feature</td><td class="issuecontent">DockingPanePaintManager::DrawSingleTab property added</td></tr>
+<tr><td class="issuecontent" align="right">7</td><td class="issuecontent">Fixing source</td><td class="issuecontent">ShowCaption property moved to DockingPanePaintManager class</td></tr>
+<tr><td class="issuecontent" align="right">8</td><td class="issuecontent">New feature</td><td class="issuecontent">DefaultPaneOptions property added, PaneNoCaption enum added</td></tr>
+<tr><td class="issuecontent" align="right">9</td><td class="issuecontent">New feature</td><td class="issuecontent">Added IDockingPaneOptions::CloseGroupOnButtonClick, added IDockingPaneOptions::HideGroupOnButtonClick</td></tr>
+</table></div></div>
+<div id="divproduct_xrc_ax_9.60_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_xrc_ax_9.60_body"><i>Xtreme Report Control</i></div>
+<div style="padding-left: 20px;" id="div_xrc_ax_9.60_body">
+<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+<tr>
+<td width="20" class="issuehdr" align="right">#</td>
+<td width="100" class="issuehdr" nowrap="1">Type</td>
+<td class="issuehdr">Description</td></tr>
+<tr><td class="issuecontent" align="right">1</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fix to allow more than 32000 records</td></tr>
+<tr><td class="issuecontent" align="right">2</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed scrollbar issue</td></tr>
+<tr><td class="issuecontent" align="right">3</td><td class="issuecontent">New feature</td><td class="issuecontent">ShowHeader property added</td></tr>
+<tr><td class="issuecontent" align="right">4</td><td class="issuecontent">New feature</td><td class="issuecontent">Added Virtual List support. Added VirtualList sample</td></tr>
+<tr><td class="issuecontent" align="right">5</td><td class="issuecontent">New feature</td><td class="issuecontent">ReportRow.EnsureVisible method added</td></tr>
+<tr><td class="issuecontent" align="right">6</td><td class="issuecontent">New feature</td><td class="issuecontent">GroupBoxBackColor, HighlightBackColor, HighlightForeColor of PaintManager added</td></tr>
+<tr><td class="issuecontent" align="right">7</td><td class="issuecontent">New feature</td><td class="issuecontent">FieldChooser::SortAscending property added</td></tr>
+<tr><td class="issuecontent" align="right">8</td><td class="issuecontent">New feature</td><td class="issuecontent">Column::Move method added. (For programmatically setting column order)</td></tr>
+<tr><td class="issuecontent" align="right">9</td><td class="issuecontent">New feature</td><td class="issuecontent">Column::AllowRemove property added</td></tr>
+<tr><td class="issuecontent" align="right">10</td><td class="issuecontent">New feature</td><td class="issuecontent">Added FilterText property</td></tr>
+<tr><td class="issuecontent" align="right">11</td><td class="issuecontent">Sample update</td><td class="issuecontent">Updated Outlook 2003 sample to illustrate FilterText property</td></tr>
+<tr><td class="issuecontent" align="right">12</td><td class="issuecontent">New feature</td><td class="issuecontent">ReportSelectedRows::Row property added</td></tr>
+<tr><td class="issuecontent" align="right">13</td><td class="issuecontent">New feature</td><td class="issuecontent">ReportControl::hWnd property added</td></tr>
+<tr><td class="issuecontent" align="right">14</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed bug that allowed disabled items with a CheckBox to still be checked</td></tr>
+<tr><td class="issuecontent" align="right">15</td><td class="issuecontent">New feature</td><td class="issuecontent">Added ReportRow::NextSibling property</td></tr>
+<tr><td class="issuecontent" align="right">16</td><td class="issuecontent">New feature</td><td class="issuecontent">The ReportRecordItem::Format property can now be used to format date items.  Updated Report Sample to show how to use this</td></tr>
+</table></div></div>
+</div>
+</td></tr>
+<tr class="row">
+<td class="content"><IMG alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div9.51">Version 9.51</td>
+<td class="content">October 12, 2004</td>
+</tr>
+<tr id="div9.51" bgcolor="#ffffff">
+<td colspan="2" style="padding-top: 10px;padding-bottom: 10px;">
+<div id="divcategory_mfc_9.51" style="display:">
+<div id="divproduct_xtp_mfc_9.51_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_xtp_mfc_9.51_body"><i>Xtreme Toolkit Pro</i></div>
+<div style="padding-left: 20px;" id="div_xtp_mfc_9.51_body">
+<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+<tr>
+<td width="20" class="issuehdr" align="right">#</td>
+<td width="100" class="issuehdr" nowrap="1">Type</td>
+<td class="issuehdr">Description</td></tr>
+<tr><td class="issuecontent" align="right">1</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Renamed CXTOutlookBar to CXTMenuListBox to eliminate confusion with CXTOutBarCtrl class</td></tr>
+<tr><td class="issuecontent" align="right">2</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Removed export declaration for template class that caused reported linking errors for shell list</td></tr>
+<tr><td class="issuecontent" align="right">3</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed the bug in CXTColorDialog that caused an invalidate problem</td></tr>
+<tr><td class="issuecontent" align="right">4</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Constructor in CXTThemeManager moved to a public section to allow the ThemeManager to be created</td></tr>
+</table></div></div>
+</div>
+<div id="divcategory_ax_9.51" style="display:none">
+<div id="divproduct_xsp_ax_9.51_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_xsp_ax_9.51_body"><i>Xtreme Suite Pro</i></div>
+<div style="padding-left: 20px;" id="div_xsp_ax_9.51_body">
+<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+<tr>
+<td width="20" class="issuehdr" align="right">#</td>
+<td width="100" class="issuehdr" nowrap="1">Type</td>
+<td class="issuehdr">Description</td></tr>
+<tr><td class="issuecontent" align="right">1</td><td class="issuecontent">Fixing source</td><td class="issuecontent">MDI Sample</td></tr>
+<tr><td class="issuecontent" align="right">2</td><td class="issuecontent">New feature</td><td class="issuecontent">ResizeClient event added to command bars for FoxPro users</td></tr>
+</table></div></div>
+<div id="divproduct_xcb_ax_9.51_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_xcb_ax_9.51_body"><i>Xtreme Command Bars</i></div>
+<div style="padding-left: 20px;" id="div_xcb_ax_9.51_body">
+<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+<tr>
+<td width="20" class="issuehdr" align="right">#</td>
+<td width="100" class="issuehdr" nowrap="1">Type</td>
+<td class="issuehdr">Description</td></tr>
+<tr><td class="issuecontent" align="right">1</td><td class="issuecontent">Sample update</td><td class="issuecontent">Updated MDI Sample</td></tr>
+<tr><td class="issuecontent" align="right">2</td><td class="issuecontent">Sample update</td><td class="issuecontent">Changed sample to use Imagemanager instead of MS Imagelist</td></tr>
+</table></div></div>
+<div id="divproduct_xpg_ax_9.51_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_xpg_ax_9.51_body"><i>Xtreme Property Grid</i></div>
+<div style="padding-left: 20px;" id="div_xpg_ax_9.51_body">
+<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+<tr>
+<td width="20" class="issuehdr" align="right">#</td>
+<td width="100" class="issuehdr" nowrap="1">Type</td>
+<td class="issuehdr">Description</td></tr>
+<tr><td class="issuecontent" align="right">1</td><td class="issuecontent">New feature</td><td class="issuecontent">ViewReadOnlyForeColor property added to PropertyGrid</td></tr>
+</table></div></div>
+<div id="divproduct_xdp_ax_9.51_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_xdp_ax_9.51_body"><i>Xtreme Docking Pane</i></div>
+<div style="padding-left: 20px;" id="div_xdp_ax_9.51_body">
+<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+<tr>
+<td width="20" class="issuehdr" align="right">#</td>
+<td width="100" class="issuehdr" nowrap="1">Type</td>
+<td class="issuehdr">Description</td></tr>
+<tr><td class="issuecontent" align="right">1</td><td class="issuecontent">New feature</td><td class="issuecontent">ResizeClient event added to docking panes for FoxPro users</td></tr>
+</table></div></div>
+</div>
+</td></tr>
+<tr class="row">
+<td class="content"><IMG alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div9.50">Version 9.50</td>
+<td class="content">October 04, 2004</td>
+</tr>
+<tr id="div9.50" bgcolor="#ffffff">
+<td colspan="2" style="padding-top: 10px;padding-bottom: 10px;">
+<div id="divcategory_mfc_9.50" style="display:">
+<div id="divproduct_xtp_mfc_9.50_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_xtp_mfc_9.50_body"><i>Xtreme Toolkit Pro</i></div>
+<div style="padding-left: 20px;" id="div_xtp_mfc_9.50_body">
+<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+<tr>
+<td width="20" class="issuehdr" align="right">#</td>
+<td width="100" class="issuehdr" nowrap="1">Type</td>
+<td class="issuehdr">Description</td></tr>
+<tr><td class="issuecontent" align="right">1</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed bug with tree not displaying highlighted or selected items when TVS_TRACKSELECT or TVIS_DROPHILITED styles were specified</td></tr>
+<tr><td class="issuecontent" align="right">2</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed size cursor display problem in CXTResize with size icon for Windows 2000</td></tr>
+<tr><td class="issuecontent" align="right">3</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed header display with Window XP themes not displaying correctly on mouse over after column sort</td></tr>
+<tr><td class="issuecontent" align="right">4</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed some display issues and added ModifyExtendStyle method to the list control</td></tr>
+<tr><td class="issuecontent" align="right">5</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed display bug with icon when the caption is sized in CXTCaption</td></tr>
+<tr><td class="issuecontent" align="right">6</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed _xtGetHeaderControl in CXTListCtrl</td></tr>
+<tr><td class="issuecontent" align="right">7</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed bitmap and sort arrow display when the column is sized too small for header themes</td></tr>
+<tr><td class="issuecontent" align="right">8</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed bug which prevents the check box from being selected in the tip window</td></tr>
+<tr><td class="issuecontent" align="right">9</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed bug which prevents check box from being selected in the tip window</td></tr>
+<tr><td class="issuecontent" align="right">10</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed GetItemSize from ASSERT when there are 0 folders or 0 items. Now returns 0 size for Outlook bar controls</td></tr>
+<tr><td class="issuecontent" align="right">11</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Added fix that ensures the tip is always visible on the screen and does not extend past the limits of the desktop in CXTTipWindow</td></tr>
+<tr><td class="issuecontent" align="right">12</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Minor fix, when the tree control does not have focus it should not draw selected item focus</td></tr>
+<tr><td class="issuecontent" align="right">13</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed bug with multiselect treecontrol + TVS_CHECKBOXES for CXTTreeView</td></tr>
+<tr><td class="issuecontent" align="right">14</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Visual Studio 2005 compatible fixes</td></tr>
+<tr><td class="issuecontent" align="right">15</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Corrected flicker problems with timer and mouse movement in the Outlook Bar</td></tr>
+<tr><td class="issuecontent" align="right">16</td><td class="issuecontent">New feature</td><td class="issuecontent">CXTPDrawHelpers::GetDefaultFontName() added</td></tr>
+<tr><td class="issuecontent" align="right">17</td><td class="issuecontent">New feature</td><td class="issuecontent">TaskPanel: ImageManager support added</td></tr>
+<tr><td class="issuecontent" align="right">18</td><td class="issuecontent">New feature</td><td class="issuecontent">CXTPReBar added, Updated GUI_Explorer sample</td></tr>
+<tr><td class="issuecontent" align="right">19</td><td class="issuecontent">New feature</td><td class="issuecontent">Added Office2003 theme supoprt for CXTOutBarCtrl. See sample</td></tr>
+<tr><td class="issuecontent" align="right">20</td><td class="issuecontent">New feature</td><td class="issuecontent">Added header control theme support</td></tr>
+<tr><td class="issuecontent" align="right">21</td><td class="issuecontent">Sample update</td><td class="issuecontent">Updated sample for new header control features</td></tr>
+<tr><td class="issuecontent" align="right">22</td><td class="issuecontent">New feature</td><td class="issuecontent">Added set methods for back, text and individal row colors for list control</td></tr>
+<tr><td class="issuecontent" align="right">23</td><td class="issuecontent">New feature</td><td class="issuecontent">Added thawAllColumns method for flat headers</td></tr>
+<tr><td class="issuecontent" align="right">24</td><td class="issuecontent">New feature</td><td class="issuecontent">Added SetBitmap(int iCol, UINT uBitmapID, DWORD dwRemove/*=NULL/) for backward compatibility in flat headers</td></tr>
+<tr><td class="issuecontent" align="right">25</td><td class="issuecontent">New feature</td><td class="issuecontent">Toolbox sample added</td></tr>
+<tr><td class="issuecontent" align="right">26</td><td class="issuecontent">New feature</td><td class="issuecontent">TaskPanel: new Themes added, Layout enum added, Behaviour enum added</td></tr>
+<tr><td class="issuecontent" align="right">27</td><td class="issuecontent">New feature</td><td class="issuecontent">Added SetRowColors to ListCtrl for backward compatibillity</td></tr>
+<tr><td class="issuecontent" align="right">28</td><td class="issuecontent">New feature</td><td class="issuecontent">TaskPanel: Drag and Drop added, Rename edit box support added</td></tr>
+<tr><td class="issuecontent" align="right">29</td><td class="issuecontent">New feature</td><td class="issuecontent">CXTPImageManager::ResampleAlphaLayer method added</td></tr>
+<tr><td class="issuecontent" align="right">30</td><td class="issuecontent">New feature</td><td class="issuecontent">TaskPanel: Scroll buttons for Toolbox added. EnsureVisible method added</td></tr>
+<tr><td class="issuecontent" align="right">31</td><td class="issuecontent">New feature</td><td class="issuecontent">CXTPImageManager::ResampleAlphaLayer method added</td></tr>
+<tr><td class="issuecontent" align="right">32</td><td class="issuecontent">New feature</td><td class="issuecontent">Added WS_CLIPCHILDREN and WS_CLIPSIBLINGS style to form view dialogs</td></tr>
+<tr><td class="issuecontent" align="right">33</td><td class="issuecontent">New feature</td><td class="issuecontent">Added mutex to CXTPManageState for thread safe singleton instantiation</td></tr>
+<tr><td class="issuecontent" align="right">34</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Updated header theme for use with theme manager for flat headers</td></tr>
+<tr><td class="issuecontent" align="right">35</td><td class="issuecontent">New feature</td><td class="issuecontent">CXTPResourceManager, CXTPResourceManagerText and CXTPResourceManagerXML added</td></tr>
+<tr><td class="issuecontent" align="right">36</td><td class="issuecontent">New feature</td><td class="issuecontent">Added some additional error checks for GetClientRect and GetWindowRect for CXTPDrawHelpers</td></tr>
+<tr><td class="issuecontent" align="right">37</td><td class="issuecontent">New feature</td><td class="issuecontent">Added SetActivePane to CXTSplitterWnd to eliminate redundant TRACE statement</td></tr>
+<tr><td class="issuecontent" align="right">38</td><td class="issuecontent">New feature</td><td class="issuecontent">Added CXTTreeBase and CXTListBase, CXTShellListBase and CXTShellTreeBase classes</td></tr>
+<tr><td class="issuecontent" align="right">39</td><td class="issuecontent">New feature</td><td class="issuecontent">CXTPResourceManager added</td></tr>
+<tr><td class="issuecontent" align="right">40</td><td class="issuecontent">Sample update</td><td class="issuecontent">Updated samples to demonstrate header themes</td></tr>
+</table></div></div>
+<div id="divproduct_xsp_mfc_9.50_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_xsp_mfc_9.50_body"><i>Xtreme Suite Pro</i></div>
+<div style="padding-left: 20px;" id="div_xsp_mfc_9.50_body">
+<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+<tr>
+<td width="20" class="issuehdr" align="right">#</td>
+<td width="100" class="issuehdr" nowrap="1">Type</td>
+<td class="issuehdr">Description</td></tr>
+<tr><td class="issuecontent" align="right">1</td><td class="issuecontent">New feature</td><td class="issuecontent">New ToolBox sample added</td></tr>
+<tr><td class="issuecontent" align="right">2</td><td class="issuecontent">New feature</td><td class="issuecontent">ShortcutBar::Icons, TaskPanel::Icons properties added</td></tr>
+<tr><td class="issuecontent" align="right">3</td><td class="issuecontent">New feature</td><td class="issuecontent">TaskPanel: Drag and Drop added, Rename edit box support added</td></tr>
+<tr><td class="issuecontent" align="right">4</td><td class="issuecontent">New feature</td><td class="issuecontent">TaskPanel: HotTracking added</td></tr>
+<tr><td class="issuecontent" align="right">5</td><td class="issuecontent">New feature</td><td class="issuecontent">TaskPanel: SelectItemOnFocus added</td></tr>
+<tr><td class="issuecontent" align="right">6</td><td class="issuecontent">New feature</td><td class="issuecontent">TaskPanel: new Themes added, Layout enum added, Behaviour enum added</td></tr>
+<tr><td class="issuecontent" align="right">7</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed bug with tooltips in popup toolbar</td></tr>
+<tr><td class="issuecontent" align="right">8</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed a bug in CXTPToolbar that caused the frame to be activated when miniframe was focused</td></tr>
+<tr><td class="issuecontent" align="right">9</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed a bug with CustomizeContextMenu for popup bar</td></tr>
+<tr><td class="issuecontent" align="right">10</td><td class="issuecontent">New feature</td><td class="issuecontent">WinXP themed Edit added</td></tr>
+<tr><td class="issuecontent" align="right">11</td><td class="issuecontent">New feature</td><td class="issuecontent">ReBar Sample added</td></tr>
+<tr><td class="issuecontent" align="right">12</td><td class="issuecontent">New feature</td><td class="issuecontent">WinXP themed Combo added</td></tr>
+<tr><td class="issuecontent" align="right">13</td><td class="issuecontent">New feature</td><td class="issuecontent">PopupControl::AllowMove method added</td></tr>
+</table></div></div>
+<div id="divproduct_xcb_mfc_9.50_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_xcb_mfc_9.50_body"><i>Xtreme Command Bars</i></div>
+<div style="padding-left: 20px;" id="div_xcb_mfc_9.50_body">
+<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+<tr>
+<td width="20" class="issuehdr" align="right">#</td>
+<td width="100" class="issuehdr" nowrap="1">Type</td>
+<td class="issuehdr">Description</td></tr>
+<tr><td class="issuecontent" align="right">1</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed bug with tooltips in popup toolbar</td></tr>
+<tr><td class="issuecontent" align="right">2</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed a bug in CXTPToolbar that caused the frame to be activated when miniframe was focused</td></tr>
+<tr><td class="issuecontent" align="right">3</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed a bug with CustomizeContextMenu for popup bar</td></tr>
+<tr><td class="issuecontent" align="right">4</td><td class="issuecontent">New feature</td><td class="issuecontent">WinXP themed Edit added</td></tr>
+<tr><td class="issuecontent" align="right">5</td><td class="issuecontent">Sample update</td><td class="issuecontent">ReBar Sample added</td></tr>
+<tr><td class="issuecontent" align="right">6</td><td class="issuecontent">New feature</td><td class="issuecontent">WinXP themed Combo added</td></tr>
+</table></div></div>
+<div id="divproduct_xpg_mfc_9.50_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_xpg_mfc_9.50_body"><i>Xtreme Property Grid</i></div>
+<div style="padding-left: 20px;" id="div_xpg_mfc_9.50_body">
+<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+<tr>
+<td width="20" class="issuehdr" align="right">#</td>
+<td width="100" class="issuehdr" nowrap="1">Type</td>
+<td class="issuehdr">Description</td></tr>
+<tr><td class="issuecontent" align="right">1</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Minor fix in CXTPItemConstraints::Sort()</td></tr>
+<tr><td class="issuecontent" align="right">2</td><td class="issuecontent">New feature</td><td class="issuecontent">Added support of custom colors for all themes</td></tr>
+<tr><td class="issuecontent" align="right">3</td><td class="issuecontent">Fixing source</td><td class="issuecontent">CXTPItemConstraints renamed to CXTPPropertyGridItemConstraints</td></tr>
+<tr><td class="issuecontent" align="right">4</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Minor fix in CXTPItemConstraints::Sort()</td></tr>
+<tr><td class="issuecontent" align="right">5</td><td class="issuecontent">New feature</td><td class="issuecontent">Added support of custom colors for all themes</td></tr>
+<tr><td class="issuecontent" align="right">6</td><td class="issuecontent">Fixing source</td><td class="issuecontent">CXTPItemConstraints renamed to CXTPPropertyGridItemConstraints</td></tr>
+</table></div></div>
+<div id="divproduct_xdp_mfc_9.50_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_xdp_mfc_9.50_body"><i>Xtreme Docking Pane</i></div>
+<div style="padding-left: 20px;" id="div_xdp_mfc_9.50_body">
+<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+<tr>
+<td width="20" class="issuehdr" align="right">#</td>
+<td width="100" class="issuehdr" nowrap="1">Type</td>
+<td class="issuehdr">Description</td></tr>
+<tr><td class="issuecontent" align="right">1</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed bug with DockingStickers and xtpPaneNoFloatable option in XTPDockingPaneContext</td></tr>
+<tr><td class="issuecontent" align="right">2</td><td class="issuecontent">New feature</td><td class="issuecontent">Hidden panes now collapse when they are dragged over in CXTPDockingPaneAutoHidePanel</td></tr>
+<tr><td class="issuecontent" align="right">3</td><td class="issuecontent">New feature</td><td class="issuecontent">xtpPaneActionCollapsing, xtpPaneActionCollapsed, xtpPaneActionExpanding, xtpPaneActionExpanded added for docking pane</td></tr>
+<tr><td class="issuecontent" align="right">4</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Enhances in Docking algorithms</td></tr>
+<tr><td class="issuecontent" align="right">5</td><td class="issuecontent">New feature</td><td class="issuecontent">Added Min-Max tracking support</td></tr>
+<tr><td class="issuecontent" align="right">6</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed bug with DockingStickers and xtpPaneNoFloatable option in XTPDockingPaneContext</td></tr>
+<tr><td class="issuecontent" align="right">7</td><td class="issuecontent">New feature</td><td class="issuecontent">xtpPaneActionCollapsing, xtpPaneActionCollapsed, xtpPaneActionExpanding, xtpPaneActionExpanded added
+								   for docking pane</td></tr>
+<tr><td class="issuecontent" align="right">8</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Enhances in Docking algorithms</td></tr>
+<tr><td class="issuecontent" align="right">9</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Hidden panes now collapse when they are dragged over in CXTPDockingPaneAutoHidePanel</td></tr>
+<tr><td class="issuecontent" align="right">10</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Updated samples to demonstrate header themes</td></tr>
+<tr><td class="issuecontent" align="right">11</td><td class="issuecontent">New feature</td><td class="issuecontent">Added Min-Max tracking support</td></tr>
+</table></div></div>
+<div id="divproduct_xrc_mfc_9.50_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_xrc_mfc_9.50_body"><i>Xtreme Report Control</i></div>
+<div style="padding-left: 20px;" id="div_xrc_mfc_9.50_body">
+<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+<tr>
+<td width="20" class="issuehdr" align="right">#</td>
+<td width="100" class="issuehdr" nowrap="1">Type</td>
+<td class="issuehdr">Description</td></tr>
+<tr><td class="issuecontent" align="right">1</td><td class="issuecontent">Fixing source</td><td class="issuecontent">DT_NOPREFIX fix in CXTPReportPaintManager</td></tr>
+<tr><td class="issuecontent" align="right">2</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Bug with ReportControl::EnsureVisible fixed</td></tr>
+<tr><td class="issuecontent" align="right">3</td><td class="issuecontent">Sample update</td><td class="issuecontent">LoadState/SaveState sample added to the sample</td></tr>
+<tr><td class="issuecontent" align="right">4</td><td class="issuecontent">New feature</td><td class="issuecontent">Added GetFirstSelectedRowPosition(), GetNextSelectedRow() to CXTPReportRows</td></tr>
+<tr><td class="issuecontent" align="right">5</td><td class="issuecontent">New feature</td><td class="issuecontent">Inplace Edit added, Inplace button added, Inplace List added to report control. Sample updated to show this</td></tr>
+<tr><td class="issuecontent" align="right">6</td><td class="issuecontent">New feature</td><td class="issuecontent">AutoColumnSizing option added for report control</td></tr>
+<tr><td class="issuecontent" align="right">7</td><td class="issuecontent">New feature</td><td class="issuecontent">TreeStructure drawing added for report control</td></tr>
+<tr><td class="issuecontent" align="right">8</td><td class="issuecontent">New feature</td><td class="issuecontent">CXTPReportView added with Print support</td></tr>
+<tr><td class="issuecontent" align="right">9</td><td class="issuecontent">Fixing source</td><td class="issuecontent">DT_NOPREFIX fix in CXTPReportPaintManager</td></tr>
+<tr><td class="issuecontent" align="right">10</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Bug with ReportControl::EnsureVisible fixed</td></tr>
+<tr><td class="issuecontent" align="right">11</td><td class="issuecontent">New feature</td><td class="issuecontent">LoadState/SaveState sample added to the sample</td></tr>
+<tr><td class="issuecontent" align="right">12</td><td class="issuecontent">New feature</td><td class="issuecontent">Added GetFirstSelectedRowPosition(), GetNextSelectedRow() to
+									CXTPReportRows</td></tr>
+<tr><td class="issuecontent" align="right">13</td><td class="issuecontent">New feature</td><td class="issuecontent">Inplace Edit added, Inplace button added, Inplace List added to report
+									control. Sample updated to show this</td></tr>
+<tr><td class="issuecontent" align="right">14</td><td class="issuecontent">New feature</td><td class="issuecontent">AutoColumnSizing option added for report control</td></tr>
+<tr><td class="issuecontent" align="right">15</td><td class="issuecontent">New feature</td><td class="issuecontent">TreeStructure drawing added for report control</td></tr>
+<tr><td class="issuecontent" align="right">16</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Sort Triangle made always visible now for CXTPReportPaintManager</td></tr>
+<tr><td class="issuecontent" align="right">17</td><td class="issuecontent">New feature</td><td class="issuecontent">CXTPReportView added with Print support</td></tr>
+</table></div></div>
+</div>
+<div id="divcategory_ax_9.50" style="display:none">
+<div id="divproduct_xsp_ax_9.50_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_xsp_ax_9.50_body"><i>Xtreme Suite Pro</i></div>
+<div style="padding-left: 20px;" id="div_xsp_ax_9.50_body">
+<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+<tr>
+<td width="20" class="issuehdr" align="right">#</td>
+<td width="100" class="issuehdr" nowrap="1">Type</td>
+<td class="issuehdr">Description</td></tr>
+<tr><td class="issuecontent" align="right">1</td><td class="issuecontent">Sample update</td><td class="issuecontent">New ToolBox sample added </td></tr>
+<tr><td class="issuecontent" align="right">2</td><td class="issuecontent">New feature</td><td class="issuecontent">ShortcutBar::Icons, TaskPanel::Icons properties added </td></tr>
+<tr><td class="issuecontent" align="right">3</td><td class="issuecontent">New feature</td><td class="issuecontent">TaskPanel: Drag and Drop added, Rename edit box support added</td></tr>
+<tr><td class="issuecontent" align="right">4</td><td class="issuecontent">New feature</td><td class="issuecontent">TaskPanel: HotTracking added </td></tr>
+<tr><td class="issuecontent" align="right">5</td><td class="issuecontent">New feature</td><td class="issuecontent">TaskPanel: SelectItemOnFocus added</td></tr>
+<tr><td class="issuecontent" align="right">6</td><td class="issuecontent">New feature</td><td class="issuecontent">TaskPanel: new Themes added, Layout enum added, Behaviour enum added </td></tr>
+<tr><td class="issuecontent" align="right">7</td><td class="issuecontent">New feature</td><td class="issuecontent">Added tab to change margins in TabManager sample</td></tr>
+<tr><td class="issuecontent" align="right">8</td><td class="issuecontent">New feature</td><td class="issuecontent">ActiveX version independence added, now multiple versions of an OCX can be used by different programs</td></tr>
+<tr><td class="issuecontent" align="right">9</td><td class="issuecontent">New feature</td><td class="issuecontent">PopupControl::AllowMove method added</td></tr>
+<tr><td class="issuecontent" align="right">10</td><td class="issuecontent">New feature</td><td class="issuecontent">Added tab to change margins in TabManager sample</td></tr>
+<tr><td class="issuecontent" align="right">11</td><td class="issuecontent">New feature</td><td class="issuecontent">ActiveX version independence added, now multiple versions of an OCX can
+							  	   be used by different programs</td></tr>
+<tr><td class="issuecontent" align="right">12</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed bug with disable listbox in modal dialog</td></tr>
+<tr><td class="issuecontent" align="right">13</td><td class="issuecontent">New feature</td><td class="issuecontent">ImageManagerIcons::RemoveAll method added</td></tr>
+<tr><td class="issuecontent" align="right">14</td><td class="issuecontent">New feature</td><td class="issuecontent">ImageManagerIcons::DrawReverted method added (See MultiLangScribble Sample )</td></tr>
+<tr><td class="issuecontent" align="right">15</td><td class="issuecontent">New feature</td><td class="issuecontent">CommandBars::Options::Font property added</td></tr>
+<tr><td class="issuecontent" align="right">16</td><td class="issuecontent">New feature</td><td class="issuecontent">Added some custom controls to the SDISample</td></tr>
+<tr><td class="issuecontent" align="right">17</td><td class="issuecontent">New feature</td><td class="issuecontent">SetSpecialColor method added to CommandBars</td></tr>
+<tr><td class="issuecontent" align="right">18</td><td class="issuecontent">New feature</td><td class="issuecontent">FloatPane method added, allows panes to be floated via code</td></tr>
+<tr><td class="issuecontent" align="right">19</td><td class="issuecontent">New feature</td><td class="issuecontent">ReportControl inplace edit added. Sample updated</td></tr>
+<tr><td class="issuecontent" align="right">20</td><td class="issuecontent">New feature</td><td class="issuecontent">MouseMove, MouseDown, MouseUp events added to report control</td></tr>
+<tr><td class="issuecontent" align="right">21</td><td class="issuecontent">New feature</td><td class="issuecontent">TreeView Lines added</td></tr>
+<tr><td class="issuecontent" align="right">22</td><td class="issuecontent">New feature</td><td class="issuecontent">HitTest method added</td></tr>
+<tr><td class="issuecontent" align="right">23</td><td class="issuecontent">New feature</td><td class="issuecontent">NoFieldsAvailableText property added</td></tr>
+</table></div></div>
+<div id="divproduct_xcb_ax_9.50_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_xcb_ax_9.50_body"><i>Xtreme Command Bars</i></div>
+<div style="padding-left: 20px;" id="div_xcb_ax_9.50_body">
+<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+<tr>
+<td width="20" class="issuehdr" align="right">#</td>
+<td width="100" class="issuehdr" nowrap="1">Type</td>
+<td class="issuehdr">Description</td></tr>
+<tr><td class="issuecontent" align="right">1</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed bug with disable listbox in modal dialog. </td></tr>
+<tr><td class="issuecontent" align="right">2</td><td class="issuecontent">New feature</td><td class="issuecontent">ImageManagerIcons::RemoveAll method added </td></tr>
+<tr><td class="issuecontent" align="right">3</td><td class="issuecontent">New feature</td><td class="issuecontent">ImageManagerIcons::DrawReverted method added (See MultiLangScribble Sample )</td></tr>
+<tr><td class="issuecontent" align="right">4</td><td class="issuecontent">New feature</td><td class="issuecontent">CommandBars::Options::Font property added	</td></tr>
+<tr><td class="issuecontent" align="right">5</td><td class="issuecontent">Sample update</td><td class="issuecontent">Added some custom controls to the SDISample </td></tr>
+<tr><td class="issuecontent" align="right">6</td><td class="issuecontent">Sample update</td><td class="issuecontent">SetSpecialColor method added to CommandBars </td></tr>
+</table></div></div>
+<div id="divproduct_xdp_ax_9.50_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_xdp_ax_9.50_body"><i>Xtreme Docking Pane</i></div>
+<div style="padding-left: 20px;" id="div_xdp_ax_9.50_body">
+<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+<tr>
+<td width="20" class="issuehdr" align="right">#</td>
+<td width="100" class="issuehdr" nowrap="1">Type</td>
+<td class="issuehdr">Description</td></tr>
+<tr><td class="issuecontent" align="right">1</td><td class="issuecontent">New feature</td><td class="issuecontent">xtpPaneActionCollapsing, xtpPaneActionCollapsed, xtpPaneActionExpanding, xtpPaneActionExpanded added for docking pane</td></tr>
+<tr><td class="issuecontent" align="right">2</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Enhances in Docking algorithms</td></tr>
+<tr><td class="issuecontent" align="right">3</td><td class="issuecontent">New feature</td><td class="issuecontent">Added Min-Max tracking support</td></tr>
+<tr><td class="issuecontent" align="right">4</td><td class="issuecontent">New feature</td><td class="issuecontent">FloatPane method added, allows panes to be floated via code </td></tr>
+</table></div></div>
+<div id="divproduct_xrc_ax_9.50_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_xrc_ax_9.50_body"><i>Xtreme Report Control</i></div>
+<div style="padding-left: 20px;" id="div_xrc_ax_9.50_body">
+<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+<tr>
+<td width="20" class="issuehdr" align="right">#</td>
+<td width="100" class="issuehdr" nowrap="1">Type</td>
+<td class="issuehdr">Description</td></tr>
+<tr><td class="issuecontent" align="right">1</td><td class="issuecontent">New feature</td><td class="issuecontent">ReportControl inplace edit added. Sample updated </td></tr>
+<tr><td class="issuecontent" align="right">2</td><td class="issuecontent">New feature</td><td class="issuecontent">MouseMove, MouseDown, MouseUp events added to report control </td></tr>
+<tr><td class="issuecontent" align="right">3</td><td class="issuecontent">New feature</td><td class="issuecontent">TreeView Lines added </td></tr>
+<tr><td class="issuecontent" align="right">4</td><td class="issuecontent">New feature</td><td class="issuecontent">HitTest method added</td></tr>
+<tr><td class="issuecontent" align="right">5</td><td class="issuecontent">New feature</td><td class="issuecontent">NoFieldsAvailableText property added </td></tr>
+</table></div></div>
+</div>
+</td></tr>
+<tr class="row">
+<td class="content"><IMG alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div9.10">Version 9.10</td>
+<td class="content">July 29, 2004</td>
+</tr>
+<tr id="div9.10" bgcolor="#ffffff">
+<td colspan="2" style="padding-top: 10px;padding-bottom: 10px;">
+<div id="divcategory_mfc_9.10" style="display:">
+<div id="divproduct_xtp_mfc_9.10_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_xtp_mfc_9.10_body"><i>Xtreme Toolkit Pro</i></div>
+<div style="padding-left: 20px;" id="div_xtp_mfc_9.10_body">
+<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+<tr>
+<td width="20" class="issuehdr" align="right">#</td>
+<td width="100" class="issuehdr" nowrap="1">Type</td>
+<td class="issuehdr">Description</td></tr>
+<tr><td class="issuecontent" align="right">1</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed some display problems with text containing ampersand and button flashing when displaying popup in CXTCaption</td></tr>
+<tr><td class="issuecontent" align="right">2</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed bug with RefreshLabel icon lookup always failing in CXTMDIWndTab, which would cause CPU process to increase due to Failed lookups</td></tr>
+<tr><td class="issuecontent" align="right">3</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed bug in CXTColorPopup that caused color popup to display off the edge of the screen to reposition to the viewable area</td></tr>
+<tr><td class="issuecontent" align="right">4</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed display bug with Windows XP gripper theme</td></tr>
+<tr><td class="issuecontent" align="right">5</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed bugs with tray icon using balloon tips and hide icon settings</td></tr>
+<tr><td class="issuecontent" align="right">6</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed display bug with high font DPI settings in the color dialog</td></tr>
+<tr><td class="issuecontent" align="right">7</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed bug that caused the color selector to add user colors when they already exist in the user list or standard selection</td></tr>
+<tr><td class="issuecontent" align="right">8</td><td class="issuecontent">New feature</td><td class="issuecontent">Added COMPILE_MULTIMON_STUBS to CXTColorPopup</td></tr>
+<tr><td class="issuecontent" align="right">9</td><td class="issuecontent">New feature</td><td class="issuecontent">Added Windows XP theme support for color dialogs</td></tr>
+<tr><td class="issuecontent" align="right">10</td><td class="issuecontent">New feature</td><td class="issuecontent">Added an example for setting user defined colors to ColorPickerDlg</td></tr>
+<tr><td class="issuecontent" align="right">11</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Made global XTPGetWorkArea() functions public and exported</td></tr>
+<tr><td class="issuecontent" align="right">12</td><td class="issuecontent">New feature</td><td class="issuecontent">Added SetUserColors and GetUserColors to the color selector control and made them static</td></tr>
+</table></div></div>
+<div id="divproduct_xcb_mfc_9.10_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_xcb_mfc_9.10_body"><i>Xtreme Command Bars</i></div>
+<div style="padding-left: 20px;" id="div_xcb_mfc_9.10_body">
+<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+<tr>
+<td width="20" class="issuehdr" align="right">#</td>
+<td width="100" class="issuehdr" nowrap="1">Type</td>
+<td class="issuehdr">Description</td></tr>
+<tr><td class="issuecontent" align="right">1</td><td class="issuecontent">Fixing source</td><td class="issuecontent">CustomDraw combo updated for custom themes</td></tr>
+<tr><td class="issuecontent" align="right">2</td><td class="issuecontent">New feature</td><td class="issuecontent">CXTPCommandBars::SetCustomizationDataFileName added</td></tr>
+<tr><td class="issuecontent" align="right">3</td><td class="issuecontent">New feature</td><td class="issuecontent">Added GetRegularBoldFont to CXTPPaintManager</td></tr>
+</table></div></div>
+<div id="divproduct_xpg_mfc_9.10_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_xpg_mfc_9.10_body"><i>Xtreme Property Grid</i></div>
+<div style="padding-left: 20px;" id="div_xpg_mfc_9.10_body">
+<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+<tr>
+<td width="20" class="issuehdr" align="right">#</td>
+<td width="100" class="issuehdr" nowrap="1">Type</td>
+<td class="issuehdr">Description</td></tr>
+<tr><td class="issuecontent" align="right">1</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed bug with the scrollbar in inplace list</td></tr>
+<tr><td class="issuecontent" align="right">2</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed the problem that caused the password item to be visible as a tooltip</td></tr>
+</table></div></div>
+</div>
+<div id="divcategory_ax_9.10" style="display:none">
+<div id="divproduct_xsp_ax_9.10_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_xsp_ax_9.10_body"><i>Xtreme Suite Pro</i></div>
+<div style="padding-left: 20px;" id="div_xsp_ax_9.10_body">
+<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+<tr>
+<td width="20" class="issuehdr" align="right">#</td>
+<td width="100" class="issuehdr" nowrap="1">Type</td>
+<td class="issuehdr">Description</td></tr>
+<tr><td class="issuecontent" align="right">1</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Minor fix in TabClientWnd</td></tr>
+</table></div></div>
+<div id="divproduct_xrc_ax_9.10_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_xrc_ax_9.10_body"><i>Xtreme Report Control</i></div>
+<div style="padding-left: 20px;" id="div_xrc_ax_9.10_body">
+<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+<tr>
+<td width="20" class="issuehdr" align="right">#</td>
+<td width="100" class="issuehdr" nowrap="1">Type</td>
+<td class="issuehdr">Description</td></tr>
+<tr><td class="issuecontent" align="right">1</td><td class="issuecontent">New feature</td><td class="issuecontent">Added manifest for report sample</td></tr>
+<tr><td class="issuecontent" align="right">2</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Updated the install scripts</td></tr>
+</table></div></div>
+</div>
+</td></tr>
+<tr class="row">
+<td class="content"><IMG alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div9.00">Version 9.00</td>
+<td class="content">July 18, 2004</td>
+</tr>
+<tr id="div9.00" bgcolor="#ffffff">
+<td colspan="2" style="padding-top: 10px;padding-bottom: 10px;">
+<div id="divcategory_mfc_9.00" style="display:">
+<div id="divproduct_xtp_mfc_9.00_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_xtp_mfc_9.00_body"><i>Xtreme Toolkit Pro</i></div>
+<div style="padding-left: 20px;" id="div_xtp_mfc_9.00_body">
+<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+<tr>
+<td width="20" class="issuehdr" align="right">#</td>
+<td width="100" class="issuehdr" nowrap="1">Type</td>
+<td class="issuehdr">Description</td></tr>
+<tr><td class="issuecontent" align="right">1</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed various problems with the deployment wizard that would cause incorrect initialization</td></tr>
+<tr><td class="issuecontent" align="right">2</td><td class="issuecontent">New feature</td><td class="issuecontent">Added bEnsureVisible argument to CXTOutBarCtrl::SetSelItem to ensure the item selected is visible</td></tr>
+<tr><td class="issuecontent" align="right">3</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed bug: CXTCaption does not draw ellipse drawtext style if there was no CPWS_EX_CLOSEBUTTON</td></tr>
+<tr><td class="issuecontent" align="right">4</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed some display issues with the size gripper and made size gripper Windows XP theme compatible</td></tr>
+<tr><td class="issuecontent" align="right">5</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed bug: CXTOutBarCtrl incorrectly displays scroll down arrow in empty folder</td></tr>
+<tr><td class="issuecontent" align="right">6</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed GetButton methods that would return incorrect button index in CXTEditListBox</td></tr>
+<tr><td class="issuecontent" align="right">7</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed issues with sorting in shell list control</td></tr>
+<tr><td class="issuecontent" align="right">8</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Rewrote the directory monitoring thread to correctly monitor for file and folder updates</td></tr>
+<tr><td class="issuecontent" align="right">9</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed resource leak where pens were destroyed prior to the device context being restored to its previous state</td></tr>
+<tr><td class="issuecontent" align="right">10</td><td class="issuecontent">New feature</td><td class="issuecontent">Added Visual Studio .NET 2002 hot fix setup files . This is required to provide IntelliSense support for our products on 2002</td></tr>
+<tr><td class="issuecontent" align="right">11</td><td class="issuecontent">New feature</td><td class="issuecontent">Updated and translated all language files</td></tr>
+<tr><td class="issuecontent" align="right">12</td><td class="issuecontent">New feature</td><td class="issuecontent">Complete Right To Left (RTL) language support added</td></tr>
+<tr><td class="issuecontent" align="right">13</td><td class="issuecontent">New feature</td><td class="issuecontent">Whidbey GUI Sample added</td></tr>
+<tr><td class="issuecontent" align="right">14</td><td class="issuecontent">New feature</td><td class="issuecontent">Outlook 2003 style Report control added</td></tr>
+<tr><td class="issuecontent" align="right">15</td><td class="issuecontent">New feature</td><td class="issuecontent">MSN Messenger style Popup Control added</td></tr>
+<tr><td class="issuecontent" align="right">16</td><td class="issuecontent">New feature</td><td class="issuecontent">Added CXTPManageState::ResetModuleInfo for loading the module state from the resource dlls</td></tr>
+<tr><td class="issuecontent" align="right">17</td><td class="issuecontent">New feature</td><td class="issuecontent">Added code to CXTListCtrl that shades sorted columns similar to windows explorer</td></tr>
+<tr><td class="issuecontent" align="right">18</td><td class="issuecontent">New feature</td><td class="issuecontent">CXTPShortcutBarPane::SetIndent method added</td></tr>
+<tr><td class="issuecontent" align="right">19</td><td class="issuecontent">New feature</td><td class="issuecontent">XTPColorManager::SetLunaTheme added</td></tr>
+<tr><td class="issuecontent" align="right">20</td><td class="issuecontent">New feature</td><td class="issuecontent">CXTPShortcutBarPane::SetIndent method added</td></tr>
+<tr><td class="issuecontent" align="right">21</td><td class="issuecontent">New feature</td><td class="issuecontent">Enhancement in CXTPSplitterTracker class</td></tr>
+<tr><td class="issuecontent" align="right">22</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Updated font creation in CXTHyperLink</td></tr>
+</table></div></div>
+<div id="divproduct_xsp_mfc_9.00_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_xsp_mfc_9.00_body"><i>Xtreme Suite Pro</i></div>
+<div style="padding-left: 20px;" id="div_xsp_mfc_9.00_body">
+<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+<tr>
+<td width="20" class="issuehdr" align="right">#</td>
+<td width="100" class="issuehdr" nowrap="1">Type</td>
+<td class="issuehdr">Description</td></tr>
+<tr><td class="issuecontent" align="right">1</td><td class="issuecontent">New feature</td><td class="issuecontent">PopupControl added</td></tr>
+<tr><td class="issuecontent" align="right">2</td><td class="issuecontent">New feature</td><td class="issuecontent">IsWindowHooked now checks for a valid window handle</td></tr>
+<tr><td class="issuecontent" align="right">3</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed the code for "base" language resource</td></tr>
+<tr><td class="issuecontent" align="right">4</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fix in ShortcutBarText</td></tr>
+<tr><td class="issuecontent" align="right">5</td><td class="issuecontent">New feature</td><td class="issuecontent">CustomThemes: new Combo samples added</td></tr>
+<tr><td class="issuecontent" align="right">6</td><td class="issuecontent">New feature</td><td class="issuecontent">WM_XTP_INIMENU added</td></tr>
+<tr><td class="issuecontent" align="right">7</td><td class="issuecontent">New feature</td><td class="issuecontent">CXTPColorManager::SetLunaTheme added</td></tr>
+<tr><td class="issuecontent" align="right">8</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Updated and added language files</td></tr>
+<tr><td class="issuecontent" align="right">9</td><td class="issuecontent">New feature</td><td class="issuecontent">Now translated into 32 languages including the following "new" language translations:
+								   Arabic, Greek, Estonian, Finnish, Hebrew, Croatian, Lithuanian, Latvian, Portuguese,
+								   Slovak, Slovenian, Swedish, Thai, Ukrainian, Chinese (Simplified), Chinese (Traditional)</td></tr>
+<tr><td class="issuecontent" align="right">10</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fully localized existing language translations</td></tr>
+<tr><td class="issuecontent" align="right">11</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Made "Lookup(HWND hWnd)" public to work as "IsWindowHooked" method</td></tr>
+<tr><td class="issuecontent" align="right">12</td><td class="issuecontent">New feature</td><td class="issuecontent">TPM_RIGHTALIGN flag support added for Context menus</td></tr>
+<tr><td class="issuecontent" align="right">13</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Changes in Keyboard hooking routines</td></tr>
+<tr><td class="issuecontent" align="right">14</td><td class="issuecontent">New feature</td><td class="issuecontent">Themed Context menu added for CXTPControlComboBox and CXTPControlEdit</td></tr>
+<tr><td class="issuecontent" align="right">15</td><td class="issuecontent">New feature</td><td class="issuecontent">CXTPToolBar:IsCloseable/SetCloseable methods added</td></tr>
+<tr><td class="issuecontent" align="right">16</td><td class="issuecontent">New feature</td><td class="issuecontent">CXTPControl::Reset method added</td></tr>
+<tr><td class="issuecontent" align="right">17</td><td class="issuecontent">New feature</td><td class="issuecontent">CXTPCommandBar::SetButtonSize/GetButtonSize methods added</td></tr>
+<tr><td class="issuecontent" align="right">18</td><td class="issuecontent">New feature</td><td class="issuecontent">CXTPImageManager::DrawReverted method added</td></tr>
+<tr><td class="issuecontent" align="right">19</td><td class="issuecontent">New feature</td><td class="issuecontent">AltDragCustomization added</td></tr>
+<tr><td class="issuecontent" align="right">20</td><td class="issuecontent">New feature</td><td class="issuecontent">CloseSubMenuOnClick property added</td></tr>
+<tr><td class="issuecontent" align="right">21</td><td class="issuecontent">New feature</td><td class="issuecontent">CXTPDialog, CXTPDialogBase added</td></tr>
+<tr><td class="issuecontent" align="right">22</td><td class="issuecontent">New feature</td><td class="issuecontent">CXTPTabClientWnd:WM_XTP_NEWTABITEM notification added</td></tr>
+<tr><td class="issuecontent" align="right">23</td><td class="issuecontent">New feature</td><td class="issuecontent">xtpControlLabel added</td></tr>
+<tr><td class="issuecontent" align="right">24</td><td class="issuecontent">New feature</td><td class="issuecontent">MultiLanguage sample added</td></tr>
+<tr><td class="issuecontent" align="right">25</td><td class="issuecontent">New feature</td><td class="issuecontent">ScribleMultLang sample added</td></tr>
+</table></div></div>
+<div id="divproduct_xcb_mfc_9.00_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_xcb_mfc_9.00_body"><i>Xtreme Command Bars</i></div>
+<div style="padding-left: 20px;" id="div_xcb_mfc_9.00_body">
+<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+<tr>
+<td width="20" class="issuehdr" align="right">#</td>
+<td width="100" class="issuehdr" nowrap="1">Type</td>
+<td class="issuehdr">Description</td></tr>
+<tr><td class="issuecontent" align="right">1</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed the code for "base" language resource</td></tr>
+<tr><td class="issuecontent" align="right">2</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fix in ShortcutBarText in popup controls</td></tr>
+<tr><td class="issuecontent" align="right">3</td><td class="issuecontent">Fixing source</td><td class="issuecontent">IsWindowHooked now checks for a valid window handle in CXTWndHook</td></tr>
+<tr><td class="issuecontent" align="right">4</td><td class="issuecontent">New feature</td><td class="issuecontent">CustomThemes: new Combo samples added</td></tr>
+<tr><td class="issuecontent" align="right">5</td><td class="issuecontent">New feature</td><td class="issuecontent">WM_XTP_INIMENU added to CXTPCommandBars</td></tr>
+<tr><td class="issuecontent" align="right">6</td><td class="issuecontent">New feature</td><td class="issuecontent">CXTPColorManager::SetLunaTheme added</td></tr>
+<tr><td class="issuecontent" align="right">7</td><td class="issuecontent">New feature</td><td class="issuecontent">Updated and added language files</td></tr>
+<tr><td class="issuecontent" align="right">8</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Now translated into 32 languages including the following "new" language translations:
+								   Arabic, Greek, Estonian, Finnish, Hebrew, Croatian, Lithuanian, Latvian, Portuguese,
+								   Slovak, Slovenian, Swedish, Thai, Ukrainian, Chinese (Simplified), Chinese (Traditional)</td></tr>
+<tr><td class="issuecontent" align="right">9</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fully localized existing language translations</td></tr>
+<tr><td class="issuecontent" align="right">10</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Made "Lookup(HWND hWnd)" public to work as "IsWindowHooked" method in CXTPHookManager</td></tr>
+<tr><td class="issuecontent" align="right">11</td><td class="issuecontent">New feature</td><td class="issuecontent">TPM_RIGHTALIGN flag support added for Context menus in CXTPPopupBar</td></tr>
+<tr><td class="issuecontent" align="right">12</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Changes in Keyboard hooking routines for hook manager</td></tr>
+<tr><td class="issuecontent" align="right">13</td><td class="issuecontent">New feature</td><td class="issuecontent">Themed Context menu added for CXTPControlComboBox and CXTPControlEdit</td></tr>
+<tr><td class="issuecontent" align="right">14</td><td class="issuecontent">New feature</td><td class="issuecontent">CXTPToolBar:IsCloseable/SetCloseable methods added</td></tr>
+<tr><td class="issuecontent" align="right">15</td><td class="issuecontent">New feature</td><td class="issuecontent">CXTPControl::Reset method added</td></tr>
+<tr><td class="issuecontent" align="right">16</td><td class="issuecontent">New feature</td><td class="issuecontent">CXTPCommandBar::SetButtonSize/GetButtonSize methods added</td></tr>
+<tr><td class="issuecontent" align="right">17</td><td class="issuecontent">New feature</td><td class="issuecontent">CXTPImageManager::DrawReverted method added</td></tr>
+<tr><td class="issuecontent" align="right">18</td><td class="issuecontent">New feature</td><td class="issuecontent">AltDragCustomization added for command bars</td></tr>
+<tr><td class="issuecontent" align="right">19</td><td class="issuecontent">New feature</td><td class="issuecontent">CXTPDialog, CXTPDialogBase added</td></tr>
+<tr><td class="issuecontent" align="right">20</td><td class="issuecontent">New feature</td><td class="issuecontent">CXTPTabClientWnd:WM_XTP_NEWTABITEM notification added</td></tr>
+<tr><td class="issuecontent" align="right">21</td><td class="issuecontent">New feature</td><td class="issuecontent">xtpControlLabel added for command bars</td></tr>
+<tr><td class="issuecontent" align="right">22</td><td class="issuecontent">New feature</td><td class="issuecontent">MultiLanguage sample added</td></tr>
+<tr><td class="issuecontent" align="right">23</td><td class="issuecontent">New feature</td><td class="issuecontent">ScribleMultLang sample added</td></tr>
+</table></div></div>
+<div id="divproduct_xpg_mfc_9.00_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_xpg_mfc_9.00_body"><i>Xtreme Property Grid</i></div>
+<div style="padding-left: 20px;" id="div_xpg_mfc_9.00_body">
+<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+<tr>
+<td width="20" class="issuehdr" align="right">#</td>
+<td width="100" class="issuehdr" nowrap="1">Type</td>
+<td class="issuehdr">Description</td></tr>
+<tr><td class="issuecontent" align="right">1</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixes in HelpHeight and SplitterPos</td></tr>
+<tr><td class="issuecontent" align="right">2</td><td class="issuecontent">New feature</td><td class="issuecontent">Added language translations, including RC WinTrans database file</td></tr>
+<tr><td class="issuecontent" align="right">3</td><td class="issuecontent">Fixing source</td><td class="issuecontent">CXTPItemConstraints::GetCurrent returned</td></tr>
+<tr><td class="issuecontent" align="right">4</td><td class="issuecontent">New feature</td><td class="issuecontent">CXTPPropertyGridItem::SetitemData/CXTPPropertyGridItem::GetItemData added</td></tr>
+<tr><td class="issuecontent" align="right">5</td><td class="issuecontent">New feature</td><td class="issuecontent">CXTPPropertyGridItem::SetMaskedText added</td></tr>
+<tr><td class="issuecontent" align="right">6</td><td class="issuecontent">New feature</td><td class="issuecontent">Virtual CXTPPropertyGridItem::SetVisible added</td></tr>
+</table></div></div>
+<div id="divproduct_xdp_mfc_9.00_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_xdp_mfc_9.00_body"><i>Xtreme Docking Pane</i></div>
+<div style="padding-left: 20px;" id="div_xdp_mfc_9.00_body">
+<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+<tr>
+<td width="20" class="issuehdr" align="right">#</td>
+<td width="100" class="issuehdr" nowrap="1">Type</td>
+<td class="issuehdr">Description</td></tr>
+<tr><td class="issuecontent" align="right">1</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fix in AttachView</td></tr>
+<tr><td class="issuecontent" align="right">2</td><td class="issuecontent">New feature</td><td class="issuecontent">Updated and added language files. They are now managed using RC WinTrans database</td></tr>
+<tr><td class="issuecontent" align="right">3</td><td class="issuecontent">New feature</td><td class="issuecontent">Added an alternative way of licensing</td></tr>
+<tr><td class="issuecontent" align="right">4</td><td class="issuecontent">New feature</td><td class="issuecontent">Completed localization for docking panes</td></tr>
+<tr><td class="issuecontent" align="right">5</td><td class="issuecontent">New feature</td><td class="issuecontent">Themed Floating Frames added</td></tr>
+<tr><td class="issuecontent" align="right">6</td><td class="issuecontent">New feature</td><td class="issuecontent">Added new sample for to demonstrate using command routing with docking panes</td></tr>
+<tr><td class="issuecontent" align="right">7</td><td class="issuecontent">New feature</td><td class="issuecontent">Routing with docking panes</td></tr>
+<tr><td class="issuecontent" align="right">8</td><td class="issuecontent">New feature</td><td class="issuecontent">CXTPDockingPaneManager::SetAlphaDockingContext added</td></tr>
+<tr><td class="issuecontent" align="right">9</td><td class="issuecontent">New feature</td><td class="issuecontent">CXTPDockingPaneManager::SetShowDockingContextStickers added</td></tr>
+<tr><td class="issuecontent" align="right">10</td><td class="issuecontent">New feature</td><td class="issuecontent">DockingContainers sample added</td></tr>
+</table></div></div>
+<div id="divproduct_xrc_mfc_9.00_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_xrc_mfc_9.00_body"><i>Xtreme Report Control</i></div>
+<div style="padding-left: 20px;" id="div_xrc_mfc_9.00_body">
+<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+<tr>
+<td width="20" class="issuehdr" align="right">#</td>
+<td width="100" class="issuehdr" nowrap="1">Type</td>
+<td class="issuehdr">Description</td></tr>
+<tr><td class="issuecontent" align="right">1</td><td class="issuecontent">New feature</td><td class="issuecontent">Initial first release of Xtreme Report Control</td></tr>
+</table></div></div>
+</div>
+<div id="divcategory_ax_9.00" style="display:none">
+<div id="divproduct_xsp_ax_9.00_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_xsp_ax_9.00_body"><i>Xtreme Suite Pro</i></div>
+<div style="padding-left: 20px;" id="div_xsp_ax_9.00_body">
+<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+<tr>
+<td width="20" class="issuehdr" align="right">#</td>
+<td width="100" class="issuehdr" nowrap="1">Type</td>
+<td class="issuehdr">Description</td></tr>
+<tr><td class="issuecontent" align="right">1</td><td class="issuecontent">New feature</td><td class="issuecontent">Added an alternative way of licensing</td></tr>
+<tr><td class="issuecontent" align="right">2</td><td class="issuecontent">New feature</td><td class="issuecontent">ResourceFile global properties added</td></tr>
+<tr><td class="issuecontent" align="right">3</td><td class="issuecontent">New feature</td><td class="issuecontent">TabManager sample added</td></tr>
+<tr><td class="issuecontent" align="right">4</td><td class="issuecontent">New feature</td><td class="issuecontent">ImageManagerIcons::AddIcon, ImageManagerIcons::LoadIcon, ImageManagerIcons::LoadBitmap added</td></tr>
+</table></div></div>
+<div id="divproduct_xcb_ax_9.00_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_xcb_ax_9.00_body"><i>Xtreme Command Bars</i></div>
+<div style="padding-left: 20px;" id="div_xcb_ax_9.00_body">
+<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+<tr>
+<td width="20" class="issuehdr" align="right">#</td>
+<td width="100" class="issuehdr" nowrap="1">Type</td>
+<td class="issuehdr">Description</td></tr>
+<tr><td class="issuecontent" align="right">1</td><td class="issuecontent">New feature</td><td class="issuecontent">Added an alternative way of licensing</td></tr>
+<tr><td class="issuecontent" align="right">2</td><td class="issuecontent">New feature</td><td class="issuecontent">CommandBar::Closeable, CommandBar::Customizable properties added</td></tr>
+<tr><td class="issuecontent" align="right">3</td><td class="issuecontent">New feature</td><td class="issuecontent">ResourceFile global properties added</td></tr>
+<tr><td class="issuecontent" align="right">4</td><td class="issuecontent">New feature</td><td class="issuecontent">Options::SetPopupIconsSize added, szPopupIconSize option added</td></tr>
+<tr><td class="issuecontent" align="right">5</td><td class="issuecontent">New feature</td><td class="issuecontent">ImageManagerIcons::AddIcon, ImageManagerIcons::LoadIcon, ImageManagerIcons::LoadBitmap added</td></tr>
+</table></div></div>
+<div id="divproduct_xpg_ax_9.00_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_xpg_ax_9.00_body"><i>Xtreme Property Grid</i></div>
+<div style="padding-left: 20px;" id="div_xpg_ax_9.00_body">
+<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+<tr>
+<td width="20" class="issuehdr" align="right">#</td>
+<td width="100" class="issuehdr" nowrap="1">Type</td>
+<td class="issuehdr">Description</td></tr>
+<tr><td class="issuecontent" align="right">1</td><td class="issuecontent">Fixing source</td><td class="issuecontent">MaskedText property now read/write</td></tr>
+<tr><td class="issuecontent" align="right">2</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fix in OnSysColorChanged</td></tr>
+</table></div></div>
+<div id="divproduct_xdp_ax_9.00_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_xdp_ax_9.00_body"><i>Xtreme Docking Pane</i></div>
+<div style="padding-left: 20px;" id="div_xdp_ax_9.00_body">
+<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+<tr>
+<td width="20" class="issuehdr" align="right">#</td>
+<td width="100" class="issuehdr" nowrap="1">Type</td>
+<td class="issuehdr">Description</td></tr>
+<tr><td class="issuecontent" align="right">1</td><td class="issuecontent">New feature</td><td class="issuecontent">ResourceFile global properties added</td></tr>
+<tr><td class="issuecontent" align="right">2</td><td class="issuecontent">New feature</td><td class="issuecontent">Tooltips added</td></tr>
+</table></div></div>
+</div>
+</td></tr>
+<tr class="row">
+<td class="content"><IMG alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div8.70">Version 8.70</td>
+<td class="content">April 15, 2004</td>
+</tr>
+<tr id="div8.70" bgcolor="#ffffff">
+<td colspan="2" style="padding-top: 10px;padding-bottom: 10px;">
+<div id="divcategory_mfc_8.70" style="display:">
+<div id="divproduct_xtp_mfc_8.70_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_xtp_mfc_8.70_body"><i>Xtreme Toolkit Pro</i></div>
+<div style="padding-left: 20px;" id="div_xtp_mfc_8.70_body">
+<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+<tr>
+<td width="20" class="issuehdr" align="right">#</td>
+<td width="100" class="issuehdr" nowrap="1">Type</td>
+<td class="issuehdr">Description</td></tr>
+<tr><td class="issuecontent" align="right">1</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Made methods GetNextItem const</td></tr>
+<tr><td class="issuecontent" align="right">2</td><td class="issuecontent">Fixing source</td><td class="issuecontent">When you collapse a tree node that has a child item selected and you press the down or up arrow key, a debug assertion is thrown</td></tr>
+<tr><td class="issuecontent" align="right">3</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Display problems with focus rect when tree would lose focus</td></tr>
+<tr><td class="issuecontent" align="right">4</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Added additional argument to SelectAll that allows for starting from a specified tree node</td></tr>
+<tr><td class="issuecontent" align="right">5</td><td class="issuecontent">Fixing source</td><td class="issuecontent">When editing a tree label, if the new text it shorter than the original label, the text under the edit box is displayed</td></tr>
+<tr><td class="issuecontent" align="right">6</td><td class="issuecontent">Fixing source</td><td class="issuecontent">PreTranslateMessage would pump messages when in label edit mode</td></tr>
+<tr><td class="issuecontent" align="right">7</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Corrected font and background color display problems and pretranslate message pumping messages when edit is present</td></tr>
+<tr><td class="issuecontent" align="right">8</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed bug with resizing that would cause display problems with trees or lists that are in edit mode when a size operation begins</td></tr>
+<tr><td class="issuecontent" align="right">9</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed bug with all edit controls including browse edit that would fail to initialize correctly under certain situations</td></tr>
+<tr><td class="issuecontent" align="right">10</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed MFCBUG: During label editing if the tree is resized while there is an edit box open, the edit box is not moved to the new
+								   location of the tree item, but is left in it previous location</td></tr>
+<tr><td class="issuecontent" align="right">11</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed bug with resize that was recently introduced with setting focus when sizing. Reduced some overhead with checking for group box during resize</td></tr>
+<tr><td class="issuecontent" align="right">12</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed bug with StripMnemonics that would change '&amp;&amp;' to '&amp;' which would cause the following statement: "House &amp; Home" to appear as "House _Home"</td></tr>
+<tr><td class="issuecontent" align="right">13</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed bug with window size changes that would incorrectly position browse button</td></tr>
+<tr><td class="issuecontent" align="right">14</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed display bug with toolbar button theme when button had focus</td></tr>
+<tr><td class="issuecontent" align="right">15</td><td class="issuecontent">New feature</td><td class="issuecontent">Added OnCustomize() command handler to enable expansion button display to enhance samples and eliminate
+								   confusion with product evaluation as many reports would indicate the disabled "Standard" popup was a bug</td></tr>
+<tr><td class="issuecontent" align="right">16</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed GPF error on Windows NT</td></tr>
+<tr><td class="issuecontent" align="right">17</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed bugs with class wizards that would cause the compile errors when choosing rebars or ole container support</td></tr>
+<tr><td class="issuecontent" align="right">18</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed memory leaks due to directory monitoring thread incorrectly initialized</td></tr>
+<tr><td class="issuecontent" align="right">19</td><td class="issuecontent">New feature</td><td class="issuecontent">Enhancements to outlook bar control</td></tr>
+<tr><td class="issuecontent" align="right">20</td><td class="issuecontent">New feature</td><td class="issuecontent">Added CXTResizeGroupBox class to draw flicker free group box with resizing dialogs</td></tr>
+<tr><td class="issuecontent" align="right">21</td><td class="issuecontent">New feature</td><td class="issuecontent">Added Themes support for CXTButton class</td></tr>
+<tr><td class="issuecontent" align="right">22</td><td class="issuecontent">New feature</td><td class="issuecontent">Added SetButtonTheme</td></tr>
+<tr><td class="issuecontent" align="right">23</td><td class="issuecontent">New feature</td><td class="issuecontent">CXTCaption::SetOffcie2003Color added</td></tr>
+<tr><td class="issuecontent" align="right">24</td><td class="issuecontent">New feature</td><td class="issuecontent">CXTWindowList class added</td></tr>
+<tr><td class="issuecontent" align="right">25</td><td class="issuecontent">New feature</td><td class="issuecontent">TaskPanel: Custom theme Sample added</td></tr>
+<tr><td class="issuecontent" align="right">26</td><td class="issuecontent">New feature</td><td class="issuecontent">CXTWindowList sample added</td></tr>
+<tr><td class="issuecontent" align="right">27</td><td class="issuecontent">New feature</td><td class="issuecontent">TaskPanel group icons support added</td></tr>
+<tr><td class="issuecontent" align="right">28</td><td class="issuecontent">New feature</td><td class="issuecontent">TabManager added. TabManager is the common tabs painting routines for CommandBars, DockingPanes and TabControl</td></tr>
+<tr><td class="issuecontent" align="right">29</td><td class="issuecontent">New feature</td><td class="issuecontent">CXTPTabControl class added</td></tr>
+<tr><td class="issuecontent" align="right">30</td><td class="issuecontent">New feature</td><td class="issuecontent">Added TabManager and GUI_Eclipse sample</td></tr>
+<tr><td class="issuecontent" align="right">31</td><td class="issuecontent">New feature</td><td class="issuecontent">Windows XP theme support added Initialization for initialize edit, browse edit, and edit list controls</td></tr>
+<tr><td class="issuecontent" align="right">32</td><td class="issuecontent">New feature</td><td class="issuecontent">Windows XP theme support for button, edit, browse edit, and edit list controls</td></tr>
+<tr><td class="issuecontent" align="right">33</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Made SetXButtonStyle virtual</td></tr>
+<tr><td class="issuecontent" align="right">34</td><td class="issuecontent">New feature</td><td class="issuecontent">Added xp theme support for browse button</td></tr>
+<tr><td class="issuecontent" align="right">35</td><td class="issuecontent">New feature</td><td class="issuecontent">Added themes to draw 3D disabled icons and WinXP toolbar style buttons</td></tr>
+<tr><td class="issuecontent" align="right">36</td><td class="issuecontent">New feature</td><td class="issuecontent">Added a check to truncate tooltip text to the maximum allowed size. This would cause an ASSERT when the tooltip was longer than the expected length</td></tr>
+<tr><td class="issuecontent" align="right">37</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Updated button project for current theme revisions</td></tr>
+<tr><td class="issuecontent" align="right">38</td><td class="issuecontent">New feature</td><td class="issuecontent">Added theme support to color picker</td></tr>
+<tr><td class="issuecontent" align="right">39</td><td class="issuecontent">New feature</td><td class="issuecontent">Added recalclayout method</td></tr>
+<tr><td class="issuecontent" align="right">40</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Changed window location to use defer</td></tr>
+<tr><td class="issuecontent" align="right">41</td><td class="issuecontent">New feature</td><td class="issuecontent">Added CEditListBoxEx helper class to handle sizing edit list in CXTTabCtrl</td></tr>
+<tr><td class="issuecontent" align="right">42</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Set xp mode for edit list toolbar buttons</td></tr>
+<tr><td class="issuecontent" align="right">43</td><td class="issuecontent">New feature</td><td class="issuecontent">Added "scope" resolution operant for all registry API calls for clarity</td></tr>
+<tr><td class="issuecontent" align="right">44</td><td class="issuecontent">New feature</td><td class="issuecontent">Added members for section and profile name that are set in the constructor rather than calling a pointer to CWinApp, since this pointer could be invalid in some case</td></tr>
+<tr><td class="issuecontent" align="right">45</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Updated icons for sample</td></tr>
+</table></div></div>
+<div id="divproduct_xcb_mfc_8.70_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_xcb_mfc_8.70_body"><i>Xtreme Command Bars</i></div>
+<div style="padding-left: 20px;" id="div_xcb_mfc_8.70_body">
+<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+<tr>
+<td width="20" class="issuehdr" align="right">#</td>
+<td width="100" class="issuehdr" nowrap="1">Type</td>
+<td class="issuehdr">Description</td></tr>
+<tr><td class="issuecontent" align="right">1</td><td class="issuecontent">New feature</td><td class="issuecontent">Alpha Icons support added for All OS</td></tr>
+<tr><td class="issuecontent" align="right">2</td><td class="issuecontent">New feature</td><td class="issuecontent">.NET Grouping like Tabbed Workspace added</td></tr>
+<tr><td class="issuecontent" align="right">3</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Enhances in ImageEditor dialog - new look, support all image files, alpha icons and bitmaps support added</td></tr>
+<tr><td class="issuecontent" align="right">4</td><td class="issuecontent">New feature</td><td class="issuecontent">Added missing CXTPControlEdit::Serialize method</td></tr>
+<tr><td class="issuecontent" align="right">5</td><td class="issuecontent">New feature</td><td class="issuecontent">TabWorkspace Tooltips added</td></tr>
+<tr><td class="issuecontent" align="right">6</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Optimization in SaveCommandBars. Now stored only customized ToolBars</td></tr>
+<tr><td class="issuecontent" align="right">7</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Reorganization of Color Manager</td></tr>
+<tr><td class="issuecontent" align="right">8</td><td class="issuecontent">New feature</td><td class="issuecontent">CXTPControl::FromUI method added</td></tr>
+<tr><td class="issuecontent" align="right">9</td><td class="issuecontent">New feature</td><td class="issuecontent">TPM_RIGHTBUTTON flag support added</td></tr>
+<tr><td class="issuecontent" align="right">10</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Enhances in Designer (Resource Dialog, Control flags, PopupToolbar option)</td></tr>
+<tr><td class="issuecontent" align="right">11</td><td class="issuecontent">New feature</td><td class="issuecontent">Added CXTPControlSelector (see GUI_Office11 sample for more information)</td></tr>
+</table></div></div>
+<div id="divproduct_xpg_mfc_8.70_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_xpg_mfc_8.70_body"><i>Xtreme Property Grid</i></div>
+<div style="padding-left: 20px;" id="div_xpg_mfc_8.70_body">
+<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+<tr>
+<td width="20" class="issuehdr" align="right">#</td>
+<td width="100" class="issuehdr" nowrap="1">Type</td>
+<td class="issuehdr">Description</td></tr>
+<tr><td class="issuecontent" align="right">1</td><td class="issuecontent">New feature</td><td class="issuecontent">CXTPShortcutBar::SetImageManager method added</td></tr>
+<tr><td class="issuecontent" align="right">2</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed bug that occurred when Categories.Clear was called in OnValueChanged handler</td></tr>
+<tr><td class="issuecontent" align="right">3</td><td class="issuecontent">New feature</td><td class="issuecontent">Added XTPPropertyGridItem::SetMask, XTPPropertyGridItem::SetPasswordMask</td></tr>
+<tr><td class="issuecontent" align="right">4</td><td class="issuecontent">New feature</td><td class="issuecontent">CCustomItemDate sample added</td></tr>
+<tr><td class="issuecontent" align="right">5</td><td class="issuecontent">Sample update</td><td class="issuecontent">Sample updated</td></tr>
+</table></div></div>
+<div id="divproduct_xdp_mfc_8.70_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_xdp_mfc_8.70_body"><i>Xtreme Docking Pane</i></div>
+<div style="padding-left: 20px;" id="div_xdp_mfc_8.70_body">
+<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+<tr>
+<td width="20" class="issuehdr" align="right">#</td>
+<td width="100" class="issuehdr" nowrap="1">Type</td>
+<td class="issuehdr">Description</td></tr>
+<tr><td class="issuecontent" align="right">1</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Some flicker removed</td></tr>
+<tr><td class="issuecontent" align="right">2</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Visual C++ 5.0 fix</td></tr>
+<tr><td class="issuecontent" align="right">3</td><td class="issuecontent">New feature</td><td class="issuecontent">CXTPDockingPaneManager::UseSplitterTracker option added</td></tr>
+<tr><td class="issuecontent" align="right">4</td><td class="issuecontent">New feature</td><td class="issuecontent">GetPaneData/SetPaneData methods added</td></tr>
+<tr><td class="issuecontent" align="right">5</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Some enhances in Animation routines</td></tr>
+<tr><td class="issuecontent" align="right">6</td><td class="issuecontent">New feature</td><td class="issuecontent">DockingPanes Actions added</td></tr>
+<tr><td class="issuecontent" align="right">7</td><td class="issuecontent">New feature</td><td class="issuecontent">PaneAction sample added</td></tr>
+<tr><td class="issuecontent" align="right">8</td><td class="issuecontent">New feature</td><td class="issuecontent">DockingPaneManager::HideClient option added</td></tr>
+<tr><td class="issuecontent" align="right">9</td><td class="issuecontent">New feature</td><td class="issuecontent">CXTPDockingPaneManager::LockSplitters method added</td></tr>
+<tr><td class="issuecontent" align="right">10</td><td class="issuecontent">New feature</td><td class="issuecontent">New themes for tabs, added support of Tabs at Top, Left, Right. see TabManager sample</td></tr>
+<tr><td class="issuecontent" align="right">11</td><td class="issuecontent">New feature</td><td class="issuecontent">CXTPDockingPaneManager::UseSplitterTracker option added</td></tr>
+</table></div></div>
+</div>
+<div id="divcategory_ax_8.70" style="display:none">
+<div id="divproduct_xcb_ax_8.70_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_xcb_ax_8.70_body"><i>Xtreme Command Bars</i></div>
+<div style="padding-left: 20px;" id="div_xcb_ax_8.70_body">
+<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+<tr>
+<td width="20" class="issuehdr" align="right">#</td>
+<td width="100" class="issuehdr" nowrap="1">Type</td>
+<td class="issuehdr">Description</td></tr>
+<tr><td class="issuecontent" align="right">1</td><td class="issuecontent">New feature</td><td class="issuecontent">CommandBars::ScaleMode property added</td></tr>
+<tr><td class="issuecontent" align="right">2</td><td class="issuecontent">New feature</td><td class="issuecontent">CommandBarsGlobalSettings object added</td></tr>
+<tr><td class="issuecontent" align="right">3</td><td class="issuecontent">New feature</td><td class="issuecontent">Xtreme ImageManager control added</td></tr>
+<tr><td class="issuecontent" align="right">4</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Some performance increased</td></tr>
+<tr><td class="issuecontent" align="right">5</td><td class="issuecontent">New feature</td><td class="issuecontent">CommandBarControl::SetFocus, CommandBarControl::Execute methods added</td></tr>
+<tr><td class="issuecontent" align="right">6</td><td class="issuecontent">New feature</td><td class="issuecontent">CommandBars::_NewEnum added</td></tr>
+<tr><td class="issuecontent" align="right">7</td><td class="issuecontent">New feature</td><td class="issuecontent">Added Workspace_NewItem and Workspace_RClick events</td></tr>
+<tr><td class="issuecontent" align="right">8</td><td class="issuecontent">New feature</td><td class="issuecontent">CommandBar::ControlPopup property added</td></tr>
+<tr><td class="issuecontent" align="right">9</td><td class="issuecontent">New feature</td><td class="issuecontent">CommandBarControls::Find method added</td></tr>
+<tr><td class="issuecontent" align="right">10</td><td class="issuecontent">New feature</td><td class="issuecontent">ICommandBars::DesignerControls property, IControl::Copy method added</td></tr>
+<tr><td class="issuecontent" align="right">11</td><td class="issuecontent">New feature</td><td class="issuecontent">Programmable customization added. See SDISample for more information</td></tr>
+<tr><td class="issuecontent" align="right">12</td><td class="issuecontent">New feature</td><td class="issuecontent">CommandBar::Customize event added</td></tr>
+<tr><td class="issuecontent" align="right">13</td><td class="issuecontent">New feature</td><td class="issuecontent">CommandBar::Width property, CommandBar::SetPopupToolBar method added</td></tr>
+<tr><td class="issuecontent" align="right">14</td><td class="issuecontent">New feature</td><td class="issuecontent">CommandBarControl::Flags property added</td></tr>
+<tr><td class="issuecontent" align="right">15</td><td class="issuecontent">New feature</td><td class="issuecontent">TabWorkspace:Flags property added</td></tr>
+<tr><td class="issuecontent" align="right">16</td><td class="issuecontent">New feature</td><td class="issuecontent">CommandBars::SaveStateToString/LoadStateFromString added</td></tr>
+<tr><td class="issuecontent" align="right">17</td><td class="issuecontent">New feature</td><td class="issuecontent">CommandBarControl::DefaultItem property added</td></tr>
+<tr><td class="issuecontent" align="right">18</td><td class="issuecontent">New feature</td><td class="issuecontent">StatusBar control added</td></tr>
+<tr><td class="issuecontent" align="right">19</td><td class="issuecontent">New feature</td><td class="issuecontent">IconSample sample added</td></tr>
+</table></div></div>
+<div id="divproduct_xpg_ax_8.70_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_xpg_ax_8.70_body"><i>Xtreme Property Grid</i></div>
+<div style="padding-left: 20px;" id="div_xpg_ax_8.70_body">
+<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+<tr>
+<td width="20" class="issuehdr" align="right">#</td>
+<td width="100" class="issuehdr" nowrap="1">Type</td>
+<td class="issuehdr">Description</td></tr>
+<tr><td class="issuecontent" align="right">1</td><td class="issuecontent">New feature</td><td class="issuecontent">ShortcutCaption::Alignment property added</td></tr>
+<tr><td class="issuecontent" align="right">2</td><td class="issuecontent">New feature</td><td class="issuecontent">Enabled properties added</td></tr>
+<tr><td class="issuecontent" align="right">3</td><td class="issuecontent">New feature</td><td class="issuecontent">TaskPanel: xtpTaskItemTypeControl type added</td></tr>
+<tr><td class="issuecontent" align="right">4</td><td class="issuecontent">New feature</td><td class="issuecontent">Option Explicit added to all samples</td></tr>
+</table></div></div>
+<div id="divproduct_xdp_ax_8.70_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_xdp_ax_8.70_body"><i>Xtreme Docking Pane</i></div>
+<div style="padding-left: 20px;" id="div_xdp_ax_8.70_body">
+<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+<tr>
+<td width="20" class="issuehdr" align="right">#</td>
+<td width="100" class="issuehdr" nowrap="1">Type</td>
+<td class="issuehdr">Description</td></tr>
+<tr><td class="issuecontent" align="right">1</td><td class="issuecontent">New feature</td><td class="issuecontent">DockingPaneManager::Panes collection added</td></tr>
+<tr><td class="issuecontent" align="right">2</td><td class="issuecontent">New feature</td><td class="issuecontent">UseSplitterTracker option added</td></tr>
+<tr><td class="issuecontent" align="right">3</td><td class="issuecontent">New feature</td><td class="issuecontent">DockingPanes::HideClient option added</td></tr>
+<tr><td class="issuecontent" align="right">4</td><td class="issuecontent">New feature</td><td class="issuecontent">Pane::Tag added</td></tr>
+<tr><td class="issuecontent" align="right">5</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Some performance increased</td></tr>
+<tr><td class="issuecontent" align="right">6</td><td class="issuecontent">New feature</td><td class="issuecontent">Action event added</td></tr>
+<tr><td class="issuecontent" align="right">7</td><td class="issuecontent">New feature</td><td class="issuecontent">PropertyGrid::Font property added</td></tr>
+<tr><td class="issuecontent" align="right">8</td><td class="issuecontent">New feature</td><td class="issuecontent">PropertyGrid::Enabled property added</td></tr>
+<tr><td class="issuecontent" align="right">9</td><td class="issuecontent">New feature</td><td class="issuecontent">RClick event added</td></tr>
+<tr><td class="issuecontent" align="right">10</td><td class="issuecontent">New feature</td><td class="issuecontent">Added PropertyItemDate and PropertyItemPicture types</td></tr>
+<tr><td class="issuecontent" align="right">11</td><td class="issuecontent">New feature</td><td class="issuecontent">Added IPropertyGridItem::SetMask method, PasswordMask property</td></tr>
+<tr><td class="issuecontent" align="right">12</td><td class="issuecontent">New feature</td><td class="issuecontent">PropertyGrridItem::MaskedText property added</td></tr>
+</table></div></div>
+</div>
+</td></tr>
+<tr class="row">
+<td class="content"><IMG alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div8.61">Version 8.61</td>
+<td class="content">January 28, 2004</td>
+</tr>
+<tr id="div8.61" bgcolor="#ffffff">
+<td colspan="2" style="padding-top: 10px;padding-bottom: 10px;">
+<div id="divcategory_mfc_8.61" style="display:">
+<div id="divproduct_xtp_mfc_8.61_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_xtp_mfc_8.61_body"><i>Xtreme Toolkit Pro</i></div>
+<div style="padding-left: 20px;" id="div_xtp_mfc_8.61_body">
+<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+<tr>
+<td width="20" class="issuehdr" align="right">#</td>
+<td width="100" class="issuehdr" nowrap="1">Type</td>
+<td class="issuehdr">Description</td></tr>
+<tr><td class="issuecontent" align="right">1</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixes bug with multi-line tab control drawing vs.net theme</td></tr>
+<tr><td class="issuecontent" align="right">2</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixes bug with browse edit control forcing parent to redraw multiple times due to redundant calls to RedrawWindow</td></tr>
+<tr><td class="issuecontent" align="right">3</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixes the following build error in .NET: XTMaskEditT.h(701) : error C2440: 'initializing' : cannot convert from 'TCHAR' to 'ATL::CStringT&lt;BaseType,StringTraits&gt;'</td></tr>
+<tr><td class="issuecontent" align="right">4</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixes problem with initialization when control is dynamically created instead of subclassed for edit list box</td></tr>
+<tr><td class="issuecontent" align="right">5</td><td class="issuecontent">New feature</td><td class="issuecontent">Added CXTPShortcutBar::RemoveItem and CXTPShortcutBar::RemoveAllItems</td></tr>
+<tr><td class="issuecontent" align="right">6</td><td class="issuecontent">New feature</td><td class="issuecontent">Added AppWizards for 6.0, 7.0 and 7.1 Studios</td></tr>
+<tr><td class="issuecontent" align="right">7</td><td class="issuecontent">New feature</td><td class="issuecontent">Added IsExpanded() member to search options control</td></tr>
+<tr><td class="issuecontent" align="right">8</td><td class="issuecontent">New feature</td><td class="issuecontent">Group icons support added for Task Panel</td></tr>
+<tr><td class="issuecontent" align="right">9</td><td class="issuecontent">New feature</td><td class="issuecontent">SetClientBitmap added to Task Panel</td></tr>
+<tr><td class="issuecontent" align="right">10</td><td class="issuecontent">New feature</td><td class="issuecontent">RemoveItem and RemoveAllItems added to Task Panel</td></tr>
+<tr><td class="issuecontent" align="right">11</td><td class="issuecontent">New feature</td><td class="issuecontent">Added xtpTypeControls item type for Task Panel</td></tr>
+</table></div></div>
+<div id="divproduct_xsp_mfc_8.61_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_xsp_mfc_8.61_body"><i>Xtreme Suite Pro</i></div>
+<div style="padding-left: 20px;" id="div_xsp_mfc_8.61_body">
+<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+<tr>
+<td width="20" class="issuehdr" align="right">#</td>
+<td width="100" class="issuehdr" nowrap="1">Type</td>
+<td class="issuehdr">Description</td></tr>
+<tr><td class="issuecontent" align="right">1</td><td class="issuecontent">New feature</td><td class="issuecontent">AppWizards added for 6.0, 7.0 and 7.1 Studios</td></tr>
+</table></div></div>
+<div id="divproduct_xcb_mfc_8.61_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_xcb_mfc_8.61_body"><i>Xtreme Command Bars</i></div>
+<div style="padding-left: 20px;" id="div_xcb_mfc_8.61_body">
+<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+<tr>
+<td width="20" class="issuehdr" align="right">#</td>
+<td width="100" class="issuehdr" nowrap="1">Type</td>
+<td class="issuehdr">Description</td></tr>
+<tr><td class="issuecontent" align="right">1</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed bug In Visual C++ 2003 Font Combo box wasn't sorted</td></tr>
+<tr><td class="issuecontent" align="right">2</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed bugs in CommandBars designer</td></tr>
+<tr><td class="issuecontent" align="right">3</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed bug in ImageEditor when picture edited in low resolutions</td></tr>
+<tr><td class="issuecontent" align="right">4</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed bug with MDI tabs if you Attach then Detach you cannot call Attach again without causing an ASSERT then crash</td></tr>
+<tr><td class="issuecontent" align="right">5</td><td class="issuecontent">New feature</td><td class="issuecontent">MDI Standard Customization added</td></tr>
+<tr><td class="issuecontent" align="right">6</td><td class="issuecontent">New feature</td><td class="issuecontent">MenuBar icons (close, minimize, restore) added to MDIPopup menu</td></tr>
+<tr><td class="issuecontent" align="right">7</td><td class="issuecontent">New feature</td><td class="issuecontent">New method CXTPControl::IsTemporary method added</td></tr>
+<tr><td class="issuecontent" align="right">8</td><td class="issuecontent">New feature</td><td class="issuecontent">New method CXTPImageManager::Lookup added</td></tr>
+<tr><td class="issuecontent" align="right">9</td><td class="issuecontent">New feature</td><td class="issuecontent">New method CXTPControlPopup::Style method added.  Now possible to add Split button with icon and text, see CustomThemes sample</td></tr>
+<tr><td class="issuecontent" align="right">10</td><td class="issuecontent">New feature</td><td class="issuecontent">Added ability to inherit Edit control of CXTPControlComboBox (see CustomThemes sample)</td></tr>
+<tr><td class="issuecontent" align="right">11</td><td class="issuecontent">Fixing source</td><td class="issuecontent">If controls size customization info greater than 16kb it stores to file</td></tr>
+<tr><td class="issuecontent" align="right">12</td><td class="issuecontent">New feature</td><td class="issuecontent">Added Context Help support to command bars including HelpContext sample project</td></tr>
+<tr><td class="issuecontent" align="right">13</td><td class="issuecontent">New feature</td><td class="issuecontent">Added optimization and enhanced performance</td></tr>
+<tr><td class="issuecontent" align="right">14</td><td class="issuecontent">New feature</td><td class="issuecontent">Added "ICY" theme to custom themes sample</td></tr>
+<tr><td class="issuecontent" align="right">15</td><td class="issuecontent">New feature</td><td class="issuecontent">Added "Eclipse" GUI sample</td></tr>
+<tr><td class="issuecontent" align="right">16</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Made CXTPImageManagerIcon constructor public so it is accessable from outside of the toolkit project</td></tr>
+<tr><td class="issuecontent" align="right">17</td><td class="issuecontent">New feature</td><td class="issuecontent">New method ShowTextBelowIcons to set the command bar text below icons instead of to the right and ActiveX property added</td></tr>
+</table></div></div>
+<div id="divproduct_xpg_mfc_8.61_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_xpg_mfc_8.61_body"><i>Xtreme Property Grid</i></div>
+<div style="padding-left: 20px;" id="div_xpg_mfc_8.61_body">
+<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+<tr>
+<td width="20" class="issuehdr" align="right">#</td>
+<td width="100" class="issuehdr" nowrap="1">Type</td>
+<td class="issuehdr">Description</td></tr>
+<tr><td class="issuecontent" align="right">1</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Removed static members TRUE_VALUE and FALSE_VALUE that would not allow correct initialization for the True and False text strings</td></tr>
+<tr><td class="issuecontent" align="right">2</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed problems with statically linked samples</td></tr>
+<tr><td class="issuecontent" align="right">3</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixes bug with double click crash when items are deleted in ValueChange handler</td></tr>
+<tr><td class="issuecontent" align="right">4</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Made CXTPPropertyGridItem::GetInplaceEdit virtual, see GridSample</td></tr>
+</table></div></div>
+</div>
+<div id="divcategory_ax_8.61" style="display:none">
+<div id="divproduct_xsp_ax_8.61_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_xsp_ax_8.61_body"><i>Xtreme Suite Pro</i></div>
+<div style="padding-left: 20px;" id="div_xsp_ax_8.61_body">
+<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+<tr>
+<td width="20" class="issuehdr" align="right">#</td>
+<td width="100" class="issuehdr" nowrap="1">Type</td>
+<td class="issuehdr">Description</td></tr>
+<tr><td class="issuecontent" align="right">1</td><td class="issuecontent">New feature</td><td class="issuecontent">ShortcutBar::FindItem method added</td></tr>
+<tr><td class="issuecontent" align="right">2</td><td class="issuecontent">New feature</td><td class="issuecontent">Align property added</td></tr>
+</table></div></div>
+<div id="divproduct_xcb_ax_8.61_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_xcb_ax_8.61_body"><i>Xtreme Command Bars</i></div>
+<div style="padding-left: 20px;" id="div_xcb_ax_8.61_body">
+<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+<tr>
+<td width="20" class="issuehdr" align="right">#</td>
+<td width="100" class="issuehdr" nowrap="1">Type</td>
+<td class="issuehdr">Description</td></tr>
+<tr><td class="issuecontent" align="right">1</td><td class="issuecontent">New feature</td><td class="issuecontent">Align property added</td></tr>
+<tr><td class="issuecontent" align="right">2</td><td class="issuecontent">New feature</td><td class="issuecontent">CommandBars::Option::UseSharedImageList property added</td></tr>
+</table></div></div>
+<div id="divproduct_xpg_ax_8.61_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_xpg_ax_8.61_body"><i>Xtreme Property Grid</i></div>
+<div style="padding-left: 20px;" id="div_xpg_ax_8.61_body">
+<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+<tr>
+<td width="20" class="issuehdr" align="right">#</td>
+<td width="100" class="issuehdr" nowrap="1">Type</td>
+<td class="issuehdr">Description</td></tr>
+<tr><td class="issuecontent" align="right">1</td><td class="issuecontent">New feature</td><td class="issuecontent">New members for PropertyGrid long HelpHeight, double SplitterPos, OLE_HANDLE hWnd added</td></tr>
+</table></div></div>
+<div id="divproduct_xdp_ax_8.61_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_xdp_ax_8.61_body"><i>Xtreme Docking Pane</i></div>
+<div style="padding-left: 20px;" id="div_xdp_ax_8.61_body">
+<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+<tr>
+<td width="20" class="issuehdr" align="right">#</td>
+<td width="100" class="issuehdr" nowrap="1">Type</td>
+<td class="issuehdr">Description</td></tr>
+<tr><td class="issuecontent" align="right">1</td><td class="issuecontent">New feature</td><td class="issuecontent">New members for DockingPaneManager void DestroyPane([in] IPane* Pane), void DestroyAll(), void CloseAll(), long PanesCount() added</td></tr>
+</table></div></div>
+</div>
+</td></tr>
+<tr class="row">
+<td class="content"><IMG alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div8.60">Version 8.60</td>
+<td class="content">November 21, 2003</td>
+</tr>
+<tr id="div8.60" bgcolor="#ffffff">
+<td colspan="2" style="padding-top: 10px;padding-bottom: 10px;">
+<div id="divcategory_mfc_8.60" style="display:">
+<div id="divproduct_xtp_mfc_8.60_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_xtp_mfc_8.60_body"><i>Xtreme Toolkit Pro</i></div>
+<div style="padding-left: 20px;" id="div_xtp_mfc_8.60_body">
+<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+<tr>
+<td width="20" class="issuehdr" align="right">#</td>
+<td width="100" class="issuehdr" nowrap="1">Type</td>
+<td class="issuehdr">Description</td></tr>
+<tr><td class="issuecontent" align="right">1</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed bug occurring with the time mask edit control not parsing the mask correctly</td></tr>
+<tr><td class="issuecontent" align="right">2</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed bug occurring with CXTSearchOptionsView not sizing correctly if the scroll bars are displayed</td></tr>
+<tr><td class="issuecontent" align="right">3</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed bug occurring with the list box mouse wheel scrolling and not painting background correctly</td></tr>
+<tr><td class="issuecontent" align="right">4</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed bug that occurred with the tree control painting the background color when set to a color other than white</td></tr>
+<tr><td class="issuecontent" align="right">5</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed bug occurring with the tip of the day dialog resetting the show tips check box when the next button was pressed</td></tr>
+<tr><td class="issuecontent" align="right">6</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed problem with the shell tree and combo box that would cause each directory that is traversed to be added to the drop down combo when tunneling.
+								   Also added support for cut, copy, paste, delete and select all for combo box</td></tr>
+<tr><td class="issuecontent" align="right">7</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed bug that occurred with disabled tree control not drawing text correctly</td></tr>
+<tr><td class="issuecontent" align="right">8</td><td class="issuecontent">New feature</td><td class="issuecontent">Additional fix for tree control background and text color setting</td></tr>
+<tr><td class="issuecontent" align="right">9</td><td class="issuecontent">New feature</td><td class="issuecontent">TaskPanel control added</td></tr>
+<tr><td class="issuecontent" align="right">10</td><td class="issuecontent">New feature</td><td class="issuecontent">XTFlatComboBox with Office XP style added</td></tr>
+<tr><td class="issuecontent" align="right">11</td><td class="issuecontent">New feature</td><td class="issuecontent">TaskPanel sample added</td></tr>
+</table></div></div>
+<div id="divproduct_xcb_mfc_8.60_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_xcb_mfc_8.60_body"><i>Xtreme Command Bars</i></div>
+<div style="padding-left: 20px;" id="div_xcb_mfc_8.60_body">
+<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+<tr>
+<td width="20" class="issuehdr" align="right">#</td>
+<td width="100" class="issuehdr" nowrap="1">Type</td>
+<td class="issuehdr">Description</td></tr>
+<tr><td class="issuecontent" align="right">1</td><td class="issuecontent">Fixing source</td><td class="issuecontent">MouseManager fixed for multithreaded applications</td></tr>
+<tr><td class="issuecontent" align="right">2</td><td class="issuecontent">New feature</td><td class="issuecontent">Animation added</td></tr>
+<tr><td class="issuecontent" align="right">3</td><td class="issuecontent">New feature</td><td class="issuecontent">System sounds added</td></tr>
+<tr><td class="issuecontent" align="right">4</td><td class="issuecontent">New feature</td><td class="issuecontent">ON_XTP_EXECUTE_RANGE macro added</td></tr>
+<tr><td class="issuecontent" align="right">5</td><td class="issuecontent">New feature</td><td class="issuecontent">Added the ability to add inherited Toolbars</td></tr>
+<tr><td class="issuecontent" align="right">6</td><td class="issuecontent">New feature</td><td class="issuecontent">CXTPControlListBox class added</td></tr>
+<tr><td class="issuecontent" align="right">7</td><td class="issuecontent">New feature</td><td class="issuecontent">MDI customization mechanizm added</td></tr>
+<tr><td class="issuecontent" align="right">8</td><td class="issuecontent">New feature</td><td class="issuecontent">Added void CXTPControl::AssignDocTemplate(UINT nIDResource);</td></tr>
+<tr><td class="issuecontent" align="right">9</td><td class="issuecontent">New feature</td><td class="issuecontent">Added void CXTPControl::ExcludeDocTemplate(UINT nIDResource);</td></tr>
+<tr><td class="issuecontent" align="right">10</td><td class="issuecontent">New feature</td><td class="issuecontent">Added CXTPPopupToolBar::SetBorders(CRect rcBorders);</td></tr>
+<tr><td class="issuecontent" align="right">11</td><td class="issuecontent">New feature</td><td class="issuecontent">Added CXTPPopupToolBar::DisableShadow();</td></tr>
+<tr><td class="issuecontent" align="right">12</td><td class="issuecontent">New feature</td><td class="issuecontent">Added virtual void CXTPControl::OnRButtonUp</td></tr>
+<tr><td class="issuecontent" align="right">13</td><td class="issuecontent">New feature</td><td class="issuecontent">Added CXTPToolBar::SetContextMenuPresent(BOOL bPresent);</td></tr>
+<tr><td class="issuecontent" align="right">14</td><td class="issuecontent">New feature</td><td class="issuecontent">CXTPColorManager()-&gt;DisableLunaColors() method added</td></tr>
+<tr><td class="issuecontent" align="right">15</td><td class="issuecontent">New feature</td><td class="issuecontent">MDIMenus sample added</td></tr>
+<tr><td class="issuecontent" align="right">16</td><td class="issuecontent">New feature</td><td class="issuecontent">ListBox sample added</td></tr>
+<tr><td class="issuecontent" align="right">17</td><td class="issuecontent">New feature</td><td class="issuecontent">GUI_Explorer added</td></tr>
+<tr><td class="issuecontent" align="right">18</td><td class="issuecontent">New feature</td><td class="issuecontent">MSDI sample added</td></tr>
+</table></div></div>
+<div id="divproduct_xpg_mfc_8.60_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_xpg_mfc_8.60_body"><i>Xtreme Property Grid</i></div>
+<div style="padding-left: 20px;" id="div_xpg_mfc_8.60_body">
+<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+<tr>
+<td width="20" class="issuehdr" align="right">#</td>
+<td width="100" class="issuehdr" nowrap="1">Type</td>
+<td class="issuehdr">Description</td></tr>
+<tr><td class="issuecontent" align="right">1</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed the positioning of combobox list when it pops up at the bottom of the screen</td></tr>
+</table></div></div>
+<div id="divproduct_xdp_mfc_8.60_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_xdp_mfc_8.60_body"><i>Xtreme Docking Pane</i></div>
+<div style="padding-left: 20px;" id="div_xdp_mfc_8.60_body">
+<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+<tr>
+<td width="20" class="issuehdr" align="right">#</td>
+<td width="100" class="issuehdr" nowrap="1">Type</td>
+<td class="issuehdr">Description</td></tr>
+<tr><td class="issuecontent" align="right">1</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed bug that occurred when the user dropped a pane to an expanded pane</td></tr>
+</table></div></div>
+</div>
+<div id="divcategory_ax_8.60" style="display:none">
+<div id="divproduct_xsp_ax_8.60_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_xsp_ax_8.60_body"><i>Xtreme Suite Pro</i></div>
+<div style="padding-left: 20px;" id="div_xsp_ax_8.60_body">
+<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+<tr>
+<td width="20" class="issuehdr" align="right">#</td>
+<td width="100" class="issuehdr" nowrap="1">Type</td>
+<td class="issuehdr">Description</td></tr>
+<tr><td class="issuecontent" align="right">1</td><td class="issuecontent">New feature</td><td class="issuecontent">ShorcutBar control added to Xtreme Suite</td></tr>
+<tr><td class="issuecontent" align="right">2</td><td class="issuecontent">New feature</td><td class="issuecontent">TaskPanel control added to Xtreme Suite</td></tr>
+</table></div></div>
+<div id="divproduct_xcb_ax_8.60_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_xcb_ax_8.60_body"><i>Xtreme Command Bars</i></div>
+<div style="padding-left: 20px;" id="div_xcb_ax_8.60_body">
+<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+<tr>
+<td width="20" class="issuehdr" align="right">#</td>
+<td width="100" class="issuehdr" nowrap="1">Type</td>
+<td class="issuehdr">Description</td></tr>
+<tr><td class="issuecontent" align="right">1</td><td class="issuecontent">New feature</td><td class="issuecontent">CommandBarEdit and CommandBarControlCustom classes added</td></tr>
+<tr><td class="issuecontent" align="right">2</td><td class="issuecontent">New feature</td><td class="issuecontent">CommandBars::DockToolBar method added</td></tr>
+<tr><td class="issuecontent" align="right">3</td><td class="issuecontent">New feature</td><td class="issuecontent">CommandBars::GetSpecialColor method added</td></tr>
+<tr><td class="issuecontent" align="right">4</td><td class="issuecontent">New feature</td><td class="issuecontent">TabWorkspace added</td></tr>
+<tr><td class="issuecontent" align="right">5</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed bug that occurred when two applications with Command bars were running</td></tr>
+<tr><td class="issuecontent" align="right">6</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Small fix in keyboard handling</td></tr>
+</table></div></div>
+<div id="divproduct_xpg_ax_8.60_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_xpg_ax_8.60_body"><i>Xtreme Property Grid</i></div>
+<div style="padding-left: 20px;" id="div_xpg_ax_8.60_body">
+<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+<tr>
+<td width="20" class="issuehdr" align="right">#</td>
+<td width="100" class="issuehdr" nowrap="1">Type</td>
+<td class="issuehdr">Description</td></tr>
+<tr><td class="issuecontent" align="right">1</td><td class="issuecontent">New feature</td><td class="issuecontent">AddChildItemBinded method added</td></tr>
+<tr><td class="issuecontent" align="right">2</td><td class="issuecontent">New feature</td><td class="issuecontent">BindSample added</td></tr>
+<tr><td class="issuecontent" align="right">3</td><td class="issuecontent">New feature</td><td class="issuecontent">PropertyItemDouble added</td></tr>
+<tr><td class="issuecontent" align="right">4</td><td class="issuecontent">New feature</td><td class="issuecontent">LostFocus and GotFocus, KeyDown and KeyUP events added</td></tr>
+<tr><td class="issuecontent" align="right">5</td><td class="issuecontent">New feature</td><td class="issuecontent">DblClick event added</td></tr>
+</table></div></div>
+<div id="divproduct_xdp_ax_8.60_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_xdp_ax_8.60_body"><i>Xtreme Docking Pane</i></div>
+<div style="padding-left: 20px;" id="div_xdp_ax_8.60_body">
+<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+<tr>
+<td width="20" class="issuehdr" align="right">#</td>
+<td width="100" class="issuehdr" nowrap="1">Type</td>
+<td class="issuehdr">Description</td></tr>
+<tr><td class="issuecontent" align="right">1</td><td class="issuecontent">New feature</td><td class="issuecontent">Added DockingPane::Options::LunaColors property to disable luna colors</td></tr>
+<tr><td class="issuecontent" align="right">2</td><td class="issuecontent">New feature</td><td class="issuecontent">Added DockingPane::Options::AnimationDelay</td></tr>
+<tr><td class="issuecontent" align="right">3</td><td class="issuecontent">New feature</td><td class="issuecontent">LoadStateFromString/SaveStateToString methods added</td></tr>
+</table></div></div>
+</div>
+</td></tr>
+<tr class="row">
+<td class="content"><IMG alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div8.51">Version 8.51</td>
+<td class="content">September 29, 2003</td>
+</tr>
+<tr id="div8.51" bgcolor="#ffffff">
+<td colspan="2" style="padding-top: 10px;padding-bottom: 10px;">
+<div id="divcategory_mfc_8.51" style="display:">
+<div id="divproduct_xtp_mfc_8.51_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_xtp_mfc_8.51_body"><i>Xtreme Toolkit Pro</i></div>
+<div style="padding-left: 20px;" id="div_xtp_mfc_8.51_body">
+<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+<tr>
+<td width="20" class="issuehdr" align="right">#</td>
+<td width="100" class="issuehdr" nowrap="1">Type</td>
+<td class="issuehdr">Description</td></tr>
+<tr><td class="issuecontent" align="right">1</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Splitter fixed</td></tr>
+<tr><td class="issuecontent" align="right">2</td><td class="issuecontent">New feature</td><td class="issuecontent">ShortcutBar sample added</td></tr>
+</table></div></div>
+<div id="divproduct_xcb_mfc_8.51_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_xcb_mfc_8.51_body"><i>Xtreme Command Bars</i></div>
+<div style="padding-left: 20px;" id="div_xcb_mfc_8.51_body">
+<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+<tr>
+<td width="20" class="issuehdr" align="right">#</td>
+<td width="100" class="issuehdr" nowrap="1">Type</td>
+<td class="issuehdr">Description</td></tr>
+<tr><td class="issuecontent" align="right">1</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed Context Popup to send commands to the main frame instead of to the owner</td></tr>
+<tr><td class="issuecontent" align="right">2</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed bug in restoring user image</td></tr>
+</table></div></div>
+<div id="divproduct_xpg_mfc_8.51_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_xpg_mfc_8.51_body"><i>Xtreme Property Grid</i></div>
+<div style="padding-left: 20px;" id="div_xpg_mfc_8.51_body">
+<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+<tr>
+<td width="20" class="issuehdr" align="right">#</td>
+<td width="100" class="issuehdr" nowrap="1">Type</td>
+<td class="issuehdr">Description</td></tr>
+<tr><td class="issuecontent" align="right">1</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Item's value can now be changed by a double click to the item's caption</td></tr>
+</table></div></div>
+<div id="divproduct_xdp_mfc_8.51_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_xdp_mfc_8.51_body"><i>Xtreme Docking Pane</i></div>
+<div style="padding-left: 20px;" id="div_xdp_mfc_8.51_body">
+<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+<tr>
+<td width="20" class="issuehdr" align="right">#</td>
+<td width="100" class="issuehdr" nowrap="1">Type</td>
+<td class="issuehdr">Description</td></tr>
+<tr><td class="issuecontent" align="right">1</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Changes in architecture. It is now possible to have some Docking Panes managers with different themes</td></tr>
+</table></div></div>
+</div>
+<div id="divcategory_ax_8.51" style="display:none"></div>
+</td></tr>
+<tr class="row">
+<td class="content"><IMG alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div8.50">Version 8.50</td>
+<td class="content">September 18, 2003</td>
+</tr>
+<tr id="div8.50" bgcolor="#ffffff">
+<td colspan="2" style="padding-top: 10px;padding-bottom: 10px;">
+<div id="divcategory_mfc_8.50" style="display:">
+<div id="divproduct_xcb_mfc_8.50_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_xcb_mfc_8.50_body"><i>Xtreme Command Bars</i></div>
+<div style="padding-left: 20px;" id="div_xcb_mfc_8.50_body">
+<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+<tr>
+<td width="20" class="issuehdr" align="right">#</td>
+<td width="100" class="issuehdr" nowrap="1">Type</td>
+<td class="issuehdr">Description</td></tr>
+<tr><td class="issuecontent" align="right">1</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Office2003 Splitter fix</td></tr>
+<tr><td class="issuecontent" align="right">2</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Office2003 Shadow fix (more  blue in Blue theme, more olive and silver in Olive and Silver themes)</td></tr>
+<tr><td class="issuecontent" align="right">3</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Enhanced Office2003 theme</td></tr>
+<tr><td class="issuecontent" align="right">4</td><td class="issuecontent">New feature</td><td class="issuecontent">CommandBars Designer added</td></tr>
+<tr><td class="issuecontent" align="right">5</td><td class="issuecontent">New feature</td><td class="issuecontent">Added Flags to CXTPTabClientWnd class (xtpWorkspaceHideArrows, xtpWorkspaceHideClose, xtpWorkspaceHideAll)</td></tr>
+<tr><td class="issuecontent" align="right">6</td><td class="issuecontent">New feature</td><td class="issuecontent">Image Editor added</td></tr>
+<tr><td class="issuecontent" align="right">7</td><td class="issuecontent">New feature</td><td class="issuecontent">Customization Keyboard Page added</td></tr>
+<tr><td class="issuecontent" align="right">8</td><td class="issuecontent">New feature</td><td class="issuecontent">XTP_COMMANDBARS_OPTIONS::bSyncFloatingBars option added</td></tr>
+<tr><td class="issuecontent" align="right">9</td><td class="issuecontent">New feature</td><td class="issuecontent">XTP_COMMANDBARS_OPTIONS::bShowExpandButtonAlways option added</td></tr>
+<tr><td class="issuecontent" align="right">10</td><td class="issuecontent">New feature</td><td class="issuecontent">WM_XTP_INITCOMMANDSPOPUP notification added</td></tr>
+<tr><td class="issuecontent" align="right">11</td><td class="issuecontent">New feature</td><td class="issuecontent">CXTPControlCustom added</td></tr>
+<tr><td class="issuecontent" align="right">12</td><td class="issuecontent">New feature</td><td class="issuecontent">Added TPM_RETURNCMD flag support for TrackPopupMenu</td></tr>
+<tr><td class="issuecontent" align="right">13</td><td class="issuecontent">New feature</td><td class="issuecontent">Auto Update feature added</td></tr>
+<tr><td class="issuecontent" align="right">14</td><td class="issuecontent">New feature</td><td class="issuecontent">Status Bar 2003 theme added</td></tr>
+<tr><td class="issuecontent" align="right">15</td><td class="issuecontent">New feature</td><td class="issuecontent">Added ability to use Command Bars in Topmost frames and as popup of tray icon</td></tr>
+<tr><td class="issuecontent" align="right">16</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Items can now be activated by keyboard even if they have no accel</td></tr>
+<tr><td class="issuecontent" align="right">17</td><td class="issuecontent">New feature</td><td class="issuecontent">Floating / Docked position can now be changed by double click (XTP_COMMANDBARS_OPTIONS::bDblClickFloating flag added)</td></tr>
+<tr><td class="issuecontent" align="right">18</td><td class="issuecontent">New feature</td><td class="issuecontent">DialogSample added</td></tr>
+<tr><td class="issuecontent" align="right">19</td><td class="issuecontent">New feature</td><td class="issuecontent">CustomizeDlg sample added</td></tr>
+<tr><td class="issuecontent" align="right">20</td><td class="issuecontent">New feature</td><td class="issuecontent">Notification sample added</td></tr>
+<tr><td class="issuecontent" align="right">21</td><td class="issuecontent">New feature</td><td class="issuecontent">CommonControls sample added</td></tr>
+<tr><td class="issuecontent" align="right">22</td><td class="issuecontent">New feature</td><td class="issuecontent">GUI_OneNote added sample added</td></tr>
+</table></div></div>
+<div id="divproduct_xpg_mfc_8.50_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_xpg_mfc_8.50_body"><i>Xtreme Property Grid</i></div>
+<div style="padding-left: 20px;" id="div_xpg_mfc_8.50_body">
+<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+<tr>
+<td width="20" class="issuehdr" align="right">#</td>
+<td width="100" class="issuehdr" nowrap="1">Type</td>
+<td class="issuehdr">Description</td></tr>
+<tr><td class="issuecontent" align="right">1</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Optimization in ResetContrent method</td></tr>
+<tr><td class="issuecontent" align="right">2</td><td class="issuecontent">New feature</td><td class="issuecontent">Ctrl+Left, Ctrl+Right to reposition divider added</td></tr>
+<tr><td class="issuecontent" align="right">3</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Enhanced in Tab key, F4, Alt + Down</td></tr>
+<tr><td class="issuecontent" align="right">4</td><td class="issuecontent">New feature</td><td class="issuecontent">PropertyGridPaintManager added. There are built-in themes: xtpGridThemeDefault, xtpGridThemeNativeWinXP, xtpGridThemeOffice2003, xtpGridThemeCool, xtpGridThemeSimple, xtpGridThemeDelphi</td></tr>
+<tr><td class="issuecontent" align="right">5</td><td class="issuecontent">New feature</td><td class="issuecontent">Bind* function added (BindToString, BindToBol, ...)</td></tr>
+<tr><td class="issuecontent" align="right">6</td><td class="issuecontent">New feature</td><td class="issuecontent">SetConstraintEdit method added</td></tr>
+<tr><td class="issuecontent" align="right">7</td><td class="issuecontent">New feature</td><td class="issuecontent">BindSample added</td></tr>
+</table></div></div>
+<div id="divproduct_xdp_mfc_8.50_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_xdp_mfc_8.50_body"><i>Xtreme Docking Pane</i></div>
+<div style="padding-left: 20px;" id="div_xdp_mfc_8.50_body">
+<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+<tr>
+<td width="20" class="issuehdr" align="right">#</td>
+<td width="100" class="issuehdr" nowrap="1">Type</td>
+<td class="issuehdr">Description</td></tr>
+<tr><td class="issuecontent" align="right">1</td><td class="issuecontent">New feature</td><td class="issuecontent">Office 2003 theme added</td></tr>
+<tr><td class="issuecontent" align="right">2</td><td class="issuecontent">New feature</td><td class="issuecontent">WinXP theme added</td></tr>
+</table></div></div>
+</div>
+<div id="divcategory_ax_8.50" style="display:none"></div>
+</td></tr>
+<tr class="row">
+<td class="content"><IMG alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div8.00">Version 8.00</td>
+<td class="content">July 31, 2003</td>
+</tr>
+<tr id="div8.00" bgcolor="#ffffff">
+<td colspan="2" style="padding-top: 10px;padding-bottom: 10px;">
+<div id="divcategory_mfc_8.00" style="display:">
+<div id="divproduct_xtp_mfc_8.00_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_xtp_mfc_8.00_body"><i>Xtreme Toolkit Pro</i></div>
+<div style="padding-left: 20px;" id="div_xtp_mfc_8.00_body">
+<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+<tr>
+<td width="20" class="issuehdr" align="right">#</td>
+<td width="100" class="issuehdr" nowrap="1">Type</td>
+<td class="issuehdr">Description</td></tr>
+<tr><td class="issuecontent" align="right">1</td><td class="issuecontent">New feature</td><td class="issuecontent">Initial first release of Xtreme Toolkit Pro</td></tr>
+<tr><td class="issuecontent" align="right">2</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Fixed Deployment wizard with Visual Studio 2003</td></tr>
+<tr><td class="issuecontent" align="right">3</td><td class="issuecontent">New feature</td><td class="issuecontent">PaneOptions sample added</td></tr>
+<tr><td class="issuecontent" align="right">4</td><td class="issuecontent">New feature</td><td class="issuecontent">PrintPreview sample added</td></tr>
+<tr><td class="issuecontent" align="right">5</td><td class="issuecontent">New feature</td><td class="issuecontent">MDITabWindow sample added</td></tr>
+<tr><td class="issuecontent" align="right">6</td><td class="issuecontent">Fixing source</td><td class="issuecontent">XTPToolkit.h renamed as XTToolkitPro.h and XTPResource.rc renamed as XTToolkitPro.rc</td></tr>
+<tr><td class="issuecontent" align="right">7</td><td class="issuecontent">New feature</td><td class="issuecontent">Added evaluation version of Toolkit Pro. (Debug version only!)</td></tr>
+</table></div></div>
+<div id="divproduct_xcb_mfc_8.00_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_xcb_mfc_8.00_body"><i>Xtreme Command Bars</i></div>
+<div style="padding-left: 20px;" id="div_xcb_mfc_8.00_body">
+<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+<tr>
+<td width="20" class="issuehdr" align="right">#</td>
+<td width="100" class="issuehdr" nowrap="1">Type</td>
+<td class="issuehdr">Description</td></tr>
+<tr><td class="issuecontent" align="right">1</td><td class="issuecontent">New feature</td><td class="issuecontent">Added Customization! (Customization Dialog, Customization Toolbars and Menus, Customization Popup in "Add or Remove Buttons")</td></tr>
+<tr><td class="issuecontent" align="right">2</td><td class="issuecontent">New feature</td><td class="issuecontent">Tear-off popups added!</td></tr>
+<tr><td class="issuecontent" align="right">3</td><td class="issuecontent">New feature</td><td class="issuecontent">Intellegent Menus added!</td></tr>
+<tr><td class="issuecontent" align="right">4</td><td class="issuecontent">Fixing source</td><td class="issuecontent">XTPToolkit.h renamed as XTCommandBarsPro.h and XTPResource.rc renamed as XTCommandBarsPro.rc</td></tr>
+<tr><td class="issuecontent" align="right">5</td><td class="issuecontent">New feature</td><td class="issuecontent">Added xtpFlagUseMDIMenus flag</td></tr>
+<tr><td class="issuecontent" align="right">6</td><td class="issuecontent">New feature</td><td class="issuecontent">added XTPToolBarFlags enumerator to control docking</td></tr>
+<tr><td class="issuecontent" align="right">7</td><td class="issuecontent">New feature</td><td class="issuecontent">WM_XTP_CREATECOMMNANDBAR notification message added</td></tr>
+<tr><td class="issuecontent" align="right">8</td><td class="issuecontent">New feature</td><td class="issuecontent">WM_XTP_CREATECONTROL notification message added</td></tr>
+<tr><td class="issuecontent" align="right">9</td><td class="issuecontent">Fixing source</td><td class="issuecontent">XTPControlCombooxExt.cpp moved to the Xtreme CommandBars source</td></tr>
+<tr><td class="issuecontent" align="right">10</td><td class="issuecontent">Fixing source</td><td class="issuecontent">XTPControlPopupColor.cpp moved to the Xtreme CommandBars source</td></tr>
+<tr><td class="issuecontent" align="right">11</td><td class="issuecontent">Fixing source</td><td class="issuecontent">XTPTabClientWnd.cpp moved to the Xtreme CommandBars source</td></tr>
+<tr><td class="issuecontent" align="right">12</td><td class="issuecontent">New feature</td><td class="issuecontent">DynamicPopups sample added</td></tr>
+<tr><td class="issuecontent" align="right">13</td><td class="issuecontent">New feature</td><td class="issuecontent">GUI_MsMoney sample added</td></tr>
+<tr><td class="issuecontent" align="right">14</td><td class="issuecontent">New feature</td><td class="issuecontent">TearOffPopups sample added</td></tr>
+<tr><td class="issuecontent" align="right">15</td><td class="issuecontent">New feature</td><td class="issuecontent">IntellegentMenus sample added</td></tr>
+</table></div></div>
+<div id="divproduct_xpg_mfc_8.00_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_xpg_mfc_8.00_body"><i>Xtreme Property Grid</i></div>
+<div style="padding-left: 20px;" id="div_xpg_mfc_8.00_body">
+<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+<tr>
+<td width="20" class="issuehdr" align="right">#</td>
+<td width="100" class="issuehdr" nowrap="1">Type</td>
+<td class="issuehdr">Description</td></tr>
+<tr><td class="issuecontent" align="right">1</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Changing a grid item readonly flag does not result in an immediate redraw</td></tr>
+<tr><td class="issuecontent" align="right">2</td><td class="issuecontent">New feature</td><td class="issuecontent">XTPToolkit.h renamed as XTPropertyGridPro.h and XTPResource.rc renamed as XTPropertyGridPro.rc</td></tr>
+<tr><td class="issuecontent" align="right">3</td><td class="issuecontent">New feature</td><td class="issuecontent">added DECLARE_DYNAMIC and IMPLEMENT_DYNAMIC macros to the CXTPPropertyGridItem derived classes</td></tr>
+<tr><td class="issuecontent" align="right">4</td><td class="issuecontent">New feature</td><td class="issuecontent">SetCustomColors</td></tr>
+</table></div></div>
+<div id="divproduct_xdp_mfc_8.00_caption">
+<div style="padding-left: 15px;padding-bottom: 5px;"><img alt="expand/collapse section" class="expandable" height="9" onclick="changepic()" src="images/minus.gif" width="15" child="div_xdp_mfc_8.00_body"><i>Xtreme Docking Pane</i></div>
+<div style="padding-left: 20px;" id="div_xdp_mfc_8.00_body">
+<table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
+<tr>
+<td width="20" class="issuehdr" align="right">#</td>
+<td width="100" class="issuehdr" nowrap="1">Type</td>
+<td class="issuehdr">Description</td></tr>
+<tr><td class="issuecontent" align="right">1</td><td class="issuecontent">New feature</td><td class="issuecontent">CloseAll method added</td></tr>
+<tr><td class="issuecontent" align="right">2</td><td class="issuecontent">New feature</td><td class="issuecontent">IsPaneFloating method added</td></tr>
+<tr><td class="issuecontent" align="right">3</td><td class="issuecontent">New feature</td><td class="issuecontent">DestroyPane method added</td></tr>
+<tr><td class="issuecontent" align="right">4</td><td class="issuecontent">New feature</td><td class="issuecontent">XTP_DPN_CLOSEPANE notification added</td></tr>
+<tr><td class="issuecontent" align="right">5</td><td class="issuecontent">New feature</td><td class="issuecontent">Added SetOptions/GetOptions to set xtpPaneNoCloseable and xtpPaneNoHideable flags</td></tr>
+<tr><td class="issuecontent" align="right">6</td><td class="issuecontent">Fixing source</td><td class="issuecontent">XTPToolkit.h renamed as XTDockingPanePro.h and XTPResource.rc renamed as XTDockingPanePro.rc</td></tr>
+<tr><td class="issuecontent" align="right">7</td><td class="issuecontent">New feature</td><td class="issuecontent">added CXTPDockingPaneAutoHideWnd::m_dAnimationDelay</td></tr>
+<tr><td class="issuecontent" align="right">8</td><td class="issuecontent">New feature</td><td class="issuecontent">"Auto Hide" and "Close" tooltips added</td></tr>
+<tr><td class="issuecontent" align="right">9</td><td class="issuecontent">Fixing source</td><td class="issuecontent">Some enhances in Visio theme</td></tr>
+<tr><td class="issuecontent" align="right">10</td><td class="issuecontent">New feature</td><td class="issuecontent">Dynamic Panes sample added</td></tr>
+</table></div></div>
+</div>
+<div id="divcategory_ax_8.00" style="display:none"></div>
+</td></tr>
+</table>
+</div>
+</body>
+</html>

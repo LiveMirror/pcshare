@@ -1,0 +1,40 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "XTPDockingPaneResource.h"
+
+/////////////////////////////////////////////////////////////////////////////
+// Language
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_PORTUGUESE, SUBLANG_PORTUGUESE
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifndef _XTP_NO_BINARY_RESOURCES
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+XTP_IDB_DOCKINGPANE_VISIOGRIPPER    BITMAP     DISCARDABLE      "DockingPane/res/VisioGripper.bmp"
+XTP_IDB_DOCKINGPANE_STICKER_CLIENT  BITMAP     DISCARDABLE      "DockingPane/res/DockingStickersClient.bmp"
+XTP_IDB_DOCKINGPANE_STICKERS_BLUE   BITMAP     DISCARDABLE      "DockingPane/res/DockingStickersBlue.bmp"
+XTP_IDB_DOCKINGPANE_STICKERS_OLIVE  BITMAP     DISCARDABLE      "DockingPane/res/DockingStickersOlive.bmp"
+XTP_IDB_DOCKINGPANE_STICKERS_SILVER BITMAP     DISCARDABLE      "DockingPane/res/DockingStickersSilver.bmp"
+
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_DOCKINGPANE_AUTOHIDE     "Ocultar Automaticamente"
+    XTP_IDS_DOCKINGPANE_CLOSE        "Fechar"
+END
+
+#endif    // Language
+/////////////////////////////////////////////////////////////////////////////

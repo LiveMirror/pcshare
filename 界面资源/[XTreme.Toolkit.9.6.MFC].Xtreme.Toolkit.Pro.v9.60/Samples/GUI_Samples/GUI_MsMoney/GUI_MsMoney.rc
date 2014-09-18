@@ -1,0 +1,463 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\GUI_MsMoney.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\CjSample.ico"
+IDR_GUI_MSTYPE          ICON    DISCARDABLE     "res\\GUI_MsMoneyDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\ToolbarNormal.bmp"
+IDR_MAINFRAME_HOT       BITMAP  MOVEABLE PURE   "res\\ToolbarHot.bmp"
+IDR_MAINFRAME_DISABLED  BITMAP  MOVEABLE PURE   "res\\ToolbarDisabled.bmp"
+IDR_MAINFRAME_GREEN     BITMAP  MOVEABLE PURE   "res\\ToolbarNormal_Green.bmp"
+IDR_MAINFRAME_GREEN_HOT BITMAP  MOVEABLE PURE   "res\\ToolbarHot_Green.bmp"
+IDR_MAINFRAME_GREEN_DISABLED BITMAP  MOVEABLE PURE   "res\\ToolbarDisabled_Green.bmp"
+IDR_MAINFRAME_RED       BITMAP  MOVEABLE PURE   "res\\ToolbarNormal_Red.bmp"
+IDR_MAINFRAME_RED_HOT   BITMAP  MOVEABLE PURE   "res\\ToolbarHot_Red.bmp"
+IDR_MAINFRAME_RED_DISABLED BITMAP  MOVEABLE PURE   "res\\ToolbarDisabled_Red.bmp"
+IDB_STARTPAGE           BITMAP  MOVEABLE PURE   "res\\startpage.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  24, 22
+BEGIN
+    BUTTON      ID_NAVIGATE_BACK
+    BUTTON      ID_NAVIGATE_FORWARD
+    BUTTON      ID_NAVIGATE_HOME
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+    SEPARATOR
+    BUTTON      ID_FILE_NEW
+    SEPARATOR
+    BUTTON      ID_PORTFOLIO
+    BUTTON      ID_BILLSDEPOSITS
+    BUTTON      ID_REPORTS
+    BUTTON      ID_ACCOUNTLIST
+    BUTTON      ID_CATEGORIES
+    BUTTON      ID_BUDGET
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        POPUP "&New"
+        BEGIN
+            MENUITEM "New &Account...",             ID_FILE_NEW_NEWACCOUNT
+            MENUITEM "New &File...",                ID_FILE_NEW_NEWFILE
+        END
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "Convert &Quicken File...",    ID_FILE_CONVERTQUICKENFILE
+        MENUITEM SEPARATOR
+        MENUITEM "Password &Manager",           ID_FILE_PASSWORDMANAGER
+        MENUITEM SEPARATOR
+        MENUITEM "&Back Up...",                 ID_FILE_BACKUP
+        MENUITEM "&Restore Backup...",          ID_FILE_RESTOREARCHIEV
+        MENUITEM "&Archive...",                 ID_FILE_ARCHIVE
+        MENUITEM SEPARATOR
+        MENUITEM "&Import...",                  ID_FILE_IMPORT
+        MENUITEM "&Export...",                  ID_FILE_EXPORT
+        MENUITEM SEPARATOR
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "Favorites"
+    BEGIN
+        MENUITEM "Favorites",                   ID_FAVORITES_FAVORITES
+    END
+    POPUP "Tools"
+    BEGIN
+        MENUITEM "Find and Replace...",         ID_TOOLS_FINDANDREPLACE
+        MENUITEM SEPARATOR
+        MENUITEM "&Calculator...",              ID_TOOLS_CALCULATOR
+        MENUITEM "Disconnect",                  ID_TOOLS_DISCONNECT
+        MENUITEM "Upgrade",                     ID_TOOLS_UPGRADE
+        MENUITEM "Customize",                   ID_TOOLS_CUSTOMIZE
+        MENUITEM "&Options...",                 ID_TOOLS_OPTIONS
+    END
+    POPUP "Accounts && Bills"
+    BEGIN
+        MENUITEM "Account List",                ID_ACCOUNTSBILLS_ACCOUNTLIST
+        MENUITEM "Bills && Deposits",           ID_ACCOUNTSBILLS_BILLSDEPOSITS
+
+        MENUITEM "Online Service Manager",      ID_ACCOUNTSBILLS_ONLINESERVICEMANAGER
+
+        MENUITEM SEPARATOR
+        MENUITEM "Cash Flow",                   ID_ACCOUNTSBILLS_CASHFLOW
+        MENUITEM "Calendar",                    ID_ACCOUNTSBILLS_CALENDAR
+        MENUITEM SEPARATOR
+        POPUP "Favorite Accounts"
+        BEGIN
+            MENUITEM "(no favorites yet)",          ID_ACCOUNTSBILLS_FAVORITEACCOUNTS_NOFAVORITESYET
+
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Account Setup",               ID_ACCOUNTSBILLS_ACCOUNTSETUP
+
+        MENUITEM "Categories",                  ID_ACCOUNTSBILLS_CATEGORIES
+    END
+    POPUP "&Investing"
+    BEGIN
+        MENUITEM "Portfolio",                   ID_INVESTING_PORTFOLIO
+        MENUITEM "Online Investing Reserch",    ID_INVESTING_ONLINEINVESTINGRESERCH
+
+        MENUITEM SEPARATOR
+        MENUITEM "Portfolio Analysis",          ID_INVESTING_ONLINEPORTFOLIO
+        MENUITEM "Asset Allocation",            ID_INVESTING_ASSETALLOCATION
+        MENUITEM "Investments Reports",         ID_INVESTING_INVESTMENTSREPPORTS
+
+    END
+    POPUP "&Planner"
+    BEGIN
+        MENUITEM "Lifetime Planner",            ID_PLANNER_LIFETIMEPLANNER
+        MENUITEM "Budget Planner",              ID_PLANNER_BUDGETPLANNER
+        MENUITEM "Debt Planner",                ID_PLANNER_DEBTPLANNER
+        MENUITEM "Insurance Planner",           ID_PLANNER_INSURANCEPLANNER
+        MENUITEM SEPARATOR
+        MENUITEM "Planner Reports",             ID_PLANNER_PLANNERREPORTS
+    END
+    POPUP "Taxes"
+    BEGIN
+        MENUITEM "Tax Estimator",               ID_TAXES_TEXESTIMATOR
+        MENUITEM "Deduction Finder",            ID_TAXES_DEDUCTIONFINDER
+        MENUITEM "Tax Withholding Estimator",   ID_TAXES_TAX
+        MENUITEM "Tax Line Manager",            ID_TAXES_TAXLINEMANAGER
+        MENUITEM SEPARATOR
+        MENUITEM "Tax Settings",                ID_TAXES_TAXSETTINGS
+        MENUITEM SEPARATOR
+        MENUITEM "Tax Reports",                 ID_TAXES_TAXREPORTS
+    END
+    POPUP "Shopping"
+    BEGIN
+        MENUITEM "Shopping Center",             ID_SHOPPING_SHOPPINGCENTER
+        MENUITEM "Broker Center",               ID_SHOPPING_BROKERCENTER
+        MENUITEM "Banking Center",              ID_SHOPPING_BANKINGCENTER
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About Microsoft® Money IDE Sample...", ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "GUI_MsMoney MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "GUI_MsMoney\0"
+            VALUE "LegalCopyright", "©2004 Codejock Software, All Rights Reserved\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "GUI_MsMoney.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "GUI_MsMoney Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "Codejock Microsoft® Money IDE Sample\n\nGUI_Ms\n\n\nGUIMsMoney.Document\nGUI_Ms Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Codejock Microsoft® Money IDE Sample"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NAVIGATE_BACK        "Back\nBack"
+    ID_NAVIGATE_FORWARD     "Forward\nForward"
+    ID_NAVIGATE_HOME        "Home\nHome"
+    ID_ACCOUNTLIST          "Account List\nAccount List"
+    ID_CATEGORIES           "Categories\nCategories"
+    ID_BUDGET               "Budget\nBudget"
+    ID_PORTFOLIO            "Portfolio\nPortfolio"
+    ID_BILLSDEPOSITS        "Bills && Deposits\nBills && Deposits"
+    ID_REPORTS              "Reports\nReports"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\GUI_MsMoney.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

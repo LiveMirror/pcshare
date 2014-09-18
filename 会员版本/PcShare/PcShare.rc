@@ -1,0 +1,1251 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE MOVEABLE PURE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE MOVEABLE PURE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE MOVEABLE PURE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\PcShare.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\无标题21.ico"
+IDI_ICON_DISK_SOFT      ICON    DISCARDABLE     "res\\icon_dis.ico"
+IDI_ICON_DISK_CD        ICON    DISCARDABLE     "RES\\CDDRIVE.ICO"
+IDI_ICON_FILE_EXE       ICON    DISCARDABLE     "res\\ico00002.ico"
+IDI_ICON_DISK_REMOTE    ICON    DISCARDABLE     "RES\\NoFix.ico"
+IDI_ICON_DISK_NET       ICON    DISCARDABLE     "RES\\RemoteDisk.ico"
+IDI_ICON_DISK_HARD      ICON    DISCARDABLE     "RES\\DRIVE.ICO"
+IDI_ICON_DIR_NORMAL     ICON    DISCARDABLE     "RES\\CLSDFOLD.ICO"
+IDI_ICON_FLAG           ICON    DISCARDABLE     "res\\idr_main.ico"
+IDI_ICON_EVENT_NORMAL   ICON    DISCARDABLE     "res\\W95MBX04.ICO"
+IDI_ICON_DIR_OPEN       ICON    DISCARDABLE     "res\\folderopen.ico"
+IDI_ICON_EVENT          ICON    DISCARDABLE     "res\\Ps_Event.ICO"
+IDI_ICON_REG_SZ         ICON    DISCARDABLE     "res\\icon1.ico"
+IDI_ICON_REG_BIN        ICON    DISCARDABLE     "res\\ico00004.ico"
+IDI_ICON_REGT           ICON    DISCARDABLE     "res\\注册表.ico"
+IDI_ICON_TRAN           ICON    DISCARDABLE     "res\\文件下载.ico"
+IDI_ICON_REIP           ICON    DISCARDABLE     "res\\刷新IP.ico"
+IDI_ICON_CLIENT         ICON    DISCARDABLE     "res\\生成客户.ico"
+IDI_ICON_ABOUT          ICON    DISCARDABLE     "res\\相关.ico"
+IDI_ICON_COMPUTER       ICON    DISCARDABLE     "res\\icon_com.ico"
+IDI_ICON_LOGS           ICON    DISCARDABLE     "res\\GenericPicDoc.ico"
+IDI_ICON_LOGTITLE       ICON    DISCARDABLE     "res\\eventlog.ico"
+IDI_ICON_LOCK           ICON    DISCARDABLE     "res\\关.ico"
+IDI_ICON_OPEN           ICON    DISCARDABLE     "res\\勾.ico"
+IDI_ICON_FILE           ICON    DISCARDABLE     "res\\文件管理.ico"
+IDI_ICON_FRAM           ICON    DISCARDABLE     "res\\屏幕监控.ico"
+IDI_ICON_TLNT           ICON    DISCARDABLE     "res\\超级终端.ico"
+IDI_ICON_KEYM           ICON    DISCARDABLE     "res\\键盘记录.ico"
+IDI_ICON_SERV           ICON    DISCARDABLE     "res\\服务管理.ico"
+IDI_ICON_SETUP          ICON    DISCARDABLE     "res\\参数设置2.ico"
+IDI_ICON_MULT           ICON    DISCARDABLE     "res\\视屏.ico"
+IDI_ICON_HELP           ICON    DISCARDABLE     "res\\帮助.ico"
+IDI_ICON_CWND           ICON    DISCARDABLE     "res\\Micro_Extras_014.ico"
+IDI_ICON_PROC           ICON    DISCARDABLE     "res\\进程管理7.ico"
+IDI_ICON_MANA_CLIENT    ICON    DISCARDABLE     "res\\窗口.ico"
+IDI_ICON_USERPC         ICON    DISCARDABLE     "res\\用户小电脑.ico"
+IDI_ICON_VMM            ICON    DISCARDABLE     "res\\有摄像头小电脑.ico"
+IDI_ICON_FILE_DOWN      ICON    DISCARDABLE     "res\\icon_fil.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+IDR_TOOLBAR_MULT        BITMAP  MOVEABLE PURE   "res\\toolbar1.bmp"
+IDR_TOOLBAR_FILE        BITMAP  MOVEABLE PURE   "res\\FileToolBar.bmp"
+IDB_BITMAP_FILE_SEARCH  BITMAP  MOVEABLE PURE   "res\\SearchFolderHS.bmp"
+IDB_BITMAP_FILE_DELETE  BITMAP  MOVEABLE PURE   "res\\DeleteFolderHS.bmp"
+IDB_BITMAP_FILE_PREV    BITMAP  MOVEABLE PURE   "res\\GoToParentFolderHS.bmp"
+IDB_BITMAP_FILE_REFRESH BITMAP  MOVEABLE PURE   "res\\RefreshDocViewHS.bmp"
+IDB_BITMAP_FILE_DL      BITMAP  MOVEABLE PURE   "res\\SaveAsWebPageHS.bmp"
+IDR_TOOLBAR_FRAM        BITMAP  MOVEABLE PURE   "res\\toolbar_.bmp"
+IDB_BITMAP_MAIN_ABUT    BITMAP  DISCARDABLE     "res\\关于.bmp"
+IDB_BITMAP_MAIN_CRET    BITMAP  DISCARDABLE     "res\\生成客户.bmp"
+IDB_BITMAP_MAIN_FILE    BITMAP  DISCARDABLE     "res\\文件管理.bmp"
+IDB_BITMAP_MAIN_KEYM    BITMAP  DISCARDABLE     "res\\键盘记录.bmp"
+IDB_BITMAP_MAIN_PROC    BITMAP  DISCARDABLE     "res\\进程管理.bmp"
+IDB_BITMAP_MAIN_REGT    BITMAP  DISCARDABLE     "res\\注册表.bmp"
+IDB_BITMAP_MAIN_REIP    BITMAP  DISCARDABLE     "res\\刷新IP.bmp"
+IDB_BITMAP_MAIN_SERV    BITMAP  DISCARDABLE     "res\\服务管理.bmp"
+IDB_BITMAP_MAIN_SETP    BITMAP  DISCARDABLE     "res\\参数设置.bmp"
+IDB_BITMAP_MAIN_TLNT    BITMAP  DISCARDABLE     "res\\超级终端.bmp"
+IDB_BITMAP_MAIN_PROX    BITMAP  DISCARDABLE     "res\\bitmap_p.bmp"
+IDR_TOOLBAR_FIND        BITMAP  MOVEABLE PURE   "res\\bmp00001.bmp"
+IDB_BITMAP_MAIN_HELP    BITMAP  DISCARDABLE     "res\\帮助图标.bmp"
+IDB_BITMAP_MAIN_CWND    BITMAP  DISCARDABLE     "res\\窗口管理.bmp"
+IDB_BITMAP_MAIN_FRAM    BITMAP  DISCARDABLE     "res\\bitmap1.bmp"
+IDB_BITMAP_MAIN_MULT    BITMAP  DISCARDABLE     "res\\qwqwqwq.bmp"
+IDB_BITMAP_VIDEO_RECORDE_START BITMAP  DISCARDABLE     "res\\开始录像.bmp"
+IDB_BITMAP_VIDEO_RECORDE_STOP BITMAP  DISCARDABLE     "res\\停止录像.bmp"
+IDB_BITMAP_VIDEO_SAVE   BITMAP  DISCARDABLE     "res\\保存视频.bmp"
+IDB_BITMAP_AUDIO_RECORDE_START BITMAP  DISCARDABLE     "res\\开始录音.bmp"
+IDB_BITMAP_AUDIO_RECORDE_STOP BITMAP  DISCARDABLE     "res\\停止录音.bmp"
+IDB_BITMAP_AUDIO_START  BITMAP  DISCARDABLE     "res\\noatun.bmp"
+IDB_BITMAP_PLAY         BITMAP  DISCARDABLE     "res\\Play.bmp"
+IDB_BITMAP_STOP         BITMAP  DISCARDABLE     "res\\Stop.bmp"
+IDB_BITMAP_SAVE         BITMAP  DISCARDABLE     "res\\Save.bmp"
+IDB_BITMAP_MAIN_DL      BITMAP  DISCARDABLE     "res\\未命名.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR MOVEABLE PURE  32, 32
+BEGIN
+    BUTTON      ID_CLIENT_MANA_FILE
+    BUTTON      ID_CLIENT_MANA_FRAM
+    BUTTON      ID_CLIENT_MANA_TLNT
+    BUTTON      ID_CLIENT_MANA_KEYM
+    BUTTON      ID_CLIENT_MANA_PROC
+    BUTTON      ID_CLIENT_MANA_REGT
+    BUTTON      ID_CLIENT_MANA_SERV
+    BUTTON      ID_CLIENT_MANA_CWND
+    BUTTON      ID_CLIENT_MANA_MULT
+    BUTTON      ID_CLIENT_MANA_DL
+    BUTTON      ID_FLUSH_IP
+    BUTTON      ID_GLOBAL_SETUP
+    BUTTON      ID_CLIENT_CREATE
+    BUTTON      ID_ABOUT
+END
+
+IDR_TOOLBAR_MULT TOOLBAR MOVEABLE PURE  24, 24
+BEGIN
+    BUTTON      ID_VIDEO_INIT
+    BUTTON      ID_MULT_START
+    BUTTON      ID_MULT_STOP
+    BUTTON      ID_MULT_SAVE
+    SEPARATOR
+    BUTTON      ID_AUDIO_INIT
+    BUTTON      ID_AUDIO_START
+    BUTTON      ID_AUDIO_STOP
+END
+
+IDR_TOOLBAR_FILE TOOLBAR MOVEABLE PURE  16, 16
+BEGIN
+    BUTTON      ID_FILE_MANA_PREV
+    BUTTON      ID_DIR_FLUSH
+    BUTTON      ID_DIR_FIND_FILE
+    BUTTON      ID_DIR_RIGHT_DOWNLOAD
+    BUTTON      ID_DIR_RIGHT_DELETE
+END
+
+IDR_TOOLBAR_FRAM TOOLBAR MOVEABLE PURE  16, 16
+BEGIN
+    BUTTON      ID_FRAM_SEND_MOUSE
+    BUTTON      ID_FRAME_SEND_CTRL
+    BUTTON      ID_FRAME_SAVE_IMAGE
+    BUTTON      ID_RECORD_START
+    BUTTON      ID_RECORD_STOP
+END
+
+IDR_TOOLBAR_FIND TOOLBAR MOVEABLE PURE  16, 16
+BEGIN
+    BUTTON      ID_DIR_FLUSH
+    BUTTON      ID_DIR_RIGHT_DOWNLOAD
+    BUTTON      ID_DIR_RIGHT_DELETE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 239, 57
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于PcShare"
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "版权所有 无可非议 2003 - 2008",IDC_STATIC_VER,37,15,118,
+                    8
+    PUSHBUTTON      "确定",IDOK,173,11,50,14,WS_GROUP
+    LTEXT           "作者QQ：4564405 PcShare官网：www.pcshares.cn",
+                    IDC_STATIC_QQ,37,35,177,8,SS_NOTIFY
+    ICON            IDR_MAINFRAME,IDC_STATIC,7,8,20,20
+END
+
+IDD_DIALOG_SETUP DIALOG DISCARDABLE  0, 0, 205, 103
+STYLE DS_SYSMODAL | DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "系统参数设置"
+FONT 9, "宋体"
+BEGIN
+    PUSHBUTTON      "确定",IDOK,42,79,50,14
+    EDITTEXT        IDC_EDIT_PORT_MAIN,69,41,30,14,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin1",IDC_SPIN_PORT_MAIN,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS,85,41,11,14
+    PUSHBUTTON      "取消",IDCANCEL,120,79,50,14
+    LTEXT           "侦听端口：",IDC_STATIC,29,44,40,8
+    LTEXT           "连接密码：",IDC_STATIC,105,44,40,8
+    EDITTEXT        IDC_EDIT_PASS,145,41,30,14,ES_AUTOHSCROLL | ES_NUMBER
+    LTEXT           "视频监控图像尺寸：",IDC_STATIC,29,20,72,8
+    COMBOBOX        IDC_COMBO_SIZE,104,17,71,91,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "",IDC_STATIC,4,0,197,72
+END
+
+IDD_DIALOG_CREATE_CLIENT DIALOG DISCARDABLE  0, 0, 257, 213
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "被控制端执行程序参数(不了解参数请选择默认配置)"
+FONT 9, "宋体"
+BEGIN
+    PUSHBUTTON      "生成",IDC_BUTTON_CREATE,53,195,49,15
+    COMBOBOX        IDC_COMBO_IPLIST,69,20,126,171,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_PORT,201,20,41,13,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_SERVICE_NAME,69,68,70,13,ES_AUTOHSCROLL
+    COMBOBOX        IDC_COMBO_PID,185,67,60,124,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_SERVICE_VIEW,69,82,175,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SERVICE_TITLE,69,96,175,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_TITLE,69,130,110,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_GROUP,69,144,110,13,ES_AUTOHSCROLL
+    CONTROL         "启用驱动隐藏",IDC_CHECK_ISSYS,"Button",BS_AUTOCHECKBOX | 
+                    BS_NOTIFY | WS_TABSTOP,185,131,61,10
+    EDITTEXT        IDC_EDIT_SLEEP,69,158,65,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "运行后自动删除EXE文件",IDC_CHECK_ISDEL,"Button",
+                    BS_AUTOCHECKBOX | BS_NOTIFY | WS_TABSTOP,150,160,97,10
+    EDITTEXT        IDC_EDIT_BAK_URL,69,34,126,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "退出",IDCANCEL,161,195,49,15
+    PUSHBUTTON      "测试URL",IDC_BUTTON_FLUSH,201,34,41,14
+    LTEXT           "IP地址[端口]：",IDC_STATIC,11,23,56,8
+    CONTROL         "中转URL：",IDC_CHECK_URL,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,11,36,56,10
+    LTEXT           "客户自带标识：",IDC_STATIC,10,133,56,8
+    LTEXT           "服务文件名称：",IDC_STATIC,10,70,56,8
+    LTEXT           "断线重连超时：",IDC_STATIC,10,161,57,8
+    LTEXT           "秒",IDC_STATIC,138,161,9,8
+    LTEXT           "服务附加描述：",IDC_STATIC,10,99,56,8
+    LTEXT           "服务显示名称：",IDC_STATIC,10,85,56,8
+    GROUPBOX        "新创建服务的参数设置(文件名称不能有空格和非ASCII字符)",
+                    IDC_STATIC,3,56,248,58
+    GROUPBOX        "通信连接相关配置(可以为域名或IP地址)",IDC_STATIC,3,8,
+                    248,45
+    GROUPBOX        "特性参数设置(客户连接密码在参数设置里设置)",IDC_STATIC,
+                    3,119,248,72
+    LTEXT           "客户所属分组：",IDC_STATIC,10,147,57,8
+    LTEXT           "释放位置：",IDC_STATIC,144,70,40,8
+    LTEXT           "目标捆绑文件：",IDC_STATIC,10,176,57,8
+    EDITTEXT        IDC_EDIT_ADD_FILE_NAME,69,172,129,14,ES_AUTOHSCROLL | 
+                    ES_READONLY
+    PUSHBUTTON      "指定文件",IDC_BUTTON_ADDFILE,199,172,46,14
+    CONTROL         "启用键盘监控",IDC_CHECK_ISKEY,"Button",BS_AUTOCHECKBOX | 
+                    BS_NOTIFY | WS_TABSTOP,185,146,61,10
+END
+
+IDD_DIALOG_CLIENT_TITLE DIALOG DISCARDABLE  0, 0, 228, 49
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "修改客户注释"
+FONT 9, "宋体"
+BEGIN
+    EDITTEXT        IDC_EDIT_VALUE,53,11,163,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "确定",IDOK,95,31,50,14
+    LTEXT           "客户注释：",IDC_STATIC_TEXT,11,14,41,8
+END
+
+IDD_DIALOG_FTP DIALOG DISCARDABLE  0, 0, 221, 101
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "FTP刷新本机IP地址到指定URL"
+FONT 9, "宋体"
+BEGIN
+    EDITTEXT        IDC_EDIT_ADDR_FTP,72,6,75,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PORT_FTP,174,6,30,14,ES_AUTOHSCROLL | ES_NUMBER
+    COMBOBOX        IDC_COMBO_IPLIST,72,20,75,171,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_PORT2,174,20,30,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_PATH,72,34,132,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_USER,72,48,132,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PASS,72,62,132,14,ES_PASSWORD | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "刷新IP",IDOK,49,84,50,14
+    LTEXT           "FTP服务器地址：",IDC_STATIC,10,8,61,8
+    LTEXT           "FTP文件路径：",IDC_STATIC,18,37,53,8
+    LTEXT           "用户名称：",IDC_STATIC,30,51,41,8
+    LTEXT           "用户密码：",IDC_STATIC,30,66,41,8
+    PUSHBUTTON      "取消刷新",IDCANCEL,137,84,50,14
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKRECT | SS_SUNKEN,0,80,220,
+                    1
+    LTEXT           "刷新IP地址：",IDC_STATIC,22,22,49,8
+    LTEXT           "端口：",IDC_STATIC,150,10,24,8
+    LTEXT           "端口：",IDC_STATIC,150,24,24,8
+END
+
+IDD_DIALOG_SERVICES DIALOGEX 0, 0, 225, 145
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "服务属性"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_DISP_NAME,54,26,162,12,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_DIST,54,46,162,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    COMBOBOX        IDC_COMBO_TYPE,54,67,162,101,CBS_DROPDOWNLIST | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_EDIT_EXE,9,102,207,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    DEFPUSHBUTTON   "确定",IDOK,45,122,50,14
+    PUSHBUTTON      "取消",IDCANCEL,130,122,50,14
+    LTEXT           "服务名称：",IDC_STATIC,10,9,41,8
+    LTEXT           "Static",IDC_STATIC_NAME,54,9,162,8
+    LTEXT           "显示名称：",IDC_STATIC,10,28,41,8
+    LTEXT           "描    述：",IDC_STATIC,10,48,41,8
+    LTEXT           "可执行文件路径：",IDC_STATIC,10,87,65,8
+    LTEXT           "启动类型：",IDC_STATIC,10,70,41,8
+END
+
+IDD_DIALOG_OPENURL DIALOGEX 0, 0, 201, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "被控端下载指定URL文件(EXE文件)再运行"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_FILE,17,19,166,13,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    DEFPUSHBUTTON   "确定",IDOK,44,38,50,14
+    PUSHBUTTON      "取消",IDCANCEL,113,38,50,14
+    LTEXT           "指定待下载的可执行文件联接[需要加http://]",IDC_STATIC,
+                    18,6,165,8
+END
+
+IDD_DIALOG_UPLOAD DIALOGEX 0, 0, 187, 107
+STYLE DS_SYSMODAL | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "上传执行指定文件"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_PARAM,10,52,169,13,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    CONTROL         "显示运行",IDC_RADIO_SHOW,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,40,71,48,10
+    CONTROL         "隐藏运行",IDC_RADIO_SHOW2,"Button",BS_AUTORADIOBUTTON,
+                    106,71,48,10
+    DEFPUSHBUTTON   "确定",IDOK,36,84,50,14
+    PUSHBUTTON      "取消",IDCANCEL,105,84,50,14
+    LTEXT           "文件路径：",IDC_STATIC,10,6,41,8
+    EDITTEXT        IDC_EDIT_VALUE,10,19,169,13,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    PUSHBUTTON      "选择文件",IDC_BUTTON_FILE,129,3,50,14
+    LTEXT           "执行参数：",IDC_STATIC,10,38,41,8
+END
+
+IDD_DIALOG_LOGIN_DLG DIALOGEX 0, 0, 182, 63
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "PcShare普通会员登录"
+FONT 9, "新宋体", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_USER,72,13,42,14,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_PASS,72,31,42,14,ES_PASSWORD | ES_AUTOHSCROLL | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    PUSHBUTTON      "确定",IDOK,116,13,42,14
+    PUSHBUTTON      "取消",IDCANCEL,116,31,42,14
+    LTEXT           "用户：",IDC_STATIC,46,17,25,8
+    LTEXT           "密码：",IDC_STATIC,46,35,25,8
+    ICON            IDR_MAINFRAME,IDC_STATIC_TITLE,18,20,21,21
+END
+
+IDD_DIALOG_SELECT_TYPE DIALOG DISCARDABLE  0, 0, 187, 89
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "选择被控制端执行文件生成方式"
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,29,73,50,14
+    PUSHBUTTON      "取消",IDCANCEL,108,73,50,14
+    CONTROL         "从远程服务器下载最新免杀文件生成被控制端",
+                    IDC_RADIO_REMOTE,"Button",BS_AUTORADIOBUTTON | WS_GROUP,
+                    5,14,176,10
+    CONTROL         "从本地update目录下取相应文件生成被控制端",
+                    IDC_RADIO_LOCAL,"Button",BS_AUTORADIOBUTTON,5,29,176,10
+    GROUPBOX        "",IDC_STATIC,1,0,185,46
+    CTEXT           "从远程服务器更新一天只能更新3次，一月只能更新30次，从本地生成不受此限制(只记录登录次数)",
+                    IDC_STATIC,3,50,180,23
+END
+
+IDD_DIALOG_REG_EDIT_VALUE DIALOG DISCARDABLE  0, 0, 223, 83
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "编辑键值"
+FONT 9, "宋体"
+BEGIN
+    EDITTEXT        IDC_EDIT_NAME,0,17,223,14,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_TABSTOP
+    EDITTEXT        IDC_EDIT_VALUE,0,47,223,14,ES_AUTOHSCROLL | NOT 
+                    WS_TABSTOP
+    DEFPUSHBUTTON   "确定",IDOK,119,66,50,14
+    PUSHBUTTON      "取消",IDCANCEL,173,66,50,14
+    LTEXT           "数值名称：",IDC_STATIC,0,5,41,8
+    LTEXT           "数值数据：",IDC_STATIC,0,35,41,8
+END
+
+IDD_DIALOG_ATTRIB DIALOG DISCARDABLE  0, 0, 98, 129
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "属性"
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "List1",IDC_LIST_ATTRIB,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_NOCOLUMNHEADER | WS_TABSTOP,0,0,98,
+                    129
+END
+
+IDD_DIALOG_WAITCLIENT DIALOG DISCARDABLE  0, 0, 187, 100
+STYLE DS_MODALFRAME | DS_NOIDLEMSG | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,137,0,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,137,24,50,14
+END
+
+IDD_DIALOG_MESS DIALOGEX 0, 0, 185, 69
+STYLE DS_SYSMODAL | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "发送信息到被控制端"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_FILE,10,19,166,13,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    DEFPUSHBUTTON   "确定",IDOK,32,51,50,14
+    PUSHBUTTON      "取消",IDCANCEL,106,51,50,14
+    LTEXT           "指定信息内容",IDC_STATIC,10,6,49,8
+    CONTROL         "警告信息",IDC_RADIO_TYPE,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,13,38,48,10
+    CONTROL         "提示信息",IDC_RADIO_TYPE2,"Button",BS_AUTORADIOBUTTON,
+                    70,38,48,10
+    CONTROL         "错误信息",IDC_RADIO_TYPE3,"Button",BS_AUTORADIOBUTTON,
+                    127,38,48,10
+END
+
+IDD_DIALOG_LINK DIALOGEX 0, 0, 185, 69
+STYLE DS_SYSMODAL | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "强制被控制端访问指定网页"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_FILE,10,19,166,13,ES_AUTOHSCROLL | NOT 
+                    WS_BORDER,WS_EX_STATICEDGE
+    DEFPUSHBUTTON   "确定",IDOK,32,51,50,14
+    PUSHBUTTON      "取消",IDCANCEL,106,51,50,14
+    LTEXT           "指定网页地址(一定要加http://)",IDC_STATIC,10,6,117,8
+    CONTROL         "显示运行",IDC_RADIO_TYPE,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,34,38,48,10
+    CONTROL         "隐藏运行",IDC_RADIO_TYPE2,"Button",BS_AUTORADIOBUTTON,
+                    105,38,48,10
+END
+
+IDD_DIALOG_WAITTRANS DIALOG DISCARDABLE  0, 0, 187, 100
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,130,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,130,24,50,14
+END
+
+IDD_DIALOG_UPDATE DIALOGEX 0, 0, 187, 53
+STYLE DS_SYSMODAL | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "更新程序(保持5分钟内不要关闭控制台)"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,37,36,50,14
+    PUSHBUTTON      "取消",IDCANCEL,106,36,50,14
+    LTEXT           "指定PcShare更新程序：",IDC_STATIC,10,6,85,8
+    EDITTEXT        IDC_EDIT_VALUE,10,19,169,13,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    PUSHBUTTON      "选择文件",IDC_BUTTON_FILE,129,3,50,14
+END
+
+IDD_DIALOG_FILE_FIND DIALOGEX 0, 0, 140, 293
+STYLE WS_CHILD
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_FILE,28,73,83,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_DIR,28,121,83,12,ES_AUTOHSCROLL | NOT WS_BORDER,
+                    WS_EX_STATICEDGE
+    PUSHBUTTON      "开始搜索",ID_FILE_FIND,46,150,48,16
+    LTEXT           "要搜索的文件名称:",IDC_STATIC,28,62,52,8
+    LTEXT           "搜索目录:",IDC_STATIC,28,111,39,8
+    ICON            IDR_MAINFRAME,IDC_STATIC,59,184,21,21
+END
+
+IDD_DIALOG_FILE_DL DIALOG DISCARDABLE  0, 0, 243, 81
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "正在下载文件到本地。。。"
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "取消",IDCANCEL,191,61,50,14
+    CONTROL         "Progress1",IDC_PROGRESS_FILE,"msctls_progress32",
+                    WS_BORDER,2,63,186,10
+    LTEXT           "Static",ID_FILE_REMOTE,43,36,198,8
+    LTEXT           "Static",ID_FILE_LOCAL,43,49,197,8
+    CONTROL         "Animate1",IDC_ANIMATE_FILE,"SysAnimate32",
+                    ACS_TRANSPARENT | ACS_AUTOPLAY,29,1,20,20
+    LTEXT           "远程文件:",IDC_STATIC,4,36,37,8
+    LTEXT           "本地文件:",IDC_STATIC,4,49,37,8
+END
+
+IDD_DIALOG_GET_LOGIN_TYPE DIALOG DISCARDABLE  0, 0, 148, 85
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "选择启动方式"
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,7,64,50,14
+    PUSHBUTTON      "取消",IDCANCEL,91,64,50,14
+    CONTROL         "登录到服务器更新插件",IDC_RADIO_TYPE,"Button",
+                    BS_AUTORADIOBUTTON,22,17,96,10
+    CONTROL         "直接装载本地目录插件",IDC_RADIO_TYPE2,"Button",
+                    BS_AUTORADIOBUTTON,22,39,96,10
+END
+
+IDD_DIALOG_TOSERVER DIALOG DISCARDABLE  0, 0, 278, 85
+STYLE DS_SYSMODAL | DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "PCSHARE普通会员版本"
+FONT 9, "新宋体"
+BEGIN
+    PUSHBUTTON      "正常启动",IDCANCEL,184,50,86,27
+    EDITTEXT        IDC_EDIT_SERVERADDR,81,9,187,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SERVERPORT,81,29,48,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PWD,199,29,70,14,ES_PASSWORD | ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    DEFPUSHBUTTON   "登录到中转服务器",IDCONNECT,95,50,86,27
+    LTEXT           "中转服务器地址：",IDC_STATIC,11,11,65,8
+    LTEXT           "中转服务器端口：",IDC_STATIC,11,33,65,8
+    LTEXT           "登录服务器密码：",IDC_STATIC,133,33,65,8
+    PUSHBUTTON      "生成中转服务器程序",IDC_CREATE_NETSERVER,6,50,86,27
+END
+
+IDD_DIALOG_SOCKS DIALOG DISCARDABLE  0, 0, 191, 103
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "开启SOCKS代理[SOCK4 SOCKS5]"
+FONT 9, "新宋体"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,30,69,50,14
+    PUSHBUTTON      "取消",IDCANCEL,98,69,50,14
+    LTEXT           "侦听端口：",IDC_STATIC,48,22,41,8
+    LTEXT           "用户名称：",IDC_STATIC,48,36,41,8
+    LTEXT           "用户密码：",IDC_STATIC,48,51,41,8
+    EDITTEXT        IDC_EDIT_PORT,91,19,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_EDIT_USER,91,33,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_PASS,91,47,40,14,ES_AUTOHSCROLL
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 3,0,1,5
+ PRODUCTVERSION 3,0,1,5
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "PcShare 远程控制类应用程序\0"
+            VALUE "FileVersion", "3, 0, 1, 5\0"
+            VALUE "InternalName", "PcShare\0"
+            VALUE "LegalCopyright", "版权所有 (无可非议) 2007 QQ:4564405\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "PcShare.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "PcShare 远程控制\0"
+            VALUE "ProductVersion", "3, 0, 1, 5\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU_FILE_MANA MENU DISCARDABLE 
+BEGIN
+    POPUP "ss"
+    BEGIN
+        MENUITEM "更改被控制端注释",            ID_MODIFY_TITLE
+        POPUP "管理SOCKS服务器"
+        BEGIN
+            MENUITEM "安装SOCKS代理服务器",         ID_CLIENT_START_SOCKS
+            MENUITEM "卸载SOCKS代理服务器",         ID_CLIENT_STOP_SOCKS
+        END
+        POPUP "广播命令到肉机端"
+        BEGIN
+            MENUITEM "肉机更新指定新客户端",        ID_CLIENT_UPDATE_FILE
+            MENUITEM "肉机执行指定上传文件",        ID_CLIENT_UPLOAD_FILE
+            MENUITEM "肉机下载执行指定联接",        ID_CLIENT_OPEN_URL
+            MENUITEM SEPARATOR
+            MENUITEM "发送指定信息到肉机端",        ID_CLIENT_MANA_MESS
+            MENUITEM "强制肉机访问指定网页",        ID_CLIENT_MANA_LINK
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "重启被控制端电脑",            ID_CLIENT_PC_RESTART
+        MENUITEM "关闭被控制端电脑",            ID_CLIENT_PC_SHUTDOWN
+        MENUITEM "卸载被控制端程序",            ID_CLIENT_MANA_UNIN
+        MENUITEM SEPARATOR
+        MENUITEM "选择全部被控制端",            ID_LIST_SELECT_ALL
+        MENUITEM "取消全部被控制端",            ID_LIST_SELECT_NOONE
+        MENUITEM SEPARATOR
+        POPUP "转移客户到新分组"
+        BEGIN
+            MENUITEM "普通客户组",                  ID_VIEW_NORMAL
+        END
+    END
+END
+
+IDR_MENU_ICON MENU DISCARDABLE 
+BEGIN
+    POPUP "11"
+    BEGIN
+        MENUITEM "显示界面",                    ID_ICON_SHOW
+        MENUITEM "关闭程序",                    ID_ICON_EXIT
+    END
+END
+
+IDR_MENU_TAB MENU DISCARDABLE 
+BEGIN
+    POPUP "ss"
+    BEGIN
+        MENUITEM "添加客户分组",                ID_TAB_INSERT_ITEM
+        MENUITEM "修改用户分组",                ID_TAB_EDIT_ITEM
+        MENUITEM "删除客户分组",                ID_TAB_DELETE_ITEM
+    END
+END
+
+IDR_MENU_MANA MENU DISCARDABLE 
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "关闭(&X)",                    ID_EXIT
+    END
+END
+
+IDR_MENU_DIR_RIGHT_EMPTY MENU DISCARDABLE 
+BEGIN
+    POPUP "空"
+    BEGIN
+        MENUITEM "后退",                        ID_FILE_MANA_PREV
+        MENUITEM "刷新",                        ID_DIR_FLUSH
+        MENUITEM "全选",                        ID_DIR_RIGHT_SELALL
+        MENUITEM SEPARATOR
+        MENUITEM "上传文件",                    ID_DIR_RIGHT_UPLOAD
+        MENUITEM "新建文件夹",                  ID_DIR_CREATE
+    END
+END
+
+IDR_MENU_DIR_RIGHT MENU DISCARDABLE 
+BEGIN
+    POPUP "空"
+    BEGIN
+        MENUITEM "打开",                        ID_DIR_RIGHT_OPEN
+        MENUITEM "下载",                        ID_DIR_RIGHT_DOWNLOAD
+        MENUITEM "删除",                        ID_DIR_RIGHT_DELETE
+        MENUITEM "重命名",                      ID_DIR_RIGHT_RENAME
+        MENUITEM "远程运行",                    ID_DIR_RIGHT_EXEC
+        MENUITEM SEPARATOR
+        MENUITEM "属性",                        ID_DIR_RIGHT_ATTRIB
+    END
+END
+
+IDR_MENU_PROC_LIST MENU DISCARDABLE 
+BEGIN
+    POPUP "空"
+    BEGIN
+        MENUITEM "刷新进程列表",                ID_PROCESS_FLUSH
+        MENUITEM "结束当前进程",                ID_PROCESS_KILL
+    END
+END
+
+IDR_MENU_SERVICES MENU DISCARDABLE 
+BEGIN
+    POPUP "ss"
+    BEGIN
+        MENUITEM "刷新列表",                    ID_SERVICES_ENUM
+        MENUITEM SEPARATOR
+        MENUITEM "启动服务",                    ID_SERVICES_START
+        MENUITEM "停止服务",                    ID_SERVICES_STOP
+        MENUITEM "删除服务",                    ID_SERVICES_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "属性",                        ID_SERVICES_ATTRIB
+    END
+END
+
+IDR_KEYM_RIGHT MENU DISCARDABLE 
+BEGIN
+    POPUP "编辑(&E)"
+    BEGIN
+        MENUITEM "清空\tCtrl+P(&P)",            ID_EMPTY
+        MENUITEM SEPARATOR
+        MENUITEM "复制\tCtrl+C(&C)",            ID_EDIT_COPY
+        MENUITEM "保存\tCtrl+S(&S)",            ID_SAVE
+    END
+END
+
+IDR_MENU_TRAN MENU DISCARDABLE 
+BEGIN
+    POPUP "Filetrans"
+    BEGIN
+        MENUITEM "开始下载文件(&S)",            ID_FILE_TRANS_START
+        MENUITEM "停止下载文件(&T)",            ID_FILE_TRANS_STOP
+        MENUITEM "从对列中删除(&F)",            ID_FILE_TRANS_DELETE
+        MENUITEM "删除所有项目(&D)",            ID_FILE_TRANS_DELETE_ALL
+    END
+END
+
+IDR_MAINFRAME MENU DISCARDABLE 
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "退出(&X)",                    ID_ICON_EXIT
+    END
+    POPUP "设置(&W)"
+    BEGIN
+        MENUITEM "参数设置(&S)",                ID_GLOBAL_SETUP
+        MENUITEM "生成客户(&W)",                ID_CLIENT_CREATE
+    END
+    POPUP "用户信息修改(&U)"
+    BEGIN
+        MENUITEM "修改用户密码",                ID_USER_MODIFY_PIN
+        MENUITEM "忘记密码了？",                ID_USER_GET_PIN
+        MENUITEM "设置密码保护",                ID_USER_ADD_PIN
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "关于 PcShare(&A)...",         ID_ABOUT
+    END
+END
+
+IDR_MENU_REGT_RIGHT_EMPTY MENU DISCARDABLE 
+BEGIN
+    POPUP "空"
+    BEGIN
+        POPUP "新建"
+        BEGIN
+            MENUITEM "整型",                        ID_REG_RIGHT_CREATE_INT
+            MENUITEM "字串值",                      ID_REG_RIGHT_CREATE_STR
+            MENUITEM "可扩充字串值",                ID_REG_RIGHT_CREATE_STR_EXT
+
+        END
+        MENUITEM "刷新",                        ID_REG_RIGHT_FLUSH
+    END
+END
+
+IDR_MENU_REGT_RIGHT MENU DISCARDABLE 
+BEGIN
+    POPUP "空"
+    BEGIN
+        MENUITEM "修改",                        ID_REG_RIGHT_MODIFY
+        MENUITEM "删除",                        ID_REG_RIGHT_DELETE
+    END
+END
+
+IDR_MENU_REGT_LEFT MENU DISCARDABLE 
+BEGIN
+    POPUP "空"
+    BEGIN
+        MENUITEM "删除",                        ID_REG_LEFT_DELETE
+    END
+END
+
+IDR_MENU_FRAM MENU DISCARDABLE 
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "退出(&X)",                    ID_EXIT
+    END
+    POPUP "控制(&K)"
+    BEGIN
+        MENUITEM "发送Ctrl+Alt+Del(&F)",        ID_FRAME_SEND_CTRL
+        MENUITEM "发送键盘和鼠标(&M)",          ID_FRAM_SEND_MOUSE
+        MENUITEM "保存当前屏幕(&S)",            ID_FRAME_SAVE_IMAGE
+    END
+END
+
+IDR_MENU_LOGS MENU DISCARDABLE 
+BEGIN
+    POPUP "ss"
+    BEGIN
+        MENUITEM "删除选定日志",                ID_LOGS_DELETE_ITEM
+        MENUITEM "清空日志列表",                ID_LOGS_EMPTY
+        MENUITEM "保存日志列表",                ID_LOGS_SAVE
+    END
+END
+
+IDR_MENU_CWND_LIST MENU DISCARDABLE 
+BEGIN
+    POPUP "空"
+    BEGIN
+        MENUITEM "刷新窗口列表",                ID_CWND_FLUSH
+        MENUITEM SEPARATOR
+        MENUITEM "最大化窗口",                  ID_CWND_MAX
+        MENUITEM "最小化窗口",                  ID_CWND_MIN
+        MENUITEM SEPARATOR
+        MENUITEM "显示当前窗口",                ID_CWND_SHOW
+        MENUITEM "隐藏当前窗口",                ID_CWND_HIDE
+        MENUITEM "关闭当前窗口",                ID_CWND_CLOSE
+    END
+END
+
+IDR_MENU_EDIT MENU DISCARDABLE 
+BEGIN
+    POPUP "11"
+    BEGIN
+        MENUITEM "复制(&C)\tCtrl+C",            ID_EDIT_COPY
+        MENUITEM "保存(&S)\tCtrl+S",            ID_FILE_SAVE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO MOVEABLE PURE 
+BEGIN
+    IDD_DIALOG_CREATE_CLIENT, DIALOG
+    BEGIN
+        RIGHTMARGIN, 256
+    END
+
+    IDD_DIALOG_FTP, DIALOG
+    BEGIN
+        RIGHTMARGIN, 220
+    END
+
+    IDD_DIALOG_WAITTRANS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 93
+    END
+
+    IDD_DIALOG_GET_LOGIN_TYPE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 141
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 78
+    END
+
+    IDD_DIALOG_SOCKS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 184
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 96
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_DIALOG_SERVICES DLGINIT
+BEGIN
+    IDC_COMBO_TYPE, 0x403, 5, 0
+0xd4d7, 0xafb6, "\000" 
+    IDC_COMBO_TYPE, 0x403, 5, 0
+0xd6ca, 0xafb6, "\000" 
+    IDC_COMBO_TYPE, 0x403, 7, 0
+0xd1d2, 0xfbbd, 0xc3d3, "\000" 
+    0
+END
+
+IDD_DIALOG_SETUP DLGINIT
+BEGIN
+    IDC_COMBO_SIZE, 0x403, 10, 0
+0x3631, 0x2030, 0x2078, 0x3231, 0x0030, 
+    IDC_COMBO_SIZE, 0x403, 10, 0
+0x3233, 0x2030, 0x2078, 0x3432, 0x0030, 
+    IDC_COMBO_SIZE, 0x403, 10, 0
+0x3731, 0x2036, 0x2078, 0x3431, 0x0034, 
+    IDC_COMBO_SIZE, 0x403, 10, 0
+0x3533, 0x2032, 0x2078, 0x3832, 0x0038, 
+    0
+END
+
+IDD_DIALOG_CREATE_CLIENT DLGINIT
+BEGIN
+    IDC_COMBO_PID, 0x403, 9, 0
+0x5953, 0x5453, 0x4d45, 0x3233, "\000" 
+    IDC_COMBO_PID, 0x403, 13, 0
+0x5250, 0x474f, 0x4152, 0x464d, 0x4c49, 0x5345, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AVI
+//
+
+IDR_AVI_FILE            AVI     MOVEABLE PURE   "res\\Trans.avi"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// MOD
+//
+
+NETSERVER               MOD     DISCARDABLE     "res\\NetServer.exe"
+IPDATA                  MOD     DISCARDABLE     "e:\\备份代码\\tool\\QQWry.dat"
+XVID                    MOD     DISCARDABLE     "e:\\备份代码\\tool\\Xvid.exe"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           " "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "   "
+    AFX_IDS_IDLEMESSAGE     "就绪"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_CLIENT_LINK_COUNT    "共有0个客户"
+    ID_FILE_TRANS_COUNT     "0个"
+    ID_FRAME_SIZE           "0×0"
+    ID_OWNER                "会员版、个人版购买请联系客服QQ：[35065256][471806317] 定做版本请联系作者QQ：[4564405]"
+    IDS_UPDATEPANE          " "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_CLIENT_MANAGER       "管理客户计算机\n管理客户计算机"
+    ID_CLIENT_CREATE        "创建客户\n创建客户"
+    ID_CLIENT_PRO_UNINSTALL "卸载被控制端程序\n卸载被控制端程序"
+    ID_CLIENT_PC_SHUTDOWN   "关闭被控制端电脑\n关闭被控制端电脑"
+    ID_CLIENT_PC_RESTART    "重启被控制端电脑\n重启被控制端电脑"
+    ID_ALIVE_HELP           "在线帮助\n在线帮助"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_GLOBAL_SETUP         "参数设置\n参数设置"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_DELETE_FILE_TRANS    "清空文件传输列表\n清空文件传输列表"
+    ID_SAVE_LIST_LOG        "保存日志列表\n保存日志列表"
+    ID_FRAME_MONITOR        "监控客户屏幕\n监控客户屏幕"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_MULT_MONITOR         "反向超级终端\n反向超级终端"
+    ID_MONITORKEY           "键盘监控\n键盘监控"
+    ID_TLNT                 "反向超级终端\n反向超级终端"
+    ID_MODIFY_TITLE         "更改被控制端注释\n更改被控制端注释"
+    ID_CLIENT_FILE_MANAGER  "文件管理\n文件管理"
+    ID_REGEDIT              "注册表管理\n注册表管理"
+    ID_PROC                 "进程管理\n进程管理"
+    ID_SERVICE              "服务管理\n服务管理"
+    ID_MUILT                "视频监控\n视频监控"
+    ID_CLIENT_PROXY         "启动客户代理服务\n启动客户代理服务"
+    ID_CLIENT_UPDATE_FILE   "更新被控制端程序\n更新被控制端程序"
+    ID_ICON_SHOW            "显示界面\n显示界面"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_HELP                 "软件使用帮助\n帮  助"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_TRANS_DELETE_ALL "删除所有项目\n删除所有项目"
+    ID_FILE_TRANS_START     "开始下载文件\n开始下载文件"
+    ID_FILE_TRANS_STOP      "停止下载文件\n停止下载文件"
+    ID_FILE_TRANS_DELETE    "从对列中删除任务\n从对列中删除任务"
+    ID_SAVE_FILE            "存储远程文件到本地\n存储远程文件到本地"
+    ID_LIST_DELETE_ITEM     "删除选定日志\n删除选定日志"
+    ID_LIST_EMPTY_ITEM      "清空日志列表\n清空日志列表"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_ICON_EXIT            "关闭程序\n关闭程序"
+    ID_BAT_UPDATE_FILE      "更新被控制端程序\n更新被控制端程序"
+    ID_BAT_OPENURL          "被控制端到指定URL下载文件再执行\n被控制端到指定URL下载文件再执行"
+    ID_BAT_EXEC_FILE        "从本机上传文件到被控制端再执行指定文件\n从本机上传文件到被控制端再执行指定文件"
+    ID_CLIENT_EXEC_FILE     "从本机上传文件到被控制端再执行指定文件\n从本机上传文件到被控制端再执行指定文件"
+    ID_CLIENT_OPEN_URL      "被控制端到指定URL下载文件再执行\n被控制端到指定URL下载文件再执行"
+    ID_FLUSH_IP             "刷新IP\n刷新IP"
+    ID_LIST_SELECT_ALL      "选择全部被控制端\n选择全部被控制端"
+    ID_LIST_SELECT_NOONE    "取消全部被控制端\n取消全部被控制端"
+    ID_QUERY_TITLE          "查看被控制端属性\n查看被控制端属性"
+    ID_QUERY_ATTRIB         "查看被控制端属性\n查看被控制端属性"
+    ID_TAB_INSERT_ITEM      "添加客户分组\n添加客户分组"
+    ID_TAB_DELETE_ITEM      "删除客户分组\n删除客户分组"
+    ID_MANAGE_FILE          "文件下载管理\n文件下载管理"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_NORMAL          "转移客户到普通客户组\n转移客户到普通客户组"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MANA_PREV       "向上\n向上"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_DIR_ATTRIB           "查看对象属性\n查看对象属性"
+    ID_DIR_RIGHT_OPEN       "打开对象\n打开对象"
+    ID_DIR_RIGHT_SELALL     "选取全部对象\n选取全部对象"
+    ID_DIR_RIGHT_EXEC_SHOW  "远程运行文件(带参数运行请到超级终端操作)\n远程运行文件(带参数运行请到超级终端操作)"
+    ID_PROCESS_KILL         "结束当前进程\n结束当前进程"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_DIR_RIGHT_DELETE     "删除\n删除"
+    ID_DIR_RIGHT_RENAME     "重命名对象\n重命名对象"
+    ID_DIR_RIGHT_DOWNLOAD   "下载\n下载"
+    ID_DIR_RIGHT_ATTRIB     "查看对象属性\n查看对象属性"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_REG_LEFT_DELETE      "删除当前键\n删除当前键"
+    ID_DIR_CREATE           "创建目录\n创建目录"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_DIR_FIND_FILE        "查找\n查找"
+    ID_DIR_RIGHT_UPLOAD     "上传运行文件\n上传运行文件"
+    ID_CLIENT_FILE_MANA     "文件管理\n文件管理"
+    ID_CLIENT_MANA_FILE     "文件管理\n文件管理"
+    ID_CLIENT_MANA_TRAN     "下载管理\n下载管理"
+    ID_CLIENT_MANA_FRAM     "屏幕监控\n屏幕监控"
+    ID_CLIENT_MANA_TLNT     "超级终端\n超级终端"
+    ID_CLIENT_MANA_KEYM     "键盘监控\n键盘监控"
+    ID_CLIENT_MANA_PROC     "进程管理\n进程管理"
+    ID_CLIENT_MANA_SERV     "服务管理\n服务管理"
+    ID_CLIENT_MANA_MULI     "视频监控\n视频监控"
+    ID_FRAME_SEND_CTRL      "发送Ctrl+Alt+Del\n发送Ctrl+Alt+Del"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_DIR_FLUSH            "刷新\n刷新"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FRAM_SEND_MOUSE      "发送键盘&鼠标\n发送键盘&鼠标"
+    ID_FRAME_SAVE_IMAGE     "保存屏幕\n保存屏幕"
+    ID_MULT_START           "开始录像\n开始录像"
+    ID_MULT_STOP            "停止录像\n停止录像"
+    ID_MULT_SAVE            "保存视频\n保存视频"
+    ID_CLIENT_UPLOAD_FILE   "上传执行指定文件\n上传执行指定文件"
+    ID_SOFT_INFO            "相关信息\n相关信息"
+    ID_FILE_FLUSH           "刷新当前目录\n刷新当前目录"
+    ID_FILE_PREV            "上一级目录\n上一级目录"
+    ID_TAB_EDIT_ITEM        "修改用户分组\n修改用户分组"
+    ID_CLIENT_MANA_REGT     "注册表管理\n注册表管理"
+    ID_CLIENT_MANA_WIND     "窗口管理\n窗口管理"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EXIT                 "关闭\n关闭"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_CLIENT_MANA_MESS     "发送指定信息到肉机端\n发送指定信息到肉机端"
+    ID_CLIENT_MANA_CWND     "窗口管理\n窗口管理"
+    ID_SYSTEM_LOGS          "管理连接详细日志\n日志管理"
+    ID_CWND_FLUSH           "刷新窗口列表\n刷新窗口列表"
+    ID_CWND_CLOSE           "关闭当前窗口\\关闭当前窗口"
+    ID_CWND_MAX             "最大化窗口\n最大化窗口"
+    ID_CWND_MIN             "最小化窗口\n最小化窗口"
+    ID_CWND_SHOW            "显示当前窗口\n显示当前窗口"
+    ID_CLIENT_MANA_LINK     "强制肉机访问指定网页\n强制肉机访问指定网页"
+    ID_DIR_RIGHT_EXEC       "远程运行文件(非EXE文件、或EXE需要带参数运行请到超级终端操作)\n远程运行文件"
+    ID_TLNT_SAVE            "保存当前内容\n保存当前内容"
+    ID_CLIENT_MANA_PORT     "开启或关闭被控制端代理\n开启或关闭被控制端代理"
+    ID_CLIENT_MANA          "客户计算机系统管理(包括文件管理、进程管理、服务管理、注册表管理、窗口管理等五大功能)\n系统管理"
+    ID_CLIENT_FRAME         "客户计算机屏幕监视和控制\n屏幕监控"
+    ID_CLIENT_MULT          "客户计算机摄像头监控\n视频监控"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_PROCESS_FLUSH        "刷新进程列表\n刷新进程列表"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_COPY            "复制当前内容\n复制当前内容"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_CLIENT_TLNT          "反向超级终端\n超级终端"
+    ID_CLIENT_KEYM          "客户计算机键盘记录\n键盘记录"
+    ID_CLIENT_PROX          "开启或者关闭客户计算机代理服务器\n代理设置"
+    ID_CLIENT_MANA_MULT     "音视频监控\n音视频监控"
+    ID_CLIENT_MANA_UNIN     "卸载被控制端程序(不可恢复)\n卸载被控制端程序"
+    ID_LOGS_DELETE_ITEM     "删除选定日志\n删除选定日志"
+    ID_LOGS_EMPTY           "清空日志列表\n清空日志列表"
+    ID_LOGS_SAVE            "保存日志列表\n保存日志列表"
+    ID_ABOUT                "软件相关信息\n关  于"
+    ID_AUDIO_INIT           "开始监听音频\n开始监听音频"
+    ID_AUDIO_START          "开始录音\n开始录音"
+    ID_AUDIO_STOP           "停止录音\n停止录音"
+    ID_USER_MODIFY_PIN      "修改用户密码\n修改用户密码"
+    ID_USER_GET_PIN         "忘记密码了\n忘记密码了"
+    ID_USER_ADD_PIN         "设置密码保护\n设置密码保护"
+    ID_RECORD_START         "开始录像\n开始录像"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_SAVE                 "保存当前内容\n保存当前内容"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_SAVE            "保存活动文档\n保存"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_RECORD_STOP          "停止录像\n停止录像"
+    ID_VIDEO_INIT           "抓取视频\n抓取视频"
+    ID_CLIENT_MANA_DL       "下载管理\n下载管理"
+    ID_INIT_VIDEO           "开始获取视频\n开始获取视频"
+    ID_CLIENT_START_SOCKS   "安装SOCKS代理服务器\n安装SOCKS代理服务器"
+    ID_CLIENT_STOP_SOCKS    "卸载SOCKS代理服务器\n卸载SOCKS代理服务器"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\PcShare.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

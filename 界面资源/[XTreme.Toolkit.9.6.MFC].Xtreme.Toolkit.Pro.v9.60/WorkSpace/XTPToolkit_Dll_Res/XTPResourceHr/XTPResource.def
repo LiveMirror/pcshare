@@ -1,0 +1,11 @@
+; XTPResourceHr.def : Declares the module parameters for the DLL.
+
+LIBRARY      XTPResourceHr
+DESCRIPTION  'XTPResourceHr Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here
+    GetLangID  @1
+    
+    
+    

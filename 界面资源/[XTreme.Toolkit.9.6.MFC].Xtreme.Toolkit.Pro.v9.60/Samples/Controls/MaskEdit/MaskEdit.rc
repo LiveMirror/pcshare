@@ -1,0 +1,232 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\MaskEdit.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\CjSample.ico"
+IDR_MASKHELP            ICON    DISCARDABLE     "res\\idr_mask.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MASKEDIT_DIALOG DIALOGEX 0, 0, 292, 214
+STYLE WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Codejock Masked Edit Sample"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Mask Edit Properties: ",IDC_GBOX_PROPERTIES,7,7,139,142
+    LTEXT           "&Mask:",IDC_STATIC,21,23,20,8
+    EDITTEXT        IDC_EDIT_MASK,19,34,113,14,ES_AUTOHSCROLL
+    LTEXT           "&Literal: ",IDC_STATIC,19,51,24,8
+    EDITTEXT        IDC_EDIT_LITERAL,19,62,113,14,ES_AUTOHSCROLL
+    CONTROL         "&Replace on backspace",IDC_CHK_DEFAULT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,19,79,90,10
+    EDITTEXT        IDC_EDIT_DEFAULT,19,92,113,14,ES_AUTOHSCROLL
+    LTEXT           "Prompt &Symbol:",IDC_STATIC,19,109,50,8
+    EDITTEXT        IDC_EDIT_PROMPT,19,120,33,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "&Help",IDC_BTN_HELP,7,192,50,14
+    PUSHBUTTON      "&Update Settings",IDC_BTN_UPDATE,58,120,74,14
+    LTEXT           "&Select Mask:",IDC_TXT_MASK,156,7,42,8
+    LISTBOX         IDC_LBOX_MASK,157,16,128,133,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Mask Edit Control ( press insert key to enable/disable type-over ):",
+                    IDC_STATIC,7,155,205,8
+    EDITTEXT        IDC_EDIT_MASKEDIT,7,166,278,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Cancel",IDCANCEL,179,192,50,14
+    DEFPUSHBUTTON   "OK",IDOK,235,192,50,14
+END
+
+IDD_MASKHELP DIALOGEX 0, 0, 371, 198
+STYLE WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Dialog"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,314,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,314,24,50,14
+    CONTROL         "",IDC_BORDER_TAB,"Static",SS_BLACKFRAME | NOT 
+                    WS_VISIBLE,7,7,300,184,WS_EX_STATICEDGE
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "MaskEdit MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "MaskEdit\0"
+            VALUE "LegalCopyright", "©1998-2004 Codejock Software, All Rights Reserved.\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "MaskEdit.EXE\0"
+            VALUE "ProductName", "MaskEdit Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_MASKEDIT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 285
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 207
+    END
+
+    IDD_MASKHELP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 364
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 191
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// HTML
+//
+
+IDR_README              HTML    DISCARDABLE     "res\\readme.htm"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About Masked Edit Sample..."
+    IDS_HLP_TITLE           "Set the mask for the edit control"
+    IDS_HLP_MESSAGE         "Values that can be set for the mask are:\n\n0 - Numeric (0-9)\n9 - Numeric (0-9) or space (' ')\n# - Numeric (0-9) or space (' ') or ('+') or ('-')\nL - Alpha (a-Z)\n? - Alpha (a-Z) or space (' ')\nA - Alpha numeric (0-9 and a-Z)\na - Alpha numeric (0-9 and a-Z) or space (' ')\n& - All print character only\nH - Hex digit (0-9 and A-F)\nX - Hex digit (0-9 and A-F) and space (' ')\n> - Forces characters to upper case (A-Z)\n< - Forces characters to lower case (a-z)\n\nClick on window to close.\n\n "
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\MaskEdit.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

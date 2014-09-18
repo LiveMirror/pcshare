@@ -1,0 +1,274 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\PopupControlDemo.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\CjSample.ico"
+IDI_WORD2000            ICON    DISCARDABLE     "res\\word2000.ico"
+IDI_SAVE                ICON    DISCARDABLE     "res\\ico00003.ico"
+IDI_OPEN                ICON    DISCARDABLE     "res\\ico00004.ico"
+IDI_CROSS               ICON    DISCARDABLE     "res\\cross.ico"
+IDI_LETTER2             ICON    DISCARDABLE     "res\\icon3.ico"
+IDI_CLOSE               ICON    DISCARDABLE     "res\\ico00002.ico"
+IDI_FLAG                ICON    DISCARDABLE     "res\\flag.ico"
+IDI_LETTER              ICON    DISCARDABLE     "res\\letter.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_CLOSEMSN            BITMAP  DISCARDABLE     "res\\CloseMSN.bmp"
+IDB_LOGOMSN             BITMAP  DISCARDABLE     "res\\LogoMSN.bmp"
+IDB_CAPTIONMSN          BITMAP  DISCARDABLE     "res\\CaptionMSN.bmp"
+IDB_CLOSEOFFICE         BITMAP  DISCARDABLE     "res\\CloseOffice.bmp"
+IDB_LOGOOFFICE          BITMAP  DISCARDABLE     "res\\LogoOffice.bmp"
+IDB_CLOSETOOLTIP        BITMAP  DISCARDABLE     "res\\CloseTooltip.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_POPUPWNDDEMO_DIALOG DIALOGEX 0, 0, 227, 129
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Codejock Messenger Popup Sample"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Show",IDC_BUTTON_SHOW,74,107,74,15
+    LTEXT           "Animation",IDC_STATIC,7,7,60,8
+    COMBOBOX        IDC_COMBO_ANIMATION,7,18,104,104,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "ShowDelay, ms",IDC_STATIC,131,33,50,8
+    EDITTEXT        IDC_EDIT_SHOWDELAY,130,44,90,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "AnimationDelay, ms",IDC_STATIC,128,7,73,8
+    EDITTEXT        IDC_EDIT_ANIMATIONDELAY,130,18,90,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    LTEXT           "Theme",IDC_STATIC,7,35,23,8
+    COMBOBOX        IDC_COMBO_THEME,7,44,104,114,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Slider1",IDC_SLIDER_TRANSPARENT,"msctls_trackbar32",
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,128,72,92,9
+    LTEXT           "Transparent (0...255)",IDC_STATIC,129,59,77,8
+    CONTROL         "Allow Move",IDC_CHECK_ALLOWMOVE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,63,104,10
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "PopupControlDemo MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "PopupControlDemo\0"
+            VALUE "LegalCopyright", "Copyright (C) 2004\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "PopupControlDemo.EXE\0"
+            VALUE "ProductName", "PopupControlDemo Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_POPUPWNDDEMO_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 220
+        VERTGUIDE, 111
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 122
+        HORZGUIDE, 44
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_POPUPWNDDEMO_DIALOG DLGINIT
+BEGIN
+    IDC_COMBO_ANIMATION, 0x403, 5, 0
+0x6f4e, 0x656e, "\000" 
+    IDC_COMBO_ANIMATION, 0x403, 5, 0
+0x6146, 0x6564, "\000" 
+    IDC_COMBO_ANIMATION, 0x403, 6, 0
+0x6c53, 0x6469, 0x0065, 
+    IDC_COMBO_ANIMATION, 0x403, 7, 0
+0x6e55, 0x6f66, 0x646c, "\000" 
+    IDC_COMBO_THEME, 0x403, 24, 0
+0x664f, 0x6966, 0x6563, 0x3220, 0x3030, 0x2030, 0x6f50, 0x7570, 0x2070, 
+0x6854, 0x6d65, 0x0065, 
+    IDC_COMBO_THEME, 0x403, 22, 0
+0x664f, 0x6966, 0x6563, 0x5820, 0x2050, 0x6f50, 0x7570, 0x2070, 0x6854, 
+0x6d65, 0x0065, 
+    IDC_COMBO_THEME, 0x403, 23, 0
+0x664f, 0x6966, 0x6563, 0x3220, 0x3030, 0x2033, 0x6f50, 0x7570, 0x5470, 
+0x6568, 0x656d, "\000" 
+    IDC_COMBO_THEME, 0x403, 25, 0
+0x534d, 0x204e, 0x654d, 0x7373, 0x6e65, 0x6567, 0x2072, 0x6f50, 0x7570, 
+0x5470, 0x6568, 0x656d, "\000" 
+    IDC_COMBO_THEME, 0x403, 23, 0
+0x7543, 0x7473, 0x6d6f, 0x4220, 0x756c, 0x2065, 0x6f50, 0x7570, 0x5470, 
+0x6568, 0x656d, "\000" 
+    IDC_COMBO_THEME, 0x403, 24, 0
+0x7543, 0x7473, 0x6d6f, 0x4220, 0x616c, 0x6b63, 0x5020, 0x706f, 0x7075, 
+0x6854, 0x6d65, 0x0065, 
+    IDC_COMBO_THEME, 0x403, 24, 0
+0x7543, 0x7473, 0x6d6f, 0x4720, 0x6572, 0x6e65, 0x5020, 0x706f, 0x7075, 
+0x6854, 0x6d65, 0x0065, 
+    IDC_COMBO_THEME, 0x403, 22, 0
+0x7543, 0x7473, 0x6d6f, 0x5220, 0x6465, 0x5020, 0x706f, 0x7075, 0x6854, 
+0x6d65, 0x0065, 
+    IDC_COMBO_THEME, 0x403, 19, 0
+0x6f54, 0x6c6f, 0x6974, 0x2070, 0x6f50, 0x7570, 0x5470, 0x6568, 0x656d, 
+"\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About Messenger Popup Sample..."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Codejock Popup Control Sample"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\PopupControlDemo.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

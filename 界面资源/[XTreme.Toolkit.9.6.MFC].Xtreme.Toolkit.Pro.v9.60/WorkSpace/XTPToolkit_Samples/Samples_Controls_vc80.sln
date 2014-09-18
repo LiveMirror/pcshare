@@ -1,0 +1,57 @@
+Microsoft Visual Studio Solution File, Format Version 9.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BrowseDialog", "..\..\Samples\Controls\BrowseDialog\BrowseDialog_vc80.vcproj", "{87785737-3895-5695-7331-129289549642}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BrowseEdit", "..\..\Samples\Controls\BrowseEdit\BrowseEdit_vc80.vcproj", "{12612462-9951-3888-3172-348143959792}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Button", "..\..\Samples\Controls\Button\Button_vc80.vcproj", "{77919877-7618-6584-1145-733878992541}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CaptionBar", "..\..\Samples\Controls\CaptionBar\CaptionBar_vc80.vcproj", "{49763288-5761-4671-4142-528877876982}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CheckListBox", "..\..\Samples\Controls\CheckListBox\CheckListBox_vc80.vcproj", "{67233927-3523-8373-5869-456458543449}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ColorPicker", "..\..\Samples\Controls\ColorPicker\ColorPicker_vc80.vcproj", "{92959662-9688-7466-1611-685312863498}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EditListBox", "..\..\Samples\Controls\EditListBox\EditListBox_vc80.vcproj", "{57457967-7347-1162-8773-179147995247}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FlatCombo", "..\..\Samples\Controls\FlatCombo\FlatCombo_vc80.vcproj", "{29111488-5488-8259-2679-865145878789}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FlatHeader", "..\..\Samples\Controls\FlatHeader\FlatHeader_vc80.vcproj", "{57571118-3151-3942-3597-793626456146}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FlatTabCtrl", "..\..\Samples\Controls\FlatTabCtrl\FlatTabCtrl_vc80.vcproj", "{72497852-9316-1144-8248-922579765196}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FlatTabView", "..\..\Samples\Controls\FlatTabView\FlatTabView_vc80.vcproj", "{47795258-7965-4731-6311-426315897945}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HexEdit", "..\..\Samples\Controls\HexEdit\HexEdit_vc80.vcproj", "{11558578-5126-2837-9318-112323782486}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HyperLink", "..\..\Samples\Controls\HyperLink\HyperLink_vc80.vcproj", "{68777925-8293-4921-4686-937377131383}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ListCtrl", "..\..\Samples\Controls\ListCtrl\ListCtrl_vc80.vcproj", "{75291891-4665-7411-1823-192223362661}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MaskEdit", "..\..\Samples\Controls\MaskEdit\MaskEdit_vc80.vcproj", "{31598216-2333-2116-8985-586948494419}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OutlookBar", "..\..\Samples\Controls\OutlookBar\OutlookBar_vc80.vcproj", "{93252527-9474-8294-1882-273956387951}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Pager", "..\..\Samples\Controls\Pager\Pager_vc80.vcproj", "{11177631-5611-9415-2176-892131346598}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PrintPreview", "..\..\Samples\Common\PrintPreview\PrintPreview_vc80.vcproj", "{45884375-3766-7618-7827-131983765548}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SearchOptions", "..\..\Samples\Controls\SearchOptions\SearchOptions_vc80.vcproj", "{91392672-1425-2395-5889-525729897397}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SplitterWindow", "..\..\Samples\Controls\SplitterWindow\SplitterWindow_vc80.vcproj", "{63955992-8576-8492-8887-211727772849}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TabCtrl", "..\..\Samples\Controls\TabCtrl\TabCtrl_vc80.vcproj", "{67389974-6139-2982-3216-263617378181}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TipOfTheDay", "..\..\Samples\Controls\TipOfTheDay\TipOfTheDay_vc80.vcproj", "{89326839-8927-1771-5415-249335311892}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TipWindow", "..\..\Samples\Controls\TipWindow\TipWindow_vc80.vcproj", "{22598598-6576-3464-6989-759461473534}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ToolBoxDemo", "..\..\Samples\Controls\ToolBoxDemo\ToolBoxDemo_vc80.vcproj", "{18487556-4736-2563-6575-421169337282}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TrayIconDemo", "..\..\Samples\Controls\TrayIcon\TrayIconDemo_vc80.vcproj", "{12722548-2381-5253-1894-473959934433}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TrayIconDlg", "..\..\Samples\Controls\TrayIconDlg\TrayIconDlg_vc80.vcproj", "{61774929-8545-5458-4143-576594224598}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TreeCtrl", "..\..\Samples\Controls\TreeCtrl\TreeCtrl_vc80.vcproj", "{92846688-6294-7942-5627-996638475232}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WindowPos", "..\..\Samples\Controls\WindowPos\WindowPos_vc80.vcproj", "{71323888-2671-1438-4697-694439152217}"
+EndProject

@@ -1,0 +1,65 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: PcMake - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\shesh\LOCALS~1\Temp\RSPD6.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "PcMake_EXPORTS" /FR"Release/" /Fp"Release/PcMake.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\开发代码\普通定做\PcMake\Lzw.cpp"
+"D:\开发代码\普通定做\PcMake\MyClientTran.cpp"
+"D:\开发代码\普通定做\PcMake\MyFunc.cpp"
+"D:\开发代码\普通定做\PcMake\MyKillSoft.cpp"
+"D:\开发代码\普通定做\PcMake\MyMainFunc.cpp"
+"D:\开发代码\普通定做\PcMake\MyWorkMoudle.cpp"
+"D:\开发代码\普通定做\PcMake\PcMake.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\shesh\LOCALS~1\Temp\RSPD6.tmp" 
+Creating temporary file "C:\DOCUME~1\shesh\LOCALS~1\Temp\RSPD7.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "PcMake_EXPORTS" /FR"Release/" /Fp"Release/PcMake.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\开发代码\普通定做\PcMake\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\shesh\LOCALS~1\Temp\RSPD7.tmp" 
+Creating temporary file "C:\DOCUME~1\shesh\LOCALS~1\Temp\RSPD8.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib wininet.lib Ws2_32.lib Shlwapi.lib psapi.lib Wtsapi32.lib Userenv.lib /nologo /dll /incremental:no /pdb:"Release/PcMake.pdb" /machine:I386 /def:".\PcMake.def" /out:"../bin/update/PcMake.dll" /implib:"Release/PcMake.lib" /opt:nowin98 
+".\Release\Lzw.obj"
+".\Release\MyClientTran.obj"
+".\Release\MyFunc.obj"
+".\Release\MyKillSoft.obj"
+".\Release\MyMainFunc.obj"
+".\Release\MyWorkMoudle.obj"
+".\Release\PcMake.obj"
+".\Release\StdAfx.obj"
+]
+Creating command line "link.exe @C:\DOCUME~1\shesh\LOCALS~1\Temp\RSPD8.tmp"
+<h3>Output Window</h3>
+Compiling...
+StdAfx.cpp
+Compiling...
+Lzw.cpp
+MyClientTran.cpp
+MyFunc.cpp
+MyKillSoft.cpp
+MyMainFunc.cpp
+MyWorkMoudle.cpp
+PcMake.cpp
+Generating Code...
+Linking...
+   Creating library Release/PcMake.lib and object Release/PcMake.exp
+PcMake.exp : warning LNK4070: /OUT:qedxzzas.dll directive in .EXP differs from output filename "../bin/update/PcMake.dll"; ignoring directive
+Creating command line "bscmake.exe /nologo /o"Release/PcMake.bsc"  ".\Release\StdAfx.sbr" ".\Release\Lzw.sbr" ".\Release\MyClientTran.sbr" ".\Release\MyFunc.sbr" ".\Release\MyKillSoft.sbr" ".\Release\MyMainFunc.sbr" ".\Release\MyWorkMoudle.sbr" ".\Release\PcMake.sbr""
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+PcMake.dll - 0 error(s), 1 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,882 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="7.10"
+	Name="HelpContext"
+
+
+	Keyword="MFCProj">
+	<Platforms>
+		<Platform
+			Name="Win32"/>
+	</Platforms>
+	<Configurations>
+		<Configuration
+			Name="Unicode Debug|Win32"
+			OutputDirectory=".\Unicode_Debug/vc71"
+			IntermediateDirectory=".\Unicode_Debug/vc71"
+			ConfigurationType="1"
+			UseOfMFC="2"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="1">
+			<Tool
+				Name="VCCLCompilerTool"
+				Optimization="0"
+				AdditionalIncludeDirectories="../../../Include,../../AboutDlg"
+				PreprocessorDefinitions="WIN32;_DEBUG;_WINDOWS"
+				BasicRuntimeChecks="3"
+				RuntimeLibrary="3"
+				TreatWChar_tAsBuiltInType="TRUE"
+				UsePrecompiledHeader="3"
+				PrecompiledHeaderThrough="stdafx.h"
+				PrecompiledHeaderFile=".\Unicode_Debug/vc71/HelpContext.pch"
+				AssemblerListingLocation=".\Unicode_Debug/vc71/"
+				ObjectFile=".\Unicode_Debug/vc71/"
+				ProgramDataBaseFileName=".\Unicode_Debug/vc71/"
+				WarningLevel="3"
+				SuppressStartupBanner="TRUE"
+				DebugInformationFormat="4"
+				CompileAs="0"/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCLinkerTool"
+				OutputFile="../../../bin/vc71/HelpContext.exe"
+				LinkIncremental="2"
+				SuppressStartupBanner="TRUE"
+				AdditionalLibraryDirectories="../../../lib/vc71"
+				GenerateDebugInformation="TRUE"
+				ProgramDatabaseFile=".\Unicode_Debug/vc71/HelpContext.pdb"
+				SubSystem="2"
+				EntryPointSymbol="wWinMainCRTStartup"
+				TargetMachine="1"/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="_DEBUG"
+				MkTypLibCompatible="TRUE"
+				SuppressStartupBanner="TRUE"
+				TargetEnvironment="1"
+				TypeLibraryName=".\Unicode_Debug/vc71/HelpContext.tlb"
+				HeaderFileName=""/>
+			<Tool
+				Name="VCPostBuildEventTool"/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="_DEBUG"
+				Culture="1033"
+				AdditionalIncludeDirectories="../../../Include;../../AboutDlg"/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"/>
+			<Tool
+				Name="VCWebDeploymentTool"/>
+			<Tool
+				Name="VCManagedWrapperGeneratorTool"/>
+			<Tool
+				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+		</Configuration>
+		<Configuration
+			Name="Unicode Release|Win32"
+			OutputDirectory=".\Unicode_Release/vc71"
+			IntermediateDirectory=".\Unicode_Release/vc71"
+			ConfigurationType="1"
+			UseOfMFC="2"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="1">
+			<Tool
+				Name="VCCLCompilerTool"
+				Optimization="2"
+				InlineFunctionExpansion="1"
+				AdditionalIncludeDirectories="../../../Include,../../AboutDlg"
+				PreprocessorDefinitions="WIN32;NDEBUG;_WINDOWS"
+				StringPooling="TRUE"
+				RuntimeLibrary="2"
+				EnableFunctionLevelLinking="TRUE"
+				TreatWChar_tAsBuiltInType="TRUE"
+				UsePrecompiledHeader="3"
+				PrecompiledHeaderThrough="stdafx.h"
+				PrecompiledHeaderFile=".\Unicode_Release/vc71/HelpContext.pch"
+				AssemblerListingLocation=".\Unicode_Release/vc71/"
+				ObjectFile=".\Unicode_Release/vc71/"
+				ProgramDataBaseFileName=".\Unicode_Release/vc71/"
+				WarningLevel="3"
+				SuppressStartupBanner="TRUE"
+				CompileAs="0"/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCLinkerTool"
+				OutputFile="../../../bin/vc71/HelpContext.exe"
+				LinkIncremental="1"
+				SuppressStartupBanner="TRUE"
+				AdditionalLibraryDirectories="../../../lib/vc71"
+				ProgramDatabaseFile=".\Unicode_Release/vc71/HelpContext.pdb"
+				SubSystem="2"
+				EntryPointSymbol="wWinMainCRTStartup"
+				TargetMachine="1"/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="NDEBUG"
+				MkTypLibCompatible="TRUE"
+				SuppressStartupBanner="TRUE"
+				TargetEnvironment="1"
+				TypeLibraryName=".\Unicode_Release/vc71/HelpContext.tlb"
+				HeaderFileName=""/>
+			<Tool
+				Name="VCPostBuildEventTool"/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="NDEBUG"
+				Culture="1033"
+				AdditionalIncludeDirectories="../../../Include;../../AboutDlg"/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"/>
+			<Tool
+				Name="VCWebDeploymentTool"/>
+			<Tool
+				Name="VCManagedWrapperGeneratorTool"/>
+			<Tool
+				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+		</Configuration>
+		<Configuration
+			Name="Release|Win32"
+			OutputDirectory=".\Release/vc71"
+			IntermediateDirectory=".\Release/vc71"
+			ConfigurationType="1"
+			UseOfMFC="2"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				Optimization="2"
+				InlineFunctionExpansion="1"
+				AdditionalIncludeDirectories="../../../Include,../../AboutDlg"
+				PreprocessorDefinitions="WIN32;NDEBUG;_WINDOWS"
+				StringPooling="TRUE"
+				RuntimeLibrary="2"
+				EnableFunctionLevelLinking="TRUE"
+				UsePrecompiledHeader="3"
+				PrecompiledHeaderThrough="stdafx.h"
+				PrecompiledHeaderFile=".\Release/vc71/HelpContext.pch"
+				AssemblerListingLocation=".\Release/vc71/"
+				ObjectFile=".\Release/vc71/"
+				ProgramDataBaseFileName=".\Release/vc71/"
+				WarningLevel="3"
+				SuppressStartupBanner="TRUE"
+				CompileAs="0"/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCLinkerTool"
+				OutputFile="../../../bin/vc71/HelpContext.exe"
+				LinkIncremental="1"
+				SuppressStartupBanner="TRUE"
+				AdditionalLibraryDirectories="../../../lib/vc71"
+				ProgramDatabaseFile=".\Release/vc71/HelpContext.pdb"
+				SubSystem="2"
+				TargetMachine="1"/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="NDEBUG"
+				MkTypLibCompatible="TRUE"
+				SuppressStartupBanner="TRUE"
+				TargetEnvironment="1"
+				TypeLibraryName=".\Release/vc71/HelpContext.tlb"
+				HeaderFileName=""/>
+			<Tool
+				Name="VCPostBuildEventTool"/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="NDEBUG"
+				Culture="1033"
+				AdditionalIncludeDirectories="../../../Include;../../AboutDlg"/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"/>
+			<Tool
+				Name="VCWebDeploymentTool"/>
+			<Tool
+				Name="VCManagedWrapperGeneratorTool"/>
+			<Tool
+				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+		</Configuration>
+		<Configuration
+			Name="Debug|Win32"
+			OutputDirectory=".\Debug/vc71"
+			IntermediateDirectory=".\Debug/vc71"
+			ConfigurationType="1"
+			UseOfMFC="2"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				Optimization="0"
+				AdditionalIncludeDirectories="../../../Include,../../AboutDlg"
+				PreprocessorDefinitions="WIN32;_DEBUG;_WINDOWS"
+				BasicRuntimeChecks="3"
+				RuntimeLibrary="3"
+				UsePrecompiledHeader="3"
+				PrecompiledHeaderThrough="stdafx.h"
+				PrecompiledHeaderFile=".\Debug/vc71/HelpContext.pch"
+				AssemblerListingLocation=".\Debug/vc71/"
+				ObjectFile=".\Debug/vc71/"
+				ProgramDataBaseFileName=".\Debug/vc71/"
+				WarningLevel="3"
+				SuppressStartupBanner="TRUE"
+				DebugInformationFormat="4"
+				CompileAs="0"/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCLinkerTool"
+				OutputFile="../../../bin/vc71/HelpContext.exe"
+				LinkIncremental="2"
+				SuppressStartupBanner="TRUE"
+				AdditionalLibraryDirectories="../../../lib/vc71"
+				GenerateDebugInformation="TRUE"
+				ProgramDatabaseFile=".\Debug/vc71/HelpContext.pdb"
+				SubSystem="2"
+				TargetMachine="1"/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="_DEBUG"
+				MkTypLibCompatible="TRUE"
+				SuppressStartupBanner="TRUE"
+				TargetEnvironment="1"
+				TypeLibraryName=".\Debug/vc71/HelpContext.tlb"
+				HeaderFileName=""/>
+			<Tool
+				Name="VCPostBuildEventTool"/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="_DEBUG"
+				Culture="1033"
+				AdditionalIncludeDirectories="../../../Include;../../AboutDlg"/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"/>
+			<Tool
+				Name="VCXMLDataGeneratorTool"/>
+			<Tool
+				Name="VCWebDeploymentTool"/>
+			<Tool
+				Name="VCManagedWrapperGeneratorTool"/>
+			<Tool
+				Name="VCAuxiliaryManagedWrapperGeneratorTool"/>
+		</Configuration>
+	</Configurations>
+	<References>
+	</References>
+	<Files>
+		<Filter
+			Name="Source Files"
+			Filter="cpp;c;cxx;rc;def;r;odl;idl;hpj;bat">
+			<File
+				RelativePath="ChildFrm.cpp">
+				<FileConfiguration
+					Name="Unicode Debug|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="0"
+						AdditionalIncludeDirectories=""
+						PreprocessorDefinitions="WIN32;_DEBUG;_WINDOWS;_AFXDLL;_UNICODE;$(NoInherit)"
+						BasicRuntimeChecks="3"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Unicode Release|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						AdditionalIncludeDirectories=""
+						PreprocessorDefinitions="WIN32;NDEBUG;_WINDOWS;_AFXDLL;_UNICODE;$(NoInherit)"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						AdditionalIncludeDirectories=""
+						PreprocessorDefinitions=""/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="0"
+						AdditionalIncludeDirectories=""
+						PreprocessorDefinitions=""
+						BasicRuntimeChecks="3"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="HelpContext.cpp">
+				<FileConfiguration
+					Name="Unicode Debug|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="0"
+						AdditionalIncludeDirectories=""
+						PreprocessorDefinitions="WIN32;_DEBUG;_WINDOWS;_AFXDLL;_UNICODE;$(NoInherit)"
+						BasicRuntimeChecks="3"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Unicode Release|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						AdditionalIncludeDirectories=""
+						PreprocessorDefinitions="WIN32;NDEBUG;_WINDOWS;_AFXDLL;_UNICODE;$(NoInherit)"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						AdditionalIncludeDirectories=""
+						PreprocessorDefinitions=""/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="0"
+						AdditionalIncludeDirectories=""
+						PreprocessorDefinitions=""
+						BasicRuntimeChecks="3"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="hlp\HelpContext.hpj">
+				<FileConfiguration
+					Name="Unicode Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Making help file..."
+						CommandLine="start /wait hcw /C /E /M &quot;hlp\$(InputName).hpj&quot;
+if errorlevel 1 goto :Error
+if not exist &quot;hlp\$(InputName).hlp&quot; goto :Error
+copy &quot;hlp\$(InputName).hlp&quot; &quot;../../../bin/vc71/$(InputName).hlp&quot;
+goto :done
+:Error
+echo hlp\&quot;$(InputName)&quot;.hpj(1) : error:
+type &quot;hlp\$(InputName).log&quot;
+:done
+exit 0
+"
+						AdditionalDependencies="hlp\AfxCore.rtf;hlp\AfxPrint.rtf;hlp\$(TargetName).hm;"
+						Outputs="../../../bin/vc71/$(InputName).hlp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Unicode Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Making help file..."
+						CommandLine="start /wait hcw /C /E /M &quot;hlp\$(InputName).hpj&quot;
+if errorlevel 1 goto :Error
+if not exist &quot;hlp\$(InputName).hlp&quot; goto :Error
+copy &quot;hlp\$(InputName).hlp&quot; &quot;../../../bin/vc71/$(InputName).hlp&quot;
+goto :done
+:Error
+echo hlp\&quot;$(InputName)&quot;.hpj(1) : error:
+type &quot;hlp\$(InputName).log&quot;
+:done
+exit 0
+"
+						AdditionalDependencies="hlp\AfxCore.rtf;hlp\AfxPrint.rtf;hlp\$(TargetName).hm;"
+						Outputs="../../../bin/vc71/$(InputName).hlp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Making help file..."
+						CommandLine="start /wait hcw /C /E /M &quot;hlp\$(InputName).hpj&quot;
+if errorlevel 1 goto :Error
+if not exist &quot;hlp\$(InputName).hlp&quot; goto :Error
+copy &quot;hlp\$(InputName).hlp&quot; &quot;../../../bin/vc71/$(InputName).hlp&quot;
+goto :done
+:Error
+echo hlp\&quot;$(InputName)&quot;.hpj(1) : error:
+type &quot;hlp\$(InputName).log&quot;
+:done
+exit 0
+"
+						AdditionalDependencies="hlp\AfxCore.rtf;hlp\AfxPrint.rtf;hlp\$(TargetName).hm;"
+						Outputs="../../../bin/vc71/$(InputName).hlp"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Making help file..."
+						CommandLine="start /wait hcw /C /E /M &quot;hlp\$(InputName).hpj&quot;
+if errorlevel 1 goto :Error
+if not exist &quot;hlp\$(InputName).hlp&quot; goto :Error
+copy &quot;hlp\$(InputName).hlp&quot; &quot;../../../bin/vc71/$(InputName).hlp&quot;
+goto :done
+:Error
+echo hlp\&quot;$(InputName)&quot;.hpj(1) : error:
+type &quot;hlp\$(InputName).log&quot;
+:done
+exit 0
+"
+						AdditionalDependencies="hlp\AfxCore.rtf;hlp\AfxPrint.rtf;hlp\$(TargetName).hm;"
+						Outputs="../../../bin/vc71/$(InputName).hlp"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="HelpContext.rc">
+				<FileConfiguration
+					Name="Unicode Debug|Win32">
+					<Tool
+						Name="VCResourceCompilerTool"
+						PreprocessorDefinitions="_DEBUG;_AFXDLL;$(NoInherit)"
+						AdditionalIncludeDirectories=""/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Unicode Release|Win32">
+					<Tool
+						Name="VCResourceCompilerTool"
+						PreprocessorDefinitions="NDEBUG;_AFXDLL;$(NoInherit)"
+						AdditionalIncludeDirectories=""/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCResourceCompilerTool"
+						PreprocessorDefinitions=""
+						AdditionalIncludeDirectories=""/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCResourceCompilerTool"
+						PreprocessorDefinitions=""
+						AdditionalIncludeDirectories=""/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="HelpContextDoc.cpp">
+				<FileConfiguration
+					Name="Unicode Debug|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="0"
+						AdditionalIncludeDirectories=""
+						PreprocessorDefinitions="WIN32;_DEBUG;_WINDOWS;_AFXDLL;_UNICODE;$(NoInherit)"
+						BasicRuntimeChecks="3"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Unicode Release|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						AdditionalIncludeDirectories=""
+						PreprocessorDefinitions="WIN32;NDEBUG;_WINDOWS;_AFXDLL;_UNICODE;$(NoInherit)"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						AdditionalIncludeDirectories=""
+						PreprocessorDefinitions=""/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="0"
+						AdditionalIncludeDirectories=""
+						PreprocessorDefinitions=""
+						BasicRuntimeChecks="3"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="HelpContextView.cpp">
+				<FileConfiguration
+					Name="Unicode Debug|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="0"
+						AdditionalIncludeDirectories=""
+						PreprocessorDefinitions="WIN32;_DEBUG;_WINDOWS;_AFXDLL;_UNICODE;$(NoInherit)"
+						BasicRuntimeChecks="3"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Unicode Release|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						AdditionalIncludeDirectories=""
+						PreprocessorDefinitions="WIN32;NDEBUG;_WINDOWS;_AFXDLL;_UNICODE;$(NoInherit)"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						AdditionalIncludeDirectories=""
+						PreprocessorDefinitions=""/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="0"
+						AdditionalIncludeDirectories=""
+						PreprocessorDefinitions=""
+						BasicRuntimeChecks="3"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="MainFrm.cpp">
+				<FileConfiguration
+					Name="Unicode Debug|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="0"
+						AdditionalIncludeDirectories=""
+						PreprocessorDefinitions="WIN32;_DEBUG;_WINDOWS;_AFXDLL;_UNICODE;$(NoInherit)"
+						BasicRuntimeChecks="3"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Unicode Release|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						AdditionalIncludeDirectories=""
+						PreprocessorDefinitions="WIN32;NDEBUG;_WINDOWS;_AFXDLL;_UNICODE;$(NoInherit)"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						AdditionalIncludeDirectories=""
+						PreprocessorDefinitions=""/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="0"
+						AdditionalIncludeDirectories=""
+						PreprocessorDefinitions=""
+						BasicRuntimeChecks="3"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="StdAfx.cpp">
+				<FileConfiguration
+					Name="Unicode Debug|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="0"
+						AdditionalIncludeDirectories=""
+						PreprocessorDefinitions="WIN32;_DEBUG;_WINDOWS;_AFXDLL;_UNICODE;$(NoInherit)"
+						BasicRuntimeChecks="3"
+						UsePrecompiledHeader="1"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Unicode Release|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						AdditionalIncludeDirectories=""
+						PreprocessorDefinitions="WIN32;NDEBUG;_WINDOWS;_AFXDLL;_UNICODE;$(NoInherit)"
+						UsePrecompiledHeader="1"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="2"
+						AdditionalIncludeDirectories=""
+						PreprocessorDefinitions=""
+						UsePrecompiledHeader="1"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCLCompilerTool"
+						Optimization="0"
+						AdditionalIncludeDirectories=""
+						PreprocessorDefinitions=""
+						BasicRuntimeChecks="3"
+						UsePrecompiledHeader="1"/>
+				</FileConfiguration>
+			</File>
+		</Filter>
+		<Filter
+			Name="Header Files"
+			Filter="h;hpp;hxx;hm;inl">
+			<File
+				RelativePath="ChildFrm.h">
+			</File>
+			<File
+				RelativePath="HelpContext.h">
+			</File>
+			<File
+				RelativePath="HelpContextDoc.h">
+			</File>
+			<File
+				RelativePath="HelpContextView.h">
+			</File>
+			<File
+				RelativePath="MainFrm.h">
+			</File>
+			<File
+				RelativePath="Resource.h">
+				<FileConfiguration
+					Name="Unicode Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Making help include file..."
+						CommandLine="echo. &gt;&quot;hlp\$(TargetName).hm&quot;
+echo // Commands (ID_* and IDM_*) &gt;&gt;&quot;hlp\$(TargetName).hm&quot;
+makehm ID_,HID_,0x10000 IDM_,HIDM_,0x10000 resource.h &gt;&gt;&quot;hlp\$(TargetName).hm&quot;
+echo. &gt;&gt;&quot;hlp\$(TargetName).hm&quot;
+echo // Prompts (IDP_*) &gt;&gt;&quot;hlp\$(TargetName).hm&quot;
+makehm IDP_,HIDP_,0x30000 resource.h &gt;&gt;&quot;hlp\$(TargetName).hm&quot;
+echo. &gt;&gt;&quot;hlp\$(TargetName).hm&quot;
+echo // Resources (IDR_*) &gt;&gt;&quot;hlp\$(TargetName).hm&quot;
+makehm IDR_,HIDR_,0x20000 resource.h &gt;&gt;&quot;hlp\$(TargetName).hm&quot;
+echo. &gt;&gt;&quot;hlp\$(TargetName).hm&quot;
+echo // Dialogs (IDD_*) &gt;&gt;&quot;hlp\$(TargetName).hm&quot;
+makehm IDD_,HIDD_,0x20000 resource.h &gt;&gt;&quot;hlp\$(TargetName).hm&quot;
+echo. &gt;&gt;&quot;hlp\$(TargetName).hm&quot;
+echo // Frame Controls (IDW_*) &gt;&gt;&quot;hlp\$(TargetName).hm&quot;
+makehm IDW_,HIDW_,0x50000 resource.h &gt;&gt;&quot;hlp\$(TargetName).hm&quot;
+"
+						Outputs="hlp\$(TargetName).hm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Unicode Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Making help include file..."
+						CommandLine="echo. &gt;&quot;hlp\$(TargetName).hm&quot;
+echo // Commands (ID_* and IDM_*) &gt;&gt;&quot;hlp\$(TargetName).hm&quot;
+makehm ID_,HID_,0x10000 IDM_,HIDM_,0x10000 resource.h &gt;&gt;&quot;hlp\$(TargetName).hm&quot;
+echo. &gt;&gt;&quot;hlp\$(TargetName).hm&quot;
+echo // Prompts (IDP_*) &gt;&gt;&quot;hlp\$(TargetName).hm&quot;
+makehm IDP_,HIDP_,0x30000 resource.h &gt;&gt;&quot;hlp\$(TargetName).hm&quot;
+echo. &gt;&gt;&quot;hlp\$(TargetName).hm&quot;
+echo // Resources (IDR_*) &gt;&gt;&quot;hlp\$(TargetName).hm&quot;
+makehm IDR_,HIDR_,0x20000 resource.h &gt;&gt;&quot;hlp\$(TargetName).hm&quot;
+echo. &gt;&gt;&quot;hlp\$(TargetName).hm&quot;
+echo // Dialogs (IDD_*) &gt;&gt;&quot;hlp\$(TargetName).hm&quot;
+makehm IDD_,HIDD_,0x20000 resource.h &gt;&gt;&quot;hlp\$(TargetName).hm&quot;
+echo. &gt;&gt;&quot;hlp\$(TargetName).hm&quot;
+echo // Frame Controls (IDW_*) &gt;&gt;&quot;hlp\$(TargetName).hm&quot;
+makehm IDW_,HIDW_,0x50000 resource.h &gt;&gt;&quot;hlp\$(TargetName).hm&quot;
+"
+						Outputs="hlp\$(TargetName).hm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Making help include file..."
+						CommandLine="echo. &gt;&quot;hlp\$(TargetName).hm&quot;
+echo // Commands (ID_* and IDM_*) &gt;&gt;&quot;hlp\$(TargetName).hm&quot;
+makehm ID_,HID_,0x10000 IDM_,HIDM_,0x10000 resource.h &gt;&gt;&quot;hlp\$(TargetName).hm&quot;
+echo. &gt;&gt;&quot;hlp\$(TargetName).hm&quot;
+echo // Prompts (IDP_*) &gt;&gt;&quot;hlp\$(TargetName).hm&quot;
+makehm IDP_,HIDP_,0x30000 resource.h &gt;&gt;&quot;hlp\$(TargetName).hm&quot;
+echo. &gt;&gt;&quot;hlp\$(TargetName).hm&quot;
+echo // Resources (IDR_*) &gt;&gt;&quot;hlp\$(TargetName).hm&quot;
+makehm IDR_,HIDR_,0x20000 resource.h &gt;&gt;&quot;hlp\$(TargetName).hm&quot;
+echo. &gt;&gt;&quot;hlp\$(TargetName).hm&quot;
+echo // Dialogs (IDD_*) &gt;&gt;&quot;hlp\$(TargetName).hm&quot;
+makehm IDD_,HIDD_,0x20000 resource.h &gt;&gt;&quot;hlp\$(TargetName).hm&quot;
+echo. &gt;&gt;&quot;hlp\$(TargetName).hm&quot;
+echo // Frame Controls (IDW_*) &gt;&gt;&quot;hlp\$(TargetName).hm&quot;
+makehm IDW_,HIDW_,0x50000 resource.h &gt;&gt;&quot;hlp\$(TargetName).hm&quot;
+"
+						Outputs="hlp\$(TargetName).hm"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Making help include file..."
+						CommandLine="echo. &gt;&quot;hlp\$(TargetName).hm&quot;
+echo // Commands (ID_* and IDM_*) &gt;&gt;&quot;hlp\$(TargetName).hm&quot;
+makehm ID_,HID_,0x10000 IDM_,HIDM_,0x10000 resource.h &gt;&gt;&quot;hlp\$(TargetName).hm&quot;
+echo. &gt;&gt;&quot;hlp\$(TargetName).hm&quot;
+echo // Prompts (IDP_*) &gt;&gt;&quot;hlp\$(TargetName).hm&quot;
+makehm IDP_,HIDP_,0x30000 resource.h &gt;&gt;&quot;hlp\$(TargetName).hm&quot;
+echo. &gt;&gt;&quot;hlp\$(TargetName).hm&quot;
+echo // Resources (IDR_*) &gt;&gt;&quot;hlp\$(TargetName).hm&quot;
+makehm IDR_,HIDR_,0x20000 resource.h &gt;&gt;&quot;hlp\$(TargetName).hm&quot;
+echo. &gt;&gt;&quot;hlp\$(TargetName).hm&quot;
+echo // Dialogs (IDD_*) &gt;&gt;&quot;hlp\$(TargetName).hm&quot;
+makehm IDD_,HIDD_,0x20000 resource.h &gt;&gt;&quot;hlp\$(TargetName).hm&quot;
+echo. &gt;&gt;&quot;hlp\$(TargetName).hm&quot;
+echo // Frame Controls (IDW_*) &gt;&gt;&quot;hlp\$(TargetName).hm&quot;
+makehm IDW_,HIDW_,0x50000 resource.h &gt;&gt;&quot;hlp\$(TargetName).hm&quot;
+"
+						Outputs="hlp\$(TargetName).hm"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="StdAfx.h">
+			</File>
+		</Filter>
+		<Filter
+			Name="Resource Files"
+			Filter="ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe">
+			<File
+				RelativePath="res\CjSample.ico">
+			</File>
+			<File
+				RelativePath="res\HelpContext.ico">
+			</File>
+			<File
+				RelativePath="res\HelpContext.rc2">
+			</File>
+			<File
+				RelativePath="res\HelpContextDoc.ico">
+			</File>
+			<File
+				RelativePath="res\Toolbar.bmp">
+			</File>
+		</Filter>
+		<Filter
+			Name="Help Files"
+			Filter="cnt;rtf">
+			<File
+				RelativePath="hlp\AfxCore.rtf">
+			</File>
+			<File
+				RelativePath="hlp\AfxPrint.rtf">
+			</File>
+			<File
+				RelativePath="hlp\AppExit.bmp">
+			</File>
+			<File
+				RelativePath="hlp\Bullet.bmp">
+			</File>
+			<File
+				RelativePath="hlp\CurArw2.bmp">
+			</File>
+			<File
+				RelativePath="hlp\CurArw4.bmp">
+			</File>
+			<File
+				RelativePath="hlp\CurHelp.bmp">
+			</File>
+			<File
+				RelativePath="hlp\EditCopy.bmp">
+			</File>
+			<File
+				RelativePath="hlp\EditCut.bmp">
+			</File>
+			<File
+				RelativePath="hlp\EditPast.bmp">
+			</File>
+			<File
+				RelativePath="hlp\EditUndo.bmp">
+			</File>
+			<File
+				RelativePath="hlp\FileNew.bmp">
+			</File>
+			<File
+				RelativePath="hlp\FileOpen.bmp">
+			</File>
+			<File
+				RelativePath="hlp\FilePrnt.bmp">
+			</File>
+			<File
+				RelativePath="hlp\FileSave.bmp">
+			</File>
+			<File
+				RelativePath="hlp\HelpContext.cnt">
+				<FileConfiguration
+					Name="Unicode Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Copying contents file..."
+						CommandLine="copy &quot;hlp\$(InputName).cnt&quot; &quot;../../../bin/vc71/$(InputName).cnt&quot;
+"
+						Outputs="../../../bin/vc71/$(InputName).cnt"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Unicode Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Copying contents file..."
+						CommandLine="copy &quot;hlp\$(InputName).cnt&quot; &quot;../../../bin/vc71/$(InputName).cnt&quot;
+"
+						Outputs="../../../bin/vc71/$(InputName).cnt"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Release|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Copying contents file..."
+						CommandLine="copy &quot;hlp\$(InputName).cnt&quot; &quot;../../../bin/vc71/$(InputName).cnt&quot;
+"
+						Outputs="../../../bin/vc71/$(InputName).cnt"/>
+				</FileConfiguration>
+				<FileConfiguration
+					Name="Debug|Win32">
+					<Tool
+						Name="VCCustomBuildTool"
+						Description="Copying contents file..."
+						CommandLine="copy &quot;hlp\$(InputName).cnt&quot; &quot;../../../bin/vc71/$(InputName).cnt&quot;
+"
+						Outputs="../../../bin/vc71/$(InputName).cnt"/>
+				</FileConfiguration>
+			</File>
+			<File
+				RelativePath="hlp\HlpSBar.bmp">
+			</File>
+			<File
+				RelativePath="hlp\HlpTBar.bmp">
+			</File>
+			<File
+				RelativePath="hlp\RecFirst.bmp">
+			</File>
+			<File
+				RelativePath="hlp\RecLast.bmp">
+			</File>
+			<File
+				RelativePath="hlp\RecNext.bmp">
+			</File>
+			<File
+				RelativePath="hlp\RecPrev.bmp">
+			</File>
+			<File
+				RelativePath="hlp\Scmax.bmp">
+			</File>
+			<File
+				RelativePath="hlp\ScMenu.bmp">
+			</File>
+			<File
+				RelativePath="hlp\Scmin.bmp">
+			</File>
+		</Filter>
+	</Files>
+</VisualStudioProject>

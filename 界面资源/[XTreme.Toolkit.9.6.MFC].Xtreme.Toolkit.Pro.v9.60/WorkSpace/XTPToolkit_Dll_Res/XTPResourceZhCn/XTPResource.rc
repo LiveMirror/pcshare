@@ -1,0 +1,78 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include <XTPResourceDll.h>
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDC_LANG_ARABIC         "阿拉伯语(沙特阿拉伯)"
+    XTP_IDC_LANG_CHINESE_PRC    "中文(中国)"
+    XTP_IDC_LANG_CHINESE_TAIWAN "中文(台湾)"
+    XTP_IDC_LANG_CROATIAN       "克罗地亚语"
+    XTP_IDC_LANG_CZECH          "捷克语"
+    XTP_IDC_LANG_DANISH         "丹麦语"
+    XTP_IDC_LANG_DUTCH          "荷兰语"
+    XTP_IDC_LANG_ENGLISH        "英语(美国)"
+    XTP_IDC_LANG_ESTONIAN       "爱沙尼亚语"
+    XTP_IDC_LANG_FINNISH        "芬兰语"
+    XTP_IDC_LANG_FRENCH         "法语"
+    XTP_IDC_LANG_GERMAN         "德语(德国)"
+    XTP_IDC_LANG_GREEK          "希腊语"
+    XTP_IDC_LANG_HEBREW         "希伯来语"
+    XTP_IDC_LANG_HUNGARIAN      "匈牙利语"
+    XTP_IDC_LANG_ITALIAN        "意大利语(意大利)"
+    XTP_IDC_LANG_JAPANESE       "日语"
+    XTP_IDC_LANG_KOREAN         "朝鲜语"
+    XTP_IDC_LANG_LATVIAN        "拉脱维亚语"
+    XTP_IDC_LANG_LITHUANIAN     "立陶宛语"
+    XTP_IDC_LANG_NORWEGIAN      "挪威语(博克马尔语)"
+    XTP_IDC_LANG_POLISH         "波兰语"
+    XTP_IDC_LANG_PORTUGUESE     "葡萄牙语(葡萄牙)"
+    XTP_IDC_LANG_PORTUGUESE_BR  "葡萄牙语(巴西)"
+    XTP_IDC_LANG_ROMANIAN       "罗马尼亚语"
+    XTP_IDC_LANG_RUSSIAN        "俄语"
+    XTP_IDC_LANG_SLOVAK         "斯洛伐克语"
+    XTP_IDC_LANG_SLOVENIAN      "斯洛文尼亚语"
+    XTP_IDC_LANG_SPANISH        "西班牙语(西班牙 - 现代风格)"
+    XTP_IDC_LANG_SWEDISH        "瑞典语"
+    XTP_IDC_LANG_THAI           "泰语"
+    XTP_IDC_LANG_UKRAINIAN      "乌克兰语"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+#include "res\XTPResource.rc2"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

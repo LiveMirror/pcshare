@@ -1,0 +1,417 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "XTPCommandBarsResource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_UKRAINIAN, SUBLANG_DEFAULT
+#pragma code_page(1251)
+#endif //_WIN32
+
+#ifndef _XTP_NO_BINARY_RESOURCES
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+XTP_IDR_TOOLBAR_TOOLS   BITMAP     DISCARDABLE        "CommandBars/res/ImageEditorIcons.bmp"
+XTP_IDR_TOOLBAR_TOOLS32 BITMAP     DISCARDABLE        "CommandBars/res/ImageEditorIcons32.bmp "
+XTP_IDB_MENUBAR_ICONS   BITMAP     DISCARDABLE        "CommandBars/res/MenuBarIcons.bmp"
+XTP_ID_CUSTOMIZE_CHANGEBUTTONIMAGE BITMAP     DISCARDABLE        "CommandBars/res/UserIcons.bmp"
+XTP_ID_WORKSAPCE_NEWHORIZONTAL BITMAP     DISCARDABLE        "CommandBars/res/TabGroups.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+XTP_IDC_COMMANDBARS_DRAGCOPY CURSOR     DISCARDABLE        "CommandBars/res/dragcopypro.cur"
+XTP_IDC_COMMANDBARS_DRAGMOVE CURSOR     DISCARDABLE        "CommandBars/res/dragmovepro.cur"
+XTP_IDC_COMMANDBARS_DRAGDELETE CURSOR     DISCARDABLE        "CommandBars/res/dragdeletepro.cur"
+XTP_IDC_COMMANDBARS_LINE CURSOR     DISCARDABLE        "CommandBars/res/line.cur"
+XTP_IDC_COMMANDBARS_PICKCOLOR CURSOR     DISCARDABLE        "CommandBars/res/pickcolor.cur"
+XTP_IDC_COMMANDBARS_FILLCOLOR CURSOR     DISCARDABLE        "CommandBars/res/fillcolor.cur"
+XTP_IDC_COMMANDBARS_PENCIL CURSOR     DISCARDABLE        "CommandBars/res/pencil.cur"
+XTP_IDC_WORKSAPCE_NEW   CURSOR     DISCARDABLE        "CommandBars/res/WorksapceNew.cur"
+XTP_IDC_WORKSAPCE_DELETE CURSOR     DISCARDABLE        "CommandBars/res/WorksapceDelete.cur"
+
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+XTP_IDD_IMAGEEDITOR_DIALOG DIALOGEX 0, 0, 253, 185
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Редактор кнопок"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "Малюнок",IDC_STATIC,7,7,23,8
+    GROUPBOX        "Кольори",IDC_STATIC,102,106,80,71
+    GROUPBOX        "Порядок",IDC_STATIC,101,72,81,31
+    GROUPBOX        "Перегляд",IDC_STATIC,7,106,86,71
+    GROUPBOX        "Сервіс",IDC_STATIC,101,9,81,60
+    DEFPUSHBUTTON   "ОК",IDOK,193,7,50,14
+    PUSHBUTTON      "Скасувати",IDCANCEL,193,25,50,14
+    CONTROL         "",XTP_IDC_STATIC_PICTURE,"Static",SS_BLACKFRAME | 
+                    SS_NOTIFY,7,17,86,80
+    CTEXT           "",XTP_IDC_STATIC_PREVIEW,14,117,73,54,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    LTEXT           "Прозорий",IDC_STATIC,135,156,39,8
+    LTEXT           "",XTP_ID_CLR_ERASE,116,153,15,15,SS_NOTIFY
+    CTEXT           "Сервіс",XTP_IDC_STATIC_TOOLS,112,21,60,43,SS_CENTERIMAGE | 
+                    NOT WS_VISIBLE | WS_BORDER
+    CTEXT           "Порядок",XTP_IDC_STATIC_MOVE,111,83,62,12,SS_CENTERIMAGE | 
+                    NOT WS_VISIBLE | WS_BORDER
+    CONTROL         "",XTP_ID_CLR_PICKER,"Static",SS_LEFTNOWORDWRAP | 
+                    SS_NOTIFY | WS_GROUP,109,144,15,15
+    CTEXT           "Кольори",XTP_IDC_STATIC_COLORS,107,121,68,12,
+                    SS_CENTERIMAGE | NOT WS_VISIBLE | WS_BORDER
+END
+
+XTP_IDD_PAGE_KEYBOARD DIALOG DISCARDABLE  0, 0, 230, 150
+STYLE WS_CHILD | WS_CAPTION
+CAPTION "клавішам"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Команди:",XTP_IDC_TXT_COMMANDS,2,28,38,8
+    LISTBOX         XTP_IDC_LBOX_ACCEL_COMMANDS,2,39,93,74,LBS_HASSTRINGS | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Сполучення клавіш:",XTP_IDC_TXT_ASSIGNMENTS,100,28,67,8
+    LISTBOX         XTP_IDC_LBOX_KEYS,100,38,75,49,LBS_HASSTRINGS | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Нове сполучення клавіш:",XTP_IDC_TXT_NEWKEY,100,91,76,8
+    EDITTEXT        XTP_IDC_EDIT_SHORTCUTKEY,100,101,75,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Призначити",XTP_IDC_BTN_ASSIGN,179,39,49,14
+    PUSHBUTTON      "Видалити",XTP_IDC_BTN_REMOVE,179,56,49,14
+    PUSHBUTTON      "Скид",XTP_IDC_BTN_ACCEL_RESET,179,73,49,14
+    LTEXT           "Опис:",XTP_IDC_TXT_DESC_TITLE,2,119,38,8
+    LTEXT           "",XTP_IDC_TXT_DESC_OVERVIEW,2,129,173,19,0,
+                    WS_EX_STATICEDGE
+    LTEXT           "Категорія:",IDC_STATIC,2,5,31,8
+    COMBOBOX        XTP_IDC_COMBO_CATEGORY,2,15,93,147,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+XTP_IDD_PAGE_TOOLBARS DIALOG DISCARDABLE  0, 0, 230, 150
+STYLE WS_CHILD | WS_CAPTION
+CAPTION "Панелі інструментів"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Панелі інструментів:",IDC_STATIC,4,5,41,8
+    LISTBOX         XTP_IDC_LIST_TOOLBARS,4,15,150,131,LBS_OWNERDRAWFIXED | 
+                    LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "Створити...",XTP_IDC_BUTTON_NEW,158,15,70,14
+    PUSHBUTTON      "Перейменувати...",XTP_IDC_BUTTON_RENAME,158,33,70,14
+    PUSHBUTTON      "Видалити",XTP_IDC_BUTTON_DELETE,158,51,70,14
+    PUSHBUTTON      "Скид...",XTP_IDC_BUTTON_RESET,158,69,70,14
+END
+
+XTP_IDD_PAGE_OPTIONS DIALOG DISCARDABLE  0, 0, 230, 150
+STYLE WS_CHILD | WS_CAPTION
+CAPTION "Параметри"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Налаштовувані меню і панелі інструментів",IDC_STATIC,7,5,110,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,122,9,101,1
+    CONTROL         "Завжди показувати повні меню",XTP_IDC_CHECK_FULL_MENUS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,17,207,10
+    CONTROL         "Показувати повні меню після короткої затримки",
+                    XTP_IDC_CHECK_AFTERDELAY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,28,29,195,10
+    PUSHBUTTON      "Скид",
+                    XTP_IDC_BUTTON_RESETDATA,16,42,125,14
+    LTEXT           "Інший",IDC_STATIC,7,70,18,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,29,74,194,1
+    CONTROL         "Великі значки",XTP_IDC_CHECK_LARGEICONS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,16,82,207,10
+    CONTROL         "Показувати підказки для кнопок",XTP_IDC_CHECK_SCREENTTIPS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,93,207,10
+    CONTROL         "Показувати сполучення клавіш у підказках",
+                    XTP_IDC_CHECK_SHORTCUTS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,28,104,195,10
+    LTEXT           "Ефект при відображенні меню:",IDC_STATIC,16,117,56,8
+    COMBOBOX        XTP_IDC_COMBO_ANIMATION,76,115,79,65,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+XTP_IDD_PAGE_COMMANDS DIALOG DISCARDABLE  0, 0, 230, 150
+STYLE WS_CHILD | WS_CAPTION
+CAPTION "Команди"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Щоб додати команду на панель інструментів",
+                    IDC_STATIC,4,5,220,19
+    LTEXT           "Категорії:",IDC_STATIC,4,25,38,8
+    LISTBOX         XTP_IDC_LIST_CATEGORIES,4,35,81,103,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Команди:",IDC_STATIC,90,25,38,8
+    LISTBOX         XTP_IDC_LIST_COMMANDS,90,35,140,103,LBS_OWNERDRAWFIXED | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+XTP_IDD_NEWTOOLBAR DIALOG DISCARDABLE  0, 0, 186, 52
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Створити панель інструментів"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Панель інструментів:",IDC_STATIC,4,4,100,8
+    EDITTEXT        XTP_IDC_EDIT_TOOLBARNAME,4,15,178,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "ОК",IDOK,78,34,50,14
+    PUSHBUTTON      "Скасувати",IDCANCEL,132,34,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+XTP_IDR_CUSTOMIZEMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "Настройка"
+    BEGIN
+        MENUITEM "Скид",                      XTP_ID_CUSTOMIZE_RESET
+        MENUITEM "Видалити",                     XTP_ID_CUSTOMIZE_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "Назва:",                      XTP_ID_CUSTOMIZE_NAME
+        MENUITEM SEPARATOR
+        MENUITEM "Копіювати малюнок на кнопці",          XTP_ID_CUSTOMIZE_COPYBUTTONIMAGE
+
+        MENUITEM "Вставити значок для кнопки",         XTP_ID_CUSTOMIZE_PASTEBUTTONIMAGE
+
+        MENUITEM "Відновити малюнок на кнопці",         XTP_ID_CUSTOMIZE_RESETBUTTONIMAGE
+
+        MENUITEM "Змінити малюнок на кнопці...",       XTP_ID_CUSTOMIZE_EDITBUTTONIMAGE
+
+        MENUITEM "Вибрати значок для кнопки",        XTP_ID_CUSTOMIZE_CHANGEBUTTONIMAGE
+
+        MENUITEM SEPARATOR
+        MENUITEM "Основний стиль",              XTP_ID_CUSTOMIZE_DEFAULTSTYLE
+
+        MENUITEM "Лише текст",                  XTP_ID_CUSTOMIZE_TEXTONLY
+        MENUITEM "Значок і текст",             XTP_ID_CUSTOMIZE_IMAGEANDTEXT
+
+        MENUITEM SEPARATOR
+        MENUITEM "Почати групу",              XTP_ID_CUSTOMIZE_BEGINAGROUP
+    END
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "XTPCommandBarsResource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_ADDORREMOVE     "Додати або видалити кнопки"
+    XTP_IDS_CUSTOMIZE_CLOSE "Закрити"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CUSTOMIZE       "Настройка"
+    XTP_IDS_NEWMENU         "Нове меню"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CONFIRM_RESETDATA 
+                            "Будуть видалені записи про команди"
+    XTP_IDS_INVALID_NUMBER  "Вказано неправильне число."
+    XTP_IDS_INVALID_FONTSIZE "Число должно лежать в диапазоне от 1 до 1638."
+    XTP_IDS_CONFIRM_RESET   "Скасувати зміни в панелі інструментів '%s'?"
+    XTP_IDS_BUILTINMENUS    "Вбудовані меню"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CUSTOM_BAR      "Налаштовувана %d"
+    XTP_IDS_ERROR_BLANKNAME "Необхідно вказати ім'я панелі інструментів."
+    XTP_IDS_ERROR_LIMIT     "Извините, ваш лимит исчерпан."
+    XTP_IDS_ERROR_EXISTS    "Панель інструментів '%s' вже існує. Вкажіть інше ім'я."
+    XTP_IDS_RENAMETOOLBAR   "Перейменування панелі"
+    XTP_IDS_CONFIRM_DELETE  "Видалити панель інструментів '%s'?"
+    XTP_IDS_ALLCOMMANDS     "Всі команди"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_ID_CUSTOMIZE        "\nНастройка..."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CLR_INDIGO      "Індиго"
+    XTP_IDS_CLR_GRAY80      "Сірий 80%"
+    XTP_IDS_CLR_DARK_RED    "Темно-червоний"
+    XTP_IDS_CLR_ORANGE      "Оранжевий"
+    XTP_IDS_CLR_DARK_YELLOW "Коричнево-зелений"
+    XTP_IDS_CLR_GREEN       "Зелений"
+    XTP_IDS_CLR_TEAL        "Синьо-зелений"
+    XTP_IDS_CLR_BLUE        "Синій"
+    XTP_IDS_CLR_BLUEGRAY    "Сизий"
+    XTP_IDS_CLR_GRAY50      "Сірий 50%"
+    XTP_IDS_CLR_RED         "Червоний"
+    XTP_IDS_CLR_LIGHTORANGE "Світло-оранжевий"
+    XTP_IDS_CLR_LIME        "Свiтло-зелений"
+    XTP_IDS_CLR_SEA_GREEN   "Смарагдовий"
+    XTP_IDS_CLR_AQUA        "Темно-бірюзовий"
+    XTP_IDS_CLR_LIGHT_BLUE  "Темно-блакитний"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CLR_VIOLET      "Фіолетовий"
+    XTP_IDS_CLR_GRAY40      "Сірий 40%"
+    XTP_IDS_CLR_PINK        "Ліловий"
+    XTP_IDS_CLR_GOLD        "Золото"
+    XTP_IDS_CLR_YELLOW      "Жовтий"
+    XTP_IDS_CLR_BRIGHT_GREEN "Яскраво-зелений"
+    XTP_IDS_CLR_TURQUOISE   "Бірюзовий"
+    XTP_IDS_CLR_SKY_BLUE    "Блакитний"
+    XTP_IDS_CLR_PLUM        "Вишневий"
+    XTP_IDS_CLR_GRAY25      "Сірий 25%"
+    XTP_IDS_CLR_ROSE        "Рожевий"
+    XTP_IDS_CLR_TAN         "Світло-коричневий"
+    XTP_IDS_CLR_LIGHT_YELLOW "Світло-жовтий"
+    XTP_IDS_CLR_LIGHT_GREEN "Блідо-зелений"
+    XTP_IDS_CLR_LIGHT_TURQUOISE "Світло-бірюзовий"
+    XTP_IDS_CLR_PALE_BLUE   "Блідо-блакитний"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CLR_BLACK       "Чорний"
+    XTP_IDS_CLR_BROWN       "Коричневий"
+    XTP_IDS_CLR_OLIVE_GREEN "Оливковий"
+    XTP_IDS_CLR_DARK_GREEN  "Темно-зелений"
+    XTP_IDS_CLR_DARK_TEAL   "Темно-сизий"
+    XTP_IDS_CLR_DARK_BLUE   "Темно-синій"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CLR_LAVENDER    "Бузковий"
+    XTP_IDS_CLR_WHITE       "Білий"
+    XTP_IDS_CLR_GRAY        "Темно-сірий"
+    XTP_IDS_CLR_MAROON      "Темно-червоний"
+    XTP_IDS_CLR_OLIVE       "Оливковий"
+    XTP_IDS_CLR_NAVY        "Темно-синій"
+    XTP_IDS_CLR_PURPLE      "Фіолетовий"
+    XTP_IDS_CLR_SILVER      "Срібло"
+    XTP_IDS_CLR_FUCHSIA     "Рожевий"
+    XTP_IDS_CLR_NOFILL      "Немає заливки\nНемає заливки"
+    XTP_IDS_AUTOMATIC       "Автоколір\nАвтоколір"
+    XTP_IDS_MORE_COLORS     "Інші кольори..."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CONFIRM_KEYBOARD 
+                            "Вы действительно хотите сбросить назначения клавиш? Это действие удалит все индивидуальные назначения клавиш на текстовом уровне."
+    XTP_IDS_CONFIRM_REASSIGN 
+                            "Эта комбинация клавиш уже используется\nНазначать новою команду для этой комбинации клавиш?"
+    XTP_IDS_CONFIRM_UPDATE  "Due to a software update the toolbar '%s' has changed. Would you like to reset your customized toolbar and load the new one?"
+    XTP_IDS_CUSTOMIZE_RESET "Скид"
+    XTP_IDS_IMAGEEDITOR_FILTER 
+                            "Все файлы рисунков|*.bmp;*.wmf;*.emf;*.ico;*.dib;*.cur;*.gif;*.jpg|Точечные(*.Bmp;*.Dib)|*.bmp;*.dib|Мета-файлы(*.Wmf;*.Emf)|*.wmf;*.emf|Значки(*.Ico;*.Cur)|*.ico;*.cur|GIF(*.Gif)|*.gif|JPEG(*.Jpg)|*.jpg|Все файлы(*.*)|*.*||"
+    XTP_ID_TOOLBAR_EXPAND   "\nПараметри панелей інструментів"
+    XTP_ID_TOOLBAR_HIDE     "\nЗакрити"
+    XTP_ID_MENUBAR_CLOSE    "\nЗакрити вікно"
+    XTP_ID_MENUBAR_RESTORE  "\nВідновити вікно"
+    XTP_ID_MENUBAR_MINIMIZE "\nЗгорнути вікно"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_ID_BUTTON_PENCIL    "\nОлівець"
+    XTP_ID_BUTTON_FILL      "\nКолір заливки"
+    XTP_ID_BUTTON_GETCOLOR  "\nКолір"
+    XTP_ID_BUTTON_LINE      "\nЛінія"
+    XTP_ID_BUTTON_RECTANGLE "\nПрямокутн."
+    XTP_ID_BUTTON_CIRCLE    "\nЕліпс"
+    XTP_ID_BUTTON_COPY      "\nКопіювання"
+    XTP_ID_BUTTON_PASTE     "\nвиконання вставки"
+    XTP_ID_BUTTON_CLEAR     "\nвидалення"
+    XTP_ID_BUTTON_UNDO      "\nСкасувати"
+    XTP_ID_BUTTON_REDO      "\nПовернути"
+    XTP_ID_BUTTON_OPEN      "\nДодати малюнок з файлу"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_ANIMATION_SYSDEF "(За замовчуванням)"
+    XTP_IDS_ANIMATION_RANDOM "Випадковий вибір"
+    XTP_IDS_ANIMATION_UNFOLD "Розгортання"
+    XTP_IDS_ANIMATION_SLIDE "Зісковзування"
+    XTP_IDS_ANIMATION_FADE  "Згасання"
+    XTP_IDS_ANIMATION_NONE  "Немає обтікання"
+    XTP_ID_WORKSAPCE_MOVEPREVIOUS "\nMove to P&revious Tab Group"
+    XTP_ID_WORKSAPCE_MOVENEXT "\nMove to Ne&xt Tab Group"
+    XTP_ID_WORKSAPCE_NEWHORIZONTAL "\nNew Hori&zontal Tab Group"
+    XTP_ID_WORKSAPCE_NEWVERTICAL "\nNew &Vertical Tab Group"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_ID_WORKSAPCE_CANCEL "Скасувати"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

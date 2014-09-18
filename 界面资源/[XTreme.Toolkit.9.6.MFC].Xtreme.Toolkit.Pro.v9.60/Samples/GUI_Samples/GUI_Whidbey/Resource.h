@@ -1,0 +1,178 @@
+//{{NO_DEPENDENCIES}}
+// Microsoft Developer Studio generated include file.
+// Used by GUI_Whidbey.rc
+//
+// This file is a part of the XTREME TOOLKIT PRO MFC class library.
+// ©1998-2005 Codejock Software, All Rights Reserved.
+//
+// THIS SOURCE FILE IS THE PROPERTY OF CODEJOCK SOFTWARE AND IS NOT TO BE
+// RE-DISTRIBUTED BY ANY MEANS WHATSOEVER WITHOUT THE EXPRESSED WRITTEN
+// CONSENT OF CODEJOCK SOFTWARE.
+//
+// THIS SOURCE CODE CAN ONLY BE USED UNDER THE TERMS AND CONDITIONS OUTLINED
+// IN THE XTREME TOOLKIT PRO LICENSE AGREEMENT. CODEJOCK SOFTWARE GRANTS TO
+// YOU (ONE SOFTWARE DEVELOPER) THE LIMITED RIGHT TO USE THIS SOFTWARE ON A
+// SINGLE COMPUTER.
+//
+// CONTACT INFORMATION:
+// support@codejock.com
+// http://www.codejock.com
+//
+/////////////////////////////////////////////////////////////////////////////
+
+#define IDR_MANIFEST                    1
+#define IDD_ABOUTBOX                    100
+#define IDR_MAINFRAME                   128
+#define IDR_GUI_WHTYPE                  129
+#define ID_FILE_NEW_PROJECT             130
+#define ID_FILE_NEW_BLANK               131
+#define ID_FILE_OPEN_PROJECT            132
+#define IDR_PANE_SOLUTIONEXPLORER       132
+#define ID_EDIT_DELETE                  134
+#define ID_EDIT_SELECTALL               136
+#define ID_EDIT_FINDANDREPLACE          137
+#define ID_FINDANDREPLACE_FIND          138
+#define IDR_DYNAMIC_HELP                138
+#define ID_FINDANDREPLACE_REPLACE       139
+#define ID_FINDANDREPLACE_FINDINFILES   140
+#define ID_VIEW_OPEN                    141
+#define ID_Menu147                      147
+#define ID_VIEW_WEBBROWSER              148
+#define ID_WEBBROWSER_HOME              149
+#define ID_WEBBROWSER_SEARCH            150
+#define ID_WEBBROWSER_BACK              151
+#define ID_WEBBROWSER_FORWARD           152
+#define ID_VIEW_TOOLBARS                153
+#define ID_VIEW_FULLSCREEN              154
+#define ID_VIEW_TOOLBARS155             155
+#define ID_PROJECT_ADDRESOURCE          156
+#define ID_PROJECT_ADDNEWITEM           157
+#define ID_PROJECT_ADDEXISTINGITEM      158
+#define ID_PROJECT_NEWFOLDER            159
+#define ID_BUILD_BUILDSOLUTION          160
+#define ID_BUILD_REBUILDSOLUTION        161
+#define ID_BUILD_CLEANSOLUTION          162
+#define IDB_FILETREE                    162
+#define ID_BUILD_COMPILE                163
+#define ID_DEBUG_WINDOWS                164
+#define IDB_CLASSTREE                   164
+#define IDB_RESTREE                     165
+#define ID_DEBUG_STARTWITHOUTDEBUG      167
+#define ID_DEBUG_PROSSESES              168
+#define ID_DEBUG_EXCEPTIONS             169
+#define ID_DEBUG_STEPINTO               170
+#define ID_DEBUG_STEPOVER               171
+#define ID_TOOLS_OPTIONS                172
+#define ID_HELP_CONTENTS                174
+#define ID_HELP_INDEX175                175
+#define ID_HELP_SEARCH                  176
+#define IDR_TOOLBAR_EXT                 177
+#define ID_FILE_OPENSOLUTION            179
+#define ID_FILE_CLOSESOLUTION           180
+#define ID_DEBUG_START                  181
+#define ID_PROJECT_ADDCLASS             182
+#define ID_Menu                         187
+#define IDB_BITMAP_PANEICONS            188
+#define IDR_TOOLBAR_WEB                 189
+#define ID_WEBBROWSER_STOP              190
+#define ID_WEBBROWSER_REFRESH           191
+#define ID_WEBBROWSER_FAVORITES         192
+#define ID_WEBBROWSER_ORGANIZE          193
+#define ID_BUTTON32806                  194
+#define ID_WEBBROWSER_FONT              195
+#define ID_WEBBROWSER_SYNC              196
+#define ID_WEBBROWSER_PREV              197
+#define ID_WEBBROWSER_NEXT              198
+#define ID_VIEW_SOLUTIONEXPLORER        200
+#define ID_VIEW_CLASSVIEW               201
+#define ID_VIEW_RESOURCEVIEW            202
+#define ID_VIEW_PROPERTIESWINDOW        203
+#define ID_VIEW_TOOLBOX                 204
+#define ID_WINDOWS_OUTPUT               205
+#define ID_HELP_DYNAMICHELP             206
+#define ID_CLASSVIEW_OUTPUT             251
+#define IDR_WORKSAPCE_POPUP             252
+#define IDB_STARTPAGE                   300
+#define IDR_MAINFRAME_A                 700
+#define IDR_TOOLBAR_WEB_A               701
+#define IDR_TOOLBAR_EXT_A               702
+#define IDR_PANE_PROPERTIES             600
+#define ID_PANEPROPERIES_CATEGORIZED    32771
+#define ID_PANEPROPERIES_ALPHABETIC     32772
+#define ID_PANEPROPERIES_PAGES          32773
+#define ID_FILE_SAVE_ALL                32774
+#define ID_EDIT_PLATFORM                32777
+#define ID_SOLUTION_PROPERTIES          32778
+#define ID_SOLUTION_ADDNEWFOLDER        32779
+#define ID_SOLUTION_UNHIDEALL           32780
+#define ID_EDIT_STATE                   32815
+#define ID_EDIT_FIND_EX                 32816
+#define ID_GOTO_URL                     32817
+#define ID_WINDOW_AUTOHIDEALL           32818
+#define ID_WINDOW_CLOSE_ALL             32821
+#define ID_WINDOW_MORE                  32822
+
+
+#define IDB_TOOLBOXICONS                201
+#define ID_TOOLBOXFOLDER_PROPERTYPANES  300
+#define ID_TOOLBOXFOLDER_DATA           301
+#define ID_TOOLBOXFOLDER_COMPONENTS     302
+#define ID_TOOLBOXFOLDER_WINDOWSFORMS   303
+#define ID_TOOLBOXFOLDER_CLIPBOARDRING  304
+#define ID_TOOLBOXFOLDER_GENERAL        305
+#define ID_TOOLBOXITEM_POINTER          400
+#define ID_TOOLBOXITEM_BUTTON           401
+#define ID_TOOLBOXITEM_CHECK_BOX        402
+#define ID_TOOLBOXITEM_EDIT_CONTROL     403
+#define ID_TOOLBOXITEM_COMBO_BOX        404
+#define ID_TOOLBOXITEM_LIST_BOX         405
+#define ID_TOOLBOXITEM_GROUP_BOX        406
+#define ID_TOOLBOXITEM_RADIO_BUTTON     407
+#define ID_TOOLBOXITEM_STATIC_TEXT      408
+#define ID_TOOLBOXITEM_PICTURE_CONTROL  409
+#define ID_TOOLBOXITEM_HORIZONTAL_SCROLL_BAR 410
+#define ID_TOOLBOXITEM_VERTICAL_SCROLL_BAR 411
+#define ID_TOOLBOXITEM_SLIDER_CONTROL   412
+#define ID_TOOLBOXITEM_SPIN_CONTROL     413
+#define ID_TOOLBOXITEM_PROGRESS_CONTROL 414
+#define ID_TOOLBOXITEM_HOT_KEY          415
+#define ID_TOOLBOXITEM_LIST_CONTROL     416
+#define ID_TOOLBOXITEM_TREE_CONTROL     417
+#define ID_TOOLBOXITEM_TAB_CONTROL      418
+#define ID_TOOLBOXITEM_ANIMATION_CONTROL 419
+#define ID_TOOLBOXITEM_RICH_EDIT_CONTROL 420
+#define ID_TOOLBOXITEM_DATE_TIME_PICKER 421
+#define ID_TOOLBOXITEM_MONTH_CALENDAR_CONTROL 422
+#define ID_TOOLBOXITEM_IP_ADDRESS_CONTROL 423
+#define ID_TOOLBOXITEM_EXTENDED_COMBO_BOX 424
+#define ID_TOOLBOXITEM_CUSTOM_CONTROL   425
+#define ID_TOOLBOXITEM_DATASET          426
+#define ID_TOOLBOXITEM_OLEDBDATAADAPTER 427
+#define ID_TOOLBOXITEM_OLEDBCONNECTION  428
+#define ID_TOOLBOXITEM_OLEDBCOMMAND     429
+#define ID_TOOLBOXITEM_SQLDATAADAPTER   430
+#define ID_TOOLBOXITEM_SQLCONNECTION    431
+#define ID_TOOLBOXITEM_SQLCOMMAND       432
+#define ID_TOOLBOXITEM_DATAVIEW         433
+#define ID_TOOLBOXITEM_FILESYSTEMWATCHER 434
+#define ID_TOOLBOXITEM_EVENTLOG         435
+#define ID_TOOLBOXITEM_DIRECTORYENTRY   436
+#define ID_TOOLBOXITEM_DIRECTORYSEARCHER 437
+#define ID_TOOLBOXITEM_MESSAGEQUEUE     438
+#define ID_TOOLBOXITEM_PERFORMANCECOUNTER 439
+#define ID_TOOLBOXITEM_PROCESS          440
+#define ID_TOOLBOXITEM_SERVICECONTROLLER 441
+#define ID_TOOLBOXITEM_TIMER            442
+
+
+// Next default values for new objects
+//
+#ifdef APSTUDIO_INVOKED
+#ifndef APSTUDIO_READONLY_SYMBOLS
+#define _APS_3D_CONTROLS                     1
+#define _APS_NEXT_RESOURCE_VALUE        134
+#define _APS_NEXT_COMMAND_VALUE         32781
+#define _APS_NEXT_CONTROL_VALUE         1000
+#define _APS_NEXT_SYMED_VALUE           101
+#endif
+#endif

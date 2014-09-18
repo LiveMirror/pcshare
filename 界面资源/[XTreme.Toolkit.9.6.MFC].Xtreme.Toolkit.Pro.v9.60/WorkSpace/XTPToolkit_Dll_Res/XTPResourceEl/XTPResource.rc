@@ -1,0 +1,78 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include <XTPResourceDll.h>
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_GREEK, SUBLANG_DEFAULT
+#pragma code_page(1253)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDC_LANG_ARABIC         "Αραβικά (Σαουδικής Αραβίας)"
+    XTP_IDC_LANG_CHINESE_PRC    "Κινέζικα (ΛΔΚ)"
+    XTP_IDC_LANG_CHINESE_TAIWAN "Κινέζικα (Ταϊβάν)"
+    XTP_IDC_LANG_CROATIAN       "Κροατικά"
+    XTP_IDC_LANG_CZECH          "Τσεχικά"
+    XTP_IDC_LANG_DANISH         "Δανικά"
+    XTP_IDC_LANG_DUTCH          "Ολλανδικά"
+    XTP_IDC_LANG_ENGLISH        "Αγγλικά (Ηνωμένων Πολιτειών)"
+    XTP_IDC_LANG_ESTONIAN       "Εσθονικά"
+    XTP_IDC_LANG_FINNISH        "Φινλανδικά"
+    XTP_IDC_LANG_FRENCH         "Γαλλικά (Γαλλίας)"
+    XTP_IDC_LANG_GERMAN         "Γερμανία"
+    XTP_IDC_LANG_GREEK          "Ελληνικά"
+    XTP_IDC_LANG_HEBREW         "Εβραϊκά"
+    XTP_IDC_LANG_HUNGARIAN      "Ουγγρικά"
+    XTP_IDC_LANG_ITALIAN        "Ιταλικά (Ιταλίας)"
+    XTP_IDC_LANG_JAPANESE       "Ιαπωνικά"
+    XTP_IDC_LANG_KOREAN         "Κορεατικά"
+    XTP_IDC_LANG_LATVIAN        "Λετονικά"
+    XTP_IDC_LANG_LITHUANIAN     "Λιθουανικά"
+    XTP_IDC_LANG_NORWEGIAN      "Νορβηγικά (Bokmal)"
+    XTP_IDC_LANG_POLISH         "Πολωνικά"
+    XTP_IDC_LANG_PORTUGUESE     "Πορτογαλικά (Πορτογαλίας)"
+    XTP_IDC_LANG_PORTUGUESE_BR  "Πορτογαλικά (Βραζιλίας)"
+    XTP_IDC_LANG_ROMANIAN       "Ρουμανικά"
+    XTP_IDC_LANG_RUSSIAN        "Ρωσικά"
+    XTP_IDC_LANG_SLOVAK         "Σλοβακικά"
+    XTP_IDC_LANG_SLOVENIAN      "Σλοβενία"
+    XTP_IDC_LANG_SPANISH        "Ισπανικά (Ισπανίας-Σύγχρονη διάλεκτος)"
+    XTP_IDC_LANG_SWEDISH        "Σουηδικά"
+    XTP_IDC_LANG_THAI           "Ταϊλανδικά"
+    XTP_IDC_LANG_UKRAINIAN      "Ουκρανικά"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+#include "res\XTPResource.rc2"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

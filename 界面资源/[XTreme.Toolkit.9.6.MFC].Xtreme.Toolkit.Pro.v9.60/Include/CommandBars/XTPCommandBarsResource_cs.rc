@@ -1,0 +1,417 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "XTPCommandBarsResource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_CZECH, SUBLANG_DEFAULT
+#pragma code_page(1250)
+#endif //_WIN32
+
+#ifndef _XTP_NO_BINARY_RESOURCES
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+XTP_IDR_TOOLBAR_TOOLS   BITMAP     DISCARDABLE        "CommandBars/res/ImageEditorIcons.bmp"
+XTP_IDR_TOOLBAR_TOOLS32 BITMAP     DISCARDABLE        "CommandBars/res/ImageEditorIcons32.bmp "
+XTP_IDB_MENUBAR_ICONS   BITMAP     DISCARDABLE        "CommandBars/res/MenuBarIcons.bmp"
+XTP_ID_CUSTOMIZE_CHANGEBUTTONIMAGE BITMAP     DISCARDABLE        "CommandBars/res/UserIcons.bmp"
+XTP_ID_WORKSAPCE_NEWHORIZONTAL BITMAP     DISCARDABLE        "CommandBars/res/TabGroups.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+XTP_IDC_COMMANDBARS_DRAGCOPY CURSOR     DISCARDABLE        "CommandBars/res/dragcopypro.cur"
+XTP_IDC_COMMANDBARS_DRAGMOVE CURSOR     DISCARDABLE        "CommandBars/res/dragmovepro.cur"
+XTP_IDC_COMMANDBARS_DRAGDELETE CURSOR     DISCARDABLE        "CommandBars/res/dragdeletepro.cur"
+XTP_IDC_COMMANDBARS_LINE CURSOR     DISCARDABLE        "CommandBars/res/line.cur"
+XTP_IDC_COMMANDBARS_PICKCOLOR CURSOR     DISCARDABLE        "CommandBars/res/pickcolor.cur"
+XTP_IDC_COMMANDBARS_FILLCOLOR CURSOR     DISCARDABLE        "CommandBars/res/fillcolor.cur"
+XTP_IDC_COMMANDBARS_PENCIL CURSOR     DISCARDABLE        "CommandBars/res/pencil.cur"
+XTP_IDC_WORKSAPCE_NEW   CURSOR     DISCARDABLE        "CommandBars/res/WorksapceNew.cur"
+XTP_IDC_WORKSAPCE_DELETE CURSOR     DISCARDABLE        "CommandBars/res/WorksapceDelete.cur"
+
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+XTP_IDD_IMAGEEDITOR_DIALOG DIALOGEX 0, 0, 253, 185
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Editor tlaèítek"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "Obrázek",IDC_STATIC,7,7,27,8
+    GROUPBOX        "Barvy",IDC_STATIC,102,106,80,71
+    GROUPBOX        "Stìhování",IDC_STATIC,101,72,81,31
+    GROUPBOX        "Náhled",IDC_STATIC,7,106,86,71
+    GROUPBOX        "Nástroje",IDC_STATIC,101,9,81,60
+    DEFPUSHBUTTON   "OK",IDOK,193,7,50,14
+    PUSHBUTTON      "Storno",IDCANCEL,193,25,50,14
+    CONTROL         "",XTP_IDC_STATIC_PICTURE,"Static",SS_BLACKFRAME | 
+                    SS_NOTIFY,7,17,86,80
+    CTEXT           "",XTP_IDC_STATIC_PREVIEW,14,117,73,54,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    LTEXT           "Prùhledné",IDC_STATIC,135,156,39,8
+    LTEXT           "",XTP_ID_CLR_ERASE,116,153,15,15,SS_NOTIFY
+    CTEXT           "Nástroje",XTP_IDC_STATIC_TOOLS,112,21,60,43,SS_CENTERIMAGE | 
+                    NOT WS_VISIBLE | WS_BORDER
+    CTEXT           "Stìhování",XTP_IDC_STATIC_MOVE,111,83,62,12,SS_CENTERIMAGE | 
+                    NOT WS_VISIBLE | WS_BORDER
+    CONTROL         "",XTP_ID_CLR_PICKER,"Static",SS_LEFTNOWORDWRAP | 
+                    SS_NOTIFY | WS_GROUP,109,144,15,15
+    CTEXT           "Barvy",XTP_IDC_STATIC_COLORS,107,121,68,12,
+                    SS_CENTERIMAGE | NOT WS_VISIBLE | WS_BORDER
+END
+
+XTP_IDD_PAGE_KEYBOARD DIALOG DISCARDABLE  0, 0, 230, 150
+STYLE WS_CHILD | WS_CAPTION
+CAPTION "Klávesnice"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Pøíkazy:",XTP_IDC_TXT_COMMANDS,2,28,38,8
+    LISTBOX         XTP_IDC_LBOX_ACCEL_COMMANDS,2,39,93,74,LBS_HASSTRINGS | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Poioazení kláves:",XTP_IDC_TXT_ASSIGNMENTS,100,28,67,8
+    LISTBOX         XTP_IDC_LBOX_KEYS,100,38,75,49,LBS_HASSTRINGS | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Nová klávesová zkratka:",XTP_IDC_TXT_NEWKEY,100,91,80,8
+    EDITTEXT        XTP_IDC_EDIT_SHORTCUTKEY,100,101,75,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Pøiøadit",XTP_IDC_BTN_ASSIGN,179,39,49,14
+    PUSHBUTTON      "Odebrat",XTP_IDC_BTN_REMOVE,179,56,49,14
+    PUSHBUTTON      "Obnovit vše",XTP_IDC_BTN_ACCEL_RESET,179,73,49,14
+    LTEXT           "Popis:",XTP_IDC_TXT_DESC_TITLE,2,119,38,8
+    LTEXT           "",XTP_IDC_TXT_DESC_OVERVIEW,2,129,173,19,0,
+                    WS_EX_STATICEDGE
+    LTEXT           "Kategorie:",IDC_STATIC,2,5,33,8
+    COMBOBOX        XTP_IDC_COMBO_CATEGORY,2,15,93,147,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+XTP_IDD_PAGE_TOOLBARS DIALOG DISCARDABLE  0, 0, 230, 150
+STYLE WS_CHILD | WS_CAPTION
+CAPTION "Panely nástrojù"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Panely nástrojù:",IDC_STATIC,4,5,49,8
+    LISTBOX         XTP_IDC_LIST_TOOLBARS,4,15,150,131,LBS_OWNERDRAWFIXED | 
+                    LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "Nová...",XTP_IDC_BUTTON_NEW,158,15,70,14
+    PUSHBUTTON      "Pøejmenovat...",XTP_IDC_BUTTON_RENAME,158,33,70,14
+    PUSHBUTTON      "Odstranit",XTP_IDC_BUTTON_DELETE,158,51,70,14
+    PUSHBUTTON      "&Pùvodní...",XTP_IDC_BUTTON_RESET,158,69,70,14
+END
+
+XTP_IDD_PAGE_OPTIONS DIALOG DISCARDABLE  0, 0, 230, 150
+STYLE WS_CHILD | WS_CAPTION
+CAPTION "Možnosti"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Individuální nabídky a panely nástrojù",IDC_STATIC,7,5,119,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,131,9,92,2
+    CONTROL         "Vždy zobrazovat úplné nabídky",XTP_IDC_CHECK_FULL_MENUS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,17,207,10
+    CONTROL         "Zobrazovat úplné nabídky s krátkým zpoždìním",
+                    XTP_IDC_CHECK_AFTERDELAY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,28,29,195,10
+    PUSHBUTTON      "Obnovit údaje o používání aplikace",
+                    XTP_IDC_BUTTON_RESETDATA,16,42,125,14
+    LTEXT           "Jiné",IDC_STATIC,7,70,18,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,29,74,194,1
+    CONTROL         "Velké ikony",XTP_IDC_CHECK_LARGEICONS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,16,82,207,10
+    CONTROL         "Zobrazovat názvy tlaèítek na panelech nástrojù",XTP_IDC_CHECK_SCREENTTIPS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,93,207,10
+    CONTROL         "S názvy tlaèítek zobrazovat i klávesové zkratky",
+                    XTP_IDC_CHECK_SHORTCUTS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,28,104,195,10
+    LTEXT           "Animace nabídek:",IDC_STATIC,16,117,59,8
+    COMBOBOX        XTP_IDC_COMBO_ANIMATION,80,115,79,65,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+XTP_IDD_PAGE_COMMANDS DIALOG DISCARDABLE  0, 0, 230, 150
+STYLE WS_CHILD | WS_CAPTION
+CAPTION "Pøíkazy"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Pøidání pøíkazu na panel nástrojù: Vyberte kategorii a pøetáhnìte pøíkaz myší na panel nástrojù z tohoto dialogového okna.",
+                    IDC_STATIC,4,5,220,19
+    LTEXT           "Kategorie:",IDC_STATIC,4,25,38,8
+    LISTBOX         XTP_IDC_LIST_CATEGORIES,4,35,81,103,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Pøíkazy:",IDC_STATIC,90,25,38,8
+    LISTBOX         XTP_IDC_LIST_COMMANDS,90,35,140,103,LBS_OWNERDRAWFIXED | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+XTP_IDD_NEWTOOLBAR DIALOG DISCARDABLE  0, 0, 186, 52
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Nový panel nástrojù"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Název panelu nástrojù:",IDC_STATIC,4,4,100,8
+    EDITTEXT        XTP_IDC_EDIT_TOOLBARNAME,4,15,178,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,78,34,50,14
+    PUSHBUTTON      "Storno",IDCANCEL,132,34,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+XTP_IDR_CUSTOMIZEMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "Vlastní nastavení"
+    BEGIN
+        MENUITEM "Pùvodní",                      XTP_ID_CUSTOMIZE_RESET
+        MENUITEM "Odstranit",                     XTP_ID_CUSTOMIZE_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "Název:",                      XTP_ID_CUSTOMIZE_NAME
+        MENUITEM SEPARATOR
+        MENUITEM "Kopírovat vzhled tlaèítka",          XTP_ID_CUSTOMIZE_COPYBUTTONIMAGE
+
+        MENUITEM "Vložit vzhled tlaèítka",         XTP_ID_CUSTOMIZE_PASTEBUTTONIMAGE
+
+        MENUITEM "Pùvodní vzhled tlaèítka",         XTP_ID_CUSTOMIZE_RESETBUTTONIMAGE
+
+        MENUITEM "Upravit vzhled tlaèítka…",       XTP_ID_CUSTOMIZE_EDITBUTTONIMAGE
+
+        MENUITEM "Zmìnit vzhled tlaèítka",        XTP_ID_CUSTOMIZE_CHANGEBUTTONIMAGE
+
+        MENUITEM SEPARATOR
+        MENUITEM "Výchozí styl",              XTP_ID_CUSTOMIZE_DEFAULTSTYLE
+
+        MENUITEM "Pouze text",                  XTP_ID_CUSTOMIZE_TEXTONLY
+        MENUITEM "Ikona a text",             XTP_ID_CUSTOMIZE_IMAGEANDTEXT
+
+        MENUITEM SEPARATOR
+        MENUITEM "Zaèátek skupiny",              XTP_ID_CUSTOMIZE_BEGINAGROUP
+    END
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "XTPCommandBarsResource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_ADDORREMOVE     "Pøidat èi odebrat tlaèítka"
+    XTP_IDS_CUSTOMIZE_CLOSE "Zavøít"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CUSTOMIZE       "Vlastní nastavení"
+    XTP_IDS_NEWMENU         "Nová nabídka"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CONFIRM_RESETDATA 
+                            "Tato akce odstraní záznam pøíkazù použitých v této aplikaci a obnoví výchozí nastavení zobrazených pøíkazù v nabídkách a na panelech nástrojù. Nedojde k vrácení vlastních úprav. Opravdu chcete tuto akci provést?"
+    XTP_IDS_INVALID_NUMBER  "Neplatné èíslo."
+    XTP_IDS_INVALID_FONTSIZE "Èíslo musí být mezi 1 a 1 638."
+    XTP_IDS_CONFIRM_RESET   "Opravdu chcete zrušit provedené zminy panelu nástroju '%s'?"
+    XTP_IDS_BUILTINMENUS    "Vestavìné nabídky"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CUSTOM_BAR      "Vlastní %d"
+    XTP_IDS_ERROR_BLANKNAME "Název panelu nemùže být prázdný. Zapište název."
+    XTP_IDS_ERROR_LIMIT     "Dosáhli jste možného limitu."
+    XTP_IDS_ERROR_EXISTS    "Panel nástroju s názvem '%s' již existuje. Zadejte jiný název."
+    XTP_IDS_RENAMETOOLBAR   "Pøejmenovat panel nástrojù"
+    XTP_IDS_CONFIRM_DELETE  "Opravdu chcete odstranit panel nástroju '%s'?"
+    XTP_IDS_ALLCOMMANDS     "Všechny pøíkazy"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_ID_CUSTOMIZE        "\n&Vlastní..."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CLR_INDIGO      "Indigová modø"
+    XTP_IDS_CLR_GRAY80      "Šedá-80%"
+    XTP_IDS_CLR_DARK_RED    "Tmavì èervená"
+    XTP_IDS_CLR_ORANGE      "Oranžová"
+    XTP_IDS_CLR_DARK_YELLOW "Tmavì žlutá"
+    XTP_IDS_CLR_GREEN       "Zelený"
+    XTP_IDS_CLR_TEAL        "Šedozelená"
+    XTP_IDS_CLR_BLUE        "Modrý"
+    XTP_IDS_CLR_BLUEGRAY    "Modrošedá"
+    XTP_IDS_CLR_GRAY50      "Šedá-50%"
+    XTP_IDS_CLR_RED         "Èervená"
+    XTP_IDS_CLR_LIGHTORANGE "Svìtle oranžová"
+    XTP_IDS_CLR_LIME        "Žlutozelená"
+    XTP_IDS_CLR_SEA_GREEN   "Moøská zeleò"
+    XTP_IDS_CLR_AQUA        "Akvamarínová"
+    XTP_IDS_CLR_LIGHT_BLUE  "Svìtle modrá"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CLR_VIOLET      "Fialová"
+    XTP_IDS_CLR_GRAY40      "Šedá-40%"
+    XTP_IDS_CLR_PINK        "Rùžová"
+    XTP_IDS_CLR_GOLD        "Zlatý"
+    XTP_IDS_CLR_YELLOW      "Žlutá"
+    XTP_IDS_CLR_BRIGHT_GREEN "Jasnì zelená"
+    XTP_IDS_CLR_TURQUOISE   "Tyrkysová"
+    XTP_IDS_CLR_SKY_BLUE    "Nebeská modø"
+    XTP_IDS_CLR_PLUM        "Švestková"
+    XTP_IDS_CLR_GRAY25      "Šedá-25%"
+    XTP_IDS_CLR_ROSE        "Rùže"
+    XTP_IDS_CLR_TAN         "Písková"
+    XTP_IDS_CLR_LIGHT_YELLOW "Svìtle žlutá"
+    XTP_IDS_CLR_LIGHT_GREEN "Svìtle zelená"
+    XTP_IDS_CLR_LIGHT_TURQUOISE "Svìtle tyrkysová"
+    XTP_IDS_CLR_PALE_BLUE   "Bledì modrá"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CLR_BLACK       "Èerná"
+    XTP_IDS_CLR_BROWN       "Hnìdá"
+    XTP_IDS_CLR_OLIVE_GREEN "Olivovì zelená"
+    XTP_IDS_CLR_DARK_GREEN  "Tmavì zelená"
+    XTP_IDS_CLR_DARK_TEAL   "Tmavì šedozelená"
+    XTP_IDS_CLR_DARK_BLUE   "Tmavì modrá"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CLR_LAVENDER    "Levandulová"
+    XTP_IDS_CLR_WHITE       "Bílá"
+    XTP_IDS_CLR_GRAY        "Šedá"
+    XTP_IDS_CLR_MAROON      "Kaštanová"
+    XTP_IDS_CLR_OLIVE       "Olivová"
+    XTP_IDS_CLR_NAVY        "Námoønická modø"
+    XTP_IDS_CLR_PURPLE      "Fialová"
+    XTP_IDS_CLR_SILVER      "Støíbrná"
+    XTP_IDS_CLR_FUCHSIA     "Fuchsiová"
+    XTP_IDS_CLR_NOFILL      "Bez výplni\nBez výplni"
+    XTP_IDS_AUTOMATIC       "Automatické barvy\nAutomatické barvy"
+    XTP_IDS_MORE_COLORS     "Další barvy..."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CONFIRM_KEYBOARD 
+                            "Opravdu chcete resetovat poioazení kláves?  Tato akce odstraní všechna vaše vlastní klávesová pøíøazení."
+    XTP_IDS_CONFIRM_REASSIGN 
+                            "This shortcut is currently assigned.\nDo you want to re-assign this shortcut?"
+    XTP_IDS_CONFIRM_UPDATE  "Due to a software update the toolbar '%s' has changed. Would you like to reset your customized toolbar and load the new one?"
+    XTP_IDS_CUSTOMIZE_RESET "Pùvodní"
+    XTP_IDS_IMAGEEDITOR_FILTER 
+                            "Všechny obrázkové soubory|*.bmp;*.wmf;*.emf;*.ico;*.dib;*.cur;*.gif;*.jpg|Rastrové obrázky(*.Bmp;*.Dib)|*.bmp;*.dib|Metasoubory(*.Wmf;*.Emf)|*.wmf;*.emf|Ikony(*.Ico;*.Cur)|*.ico;*.cur|Soubory GIF(*.Gif)|*.gif|Soubory JPEG(*.Jpg)|*.jpg|Všechny soubory(*.*)|*.*||"
+    XTP_ID_TOOLBAR_EXPAND   "\nMožnosti panelu nástroju"
+    XTP_ID_TOOLBAR_HIDE     "\nZavøít"
+    XTP_ID_MENUBAR_CLOSE    "\nZavoít okno"
+    XTP_ID_MENUBAR_RESTORE  "\nObnovit okno"
+    XTP_ID_MENUBAR_MINIMIZE "\nMinimalizovat okno"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_ID_BUTTON_PENCIL    "\nTužka"
+    XTP_ID_BUTTON_FILL      "\nBarva výplnì"
+    XTP_ID_BUTTON_GETCOLOR  "\nVybrat barvu"
+    XTP_ID_BUTTON_LINE      "\nÈára"
+    XTP_ID_BUTTON_RECTANGLE "\nObdélník"
+    XTP_ID_BUTTON_CIRCLE    "\nElipsa"
+    XTP_ID_BUTTON_COPY      "\nKopie"
+    XTP_ID_BUTTON_PASTE     "\nVložit"
+    XTP_ID_BUTTON_CLEAR     "\nVymazat"
+    XTP_ID_BUTTON_UNDO      "\nZpìt"
+    XTP_ID_BUTTON_REDO      "\nZnovu"
+    XTP_ID_BUTTON_OPEN      "\nImportovat ze souboru"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_ANIMATION_SYSDEF "(Výchozí nastavení systému)"
+    XTP_IDS_ANIMATION_RANDOM "Náhodná"
+    XTP_IDS_ANIMATION_UNFOLD "Rozbalení"
+    XTP_IDS_ANIMATION_SLIDE "Promítání"
+    XTP_IDS_ANIMATION_FADE  "Zesvìtlení"
+    XTP_IDS_ANIMATION_NONE  "Žádný"
+    XTP_ID_WORKSAPCE_MOVEPREVIOUS "\nMove to P&revious Tab Group"
+    XTP_ID_WORKSAPCE_MOVENEXT "\nMove to Ne&xt Tab Group"
+    XTP_ID_WORKSAPCE_NEWHORIZONTAL "\nNew Hori&zontal Tab Group"
+    XTP_ID_WORKSAPCE_NEWVERTICAL "\nNew &Vertical Tab Group"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_ID_WORKSAPCE_CANCEL "Storno"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

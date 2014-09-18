@@ -1,0 +1,235 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_HEXEDIT_DIALOG DIALOGEX 0, 0, 326, 233
+STYLE WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Codejock Hex Editor Sample"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_HEXEDIT,7,7,213,102,ES_MULTILINE | WS_VSCROLL
+    LTEXT           "Enabled Colors",IDC_TXT_ENABLED,7,117,53,8
+    CONTROL         "",IDC_GBOX_ENABLED,"Static",SS_ETCHEDHORZ,60,121,160,1
+    LTEXT           "Back",IDC_TXT_BACK_ENABLED,23,135,18,8
+    PUSHBUTTON      "",IDC_CLR_BACK_ENABLED,48,132,50,14
+    LTEXT           "Hilighted Back",IDC_TXT_BACK_HILITE_ENABLED,104,135,47,
+                    8
+    PUSHBUTTON      "",IDC_CLR_BACK_HILITE_ENABLED,156,132,50,14
+    LTEXT           "Text",IDC_TXT_TEXT_ENABLED,23,151,15,8
+    PUSHBUTTON      "",IDC_CLR_TEXT_ENABLED,48,148,50,14
+    LTEXT           "Hilighted Text",IDC_TXT_TEXT_HILITE_ENABLED,104,151,44,
+                    8
+    PUSHBUTTON      "",IDC_CLR_TEXT_HILITE_ENABLED,156,148,50,14
+    LTEXT           "Disabled Colors",IDC_TXT_DISABLED,7,171,53,8
+    CONTROL         "",IDC_GBOX_DISABLED,"Static",SS_ETCHEDHORZ,60,175,160,1
+    LTEXT           "Back",IDC_TXT_BACK_DISABLED,23,191,18,8
+    PUSHBUTTON      "",IDC_CLR_BACK_DISABLED,48,188,50,14
+    LTEXT           "Hilighted Back",IDC_TXT_BACK_HILITE_DISABLED,104,191,47,
+                    8
+    PUSHBUTTON      "",IDC_CLR_BACK_HILITE_DISABLED,156,188,50,14
+    LTEXT           "Text",IDC_TXT_TEXT_DISABLED,23,207,15,8
+    PUSHBUTTON      "",IDC_CLR_TEXT_DISABLED,48,204,50,14
+    LTEXT           "Hilighted Text",IDC_TXT_TEXT_HILITE_DISABLED,104,207,44,
+                    8
+    PUSHBUTTON      "",IDC_CLR_TEXT_HILITE_DISABLED,156,204,50,14
+    LTEXT           "Base Address:",IDC_TXT_BASEADDR,235,44,46,8
+    EDITTEXT        IDC_EDIT_BASEADDR,235,53,84,14,ES_AUTOHSCROLL | WS_GROUP
+    CONTROL         "Address",IDC_CHK_ADDRESS,"Button",BS_AUTOCHECKBOX | 
+                    WS_GROUP | WS_TABSTOP,235,77,41,10
+    CONTROL         "Hexcode",IDC_CHK_HEXCODE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,235,90,45,10
+    CONTROL         "Ascii",IDC_CHK_ASCII,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,235,103,31,10
+    CONTROL         "4/8",IDC_CHK_WIDE_ADDRESS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,235,116,27,10
+    LTEXT           "Bytes/Line",IDC_TXT_BYTE,235,132,35,8
+    CONTROL         "Slider1",IDC_SLIDER,"msctls_trackbar32",TBS_AUTOTICKS | 
+                    TBS_TOP | WS_GROUP | WS_TABSTOP,235,143,84,21
+    CONTROL         "Enable",IDC_CHK_ENABLE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,235,185,38,10
+    CONTROL         "Show Caret",IDC_CHK_CARET,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,235,199,53,10
+    CONTROL         "Allow Deletes",IDC_CHK_ALLOWDEL,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,235,213,59,10
+    DEFPUSHBUTTON   "OK",IDOK,235,7,84,14
+    PUSHBUTTON      "Cancel",IDCANCEL,235,24,84,14
+    CONTROL         "Read Only",IDC_CHK_READONLY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,235,171,49,10
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x29L
+#else
+ FILEFLAGS 0x28L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "HexEdit MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "HexEdit\0"
+            VALUE "LegalCopyright", "©1998-2004 Codejock Software, All Rights Reserved.\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "HexEdit.EXE\0"
+            VALUE "PrivateBuild", "1\0"
+            VALUE "ProductName", "HexEdit Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "4\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_HEXEDIT_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 319
+        VERTGUIDE, 60
+        VERTGUIDE, 220
+        VERTGUIDE, 235
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 223
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif\r\n"
+    "#include ""res\\HexEdit.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\CjSample.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About Hex Editor Sample..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif
+#include "res\HexEdit.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

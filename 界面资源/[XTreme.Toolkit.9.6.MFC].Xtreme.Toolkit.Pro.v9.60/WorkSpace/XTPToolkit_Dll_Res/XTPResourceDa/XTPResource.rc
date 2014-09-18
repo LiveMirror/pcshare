@@ -1,0 +1,79 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include <XTPResourceDll.h>
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_DANISH, SUBLANG_DEFAULT
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDC_LANG_ARABIC         "Arabisk (Saudi-Arabien)"
+    XTP_IDC_LANG_CHINESE_PRC    "Kinesisk"
+    XTP_IDC_LANG_CHINESE_TAIWAN "Kinesisk (Taiwan)"
+    XTP_IDC_LANG_CROATIAN       "Kroatisk"
+    XTP_IDC_LANG_CZECH          "Tjekkisk"
+    XTP_IDC_LANG_DANISH         "Dansk"
+    XTP_IDC_LANG_DUTCH          "Nederlandsk (hollandsk)"
+    XTP_IDC_LANG_ENGLISH        "Engelsk (USA)"
+    XTP_IDC_LANG_ESTONIAN       "Estisk"
+    XTP_IDC_LANG_FINNISH        "Finsk"
+    XTP_IDC_LANG_FRENCH         "Fransk (Frankrig)"
+    XTP_IDC_LANG_GERMAN         "Tysk (Tyskland)"
+    XTP_IDC_LANG_GREEK          "Græsk"
+    XTP_IDC_LANG_HEBREW         "Hebraisk"
+    XTP_IDC_LANG_HUNGARIAN      "Ungarsk"
+    XTP_IDC_LANG_ITALIAN        "Italiensk (Italien)"
+    XTP_IDC_LANG_JAPANESE       "Japansk"
+    XTP_IDC_LANG_KOREAN         "Koreansk"
+    XTP_IDC_LANG_LATVIAN        "Lettisk"
+    XTP_IDC_LANG_LITHUANIAN     "Litauisk"
+    XTP_IDC_LANG_NORWEGIAN      "Norsk (bokmål)"
+    XTP_IDC_LANG_POLISH         "Polsk"
+    XTP_IDC_LANG_PORTUGUESE     "Portugisisk (Portugal)"
+    XTP_IDC_LANG_PORTUGUESE_BR  "Portugisisk (Brasilien)"
+    XTP_IDC_LANG_ROMANIAN       "Rumænsk"
+    XTP_IDC_LANG_RUSSIAN        "Russisk"
+    XTP_IDC_LANG_SLOVAK         "Slovakisk"
+    XTP_IDC_LANG_SLOVENIAN      "Slovensk"
+    XTP_IDC_LANG_SPANISH        "Spansk (Spanien - moderne type)"
+    XTP_IDC_LANG_SWEDISH        "Svensk"
+    XTP_IDC_LANG_THAI           "Thailandsk/thai"
+    XTP_IDC_LANG_UKRAINIAN      "Ukrainsk"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+#include "res\XTPResource.rc2"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

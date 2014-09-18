@@ -1,0 +1,57 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: PcStart - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Release/PcStart.res" /d "NDEBUG" /d "_AFXDLL" "D:\开发代码\普通定做\PcStart\PcStart.rc"" 
+Creating temporary file "C:\DOCUME~1\shesh\LOCALS~1\Temp\RSPDD.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Release/" /Fp"Release/PcStart.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\开发代码\普通定做\PcStart\Lzw.cpp"
+"D:\开发代码\普通定做\PcStart\MainFrm.cpp"
+"D:\开发代码\普通定做\PcStart\MyFunc.cpp"
+"D:\开发代码\普通定做\PcStart\PcStart.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\shesh\LOCALS~1\Temp\RSPDD.tmp" 
+Creating temporary file "C:\DOCUME~1\shesh\LOCALS~1\Temp\RSPDE.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Release/" /Fp"Release/PcStart.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\开发代码\普通定做\PcStart\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\shesh\LOCALS~1\Temp\RSPDE.tmp" 
+Creating temporary file "C:\DOCUME~1\shesh\LOCALS~1\Temp\RSPDF.tmp" with contents
+[
+psapi.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/PcInit.pdb" /machine:I386 /out:"../bin/update/PcInit.exe" /opt:nowin98 
+".\Release\Lzw.obj"
+".\Release\MainFrm.obj"
+".\Release\MyFunc.obj"
+".\Release\PcStart.obj"
+".\Release\StdAfx.obj"
+".\Release\PcStart.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\shesh\LOCALS~1\Temp\RSPDF.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+Lzw.cpp
+MainFrm.cpp
+MyFunc.cpp
+PcStart.cpp
+Generating Code...
+Linking...
+Creating command line "bscmake.exe /nologo /o"Release/PcStart.bsc"  ".\Release\StdAfx.sbr" ".\Release\Lzw.sbr" ".\Release\MainFrm.sbr" ".\Release\MyFunc.sbr" ".\Release\PcStart.sbr""
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+PcInit.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

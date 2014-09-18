@@ -1,0 +1,18 @@
+//
+// [!output SAFE_PROJECT_NAME].RC2 - resources Microsoft Visual C++ does not edit directly
+//
+
+#ifdef APSTUDIO_INVOKED
+#error this file is not editable by Microsoft Visual C++
+#endif //APSTUDIO_INVOKED
+
+
+[!if USE_TOOLKIT_STATICALLY || STATIC_MFC]
+#include <XTToolkitPro.rc>
+[!endif]
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Add manually edited resources here...
+
+/////////////////////////////////////////////////////////////////////////////

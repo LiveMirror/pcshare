@@ -1,0 +1,441 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "XTResource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_FRENCH, SUBLANG_FRENCH
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifndef _XTP_NO_BINARY_RESOURCES
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+XT_IDC_DRAGMOVE         CURSOR     DISCARDABLE        "Controls/res/dragmove.cur"
+XT_IDC_HAND             CURSOR     DISCARDABLE        "Controls/res/hand.cur"
+XT_IDC_DRAGNONE         CURSOR     DISCARDABLE        "Controls/res/dragnone.cur"
+XT_IDC_HANDNONE         CURSOR     DISCARDABLE        "Controls/res/handnone.cur"
+XT_IDC_DRAGCOPY         CURSOR     DISCARDABLE        "Controls/res/dragcopy.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+XT_IDB_BTN_OUT          BITMAP     DISCARDABLE        "Controls/res/btn_out.bmp"
+XT_IDB_LIGHTBULB        BITMAP     FIXED IMPURE       "Controls/res/lightbulb.bmp"
+XT_IDB_LISTEDIT         BITMAP     DISCARDABLE        "Controls/res/btn_listedit.bmp"
+XT_IDB_FONTTYPE         BITMAP     DISCARDABLE        "Controls/res/font.bmp"
+XT_IDB_SCROLL_ARW       BITMAP     DISCARDABLE        "Controls/res/scroll.bmp"
+XT_IDB_CHECKLISTBOX     BITMAP     FIXED IMPURE       "Controls/res/checklist.bmp"
+XT_IDB_CHECKLISTBOX_3D  BITMAP     FIXED IMPURE       "Controls/res/checklist_3d.bmp"
+XTP_IDB_TASKPANEL_GRIPPER BITMAP     DISCARDABLE        "Controls/res/TaskPanelGripper.bmp"
+XTP_IDB_TASKPANEL_GRIPPER_SPECIAL BITMAP     DISCARDABLE        "Controls/res/TaskPanelGripperSpecial.bmp"
+XT_IDR_TBAR_HDR         BITMAP     DISCARDABLE        "Controls/res/tbar_hdr.bmp"
+XT_IDR_TBAR_OUT         BITMAP     MOVEABLE PURE      "Controls/res/tbar_out.bmp"
+XT_IDR_TBAR_HEXEDIT     BITMAP     DISCARDABLE        "Controls/res/tbar_hex.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+XT_IDI_XTREME           ICON       DISCARDABLE        "res\\xtreme.ico"
+XTP_IDI_SHORTCUTS_EXPAND_ALPHA ICON       DISCARDABLE        "Controls/res/exp_alpha.ico"
+XTP_IDI_SHORTCUTS_EXPAND_NORMAL ICON       DISCARDABLE        "Controls/res/exp_normal.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+XT_IDR_TBAR_HDR TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      XT_IDC_SORTASC
+    BUTTON      XT_IDC_SORTDSC
+    SEPARATOR
+    BUTTON      XT_IDC_ALIGNLEFT
+    BUTTON      XT_IDC_ALIGNCENTER
+    BUTTON      XT_IDC_ALIGNRIGHT
+END
+
+XT_IDR_TBAR_OUT TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      XT_IDC_LARGEICON
+    BUTTON      XT_IDC_SMALLICON
+END
+
+XT_IDR_TBAR_HEXEDIT TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_EDIT_UNDO
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_EDIT_CLEAR
+END
+
+#endif
+
+#ifndef _XTP_NO_COMMONCONTROLS_RESOURCES
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+XT_IDD_TIPOFTHEDAY DIALOGEX 0, 0, 279, 157
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Astuce du jour"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Fermer",IDOK,221,136,50,14
+    CONTROL         "Afficher les astuces au démarrage",XT_IDC_CHK_DAYTIP_SHOW,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,140,120,10
+    PUSHBUTTON      "Astuce suivante",XT_IDC_BTN_DAYTIP_NEXT,158,136,58,14
+    CONTROL         "",XT_IDC_BTN_DAYTIP_BORDER,"Static",SS_GRAYFRAME | NOT 
+                    WS_VISIBLE,8,7,263,123
+END
+
+XT_IDD_COLORCUSTOM DIALOG DISCARDABLE  0, 0, 147, 161
+STYLE WS_CHILD | WS_DISABLED | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | 
+    WS_CAPTION
+CAPTION "Personnalisée"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Couleurs :",XT_IDC_TXT_COLORS,2,4,43,10
+    CONTROL         "",XT_IDC_CLR_WND,"Static",SS_BLACKFRAME | WS_TABSTOP,3,
+                    15,119,86
+    CONTROL         "",XT_IDC_CLR_LUM,"Static",SS_BLACKFRAME | WS_TABSTOP,
+                    126,15,20,86
+    LTEXT           "Teinte :",XT_IDC_TXT_HUE,7,108,25,8
+    EDITTEXT        XT_IDC_EDIT_HUE,34,106,33,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",XT_IDC_SPIN_HUE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,58,105,
+                    10,14
+    LTEXT           "Sat :",XT_IDC_TXT_SAT,7,125,18,8
+    EDITTEXT        XT_IDC_EDIT_SAT,34,122,33,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin2",XT_IDC_SPIN_SAT,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,58,122,
+                    10,14
+    LTEXT           "Lum :",XT_IDC_TXT_LUM,7,140,18,8
+    EDITTEXT        XT_IDC_EDIT_LUM,34,138,33,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin3",XT_IDC_SPIN_LUM,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,58,137,
+                    10,14
+    LTEXT           "Rouge :",XT_IDC_TXT_RED,74,108,26,8
+    EDITTEXT        XT_IDC_EDIT_RED,102,106,33,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",XT_IDC_SPIN_RED,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,126,105,
+                    11,14
+    LTEXT           "Vert :",XT_IDC_TXT_GREEN,74,125,23,8
+    EDITTEXT        XT_IDC_EDIT_GREEN,102,122,33,13,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin2",XT_IDC_SPIN_GREEN,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,126,122,
+                    11,14
+    LTEXT           "Bleu :",XT_IDC_TXT_BLUE,74,140,23,8
+    EDITTEXT        XT_IDC_EDIT_BLUE,102,138,33,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin3",XT_IDC_SPIN_BLUE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,126,137,
+                    11,14
+END
+
+XT_IDD_COLORSTANDARD DIALOG DISCARDABLE  0, 0, 147, 161
+STYLE WS_CHILD | WS_DISABLED | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | 
+    WS_CAPTION
+CAPTION "Standard"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Couleurs :",XT_IDC_TXT_COLORS,2,4,43,10
+    CONTROL         "",XT_IDC_CLR_HEX,"Static",SS_BLACKFRAME | WS_TABSTOP,0,
+                    15,147,145
+END
+
+XT_IDD_WINDOWLIST DIALOG DISCARDABLE  0, 0, 301, 164
+STYLE WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Réorganiser"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Sélectionner une &fenêtre:",IDC_STATIC,4,7,147,8
+    LISTBOX         XT_IDC_LBOX_WINDOWS,4,17,216,140,LBS_SORT | 
+                    LBS_OWNERDRAWFIXED | LBS_HASSTRINGS | 
+                    LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | WS_VSCROLL | 
+                    WS_HSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Activer",XT_IDC_BTN_ACTIVATE,223,7,77,14
+    PUSHBUTTON      "OK",IDOK,223,24,77,14
+    PUSHBUTTON      "Enregistrer",XT_IDC_BTN_SAVE,223,41,77,14
+    PUSHBUTTON      "Fermer la fenêtre",XT_IDC_BTN_CLOSEWINDOWS,223,58,77,14
+    PUSHBUTTON      "Cascade",XT_IDC_BTN_CASCADE,223,75,77,14
+    PUSHBUTTON      "Mosaïque horizontale",XT_IDC_BTN_TILEHORZ,223,92,77,14
+    PUSHBUTTON      "Mosaïque verticale",XT_IDC_BTN_TILEVERT,223,109,77,14
+    PUSHBUTTON      "Réduire",XT_IDC_BTN_MINIMIZE,223,126,77,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+XT_IDM_POPUP MENU DISCARDABLE 
+BEGIN
+    POPUP "RClickOutlookBar"
+    BEGIN
+        MENUITEM "Petites icônes",                XT_IDC_SMALLICON
+        MENUITEM "Grandes icônes",                XT_IDC_LARGEICON
+    END
+    POPUP "RClickHexEdit"
+    BEGIN
+        MENUITEM "Annuler",                       ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Couper",                        ID_EDIT_CUT
+        MENUITEM "Copier",                       ID_EDIT_COPY
+        MENUITEM "Coller",                      ID_EDIT_PASTE
+        MENUITEM "Supprimer",                     ID_EDIT_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "Sélectionner tout",                 ID_EDIT_SELECT_ALL
+    END
+    POPUP "RClickHeader"
+    BEGIN
+        MENUITEM "Tri croissant",              XT_IDC_SORTASC
+        MENUITEM "Tri décroissant",             XT_IDC_SORTDSC
+        MENUITEM SEPARATOR
+        POPUP "Alignement"
+        BEGIN
+            MENUITEM "Aligner à gauche",                  XT_IDC_ALIGNLEFT
+            MENUITEM "Centrer le texte",                XT_IDC_ALIGNCENTER
+            MENUITEM "Aligner à droite",                 XT_IDC_ALIGNRIGHT
+        END
+    END
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "XTResource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDC_BTN_NEW          "Nouvelle"
+    XT_IDC_BTN_DELETE       "Supprimer"
+    XT_IDC_BTN_UP           "Monter"
+    XT_IDC_BTN_DOWN         "Descendre"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDS_REG_SETTINGS     "Settings"
+    XT_IDS_REG_WNDPOS       "Window Position"
+    XT_IDS_REG_COLINFO      "Column Info"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDS_NAME             "Name"
+    XT_IDS_SIZE             "Taille"
+    XT_IDS_TYPE             "Type"
+    XT_IDS_MODIFIED         "Modifié"
+    XT_IDS_COLOR_AUTO       "Automatique"
+    XT_IDS_COLOR_CUST       "Personnaliser..."
+    XT_IDS_SELDIR           "Sélectionner un répertoire:"
+    XT_IDS_DOT              "..."
+    XT_IDS_DEFEXT           "*.*"
+    XT_IDS_DEFFILT          "Tous les fichiers (*.*)|*.*||"
+    XT_IDS_DEFTITLE         "Nom de répertoire :"
+    XT_IDS_CLICKKEEPOPEN    "Pour garder ouvert, cliquez sur "
+    XT_IDS_SE_0             "Le système d'exploitation ne possède plus de mémoire ou d'autres ressources libres."
+    XT_IDS_SE_ERR_FNF       "Le fichier indiqué n'a pas été trouvé."
+    XT_IDS_SE_ERR_PNF       "Le chemin indiqué n'a pas été trouvé."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDS_SE_ERR_ACCESSDENIED 
+                            "Le système d'exploitation refuse l'accès au fichier indiqué."
+    XT_IDS_SE_ERR_OOM       "Pas assez de mémoire pour terminer l'opération."
+    XT_IDS_SE_ERR_BAD_FORMAT 
+                            "Le fichier .exe n'est pas valable (pas de Win32® .exe ou erreur dans le fichier .exe)."
+    XT_IDS_SE_ERR_SHARE     "Violation de partage."
+    XT_IDS_SE_ERR_ASSOCINCOMPLETE 
+                            "L'attribution du nom de fichier est incomplète ou non valable."
+    XT_IDS_SE_ERR_DDETIMEOUT 
+                            "La transaction DDE n'a pu être terminée (dépassement de temps)."
+    XT_IDS_SE_ERR_DDEFAIL   "La transaction DDE a échoué."
+    XT_IDS_SE_ERR_DDEBUSY   "La transaction DDE n'a pu être terminée à cause d'autres transactions DDE exécutées."
+    XT_IDS_SE_ERR_NOASSOC   "Aucune association d'application n'a été trouvée pour l'extension du fichier indiqué."
+    XT_IDS_SE_ERR_DLLNOTFOUND 
+                            "La bibliothèque de liens dynamiques indiquée n'a pu être trouvée."
+    XT_IDS_SE_ERR_UNKOWN    "Une erreur inconnue %d est survenue."
+    XT_IDS_CLR_BLACK        "Noir"
+    XT_IDS_CLR_BROWN        "Marron"
+    XT_IDS_CLR_OLIVE_GREEN  "Vert olive"
+    XT_IDS_CLR_DARK_GREEN   "Vert foncé"
+    XT_IDS_CLR_DARK_TEAL    "Bleu-vert foncé"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDC_SORTASC          "Trier par ordre croissant\nTrier par ordre croissant"
+    XT_IDC_SORTDSC          "Trier par ordre décroissant\nTrier par ordre décroissant"
+    XT_IDC_ALIGNLEFT        "Aligne le paragraphe sur la marge gauche\nAligner à gauche"
+    XT_IDC_ALIGNCENTER      "Centre le paragraphe entre les marges\nCentrer"
+    XT_IDC_ALIGNRIGHT       "Aligne le paragraphe sur la marge droite\nAligner à droite"
+    XT_IDC_LARGEICON        "Affiche de grandes icônes\nGrandes icônes"
+    XT_IDC_SMALLICON        "Affiche des petites icônes\nPetites icônes"
+    XT_IDC_REMOVEITEM       "Supprimer de la barre d'outils Outlook"
+    XT_IDC_RENAMEITEM       "Renommer le raccourci"
+    XT_IDC_REMOVEGROUP      "Supprimer le groupe"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDC_RENAMEGROUP      "Renommer un groupe"
+    XT_IDS_HEX              "Hexa"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDS_STD_COLORS       "Couleurs standard"
+    XT_IDS_TIPTEXT          "Conseils"
+    XT_IDS_DIDYOUKNOW       "Le saviez-vous ?"
+    XT_IDS_FILE_ABSENT      "Ce fichier n'existe pas."
+    XT_IDS_FILE_CORRUPT     "Erreur lors de la lecture du fichier."
+    XT_IDS_COLOR_CAPTION    "Couleurs"
+    XT_IDS_NEW              "Nouvelle"
+    XT_IDS_CURRENT          "En cours"
+    XT_IDS_DIRECTORIES      "Répertoires :"
+    XT_IDS_FILES            "Fichiers :"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDS_CLR_DARK_BLUE    "Bleu foncé"
+    XT_IDS_CLR_INDIGO       "Indigo"
+    XT_IDS_CLR_GRAY80       "Gris - 80 %"
+    XT_IDS_CLR_DARK_RED     "Rouge foncé"
+    XT_IDS_CLR_ORANGE       "Orange"
+    XT_IDS_CLR_DARK_YELLOW  "Marron clair"
+    XT_IDS_CLR_GREEN        "Vert"
+    XT_IDS_CLR_TEAL         "Bleu-vert"
+    XT_IDS_CLR_BLUE         "Bleu"
+    XT_IDS_CLR_BLUEGRAY     "Bleu gris"
+    XT_IDS_CLR_GRAY50       "Gris - 50 %"
+    XT_IDS_CLR_RED          "Rouge"
+    XT_IDS_CLR_LIGHTORANGE  "Orange clair"
+    XT_IDS_CLR_LIME         "Citron vert"
+    XT_IDS_CLR_SEA_GREEN    "Vert marin"
+    XT_IDS_CLR_AQUA         "Vert d'eau"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDS_CLR_LIGHT_BLUE   "Bleu clair"
+    XT_IDS_CLR_VIOLET       "Violet"
+    XT_IDS_CLR_GRAY40       "Gris - 40 %"
+    XT_IDS_CLR_PINK         "Rose"
+    XT_IDS_CLR_GOLD         "Or"
+    XT_IDS_CLR_YELLOW       "Jaune"
+    XT_IDS_CLR_BRIGHT_GREEN "Vert brillant"
+    XT_IDS_CLR_TURQUOISE    "Turquoise"
+    XT_IDS_CLR_SKY_BLUE     "Bleu ciel"
+    XT_IDS_CLR_PLUM         "Prune"
+    XT_IDS_CLR_GRAY25       "Gris - 25 %"
+    XT_IDS_CLR_ROSE         "Rose saumon"
+    XT_IDS_CLR_TAN          "Brun"
+    XT_IDS_CLR_LIGHT_YELLOW "Jaune clair"
+    XT_IDS_CLR_LIGHT_GREEN  "Vert clair"
+    XT_IDS_CLR_LIGHT_TURQUOISE "Turquoise clair"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDS_CLR_PALE_BLUE    "Bleu moyen"
+    XT_IDS_CLR_LAVENDER     "Lavande"
+    XT_IDS_CLR_WHITE        "Blanc"
+    XT_IDS_CLR_GRAY         "Gris"
+    XT_IDS_CLR_MAROON       "Marron"
+    XT_IDS_CLR_OLIVE        "Marron clair"
+    XT_IDS_CLR_NAVY         "Bleu foncé"
+    XT_IDS_CLR_PURPLE       "Violet"
+    XT_IDS_CLR_SILVER       "Argent"
+    XT_IDS_CLR_FUCHSIA      "Magenta"
+    XT_IDS_CLR_NOFILL       "Aucun remplissage"
+    XT_IDS_CLR_NOFILL_TIP   "Aucune couleur"
+    XT_IDS_AUTOMATIC        "Automatique"
+    XT_IDS_AUTOMATIC_TIP    "Couleur automatique"
+    XT_IDS_MORE_COLORS      "Couleurs supplémentaires..."
+    XT_IDS_MORE_COLORS_TIP  "Autres couleurs"
+END
+
+#endif
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_ID_SHORTCUT_SHOW_MORE "Afficher plus de boutons"
+    XTP_ID_SHORTCUT_SHOW_FEWER "Afficher moins de boutons"
+    XTP_IDS_SHORTCUT_CONFIGURE "Configurer des boutons"
+END
+
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,441 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "XTResource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifndef _XTP_NO_BINARY_RESOURCES
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+XT_IDC_DRAGMOVE         CURSOR     DISCARDABLE        "Controls/res/dragmove.cur"
+XT_IDC_HAND             CURSOR     DISCARDABLE        "Controls/res/hand.cur"
+XT_IDC_DRAGNONE         CURSOR     DISCARDABLE        "Controls/res/dragnone.cur"
+XT_IDC_HANDNONE         CURSOR     DISCARDABLE        "Controls/res/handnone.cur"
+XT_IDC_DRAGCOPY         CURSOR     DISCARDABLE        "Controls/res/dragcopy.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+XT_IDB_BTN_OUT          BITMAP     DISCARDABLE        "Controls/res/btn_out.bmp"
+XT_IDB_LIGHTBULB        BITMAP     FIXED IMPURE       "Controls/res/lightbulb.bmp"
+XT_IDB_LISTEDIT         BITMAP     DISCARDABLE        "Controls/res/btn_listedit.bmp"
+XT_IDB_FONTTYPE         BITMAP     DISCARDABLE        "Controls/res/font.bmp"
+XT_IDB_SCROLL_ARW       BITMAP     DISCARDABLE        "Controls/res/scroll.bmp"
+XT_IDB_CHECKLISTBOX     BITMAP     FIXED IMPURE       "Controls/res/checklist.bmp"
+XT_IDB_CHECKLISTBOX_3D  BITMAP     FIXED IMPURE       "Controls/res/checklist_3d.bmp"
+XTP_IDB_TASKPANEL_GRIPPER BITMAP     DISCARDABLE        "Controls/res/TaskPanelGripper.bmp"
+XTP_IDB_TASKPANEL_GRIPPER_SPECIAL BITMAP     DISCARDABLE        "Controls/res/TaskPanelGripperSpecial.bmp"
+XT_IDR_TBAR_HDR         BITMAP     DISCARDABLE        "Controls/res/tbar_hdr.bmp"
+XT_IDR_TBAR_OUT         BITMAP     MOVEABLE PURE      "Controls/res/tbar_out.bmp"
+XT_IDR_TBAR_HEXEDIT     BITMAP     DISCARDABLE        "Controls/res/tbar_hex.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+XT_IDI_XTREME           ICON       DISCARDABLE        "res\\xtreme.ico"
+XTP_IDI_SHORTCUTS_EXPAND_ALPHA ICON       DISCARDABLE        "Controls/res/exp_alpha.ico"
+XTP_IDI_SHORTCUTS_EXPAND_NORMAL ICON       DISCARDABLE        "Controls/res/exp_normal.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+XT_IDR_TBAR_HDR TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      XT_IDC_SORTASC
+    BUTTON      XT_IDC_SORTDSC
+    SEPARATOR
+    BUTTON      XT_IDC_ALIGNLEFT
+    BUTTON      XT_IDC_ALIGNCENTER
+    BUTTON      XT_IDC_ALIGNRIGHT
+END
+
+XT_IDR_TBAR_OUT TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      XT_IDC_LARGEICON
+    BUTTON      XT_IDC_SMALLICON
+END
+
+XT_IDR_TBAR_HEXEDIT TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_EDIT_UNDO
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_EDIT_CLEAR
+END
+
+#endif
+
+#ifndef _XTP_NO_COMMONCONTROLS_RESOURCES
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+XT_IDD_TIPOFTHEDAY DIALOGEX 0, 0, 279, 157
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "每日提示"
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "关闭",IDOK,221,136,50,14
+    CONTROL         "启动时显示“日积月累”(S)",XT_IDC_CHK_DAYTIP_SHOW,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,140,101,10
+    PUSHBUTTON      "下一个提示(N)",XT_IDC_BTN_DAYTIP_NEXT,159,136,58,14
+    CONTROL         "",XT_IDC_BTN_DAYTIP_BORDER,"Static",SS_GRAYFRAME | NOT 
+                    WS_VISIBLE,8,7,263,123
+END
+
+XT_IDD_COLORCUSTOM DIALOGEX DISCARDABLE  0, 0, 147, 161
+STYLE WS_CHILD | WS_DISABLED | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | 
+    WS_CAPTION
+CAPTION "自定义"
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "颜色:",XT_IDC_TXT_COLORS,2,4,43,10
+    CONTROL         "",XT_IDC_CLR_WND,"Static",SS_BLACKFRAME | WS_TABSTOP,4,
+                    15,116,86
+    CONTROL         "",XT_IDC_CLR_LUM,"Static",SS_BLACKFRAME | WS_TABSTOP,
+                    126,15,17,86
+    LTEXT           "色调:",XT_IDC_TXT_HUE,4,108,33,8
+    EDITTEXT        XT_IDC_EDIT_HUE,45,106,32,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",XT_IDC_SPIN_HUE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,67,105,
+                    10,14
+    LTEXT           "饱和度:",XT_IDC_TXT_SAT,4,125,41,8
+    EDITTEXT        XT_IDC_EDIT_SAT,45,122,32,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin2",XT_IDC_SPIN_SAT,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,67,122,
+                    10,14
+    LTEXT           "亮度:",XT_IDC_TXT_LUM,4,140,33,8
+    EDITTEXT        XT_IDC_EDIT_LUM,45,138,32,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin3",XT_IDC_SPIN_LUM,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,67,137,
+                    10,14
+    LTEXT           "红色:",XT_IDC_TXT_RED,86,108,25,8, 0, WS_EX_RIGHT
+    EDITTEXT        XT_IDC_EDIT_RED,111,106,32,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",XT_IDC_SPIN_RED,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,132,105,
+                    11,14
+    LTEXT           "绿色:",XT_IDC_TXT_GREEN,86,125,25,8, 0, WS_EX_RIGHT
+    EDITTEXT        XT_IDC_EDIT_GREEN,111,122,32,13,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin2",XT_IDC_SPIN_GREEN,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,132,122,
+                    11,14
+    LTEXT           "蓝色:",XT_IDC_TXT_BLUE,86,140,25,8, 0, WS_EX_RIGHT
+    EDITTEXT        XT_IDC_EDIT_BLUE,111,138,32,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin3",XT_IDC_SPIN_BLUE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,132,137,
+                    11,14
+END
+
+XT_IDD_COLORSTANDARD DIALOG DISCARDABLE  0, 0, 147, 161
+STYLE WS_CHILD | WS_DISABLED | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | 
+    WS_CAPTION
+CAPTION "常用"
+FONT 9, "宋体"
+BEGIN
+    LTEXT           "颜色:",XT_IDC_TXT_COLORS,2,4,43,10
+    CONTROL         "",XT_IDC_CLR_HEX,"Static",SS_BLACKFRAME | WS_TABSTOP,0,
+                    15,147,145
+END
+
+XT_IDD_WINDOWLIST DIALOG DISCARDABLE  0, 0, 301, 164
+STYLE WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "窗口"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "选择窗口:",IDC_STATIC,7,7,147,8
+    LISTBOX         XT_IDC_LBOX_WINDOWS,7,17,216,140,LBS_SORT | 
+                    LBS_OWNERDRAWFIXED | LBS_HASSTRINGS | 
+                    LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | WS_VSCROLL | 
+                    WS_HSCROLL | WS_TABSTOP
+    PUSHBUTTON      "激活",XT_IDC_BTN_ACTIVATE,233,7,62,14
+    PUSHBUTTON      "确定",IDOK,233,24,62,14
+    PUSHBUTTON      "保存",XT_IDC_BTN_SAVE,233,41,62,14
+    PUSHBUTTON      "关闭窗口",XT_IDC_BTN_CLOSEWINDOWS,233,58,62,14
+    PUSHBUTTON      "层叠",XT_IDC_BTN_CASCADE,233,75,62,14
+    PUSHBUTTON      "水平平铺",XT_IDC_BTN_TILEHORZ,233,92,62,14
+    PUSHBUTTON      "垂直平铺",XT_IDC_BTN_TILEVERT,233,109,62,14
+    PUSHBUTTON      "最小化",XT_IDC_BTN_MINIMIZE,233,126,62,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+XT_IDM_POPUP MENU DISCARDABLE 
+BEGIN
+    POPUP "RClickOutlookBar"
+    BEGIN
+        MENUITEM "小图标",                XT_IDC_SMALLICON
+        MENUITEM "大图标",                XT_IDC_LARGEICON
+    END
+    POPUP "RClickHexEdit"
+    BEGIN
+        MENUITEM "撤消",                       ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "剪切",                        ID_EDIT_CUT
+        MENUITEM "复制",                       ID_EDIT_COPY
+        MENUITEM "粘贴",                      ID_EDIT_PASTE
+        MENUITEM "删除",                     ID_EDIT_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "全选",                 ID_EDIT_SELECT_ALL
+    END
+    POPUP "RClickHeader"
+    BEGIN
+        MENUITEM "升序排序",              XT_IDC_SORTASC
+        MENUITEM "降序排序",             XT_IDC_SORTDSC
+        MENUITEM SEPARATOR
+        POPUP "对齐方式"
+        BEGIN
+            MENUITEM "左对齐",                  XT_IDC_ALIGNLEFT
+            MENUITEM "水平居中",                XT_IDC_ALIGNCENTER
+            MENUITEM "右对齐",                 XT_IDC_ALIGNRIGHT
+        END
+    END
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "XTResource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDC_BTN_NEW          "新建"
+    XT_IDC_BTN_DELETE       "删除"
+    XT_IDC_BTN_UP           "上移"
+    XT_IDC_BTN_DOWN         "下移"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDS_REG_SETTINGS     "Settings"
+    XT_IDS_REG_WNDPOS       "Window Position"
+    XT_IDS_REG_COLINFO      "Column Info"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDS_NAME             "名称"
+    XT_IDS_SIZE             "尺寸"
+    XT_IDS_TYPE             "类型"
+    XT_IDS_MODIFIED         "修改"
+    XT_IDS_COLOR_AUTO       "自动"
+    XT_IDS_COLOR_CUST       "自定义..."
+    XT_IDS_SELDIR           "选择路径:"
+    XT_IDS_DOT              "..."
+    XT_IDS_DEFEXT           "*.*"
+    XT_IDS_DEFFILT          "所有文件(*.*)|*.*||"
+    XT_IDS_DEFTITLE         "目录名称:"
+    XT_IDS_CLICKKEEPOPEN    "单击按钉保持打开状态"
+    XT_IDS_SE_0             "操作系统内存或资源已耗尽."
+    XT_IDS_SE_ERR_FNF       "指定的文件未发现."
+    XT_IDS_SE_ERR_PNF       "指定的路径未发现."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDS_SE_ERR_ACCESSDENIED 
+                            "操作系统拒绝访问指定的文件。"
+    XT_IDS_SE_ERR_OOM       "已经没有足够的内存完成操作。"
+    XT_IDS_SE_ERR_BAD_FORMAT 
+                            ".exe 文件无效 (不是Win32可执行文件或.exe映象错误)."
+    XT_IDS_SE_ERR_SHARE     "发生了共享冲突。"
+    XT_IDS_SE_ERR_ASSOCINCOMPLETE 
+                            "相关的文件名不完全或无效。"
+    XT_IDS_SE_ERR_DDETIMEOUT 
+                            "指定的 DDE 任务因为超时而没有完成。"
+    XT_IDS_SE_ERR_DDEFAIL   "指定的 DDE 任务失败。"
+    XT_IDS_SE_ERR_DDEBUSY   "指定的 DDE 任务没有完成，因为另一个 DDE 任务正在进行中。"
+    XT_IDS_SE_ERR_NOASSOC   "没有应用程序与指定的文件扩展名相关联。"
+    XT_IDS_SE_ERR_DLLNOTFOUND 
+                            "没找到指定的动态链接库。"
+    XT_IDS_SE_ERR_UNKOWN    "一个编号为 %d 错误发生。"
+    XT_IDS_CLR_BLACK        "黑色"
+    XT_IDS_CLR_BROWN        "褐色"
+    XT_IDS_CLR_OLIVE_GREEN  "橄榄色"
+    XT_IDS_CLR_DARK_GREEN   "深绿"
+    XT_IDS_CLR_DARK_TEAL    "深青"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDC_SORTASC          "升序排序\n升序排序"
+    XT_IDC_SORTDSC          "降序排序\n降序排序"
+    XT_IDC_ALIGNLEFT        "将段落中各行的左边距对齐\n左对齐"
+    XT_IDC_ALIGNCENTER      "使段落位于两边距之间的正中\n水平居中"
+    XT_IDC_ALIGNRIGHT       "将段落中各行的右边距对齐\n右对齐"
+    XT_IDC_LARGEICON        "显示大图标\n大图标"
+    XT_IDC_SMALLICON        "显示小图标\n小图标"
+    XT_IDC_REMOVEITEM       "从 Outlook 栏删除"
+    XT_IDC_RENAMEITEM       "重命名快捷方式"
+    XT_IDC_REMOVEGROUP      "移除组"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDC_RENAMEGROUP      "重命名组"
+    XT_IDS_HEX              "十六进制"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDS_STD_COLORS       "标准色"
+    XT_IDS_TIPTEXT          "提示文字"
+    XT_IDS_DIDYOUKNOW       "您是否知道..."
+    XT_IDS_FILE_ABSENT      "指定的文件不存在。"
+    XT_IDS_FILE_CORRUPT     "读取文件时出错。"
+    XT_IDS_COLOR_CAPTION    "颜色"
+    XT_IDS_NEW              "新增"
+    XT_IDS_CURRENT          "当前"
+    XT_IDS_DIRECTORIES      "目录:"
+    XT_IDS_FILES            "文件数:"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDS_CLR_DARK_BLUE    "深蓝"
+    XT_IDS_CLR_INDIGO       "靛蓝"
+    XT_IDS_CLR_GRAY80       "灰色-80%"
+    XT_IDS_CLR_DARK_RED     "深红"
+    XT_IDS_CLR_ORANGE       "橙色"
+    XT_IDS_CLR_DARK_YELLOW  "深黄"
+    XT_IDS_CLR_GREEN        "绿色"
+    XT_IDS_CLR_TEAL         "青色"
+    XT_IDS_CLR_BLUE         "蓝色"
+    XT_IDS_CLR_BLUEGRAY     "蓝-灰"
+    XT_IDS_CLR_GRAY50       "灰色-50%"
+    XT_IDS_CLR_RED          "红色"
+    XT_IDS_CLR_LIGHTORANGE  "浅橙色"
+    XT_IDS_CLR_LIME         "酸橙色"
+    XT_IDS_CLR_SEA_GREEN    "海绿"
+    XT_IDS_CLR_AQUA         "水绿色"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDS_CLR_LIGHT_BLUE   "浅蓝"
+    XT_IDS_CLR_VIOLET       "紫罗兰"
+    XT_IDS_CLR_GRAY40       "灰色-40%"
+    XT_IDS_CLR_PINK         "粉红"
+    XT_IDS_CLR_GOLD         "金色年华"
+    XT_IDS_CLR_YELLOW       "黄色"
+    XT_IDS_CLR_BRIGHT_GREEN "鲜绿"
+    XT_IDS_CLR_TURQUOISE    "青绿"
+    XT_IDS_CLR_SKY_BLUE     "天蓝"
+    XT_IDS_CLR_PLUM         "梅红"
+    XT_IDS_CLR_GRAY25       "灰色-25%"
+    XT_IDS_CLR_ROSE         "玫瑰红"
+    XT_IDS_CLR_TAN          "茶色"
+    XT_IDS_CLR_LIGHT_YELLOW "浅黄"
+    XT_IDS_CLR_LIGHT_GREEN  "浅绿"
+    XT_IDS_CLR_LIGHT_TURQUOISE "浅青绿"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDS_CLR_PALE_BLUE    "淡蓝"
+    XT_IDS_CLR_LAVENDER     "淡紫"
+    XT_IDS_CLR_WHITE        "白色"
+    XT_IDS_CLR_GRAY         "灰色"
+    XT_IDS_CLR_MAROON       "褐紫红色"
+    XT_IDS_CLR_OLIVE        "橄榄色"
+    XT_IDS_CLR_NAVY         "海军蓝"
+    XT_IDS_CLR_PURPLE       "紫色"
+    XT_IDS_CLR_SILVER       "银波荡漾"
+    XT_IDS_CLR_FUCHSIA      "紫红色"
+    XT_IDS_CLR_NOFILL       "无填充"
+    XT_IDS_CLR_NOFILL_TIP   "无颜色"
+    XT_IDS_AUTOMATIC        "自动"
+    XT_IDS_AUTOMATIC_TIP    "自动配色"
+    XT_IDS_MORE_COLORS      "其他颜色..."
+    XT_IDS_MORE_COLORS_TIP  "其他颜色"
+END
+
+#endif
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_ID_SHORTCUT_SHOW_MORE "显示更多按钮"
+    XTP_ID_SHORTCUT_SHOW_FEWER "显示更少按钮"
+    XTP_IDS_SHORTCUT_CONFIGURE "配置按钮"
+END
+
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

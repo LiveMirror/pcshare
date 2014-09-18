@@ -1,0 +1,61 @@
+REGEDIT
+; This .REG file may be used by your SETUP program.
+;   If a SETUP program is not available, the entries below will be
+;   registered in your InitInstance automatically with a call to
+;   CWinApp::RegisterShellFileTypes and COleObjectFactory::UpdateRegistryAll.
+
+[!if HAS_SUFFIX && !HTML_EDITVIEW]
+[!if !MINI_SERVER]
+HKEY_CLASSES_ROOT\.[!output FILE_EXTENSION] = [!output FILE_TYPE_ID]
+HKEY_CLASSES_ROOT\[!output FILE_TYPE_ID]\shell\open\command = [!output PROJECT_NAME].EXE %1
+HKEY_CLASSES_ROOT\[!output FILE_TYPE_ID]\shell\open\ddeexec = [open("%1")]
+HKEY_CLASSES_ROOT\[!output FILE_TYPE_ID]\shell\open\ddeexec\application = [!output PROJECT_NAME]
+    ; note: the application is optional
+    ;  (it defaults to the app name in "command")
+[!endif]
+[!endif]
+
+[!if APP_TYPE_DLG]
+HKEY_CLASSES_ROOT\[!output SAFE_PROJECT_NAME].Application = [!output SAFE_PROJECT_NAME] Application
+[!else]
+HKEY_CLASSES_ROOT\[!output FILE_TYPE_ID] = [!output FILE_NEW_NAME_LONG]
+[!endif]
+
+[!if MINI_SERVER || FULL_SERVER || CONTAINER_SERVER]
+
+HKEY_CLASSES_ROOT\[!output FILE_TYPE_ID]\protocol\StdFileEditing\server = [!output PROJECT_NAME].EXE
+HKEY_CLASSES_ROOT\[!output FILE_TYPE_ID]\protocol\StdFileEditing\verb\0 = &Edit
+HKEY_CLASSES_ROOT\[!output FILE_TYPE_ID]\Insertable =
+HKEY_CLASSES_ROOT\[!output FILE_TYPE_ID]\CLSID = {[!output APP_CLSID_REGISTRY_FORMAT]}
+
+HKEY_CLASSES_ROOT\CLSID\{[!output APP_CLSID_REGISTRY_FORMAT]} = [!output FILE_NEW_NAME_LONG]
+HKEY_CLASSES_ROOT\CLSID\{[!output APP_CLSID_REGISTRY_FORMAT]}\DefaultIcon = [!output PROJECT_NAME].EXE,1
+HKEY_CLASSES_ROOT\CLSID\{[!output APP_CLSID_REGISTRY_FORMAT]}\LocalServer32 = [!output PROJECT_NAME].EXE
+HKEY_CLASSES_ROOT\CLSID\{[!output APP_CLSID_REGISTRY_FORMAT]}\ProgId = [!output FILE_TYPE_ID]
+HKEY_CLASSES_ROOT\CLSID\{[!output APP_CLSID_REGISTRY_FORMAT]}\MiscStatus = 32
+HKEY_CLASSES_ROOT\CLSID\{[!output APP_CLSID_REGISTRY_FORMAT]}\AuxUserType\3 = [!output PROJECT_NAME]
+HKEY_CLASSES_ROOT\CLSID\{[!output APP_CLSID_REGISTRY_FORMAT]}\AuxUserType\2 = [!output FILE_NEW_NAME_SHORT]
+HKEY_CLASSES_ROOT\CLSID\{[!output APP_CLSID_REGISTRY_FORMAT]}\Insertable = 
+HKEY_CLASSES_ROOT\CLSID\{[!output APP_CLSID_REGISTRY_FORMAT]}\verb\1 = &Open,0,2
+HKEY_CLASSES_ROOT\CLSID\{[!output APP_CLSID_REGISTRY_FORMAT]}\verb\0 = &Edit,0,2
+HKEY_CLASSES_ROOT\CLSID\{[!output APP_CLSID_REGISTRY_FORMAT]}\InprocHandler32 = ole32.dll
+
+[!else]
+[!if AUTOMATION]
+
+[!if APP_TYPE_DLG]
+HKEY_CLASSES_ROOT\[!output SAFE_PROJECT_NAME].Application\CLSID = {[!output APP_CLSID_REGISTRY_FORMAT]}
+
+HKEY_CLASSES_ROOT\CLSID\{[!output APP_CLSID_REGISTRY_FORMAT]} = [!output SAFE_PROJECT_NAME] Application
+HKEY_CLASSES_ROOT\CLSID\{[!output APP_CLSID_REGISTRY_FORMAT]}\ProgId = [!output SAFE_PROJECT_NAME].Application
+
+[!else]
+HKEY_CLASSES_ROOT\[!output FILE_TYPE_ID]\CLSID = {[!output APP_CLSID_REGISTRY_FORMAT]}
+
+HKEY_CLASSES_ROOT\CLSID\{[!output APP_CLSID_REGISTRY_FORMAT]} = [!output FILE_NEW_NAME_LONG]
+HKEY_CLASSES_ROOT\CLSID\{[!output APP_CLSID_REGISTRY_FORMAT]}\ProgId = [!output FILE_TYPE_ID]
+[!endif]
+
+HKEY_CLASSES_ROOT\CLSID\{[!output APP_CLSID_REGISTRY_FORMAT]}\LocalServer32 = [!output PROJECT_NAME].EXE
+[!endif]
+[!endif]

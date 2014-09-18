@@ -1,0 +1,279 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\ListCtrl.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\CjSample.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_LISTCTRL_DIALOG DIALOGEX 0, 0, 350, 360
+STYLE WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Codejock List Control Sample"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "List1",IDC_LIST_CTRL,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | WS_TABSTOP,7,7,278,125,
+                    WS_EX_STATICEDGE
+    GROUPBOX        "Header Control Attributes: ",IDC_GBOX_HEADER,7,140,278,
+                    90
+    COMBOBOX        IDC_COMBO_THEMES,20,153,145,30,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Automatically Resize",IDC_CHK_AUTOSIZE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,20,179,81,10
+    PUSHBUTTON      "Size to Fit",IDC_BTN_SIZETOFIT,110,177,55,14
+    CONTROL         "Disable Column Sizing:",IDC_CHK_DISABLESIZING,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,20,195,85,10
+    COMBOBOX        IDC_COMBO_DISABLESIZE,110,194,55,30,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Minimum Column Size:",IDC_CHK_MINIMUMSIZE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,20,211,85,10
+    EDITTEXT        IDC_EDIT_MINSIZE,110,210,55,12,ES_AUTOHSCROLL
+    CONTROL         "Use Windows Themes",IDC_CHK_WINTHEME,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,175,153,87,10
+    CONTROL         "Column Hot Tracking",IDC_CHK_HOTTRACKING,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,175,163,83,10
+    CONTROL         "Column Bitmap &Images",IDC_CHK_IMAGES,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,175,173,87,10
+    CONTROL         "&Column Bold Text",IDC_CHK_BOLDTEXT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,175,183,71,10
+    CONTROL         "Column Sort Arrow",IDC_CHK_SORTARW,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,175,193,70,10
+    CONTROL         "Header Context Menus",IDC_CHK_CONTEXTMENUS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,175,203,89,10
+    CONTROL         "Header Drag Drop",IDC_CHK_DRAGDROP,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,175,213,74,10
+    GROUPBOX        "List Control Attributes: ",IDC_GBOX_LIST,7,232,278,121
+    CONTROL         "Define colors for the list control's text and background.",
+                    IDC_CHK_LISTCOLOR,"Button",BS_AUTOCHECKBOX | BS_TOP | 
+                    BS_MULTILINE | WS_TABSTOP,20,247,85,27
+    PUSHBUTTON      "Back",IDC_CLR_LISTBACK,110,245,55,14
+    PUSHBUTTON      "Text",IDC_CLR_LISTTEXT,110,261,55,14
+    CONTROL         "Select multiple items to define individual row colors. ",
+                    IDC_CHK_ROWCOLOR,"Button",BS_AUTOCHECKBOX | BS_TOP | 
+                    BS_MULTILINE | WS_TABSTOP,20,282,85,27
+    PUSHBUTTON      "Back",IDC_CLR_ROWBACK,110,280,55,14
+    PUSHBUTTON      "Text",IDC_CLR_ROWTEXT,110,296,55,14
+    CONTROL         "Define colors used for sorted column text and background.",
+                    IDC_CHK_SORTCOLOR,"Button",BS_AUTOCHECKBOX | BS_TOP | 
+                    BS_MULTILINE | WS_TABSTOP,20,318,85,27
+    PUSHBUTTON      "Back",IDC_CLR_SORTBACK,110,316,55,14
+    PUSHBUTTON      "Text",IDC_CLR_SORTTEXT,110,332,55,14
+    CONTROL         "Full Row Select",IDC_CHK_FULLROWSELECT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,175,247,65,10
+    CONTROL         "Grid Lines",IDC_CHK_GRIDLINES,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,175,257,47,10
+    CONTROL         "Check Boxes",IDC_CHK_CHECKBOXES,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,175,267,58,10
+    CONTROL         "Enable List Control",IDC_CHK_ENABLE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,175,277,75,10
+    DEFPUSHBUTTON   "OK",IDOK,289,7,54,14
+    PUSHBUTTON      "Cancel",IDCANCEL,289,23,54,14
+    PUSHBUTTON      "Update Colors",IDC_BTN_UPDATE,175,316,55,14
+    PUSHBUTTON      "Reset Colors",IDC_BTN_RESET,175,332,55,14
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "ListCtrl MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "ListCtrl\0"
+            VALUE "LegalCopyright", "©1998-2004 Codejock Software, All Rights Reserved.\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "ListCtrl.EXE\0"
+            VALUE "ProductName", "ListCtrl Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_LISTCTRL_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 343
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 353
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_LISTCTRL_DIALOG DLGINIT
+BEGIN
+    IDC_COMBO_THEMES, 0x403, 10, 0
+0x664f, 0x6966, 0x6563, 0x5820, 0x0050, 
+    IDC_COMBO_THEMES, 0x403, 12, 0
+0x664f, 0x6966, 0x6563, 0x3220, 0x3030, 0x0033, 
+    IDC_COMBO_THEMES, 0x403, 17, 0
+0x6957, 0x646e, 0x776f, 0x2073, 0x7845, 0x6c70, 0x726f, 0x7265, "\000" 
+    IDC_COMBO_THEMES, 0x403, 16, 0
+0x6957, 0x646e, 0x776f, 0x2073, 0x6c43, 0x7361, 0x6973, 0x0063, 
+    IDC_COMBO_DISABLESIZE, 0x403, 5, 0
+0x6f4e, 0x656e, "\000" 
+    IDC_COMBO_DISABLESIZE, 0x403, 6, 0
+0x6f43, 0x206c, 0x0031, 
+    IDC_COMBO_DISABLESIZE, 0x403, 6, 0
+0x6f43, 0x206c, 0x0032, 
+    IDC_COMBO_DISABLESIZE, 0x403, 6, 0
+0x6f43, 0x206c, 0x0033, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_COLUMN_0            BITMAP  DISCARDABLE     "res\\col_0.bmp"
+IDB_COLUMN_1            BITMAP  DISCARDABLE     "res\\col_1.bmp"
+IDB_COLUMN_2            BITMAP  DISCARDABLE     "res\\col_2.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About List Control Sample..."
+    IDS_CLEARSEL            "Do you want to clear the current list selection and view color changes?  Choose ""No"" if you wish to make more changes to the selection."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\ListCtrl.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

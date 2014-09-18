@@ -1,0 +1,98 @@
+<html><head><title>Values that can be set for the mask</title><title>Values that can be set for the mask</title><title>Values that can be set for the mask</title></head>
+
+<body bgcolor="#FFFFFF">
+
+<p><b><font face="Verdana" size="4" color="#0000FF">CXTMaskEdit::SetEditMask<br>
+</font></b><font face="Verdana" size="1">Copyright © 1998-2002 Codejock
+Software, all rights reserved.<br>
+</font><font face="Verdana" size="2"><b><br>
+CXTMaskEdit::SetEditMask(<font color="#800000"><br>
+&nbsp;&nbsp;&nbsp; </font>LPCTSTR<font color="#800000"> </font></b><i>lpszMask</i><b><font color="#800000">,<br>
+&nbsp;&nbsp;&nbsp; </font>LPCTSTR<font color="#800000"> </font></b><i>lpszLiteral</i><b><font color="#800000">,<br>
+&nbsp;&nbsp;&nbsp; </font>LPCTSTR<font color="#800000"> </font></b><i>lpszDefault</i><b>=NULL)</b></font></p>
+
+<p><b><font size="2" face="Verdana">Parameters:</font></b></p>
+
+<p><i><font size="2" face="Verdana">lpszMask</font></i></p>
+
+<blockquote>
+
+<p><font face="Verdana" size="2">
+You can use any of these characters for defining your edit mask:</font></p>
+
+<p><font size="2" face="Courier New"><font color="#0000FF">0</font> - Numeric (0-9)<br>
+<font color="#0000FF">9</font> - Numeric (0-9) or space (' ')<br>
+<font color="#0000FF">#</font> - Numeric (0-9) or space (' ') or ('+') or ('-')<br>
+<font color="#0000FF">L</font> - Alpha (a-Z)<br>
+<font color="#0000FF">?</font> - Alpha (a-Z) or space (' ')<br>
+<font color="#0000FF">A</font> - Alpha numeric (0-9 and a-Z)<br>
+<font color="#0000FF">a</font> - Alpha numeric (0-9 and a-Z) or space (' ')<br>
+<font color="#0000FF">&amp;</font> - All print character only<br>
+<font color="#0000FF">H</font> - Hex digit (0-9 and A-F)<br>
+<font color="#0000FF">X</font> - Hex digit (0-9 and A-F) and space (' ')<br>
+<font color="#0000FF">&gt;</font> - Forces characters to upper case (A-Z)<br>
+<font color="#0000FF">&lt;</font> - Forces characters to lower case (a-z)</font></p>
+
+<p><font size="2" face="Verdana">
+Any of these characters can be combined with additional
+characters to create a restrictive field for text entry.&nbsp; For example,
+if you wanted to display a prompt for a telephone number and wanted
+to restrict only numeric values, but wanted to display the area code
+inside of parentheses '(' and ')' then you could define your mask as:</font></p>
+
+<p><font size="2" face="Courier New">Phone No: (<font color="#0000FF">000</font>)
+<font color="#0000FF">000</font>-<font color="#0000FF">0000</font></font></p>
+
+</blockquote>
+<p><font face="Verdana"><i><font size="2">lpszLiteral</font></i></font></p>
+
+<blockquote>
+
+<p><font face="Verdana"><font size="2">
+Literal defines the prompt area of the mask where text entry is allowed.&nbsp; This
+should match the areas that you have already defined as mask fields.&nbsp; By
+default the prompt character is '_' but you can define this to be any character
+you want by calling </font></font><b><font face="Verdana" size="2">CXTMaskEdit::</font></b><font face="Verdana"><b><font size="2">SetPromptChar( TCHAR ch )</font></b><font size="2">:</font></font></p>
+
+<p><font size="2" face="Courier New">Phone No: (<font color="#0000FF">___</font>)
+<font color="#0000FF">___</font>-<font color="#0000FF">____</font></font></p>
+
+</blockquote>
+<p><font size="2" face="Verdana"><i>lpszDefault</i></font></p>
+
+<blockquote>
+  <p><font size="2" face="Verdana">
+This value is optional, but allows you to define default characters that you want
+displayed when the user presses the backspace key.&nbsp; This usually represents
+data that has been previously saved then restored.&nbsp; This makes it easy for
+the user to restore some or all of the default text displayed when the
+control was initialized.&nbsp; If left blank, you can simply use SetWindowText
+to initialize the edit control otherwise the literal character string will be
+used.&nbsp; Again, this value should match the previously defined mask:</font></p>
+
+<p><font size="2" face="Courier New">Phone No: (<font color="#0000FF">800</font>)
+<font color="#0000FF">555</font>-<font color="#0000FF">1212</font></font></p>
+
+</blockquote>
+
+<p><font face="Verdana" size="2"><b>Remarks</b><b>:</b></font></p>
+
+<p><font face="Verdana" size="2">This member function defines the attributes for
+the mask edit control.</font></p>
+
+<p><font face="Verdana" size="2"><b>Example</b><b>:</b></font></p>
+
+<p><font face="Verdana" size="2">The following is an example that demonstrates
+the use of <b>CXTMaskEdit::SetEditMask</b>:</font></p>
+
+<p><font face="Courier New" size="2">m_maskEdit.SetEditMask(<br>
+&nbsp;&nbsp;&nbsp; _T(&quot;Phone No: (000) 000-0000&quot;),<br>
+&nbsp;&nbsp;&nbsp; _T(&quot;Phone No: (___) ___-____&quot;),<br>
+&nbsp;&nbsp;&nbsp; _T(&quot;Phone No: (800) 555-1212&quot;));</font></p>
+<hr size="0" color="#808080">
+<p><font face="Verdana" size="1"><a href="mailto:xtreme@codejock.com">Send
+feedback</a> to Codejock Software.&nbsp; <a href="http://www.codejock.com">Look
+here</a> for online resources.</font></p>
+
+</body>
+</html>

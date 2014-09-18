@@ -1,0 +1,441 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "XTResource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_KOREAN, SUBLANG_DEFAULT
+#pragma code_page(949)
+#endif //_WIN32
+
+#ifndef _XTP_NO_BINARY_RESOURCES
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+XT_IDC_DRAGMOVE         CURSOR     DISCARDABLE        "Controls/res/dragmove.cur"
+XT_IDC_HAND             CURSOR     DISCARDABLE        "Controls/res/hand.cur"
+XT_IDC_DRAGNONE         CURSOR     DISCARDABLE        "Controls/res/dragnone.cur"
+XT_IDC_HANDNONE         CURSOR     DISCARDABLE        "Controls/res/handnone.cur"
+XT_IDC_DRAGCOPY         CURSOR     DISCARDABLE        "Controls/res/dragcopy.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+XT_IDB_BTN_OUT          BITMAP     DISCARDABLE        "Controls/res/btn_out.bmp"
+XT_IDB_LIGHTBULB        BITMAP     FIXED IMPURE       "Controls/res/lightbulb.bmp"
+XT_IDB_LISTEDIT         BITMAP     DISCARDABLE        "Controls/res/btn_listedit.bmp"
+XT_IDB_FONTTYPE         BITMAP     DISCARDABLE        "Controls/res/font.bmp"
+XT_IDB_SCROLL_ARW       BITMAP     DISCARDABLE        "Controls/res/scroll.bmp"
+XT_IDB_CHECKLISTBOX     BITMAP     FIXED IMPURE       "Controls/res/checklist.bmp"
+XT_IDB_CHECKLISTBOX_3D  BITMAP     FIXED IMPURE       "Controls/res/checklist_3d.bmp"
+XTP_IDB_TASKPANEL_GRIPPER BITMAP     DISCARDABLE        "Controls/res/TaskPanelGripper.bmp"
+XTP_IDB_TASKPANEL_GRIPPER_SPECIAL BITMAP     DISCARDABLE        "Controls/res/TaskPanelGripperSpecial.bmp"
+XT_IDR_TBAR_HDR         BITMAP     DISCARDABLE        "Controls/res/tbar_hdr.bmp"
+XT_IDR_TBAR_OUT         BITMAP     MOVEABLE PURE      "Controls/res/tbar_out.bmp"
+XT_IDR_TBAR_HEXEDIT     BITMAP     DISCARDABLE        "Controls/res/tbar_hex.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+XT_IDI_XTREME           ICON       DISCARDABLE        "res\\xtreme.ico"
+XTP_IDI_SHORTCUTS_EXPAND_ALPHA ICON       DISCARDABLE        "Controls/res/exp_alpha.ico"
+XTP_IDI_SHORTCUTS_EXPAND_NORMAL ICON       DISCARDABLE        "Controls/res/exp_normal.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+XT_IDR_TBAR_HDR TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      XT_IDC_SORTASC
+    BUTTON      XT_IDC_SORTDSC
+    SEPARATOR
+    BUTTON      XT_IDC_ALIGNLEFT
+    BUTTON      XT_IDC_ALIGNCENTER
+    BUTTON      XT_IDC_ALIGNRIGHT
+END
+
+XT_IDR_TBAR_OUT TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      XT_IDC_LARGEICON
+    BUTTON      XT_IDC_SMALLICON
+END
+
+XT_IDR_TBAR_HEXEDIT TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_EDIT_UNDO
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_EDIT_CLEAR
+END
+
+#endif
+
+#ifndef _XTP_NO_COMMONCONTROLS_RESOURCES
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+XT_IDD_TIPOFTHEDAY DIALOGEX 0, 0, 279, 157
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "잠깐만"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "닫기",IDOK,221,136,50,14
+    CONTROL         "시작할 때 팁 표시(&S)",XT_IDC_CHK_DAYTIP_SHOW,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,140,78,10
+    PUSHBUTTON      "다음 팁(&N)",XT_IDC_BTN_DAYTIP_NEXT,162,136,50,14
+    CONTROL         "",XT_IDC_BTN_DAYTIP_BORDER,"Static",SS_GRAYFRAME | NOT 
+                    WS_VISIBLE,8,7,263,123
+END
+
+XT_IDD_COLORCUSTOM DIALOG DISCARDABLE  0, 0, 147, 161
+STYLE WS_CHILD | WS_DISABLED | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | 
+    WS_CAPTION
+CAPTION "사용자 지정"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "색:",XT_IDC_TXT_COLORS,2,4,43,10
+    CONTROL         "",XT_IDC_CLR_WND,"Static",SS_BLACKFRAME | WS_TABSTOP,3,
+                    15,119,86
+    CONTROL         "",XT_IDC_CLR_LUM,"Static",SS_BLACKFRAME | WS_TABSTOP,
+                    126,15,20,86
+    LTEXT           "색상:",XT_IDC_TXT_HUE,7,108,16,8
+    EDITTEXT        XT_IDC_EDIT_HUE,25,106,33,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",XT_IDC_SPIN_HUE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,49,105,
+                    10,14
+    LTEXT           "채도:",XT_IDC_TXT_SAT,7,125,16,8
+    EDITTEXT        XT_IDC_EDIT_SAT,25,122,33,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin2",XT_IDC_SPIN_SAT,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,49,122,
+                    10,14
+    LTEXT           "명도:",XT_IDC_TXT_LUM,7,140,16,8
+    EDITTEXT        XT_IDC_EDIT_LUM,25,138,33,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin3",XT_IDC_SPIN_LUM,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,49,137,
+                    10,14
+    LTEXT           "빨강:",XT_IDC_TXT_RED,65,108,23,8
+    EDITTEXT        XT_IDC_EDIT_RED,89,106,33,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",XT_IDC_SPIN_RED,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,113,105,
+                    11,14
+    LTEXT           "녹색:",XT_IDC_TXT_GREEN,65,125,23,8
+    EDITTEXT        XT_IDC_EDIT_GREEN,89,122,33,13,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin2",XT_IDC_SPIN_GREEN,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,113,122,
+                    11,14
+    LTEXT           "파랑:",XT_IDC_TXT_BLUE,65,140,23,8
+    EDITTEXT        XT_IDC_EDIT_BLUE,89,138,33,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin3",XT_IDC_SPIN_BLUE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,113,137,
+                    11,14
+END
+
+XT_IDD_COLORSTANDARD DIALOG DISCARDABLE  0, 0, 147, 161
+STYLE WS_CHILD | WS_DISABLED | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | 
+    WS_CAPTION
+CAPTION "Standard"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "색:",XT_IDC_TXT_COLORS,2,4,43,10
+    CONTROL         "",XT_IDC_CLR_HEX,"Static",SS_BLACKFRAME | WS_TABSTOP,0,
+                    15,147,145
+END
+
+XT_IDD_WINDOWLIST DIALOG DISCARDABLE  0, 0, 301, 164
+STYLE WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "창 정렬"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "창 선택:",IDC_STATIC,7,7,147,8
+    LISTBOX         XT_IDC_LBOX_WINDOWS,7,17,216,140,LBS_SORT | 
+                    LBS_OWNERDRAWFIXED | LBS_HASSTRINGS | 
+                    LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | WS_VSCROLL | 
+                    WS_HSCROLL | WS_TABSTOP
+    PUSHBUTTON      "인증",XT_IDC_BTN_ACTIVATE,233,7,62,14
+    PUSHBUTTON      "확인",IDOK,233,24,62,14
+    PUSHBUTTON      "저장",XT_IDC_BTN_SAVE,233,41,62,14
+    PUSHBUTTON      "창 닫기",XT_IDC_BTN_CLOSEWINDOWS,233,58,62,14
+    PUSHBUTTON      "하프",XT_IDC_BTN_CASCADE,233,75,62,14
+    PUSHBUTTON      "가로 바둑판식 배열",XT_IDC_BTN_TILEHORZ,233,92,62,14
+    PUSHBUTTON      "세로 바둑판식 배열",XT_IDC_BTN_TILEVERT,233,109,62,14
+    PUSHBUTTON      "최소화",XT_IDC_BTN_MINIMIZE,233,126,62,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+XT_IDM_POPUP MENU DISCARDABLE 
+BEGIN
+    POPUP "RClickOutlookBar"
+    BEGIN
+        MENUITEM "작은 아이콘",                XT_IDC_SMALLICON
+        MENUITEM "큰 아이콘",                XT_IDC_LARGEICON
+    END
+    POPUP "RClickHexEdit"
+    BEGIN
+        MENUITEM "실행 취소",                       ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "잘라내기",                        ID_EDIT_CUT
+        MENUITEM "복사",                       ID_EDIT_COPY
+        MENUITEM "붙여넣기",                      ID_EDIT_PASTE
+        MENUITEM "삭제",                     ID_EDIT_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "모두 선택",                 ID_EDIT_SELECT_ALL
+    END
+    POPUP "RClickHeader"
+    BEGIN
+        MENUITEM "오름차순 정렬",              XT_IDC_SORTASC
+        MENUITEM "내림차순 정렬",             XT_IDC_SORTDSC
+        MENUITEM SEPARATOR
+        POPUP "맞춤"
+        BEGIN
+            MENUITEM "왼쪽 맞춤",                  XT_IDC_ALIGNLEFT
+            MENUITEM "가운데 맞춤",                XT_IDC_ALIGNCENTER
+            MENUITEM "오른쪽 맞춤",                 XT_IDC_ALIGNRIGHT
+        END
+    END
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "XTResource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDC_BTN_NEW          "새로 만들기"
+    XT_IDC_BTN_DELETE       "삭제"
+    XT_IDC_BTN_UP           "위로 이동"
+    XT_IDC_BTN_DOWN         "아래로 이동"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDS_REG_SETTINGS     "Settings"
+    XT_IDS_REG_WNDPOS       "Window Position"
+    XT_IDS_REG_COLINFO      "Column Info"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDS_NAME             "이름"
+    XT_IDS_SIZE             "크기"
+    XT_IDS_TYPE             "종류"
+    XT_IDS_MODIFIED         "수정한 날짜"
+    XT_IDS_COLOR_AUTO       "자동"
+    XT_IDS_COLOR_CUST       "사용자 지정..."
+    XT_IDS_SELDIR           "디렉터리 선택:"
+    XT_IDS_DOT              "..."
+    XT_IDS_DEFEXT           "*.*"
+    XT_IDS_DEFFILT          "모든 파일 (*.*)|*.*||"
+    XT_IDS_DEFTITLE         "디렉터리 이름:"
+    XT_IDS_CLICKKEEPOPEN    "폴더 목록 창 고정 핀"
+    XT_IDS_SE_0             "시스템 메모리가 부족합니다."
+    XT_IDS_SE_ERR_FNF       "지정한 파일을 찾을 수 없습니다."
+    XT_IDS_SE_ERR_PNF       "지정한 경로를 찾을 수 없습니다."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDS_SE_ERR_ACCESSDENIED 
+                            "운영 체제에서 지정한 파일로의 액세스를 거부했습니다."
+    XT_IDS_SE_ERR_OOM       "메모리가 부족하여 작업을 완료할 수 없습니다."
+    XT_IDS_SE_ERR_BAD_FORMAT 
+                            "잘못되거나 손상된 파일입니다."
+    XT_IDS_SE_ERR_SHARE     "공유 위반이 있었습니다. 원본 파일이나 대상 파일이 사용 중입니다."
+    XT_IDS_SE_ERR_ASSOCINCOMPLETE 
+                            "파일 이름 연관이 완전하지 않거나 잘못되었습니다."
+    XT_IDS_SE_ERR_DDETIMEOUT 
+                            "요청 시간 초과로 DDE 트랜잭션을 완료할 수 없습니다."
+    XT_IDS_SE_ERR_DDEFAIL   "DDE 트랜잭션이 실패했습니다."
+    XT_IDS_SE_ERR_DDEBUSY   "다른 DDE 트랜잭션이 처리되고 있기 때문에 DDE 트랜잭션을 완료할 수 없습니다."
+    XT_IDS_SE_ERR_NOASSOC   "주어진 파일 이름 확장명과 연관된 응용 프로그램이 없습니다."
+    XT_IDS_SE_ERR_DLLNOTFOUND 
+                            "지정한 라이브러리가 없습니다."
+    XT_IDS_SE_ERR_UNKOWN    "알 수 없는 오류 번호 %d"
+    XT_IDS_CLR_BLACK        "검정"
+    XT_IDS_CLR_BROWN        "밤색"
+    XT_IDS_CLR_OLIVE_GREEN  "황록색"
+    XT_IDS_CLR_DARK_GREEN   "진한 녹색"
+    XT_IDS_CLR_DARK_TEAL    "진한 청록"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDC_SORTASC          "오름차순 정렬\n오름차순 정렬"
+    XT_IDC_SORTDSC          "내림차순 정렬\n내림차순 정렬"
+    XT_IDC_ALIGNLEFT        "단락을 왼쪽으로 맞춥니다.\n왼쪽 맞춤"
+    XT_IDC_ALIGNCENTER      "단락을 가운데로 맞춥니다.\n가운데 맞춤"
+    XT_IDC_ALIGNRIGHT       "단락을 오른쪽으로 맞춥니다.\n오른쪽 맞춤"
+    XT_IDC_LARGEICON        "큰 아이콘을 표시합니다.\n큰 아이콘"
+    XT_IDC_SMALLICON        "작은 아이콘을 표시합니다.\n작은 아이콘"
+    XT_IDC_REMOVEITEM       "Outlook 표시줄에서 제거"
+    XT_IDC_RENAMEITEM       "바로 가기 이름 바꾸기"
+    XT_IDC_REMOVEGROUP      "그룹 제거"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDC_RENAMEGROUP      "그룹 이름 바꾸기"
+    XT_IDS_HEX              "16진수"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDS_STD_COLORS       "표준 색"
+    XT_IDS_TIPTEXT          "팁 내용"
+    XT_IDS_DIDYOUKNOW       "알고 계십니까..."
+    XT_IDS_FILE_ABSENT      "파일이 존재하지 않습니다."
+    XT_IDS_FILE_CORRUPT     "파일을 읽는 중 오류가 발생했습니다."
+    XT_IDS_COLOR_CAPTION    "색"
+    XT_IDS_NEW              "새로 만들기"
+    XT_IDS_CURRENT          "현재"
+    XT_IDS_DIRECTORIES      "디렉터리:"
+    XT_IDS_FILES            "파일:"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDS_CLR_DARK_BLUE    "진한 파랑"
+    XT_IDS_CLR_INDIGO       "남색"
+    XT_IDS_CLR_GRAY80       "회색-80%"
+    XT_IDS_CLR_DARK_RED     "진한 빨강"
+    XT_IDS_CLR_ORANGE       "주황"
+    XT_IDS_CLR_DARK_YELLOW  "진한 노랑"
+    XT_IDS_CLR_GREEN        "녹색"
+    XT_IDS_CLR_TEAL         "청록"
+    XT_IDS_CLR_BLUE         "파랑"
+    XT_IDS_CLR_BLUEGRAY     "청회색"
+    XT_IDS_CLR_GRAY50       "회색-50%"
+    XT_IDS_CLR_RED          "빨강"
+    XT_IDS_CLR_LIGHTORANGE  "연한 주황"
+    XT_IDS_CLR_LIME         "라임"
+    XT_IDS_CLR_SEA_GREEN    "해록"
+    XT_IDS_CLR_AQUA         "바다색"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDS_CLR_LIGHT_BLUE   "연한 파랑"
+    XT_IDS_CLR_VIOLET       "보라"
+    XT_IDS_CLR_GRAY40       "회색-40%"
+    XT_IDS_CLR_PINK         "분홍"
+    XT_IDS_CLR_GOLD         "황금색"
+    XT_IDS_CLR_YELLOW       "노랑"
+    XT_IDS_CLR_BRIGHT_GREEN "밝은 녹색"
+    XT_IDS_CLR_TURQUOISE    "옥색"
+    XT_IDS_CLR_SKY_BLUE     "하늘색"
+    XT_IDS_CLR_PLUM         "진한 보라"
+    XT_IDS_CLR_GRAY25       "회색-25%"
+    XT_IDS_CLR_ROSE         "다홍"
+    XT_IDS_CLR_TAN          "황갈색"
+    XT_IDS_CLR_LIGHT_YELLOW "연한 노랑"
+    XT_IDS_CLR_LIGHT_GREEN  "연한 녹색"
+    XT_IDS_CLR_LIGHT_TURQUOISE "연한 옥색"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDS_CLR_PALE_BLUE    "흐린 파랑"
+    XT_IDS_CLR_LAVENDER     "연보라"
+    XT_IDS_CLR_WHITE        "흰색"
+    XT_IDS_CLR_GRAY         "회색"
+    XT_IDS_CLR_MAROON       "적갈색"
+    XT_IDS_CLR_OLIVE        "올리브"
+    XT_IDS_CLR_NAVY         "짙은 파랑"
+    XT_IDS_CLR_PURPLE       "자주"
+    XT_IDS_CLR_SILVER       "은색"
+    XT_IDS_CLR_FUCHSIA      "밝은 자홍"
+    XT_IDS_CLR_NOFILL       "채우기 없음"
+    XT_IDS_CLR_NOFILL_TIP   "색 없음"
+    XT_IDS_AUTOMATIC        "자동"
+    XT_IDS_AUTOMATIC_TIP    "자동 색"
+    XT_IDS_MORE_COLORS      "다른 색..."
+    XT_IDS_MORE_COLORS_TIP  "다른 색"
+END
+
+#endif
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_ID_SHORTCUT_SHOW_MORE "단추 수 늘리기"
+    XTP_ID_SHORTCUT_SHOW_FEWER "단추 수 줄이기"
+    XTP_IDS_SHORTCUT_CONFIGURE "단추 구성"
+END
+
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

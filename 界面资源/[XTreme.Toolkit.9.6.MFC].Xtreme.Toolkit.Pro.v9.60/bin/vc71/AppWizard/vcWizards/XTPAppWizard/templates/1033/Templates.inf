@@ -1,0 +1,316 @@
+readme.txt
+[!if APP_TYPE_DLG]
+dlgroot.h
+dlgroot.cpp
+dialog.h
+dialog.cpp
+[!if HTML_DIALOG]
+root.htm
+[!endif]
+[!if AUTOMATION]
+dlgproxy.h
+dlgproxy.cpp
+[!endif]
+[!else]
+root.h
+root.cpp
+[!endif]
+
+[!if AUTOMATION]
+root.idl
+[!endif]
+
+stdafx.h
+stdafx.cpp
+
+[!if !APP_TYPE_DLG]
+frame.h
+frame.cpp
+[!if APP_TYPE_MDI]
+childfrm.h
+childfrm.cpp
+[!endif]
+[!endif]
+
+[!if !APP_TYPE_DLG]
+[!if DOCVIEW]
+doc.h
+doc.cpp
+view.h
+view.cpp
+[!else]
+wndview.h
+wndview.cpp
+[!endif]
+[!if PROJECT_STYLE_EXPLORER]
+treeview.h
+treeview.cpp
+[!endif]
+[!endif]
+
+[!if CONTAINER_SERVER || FULL_SERVER || MINI_SERVER || AUTOMATION || HAS_SUFFIX]
+[!if !HTML_EDITVIEW]
+root.reg
+[!endif]
+[!endif]
+
+[!if OLEDB || ODBC]
+recset.h
+recset.cpp
+[!endif]
+
+[!if CONTAINER_SERVER || FULL_SERVER || MINI_SERVER]
+srvritem.h
+srvritem.cpp
+ipframe.h
+ipframe.cpp
+[!endif]
+
+[!if CONTAINER || CONTAINER_SERVER]
+cntritem.h
+cntritem.cpp
+[!endif]
+
+[!if APP_TYPE_DLG]
+dlgres.h
+dlgall.rc
+[!else]
+resource.h
+all.rc
+[!endif]
+
+root.rc2
+
+[!if MANIFEST]
+root.manifest
+[!endif]
+		
+[!if DOCVIEW && !APP_TYPE_DLG]
+CopyOnly | doc.ico
+[!endif]
+
+CopyOnly | root.ico
+
+[!if !APP_TYPE_DLG && DOCKING_TOOLBAR]
+	[!if DOCVIEW]
+		[!if !PROJECT_STYLE_EXPLORER && !LIST_VIEW]
+			[!if DB_VIEW_NO_FILE]
+				[!if CONTEXT_HELP]
+CopyOnly | tbdh_.bmp
+				[!else]
+CopyOnly | tbd__.bmp
+				[!endif]
+			[!else]
+				[!if OLEDB_RECORD_VIEW || ODBC_RECORD_VIEW]
+					[!if CONTEXT_HELP]
+CopyOnly | tbrh_.bmp
+					[!else]
+CopyOnly | tbr__.bmp
+					[!endif]
+				[!else]
+					[!if CONTEXT_HELP]
+CopyOnly | tbah_.bmp
+					[!else]
+CopyOnly | tba__.bmp
+					[!endif]
+				[!endif]
+			[!endif]
+		[!else]
+			[!if DB_VIEW_NO_FILE]
+				[!if CONTEXT_HELP]
+CopyOnly | tbedh.bmp
+				[!else]
+CopyOnly | tbed_.bmp
+				[!endif]
+			[!else]
+				[!if CONTEXT_HELP]
+					[!if LIST_VIEW]
+CopyOnly | tbeah.bmp
+					[!else]
+CopyOnly | tbah_.bmp
+					[!endif]
+				[!else]
+					[!if LIST_VIEW]
+CopyOnly | tbea_.bmp
+					[!else]
+CopyOnly | tba__.bmp
+					[!endif]
+				[!endif]
+			[!endif]
+		[!endif]
+		[!if CONTAINER_SERVER || FULL_SERVER || MINI_SERVER]
+			[!if OLEDB_RECORD_VIEW || ODBC_RECORD_VIEW]
+				[!if CONTEXT_HELP]
+CopyOnly | tbrhi.bmp
+				[!else]
+CopyOnly | tbr_i.bmp
+				[!endif]
+			[!else]
+				[!if CONTEXT_HELP]
+CopyOnly | tbahi.bmp
+				[!else]
+CopyOnly | tba_i.bmp
+				[!endif]
+			[!endif]
+		[!endif]
+	[!else]
+		[!if APP_TYPE_MDI]
+			[!if CONTEXT_HELP]
+CopyOnly | tbndmh.bmp
+			[!else]
+CopyOnly | tbndm.bmp
+			[!endif]
+		[!else]
+			[!if CONTEXT_HELP]
+CopyOnly | tbndsh.bmp
+			[!else]
+CopyOnly | tbnds.bmp
+			[!endif]
+		[!endif]
+	[!endif]
+[!endif]
+
+[!if CONTEXT_HELP]
+	[!if HELPSTYLE_HTML]
+root.hhp
+root.hhk
+		[!if APP_TYPE_DLG]
+HIDD_ROOT_DIALOG.htm
+dlgroot.hhc
+		[!else]
+root.hhc
+afx_hidd_color.htm
+afx_hidd_fileopen.htm
+afx_hidd_filesave.htm
+afx_hidd_find.htm
+afx_hidd_font.htm
+afx_hidd_newtypedlg.htm
+afx_hidd_replace.htm
+afx_hidp_default.htm
+afx_hidw_dockbar_top.htm
+afx_hidw_status_bar.htm
+afx_hidw_toolbar.htm
+hidr_doc1type.htm
+hid_app_about.htm
+hid_app_exit.htm
+hid_context_help.htm
+hid_edit_clear.htm
+hid_edit_clear_all.htm
+hid_edit_copy.htm
+hid_edit_cut.htm
+hid_edit_find.htm
+hid_edit_paste.htm
+hid_edit_redo.htm
+hid_edit_repeat.htm
+hid_edit_replace.htm
+hid_edit_undo.htm
+hid_file_close.htm
+hid_file_mru_file1.htm
+hid_file_new.htm
+hid_file_open.htm
+hid_file_save.htm
+hid_file_save_as.htm
+hid_file_send_mail.htm
+hid_help_index.htm
+hid_help_using.htm
+hid_ht_caption.htm
+hid_ht_nowhere.htm
+hid_next_pane.htm
+hid_prev_pane.htm
+hid_sc_close.htm
+hid_sc_maximize.htm
+hid_sc_minimize.htm
+hid_sc_move.htm
+hid_sc_nextwindow.htm
+hid_sc_prevwindow.htm
+hid_sc_restore.htm
+hid_sc_size.htm
+hid_sc_tasklist.htm
+hid_view_ruler.htm
+hid_view_status_bar.htm
+hid_view_toolbar.htm
+hid_window_all.htm
+hid_window_arrange.htm
+hid_window_cascade.htm
+hid_window_new.htm
+hid_window_split.htm
+hid_window_tile.htm
+hid_window_tile_horz.htm
+hid_window_tile_vert.htm
+main_index.htm
+menu_edit.htm
+menu_file.htm
+menu_help.htm
+menu_view.htm
+menu_window.htm
+scrollbars.htm
+			[!if PRINTING]
+afx_hidd_print.htm
+afx_hidd_printdlg.htm
+afx_hidd_printsetup.htm
+afx_hidw_preview_bar.htm
+hid_file_page_setup.htm
+hid_file_print.htm
+hid_file_print_preview.htm
+hid_file_print_setup.htm
+			[!endif]
+			[!if CONTAINER || CONTAINER_SERVER]
+afxo0001.htm
+afx_hidd_changeicon.htm
+afx_hidd_convert.htm
+afx_hidd_editlinks.htm
+afx_hidd_insertobject.htm
+afx_hidd_pastespecial.htm
+hid_edit_paste_link.htm
+hid_ole_edit_links.htm
+hid_ole_insert_new.htm
+hid_ole_verb_1.htm
+			[!endif]
+			[!if CONTAINER_SERVER || FULL_SERVER || MINI_SERVER]
+afx_hidw_resize_bar.htm
+hid_file_save_copy_as.htm
+hid_file_update.htm
+			[!endif]
+			[!if OLEDB || ODBC]
+hid_record_first.htm
+hid_record_last.htm
+hid_record_next.htm
+hid_record_prev.htm
+menu_record.htm
+			[!endif]
+		[!endif]
+		[!if !APP_TYPE_DLG]
+CopyOnly | Bullet.gif
+		[!endif]
+	[!else]
+root.hpj
+		[!if APP_TYPE_DLG]
+dlgroot.cnt
+afxdlg.rtf
+		[!else]
+root.cnt
+CopyOnly | afxcore.rtf
+			[!if PRINTING]
+CopyOnly | afxprint.rtf
+			[!endif]
+			[!if CONTAINER || CONTAINER_SERVER]
+CopyOnly | afxolecl.rtf
+			[!endif]
+			[!if CONTAINER_SERVER || FULL_SERVER || MINI_SERVER]
+CopyOnly | afxolesv.rtf
+			[!endif]
+			[!if OLEDB || ODBC]
+CopyOnly | afxdb.rtf
+			[!endif]
+		[!endif]
+		[!if !APP_TYPE_DLG]
+CopyOnly | bullet.bmp
+		[!endif]
+	[!endif]
+[!endif]
+
+[!if DOCK_PANE]
+DockPaneWnd.h
+CopyOnly |  paneicons.bmp
+[!endif]
+

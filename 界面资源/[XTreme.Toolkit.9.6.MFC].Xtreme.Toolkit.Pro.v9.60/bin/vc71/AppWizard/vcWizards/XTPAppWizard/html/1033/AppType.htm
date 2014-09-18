@@ -1,0 +1,940 @@
+<!- (c) 2001 Microsoft Corporation -->
+<HTML DIR="LTR">
+
+<HEAD>
+	<TITLE>MFC Application Wizard</TITLE>
+	<META NAME="vs_targetSchema" CONTENT="http://schemas.microsoft.com/intellisense/ie5">
+	<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+	<STYLE TYPE="text/css">@import url();</STYLE>
+	<SCRIPT>
+		var strURL = "../../../";
+		strURL += window.external.GetHostLocale();
+		strURL += "/NewStyles.css";
+		document.styleSheets(0).imports(0).href = strURL;
+	</SCRIPT>
+</HEAD>
+
+<BODY BGCOLOR="BUTTONFACE" TOPMARGIN="0" LEFTMARGIN="0" RIGHTMARGIN="0" BOTTOMMARGIN="0" ONLOAD="InitDocument(document);" ONKEYDOWN="if (!bValidating) OnKey();" ONKEYPRESS="if (!bValidating) OnPress();">
+
+<TABLE CLASS="ONE" HEIGHT="100%" WIDTH="100%" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+<COL WIDTH="178"><COL>
+
+  <!--OPEN OF INTRODUCTORY INFORMATION TABLE//-->
+  <TR VALIGN="TOP">
+	<TD HEIGHT="79" WIDTH="100%" COLSPAN="2">
+	 <TABLE CLASS="TWO" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+	 <COL WIDTH="12"><COL><COL WIDTH="12">
+	  <TR>
+	   <TD VALIGN="TOP" HEIGHT="12" WIDTH="12">
+	  	&nbsp;
+	   </TD>
+	   <TD VALIGN="TOP" HEIGHT="12">
+	  	&nbsp;
+	   </TD>
+	   <TD VALIGN="TOP" HEIGHT="12" WIDTH="12">
+	  	&nbsp;
+	   </TD>
+	   <TD CLASS="IMAGE" VALIGN="BOTTOM" WIDTH="110" ROWSPAN="2">
+		<DIV CLASS="SMALLA" ID="SINGLE_DOC_IMAGE">
+		 <IMG CLASS="SMALL" CLASS="SMALL" SRC="../../Images/SingleDocument.gif" WIDTH="98" HEIGHT="70" ALT="">
+		</DIV>
+		<DIV CLASS="SMALL" ID="MULTI_DOC_IMAGE">
+		 <IMG CLASS="SMALL" SRC="..\..\Images\MultipleDocuments.gif" WIDTH="98" HEIGHT="70" ALT="">
+		</DIV>			
+		<DIV CLASS="SMALL" ID="DIALOG_IMAGE">
+		 <IMG CLASS="SMALL" SRC="..\..\Images\Dialog.gif" WIDTH="98" HEIGHT="70" ALT="">
+		</DIV>
+		<DIV CLASS="SMALL" ID="MULTI_TOP_DOC_IMAGE">
+		 <IMG CLASS="SMALL" SRC="..\..\Images\MultipleTopLevel.gif" WIDTH="108" HEIGHT="70" ALT="">
+		</DIV>
+	   </TD>
+	   <TD VALIGN="TOP" HEIGHT="12" WIDTH="6" ROWSPAN="2">
+	  	&nbsp;
+	   </TD>
+	  </TR>
+	 
+	  <TR>
+	   <TD VALIGN="TOP" HEIGHT="65" WIDTH="12">
+	  	&nbsp;
+	   </TD>
+	   <TD VALIGN="TOP" HEIGHT="65">
+		<H4 CLASS="HEAD" ID="HEAD">Application Type</H4>
+		<P CLASS="SUBHEAD" ID="SUBHEAD">Specify Document/View architecture support, language, and interface style options for your application.</P>
+	   </TD>
+	   <TD VALIGN="TOP" HEIGHT="65" WIDTH="12">
+	  	&nbsp;
+	   </TD>
+	  </TR>
+	 
+	  <TR>
+	   <TD VALIGN="TOP" CLASS="RULE" COLSPAN="5" HEIGHT="2">
+		<TABLE BORDER="0" WIDTH="100%" HEIGHT="1" CELLPADDING="0" CELLSPACING="0">
+	  	 <TR VALIGN="TOP">
+	  	  <TD HEIGHT="1" WIDTH="100%" BGCOLOR="BUTTONSHADOW"></TD>
+	  	  <TD HEIGHT="1" WIDTH="1" BGCOLOR="WINDOW"></TD>
+	  	 </TR>
+		</TABLE>
+	   </TD>
+	  </TR>
+	 </TABLE>
+	</TD>
+  </TR>
+  <!--CLOSE OF INTRODUCTORY INFORMATION TABLE//-->
+
+  <!--OPEN OF NAVIGATION, CONTENT, AND BUTTON TABLES//-->
+  <TR VALIGN="TOP">
+	<TD CLASS="Three" VALIGN="TOP" HEIGHT="100%" WIDTH="178">
+	 <TABLE CLASS="fixedSize" HEIGHT="100%" WIDTH="178" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+  	  <TR VALIGN="TOP">
+	   <TD CLASS="threeCustom" VALIGN="TOP" STYLE="BACKGROUND-IMAGE: URL(../../Images/MFC_Background.gif);">
+	   <!--OPEN OF NAVIGATION TABLE//-->
+	
+	    <TABLE CLASS="THREE" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+		<COL WIDTH="12"><COL WIDTH="166"><COL WIDTH="1">
+		 <TR>
+	   	  <TD VALIGN="TOP" COLSPAN="3" HEIGHT="12">
+	  		&nbsp;
+		  </TD>
+		 </TR>
+		 <TR>
+	   	  <TD VALIGN="TOP" HEIGHT="100%" WIDTH="12">
+	  		&nbsp;
+		  </TD>
+	   	  <TD VALIGN="TOP" HEIGHT="100%" WIDTH="165">
+	   	  <!--OPEN OF NAVIGATIONAL LINKS//-->
+	  		
+			<DIV CLASS="LINK">
+			 <TABLE WIDTH="166" HEIGHT="28" BORDER="0" CELLPADDING="0" CELLSPACING="0" CLASS="LINKTEXT">
+			  <TR VALIGN="MIDDLE">
+	  		   <TD WIDTH="162">
+				<SPAN CLASS="ACTIVELINK" ID="Default" TITLE="Examine an overview of selections." onClick="Next(document, 'Default.htm');" TABINDEX="1">Overview</SPAN>
+			   </TD>
+	  		   <TD WIDTH="4">
+			  	<IMG SRC="../../Images/spacer.gif" HEIGHT="1" WIDTH="4">
+			   </TD>
+			  </TR>
+			 </TABLE>
+			</DIV>
+
+		  	<DIV CLASS="LINKSELECTED">
+	 	   	 <SPAN CLASS="VERTLINE1">
+			  <IMG SRC="../../Images/spacer.gif" WIDTH="1" HEIGHT="1" ALT="" BORDER="0">
+			 </SPAN>
+			 <SPAN CLASS="HORILINE1">
+			  <TABLE WIDTH="167" HEIGHT="100%" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+			   <TR VALIGN="TOP">
+			    <TD CLASS="DOTTEDLINE" HEIGHT="1">
+				</TD>
+			   </TR>
+			   <TR VALIGN="TOP">
+			    <TD HEIGHT="100%">
+				 <IMG SRC="../../Images/spacer.gif" WIDTH="165" HEIGHT="28" ALT="" BORDER="0">
+			    </TD>
+			   </TR>
+			   <TR VALIGN="TOP">
+			    <TD CLASS="DOTTEDLINE" HEIGHT="1">
+			    </TD>
+			   </TR>
+			  </TABLE>
+			 </SPAN>
+			 <TABLE WIDTH="160" HEIGHT="28" BORDER="0" CELLPADDING="0" CELLSPACING="0" CLASS="LINKTEXTSELECTED">
+			  <TR VALIGN="MIDDLE">
+			   <TD WIDTH="156">
+				<SPAN ID="AppType" TITLE="Specify Document/View architecture support, language and interface style options for your application.">Application Type</SPAN>
+			   </TD>
+			   <TD WIDTH="4">
+				<IMG SRC="../../Images/spacer.gif" HEIGHT="1" WIDTH="4">
+			   </TD>
+			  </TR>
+			 </TABLE>
+			</DIV>
+	  		
+			<DIV CLASS="LINK">
+			 <TABLE WIDTH="166" HEIGHT="28" BORDER="0" CELLPADDING="0" CELLSPACING="0" CLASS="LINKTEXTINDENT">
+			  <TR VALIGN="MIDDLE">
+	  		   <TD WIDTH="162">
+				<SPAN CLASS="ACTIVELINK" ID="CompoundDoc" TITLE="Specify OLE container or server options and active document support." onClick="onClick(this);" TABINDEX="2">Compound Document Support</SPAN>
+			   </TD>
+	  		   <TD WIDTH="4">
+			  	<IMG SRC="../../Images/spacer.gif" HEIGHT="1" WIDTH="4">
+			   </TD>
+			  </TR>
+			 </TABLE>
+			</DIV>
+	  		
+			<DIV CLASS="LINK">
+			 <TABLE WIDTH="166" HEIGHT="28" BORDER="0" CELLPADDING="0" CELLSPACING="0" CLASS="LINKTEXTINDENT">
+			  <TR VALIGN="MIDDLE">
+	  		   <TD WIDTH="162">
+				<SPAN CLASS="ACTIVELINK" ID="DocTemp" TITLE="Specify values for your application's document template to use when creating a new document." onClick="onClick(this);" TABINDEX="3">Document Template Strings</SPAN>
+			   </TD>
+	  		   <TD WIDTH="4">
+			  	<IMG SRC="../../Images/spacer.gif" HEIGHT="1" WIDTH="4">
+			   </TD>
+			  </TR>
+			 </TABLE>
+			</DIV>
+	  		
+			<DIV CLASS="LINK">
+			 <TABLE WIDTH="166" HEIGHT="28" BORDER="0" CELLPADDING="0" CELLSPACING="0" CLASS="LINKTEXT">
+			  <TR VALIGN="MIDDLE">
+	  		   <TD WIDTH="162">
+				<SPAN CLASS="ACTIVELINK" ID="DBSupport" TITLE="Specify database support, including any data source." onClick="onClick(this);" TABINDEX="4">Database Support</SPAN>
+			   </TD>
+	  		   <TD WIDTH="4">
+			  	<IMG SRC="../../Images/spacer.gif" HEIGHT="1" WIDTH="4">
+			   </TD>
+			  </TR>
+			 </TABLE>
+			</DIV>
+	  		
+			<DIV CLASS="LINK">
+			 <TABLE WIDTH="166" HEIGHT="28" BORDER="0" CELLPADDING="0" CELLSPACING="0" CLASS="LINKTEXT">
+			  <TR VALIGN="MIDDLE">
+	  		   <TD WIDTH="162">
+				<SPAN CLASS="ACTIVELINK" ID="UIFeatures" TITLE="Specify options that control the look and feel of your application." onClick="Next(document, 'UIFeatures.htm');" TABINDEX="5">User Interface Features</SPAN>
+			   </TD>
+	  		   <TD WIDTH="4">
+			  	<IMG SRC="../../Images/spacer.gif" HEIGHT="1" WIDTH="4">
+			   </TD>
+			  </TR>
+			 </TABLE>
+			</DIV>
+	  		
+			<DIV CLASS="LINK">
+			 <TABLE WIDTH="166" HEIGHT="28" BORDER="0" CELLPADDING="0" CELLSPACING="0" CLASS="LINKTEXT">
+			  <TR VALIGN="MIDDLE">
+	  		   <TD WIDTH="162">
+				<SPAN CLASS="ACTIVELINK" ID="Advanced" TITLE="Specify additional support to build into your application." onClick="Next(document, 'Advanced.htm');" TABINDEX="6">Advanced Features</SPAN>
+			   </TD>
+	  		   <TD WIDTH="4">
+			  	<IMG SRC="../../Images/spacer.gif" HEIGHT="1" WIDTH="4">
+			   </TD>
+			  </TR>
+			 </TABLE>
+			</DIV>
+	  		
+			<DIV CLASS="LINK">
+			 <TABLE WIDTH="166" HEIGHT="28" BORDER="0" CELLPADDING="0" CELLSPACING="0" CLASS="LINKTEXT">
+			  <TR VALIGN="MIDDLE">
+	  		   <TD WIDTH="162">
+				<SPAN CLASS="ACTIVELINK" ID="XTToolkitPro" TITLE="Specify Xtreme Toolkit Pro General Settings" onClick="onClick(this);" TABINDEX="7">Toolkit Pro Features</SPAN>
+			   </TD>
+	  		   <TD WIDTH="4">
+			  	<IMG SRC="../../Images/spacer.gif" HEIGHT="1" WIDTH="4">
+			   </TD>
+			  </TR>
+			 </TABLE>
+			</DIV>
+
+			<DIV CLASS="LINK">
+			 <TABLE WIDTH="166" HEIGHT="28" BORDER="0" CELLPADDING="0" CELLSPACING="0" CLASS="LINKTEXT">
+			  <TR VALIGN="MIDDLE">
+	  		   <TD WIDTH="162">
+				<SPAN CLASS="ACTIVELINK" ID="GeneratedClasses" TITLE="Review generated classes and specify base classes for your application." onClick="Next(document, 'GeneratedClasses.htm');" TABINDEX="9">Generated Classes</SPAN>
+			   </TD>
+	  		   <TD WIDTH="4">
+			  	<IMG SRC="../../Images/spacer.gif" HEIGHT="1" WIDTH="4">
+			   </TD>
+			  </TR>
+			 </TABLE>
+			</DIV>
+			
+	   	  <!--CLOSE OF NAVIGATIONAL LINKS//-->
+		  </TD>
+		  <TD WIDTH="1">
+		   <DIV CLASS="VERTLINE">
+			 <IMG SRC="../../Images/spacer.gif" WIDTH="1" HEIGHT="1" ALT="" BORDER="0">
+		   </DIV>
+		  </TD>
+		 </TR>
+		 </TABLE>
+		</TD>
+	   </TR>
+	   </TABLE>
+			
+	   <!--CLOSE OF NAVIGATION TABLE//-->
+	   </TD>
+  
+	   <TD VALIGN="TOP" HEIGHT="100%">
+	   <!--OPEN OF CONTENT AND BUTTON TABLE//-->
+	   
+	   	<TABLE CLASS="ONE" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+		<COL WIDTH="100%">
+		 <TR VALIGN="TOP">
+		  <TD HEIGHT="100%">
+	   	  <!--OPEN OF CONTENT//-->
+		  
+		  	<TABLE CLASS="CONTENT" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+			<COL WIDTH="12"><COL WIDTH="193"><COL WIDTH="12"><COL WIDTH="193"><COL WIDTH="12">
+ 			 <TR>
+  			  <TD VALIGN="TOP" HEIGHT="12" COLSPAN="5">
+  				&nbsp;
+  			  </TD>
+ 			 </TR>
+			 
+ 			 <TR>
+  			  <TD VALIGN="TOP" WIDTH="12">
+  				&nbsp;
+  			 </TD>
+  
+  			  <TD VALIGN="TOP">
+ 				<SPAN CLASS="itemTextTop" ID="applicationType_title">Application type:
+					 <P CLASS="Spacer">&nbsp;</P>
+	
+	  				 <INPUT TYPE="radio" CLASS="Radio" NAME="apptype" ID="APP_TYPE_SDI" ACCESSKEY="s" TITLE="Select an application with single-document interface (SDI) support." onClick="OnAppType();">
+	  	 			 <DIV CLASS="itemTextRadioB" TITLE="Select an application with single-document interface (SDI) support." ID="APP_TYPE_SDI_DIV">
+		  			  <LABEL ID="SINGLEDOC_TEXT" FOR="APP_TYPE_SDI"><U>S</U>ingle document</LABEL>
+	  	 			  </DIV>
+	  
+	  				 <BR>
+	  
+	  			 	 <INPUT TYPE="radio" CLASS="Radio" NAME="apptype" ID="APP_TYPE_MDI" ACCESSKEY="m" TITLE="Select an application that supports multiple-document interfaces (MDI) within one top-level frame window." onClick="OnAppType();">
+	  	 			 <DIV CLASS="itemTextRadioB" ID="SELECT_MULTIDOC_TEXT" TITLE="Select an application that supports multiple-document interfaces (MDI) within one top-level frame window.">
+		  			  <LABEL ID="MULTIDOC_TEXT" FOR="APP_TYPE_MDI"><U>M</U>ultiple documents</LABEL>
+	  	 			 </DIV>
+	  
+	  				 <BR>
+	  
+	  				 <INPUT TYPE="radio" CLASS="Radio" NAME="apptype" ID="APP_TYPE_DLG" ACCESSKEY="d" TITLE="Select an application that runs in a dialog box." onClick="OnAppType();">
+	  	 			 <DIV CLASS="itemTextRadioB" ID="SELECT_DIALOG_TEXT" TITLE="Select an application that runs in a dialog box.">
+	   	  			  <LABEL ID="DIALOG_TEXT" FOR="APP_TYPE_DLG"><U>D</U>ialog based</LABEL>
+	  	 			 </DIV>
+	  
+	  				 <BR>
+	  
+	  				 <INPUT TYPE="checkbox" CLASS="CheckboxIndent" ACCESSKEY="i" ID="HTML_DIALOG" TITLE="Derive the dialog class from CDHtmlDialog." onPropertyChange="OnDHTMLDialogSupport();">
+	  	 			 <DIV CLASS="itemTextCheckboxIndentB" ID="HTML_DIALOG_DIV" TITLE="Derive the dialog class from CDHtmlDialog.">
+		  			  <LABEL ID="HTML_DIALOG_LABEL" FOR="HTML_DIALOG">Use HTML d<U>i</U>alog</LABEL>
+	  	 			 </DIV>
+	  
+					<P CLASS="ElementSpacer">&nbsp;</P>
+	  
+	  				 <INPUT TYPE="radio" CLASS="Radio" NAME="apptype" ID="APP_TYPE_MTLD" ACCESSKEY="t" TITLE="Select an application type which supports multiple top-level frame windows." onClick="OnAppType();">
+	  	 			 <DIV CLASS="itemTextRadioB" ID="SELECT_MULTI_TEXT" TITLE="Select an application type which supports multiple top-level frame windows.">
+		  			  <LABEL ID="MULTI_TEXT" FOR="APP_TYPE_MTLD">Mul<U>t</U>iple top-level documents</LABEL>
+	  				 </DIV>
+				</SPAN>
+	
+				<P CLASS="ElementSpacer">&nbsp;</P>
+
+    			<SPAN CLASS="itemText" ID="docview_title">
+	  				 <INPUT CLASS="CheckBox" TYPE="checkbox" ID="DOCVIEW" ACCESSKEY="v" TITLE="Specify building Document/View architecture into the application using CDocument and CView base classes." onPropertychange="OnDocView();" CLASS="SINGLECHECKBOX">
+	  	 			 <DIV CLASS="itemTextCheckboxA" ID="SELECT_DOCVIEW_TEXT" TITLE="Specify building Document/View architecture into the application using CDocument and CView base classes.">
+		  			  <LABEL ID="DOCVIEW_TEXT" FOR="DOCVIEW">Document/<U>V</U>iew architecture support</LABEL>
+	  	 			 </DIV>
+				</SPAN>
+	
+				<P CLASS="ElementSpacer18">&nbsp;</P>
+				
+     			<SPAN CLASS="itemText" ID="SPEC_LANGUAGE_TEXT" TITLE="Specify the language for application resources.">
+	  	 			 <LABEL ID="LANGUAGE_TEXT" FOR="LANGUAGE">Resource <U>l</U>anguage:</LABEL>
+	  	 			 <BR>
+	  	 			 <SELECT CLASS="sideBtn" SIZE="1" ID="LANGUAGE" ACCESSKEY="l" onChange="OnLang();" TITLE="Specify the language for application resources.">
+	  	 			 </SELECT>
+	 			</SPAN>
+  			  </TD>
+ 			  <TD VALIGN="TOP" WIDTH="12">
+  				&nbsp;
+  			  </TD>
+			  <TD VALIGN="TOP">
+ 				<SPAN CLASS="itemTextTop" ID="projectType_title">Project style:
+					 <P CLASS="Spacer">&nbsp;</P>
+	
+	  				 <INPUT TYPE="radio" CLASS="Radio" ACCESSKEY="x" TITLE="Select browser-style user interface." NAME="projtype" VALUE="radiobutton" ID="PROJECT_STYLE_EXPLORER" onClick="OnProjectStyle();">
+	  	 			 <DIV CLASS="itemTextRadioB" ID="explorer_title" TITLE="Select browser-style user interface.">
+	      			  <LABEL ID="EXPLORER_TEXT" FOR="PROJECT_STYLE_EXPLORER">Windows E<U>x</U>plorer</LABEL>
+	  	 			 </DIV>
+	
+					 <BR>
+	
+	  				 <INPUT TYPE="radio" CLASS="Radio" ACCESSKEY="a" TITLE="Select traditional user interface." NAME="projtype" VALUE="radiobutton" ID="PROJECT_STYLE_MFCSTD" onClick="OnProjectStyle();">
+	  	 			 <DIV CLASS="itemTextRadioB" ID="SELECT_UI_TEXT" TITLE="Select traditional user interface.">
+	      			  <LABEL ID="UI_TEXT" FOR="PROJECT_STYLE_MFCSTD">MFC st<U>a</U>ndard</LABEL>
+	  	 			 </DIV>
+				</SPAN>
+	
+				<P CLASS="ElementSpacer">&nbsp;</P>
+					 
+  				<SPAN CLASS="itemTextTop" ID="projectType_title2">Use of MFC:
+					 <P CLASS="Spacer">&nbsp;</P>
+	
+	  				 <INPUT TYPE="radio" CLASS="Radio" ACCESSKEY="u" TITLE="Link with the MFC DLL." NAME="useofmfc" ID="DYNAMIC_MFC">
+	  	 			 <DIV CLASS="itemTextRadioB" ID="LINK_MFC_DYNAMIC_TEXT" TITLE="Link with the MFC DLL.">
+	      			  <LABEL ID="DYNAMIC_MFC_TEXT" FOR="DYNAMIC_MFC"><U>U</U>se MFC in a shared DLL</LABEL>
+	  	 			 </DIV>
+	
+					 <BR>
+	
+	  				 <INPUT TYPE="radio" CLASS="Radio" ACCESSKEY="e" TITLE="Link with the MFC static library." NAME="useofmfc" VALUE="radiobutton" ID="STATIC_MFC">
+	  	 			 <DIV CLASS="itemTextRadioB" ID="LINK_MFC_STATIC_TEXT" TITLE="Link with the MFC static library.">
+	      			  <LABEL ID="STATIC_MFC_TEXT" FOR="STATIC_MFC">Us<U>e</U> MFC in a static library</LABEL>
+	  	 			 </DIV>
+				</SPAN>
+  			  </TD>
+  			  <TD VALIGN="TOP" WIDTH="12">
+  				&nbsp;
+  			  </TD>
+ 			 </TR>
+			</TABLE>
+			
+	   	  <!--CLOSE OF CONTENT//-->
+		  </TD>
+		 </TR>
+		 <TR VALIGN="BOTTOM">
+		  <TD HEIGHT="48">
+	   	  <!--OPEN OF BUTTON HTML//-->
+		  
+		  	<TABLE HEIGHT="48" BORDER="0" CELLPADDING="0" CELLSPACING="0">
+			<COL WIDTH="12"><COL><COL WIDTH="75"><COL WIDTH="4"><COL WIDTH="75"><COL WIDTH="4"><COL WIDTH="75"><COL WIDTH="12">
+			 <TR>
+  			  <TD VALIGN="TOP" CLASS="RULE" COLSPAN="8" HEIGHT="2">
+				<TABLE BORDER="0" WIDTH="100%" HEIGHT="1" CELLPADDING="0" CELLSPACING="0">
+  	 			 <TR VALIGN="TOP">
+  	  			  <TD HEIGHT="1" WIDTH="100%" BGCOLOR="BUTTONSHADOW"></TD>
+  	  			  <TD HEIGHT="1" WIDTH="1" BGCOLOR="WINDOW"></TD>
+  	 			 </TR>
+				</TABLE>
+  			  </TD>
+ 			  </TR>
+ 
+ 			  <TR>
+  			  <TD VALIGN="TOP" HEIGHT="11" COLSPAN="8">
+  				&nbsp;
+  			  </TD>
+ 			 </TR>
+ 
+ 			<TR>
+  			  <TD VALIGN="MIDDLE" HEIGHT="23" WIDTH="12">
+  				&nbsp;
+  			  </TD>
+  			  <TD VALIGN="TOP" HEIGHT="23">
+  				&nbsp;
+  			  </TD>
+  			  <TD VALIGN="MIDDLE" HEIGHT="23" WIDTH="75">
+  				<BUTTON CLASS="BUTTONS" ID="FinishBtn" onClick="OnFinish(document);">Finish</BUTTON>
+  			  </TD>
+  			  <TD VALIGN="MIDDLE" HEIGHT="23" WIDTH="4">
+  				&nbsp;
+  			  </TD>
+  			  <TD VALIGN="MIDDLE" HEIGHT="23" WIDTH="75">
+  				<BUTTON CLASS="BUTTONS" ID="CancelBtn" onClick="window.external.Finish(document, 'cancel');">Cancel</BUTTON>
+  			  </TD>
+  			  <TD VALIGN="MIDDLE" HEIGHT="23" WIDTH="4">
+  				&nbsp;
+  			  </TD>
+  			  <TD VALIGN="MIDDLE" HEIGHT="23" WIDTH="75">
+  				<BUTTON CLASS="BUTTONS" ID="HelpBtn" onClick="window.external.OnHelp('vc.appwiz.mfc.exe.apptype');">Help</BUTTON>
+  			  </TD>
+  			  <TD VALIGN="MIDDLE" HEIGHT="23" WIDTH="12">
+  				&nbsp;
+  			  </TD>
+ 			 </TR>
+ 
+ 			 <TR>
+  			  <TD VALIGN="TOP" HEIGHT="12" COLSPAN="8">
+  				&nbsp;
+  			  </TD>
+ 			 </TR>
+			</TABLE>
+			
+	   	  <!--CLOSE OF BUTTON HTML//-->
+		  </TD>
+		 </TR>
+		</TABLE>
+	
+  	<!--CLOSE OF NAVIGATION, CONTENT, AND BUTTON TABLES//-->
+ 	</TD>
+  </TR>
+</TABLE>
+
+</BODY>
+</HTML>
+
+<SCRIPT LANGUAGE="JSCRIPT">
+
+var tab_array = new Array();
+tab_array[0] = Default;
+tab_array[1] = AppType;
+tab_array[2] = CompoundDoc;
+tab_array[3] = DocTemp;
+tab_array[4] = DBSupport;
+tab_array[5] = UIFeatures;
+tab_array[6] = Advanced;
+tab_array[7] = XTToolkitPro;
+tab_array[8] = GeneratedClasses;
+
+function InitDocument(document)
+{
+	setDirection();
+	InitTabs();
+	window.external.Load(document);
+	PopulateLanguages();	
+	OnLang();
+	ToggleImage();
+	SetFocus();
+
+	if (!APP_TYPE_DLG.checked)
+	{
+		HTML_DIALOG.disabled = true;
+		HTML_DIALOG_LABEL.disabled = true;
+	}
+}
+
+function PopulateLanguages()
+{
+	var oLangList = document.all.tags("SELECT").item("LANGUAGE");
+
+	// Scan the templates directory for the available languages
+	//
+	//var strInstalledLangs = window.external.GetInstalledLangs();
+	var strInstalledLangs = "1033"
+
+	// Populate the list
+	//
+	var iBegin = 0;
+	var iEnd = 0;
+	while(iEnd>=0)
+	{
+		var strLangId;
+		iEnd = strInstalledLangs.indexOf(",", iBegin);
+		if(iEnd>=0)
+		{
+			strLangId = strInstalledLangs.substr(iBegin, iEnd-iBegin);
+			iBegin=iEnd+1;
+		}
+		else
+		{
+			strLangId = strInstalledLangs.substr(iBegin);
+		}
+		var oOption = document.createElement("OPTION");
+		oOption.value = strLangId;
+		oOption.text = window.external.GetLangFromLCID(strLangId);
+		oLangList.add(oOption);
+	}
+	var len = oLangList.options.length;
+
+	var bIsDBCS = false; 
+	var strProjName = window.external.FindSymbol("PROJECT_NAME");
+	for(i=0; i<strProjName.Length; i++)
+	{
+		if(strProjName.charCodeAt(i)>255)
+		{
+			bIsDBCS = true;
+			break;
+		}
+	}
+	if(bIsDBCS)
+	{
+		var strSystemLocale = window.external.GetSystemLCID();
+		for (i = 0; i < len; i++)
+		{
+			var val = oLangList.options[i].value;
+			if(val == strSystemLocale)
+			{
+				oLangList.selectedIndex = i;
+				break;
+			}		
+		}
+		oLangList.disable = true;
+		return;
+	}
+	var strlang = window.external.FindSymbol("LANGUAGE");
+	if (strlang == "")
+	{
+		var strHostLocale = window.external.GetHostLocale();
+		var strSystemLocale = window.external.GetSystemLCID();
+
+		var nEnglishIndex = 0;
+
+		for (i = 0; i < len; i++)
+		{
+			var val = oLangList.options[i].value;
+
+			// If the language of the VS Envrionment is running in 
+			// is available it should default to that language.
+			//
+			// If the language that the system is running in 
+			// (system default locale) is available it should 
+			// default to that resource language.
+			//
+			if (val == strHostLocale || val == strSystemLocale)
+			{
+				oLangList.selectedIndex = i;
+				return;
+			}
+			if (val == "1033")
+				nEnglishIndex = i;
+		}
+
+		// If the language that the system is running in 
+		// (system default locale) is *not* available it 
+		// should default to English (available on all installs)
+		//
+		oLangList.selectedIndex = nEnglishIndex;
+	}
+	else
+	{
+		var strlcid = window.external.FindSymbol("LCID");
+		for (i = 0; i < len; i++)
+		{
+			var val = oLangList.options[i].value;
+			if (val == strlcid)
+			{
+				oLangList.selectedIndex = i;
+				return;
+			}
+		}
+	}
+}
+
+function InitTabs()
+{
+	MouseOut(DBSupport);
+	MouseOut(CompoundDoc);
+	MouseOut(DocTemp);
+	MouseOut(XTToolkitPro);
+}
+
+function Next(document, linkto)
+{
+	window.external.Next(document, linkto);
+}
+
+function onClick(obj)
+{
+	if (obj == null || typeof(obj) == "undefined")
+		return;
+
+	if (obj.id == "DBSupport")
+	{
+		if (!APP_TYPE_DLG.checked)
+		{ 
+			Next(document, "DBSupport.htm"); 
+		}
+	}
+	if (obj.id == "XTToolkitPro")
+	{
+		if (!APP_TYPE_DLG.checked)
+		{ 
+			Next(document, "XTToolkitPro.htm"); 
+		}
+	}
+	if (obj.id == "CompoundDoc")
+	{
+		if (DOCVIEW.checked && !DOCVIEW.disabled)
+		{ 
+			Next(document, "CompoundDoc.htm"); 
+		}
+	}
+	if (obj.id == "DocTemp")
+	{
+		if (DOCVIEW.checked && !DOCVIEW.disabled)
+		{ 
+			Next(document, "DocTemp.htm"); 
+		}
+	}
+}
+
+function CheckDataSource()
+{
+	if (window.external.FindSymbol("DB_CONNECTION_STRING") == "" && ( window.external.FindSymbol("OLEDB") || window.external.FindSymbol("ODBC") ) )
+	{
+		L_Err1_Text = "You must specify a data source when database view option is selected";
+		window.external.ReportError(L_Err1_Text);
+		return false;
+	}
+	return true;
+}
+
+function OnFinish(document)
+{
+	if (!CheckDataSource())
+		return;
+
+	if (window.external.FindSymbol("ACTIVE_DOC_SERVER"))
+	{
+		if (window.external.FindSymbol("FILE_EXTENSION") == "")
+		{
+			L_Err2_Text = "You must specify a Document File Extension in the Document Template Strings page";
+			window.external.ReportError(L_Err2_Text);
+			return;
+		}
+	}
+	OnWizFinish(document);
+}
+
+function OnAppType()
+{
+	DBSupport.className = "activelink";
+	XTToolkitPro.className = "activelink";
+	DOCVIEW.disabled = false;
+	docview_title.disabled = false;
+	PROJECT_STYLE_EXPLORER.disabled = false;
+	explorer_title.disabled = false;
+
+	if (APP_TYPE_MDI.checked)
+	{
+		if (window.external.FindSymbol("DB_VIEW_NO_FILE"))
+		{
+			var L_Prompt1_Text = "Selecting a Multiple Document Interface will cause your project to include file support.";
+			if (window.external.YesNoAlert(L_Prompt1_Text))
+			{
+				window.external.AddSymbol("DB_VIEW_NO_FILE", false);
+				window.external.AddSymbol("DB_VIEW_WITH_FILE", true);
+			}
+			else
+			{
+				APP_TYPE_MDI.checked = false;
+				APP_TYPE_SDI.checked = true;
+			}
+		}
+	}
+
+	if (APP_TYPE_DLG.checked)
+	{
+		HTML_DIALOG.disabled = false;
+		HTML_DIALOG_LABEL.disabled = false;
+		DOCVIEW.disabled = true;
+		docview_title.disabled = true;
+		OnDocView();
+		DBSupport.className = "inactivelink";
+		XTToolkitPro.className = "inactivelink";
+
+		PROJECT_STYLE_EXPLORER.disabled = true;
+		explorer_title.disabled = true;
+		PROJECT_STYLE_EXPLORER.checked = false;
+
+		window.external.AddSymbol("LIST_VIEW", false);
+		if (window.external.FindSymbol("VIEW_BASE_CLASS") != "CView")
+			window.external.AddSymbol("VIEW_BASE_CLASS", "CView");
+
+		PROJECT_STYLE_MFCSTD.checked = true;
+
+		window.external.AddSymbol("DB_SUPPORT_NONE", true);
+		window.external.AddSymbol("DB_SUPPORT_HEADER_ONLY", false);
+		window.external.AddSymbol("DB_VIEW_NO_FILE", false);
+		window.external.AddSymbol("DB_VIEW_WITH_FILE", false);
+		window.external.AddSymbol("OLEDB", false);
+		window.external.AddSymbol("ODBC", false);
+		window.external.AddSymbol("DB_SUPPORT_INFO", "" );
+		window.external.AddSymbol("DB_CONNECTION_STRING", "" );
+		window.external.AddSymbol("OLEDB_RECORD_VIEW", false);
+		window.external.AddSymbol("ODBC_RECORD_VIEW", false);
+		window.external.AddSymbol("VIEW_BASE_CLASS", "CView");
+
+		window.external.AddSymbol("COMPOUND_DOC_NONE", true);
+		window.external.AddSymbol("CONTAINER", false);
+		window.external.AddSymbol("MINI_SERVER", false);
+		window.external.AddSymbol("FULL_SERVER", false);
+		window.external.AddSymbol("CONTAINER_SERVER", false);
+		window.external.AddSymbol("ACTIVE_DOC_CONTAINER", false);
+		window.external.AddSymbol("ACTIVE_DOC_SERVER", false);
+		window.external.AddSymbol("MAIN_FRAME_MINIMIZE_BOX", false);
+		window.external.AddSymbol("MAIN_FRAME_MAXIMIZE_BOX", false);
+		window.external.AddSymbol("MAIN_FRAME_THICK_FRAME", false);		
+	}
+	else
+	{
+		HTML_DIALOG.disabled = true;
+		HTML_DIALOG_LABEL.disabled = true;
+		window.external.AddSymbol("MAIN_FRAME_MINIMIZE_BOX", true);
+		window.external.AddSymbol("MAIN_FRAME_MAXIMIZE_BOX", true);
+		window.external.AddSymbol("MAIN_FRAME_THICK_FRAME", true);
+	}
+
+	if (APP_TYPE_SDI.checked || APP_TYPE_MTLD.checked)
+	{
+		window.external.AddSymbol("MAIN_FRAME_BASE_CLASS", "CFrameWnd");
+		window.external.AddSymbol("XTP_MAIN_FRAME_BASE_CLASS", "CXTPFrameWnd");
+	}
+	else		
+	{
+		window.external.AddSymbol("MAIN_FRAME_BASE_CLASS", "CMDIFrameWnd");
+		window.external.AddSymbol("XTP_MAIN_FRAME_BASE_CLASS", "CXTPMDIFrameWnd");
+	}
+
+	if (!DOCVIEW.checked || DOCVIEW.disabled)
+	{
+		PROJECT_STYLE_EXPLORER.disabled = true;
+		explorer_title.disabled = true;
+		PROJECT_STYLE_EXPLORER.checked = false;
+
+		window.external.AddSymbol("LIST_VIEW", false);
+		if (window.external.FindSymbol("VIEW_BASE_CLASS") != "CView")
+			window.external.AddSymbol("VIEW_BASE_CLASS", "CView");
+	}
+
+	ToggleImage();
+}
+
+function OnDocView()
+{
+	if (!DOCVIEW.checked && !DOCVIEW.disabled)
+	{
+		if (window.external.FindSymbol("DB_VIEW_NO_FILE") || window.external.FindSymbol("DB_VIEW_WITH_FILE"))
+		{
+			var L_Prompt2_Text = "Removing Document/View architecture support will disable the database support!";
+			if (window.external.YesNoAlert(L_Prompt2_Text))
+			{
+				window.external.AddSymbol("DB_SUPPORT_NONE", true);
+				window.external.AddSymbol("DB_SUPPORT_HEADER_ONLY", false);
+				window.external.AddSymbol("DB_VIEW_NO_FILE", false);
+				window.external.AddSymbol("DB_VIEW_WITH_FILE", false);
+				window.external.AddSymbol("OLEDB", false);
+				window.external.AddSymbol("ODBC", false);
+				window.external.AddSymbol("DB_SUPPORT_INFO", "" );
+				window.external.AddSymbol("DB_CONNECTION_STRING", "" );
+				window.external.AddSymbol("OLEDB_RECORD_VIEW", false);
+				window.external.AddSymbol("ODBC_RECORD_VIEW", false);
+				window.external.AddSymbol("VIEW_BASE_CLASS", "CView");
+			}
+			else
+			{
+				DOCVIEW.checked = true;
+			}
+		}
+	}
+
+	CompoundDoc.className = "activelink";
+	DocTemp.className = "activelink";
+
+	if (!DOCVIEW.checked || DOCVIEW.disabled)
+	{
+		CompoundDoc.className = "inactivelink";
+	
+		DocTemp.className = "inactivelink";
+		PROJECT_STYLE_EXPLORER.disabled = true;
+		explorer_title.disabled = true;
+		PROJECT_STYLE_EXPLORER.checked = false;
+
+		window.external.AddSymbol("LIST_VIEW", false);
+		if (window.external.FindSymbol("VIEW_BASE_CLASS") != "CView")
+			window.external.AddSymbol("VIEW_BASE_CLASS", "CView");
+
+		PROJECT_STYLE_MFCSTD.checked = true;
+	}
+	else
+	{
+		PROJECT_STYLE_EXPLORER.disabled = false;
+		explorer_title.disabled = false;
+	}
+}
+
+function OnProjectStyle()
+{
+	if (PROJECT_STYLE_MFCSTD.checked)
+	{
+		window.external.AddSymbol("PRINTING", true);
+		window.external.AddSymbol("LIST_VIEW", false);
+		if (window.external.FindSymbol("VIEW_BASE_CLASS") != "CView")
+			window.external.AddSymbol("VIEW_BASE_CLASS", "CView");
+	}
+
+	if (PROJECT_STYLE_EXPLORER.checked)
+	{
+		window.external.AddSymbol("PRINTING", false);
+		window.external.AddSymbol("LIST_VIEW", true);
+		window.external.AddSymbol("OLEDB_RECORD_VIEW", false);
+		window.external.AddSymbol("ODBC_RECORD_VIEW", false);
+
+		window.external.AddSymbol("SCROLL_VIEW", false);
+		window.external.AddSymbol("FORM_VIEW", false);
+		window.external.AddSymbol("TREE_VIEW", false);
+		window.external.AddSymbol("RICH_EDIT_VIEW", false);
+		window.external.AddSymbol("EDIT_VIEW", false);
+		window.external.AddSymbol("HTML_VIEW", false);
+		window.external.AddSymbol("HTML_EDITVIEW", false);
+		
+		if (window.external.FindSymbol("VIEW_BASE_CLASS") != "CListView")
+		{
+			window.external.AddSymbol("VIEW_BASE_CLASS", "CListView");
+		}
+	}
+}
+
+function OnLang()
+{
+	var oLangs = document.all.tags("SELECT").item("LANGUAGE");
+	if ( oLangs != null)
+	{
+		oLang = oLangs.options[oLangs.selectedIndex];
+		var strLCID = oLang.value;
+
+		// fix up the templates path for the locale
+		var strCurrentTemplatesPath = window.external.FindSymbol("TEMPLATES_PATH");
+		var nIndex = strCurrentTemplatesPath.lastIndexOf("\\");
+		var strSubstr = strCurrentTemplatesPath.substr(0, nIndex);
+		var strNewTemplatesPath = strSubstr + "\\" + strLCID;
+		window.external.AddSymbol("TEMPLATES_PATH", strNewTemplatesPath);
+
+		SetLocaleForResources(strLCID)
+	}
+}
+
+function ToggleImage()
+{
+	SINGLE_DOC_IMAGE.style.display = "none";
+	MULTI_DOC_IMAGE.style.display = "none";
+	DIALOG_IMAGE.style.display = "none";
+	MULTI_TOP_DOC_IMAGE.style.display = "none";
+
+	if (APP_TYPE_SDI.checked)
+	{
+		SINGLE_DOC_IMAGE.style.display = "block";
+		return;
+	}
+	if (APP_TYPE_MDI.checked)
+	{
+		MULTI_DOC_IMAGE.style.display = "block";
+		return;
+	}
+	if (APP_TYPE_DLG.checked)
+	{
+		DIALOG_IMAGE.style.display = "block";
+		return;
+	}
+	if (APP_TYPE_MTLD.checked)
+		MULTI_TOP_DOC_IMAGE.style.display = "block";
+}
+
+function SetFocus()
+{
+	if (APP_TYPE_SDI.checked)
+	{
+		APP_TYPE_SDI.focus();
+		return;
+	}
+	if (APP_TYPE_MDI.checked)
+	{
+		APP_TYPE_MDI.focus();
+		return;
+	}
+	if (APP_TYPE_DLG.checked)
+	{
+		APP_TYPE_DLG.focus();
+		return;
+	}
+	if (APP_TYPE_MTLD.checked)
+		APP_TYPE_MTLD.focus();
+}
+
+function OnDHTMLDialogSupport()
+{
+	if( HTML_DIALOG.checked)	
+		window.external.AddSymbol("DIALOG_BASE_CLASS", "CDHtmlDialog");
+	else
+		window.external.AddSymbol("DIALOG_BASE_CLASS", "CDialog");
+}
+
+</SCRIPT>
+<SCRIPT ID="INCLUDE_SCRIPT" LANGUAGE="JSCRIPT"></SCRIPT>
+<SCRIPT ID="INCLUDE_COMMON" LANGUAGE="JSCRIPT"></SCRIPT>
+<SCRIPT>
+	var strPath = "../../../";
+	strPath += window.external.GetHostLocale();
+	var strScriptPath = strPath + "/Script.js";
+	var strCommonPath = strPath + "/Common.js";
+	document.scripts("INCLUDE_SCRIPT").src = strScriptPath;
+	document.scripts("INCLUDE_COMMON").src = strCommonPath;
+</SCRIPT>

@@ -1,0 +1,11 @@
+; XTPResourceEn.def : Declares the module parameters for the DLL.
+
+LIBRARY      XTPResourceEn
+DESCRIPTION  'XTPResourceEn Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here
+    GetLangID  @1
+    
+    
+    

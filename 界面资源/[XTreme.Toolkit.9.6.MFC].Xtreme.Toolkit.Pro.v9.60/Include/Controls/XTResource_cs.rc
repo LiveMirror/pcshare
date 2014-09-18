@@ -1,0 +1,441 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "XTResource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_CZECH, SUBLANG_DEFAULT
+#pragma code_page(1250)
+#endif //_WIN32
+
+#ifndef _XTP_NO_BINARY_RESOURCES
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+XT_IDC_DRAGMOVE         CURSOR     DISCARDABLE        "Controls/res/dragmove.cur"
+XT_IDC_HAND             CURSOR     DISCARDABLE        "Controls/res/hand.cur"
+XT_IDC_DRAGNONE         CURSOR     DISCARDABLE        "Controls/res/dragnone.cur"
+XT_IDC_HANDNONE         CURSOR     DISCARDABLE        "Controls/res/handnone.cur"
+XT_IDC_DRAGCOPY         CURSOR     DISCARDABLE        "Controls/res/dragcopy.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+XT_IDB_BTN_OUT          BITMAP     DISCARDABLE        "Controls/res/btn_out.bmp"
+XT_IDB_LIGHTBULB        BITMAP     FIXED IMPURE       "Controls/res/lightbulb.bmp"
+XT_IDB_LISTEDIT         BITMAP     DISCARDABLE        "Controls/res/btn_listedit.bmp"
+XT_IDB_FONTTYPE         BITMAP     DISCARDABLE        "Controls/res/font.bmp"
+XT_IDB_SCROLL_ARW       BITMAP     DISCARDABLE        "Controls/res/scroll.bmp"
+XT_IDB_CHECKLISTBOX     BITMAP     FIXED IMPURE       "Controls/res/checklist.bmp"
+XT_IDB_CHECKLISTBOX_3D  BITMAP     FIXED IMPURE       "Controls/res/checklist_3d.bmp"
+XTP_IDB_TASKPANEL_GRIPPER BITMAP     DISCARDABLE        "Controls/res/TaskPanelGripper.bmp"
+XTP_IDB_TASKPANEL_GRIPPER_SPECIAL BITMAP     DISCARDABLE        "Controls/res/TaskPanelGripperSpecial.bmp"
+XT_IDR_TBAR_HDR         BITMAP     DISCARDABLE        "Controls/res/tbar_hdr.bmp"
+XT_IDR_TBAR_OUT         BITMAP     MOVEABLE PURE      "Controls/res/tbar_out.bmp"
+XT_IDR_TBAR_HEXEDIT     BITMAP     DISCARDABLE        "Controls/res/tbar_hex.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+XT_IDI_XTREME           ICON       DISCARDABLE        "res\\xtreme.ico"
+XTP_IDI_SHORTCUTS_EXPAND_ALPHA ICON       DISCARDABLE        "Controls/res/exp_alpha.ico"
+XTP_IDI_SHORTCUTS_EXPAND_NORMAL ICON       DISCARDABLE        "Controls/res/exp_normal.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+XT_IDR_TBAR_HDR TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      XT_IDC_SORTASC
+    BUTTON      XT_IDC_SORTDSC
+    SEPARATOR
+    BUTTON      XT_IDC_ALIGNLEFT
+    BUTTON      XT_IDC_ALIGNCENTER
+    BUTTON      XT_IDC_ALIGNRIGHT
+END
+
+XT_IDR_TBAR_OUT TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      XT_IDC_LARGEICON
+    BUTTON      XT_IDC_SMALLICON
+END
+
+XT_IDR_TBAR_HEXEDIT TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_EDIT_UNDO
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_EDIT_CLEAR
+END
+
+#endif
+
+#ifndef _XTP_NO_COMMONCONTROLS_RESOURCES
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+XT_IDD_TIPOFTHEDAY DIALOGEX 0, 0, 279, 157
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Tip dne"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "&Zavøít",IDOK,221,136,50,14
+    CONTROL         "Zobrazit tipy pøi &startu",XT_IDC_CHK_DAYTIP_SHOW,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,140,83,10
+    PUSHBUTTON      "&Další tip",XT_IDC_BTN_DAYTIP_NEXT,162,136,50,14
+    CONTROL         "",XT_IDC_BTN_DAYTIP_BORDER,"Static",SS_GRAYFRAME | NOT 
+                    WS_VISIBLE,8,7,263,123
+END
+
+XT_IDD_COLORCUSTOM DIALOG DISCARDABLE  0, 0, 175, 162
+ STYLE WS_CHILD | WS_DISABLED | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | 
+    WS_CAPTION
+CAPTION "Vlastní"
+FONT 8, "Tahoma"
+BEGIN
+    LTEXT           "&Barvy:",XT_IDC_TXT_COLORS,5,4,43,10
+    CONTROL         "",XT_IDC_CLR_WND,"Static",SS_BLACKFRAME | WS_TABSTOP,3,
+                    15,150,86
+    CONTROL         "",XT_IDC_CLR_LUM,"Static",SS_BLACKFRAME | WS_TABSTOP,
+                    158,15,10,86
+    LTEXT           "O&dstín:",XT_IDC_TXT_HUE,3,108,36,8
+    EDITTEXT        XT_IDC_EDIT_HUE,43,106,26,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",XT_IDC_SPIN_HUE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,69,106,
+                    9,13
+    LTEXT           "&Sytost:",XT_IDC_TXT_SAT,3,125,36,8
+    EDITTEXT        XT_IDC_EDIT_SAT,43,121,26,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin2",XT_IDC_SPIN_SAT,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,69,121,
+                    9,13
+    LTEXT           "Svì&telnost:",XT_IDC_TXT_LUM,3,140,37,8
+    EDITTEXT        XT_IDC_EDIT_LUM,43,137,26,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin3",XT_IDC_SPIN_LUM,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,69,137,
+                    9,13
+    LTEXT           "È&ervená:",XT_IDC_TXT_RED,82,108,30,8
+    EDITTEXT        XT_IDC_EDIT_RED,113,106,26,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",XT_IDC_SPIN_RED,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,139,106,
+                    9,13
+    LTEXT           "&Zelená:",XT_IDC_TXT_GREEN,82,125,25,8
+    EDITTEXT        XT_IDC_EDIT_GREEN,113,122,26,13,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin2",XT_IDC_SPIN_GREEN,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,139,122,
+                    9,13
+    LTEXT           "&Modrá:",XT_IDC_TXT_BLUE,82,140,23,8
+    EDITTEXT        XT_IDC_EDIT_BLUE,113,138,26,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin3",XT_IDC_SPIN_BLUE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,139,137,
+                    9,13
+END
+
+XT_IDD_COLORSTANDARD DIALOG DISCARDABLE  0, 0, 147, 161
+STYLE WS_CHILD | WS_DISABLED | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | 
+    WS_CAPTION
+CAPTION "Standardní"
+FONT 8, "Tahoma"
+BEGIN
+    LTEXT           "&Barvy:",XT_IDC_TXT_COLORS,2,4,43,10
+    CONTROL         "",XT_IDC_CLR_HEX,"Static",SS_BLACKFRAME | WS_TABSTOP,0,
+                    15,147,145
+END
+
+XT_IDD_WINDOWLIST DIALOG DISCARDABLE  0, 0, 301, 164
+STYLE WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Okna"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "&Vyberte okna",IDC_STATIC,7,7,147,8
+    LISTBOX         XT_IDC_LBOX_WINDOWS,7,17,216,140,LBS_SORT | 
+                    LBS_OWNERDRAWFIXED | LBS_HASSTRINGS | 
+                    LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | WS_VSCROLL | 
+                    WS_HSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&Aktivovat",XT_IDC_BTN_ACTIVATE,233,7,62,14
+    PUSHBUTTON      "&OK",IDOK,233,24,62,14
+    PUSHBUTTON      "&Uložit",XT_IDC_BTN_SAVE,233,41,62,14
+    PUSHBUTTON      "Zavøít okno",XT_IDC_BTN_CLOSEWINDOWS,233,58,62,14
+    PUSHBUTTON      "&Kaskáda",XT_IDC_BTN_CASCADE,233,75,62,14
+    PUSHBUTTON      "&Mozaika",XT_IDC_BTN_TILEHORZ,233,92,62,14
+    PUSHBUTTON      "Vedle se&be",XT_IDC_BTN_TILEVERT,233,109,62,14
+    PUSHBUTTON      "Mi&nimalizovat",XT_IDC_BTN_MINIMIZE,233,126,62,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+XT_IDM_POPUP MENU DISCARDABLE 
+BEGIN
+    POPUP "RClickOutlookBar"
+    BEGIN
+        MENUITEM "&Malé ikony",                XT_IDC_SMALLICON
+        MENUITEM "&Velké ikony",                XT_IDC_LARGEICON
+    END
+    POPUP "RClickHexEdit"
+    BEGIN
+        MENUITEM "&Zpìt",                       ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "&Vyjmout",                        ID_EDIT_CUT
+        MENUITEM "&Kopírovat",                       ID_EDIT_COPY
+        MENUITEM "V&ložit",                      ID_EDIT_PASTE
+        MENUITEM "Odstranit",                     ID_EDIT_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "Vybr&at vše",                 ID_EDIT_SELECT_ALL
+    END
+    POPUP "RClickHeader"
+    BEGIN
+        MENUITEM "Seøadit &vzestupnì",              XT_IDC_SORTASC
+        MENUITEM "Seøadit &sestupnì",             XT_IDC_SORTDSC
+        MENUITEM SEPARATOR
+        POPUP "&Zarovnání"
+        BEGIN
+            MENUITEM "V&levo",                  XT_IDC_ALIGNLEFT
+            MENUITEM "Na &støed",                XT_IDC_ALIGNCENTER
+            MENUITEM "V&pravo",                 XT_IDC_ALIGNRIGHT
+        END
+    END
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "XTResource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDC_BTN_NEW          "Nový"
+    XT_IDC_BTN_DELETE       "Odstranit"
+    XT_IDC_BTN_UP           "Pøesunout nahoru"
+    XT_IDC_BTN_DOWN         "Pøesunout dolù"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDS_REG_SETTINGS     "Settings"
+    XT_IDS_REG_WNDPOS       "Window Position"
+    XT_IDS_REG_COLINFO      "Column Info"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDS_NAME             "Název"
+    XT_IDS_SIZE             "Velikost"
+    XT_IDS_TYPE             "Typ"
+    XT_IDS_MODIFIED         "Zmìnìno"
+    XT_IDS_COLOR_AUTO       "Automatické"
+    XT_IDS_COLOR_CUST       "Vlastní..."
+    XT_IDS_SELDIR           "Výbìr adresáøe:"
+    XT_IDS_DOT              "..."
+    XT_IDS_DEFEXT           "*.*"
+    XT_IDS_DEFFILT          "Všechny soubory (*.*)|*.*||"
+    XT_IDS_DEFTITLE         "Název adresáøe:"
+    XT_IDS_CLICKKEEPOPEN    "Klepnìte na pøipínáèek, pokud chcete mít okno stále otevøené"
+    XT_IDS_SE_0             "Operaèní systém má nedostatek pamìti nebo jiných zdrojù."
+    XT_IDS_SE_ERR_FNF       "Soubor nebyl nalezen."
+    XT_IDS_SE_ERR_PNF       "Cesta nebyla nalezena."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDS_SE_ERR_ACCESSDENIED 
+                            "Operaèní systém nepovolil pøístup k souboru."
+    XT_IDS_SE_ERR_OOM       "Nedostatek volné pamìti k dokonèení zadané operace."
+    XT_IDS_SE_ERR_BAD_FORMAT 
+                            "Soubor .exe je neplatný (není souborem Win32® .exe nebo je porušen)."
+    XT_IDS_SE_ERR_SHARE     "Kolize pøi pøístupu k souboru (sharing violation)."
+    XT_IDS_SE_ERR_ASSOCINCOMPLETE 
+                            "Asociace jména souboru je neúplná nebo neplatná."
+    XT_IDS_SE_ERR_DDETIMEOUT 
+                            "DDE transakce nemohla být dokonèena pro vypršení èasu."
+    XT_IDS_SE_ERR_DDEFAIL   "Chyba DDE transakce."
+    XT_IDS_SE_ERR_DDEBUSY   "DDE transakce nemohla být dokonèena, protože byla zpracovávána jiná DDE transakce."
+    XT_IDS_SE_ERR_NOASSOC   "Žádná aplikace není asociována s danou extenzí jména souboru."
+    XT_IDS_SE_ERR_DLLNOTFOUND 
+                            "Knihovna DLL nebyla nalezena."
+    XT_IDS_SE_ERR_UNKOWN    "Nastala neznámá chyba èíslo %d."
+    XT_IDS_CLR_BLACK        "Èerná"
+    XT_IDS_CLR_BROWN        "Hnìdá"
+    XT_IDS_CLR_OLIVE_GREEN  "Olivovì zelená"
+    XT_IDS_CLR_DARK_GREEN   "Tmavì zelená"
+    XT_IDS_CLR_DARK_TEAL    "Tmavì šedozelená"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDC_SORTASC          "Seøadit vzestupnì\nSeøadit vzestupnì"
+    XT_IDC_SORTDSC          "Seøadit sestupnì\nSeøadit sestupnì"
+    XT_IDC_ALIGNLEFT        "Zarovnat doleva\nZarovnat doleva"
+    XT_IDC_ALIGNCENTER      "Zarovnat na støed\nZarovnat na støed"
+    XT_IDC_ALIGNRIGHT       "Zarovnat doprava\nZarovnat doprava"
+    XT_IDC_LARGEICON        "Velké ikony\nVelké ikony"
+    XT_IDC_SMALLICON        "Malé ikony\nMalé ikony"
+    XT_IDC_REMOVEITEM       "Odstranit z lišty aplikace Outlook"
+    XT_IDC_RENAMEITEM       "Pøejmenovat odkaz"
+    XT_IDC_REMOVEGROUP      "Odstranit skupinu"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDC_RENAMEGROUP      "Pøejmenovat skupinu"
+    XT_IDS_HEX              "Hex"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDS_STD_COLORS       "Standardní barvy"
+    XT_IDS_TIPTEXT          "Tip"
+    XT_IDS_DIDYOUKNOW       "Vìdìli jste, že..."
+    XT_IDS_FILE_ABSENT      "Zadaný soubor neexistuje."
+    XT_IDS_FILE_CORRUPT     "Chyba pøi ètení souboru"
+    XT_IDS_COLOR_CAPTION    "Barvy"
+    XT_IDS_NEW              "Nový"
+    XT_IDS_CURRENT          "Aktuální"
+    XT_IDS_DIRECTORIES      "Adresáøe:"
+    XT_IDS_FILES            "Poèet souborù:"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDS_CLR_DARK_BLUE    "Tmavì modrá"
+    XT_IDS_CLR_INDIGO       "Indigová modø"
+    XT_IDS_CLR_GRAY80       "Šedá-80%"
+    XT_IDS_CLR_DARK_RED     "Tmavì èervená"
+    XT_IDS_CLR_ORANGE       "Oranžová"
+    XT_IDS_CLR_DARK_YELLOW  "Tmavì žlutá"
+    XT_IDS_CLR_GREEN        "Zelená"
+    XT_IDS_CLR_TEAL         "Šedozelená"
+    XT_IDS_CLR_BLUE         "Modrá"
+    XT_IDS_CLR_BLUEGRAY     "Modrošedá"
+    XT_IDS_CLR_GRAY50       "Šedá-50%"
+    XT_IDS_CLR_RED          "Èervená"
+    XT_IDS_CLR_LIGHTORANGE  "Svìtle oranžová"
+    XT_IDS_CLR_LIME         "Žlutozelená"
+    XT_IDS_CLR_SEA_GREEN    "Moøská zeleò"
+    XT_IDS_CLR_AQUA         "Akvamarín"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDS_CLR_LIGHT_BLUE   "Svìtle modrá"
+    XT_IDS_CLR_VIOLET       "Fialová"
+    XT_IDS_CLR_GRAY40       "Šedá-40%"
+    XT_IDS_CLR_PINK         "Rùžová"
+    XT_IDS_CLR_GOLD         "Zlatá"
+    XT_IDS_CLR_YELLOW       "Žlutá"
+    XT_IDS_CLR_BRIGHT_GREEN "Jasnì zelená"
+    XT_IDS_CLR_TURQUOISE    "Tyrkysová"
+    XT_IDS_CLR_SKY_BLUE     "Nebeská modø"
+    XT_IDS_CLR_PLUM         "Švestková modø"
+    XT_IDS_CLR_GRAY25       "Šedá-25%"
+    XT_IDS_CLR_ROSE         "Svìtle rùžová"
+    XT_IDS_CLR_TAN          "Žlutooranžová"
+    XT_IDS_CLR_LIGHT_YELLOW "Svìtle žlutá"
+    XT_IDS_CLR_LIGHT_GREEN  "Svìtle zelená"
+    XT_IDS_CLR_LIGHT_TURQUOISE "Svìtle tyrkysová"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDS_CLR_PALE_BLUE    "Bledìmodrá"
+    XT_IDS_CLR_LAVENDER     "Levandulová"
+    XT_IDS_CLR_WHITE        "Bílá"
+    XT_IDS_CLR_GRAY         "Šedá"
+    XT_IDS_CLR_MAROON       "Kaštanová hnìdá"
+    XT_IDS_CLR_OLIVE        "Olivová"
+    XT_IDS_CLR_NAVY         "Námoønická modø"
+    XT_IDS_CLR_PURPLE       "Purpurová"
+    XT_IDS_CLR_SILVER       "Støíbrná"
+    XT_IDS_CLR_FUCHSIA      "Fuksie"
+    XT_IDS_CLR_NOFILL       "Bez výplnì"
+    XT_IDS_CLR_NOFILL_TIP   "Bez výplnì"
+    XT_IDS_AUTOMATIC        "Automatické"
+    XT_IDS_AUTOMATIC_TIP    "Automatická barva"
+    XT_IDS_MORE_COLORS      "Více barev..."
+    XT_IDS_MORE_COLORS_TIP  "Více barev"
+END
+
+#endif
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_ID_SHORTCUT_SHOW_MORE "Další tlaèítka"
+    XTP_ID_SHORTCUT_SHOW_FEWER "Zobrazit ménì možností"
+    XTP_IDS_SHORTCUT_CONFIGURE "Konfigurovat"
+END
+
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

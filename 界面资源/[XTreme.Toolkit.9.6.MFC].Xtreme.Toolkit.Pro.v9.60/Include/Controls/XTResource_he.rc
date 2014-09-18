@@ -1,0 +1,441 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "XTResource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_HEBREW, SUBLANG_DEFAULT
+#pragma code_page(1255)
+#endif //_WIN32
+
+#ifndef _XTP_NO_BINARY_RESOURCES
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+XT_IDC_DRAGMOVE         CURSOR     DISCARDABLE        "Controls/res/dragmove.cur"
+XT_IDC_HAND             CURSOR     DISCARDABLE        "Controls/res/hand.cur"
+XT_IDC_DRAGNONE         CURSOR     DISCARDABLE        "Controls/res/dragnone.cur"
+XT_IDC_HANDNONE         CURSOR     DISCARDABLE        "Controls/res/handnone.cur"
+XT_IDC_DRAGCOPY         CURSOR     DISCARDABLE        "Controls/res/dragcopy.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+XT_IDB_BTN_OUT          BITMAP     DISCARDABLE        "Controls/res/btn_out.bmp"
+XT_IDB_LIGHTBULB        BITMAP     FIXED IMPURE       "Controls/res/lightbulb.bmp"
+XT_IDB_LISTEDIT         BITMAP     DISCARDABLE        "Controls/res/btn_listedit.bmp"
+XT_IDB_FONTTYPE         BITMAP     DISCARDABLE        "Controls/res/font.bmp"
+XT_IDB_SCROLL_ARW       BITMAP     DISCARDABLE        "Controls/res/scroll.bmp"
+XT_IDB_CHECKLISTBOX     BITMAP     FIXED IMPURE       "Controls/res/checklist.bmp"
+XT_IDB_CHECKLISTBOX_3D  BITMAP     FIXED IMPURE       "Controls/res/checklist_3d.bmp"
+XTP_IDB_TASKPANEL_GRIPPER BITMAP     DISCARDABLE        "Controls/res/TaskPanelGripper.bmp"
+XTP_IDB_TASKPANEL_GRIPPER_SPECIAL BITMAP     DISCARDABLE        "Controls/res/TaskPanelGripperSpecial.bmp"
+XT_IDR_TBAR_HDR         BITMAP     DISCARDABLE        "Controls/res/tbar_hdr.bmp"
+XT_IDR_TBAR_OUT         BITMAP     MOVEABLE PURE      "Controls/res/tbar_out.bmp"
+XT_IDR_TBAR_HEXEDIT     BITMAP     DISCARDABLE        "Controls/res/tbar_hex.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+XT_IDI_XTREME           ICON       DISCARDABLE        "res\\xtreme.ico"
+XTP_IDI_SHORTCUTS_EXPAND_ALPHA ICON       DISCARDABLE        "Controls/res/exp_alpha.ico"
+XTP_IDI_SHORTCUTS_EXPAND_NORMAL ICON       DISCARDABLE        "Controls/res/exp_normal.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+XT_IDR_TBAR_HDR TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      XT_IDC_SORTASC
+    BUTTON      XT_IDC_SORTDSC
+    SEPARATOR
+    BUTTON      XT_IDC_ALIGNLEFT
+    BUTTON      XT_IDC_ALIGNCENTER
+    BUTTON      XT_IDC_ALIGNRIGHT
+END
+
+XT_IDR_TBAR_OUT TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      XT_IDC_LARGEICON
+    BUTTON      XT_IDC_SMALLICON
+END
+
+XT_IDR_TBAR_HEXEDIT TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_EDIT_UNDO
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_EDIT_CLEAR
+END
+
+#endif
+
+#ifndef _XTP_NO_COMMONCONTROLS_RESOURCES
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+XT_IDD_TIPOFTHEDAY DIALOGEX 0, 0, 279, 157
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "העצה היומית"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "סגור ",IDOK,221,136,50,14
+    CONTROL         "הצג עצות אודות",XT_IDC_CHK_DAYTIP_SHOW,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,140,78,10
+    PUSHBUTTON      "חפש את הבא",XT_IDC_BTN_DAYTIP_NEXT,162,136,50,14
+    CONTROL         "",XT_IDC_BTN_DAYTIP_BORDER,"Static",SS_GRAYFRAME | NOT 
+                    WS_VISIBLE,8,7,263,123
+END
+
+XT_IDD_COLORCUSTOM DIALOG DISCARDABLE  0, 0, 147, 161
+STYLE WS_CHILD | WS_DISABLED | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | 
+    WS_CAPTION
+CAPTION "התאמה אישית"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "צבעים:",XT_IDC_TXT_COLORS,2,4,43,10
+    CONTROL         "",XT_IDC_CLR_WND,"Static",SS_BLACKFRAME | WS_TABSTOP,3,
+                    15,119,86
+    CONTROL         "",XT_IDC_CLR_LUM,"Static",SS_BLACKFRAME | WS_TABSTOP,
+                    126,15,20,86
+    LTEXT           "גוון:",XT_IDC_TXT_HUE,7,108,18,8
+    EDITTEXT        XT_IDC_EDIT_HUE,31,106,33,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",XT_IDC_SPIN_HUE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,55,105,
+                    10,14
+    LTEXT           "רוויה:",XT_IDC_TXT_SAT,7,125,21,8
+    EDITTEXT        XT_IDC_EDIT_SAT,31,122,33,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin2",XT_IDC_SPIN_SAT,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,55,122,
+                    10,14
+    LTEXT           "זוהר:",XT_IDC_TXT_LUM,7,140,18,8
+    EDITTEXT        XT_IDC_EDIT_LUM,31,138,33,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin3",XT_IDC_SPIN_LUM,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,55,137,
+                    10,14
+    LTEXT           "אדום:",XT_IDC_TXT_RED,71,108,23,8
+    EDITTEXT        XT_IDC_EDIT_RED,95,106,33,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",XT_IDC_SPIN_RED,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,119,105,
+                    11,14
+    LTEXT           "ירוק:",XT_IDC_TXT_GREEN,71,125,23,8
+    EDITTEXT        XT_IDC_EDIT_GREEN,95,122,33,13,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin2",XT_IDC_SPIN_GREEN,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,119,122,
+                    11,14
+    LTEXT           "כחול:",XT_IDC_TXT_BLUE,71,140,23,8
+    EDITTEXT        XT_IDC_EDIT_BLUE,95,138,33,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin3",XT_IDC_SPIN_BLUE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,119,137,
+                    11,14
+END
+
+XT_IDD_COLORSTANDARD DIALOG DISCARDABLE  0, 0, 147, 161
+STYLE WS_CHILD | WS_DISABLED | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | 
+    WS_CAPTION
+CAPTION "רגיל"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "צבעים:",XT_IDC_TXT_COLORS,2,4,43,10
+    CONTROL         "",XT_IDC_CLR_HEX,"Static",SS_BLACKFRAME | WS_TABSTOP,0,
+                    15,147,145
+END
+
+XT_IDD_WINDOWLIST DIALOG DISCARDABLE  0, 0, 301, 164
+STYLE WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "סידור חלונות"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "בחירת חלון:",IDC_STATIC,7,7,147,8
+    LISTBOX         XT_IDC_LBOX_WINDOWS,7,17,216,140,LBS_SORT | 
+                    LBS_OWNERDRAWFIXED | LBS_HASSTRINGS | 
+                    LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | WS_VSCROLL | 
+                    WS_HSCROLL | WS_TABSTOP
+    PUSHBUTTON      "הפעל",XT_IDC_BTN_ACTIVATE,233,7,62,14
+    PUSHBUTTON      "אישור",IDOK,233,24,62,14
+    PUSHBUTTON      "שמור",XT_IDC_BTN_SAVE,233,41,62,14
+    PUSHBUTTON      "סגור חלון",XT_IDC_BTN_CLOSEWINDOWS,233,58,62,14
+    PUSHBUTTON      "דרג",XT_IDC_BTN_CASCADE,233,75,62,14
+    PUSHBUTTON      "פרוש אופקית",XT_IDC_BTN_TILEHORZ,233,92,62,14
+    PUSHBUTTON      "פרוש אנכית",XT_IDC_BTN_TILEVERT,233,109,62,14
+    PUSHBUTTON      "מזער",XT_IDC_BTN_MINIMIZE,233,126,62,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+XT_IDM_POPUP MENU DISCARDABLE 
+BEGIN
+    POPUP "RClickOutlookBar"
+    BEGIN
+        MENUITEM "סמלים קטנים ",                XT_IDC_SMALLICON
+        MENUITEM "סמלים גדולים",                XT_IDC_LARGEICON
+    END
+    POPUP "RClickHexEdit"
+    BEGIN
+        MENUITEM "בטל",                       ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "גזור",                        ID_EDIT_CUT
+        MENUITEM "העתק",                       ID_EDIT_COPY
+        MENUITEM "הדבק",                      ID_EDIT_PASTE
+        MENUITEM "מחיקה",                     ID_EDIT_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "בחר הכל",                 ID_EDIT_SELECT_ALL
+    END
+    POPUP "RClickHeader"
+    BEGIN
+        MENUITEM "מיין בסדר עולה",              XT_IDC_SORTASC
+        MENUITEM "מיין בסדר יורד",             XT_IDC_SORTDSC
+        MENUITEM SEPARATOR
+        POPUP "יישור"
+        BEGIN
+            MENUITEM "ישר לשמאל",                  XT_IDC_ALIGNLEFT
+            MENUITEM "ישר למרכז",                XT_IDC_ALIGNCENTER
+            MENUITEM "ישר לימין",                 XT_IDC_ALIGNRIGHT
+        END
+    END
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "XTResource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDC_BTN_NEW          "חדש"
+    XT_IDC_BTN_DELETE       "מחיקה"
+    XT_IDC_BTN_UP           "העבר למעלה"
+    XT_IDC_BTN_DOWN         "העבר למטה"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDS_REG_SETTINGS     "Settings"
+    XT_IDS_REG_WNDPOS       "Window Position"
+    XT_IDS_REG_COLINFO      "Column Info"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDS_NAME             "שם"
+    XT_IDS_SIZE             "גודל‏"
+    XT_IDS_TYPE             "סוג"
+    XT_IDS_MODIFIED         "שונה"
+    XT_IDS_COLOR_AUTO       "אוטומטי"
+    XT_IDS_COLOR_CUST       "התאמה אישית..."
+    XT_IDS_SELDIR           "בחירת ספריה:"
+    XT_IDS_DOT              "..."
+    XT_IDS_DEFEXT           "*.*"
+    XT_IDS_DEFFILT          "כל הקבצים (*.*)|*.*||"
+    XT_IDS_DEFTITLE         "שם הספריה:"
+    XT_IDS_CLICKKEEPOPEN    "‏‏לחץ על הסיכה כדי לשמור פתוח"
+    XT_IDS_SE_0             "‏‏למערכת ההפעלה אין זכרון או משאבים פנויים."
+    XT_IDS_SE_ERR_FNF       "‏‏‏‏הקובץ המצורף שצוין לא נמצא."
+    XT_IDS_SE_ERR_PNF       "‏‏הנתיב המצורף שצוין לא נמצא."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDS_SE_ERR_ACCESSDENIED 
+                            "מערכת ההפעלה מנעה גישה לקובץ המצויין."
+    XT_IDS_SE_ERR_OOM       "‏‏לא היה די זיכרון להשלמת הפעולה."
+    XT_IDS_SE_ERR_BAD_FORMAT 
+                            "קובץ ‎.exe אינו חוקי (קובץ ‎.exe לא תואם Win32®  או שגיאה ב- ‎.exe image)."
+    XT_IDS_SE_ERR_SHARE     "‏‏אירעה הפרת שיתוף."
+    XT_IDS_SE_ERR_ASSOCINCOMPLETE 
+                            "שיוך שם קובץ חסר או לא חוקי."
+    XT_IDS_SE_ERR_DDETIMEOUT 
+                            "‏‏אין אפשרות להשלים את פעולת DDE מאחר ‏‏ופרק הזמן שהוקצב לבקשה הסתיים."
+    XT_IDS_SE_ERR_DDEFAIL   "‏‏פעולת DDE נכשלה."
+    XT_IDS_SE_ERR_DDEBUSY   "‏‏אין אפשרות להשלים את פעולת DDE מאחר ופעולות DDE אחרות בתהליך עיבוד כעת."
+    XT_IDS_SE_ERR_NOASSOC   "‏‏לא קיים יישום המשויך לסיומת שם הקובץ הנתון."
+    XT_IDS_SE_ERR_DLLNOTFOUND 
+                            "‏‏‏‏‏‏ספריית הקישור הדינאמית שצוינה לא נמצאה."
+    XT_IDS_SE_ERR_UNKOWN    "‏‏שגיאה לא ידועה אירעה בעת נסיון פתיחת %d.'."
+    XT_IDS_CLR_BLACK        "שחור"
+    XT_IDS_CLR_BROWN        "חום"
+    XT_IDS_CLR_OLIVE_GREEN  "ירוק-זית"
+    XT_IDS_CLR_DARK_GREEN   "ירוק כהה"
+    XT_IDS_CLR_DARK_TEAL    "כחול-ירקרק כהה"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDC_SORTASC          "מיין בסדר עולה\nמיין בסדר עולה"
+    XT_IDC_SORTDSC          "מיין בסדר יורד\nמיין בסדר יורד"
+    XT_IDC_ALIGNLEFT        "יישור הפיסקה לשוליים השמאליים\nישר לשמאל"
+    XT_IDC_ALIGNCENTER      "מרכוז הפיסקה בין השוליים\nמרכז"
+    XT_IDC_ALIGNRIGHT       "יישור הפיסקה לשוליים הימניים\nישר לימין"
+    XT_IDC_LARGEICON        "הצג סמלים גדולים\nסמלים גדולים"
+    XT_IDC_SMALLICON        "הצג סמלים קטנים\nסמלים קטנים"
+    XT_IDC_REMOVEITEM       "הסר מסרגל Outlook"
+    XT_IDC_RENAMEITEM       "שנה שם קיצור דרך"
+    XT_IDC_REMOVEGROUP      "הסר קבוצה"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDC_RENAMEGROUP      "שנה שם קבוצה"
+    XT_IDS_HEX              "הקסדצימאלית"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDS_STD_COLORS       "צבעים רגילים"
+    XT_IDS_TIPTEXT          "טקסט עצה"
+    XT_IDS_DIDYOUKNOW       "הידעת..."
+    XT_IDS_FILE_ABSENT      "‏‏הקובץ שצוין אינו קיים."
+    XT_IDS_FILE_CORRUPT     "שגיאה בקריאת קובץ."
+    XT_IDS_COLOR_CAPTION    "צבעים"
+    XT_IDS_NEW              "חדש"
+    XT_IDS_CURRENT          "נוכחי"
+    XT_IDS_DIRECTORIES      "ספריות:"
+    XT_IDS_FILES            "קבצים:"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDS_CLR_DARK_BLUE    "כחול כהה"
+    XT_IDS_CLR_INDIGO       "כחול-אינדיגו"
+    XT_IDS_CLR_GRAY80       "אפור-80%"
+    XT_IDS_CLR_DARK_RED     "אדום כהה"
+    XT_IDS_CLR_ORANGE       "כתום"
+    XT_IDS_CLR_DARK_YELLOW  "צהוב כהה"
+    XT_IDS_CLR_GREEN        "ירוק"
+    XT_IDS_CLR_TEAL         "כחול-ירקרק"
+    XT_IDS_CLR_BLUE         "כחול"
+    XT_IDS_CLR_BLUEGRAY     "כחול-אפור"
+    XT_IDS_CLR_GRAY50       "אפור-50%"
+    XT_IDS_CLR_RED          "אדום"
+    XT_IDS_CLR_LIGHTORANGE  "כתום בהיר"
+    XT_IDS_CLR_LIME         "ירוק-לימון"
+    XT_IDS_CLR_SEA_GREEN    "ירוק-ים"
+    XT_IDS_CLR_AQUA         "תכלת"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDS_CLR_LIGHT_BLUE   "כחול בהיר"
+    XT_IDS_CLR_VIOLET       "סיגלית"
+    XT_IDS_CLR_GRAY40       "אפור-40%"
+    XT_IDS_CLR_PINK         "ורוד"
+    XT_IDS_CLR_GOLD         "זהב"
+    XT_IDS_CLR_YELLOW       "צהוב"
+    XT_IDS_CLR_BRIGHT_GREEN "ירוק מבריק"
+    XT_IDS_CLR_TURQUOISE    "טורקיז"
+    XT_IDS_CLR_SKY_BLUE     "כחול-שמים"
+    XT_IDS_CLR_PLUM         "סגול-שזיף"
+    XT_IDS_CLR_GRAY25       "אפור-‎25%‎"
+    XT_IDS_CLR_ROSE         "שושנה"
+    XT_IDS_CLR_TAN          "חום-צהבהב"
+    XT_IDS_CLR_LIGHT_YELLOW "צהוב בהיר"
+    XT_IDS_CLR_LIGHT_GREEN  "ירוק בהיר"
+    XT_IDS_CLR_LIGHT_TURQUOISE "טורקיז בהיר"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDS_CLR_PALE_BLUE    "כחול חיוור"
+    XT_IDS_CLR_LAVENDER     "סגול-לבנדר"
+    XT_IDS_CLR_WHITE        "לבן"
+    XT_IDS_CLR_GRAY         "אפור"
+    XT_IDS_CLR_MAROON       "חום-ערמוני"
+    XT_IDS_CLR_OLIVE        "ירוק-זית"
+    XT_IDS_CLR_NAVY         "כחול-צי"
+    XT_IDS_CLR_PURPLE       "סגול"
+    XT_IDS_CLR_SILVER       "כסף"
+    XT_IDS_CLR_FUCHSIA      "ורוד-פוקסיה"
+    XT_IDS_CLR_NOFILL       "ללא מילוי"
+    XT_IDS_CLR_NOFILL_TIP   "ללא צבע"
+    XT_IDS_AUTOMATIC        "אוטומטי"
+    XT_IDS_AUTOMATIC_TIP    "צבע אוטומטי"
+    XT_IDS_MORE_COLORS      "צבעים נוספים...‏"
+    XT_IDS_MORE_COLORS_TIP  "צבעים נוספים"
+END
+
+#endif
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_ID_SHORTCUT_SHOW_MORE "הצג לחצנים נוספים"
+    XTP_ID_SHORTCUT_SHOW_FEWER "הצג פחות לחצנים"
+    XTP_IDS_SHORTCUT_CONFIGURE "הגדרת לחצנים"
+END
+
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

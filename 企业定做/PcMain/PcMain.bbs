@@ -1,0 +1,5 @@
+[Batch Build]
+PcInit - Win32 Debug=1
+PcInit - Win32 Release=1
+PcMain - Win32 Debug=1
+PcMain - Win32 Release=1

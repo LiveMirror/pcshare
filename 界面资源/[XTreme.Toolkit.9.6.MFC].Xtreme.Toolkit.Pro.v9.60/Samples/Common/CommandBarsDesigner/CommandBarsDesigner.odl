@@ -1,0 +1,43 @@
+// CommandBarsDesigner.odl : type library source for CommandBarsDesigner.exe
+
+// This file will be processed by the MIDL compiler to produce the
+// type library (CommandBarsDesigner.tlb).
+
+[ uuid(F06E18E1-3A61-44C0-ACBC-E7134C52598A), version(1.0) ]
+library CommandBarsDesigner
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+
+	//  Primary dispatch interface for CCommandBarsDesignerDoc
+	
+	[ uuid(157FA069-D75C-4E71-A537-7C86F65FB7E9) ]
+	dispinterface ICommandBarsDesigner
+	{
+		properties:
+			// NOTE - ClassWizard will maintain property information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_PROP(CCommandBarsDesignerDoc)
+			//}}AFX_ODL_PROP
+			
+		methods:
+			// NOTE - ClassWizard will maintain method information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_METHOD(CCommandBarsDesignerDoc)
+			[id(1)] boolean OnEdit(OLE_HANDLE hWnd);
+			//}}AFX_ODL_METHOD
+
+	};
+
+	//  Class information for CCommandBarsDesignerDoc
+	
+	[ uuid(D87BE4B3-AF03-44B7-A307-84820060A4C5) ]
+	coclass Document
+	{
+		[default] dispinterface ICommandBarsDesigner;
+	};
+
+	//{{AFX_APPEND_ODL}}
+	//}}AFX_APPEND_ODL}}
+};

@@ -1,0 +1,236 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\FlatCombo.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\CjSample.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_FLATCOMBO_DIALOG DIALOGEX 0, 0, 252, 257
+STYLE WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Codejock Flat Combo Box Sample"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,195,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,195,23,50,14
+    GROUPBOX        "Drop List: ",IDC_GBOX_LIST,7,7,177,73
+    COMBOBOX        IDC_DROPLIST_COMBO,13,18,145,50,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Disable",IDC_DROPLIST_DISABLE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,13,34,39,10
+    LTEXT           "&Text Color:",IDC_STATIC,67,49,97,8
+    PUSHBUTTON      "",IDC_DROPLIST_TXT_CLR,13,46,50,14
+    LTEXT           "&Background Color:",IDC_STATIC,67,63,97,8
+    PUSHBUTTON      "",IDC_DROPLIST_BAK_CLR,13,61,50,14
+    GROUPBOX        "Drop Down: ",IDC_GBOX_DOWN,7,83,177,88
+    COMBOBOX        IDC_DROPDOWN_COMBO,13,95,145,50,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Disable",IDC_DROPDOWN_DISABLE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,13,111,39,10
+    CONTROL         "&Auto Completion",IDC_DROPDOWN_AUTOCOMP,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,13,121,67,10
+    LTEXT           "&Text Color:",IDC_STATIC,67,138,97,8
+    PUSHBUTTON      "",IDC_DROPDOWN_TXT_CLR,13,135,50,14
+    LTEXT           "&Background Color:",IDC_STATIC,67,151,97,8
+    PUSHBUTTON      "",IDC_DROPDOWN_BAK_CLR,13,150,50,14
+    GROUPBOX        "Flat Edit ",IDC_GBOX_EDIT,7,175,177,33
+    CONTROL         "Standard",IDC_RADIO_THEME,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,18,223,48,8
+    CONTROL         "Flat",IDC_RADIO_THEME_FLAT,"Button",BS_AUTORADIOBUTTON,
+                    91,223,48,8
+    CONTROL         "Office &XP",IDC_RADIO_THEME_OFFICEXP,"Button",
+                    BS_AUTORADIOBUTTON,18,234,48,8
+    CONTROL         "Office 2003",IDC_RADIO_THEME_OFFICE2003,"Button",
+                    BS_AUTORADIOBUTTON,91,233,62,8
+    GROUPBOX        "Appearance",IDC_GBOX_APPEAR,7,212,177,36
+    EDITTEXT        IDC_FLAT_EDIT,15,185,145,12,ES_AUTOHSCROLL
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "FlatCombo MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "FlatCombo\0"
+            VALUE "LegalCopyright", "©1998-2004 Codejock Software, All Rights Reserved.\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "FlatCombo.EXE\0"
+            VALUE "ProductName", "FlatCombo Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_FLATCOMBO_DIALOG DLGINIT
+BEGIN
+    IDC_DROPLIST_COMBO, 0x403, 17, 0
+0x6f53, 0x656d, 0x4d20, 0x6165, 0x696e, 0x676e, 0x656c, 0x7373, "\000" 
+    IDC_DROPLIST_COMBO, 0x403, 19, 0
+0x6554, 0x7478, 0x4520, 0x746e, 0x7265, 0x6465, 0x4820, 0x7265, 0x2e65, 
+"\000" 
+    IDC_DROPDOWN_COMBO, 0x403, 17, 0
+0x6f53, 0x656d, 0x4d20, 0x6165, 0x696e, 0x676e, 0x656c, 0x7373, "\000" 
+    IDC_DROPDOWN_COMBO, 0x403, 19, 0
+0x6554, 0x7478, 0x4520, 0x746e, 0x7265, 0x6465, 0x4820, 0x7265, 0x2e65, 
+"\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_FLATCOMBO_DIALOG, DIALOG
+    BEGIN
+        VERTGUIDE, 7
+        VERTGUIDE, 184
+        BOTTOMMARGIN, 251
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About Flat Combo Box Sample..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\FlatCombo.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

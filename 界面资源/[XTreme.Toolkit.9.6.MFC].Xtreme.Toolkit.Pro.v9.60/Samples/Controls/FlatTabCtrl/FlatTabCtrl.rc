@@ -1,0 +1,234 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\FlatTabCtrl.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\CjSample.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_FLATTABCTRL_DIALOG DIALOGEX 0, 0, 256, 140
+STYLE DS_CENTER | WS_POPUP | WS_VISIBLE | WS_CLIPCHILDREN | WS_CAPTION | 
+    WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "Codejock Flat Tab Control Sample"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,145,119,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,199,119,50,14
+    CONTROL         "",IDC_BORDER_TAB,"Static",SS_BLACKFRAME | NOT 
+                    WS_VISIBLE,7,7,242,75,WS_EX_STATICEDGE
+    CONTROL         "FTS_XT_HASARROWS",IDC_FTS_XT_HASARROWS,"Button",
+                    BS_AUTOCHECKBOX | WS_GROUP | WS_TABSTOP,7,89,94,10
+    CONTROL         "FTS_XT_HASHOMEEND",IDC_FTS_XT_HASHOMEEND,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,102,98,10
+    CONTROL         "FTS_XT_HSCROLL",IDC_FTS_XT_HSCROLL,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,128,91,80,10
+    CONTROL         "FTS_XT_BOTTOM",IDC_FTS_XT_BOTTOM,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,128,104,77,10
+    PUSHBUTTON      "&Manipulate Tabs",IDC_MANIPULATE,7,119,81,14
+END
+
+IDD_FORMVIEW DIALOGEX 0, 0, 150, 86
+STYLE WS_CHILD | WS_CLIPCHILDREN
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Favorite Season",IDC_GBOX_SEASON,7,7,136,71,0,
+                    WS_EX_TRANSPARENT
+    CONTROL         "Spring",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON,17,22,
+                    117,10
+    CONTROL         "Summer",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,17,34,
+                    117,10
+    CONTROL         "Autumn",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,17,46,
+                    117,10
+    CONTROL         "Winter",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON,17,58,
+                    117,10
+END
+
+IDD_MANIPULATE DIALOG DISCARDABLE  0, 0, 260, 102
+STYLE WS_POPUP | WS_CAPTION | WS_THICKFRAME
+CAPTION "Manipulate The Tabs"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Tab Number:",IDC_STATIC,7,10,42,8
+    EDITTEXT        IDC_TAB_NUM,53,7,40,14,ES_AUTOHSCROLL
+    LTEXT           "New Text:",IDC_STATIC,102,10,34,8
+    EDITTEXT        IDC_TEXT,149,7,104,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "&Delete Tab At Specified Position",IDC_DELETE_TAB,7,26,
+                    131,14
+    PUSHBUTTON      "&Modify Tab At Specified Position",IDC_MODIFY_TAB,7,45,
+                    131,14
+    PUSHBUTTON      "&Add New Tab At Specified Position",IDC_ADD_TAB,7,64,
+                    131,14
+    PUSHBUTTON      "Delete &All Tabs",IDC_DELETE_ALL,7,83,131,14
+    DEFPUSHBUTTON   "OK",IDOK,203,81,50,14
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "FlatTabCtrl MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "FlatTabCtrl\0"
+            VALUE "LegalCopyright", "©1998-2004 Codejock Software, All Rights Reserved.\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "FlatTabCtrl.EXE\0"
+            VALUE "ProductName", "FlatTabCtrl Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_FLATTABCTRL_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 249
+        VERTGUIDE, 128
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 133
+        HORZGUIDE, 82
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About Flat Tab Control Sample..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\FlatTabCtrl.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

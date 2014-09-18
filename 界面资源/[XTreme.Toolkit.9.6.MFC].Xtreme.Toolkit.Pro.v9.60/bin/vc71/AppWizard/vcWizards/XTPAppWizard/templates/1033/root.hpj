@@ -1,0 +1,87 @@
+[OPTIONS]
+LCID=0x409 0x0 0x0 ;English (U.S.)
+[!if !APP_TYPE_DLG]
+CONTENTS=main_index
+[!endif]
+TITLE=[!output PROJECT_NAME] Application Help
+COMPRESS=true
+WARNING=2
+BMROOT= ..,.
+ROOT= ..,.
+HLP=[!output PROJECT_NAME].HLP
+ERRORLOG=[!output PROJECT_NAME].LOG
+
+[FILES]
+[!if APP_TYPE_DLG]
+afxdlg.rtf
+[!else]
+afxcore.rtf
+[!if PRINTING]
+afxprint.rtf
+[!endif]
+[!if CONTAINER || CONTAINER_SERVER]
+afxolecl.rtf
+[!endif]
+[!if CONTAINER_SERVER || MINI_SERVER || FULL_SERVER]
+afxolesv.rtf
+[!endif]
+[!if OLEDB || ODBC]
+afxdb.rtf
+[!endif]
+[!endif]
+
+[ALIAS]
+[!if !APP_TYPE_DLG]
+HIDR_MAINFRAME = main_index
+[!if APP_TYPE_MDI]
+HIDR_[!output SAFE_DOC_TYPE_NAME]TYPE = HIDR_DOC1TYPE
+[!endif]
+[!endif]
+HIDD_ABOUTBOX = HID_APP_ABOUT
+
+HID_HT_SIZE = HID_SC_SIZE
+HID_HT_HSCROLL = scrollbars
+HID_HT_VSCROLL = scrollbars
+HID_HT_MINBUTTON = HID_SC_MINIMIZE
+HID_HT_MAXBUTTON = HID_SC_MAXIMIZE
+HID_HT_CLOSE = HID_SC_CLOSE
+AFX_HIDP_INVALID_FILENAME         = AFX_HIDP_default
+AFX_HIDP_FAILED_TO_OPEN_DOC       = AFX_HIDP_default
+AFX_HIDP_FAILED_TO_SAVE_DOC       = AFX_HIDP_default
+AFX_HIDP_ASK_TO_SAVE              = AFX_HIDP_default
+AFX_HIDP_FAILED_TO_CREATE_DOC     = AFX_HIDP_default
+AFX_HIDP_FILE_TOO_LARGE           = AFX_HIDP_default
+AFX_HIDP_FAILED_TO_START_PRINT    = AFX_HIDP_default
+AFX_HIDP_FAILED_TO_LAUNCH_HELP    = AFX_HIDP_default
+AFX_HIDP_INTERNAL_FAILURE         = AFX_HIDP_default
+AFX_HIDP_COMMAND_FAILURE          = AFX_HIDP_default
+AFX_HIDP_PARSE_INT                = AFX_HIDP_default
+AFX_HIDP_PARSE_REAL               = AFX_HIDP_default
+AFX_HIDP_PARSE_INT_RANGE          = AFX_HIDP_default
+AFX_HIDP_PARSE_REAL_RANGE         = AFX_HIDP_default
+AFX_HIDP_PARSE_STRING_SIZE        = AFX_HIDP_default
+AFX_HIDP_FAILED_INVALID_FORMAT    = AFX_HIDP_default
+AFX_HIDP_FAILED_INVALID_PATH      = AFX_HIDP_default
+AFX_HIDP_FAILED_DISK_FULL         = AFX_HIDP_default
+AFX_HIDP_FAILED_ACCESS_READ       = AFX_HIDP_default
+AFX_HIDP_FAILED_ACCESS_WRITE      = AFX_HIDP_default
+AFX_HIDP_FAILED_IO_ERROR_READ     = AFX_HIDP_default
+AFX_HIDP_FAILED_IO_ERROR_WRITE    = AFX_HIDP_default
+AFX_HIDP_STATIC_OBJECT            = AFX_HIDP_default
+AFX_HIDP_FAILED_TO_CONNECT        = AFX_HIDP_default
+AFX_HIDP_SERVER_BUSY              = AFX_HIDP_default
+AFX_HIDP_BAD_VERB                 = AFX_HIDP_default
+AFX_HIDP_FAILED_MEMORY_ALLOC      = AFX_HIDP_default
+AFX_HIDP_FAILED_TO_NOTIFY         = AFX_HIDP_default
+AFX_HIDP_FAILED_TO_LAUNCH         = AFX_HIDP_default
+AFX_HIDP_ASK_TO_UPDATE            = AFX_HIDP_default
+AFX_HIDP_FAILED_TO_UPDATE         = AFX_HIDP_default
+AFX_HIDP_FAILED_TO_REGISTER       = AFX_HIDP_default
+AFX_HIDP_FAILED_TO_AUTO_REGISTER  = AFX_HIDP_default
+AFX_HIDW_DOCKBAR_BOTTOM=AFX_HIDW_DOCKBAR_TOP            ; Same topic, 4 different possible hit tests
+AFX_HIDW_DOCKBAR_LEFT=AFX_HIDW_DOCKBAR_TOP          ; Same topic, 4 different possible hit tests
+AFX_HIDW_DOCKBAR_RIGHT=AFX_HIDW_DOCKBAR_TOP           ; Same topic, 4 different possible hit tests
+
+[MAP]
+#include <[!output MFC_INC_PATH]\afxhelp.hm>
+#include <[!output HM_FILE].hm>

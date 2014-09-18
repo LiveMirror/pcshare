@@ -1,0 +1,41 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "XTPReportControlResource.h"
+
+/////////////////////////////////////////////////////////////////////////////
+// Language
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+XTP_IDB_REPORT_GLYPHS	BITMAP  DISCARDABLE     "ReportControl/res/ReportGlyphs.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+XTP_IDC_REPORT_NODROP          CURSOR  DISCARDABLE     "ReportControl/res/nodrop.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_REPORT_NOGROUPBY       "Drag a column header here to group by that column."
+    XTP_IDS_REPORT_NOITEMS         "There are no items to show."
+    XTP_IDS_REPORT_NOFIELDSAVAILABLE "(no fields available)"
+END
+
+#endif    // Language
+/////////////////////////////////////////////////////////////////////////////

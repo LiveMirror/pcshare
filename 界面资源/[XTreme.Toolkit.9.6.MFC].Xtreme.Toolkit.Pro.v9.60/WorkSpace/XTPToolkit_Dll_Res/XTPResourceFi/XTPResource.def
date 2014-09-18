@@ -1,0 +1,11 @@
+; XTPResourceFi.def : Declares the module parameters for the DLL.
+
+LIBRARY      XTPResourceFi
+DESCRIPTION  'XTPResourceFi Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here
+    GetLangID  @1
+    
+    
+    

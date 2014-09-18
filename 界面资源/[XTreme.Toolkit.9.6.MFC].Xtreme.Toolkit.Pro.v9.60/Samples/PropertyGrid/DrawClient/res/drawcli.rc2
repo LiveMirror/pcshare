@@ -1,0 +1,15 @@
+//
+// DRAWCLI.RC2 - resources App Studio does not edit directly
+//
+
+#ifdef APSTUDIO_INVOKED
+	#error this file is not editable by App Studio
+#endif //APSTUDIO_INVOKED
+
+#include <XTPVersion.h>
+
+#include "AboutDlg.rc"
+
+#if defined(_XTP_STATICLINK) || !defined(_AFXDLL)
+#include <XTToolkitPro.rc>
+#endif

@@ -1,0 +1,283 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\EditListBox.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\CjSample.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PROPPAGE1 DIALOG DISCARDABLE  0, 0, 260, 145
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Tools"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LISTBOX         IDC_EDIT_LIST,5,6,250,70,LBS_OWNERDRAWVARIABLE | 
+                    LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_EDIT1,70,83,185,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,70,98,185,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,70,113,185,14,ES_AUTOHSCROLL
+    RTEXT           "&Command:",IDC_TXT_EDIT1,5,86,60,8
+    RTEXT           "&Arguments:",IDC_TXT_EDIT2,5,101,60,8
+    RTEXT           "&Initial Directory:",IDC_TXT_EDIT3,5,116,60,8
+    CONTROL         "Enable Items",IDC_CHK_ENABLE,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT | WS_TABSTOP,198,130,57,10
+END
+
+IDD_PROPPAGE2 DIALOG DISCARDABLE  0, 0, 260, 145
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "File Search"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LISTBOX         IDC_EDIT_LIST,5,6,250,134,LBS_OWNERDRAWVARIABLE | 
+                    LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+END
+
+IDD_PROPPAGE3 DIALOG DISCARDABLE  0, 0, 260, 145
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Directory Search"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LISTBOX         IDC_EDIT_LIST,5,6,250,134,LBS_OWNERDRAWVARIABLE | 
+                    LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "EditListBox MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "EditListBox\0"
+            VALUE "LegalCopyright", "©1998-2004 Codejock Software, All Rights Reserved.\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "EditListBox.EXE\0"
+            VALUE "ProductName", "EditListBox Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_PROPPAGE1, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 255
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 140
+    END
+
+    IDD_PROPPAGE2, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 255
+        TOPMARGIN, 6
+        BOTTOMMARGIN, 140
+    END
+
+    IDD_PROPPAGE3, DIALOG
+    BEGIN
+        LEFTMARGIN, 5
+        RIGHTMARGIN, 255
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 140
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_POPUP MENU DISCARDABLE 
+BEGIN
+    POPUP "ClickEdit2"
+    BEGIN
+        MENUITEM "File Path",                   ID_CLICKEDIT2_FILEPATH
+        MENUITEM "File Directory",              ID_CLICKEDIT2_FILEDIRECTORY
+        MENUITEM "File Name",                   ID_CLICKEDIT2_FILENAME
+        MENUITEM "File Extension",              ID_CLICKEDIT2_FILEEXTENSION
+        MENUITEM SEPARATOR
+        MENUITEM "Current Line",                ID_CLICKEDIT2_CURRENTLINE
+        MENUITEM "Current Column",              ID_CLICKEDIT2_CURRENTCOLUMN
+        MENUITEM "Current Text",                ID_CLICKEDIT2_CURRENTTEXT
+        MENUITEM SEPARATOR
+        MENUITEM "Current Directory",           ID_CLICKEDIT2_CURRENTDIRECTORY
+
+        MENUITEM SEPARATOR
+        MENUITEM "Target Path",                 ID_CLICKEDIT2_TARGETPATH
+        MENUITEM "Target Directory",            ID_CLICKEDIT2_TARGETDIRECTORY
+
+        MENUITEM "Target Name",                 ID_CLICKEDIT2_TARGETNAME
+        MENUITEM "Target Extension",            ID_CLICKEDIT2_TARGETEXTENSION
+
+        MENUITEM "Target Arguments",            ID_CLICKEDIT2_TARGETARGUMENTS
+
+        MENUITEM SEPARATOR
+        MENUITEM "Workspace Directory",         ID_CLICKEDIT2_WORKSPACEDIRECTORY
+
+        MENUITEM "Workspace Name",              ID_CLICKEDIT2_WORKSPACENAME
+    END
+    POPUP "ClickEdit3"
+    BEGIN
+        MENUITEM "File Directory",              ID_CLICKEDIT3_FILEDIRECTORY
+        MENUITEM "File Name",                   ID_CLICKEDIT3_FILENAME
+        MENUITEM SEPARATOR
+        MENUITEM "Current Directory",           ID_CLICKEDIT3_CURRENTDIRECTORY
+
+        MENUITEM SEPARATOR
+        MENUITEM "Target Directory",            ID_CLICKEDIT3_TARGETDIRECTORY
+
+        MENUITEM "Target Name",                 ID_CLICKEDIT3_TARGETNAME
+        MENUITEM SEPARATOR
+        MENUITEM "Workspace Directory",         ID_CLICKEDIT3_WORKSPACEDIRECTORY
+
+        MENUITEM "Workspace Name",              ID_CLICKEDIT3_WORKSPACENAME
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About Edit List Box Sample..."
+    IDS_PROPSHT_CAPTION     "Codejock Edit List Box Sample"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\EditListBox.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

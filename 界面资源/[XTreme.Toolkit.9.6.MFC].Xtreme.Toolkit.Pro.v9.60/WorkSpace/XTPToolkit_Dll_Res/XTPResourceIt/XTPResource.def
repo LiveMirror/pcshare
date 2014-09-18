@@ -1,0 +1,11 @@
+; XTPResourceIt.def : Declares the module parameters for the DLL.
+
+LIBRARY      XTPResourceIt
+DESCRIPTION  'XTPResourceIt Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here
+    GetLangID  @1
+    
+    
+    

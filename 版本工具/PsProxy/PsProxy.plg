@@ -1,0 +1,51 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: PsProxy - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Release/PsProxy.res" /d "NDEBUG" /d "_AFXDLL" "D:\开发代码\版本工具\PsProxy\PsProxy.rc"" 
+Creating temporary file "C:\DOCUME~1\shesh\LOCALS~1\Temp\RSP34C.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/PsProxy.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\开发代码\版本工具\PsProxy\PsProxy.cpp"
+"D:\开发代码\版本工具\PsProxy\PsProxyDlg.cpp"
+"D:\开发代码\版本工具\PsProxy\MySocket.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\shesh\LOCALS~1\Temp\RSP34C.tmp" 
+Creating temporary file "C:\DOCUME~1\shesh\LOCALS~1\Temp\RSP34D.tmp" with contents
+[
+/nologo /MD /W3 /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Release/PsProxy.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"D:\开发代码\版本工具\PsProxy\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\shesh\LOCALS~1\Temp\RSP34D.tmp" 
+Creating temporary file "C:\DOCUME~1\shesh\LOCALS~1\Temp\RSP34E.tmp" with contents
+[
+ Ws2_32.lib Shlwapi.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/PsProxy.pdb" /machine:I386 /out:"Release/PsProxy.exe" 
+".\Release\PsProxy.obj"
+".\Release\PsProxyDlg.obj"
+".\Release\StdAfx.obj"
+".\Release\PsProxy.res"
+".\Release\MySocket.obj"
+]
+Creating command line "link.exe @C:\DOCUME~1\shesh\LOCALS~1\Temp\RSP34E.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+PsProxy.cpp
+PsProxyDlg.cpp
+MySocket.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+PsProxy.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,417 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "XTPCommandBarsResource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ROMANIAN, SUBLANG_DEFAULT
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifndef _XTP_NO_BINARY_RESOURCES
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+XTP_IDR_TOOLBAR_TOOLS   BITMAP     DISCARDABLE        "CommandBars/res/ImageEditorIcons.bmp"
+XTP_IDR_TOOLBAR_TOOLS32 BITMAP     DISCARDABLE        "CommandBars/res/ImageEditorIcons32.bmp "
+XTP_IDB_MENUBAR_ICONS   BITMAP     DISCARDABLE        "CommandBars/res/MenuBarIcons.bmp"
+XTP_ID_CUSTOMIZE_CHANGEBUTTONIMAGE BITMAP     DISCARDABLE        "CommandBars/res/UserIcons.bmp"
+XTP_ID_WORKSAPCE_NEWHORIZONTAL BITMAP     DISCARDABLE        "CommandBars/res/TabGroups.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+XTP_IDC_COMMANDBARS_DRAGCOPY CURSOR     DISCARDABLE        "CommandBars/res/dragcopypro.cur"
+XTP_IDC_COMMANDBARS_DRAGMOVE CURSOR     DISCARDABLE        "CommandBars/res/dragmovepro.cur"
+XTP_IDC_COMMANDBARS_DRAGDELETE CURSOR     DISCARDABLE        "CommandBars/res/dragdeletepro.cur"
+XTP_IDC_COMMANDBARS_LINE CURSOR     DISCARDABLE        "CommandBars/res/line.cur"
+XTP_IDC_COMMANDBARS_PICKCOLOR CURSOR     DISCARDABLE        "CommandBars/res/pickcolor.cur"
+XTP_IDC_COMMANDBARS_FILLCOLOR CURSOR     DISCARDABLE        "CommandBars/res/fillcolor.cur"
+XTP_IDC_COMMANDBARS_PENCIL CURSOR     DISCARDABLE        "CommandBars/res/pencil.cur"
+XTP_IDC_WORKSAPCE_NEW   CURSOR     DISCARDABLE        "CommandBars/res/WorksapceNew.cur"
+XTP_IDC_WORKSAPCE_DELETE CURSOR     DISCARDABLE        "CommandBars/res/WorksapceDelete.cur"
+
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+XTP_IDD_IMAGEEDITOR_DIALOG DIALOGEX 0, 0, 253, 185
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Editor butoane"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "Imagine",IDC_STATIC,7,7,25,8
+    GROUPBOX        "Culori",IDC_STATIC,102,106,80,71
+    GROUPBOX        "Mutare",IDC_STATIC,101,72,81,31
+    GROUPBOX        "Examinare",IDC_STATIC,7,106,86,71
+    GROUPBOX        "Instrumente",IDC_STATIC,101,9,81,60
+    DEFPUSHBUTTON   "OK",IDOK,193,7,50,14
+    PUSHBUTTON      "Revocare",IDCANCEL,193,25,50,14
+    CONTROL         "",XTP_IDC_STATIC_PICTURE,"Static",SS_BLACKFRAME | 
+                    SS_NOTIFY,7,17,86,80
+    CTEXT           "",XTP_IDC_STATIC_PREVIEW,14,117,73,54,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    LTEXT           "Transparent",IDC_STATIC,135,156,39,8
+    LTEXT           "",XTP_ID_CLR_ERASE,116,153,15,15,SS_NOTIFY
+    CTEXT           "Instrumente",XTP_IDC_STATIC_TOOLS,112,21,60,43,SS_CENTERIMAGE | 
+                    NOT WS_VISIBLE | WS_BORDER
+    CTEXT           "Mutare",XTP_IDC_STATIC_MOVE,111,83,62,12,SS_CENTERIMAGE | 
+                    NOT WS_VISIBLE | WS_BORDER
+    CONTROL         "",XTP_ID_CLR_PICKER,"Static",SS_LEFTNOWORDWRAP | 
+                    SS_NOTIFY | WS_GROUP,109,144,15,15
+    CTEXT           "Culori",XTP_IDC_STATIC_COLORS,107,121,68,12,
+                    SS_CENTERIMAGE | NOT WS_VISIBLE | WS_BORDER
+END
+
+XTP_IDD_PAGE_KEYBOARD DIALOG DISCARDABLE  0, 0, 247, 150
+ STYLE WS_CHILD | WS_CAPTION
+CAPTION "Tastaturã"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Comenzi:",XTP_IDC_TXT_COMMANDS,2,28,38,8
+    LISTBOX         XTP_IDC_LBOX_ACCEL_COMMANDS,2,39,93,74,LBS_HASSTRINGS | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Atribuiri taste:",XTP_IDC_TXT_ASSIGNMENTS,100,28,67,8
+    LISTBOX         XTP_IDC_LBOX_KEYS,100,38,75,49,LBS_HASSTRINGS | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Apãsaþi noua tastã comenzi rapide:",XTP_IDC_TXT_NEWKEY,100,91,113,8
+    EDITTEXT        XTP_IDC_EDIT_SHORTCUTKEY,100,101,75,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Asociere",XTP_IDC_BTN_ASSIGN,179,39,65,14
+    PUSHBUTTON      "Eliminare",XTP_IDC_BTN_REMOVE,179,56,65,14
+    PUSHBUTTON      "Reiniþializare totalã",XTP_IDC_BTN_ACCEL_RESET,179,73,65,14
+    LTEXT           "Descriere:",XTP_IDC_TXT_DESC_TITLE,2,119,38,8
+    LTEXT           "",XTP_IDC_TXT_DESC_OVERVIEW,2,129,173,19,0,
+                    WS_EX_STATICEDGE
+    LTEXT           "Categorie:",IDC_STATIC,2,5,33,8
+    COMBOBOX        XTP_IDC_COMBO_CATEGORY,2,15,93,147,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+XTP_IDD_PAGE_TOOLBARS DIALOG DISCARDABLE  0, 0, 247, 150
+ STYLE WS_CHILD | WS_CAPTION
+CAPTION "Bare de instrumente"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Bare xde instrumente:",IDC_STATIC,4,5,69,8
+    LISTBOX         XTP_IDC_LIST_TOOLBARS,4,15,167,131,LBS_OWNERDRAWFIXED | 
+                    LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "Nou...",XTP_IDC_BUTTON_NEW,175,15,70,14
+    PUSHBUTTON      "Redenumire...",XTP_IDC_BUTTON_RENAME,175,33,70,14
+    PUSHBUTTON      "ªtergere",XTP_IDC_BUTTON_DELETE,175,51,70,14
+    PUSHBUTTON      "Reiniþializare...",XTP_IDC_BUTTON_RESET,175,69,70,14
+END
+
+XTP_IDD_PAGE_OPTIONS DIALOG DISCARDABLE  0, 0, 247, 150
+ STYLE WS_CHILD | WS_CAPTION
+CAPTION "Opþiuni"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Meniuri ºi bare de instrumente personalizate",IDC_STATIC,7,5,137,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,150,9,89,1
+    CONTROL         "Întotdeauna se afiºeazã meniuri complete",XTP_IDC_CHECK_FULL_MENUS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,17,207,10
+    CONTROL         "Afiºare meniuri complete dupã o  scurtã întârziere",
+                    XTP_IDC_CHECK_AFTERDELAY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,28,29,195,10
+    PUSHBUTTON      "&Reiniþializare date utilizator",
+                    XTP_IDC_BUTTON_RESETDATA,16,42,125,14
+    LTEXT           "Alta",IDC_STATIC,7,70,18,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,45,74,194,1
+    CONTROL         "Pictograme mari",XTP_IDC_CHECK_LARGEICONS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,16,82,207,10
+    CONTROL         "Afiºare SfaturiEcran pe bare de instrumente",XTP_IDC_CHECK_SCREENTTIPS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,93,207,10
+    CONTROL         "Afiºare taste de comenzi rapide în SfaturiEcran",
+                    XTP_IDC_CHECK_SHORTCUTS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,28,104,195,10
+    LTEXT           "Animaþii meniu:",IDC_STATIC,16,117,56,8
+    COMBOBOX        XTP_IDC_COMBO_ANIMATION,76,115,79,65,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+XTP_IDD_PAGE_COMMANDS DIALOG DISCARDABLE  0, 0, 247, 150
+ STYLE WS_CHILD | WS_CAPTION
+CAPTION "Comenzi"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Pentru a adãuga o comandã la o barã de instrumente: se selecteazã o categorie ºi se gliseazã comanda din acest dialog cãtre o barã de instrumente.",
+                    IDC_STATIC,4,4,220,25
+    LTEXT           "Categorii:",IDC_STATIC,3,32,38,8
+    LISTBOX         XTP_IDC_LIST_CATEGORIES,3,42,81,103,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Comenzi:",IDC_STATIC,89,32,38,8
+    LISTBOX         XTP_IDC_LIST_COMMANDS,89,42,154,103,LBS_OWNERDRAWFIXED | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+XTP_IDD_NEWTOOLBAR DIALOG DISCARDABLE  0, 0, 186, 52
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Barã de instrumente nouã"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Nume barã de instrumente:",IDC_STATIC,4,4,100,8
+    EDITTEXT        XTP_IDC_EDIT_TOOLBARNAME,4,15,178,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,78,34,50,14
+    PUSHBUTTON      "Revocare",IDCANCEL,132,34,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+XTP_IDR_CUSTOMIZEMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "Particularizare"
+    BEGIN
+        MENUITEM "Reiniþializare",                      XTP_ID_CUSTOMIZE_RESET
+        MENUITEM "ªtergere",                     XTP_ID_CUSTOMIZE_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "Nume:",                      XTP_ID_CUSTOMIZE_NAME
+        MENUITEM SEPARATOR
+        MENUITEM "Copiere imagine buton",          XTP_ID_CUSTOMIZE_COPYBUTTONIMAGE
+
+        MENUITEM "Lipire imagine buton",         XTP_ID_CUSTOMIZE_PASTEBUTTONIMAGE
+
+        MENUITEM "Reiniþializare imagine buton",         XTP_ID_CUSTOMIZE_RESETBUTTONIMAGE
+
+        MENUITEM "Editare imagine buton...",       XTP_ID_CUSTOMIZE_EDITBUTTONIMAGE
+
+        MENUITEM "Modificare imagine buton",        XTP_ID_CUSTOMIZE_CHANGEBUTTONIMAGE
+
+        MENUITEM SEPARATOR
+        MENUITEM "Stil implicit",              XTP_ID_CUSTOMIZE_DEFAULTSTYLE
+
+        MENUITEM "Numai text",                  XTP_ID_CUSTOMIZE_TEXTONLY
+        MENUITEM "Imagine ºi text",             XTP_ID_CUSTOMIZE_IMAGEANDTEXT
+
+        MENUITEM SEPARATOR
+        MENUITEM "Începerea unui grup",              XTP_ID_CUSTOMIZE_BEGINAGROUP
+    END
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "XTPCommandBarsResource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_ADDORREMOVE     "Adãugare sau eliminare butoane"
+    XTP_IDS_CUSTOMIZE_CLOSE "Închidere"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CUSTOMIZE       "Particularizare"
+    XTP_IDS_NEWMENU         "Meniu nou"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CONFIRM_RESETDATA 
+                            "Aceasta va ºterge înregistrarea comenzilor pe care le-aþi utilizat în aceastã aplicaþie ºi va reface setul implicit de comenzi vizibile din meniuri ºi barele de instrumente. Orice particularizãri explicite nu vor fi anulate. Faceþi aceastã operaþie?"
+    XTP_IDS_INVALID_NUMBER  "Numãr incorect."
+    XTP_IDS_INVALID_FONTSIZE "Numãrul trebuie sã fie între 1 ºi 1638."
+    XTP_IDS_CONFIRM_RESET   "Are you sure you want to reset the changes made to the '%s' toolbar?"
+    XTP_IDS_BUILTINMENUS    "Meniuri predefinite"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CUSTOM_BAR      "Particularizare %d"
+    XTP_IDS_ERROR_BLANKNAME "Imposibil ca numele barei de instrumente sã fie necompletat. Tastaþi un nume."
+    XTP_IDS_ERROR_LIMIT     "Ne pare rau, da v-ati atins limita."
+    XTP_IDS_ERROR_EXISTS    "Existã deja o barã de instrumente numitã '%s'. Tastaþi alt nume."
+    XTP_IDS_RENAMETOOLBAR   "Redenumire barã de instrumente"
+    XTP_IDS_CONFIRM_DELETE  "Sigur ºtergeþi bara de instrumente '%s'?"
+    XTP_IDS_ALLCOMMANDS     "Toate comenzile"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_ID_CUSTOMIZE        "\n&Particularizare..."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CLR_INDIGO      "Indigo"
+    XTP_IDS_CLR_GRAY80      "Gri-80%"
+    XTP_IDS_CLR_DARK_RED    "Bordo"
+    XTP_IDS_CLR_ORANGE      "Portocaliu"
+    XTP_IDS_CLR_DARK_YELLOW "Verde oliv"
+    XTP_IDS_CLR_GREEN       "Verde"
+    XTP_IDS_CLR_TEAL        "Albastru verzui"
+    XTP_IDS_CLR_BLUE        "Albastru"
+    XTP_IDS_CLR_BLUEGRAY    "Gri albãstrui"
+    XTP_IDS_CLR_GRAY50      "Gri-50%"
+    XTP_IDS_CLR_RED         "Roºu"
+    XTP_IDS_CLR_LIGHTORANGE "Galben portocaliu"
+    XTP_IDS_CLR_LIME        "Verde gãlbui"
+    XTP_IDS_CLR_SEA_GREEN   "Verde marin"
+    XTP_IDS_CLR_AQUA        "Cyan"
+    XTP_IDS_CLR_LIGHT_BLUE  "Albastru deschis"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CLR_VIOLET      "Violet"
+    XTP_IDS_CLR_GRAY40      "Gri-40%"
+    XTP_IDS_CLR_PINK        "Ciclam"
+    XTP_IDS_CLR_GOLD        "Auriu"
+    XTP_IDS_CLR_YELLOW      "Galben"
+    XTP_IDS_CLR_BRIGHT_GREEN "Verde aprins"
+    XTP_IDS_CLR_TURQUOISE   "Turcoaz"
+    XTP_IDS_CLR_SKY_BLUE    "Azuriu"
+    XTP_IDS_CLR_PLUM        "Mov"
+    XTP_IDS_CLR_GRAY25      "Gri-25%"
+    XTP_IDS_CLR_ROSE        "Roz"
+    XTP_IDS_CLR_TAN         "Ocru"
+    XTP_IDS_CLR_LIGHT_YELLOW "Galben pai"
+    XTP_IDS_CLR_LIGHT_GREEN "Verde deschis"
+    XTP_IDS_CLR_LIGHT_TURQUOISE "Turcoaz deschis"
+    XTP_IDS_CLR_PALE_BLUE   "Bleu pastel"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CLR_BLACK       "Negru"
+    XTP_IDS_CLR_BROWN       "Maro"
+    XTP_IDS_CLR_OLIVE_GREEN "Oliv închis"
+    XTP_IDS_CLR_DARK_GREEN  "Verde închis"
+    XTP_IDS_CLR_DARK_TEAL   "Albastru închis"
+    XTP_IDS_CLR_DARK_BLUE   "Bleumarin"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CLR_LAVENDER    "Lila"
+    XTP_IDS_CLR_WHITE       "Alb"
+    XTP_IDS_CLR_GRAY        "Gri"
+    XTP_IDS_CLR_MAROON      "Bordo"
+    XTP_IDS_CLR_OLIVE       "Verde oliv"
+    XTP_IDS_CLR_NAVY        "Bleumarin"
+    XTP_IDS_CLR_PURPLE      "Violet"
+    XTP_IDS_CLR_SILVER      "Argintiu"
+    XTP_IDS_CLR_FUCHSIA     "Fucsia"
+    XTP_IDS_CLR_NOFILL      "Fãrã umplere\nFãrã umplere"
+    XTP_IDS_AUTOMATIC       "Culoare automatã\nCuloare automatã"
+    XTP_IDS_MORE_COLORS     "Mai multe culori..."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CONFIRM_KEYBOARD 
+                            "Sunteti sigur ca doriti sa initializati asocierile de tastatura?  Aceasta actiune va sterge toate asocierile particularizate la nivelul textului."
+    XTP_IDS_CONFIRM_REASSIGN 
+                            "This shortcut is currently assigned.\nDo you want to re-assign this shortcut?"
+    XTP_IDS_CONFIRM_UPDATE  "Due to a software update the toolbar '%s' has changed. Would you like to reset your customized toolbar and load the new one?"
+    XTP_IDS_CUSTOMIZE_RESET "Reiniþializare"
+    XTP_IDS_IMAGEEDITOR_FILTER 
+                            "Toate fiºierele imagine|*.bmp;*.wmf;*.emf;*.ico;*.dib;*.cur;*.gif;*.jpg|Bitmaps(*.Bmp;*.Dib)|*.bmp;*.dib|Metafiles(*.Wmf;*.Emf)|*.wmf;*.emf|Icons(*.Ico;*.Cur)|*.ico;*.cur|GIF(*.Gif)|*.gif|JPEG(*.Jpg)|*.jpg|All Files(*.*)|*.*||"
+    XTP_ID_TOOLBAR_EXPAND   "\nOpþiuni barã de instrumente"
+    XTP_ID_TOOLBAR_HIDE     "\nÎnchidere"
+    XTP_ID_MENUBAR_CLOSE    "\nÎnchidere fereastrã"
+    XTP_ID_MENUBAR_RESTORE  "\nRestabilire fereastrã"
+    XTP_ID_MENUBAR_MINIMIZE "\nMinimizare fereastrã"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_ID_BUTTON_PENCIL    "\nCreion"
+    XTP_ID_BUTTON_FILL      "\nCuloare de umplere"
+    XTP_ID_BUTTON_GETCOLOR  "\nSelectare culoare"
+    XTP_ID_BUTTON_LINE      "\nLinie"
+    XTP_ID_BUTTON_RECTANGLE "\nDreptunghi"
+    XTP_ID_BUTTON_CIRCLE    "\nElipsã"
+    XTP_ID_BUTTON_COPY      "\nCopiere"
+    XTP_ID_BUTTON_PASTE     "\nLipire"
+    XTP_ID_BUTTON_CLEAR     "\nGolire"
+    XTP_ID_BUTTON_UNDO      "\nAnulare"
+    XTP_ID_BUTTON_REDO      "\nRefacere"
+    XTP_ID_BUTTON_OPEN      "\nImport from file"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_ANIMATION_SYSDEF "(implicit de sistem)"
+    XTP_IDS_ANIMATION_RANDOM "Aleator"
+    XTP_IDS_ANIMATION_UNFOLD "Desfãºurat"
+    XTP_IDS_ANIMATION_SLIDE "Diapozitiv"
+    XTP_IDS_ANIMATION_FADE  "Decolorare"
+    XTP_IDS_ANIMATION_NONE  "Nici una"
+    XTP_ID_WORKSAPCE_MOVEPREVIOUS "\nMove to P&revious Tab Group"
+    XTP_ID_WORKSAPCE_MOVENEXT "\nMove to Ne&xt Tab Group"
+    XTP_ID_WORKSAPCE_NEWHORIZONTAL "\nNew Hori&zontal Tab Group"
+    XTP_ID_WORKSAPCE_NEWVERTICAL "\nNew &Vertical Tab Group"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_ID_WORKSAPCE_CANCEL "Revocare"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,43 @@
+//
+// SCRIBBLE.RC2 - resources Microsoft Visual C++ does not edit directly
+//
+
+
+#ifdef APSTUDIO_INVOKED
+	#error this file is not editable by Microsoft Visual C++
+#endif //APSTUDIO_INVOKED
+
+/////////////////////////////////////////////////////////////////////////////
+// Add manually edited resources here...
+
+STRINGTABLE DISCARDABLE
+BEGIN
+#ifdef UNICODE
+IDR_MAINFRAME           "Codejock Scribble Multi-Language Sample"
+#else
+IDR_MAINFRAME           "Codejock Scribble Multi-Language Sample"
+#endif
+END
+
+/////////////////////////////////////////////////////////////////////////////
+// Xtreme Toolkit Pro English resources
+
+#include <XTToolkitPro.rc>
+
+/////////////////////////////////////////////////////////////////////////////
+// Xtreme Toolkit Pro Localization
+
+#include <CommandBars\XTPCommandBarsResource_de.rc>		// Command Bars German
+#ifdef UNICODE
+#include <CommandBars\XTPCommandBarsResource_ja.rc>		// Command Bars Japanese
+#include <CommandBars\XTPCommandBarsResource_ar_SA.rc>	// Command Bars Arabic
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+// Scribble Localization
+
+#include "..\Scribble_de.rc" // German
+#ifdef UNICODE
+#include "..\Scribble_ja.rc" // Japanese
+#include "..\Scribble_ar.rc" // Arabic
+#endif

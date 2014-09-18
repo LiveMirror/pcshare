@@ -1,0 +1,561 @@
+
+
+#define APSTUDIO_READONLY_SYMBOLS
+
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ARABIC, SUBLANG_ARABIC_SAUDI_ARABIA
+#pragma code_page(1256)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_FLAG                BITMAP     DISCARDABLE        "res\\arabic.bmp"
+IDR_MAINFRAME           BITMAP     MOVEABLE PURE      "res\\Tlb.bmp"
+IDC_CJLOGO              BITMAP     FIXED IMPURE       "res\\cj_logo.bmp"
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#include ""res\\Scribble.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#include ""afxolesv.rc""       // OLE server resources\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\CjSample.ico"
+IDR_SCRIBBTYPE          ICON    DISCARDABLE        "res\\ScribDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_PEN_THICK_OR_THIN
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+    BUTTON      ID_CONTEXT_HELP
+    SEPARATOR
+    BUTTON      ID_LANGUAGE_ENGLISH
+    BUTTON      ID_LANGUAGE_GERMAN
+    BUTTON      ID_LANGUAGE_JAPANESE
+    BUTTON      ID_LANGUAGE_ARABIC
+    BUTTON      ID_LANGUAGE_RUSSIAN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_DUMMY MENU DISCARDABLE 
+BEGIN
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+    MENUITEM SEPARATOR
+END
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "„·›"
+    BEGIN
+        MENUITEM "ÃœÌœ	Ctrl+N",                ID_FILE_NEW
+        MENUITEM "› Õ...	Ctrl+O",            ID_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "≈⁄œ«œ «·ÿ»«⁄…...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "„·› ÕœÌÀ",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "≈‰Â«¡",                       ID_APP_EXIT
+    END
+    POPUP "«··€…"
+    BEGIN
+        MENUITEM "«··€… «·≈‰ﬂ·Ì“Ì…",                     ID_LANGUAGE_ENGLISH
+        MENUITEM "«·√·„«‰Ì…",                      ID_LANGUAGE_GERMAN
+        MENUITEM "«·Ì«»«‰Ì…",                    ID_LANGUAGE_JAPANESE
+        MENUITEM "«·⁄—»Ì…",                      ID_LANGUAGE_ARABIC
+        MENUITEM "Russian",                     ID_LANGUAGE_RUSSIAN
+    END
+    POPUP "⁄—÷"
+    BEGIN
+        MENUITEM "‘—Ìÿ «·√œÊ« ",                    ID_VIEW_TOOLBAR
+        MENUITEM "‘—Ìÿ «·„⁄·Ê„« ",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP " ⁄·Ì„« "
+    BEGIN
+        MENUITEM "„Ê«÷Ì⁄ «· ⁄·Ì„« ",                ID_HELP_FINDER
+        MENUITEM SEPARATOR
+        MENUITEM "»‘«˙‰ «·Œ—»‘…",          ID_APP_ABOUT
+    END
+END
+
+IDR_SCRIBBTYPE MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "„·›"
+    BEGIN
+        MENUITEM "ÃœÌœ	Ctrl+N",                ID_FILE_NEW
+        MENUITEM "› Õ...	Ctrl+O",            ID_FILE_OPEN
+        MENUITEM "≈€·«ﬁ",                      ID_FILE_CLOSE
+        MENUITEM "Õ›Ÿ	Ctrl+S",               ID_FILE_SAVE
+        MENUITEM "Õ›Ÿ »«”„...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "ÿ»«⁄…...	Ctrl+P",           ID_FILE_PRINT
+        MENUITEM "„⁄«Ì‰… ﬁ»· «·ÿ»«⁄…",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "≈⁄œ«œ «·ÿ»«⁄…...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "≈—”«·...",                    ID_FILE_SEND_MAIL
+        MENUITEM SEPARATOR
+        MENUITEM "„·› ÕœÌÀ",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "≈‰Â«¡",                       ID_APP_EXIT
+    END
+    POPUP "«··€…"
+    BEGIN
+        MENUITEM "«··€… «·≈‰ﬂ·Ì“Ì…",                     ID_LANGUAGE_ENGLISH
+        MENUITEM "«·√·„«‰Ì…",                      ID_LANGUAGE_GERMAN
+        MENUITEM "«·Ì«»«‰Ì…",                    ID_LANGUAGE_JAPANESE
+        MENUITEM "«·⁄—»Ì…",                      ID_LANGUAGE_ARABIC
+        MENUITEM "Russian",                     ID_LANGUAGE_RUSSIAN
+    END
+    POPUP " Õ—Ì—"
+    BEGIN
+        MENUITEM " —«Ã⁄	Ctrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "ﬁ’	Ctrl+X",                ID_EDIT_CUT
+        MENUITEM "‰”Œ	 Enter",               ID_EDIT_COPY
+        MENUITEM "·’ﬁ	Ctrl+V",              ID_EDIT_PASTE
+        MENUITEM "„”Õ «·ﬂ·",                  ID_EDIT_CLEAR_ALL
+    END
+    POPUP "ﬁ·„"
+    BEGIN
+        MENUITEM "”ÿ— Œ„Ì·",                 ID_PEN_THICK_OR_THIN
+        MENUITEM ".....⁄—÷ Œÿ «·ﬂ «»…",              ID_PEN_WIDTHS
+    END
+    POPUP "⁄—÷"
+    BEGIN
+        MENUITEM "‘—Ìÿ «·√œÊ« ",                    ID_VIEW_TOOLBAR
+        MENUITEM "‘—Ìÿ «·„⁄·Ê„« ",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "≈ÿ«—"
+    BEGIN
+        MENUITEM "≈ÿ«— ÃœÌœ",                 ID_WINDOW_NEW
+        MENUITEM "  «·Ì",                    ID_WINDOW_CASCADE
+        MENUITEM " Ã«‰»",                       ID_WINDOW_TILE_HORZ
+        MENUITEM " — Ì» «·—„Ê“",              ID_WINDOW_ARRANGE
+		MENUITEM "Window List",                 35000
+    END
+    POPUP " ⁄·Ì„« "
+    BEGIN
+        MENUITEM "„Ê«÷Ì⁄ «· ⁄·Ì„« ",                ID_HELP_FINDER
+        MENUITEM SEPARATOR
+        MENUITEM "»‘«˙‰ «·Œ—»‘…",          ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_F1,          ID_HELP,                VIRTKEY, NOINVERT
+    VK_F1,          ID_CONTEXT_HELP,        VIRTKEY, SHIFT, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX DISCARDABLE  0, 0, 246, 151
+EXSTYLE WS_EX_RTLREADING | WS_EX_RIGHT
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "»‘√‰ «·Œ—»‘…"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Œ—»‘… ‰’ 1.0 ",IDC_STATIC_SCRIBBLE,5,74,151,10, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    DEFPUSHBUTTON   "„Ê«›ﬁ",IDOK,5,130,70,14,WS_GROUP
+    LTEXT           "«··€… : «·«‰Ã·Ì“Ì…",IDC_STATIC_LANGUAGE,5,104,151,8, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    LTEXT           "⁄Ì‰… „·› ·„Ê—œ «··€«  «·„ ⁄œœ…",
+                    IDC_STATIC_MULLANG,5,83,151,10, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    CONTROL         132,IDC_STATIC,"Static",SS_BITMAP,162,74,75,37
+    CTEXT           "Copyright ©2004 Codejock Software, All Rights Reserved",
+                    IDC_TXT_COPYRIGHT,28,41,190,8
+    CTEXT           "http://www.codejock.com",IDC_TXT_URL,28,50,190,8
+    CONTROL         101,IDC_STATIC,"Static",SS_BITMAP,28,7,190,31
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,7,120,232,1
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,8,66,231,1
+END
+
+IDD_PEN_WIDTHS DIALOG DISCARDABLE  0, 0, 203, 65
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "⁄—÷ Œÿ «·ﬂ «»…"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "„Ê«›ﬁ",IDOK,148,7,50,14
+    PUSHBUTTON      "≈·€«¡ «·√„—",IDCANCEL,148,24,50,14
+    PUSHBUTTON      "«› —«÷Ì",IDC_DEFAULT_PEN_WIDTHS,148,41,50,14
+    LTEXT           "Œÿ ﬂ «»… —›Ì⁄",IDC_STATIC_THIN,10,12,70,10
+    LTEXT           "Œÿ ﬂ «»… ⁄—Ì÷",IDC_STATIC_THICK,10,33,70,10
+    EDITTEXT        IDC_THIN_PEN_WIDTH,86,12,40,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_THICK_PEN_WIDTH,86,33,40,13,ES_AUTOHSCROLL
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040104E8"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "SCRIBBLE MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "SCRIBBLE\0"
+            VALUE "LegalCopyright", "Copyright © 1998\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "SCRIBBLE.EXE\0"
+            VALUE "ProductName", "SCRIBBLE Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x0401, 1256
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 239
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 144
+    END
+
+    IDD_PEN_WIDTHS, DIALOG
+    BEGIN
+        LEFTMARGIN, 10
+        RIGHTMARGIN, 198
+        VERTGUIDE, 1
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_SCRIBBTYPE          "\n Œ—»‘… \n Œ—»‘… \n Œ—»‘… ......"
+    IDS_STANDARD            "‰Ÿ«„Ì…"
+    IDS_MENUBAR             "‘—Ìÿ «·ﬁÊ«∆„"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Œ—»‘…"
+    AFX_IDS_IDLEMESSAGE     "··Õ’Ê· ⁄·Ï "" ⁄·Ì„« ""° «÷€ÿ F1"
+    AFX_IDS_HELPMODEMESSAGE "Õœœ ﬂ«∆‰« ··Õ’Ê· ⁄·Ï  ⁄·Ì„«  ÕÊ·Â"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "«Œ—Ã"
+    ID_INDICATOR_CAPS       "«·Ê”Ì·…"
+    ID_INDICATOR_NUM        "«·⁄œœ"
+    ID_INDICATOR_SCRL       "Õ—ﬂ ·«⁄·Ï Ê«”›·"
+    ID_INDICATOR_OVR        "›Êﬁ"
+    ID_INDICATOR_REC        "«·»Ì«‰ «·„”Ã·"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "«‰‘«¡ ÊÀÌﬁ… ÃœÌœ…\nÃœÌœ"
+    ID_FILE_OPEN            "› Õ «·ÊÀÌﬁ… «·„ÊÃÊœ…\n› Õ"
+    ID_FILE_CLOSE           "≈€·«ﬁ «·ÊÀÌﬁ… «·‰‘ÿ…\n≈€·«ﬁ"
+    ID_FILE_SAVE            "Õ›Ÿ «·ÊÀÌﬁ… «·‰‘ÿ…\nÕ›Ÿ"
+    ID_FILE_SAVE_AS         "Õ›Ÿ «·ÊÀÌﬁ… «·‰‘ÿ… »«”„ ÃœÌœ\nÕ›Ÿ »«”„"
+    ID_FILE_PAGE_SETUP      " €ÌÌ— ŒÌ«—«  «·ÿ»«⁄…\n≈⁄œ«œ «·’›Õ…"
+    ID_FILE_PRINT_SETUP     " €ÌÌ— «·ÿ«»⁄… ÊŒÌ«—«  «·ÿ»«⁄… \n≈⁄œ«œ «·ÿ»«⁄…"
+    ID_FILE_PRINT           "ÿ»«⁄… «·„” ‰œ «·‰‘ÿ\nÿ»«⁄…"
+    ID_FILE_PRINT_PREVIEW   "⁄—÷ ’›Õ«  ﬂ«„·…\n„⁄«Ì‰… ﬁ»· «·ÿ»«⁄…"
+    ID_FILE_UPDATE          " ÕœÌÀ «·Õ«ÊÌ… ·≈ŸÂ«— √Ì…  €ÌÌ—« \n ÕœÌÀ"
+    ID_FILE_SAVE_COPY_AS    " ≈Õ›Ÿ ‰”Œ… «·ÊÀÌﬁ…  «·‰‘Ìÿ… »≈”„ ÃœÌœ \n ≈Õ›Ÿ «·‰”Œ…"
+    ID_FILE_SEND_MAIL       "≈—”· «·‰”Œ… «·‰‘Ìÿ… Œ·«· «·»—Ìœ «·«·ﬂ —Ê‰Ì \n ≈—”· «·»—Ìœ "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "⁄—÷ „⁄·Ê„«  «·»—‰«„Ã Ê—ﬁ„ «·≈’œ«— ÊÕﬁÊﬁ «·‰‘—\nÕÊ·"
+    ID_APP_EXIT             "≈‰Â«¡ «· ÿ»Ìﬁ Ê«·„ÿ«·»… »Õ›Ÿ «·„” ‰œ« \n≈‰Â«¡"
+    ID_HELP_INDEX           "˛˛› Õ «· ⁄·Ì„« \n „Ê«÷Ì⁄ «· ⁄·Ì„« "
+    ID_HELP_FINDER          "˛˛”—œ „Ê«÷Ì⁄ «· ⁄·Ì„« \n„Ê«÷Ì⁄ «· ⁄·Ì„« "
+    ID_HELP_USING           "⁄—÷ ≈—‘«œ«  ÕÊ· ﬂÌ›Ì… «” Œœ«„ «· ⁄·Ì„« \n«· ⁄·Ì„« "
+    ID_CONTEXT_HELP         "⁄—÷ «· ⁄·Ì„«  ··√“—«—  Ê«·ﬁÊ«∆„ Ê«·≈ÿ«—«  «· Ì Ì „ «·‰ﬁ— ›ÊﬁÂ«\n ⁄·Ì„« "
+    ID_HELP                 "⁄—÷ «· ⁄·Ì„«  ··„Â„… «·Õ«·Ì… √Ê «·√„— «·Õ«·Ì\n«· ⁄·Ì„« "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "› Õ Â–« «·„” ‰œ"
+    ID_FILE_MRU_FILE2       "› Õ Â–« «·„” ‰œ"
+    ID_FILE_MRU_FILE3       "› Õ Â–« «·„” ‰œ"
+    ID_FILE_MRU_FILE4       "› Õ Â–« «·„” ‰œ"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            " »œÌ· ≈·Ï ·ÊÕ «·≈ÿ«— «· «·Ì\n«··ÊÕ «· «·Ì"
+    ID_PREV_PANE            " »œÌ· ≈·Ï ·ÊÕ «·≈ÿ«— «·”«»ﬁ\n«··ÊÕ «·”«»ﬁ"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_NEW           "˛˛› Õ ≈ÿ«— ¬Œ— ··„” ‰œ «·‰‘ÿ\n≈ÿ«— ÃœÌœ"
+    ID_WINDOW_ARRANGE       "˛˛ — Ì» «·—„Ê“ √”›· «·≈ÿ«—\n — Ì» «·—„Ê“"
+    ID_WINDOW_CASCADE       "˛˛ — Ì» «·≈ÿ«—«  »ÕÌÀ   —«ﬂ»\n  «·Ì «·≈ÿ«—« "
+    ID_WINDOW_TILE_HORZ     " — Ì» «·≈ÿ«—«  ›Ì  Ã«‰» €Ì— „ —«ﬂ»\n Ã«‰» «·≈ÿ«—« "
+    ID_WINDOW_TILE_VERT     " — Ì» «·≈ÿ«—«  ›Ì  Ã«‰» €Ì— „ —«ﬂ»\n Ã«‰» «·≈ÿ«—« "
+    ID_WINDOW_SPLIT         "«‰ﬁ”«„ «·≈ÿ«— «·‰‘ÿ ≈·Ï √·Ê«Õ\n«‰ﬁ”«„"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "„”Õ «· ÕœÌœ\n„”Õ"
+    ID_EDIT_CLEAR_ALL       "ÌÊ÷Õ «·—”„"
+    ID_EDIT_COPY            "‰”Œ «· ÕœÌœ ÊÊ÷⁄Â ›Ì «·Õ«›Ÿ…\n‰”Œ"
+    ID_EDIT_CUT             "ﬁ’ «· ÕœÌœ ÊÊ÷⁄Â ›Ì «·Õ«›Ÿ…\nﬁ’"
+    ID_EDIT_FIND            "»ÕÀ ⁄‰ «·‰’ «·„Õœœ\n»ÕÀ"
+    ID_EDIT_PASTE           "˛˛≈œ—«Ã „Õ ÊÌ«  «·Õ«›Ÿ…\n·’ﬁ"
+    ID_EDIT_REPEAT          "≈⁄«œ… «·≈Ã—«¡ «·”«»ﬁ\n≈⁄«œ…"
+    ID_EDIT_REPLACE         "«” »œ«· «·‰’ «·„Õœœ »‰’ „Œ ·›\n«” »œ«·"
+    ID_EDIT_SELECT_ALL      " ÕœÌœ «·ÊÀÌﬁ… »√ﬂ„·Â«\n ÕœÌœ «·ﬂ·"
+    ID_EDIT_UNDO            "«· —«Ã⁄ ⁄‰ «·≈Ã—«¡ «·√ŒÌ—\n —«Ã⁄"
+    ID_EDIT_REDO            "≈⁄«œ… «·≈Ã—«¡ «·”«»ﬁ «·–Ì  „ «· —«Ã⁄ ⁄‰Â\n≈⁄«œ…"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "⁄—÷ ‘—Ìÿ «·√œÊ«  √Ê ≈Œ›«ƒÂ\n »œÌ· ‘—Ìÿ «·√œÊ« "
+    ID_VIEW_STATUS_BAR      "≈ŸÂ«— ‘—Ìÿ «·„⁄·Ê„«  √Ê ≈Œ›«ƒÂ\n »œÌ· ‘—Ìÿ «·„⁄·Ê„« "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          " €ÌÌ— ÕÃ„ «·≈ÿ«—"
+    AFX_IDS_SCMOVE          " €ÌÌ— Ê÷⁄ «·≈ÿ«—"
+    AFX_IDS_SCMINIMIZE      " ﬁ·Ì· «·≈ÿ«— ≈·Ï —„“"
+    AFX_IDS_SCMAXIMIZE      " ﬂ»Ì— «·≈ÿ«— ≈·Ï ÕÃ„Â «·ﬂ«„·"
+    AFX_IDS_SCNEXTWINDOW    "«· »œÌ· ≈·Ï ≈ÿ«— «·ÊÀÌﬁ… «· «·Ì"
+    AFX_IDS_SCPREVWINDOW    "«· »œÌ· ≈·Ï ≈ÿ«— «·ÊÀÌﬁ… «·”«»ﬁ"
+    AFX_IDS_SCCLOSE         "≈€·«ﬁ «·≈ÿ«— «·‰‘ÿ  Ê«·„ÿ«·»… »Õ›Ÿ «·„” ‰œ« "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "«” ⁄«œ… «·≈ÿ«— ≈·Ï «·ÕÃ„ «·ÿ»Ì⁄Ì"
+    AFX_IDS_SCTASKLIST      " ‰‘Ìÿ ﬁ«∆„… «·„Â«„"
+    AFX_IDS_MDICHILD        " ‰‘Ìÿ Â–« «·≈ÿ«—"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "≈€·«ﬁ Ê÷⁄ „⁄«Ì‰… ﬁ»· «·ÿ»«⁄…\n≈·€«¡ «·„⁄«Ì‰…"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_DESKACCESSORY   "› Õ «·⁄‰«’— «·„Õœœ…."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_PEN_THICK_OR_THIN    "Ì›’· «·Œÿ «·⁄—Ì÷ »Ì‰ «·—›Ì⁄ Ê«·⁄—Ì÷ «·„› «Õ «·›«’·\n »œÌ·"
+    ID_PEN_WIDTHS           "ÌÕœœ «·ÕÃ„ »Ì‰ «·ﬁ·„ «·—›Ì⁄ Ê«·⁄—Ì÷"
+    ID_LANGUAGE_ENGLISH     "English\nEnglish"
+    ID_LANGUAGE_GERMAN      "German\nGerman"
+    ID_LANGUAGE_JAPANESE    "Japanese\nJapanese"
+    ID_LANGUAGE_ARABIC      "Arabic\nArabic"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+       // OLE server resources
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

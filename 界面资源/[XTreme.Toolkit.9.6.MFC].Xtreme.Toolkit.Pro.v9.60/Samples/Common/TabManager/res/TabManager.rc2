@@ -1,0 +1,15 @@
+//
+// TABMANAGER.RC2 - resources Microsoft Visual C++ does not edit directly
+//
+
+#ifdef APSTUDIO_INVOKED
+	#error this file is not editable by Microsoft Visual C++
+#endif //APSTUDIO_INVOKED
+
+#include <XTPVersion.h>
+
+#include "AboutDlg.rc"
+
+#if defined(_XTP_STATICLINK) || !defined(_AFXDLL)
+#include <XTToolkitPro.rc>
+#endif

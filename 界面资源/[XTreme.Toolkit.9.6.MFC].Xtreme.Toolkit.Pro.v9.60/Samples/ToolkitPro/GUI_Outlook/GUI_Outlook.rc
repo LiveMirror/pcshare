@@ -1,0 +1,587 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\GUI_Outlook.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\CjSample.ico"
+IDR_GUI_OUTYPE          ICON    DISCARDABLE     "res\\GUI_OutlookDoc.ico"
+IDI_OUTLOOK_TODAY       ICON    DISCARDABLE     "res\\icon1.ico"
+IDI_INBOX               ICON    DISCARDABLE     "res\\icon2.ico"
+IDI_CALENDAR            ICON    DISCARDABLE     "res\\icon3.ico"
+IDI_CONTACTS            ICON    DISCARDABLE     "res\\icon4.ico"
+IDI_TASKS               ICON    DISCARDABLE     "res\\icon5.ico"
+IDI_NOTES               ICON    DISCARDABLE     "res\\icon6.ico"
+IDI_DELETED_ITEMS       ICON    DISCARDABLE     "res\\icon7.ico"
+IDI_DRAFTS              ICON    DISCARDABLE     "res\\icon8.ico"
+IDI_OUTBOX              ICON    DISCARDABLE     "res\\icon9.ico"
+IDI_SENT_ITEMS          ICON    DISCARDABLE     "res\\icon10.ico"
+IDI_JOURNAL             ICON    DISCARDABLE     "res\\icon11.ico"
+IDI_OUTLOOK_UPDATE      ICON    DISCARDABLE     "res\\icon12.ico"
+IDI_MY_COMPUTER         ICON    DISCARDABLE     "res\\icon13.ico"
+IDI_MY_DOCUMENTS        ICON    DISCARDABLE     "res\\icon14.ico"
+IDI_FAVORITES           ICON    DISCARDABLE     "res\\icon15.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+IDB_HEADER_0            BITMAP  DISCARDABLE     "res\\header_0.bmp"
+IDB_HEADER_1            BITMAP  DISCARDABLE     "res\\header_1.bmp"
+IDB_HEADER_2            BITMAP  DISCARDABLE     "res\\header_2.bmp"
+IDB_HEADER_3            BITMAP  DISCARDABLE     "res\\header_3.bmp"
+IDB_ENV                 BITMAP  DISCARDABLE     "res\\env.bmp"
+IDR_STANDARD            BITMAP  MOVEABLE PURE   "res\\standard.bmp"
+IDR_NEW_POPUP           BITMAP  DISCARDABLE     "res\\popup.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+END
+
+IDR_STANDARD TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEWMAIL
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    SEPARATOR
+    BUTTON      ID_FILE_MOVEFOLDER
+    BUTTON      ID_FILE_DELETE
+    SEPARATOR
+    BUTTON      ID_ACTIONS_REPLY
+    BUTTON      ID_ACTIONS_REPLYTOALL
+    BUTTON      ID_ACTIONS_FORWARD
+    SEPARATOR
+    BUTTON      ID_FILE_SENDRECEIVE
+    SEPARATOR
+    BUTTON      ID_FILE_FIND
+    BUTTON      ID_FILE_ORGANIZE
+    SEPARATOR
+    BUTTON      ID_FILE_ADDRESS
+    SEPARATOR
+    BUTTON      ID_GOTO_URL
+    BUTTON      ID_APP_ABOUT
+END
+
+IDR_NEW_POPUP TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_NEW_MAILMESSAGE
+    BUTTON      ID_NEW_POSTINTHISFOLDER
+    BUTTON      ID_NEW_FOLDER
+    BUTTON      ID_NEW_APPOINTMENT
+    BUTTON      ID_NEW_MEETINGREQUEST
+    BUTTON      ID_NEW_CONTACT
+    BUTTON      ID_NEW_DISTRIBUTIONLIST
+    BUTTON      ID_NEW_TASK
+    BUTTON      ID_NEW_TASKREQUEST
+    BUTTON      ID_NEW_JOURNALENTRY
+    BUTTON      ID_NEW_NOTE
+    BUTTON      ID_NEW_OFFICEDOCUMENT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        POPUP "&New"
+        BEGIN
+            MENUITEM "&Mail Message\tCtrl+N",       ID_NEW_MAILMESSAGE
+            MENUITEM "Fa&x Message",                ID_NEW_FAXMESSAGE
+            MENUITEM "&Post in This Folder\tCtrl+Shift+S", 
+                                                    ID_NEW_POSTINTHISFOLDER
+            MENUITEM SEPARATOR
+            MENUITEM "Fold&er...\tCtrl+Shift+E",    ID_NEW_FOLDER
+            MENUITEM "Outlook &Bar Shortcut...",    ID_NEW_OUTLOOKBARSHORTCUT
+
+            MENUITEM SEPARATOR
+            MENUITEM "&Appointment\tCtrl+Shift+A",  ID_NEW_APPOINTMENT
+            MENUITEM "Meeting Re&quest\tCtrl+Shift+Q", ID_NEW_MEETINGREQUEST
+            MENUITEM "&Contact\tCtrl+Shift+C",      ID_NEW_CONTACT
+            MENUITEM "Distribution &List\tCtrl+Shift+L", 
+                                                    ID_NEW_DISTRIBUTIONLIST
+            MENUITEM "&Task\tCtrl+Shift+K",         ID_NEW_TASK
+            MENUITEM "Task &Request\tCtrl+Shift+U", ID_NEW_TASKREQUEST
+            MENUITEM "&Journal Entry\tCtrl+Shift+J", ID_NEW_JOURNALENTRY
+            MENUITEM "&Note\tCtrl+Shift+N",         ID_NEW_NOTE
+            MENUITEM "Office &Document\tCtrl+Shift+H", ID_NEW_OFFICEDOCUMENT
+            MENUITEM SEPARATOR
+            MENUITEM "Ch&oose Form...",             ID_NEW_CHOOSEFORM
+            MENUITEM SEPARATOR
+            MENUITEM "Personal Folders &File (.pst)...", 
+                                                    ID_NEW_PERSONALFOLDERSFILEPST
+
+        END
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM SEPARATOR
+        POPUP "Theme"
+        BEGIN
+            MENUITEM "Office &2000 Theme",          ID_VIEW_THEME_OFFICE2000
+            MENUITEM "Office &XP Theme",            ID_VIEW_THEME_OFFICEXP
+            MENUITEM "Office 200&3 Theme",          ID_VIEW_THEME_OFFICE2003
+            MENUITEM "Win XP Theme",                ID_VIEW_THEME_NATIVEWINXP
+
+        END
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About Microsoft® Outlook IDE Sample...", ID_APP_ABOUT
+    END
+END
+
+ID_FILE_NEWMAIL MENU DISCARDABLE 
+BEGIN
+    POPUP "New"
+    BEGIN
+        MENUITEM "&Mail Message\tCtrl+N",       ID_NEW_MAILMESSAGE
+        MENUITEM "Fa&x Message",                ID_NEW_FAXMESSAGE
+        MENUITEM "&Post in This Folder\tCtrl+Shift+S", 
+                                                ID_NEW_POSTINTHISFOLDER
+        MENUITEM SEPARATOR
+        MENUITEM "Fold&er...\tCtrl+Shift+E",    ID_NEW_FOLDER
+        MENUITEM "Outlook &Bar Shortcut...",    ID_NEW_OUTLOOKBARSHORTCUT
+        MENUITEM SEPARATOR
+        MENUITEM "&Appointment\tCtrl+Shift+A",  ID_NEW_APPOINTMENT
+        MENUITEM "Meeting Re&quest\tCtrl+Shift+Q", ID_NEW_MEETINGREQUEST
+        MENUITEM "&Contact\tCtrl+Shift+C",      ID_NEW_CONTACT
+        MENUITEM "Distribution &List\tCtrl+Shift+L", ID_NEW_DISTRIBUTIONLIST
+        MENUITEM "&Task\tCtrl+Shift+K",         ID_NEW_TASK
+        MENUITEM "Task &Request\tCtrl+Shift+U", ID_NEW_TASKREQUEST
+        MENUITEM "&Journal Entry\tCtrl+Shift+J", ID_NEW_JOURNALENTRY
+        MENUITEM "&Note\tCtrl+Shift+N",         ID_NEW_NOTE
+        MENUITEM "Office &Document\tCtrl+Shift+H", ID_NEW_OFFICEDOCUMENT
+        MENUITEM SEPARATOR
+        MENUITEM "Ch&oose Form...",             ID_NEW_CHOOSEFORM
+        MENUITEM SEPARATOR
+        MENUITEM "Personal Folders &File (.pst)...", 
+                                                ID_NEW_PERSONALFOLDERSFILEPST
+
+    END
+END
+
+IDR_POPUP_TOOLBOX MENU DISCARDABLE 
+BEGIN
+    POPUP "Item"
+    BEGIN
+        MENUITEM "Cu&t",                        ID_EDIT_CUT
+        MENUITEM "Cop&y",                       ID_EDIT_COPY
+        MENUITEM "&Paste",                      ID_EDIT_PASTE
+        MENUITEM "&Delete",                     ID_TOOLBOX_DELETE
+        MENUITEM "&Rename Item",                ID_TOOLBOX_RENAME
+        MENUITEM SEPARATOR
+        MENUITEM "&Add Tab",                    ID_TOOLBOX_ADDTAB
+        MENUITEM "&List View",                  ID_TOOLBOX_LISTVIEW
+        MENUITEM SEPARATOR
+        MENUITEM "Move &Up",                    ID_TOOLBOX_MOVEUP
+        MENUITEM "Move Do&wn",                  ID_TOOLBOX_MOVEDOWN
+    END
+    POPUP "Group"
+    BEGIN
+        MENUITEM "Delete Tab",                  ID_TOOLBOX_DELETE
+        MENUITEM "Rename Tab",                  ID_TOOLBOX_RENAME
+        MENUITEM SEPARATOR
+        MENUITEM "&Add Tab",                    ID_TOOLBOX_ADDTAB
+        MENUITEM "&List View",                  ID_TOOLBOX_LISTVIEW
+        MENUITEM SEPARATOR
+        MENUITEM "Move &Up",                    ID_TOOLBOX_MOVEUP
+        MENUITEM "Move Do&wn",                  ID_TOOLBOX_MOVEDOWN
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "GUI_Outlook MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "GUI_Outlook\0"
+            VALUE "LegalCopyright", "©2004 Codejock Software, All Rights Reserved.\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "GUI_Outlook.EXE\0"
+            VALUE "ProductName", "GUI_Outlook Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "Codejock Microsoft® Outlook IDE Sample\n\nGUI_Ou\n\n\nGUIOutlook.Document\nGUI_Ou Document"
+    IDS_WARN_XPSWITCH       "Some style switches cannot be made after the program is initialized.\nYou will need to restart the application to fully, and correctly experience the mode change."
+    IDS_OUTLOOK_TODAY       "Outlook Today"
+    IDS_INBOX               "Inbox"
+    IDS_CALENDAR            "Calendar"
+    IDS_CONTACTS            "Contacts"
+    IDS_TASKS               "Tasks"
+    IDS_NOTES               "Notes"
+    IDS_DELETED_ITEMS       "Deleted Items"
+    IDS_DRAFTS              "Drafts"
+    IDS_OUTBOX              "Outbox"
+    IDS_SENT_ITEMS          "Sent Items"
+    IDS_JOURNAL             "Journal"
+    IDS_OUTLOOK_UPDATE      "Outlook Update"
+    IDS_MY_COMPUTER         "My Computer"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDS_MY_DOCUMENTS        "My Documents"
+    IDS_FAVORITES           "Favorites"
+    IDS_OUTLOOK_SHORTCUTS   "Outlook Shortcuts"
+    IDS_MY_SHORTCUTS        "My Shortcuts"
+    IDS_OTHER_SHORTCUTS     "Other Shortcuts"
+    IDS_FILE_NEW_MAIL       "&New"
+    IDS_FILE_SEND_RECEIVE   "Send/Re&ceive"
+    IDS_FILE_FIND           "F&ind"
+    IDS_FILE_ORGANIZE       "Organi&ze"
+    IDS_OUTLOOK_TOOLBAR     "Outlook Toolbar"
+    IDS_FOLDER_LIST         "Folder List"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Codejock Microsoft® Outlook IDE Sample"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEWMAIL         "New Mail Message\nNew"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MOVEFOLDER      "Move To Folder\nMove To Folder"
+    ID_FILE_DELETE          "Delete\nDelete"
+    ID_FILE_PREVIEWPANE     "Preview Pane\nPreview Pane"
+    ID_FILE_FIND            "Find\nFind"
+    ID_FILE_ORGANIZE        "Organize\nOrganize"
+    ID_FILE_ADDRESS         "Address Book\nAddress Book"
+    ID_FILE_SENDRECEIVE     "Send/Receive\nSend/Receive"
+    ID_FILE_PLACEHOLDER     "Find a Contact\nFind a Contact"
+    ID_VIEW_XPMODE          "Enable or disable Office-XP Look\nToggle XP Look"
+    ID_ACTIONS_REPLY        "Reply\nReply"
+    ID_ACTIONS_REPLYTOALL   "Reply To All\nReply To All"
+    ID_ACTIONS_FORWARD      "Forward\nForward"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEW_MAILMESSAGE      "Mail Message\nMail Message"
+    ID_NEW_FAXMESSAGE       "Fax Message\nFax Message"
+    ID_NEW_FOLDER           "Folder\nFolder"
+    ID_NEW_POSTINTHISFOLDER "Post in This Folder\nPost in This Folder"
+    ID_NEW_OUTLOOKBARSHORTCUT "Outlook Bar Shortcut\nOutlook Bar Shortcut"
+    ID_NEW_APPOINTMENT      "Appointment\nAppointment"
+    ID_NEW_MEETINGREQUEST   "Meeting Request\nMeeting Request"
+    ID_NEW_CONTACT          "Contact\nContact"
+    ID_NEW_DISTRIBUTIONLIST "Distribution List\nDistribution List"
+    ID_NEW_TASK             "Task\nTask"
+    ID_NEW_TASKREQUEST      "Task Request\nTask Request"
+    ID_NEW_JOURNALENTRY     "Journal Entry\nJournal Entry"
+    ID_NEW_NOTE             "Note\nNote"
+    ID_NEW_OFFICEDOCUMENT   "Office Document\nOffice Document"
+    ID_NEW_CHOOSEFORM       "Choose Form\nChoose Form"
+    ID_NEW_PERSONALFOLDERSFILEPST 
+                            "Personal Folders File\nPersonal Folders File"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_CLR_HILITE           "Select Highlight Color\nHighlight Color"
+    ID_CLR_TEXT             "Select Text Color\nText Color"
+    ID_GOTO_URL             "Goto"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\GUI_Outlook.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

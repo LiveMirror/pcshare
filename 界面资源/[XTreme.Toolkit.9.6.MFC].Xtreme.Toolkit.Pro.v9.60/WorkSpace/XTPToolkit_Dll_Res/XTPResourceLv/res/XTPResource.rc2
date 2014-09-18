@@ -1,0 +1,34 @@
+//
+// XTPResource.rc2 - resources Microsoft Visual C++ does not edit directly
+//
+
+#ifdef APSTUDIO_INVOKED
+	#error this file is not editable by Microsoft Visual C++
+#endif //APSTUDIO_INVOKED
+
+/////////////////////////////////////////////////////////////////////////////
+// Add manually edited resources here...
+
+#include <..\XTPResourcePackage.h>
+
+#ifdef _XTP_INCLUDE_CONTROLS
+	#include <XTResource.h>
+	#include <XTResource_lv.rc>
+#endif
+
+#ifdef _XTP_INCLUDE_COMMANDBARS
+	#include <XTPCommandBarsResource.h>
+	#include <XTPCommandBarsResource_lv.rc>
+#endif
+
+#ifdef _XTP_INCLUDE_DOCKINGPANE
+	#include <XTPDockingPaneResource.h>
+	#include <XTPDockingPaneResource_lv.rc>
+#endif
+
+#ifdef _XTP_INCLUDE_PROPERTYGRID
+	#include <XTPPropertyGridResource.h>
+	#include <XTPPropertyGridResource_lv.rc>
+#endif
+
+/////////////////////////////////////////////////////////////////////////////

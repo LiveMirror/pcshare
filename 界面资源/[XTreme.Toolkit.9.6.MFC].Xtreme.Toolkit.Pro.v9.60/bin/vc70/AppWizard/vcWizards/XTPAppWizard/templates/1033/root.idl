@@ -1,0 +1,33 @@
+// [!output PROJECT_NAME].idl : type library source for [!output PROJECT_NAME].exe
+
+// This file will be processed by the MIDL compiler to produce the
+// type library ([!output SAFE_PROJECT_NAME].tlb).
+
+[ uuid([!output LIBID_REGISTRY_FORMAT]), version(1.0) ]
+library [!output LIB_NAME]
+{
+	importlib("stdole32.tlb");
+	importlib("stdole2.tlb");
+
+	//  Primary dispatch interface for [!output DOC_CLASS]
+	
+	[ uuid([!output DISPIID_REGISTRY_FORMAT]) ]
+	dispinterface I[!output SAFE_PROJECT_NAME]
+	{
+		properties:
+			
+		methods:
+	};
+
+	//  Class information for [!output DOC_CLASS]
+	
+	[ uuid([!output APP_CLSID_REGISTRY_FORMAT]) ]
+[!if APP_TYPE_DLG]
+	coclass [!output SAFE_PROJECT_NAME]
+[!else]
+	coclass [!output DOC_CLASS]
+[!endif]
+	{
+		[default] dispinterface I[!output SAFE_PROJECT_NAME];
+	};
+};

@@ -1,0 +1,446 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "XTResource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ARABIC, SUBLANG_ARABIC_SAUDI_ARABIA
+#pragma code_page(1256)
+#endif //_WIN32
+
+#ifndef _XTP_NO_BINARY_RESOURCES
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+XT_IDC_DRAGMOVE         CURSOR     DISCARDABLE        "Controls/res/dragmove.cur"
+XT_IDC_HAND             CURSOR     DISCARDABLE        "Controls/res/hand.cur"
+XT_IDC_DRAGNONE         CURSOR     DISCARDABLE        "Controls/res/dragnone.cur"
+XT_IDC_HANDNONE         CURSOR     DISCARDABLE        "Controls/res/handnone.cur"
+XT_IDC_DRAGCOPY         CURSOR     DISCARDABLE        "Controls/res/dragcopy.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+XT_IDB_BTN_OUT          BITMAP     DISCARDABLE        "Controls/res/btn_out.bmp"
+XT_IDB_LIGHTBULB        BITMAP     FIXED IMPURE       "Controls/res/lightbulb.bmp"
+XT_IDB_LISTEDIT         BITMAP     DISCARDABLE        "Controls/res/btn_listedit.bmp"
+XT_IDB_FONTTYPE         BITMAP     DISCARDABLE        "Controls/res/font.bmp"
+XT_IDB_SCROLL_ARW       BITMAP     DISCARDABLE        "Controls/res/scroll.bmp"
+XT_IDB_CHECKLISTBOX     BITMAP     FIXED IMPURE       "Controls/res/checklist.bmp"
+XT_IDB_CHECKLISTBOX_3D  BITMAP     FIXED IMPURE       "Controls/res/checklist_3d.bmp"
+XTP_IDB_TASKPANEL_GRIPPER BITMAP     DISCARDABLE        "Controls/res/TaskPanelGripper.bmp"
+XTP_IDB_TASKPANEL_GRIPPER_SPECIAL BITMAP     DISCARDABLE        "Controls/res/TaskPanelGripperSpecial.bmp"
+XT_IDR_TBAR_HDR         BITMAP     DISCARDABLE        "Controls/res/tbar_hdr.bmp"
+XT_IDR_TBAR_OUT         BITMAP     MOVEABLE PURE      "Controls/res/tbar_out.bmp"
+XT_IDR_TBAR_HEXEDIT     BITMAP     DISCARDABLE        "Controls/res/tbar_hex.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+XT_IDI_XTREME           ICON       DISCARDABLE        "res\\xtreme.ico"
+XTP_IDI_SHORTCUTS_EXPAND_ALPHA ICON       DISCARDABLE        "Controls/res/exp_alpha.ico"
+XTP_IDI_SHORTCUTS_EXPAND_NORMAL ICON       DISCARDABLE        "Controls/res/exp_normal.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+XT_IDR_TBAR_HDR TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      XT_IDC_SORTASC
+    BUTTON      XT_IDC_SORTDSC
+    SEPARATOR
+    BUTTON      XT_IDC_ALIGNLEFT
+    BUTTON      XT_IDC_ALIGNCENTER
+    BUTTON      XT_IDC_ALIGNRIGHT
+END
+
+XT_IDR_TBAR_OUT TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      XT_IDC_LARGEICON
+    BUTTON      XT_IDC_SMALLICON
+END
+
+XT_IDR_TBAR_HEXEDIT TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_EDIT_UNDO
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_EDIT_CLEAR
+END
+
+#endif
+
+#ifndef _XTP_NO_COMMONCONTROLS_RESOURCES
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+XT_IDD_TIPOFTHEDAY DIALOGEX 0, 0, 279, 157
+EXSTYLE WS_EX_RTLREADING | WS_EX_RIGHT
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION " ·„ÌÕ«  «·ÌÊ„"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "≈€·«ﬁ",IDOK,221,136,50,14, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    CONTROL         "≈ŸÂ«— «· ·„ÌÕ«  ⁄‰œ »œ¡ «· ‘€Ì·",XT_IDC_CHK_DAYTIP_SHOW,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,140,110,10, WS_EX_RIGHT | WS_EX_RTLREADING
+    PUSHBUTTON      "«· ·„ÌÕ «· «·Ì",XT_IDC_BTN_DAYTIP_NEXT,162,136,50,14, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    CONTROL         "",XT_IDC_BTN_DAYTIP_BORDER,"Static",SS_GRAYFRAME | NOT 
+                    WS_VISIBLE,8,7,263,123, WS_EX_RIGHT | WS_EX_RTLREADING
+END
+
+XT_IDD_COLORCUSTOM DIALOGEX DISCARDABLE  0, 0, 147, 161
+STYLE WS_CHILD | WS_DISABLED | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | 
+    WS_CAPTION
+CAPTION "„Œ’’"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "«·√·Ê«‰:",XT_IDC_TXT_COLORS,79,4,43,10, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    CONTROL         "",XT_IDC_CLR_WND,"Static",SS_BLACKFRAME | WS_TABSTOP,3,
+                    15,119,86, WS_EX_RIGHT | WS_EX_RTLREADING
+    CONTROL         "",XT_IDC_CLR_LUM,"Static",SS_BLACKFRAME | WS_TABSTOP,
+                    126,15,20,86, WS_EX_RIGHT | WS_EX_RTLREADING
+    LTEXT           " œ—Ã «··Ê‰:",XT_IDC_TXT_HUE,7,108,34,8, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    EDITTEXT        XT_IDC_EDIT_HUE,45,106,33,13,ES_AUTOHSCROLL | ES_NUMBER, WS_EX_RIGHT | WS_EX_RTLREADING
+    CONTROL         "Spin1",XT_IDC_SPIN_HUE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,69,105,
+                    10,14
+    LTEXT           "«·≈‘»«⁄:",XT_IDC_TXT_SAT,7,125,25,8, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    EDITTEXT        XT_IDC_EDIT_SAT,45,122,33,13,ES_AUTOHSCROLL | ES_NUMBER, WS_EX_RIGHT | WS_EX_RTLREADING
+    CONTROL         "Spin2",XT_IDC_SPIN_SAT,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,69,122,
+                    10,14
+    LTEXT           "«·≈÷«¡…:",XT_IDC_TXT_LUM,7,140,25,8, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    EDITTEXT        XT_IDC_EDIT_LUM,45,138,33,13,ES_AUTOHSCROLL | ES_NUMBER, WS_EX_RIGHT | WS_EX_RTLREADING
+    CONTROL         "Spin3",XT_IDC_SPIN_LUM,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,69,137,
+                    10,14
+    LTEXT           "√Õ„—:",XT_IDC_TXT_RED,83,108,17,8, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    EDITTEXT        XT_IDC_EDIT_RED,105,106,33,13,ES_AUTOHSCROLL | ES_NUMBER, WS_EX_RIGHT | WS_EX_RTLREADING
+    CONTROL         "Spin1",XT_IDC_SPIN_RED,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,129,105,
+                    11,14
+    LTEXT           "√Œ÷—:",XT_IDC_TXT_GREEN,83,125,20,8, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    EDITTEXT        XT_IDC_EDIT_GREEN,105,122,33,13,ES_AUTOHSCROLL | 
+                    ES_NUMBER, WS_EX_RIGHT | WS_EX_RTLREADING
+    CONTROL         "Spin2",XT_IDC_SPIN_GREEN,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,129,122,
+                    11,14
+    LTEXT           "√“—ﬁ:",XT_IDC_TXT_BLUE,83,140,18,8, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    EDITTEXT        XT_IDC_EDIT_BLUE,105,138,33,13,ES_AUTOHSCROLL | ES_NUMBER, WS_EX_RIGHT | WS_EX_RTLREADING
+    CONTROL         "Spin3",XT_IDC_SPIN_BLUE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,129,137,
+                    11,14
+END
+
+XT_IDD_COLORSTANDARD DIALOGEX DISCARDABLE  0, 0, 147, 161
+EXSTYLE WS_EX_RTLREADING | WS_EX_RIGHT
+STYLE WS_CHILD | WS_DISABLED | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | 
+    WS_CAPTION
+CAPTION "ﬁÌ«”Ì"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "«·√·Ê«‰:",XT_IDC_TXT_COLORS,104,4,43,10, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    CONTROL         "",XT_IDC_CLR_HEX,"Static",SS_BLACKFRAME | WS_TABSTOP,0,
+                    15,147,145, WS_EX_RIGHT | WS_EX_RTLREADING
+END
+
+XT_IDD_WINDOWLIST DIALOGEX DISCARDABLE  0, 0, 301, 164
+EXSTYLE WS_EX_RTLREADING | WS_EX_RIGHT
+STYLE WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "«·≈ÿ«—« "
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           " ÕœÌœ ≈ÿ«—:",IDC_STATIC,147,7,147,8, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    LISTBOX         XT_IDC_LBOX_WINDOWS,78,17,216,140,LBS_SORT | 
+                    LBS_OWNERDRAWFIXED | LBS_HASSTRINGS | 
+                    LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | WS_VSCROLL | 
+                    WS_HSCROLL | WS_TABSTOP
+    PUSHBUTTON      " ‰‘Ìÿ",XT_IDC_BTN_ACTIVATE,6,7,62,14, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    PUSHBUTTON      "„Ê«›ﬁ",IDOK,6,24,62,14, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    PUSHBUTTON      "Õ›Ÿ",XT_IDC_BTN_SAVE,6,41,62,14, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    PUSHBUTTON      "≈€·«ﬁ ≈ÿ«—",XT_IDC_BTN_CLOSEWINDOWS,6,58,62,14, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    PUSHBUTTON      "  «·Ì",XT_IDC_BTN_CASCADE,6,75,62,14, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    PUSHBUTTON      " Ã«‰» √›ﬁÌ",XT_IDC_BTN_TILEHORZ,6,92,62,14, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    PUSHBUTTON      " Ã«‰» ⁄„ÊœÌ",XT_IDC_BTN_TILEVERT,6,109,62,14, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    PUSHBUTTON      " ’€Ì—",XT_IDC_BTN_MINIMIZE,6,126,62,14, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+XT_IDM_POPUP MENU DISCARDABLE 
+BEGIN
+    POPUP "RClickOutlookBar"
+    BEGIN
+        MENUITEM "—„Ê“ ’€Ì—…",                XT_IDC_SMALLICON
+        MENUITEM "—„Ê“ ﬂ»Ì—…",                XT_IDC_LARGEICON
+    END
+    POPUP "RClickHexEdit"
+    BEGIN
+        MENUITEM " —«Ã⁄",                       ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "ﬁ’",                        ID_EDIT_CUT
+        MENUITEM "‰”Œ",                       ID_EDIT_COPY
+        MENUITEM "·’ﬁ",                      ID_EDIT_PASTE
+        MENUITEM "Õ–›",                     ID_EDIT_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM " ÕœÌœ «·ﬂ·",                 ID_EDIT_SELECT_ALL
+    END
+    POPUP "RClickHeader"
+    BEGIN
+        MENUITEM "›—“  ’«⁄œÌ",              XT_IDC_SORTASC
+        MENUITEM "›—“  ‰«“·Ì",             XT_IDC_SORTDSC
+        MENUITEM SEPARATOR
+        POPUP "„Õ«–«…"
+        BEGIN
+            MENUITEM "„Õ«–«… ≈·Ï «·Ì”«—",                  XT_IDC_ALIGNLEFT
+            MENUITEM "„Õ«–«… ≈·Ï «·Ê”ÿ",                XT_IDC_ALIGNCENTER
+            MENUITEM "„Õ«–«… ≈·Ï «·Ì„Ì‰",                 XT_IDC_ALIGNRIGHT
+        END
+    END
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "XTResource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDC_BTN_NEW          "ÃœÌœ"
+    XT_IDC_BTN_DELETE       "Õ–›"
+    XT_IDC_BTN_UP           " Õ—Ìﬂ ··√⁄·Ï"
+    XT_IDC_BTN_DOWN         " Õ—Ìﬂ ··√”›·"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDS_REG_SETTINGS     "Settings"
+    XT_IDS_REG_WNDPOS       "Window Position"
+    XT_IDS_REG_COLINFO      "Column Info"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDS_NAME             "«·«”„"
+    XT_IDS_SIZE             "«·ÕÃ„"
+    XT_IDS_TYPE             "‰Ê⁄"
+    XT_IDS_MODIFIED         " «—ÌŒ «· ⁄œÌ·"
+    XT_IDS_COLOR_AUTO       " ·ﬁ«∆Ì"
+    XT_IDS_COLOR_CUST       " Œ’Ì’..."
+    XT_IDS_SELDIR           " ÕœÌœ œ·Ì·:"
+    XT_IDS_DOT              "..."
+    XT_IDS_DEFEXT           "*.*"
+    XT_IDS_DEFFILT          "Ã„Ì⁄ «·„·›«  (*.*)|*.*||"
+    XT_IDS_DEFTITLE         "«”„ «·œ·Ì·:"
+    XT_IDS_CLICKKEEPOPEN    "«‰ﬁ— ›Êﬁ «·œ»Ê” ·≈»ﬁ«∆Â „› ÊÕ«"
+    XT_IDS_SE_0             "‰Ÿ«„ «· ‘€Ì· Œ«·Ì „‰ «·œ«ﬂ—… «Ê «·„Ê«—œ."
+    XT_IDS_SE_ERR_FNF       "«·„·› «·„⁄Ì‰ €Ì— „ÊÃÊœ ."
+    XT_IDS_SE_ERR_PNF       "«·”»Ì· «·„⁄Ì‰ €Ì— „ÊÃÊœ."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDS_SE_ERR_ACCESSDENIED 
+                            "ÃÂ«“ «· ‘€Ì· „‰⁄ «·œŒÊ· ≈·Ï «·„·› «·„⁄Ì‰."
+    XT_IDS_SE_ERR_OOM       "·«  ÊÃœ œ«ﬂ—… ﬂ«›Ì… · ‰ÂÌ «·⁄„·Ì…."
+    XT_IDS_SE_ERR_BAD_FORMAT 
+                            "
+«·„·›exe. €Ì— „ÊÃÊœ ( ·Ì” -  Win32  .exe  «Ê Œÿ«  ›Ì ’Ê—…  exe.
+"
+    XT_IDS_SE_ERR_SHARE     "„Œ«·›… ··„‘«—ﬂ… ﬁœ Õ’· "
+    XT_IDS_SE_ERR_ASSOCINCOMPLETE 
+                            "≈”„ «·„·› «·„—«›ﬁ €Ì— „ﬂ „· «Ê €Ì— „ÊÃÊœ ."
+    XT_IDS_SE_ERR_DDETIMEOUT 
+                            " »«œ· «·»Ì«‰«  «·Ã«—Ì… ·« Ì„ﬂ‰ ≈‰Â«∆Â ·≈‰ «·ÿ·» «‰ ÂÏ Êﬁ Â."
+    XT_IDS_SE_ERR_DDEFAIL   " »«œ· «·»Ì«‰«  «·Ã«—Ì… ›‘·."
+    XT_IDS_SE_ERR_DDEBUSY   " »«œ· «·»Ì«‰«  «·Ã«—Ì… ·« Ì„ﬂ‰ ≈ﬂ„«·Â ·≈‰ »Ì«‰ «ÛŒ—  ﬂ«‰ „ﬁœ„« ›Ì ‰›” «·Êﬁ  ."
+    XT_IDS_SE_ERR_NOASSOC   "·« ÌÊÃœ ÿ·» „—«›ﬁ „⁄ ≈”„ «·„·› «·„Ê’· «·„⁄ÿÏ."
+    XT_IDS_SE_ERR_DLLNOTFOUND 
+                            "„ﬂ »… «· Ê«“‰ «·œÌ‰«„ÌﬂÌ «·„⁄Ì‰ €Ì— „ÊÃÊœ."
+    XT_IDS_SE_ERR_UNKOWN    "Œÿ« €Ì— „⁄—Ê› ›Ì «·‰„—…  d% Õ’· ."
+    XT_IDS_CLR_BLACK        "√”Êœ"
+    XT_IDS_CLR_BROWN        "»‰Ì"
+    XT_IDS_CLR_OLIVE_GREEN  "√Œ÷— “Ì Ì"
+    XT_IDS_CLR_DARK_GREEN   "√Œ÷— œ«ﬂ‰"
+    XT_IDS_CLR_DARK_TEAL    "√“—ﬁ „Œ÷— œ«ﬂ‰"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDC_SORTASC          "«·›—“ «· ’«⁄œÌ\n«·›—“ «· ’«⁄œÌ"
+    XT_IDC_SORTDSC          "›—“  ‰«“·Ì\n›—“  ‰«“·Ì"
+    XT_IDC_ALIGNLEFT        "„Õ«–«… «·›ﬁ—… ≈·Ï «·Â«„‘ «·√Ì”—\n„Õ«–«… ≈·Ï «·Ì”«—"
+    XT_IDC_ALIGNCENTER      " Ê”Ìÿ «·›ﬁ—… »Ì‰ «·Â«„‘Ì‰\n Ê”Ìÿ"
+    XT_IDC_ALIGNRIGHT       "„Õ«–«… «·›ﬁ—… ≈·Ï «·Â«„‘ «·√Ì„‰\n„Õ«–«… ≈·Ï «·Ì„Ì‰"
+    XT_IDC_LARGEICON        "≈ŸÂ«— «·—„Ê“ ﬂ»Ì—…\n—„Ê“ ﬂ»Ì—…"
+    XT_IDC_SMALLICON        "≈ŸÂ«— «·—„Ê“ ’€Ì—…\n—„Ê“ ’€Ì—…"
+    XT_IDC_REMOVEITEM       "≈“«·… „‰ ‘—Ìÿ Outlook"
+    XT_IDC_RENAMEITEM       "≈⁄«œ…  ”„Ì… «Œ ’«—"
+    XT_IDC_REMOVEGROUP      "≈“«·… «· Ã„Ì⁄"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDC_RENAMEGROUP      "≈⁄«œ…  ”„Ì… «·„Ã„Ê⁄…"
+    XT_IDS_HEX              "”œ«”Ì ⁄‘—"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDS_STD_COLORS       "√·Ê«‰ ﬁÌ«”Ì…"
+    XT_IDS_TIPTEXT          "‰’ «· ·„ÌÕ"
+    XT_IDS_DIDYOUKNOW       "Â·  ⁄·„ √‰Â..."
+    XT_IDS_FILE_ABSENT      "˛˛«·„·› «·„Õœœ €Ì— „ÊÃÊœ."
+    XT_IDS_FILE_CORRUPT     "˛˛ÕœÀ Œÿ√ √À‰«¡  ‘€Ì· «·„·›."
+    XT_IDS_COLOR_CAPTION    "√·Ê«‰"
+    XT_IDS_NEW              "ÃœÌœ"
+    XT_IDS_CURRENT          "«·Õ«·Ì"
+    XT_IDS_DIRECTORIES      "«·œ·«∆·:"
+    XT_IDS_FILES            "«·„·›« :"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDS_CLR_DARK_BLUE    "√“—ﬁ œ«ﬂ‰"
+    XT_IDS_CLR_INDIGO       "‰Ì·Ì"
+    XT_IDS_CLR_GRAY80       "—„«œÌ-80%"
+    XT_IDS_CLR_DARK_RED     "√Õ„— œ«ﬂ‰"
+    XT_IDS_CLR_ORANGE       "»— ﬁ«·Ì"
+    XT_IDS_CLR_DARK_YELLOW  "√’›— œ«ﬂ‰"
+    XT_IDS_CLR_GREEN        "√Œ÷—"
+    XT_IDS_CLR_TEAL         "√“—ﬁ „Œ÷—"
+    XT_IDS_CLR_BLUE         "√“—ﬁ"
+    XT_IDS_CLR_BLUEGRAY     "√“—ﬁ-—„«œÌ"
+    XT_IDS_CLR_GRAY50       "—„«œÌ-50%"
+    XT_IDS_CLR_RED          "√Õ„—"
+    XT_IDS_CLR_LIGHTORANGE  "»— ﬁ«·Ì ›« Õ"
+    XT_IDS_CLR_LIME         "·Ì„Ê‰Ì"
+    XT_IDS_CLR_SEA_GREEN    "√Œ÷— »Õ—Ì"
+    XT_IDS_CLR_AQUA         "√“—ﬁ „«∆Ì"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDS_CLR_LIGHT_BLUE   "√“—ﬁ ›« Õ"
+    XT_IDS_CLR_VIOLET       "»‰›”ÃÌ"
+    XT_IDS_CLR_GRAY40       "—„«œÌ-40%"
+    XT_IDS_CLR_PINK         "“Â—Ì"
+    XT_IDS_CLR_GOLD         "–Â»Ì"
+    XT_IDS_CLR_YELLOW       "√’›—"
+    XT_IDS_CLR_BRIGHT_GREEN "√Œ÷— ”«ÿ⁄"
+    XT_IDS_CLR_TURQUOISE    " —ﬂÊ«“Ì"
+    XT_IDS_CLR_SKY_BLUE     "√“—ﬁ ”„«ÊÌ"
+    XT_IDS_CLR_PLUM         "√—ÃÊ«‰Ì „“—ﬁ œ«ﬂ‰"
+    XT_IDS_CLR_GRAY25       "—„«œÌ-25%"
+    XT_IDS_CLR_ROSE         "Ê—œÌ"
+    XT_IDS_CLR_TAN          "√”„— „’›—"
+    XT_IDS_CLR_LIGHT_YELLOW "√’›— ›« Õ"
+    XT_IDS_CLR_LIGHT_GREEN  "√Œ÷— ›« Õ"
+    XT_IDS_CLR_LIGHT_TURQUOISE " —ﬂÊ«“Ì ›« Õ"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDS_CLR_PALE_BLUE    "√“—ﬁ ‘«Õ»"
+    XT_IDS_CLR_LAVENDER     "√—ÃÊ«‰Ì ‘«Õ»"
+    XT_IDS_CLR_WHITE        "√»Ì÷"
+    XT_IDS_CLR_GRAY         "—„«œÌ"
+    XT_IDS_CLR_MAROON       "√Õ„— œ«ﬂ‰"
+    XT_IDS_CLR_OLIVE        "“Ì Ì"
+    XT_IDS_CLR_NAVY         "√“—ﬁ œ«ﬂ‰"
+    XT_IDS_CLR_PURPLE       "√—ÃÊ«‰Ì"
+    XT_IDS_CLR_SILVER       "›÷…"
+    XT_IDS_CLR_FUCHSIA      "“Â—Ì"
+    XT_IDS_CLR_NOFILL       "»·«  ⁄»∆…"
+    XT_IDS_CLR_NOFILL_TIP   "»·« ·Ê‰"
+    XT_IDS_AUTOMATIC        " ·ﬁ«∆Ì"
+    XT_IDS_AUTOMATIC_TIP    "·Ê‰  ·ﬁ«∆Ì"
+    XT_IDS_MORE_COLORS      "√·Ê«‰ ≈÷«›Ì…...˛"
+    XT_IDS_MORE_COLORS_TIP  "√·Ê«‰ ≈÷«›Ì…"
+END
+
+#endif
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_ID_SHORTCUT_SHOW_MORE "≈ŸÂ«— √“—«— ≈÷«›Ì…"
+    XTP_ID_SHORTCUT_SHOW_FEWER "≈ŸÂ«— √“—«— √ﬁ·"
+    XTP_IDS_SHORTCUT_CONFIGURE "√“—«— «· ﬂÊÌ‰"
+END
+
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

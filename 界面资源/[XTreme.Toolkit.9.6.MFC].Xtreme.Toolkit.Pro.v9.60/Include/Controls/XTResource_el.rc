@@ -1,0 +1,441 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "XTResource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_GREEK, SUBLANG_DEFAULT
+#pragma code_page(1253)
+#endif //_WIN32
+
+#ifndef _XTP_NO_BINARY_RESOURCES
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+XT_IDC_DRAGMOVE         CURSOR     DISCARDABLE        "Controls/res/dragmove.cur"
+XT_IDC_HAND             CURSOR     DISCARDABLE        "Controls/res/hand.cur"
+XT_IDC_DRAGNONE         CURSOR     DISCARDABLE        "Controls/res/dragnone.cur"
+XT_IDC_HANDNONE         CURSOR     DISCARDABLE        "Controls/res/handnone.cur"
+XT_IDC_DRAGCOPY         CURSOR     DISCARDABLE        "Controls/res/dragcopy.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+XT_IDB_BTN_OUT          BITMAP     DISCARDABLE        "Controls/res/btn_out.bmp"
+XT_IDB_LIGHTBULB        BITMAP     FIXED IMPURE       "Controls/res/lightbulb.bmp"
+XT_IDB_LISTEDIT         BITMAP     DISCARDABLE        "Controls/res/btn_listedit.bmp"
+XT_IDB_FONTTYPE         BITMAP     DISCARDABLE        "Controls/res/font.bmp"
+XT_IDB_SCROLL_ARW       BITMAP     DISCARDABLE        "Controls/res/scroll.bmp"
+XT_IDB_CHECKLISTBOX     BITMAP     FIXED IMPURE       "Controls/res/checklist.bmp"
+XT_IDB_CHECKLISTBOX_3D  BITMAP     FIXED IMPURE       "Controls/res/checklist_3d.bmp"
+XTP_IDB_TASKPANEL_GRIPPER BITMAP     DISCARDABLE        "Controls/res/TaskPanelGripper.bmp"
+XTP_IDB_TASKPANEL_GRIPPER_SPECIAL BITMAP     DISCARDABLE        "Controls/res/TaskPanelGripperSpecial.bmp"
+XT_IDR_TBAR_HDR         BITMAP     DISCARDABLE        "Controls/res/tbar_hdr.bmp"
+XT_IDR_TBAR_OUT         BITMAP     MOVEABLE PURE      "Controls/res/tbar_out.bmp"
+XT_IDR_TBAR_HEXEDIT     BITMAP     DISCARDABLE        "Controls/res/tbar_hex.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+XT_IDI_XTREME           ICON       DISCARDABLE        "res\\xtreme.ico"
+XTP_IDI_SHORTCUTS_EXPAND_ALPHA ICON       DISCARDABLE        "Controls/res/exp_alpha.ico"
+XTP_IDI_SHORTCUTS_EXPAND_NORMAL ICON       DISCARDABLE        "Controls/res/exp_normal.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+XT_IDR_TBAR_HDR TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      XT_IDC_SORTASC
+    BUTTON      XT_IDC_SORTDSC
+    SEPARATOR
+    BUTTON      XT_IDC_ALIGNLEFT
+    BUTTON      XT_IDC_ALIGNCENTER
+    BUTTON      XT_IDC_ALIGNRIGHT
+END
+
+XT_IDR_TBAR_OUT TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      XT_IDC_LARGEICON
+    BUTTON      XT_IDC_SMALLICON
+END
+
+XT_IDR_TBAR_HEXEDIT TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_EDIT_UNDO
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_EDIT_CLEAR
+END
+
+#endif
+
+#ifndef _XTP_NO_COMMONCONTROLS_RESOURCES
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+XT_IDD_TIPOFTHEDAY DIALOGEX 0, 0, 279, 157
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Συμβουλή της ημέρας"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Κλείσιμο",IDOK,221,136,50,14
+    CONTROL         "Εμφάνιση συμβουλών στην εκκίνηση",XT_IDC_CHK_DAYTIP_SHOW,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,140,78,10
+    PUSHBUTTON      "Επόμενη συμβουλή",XT_IDC_BTN_DAYTIP_NEXT,162,136,50,14
+    CONTROL         "",XT_IDC_BTN_DAYTIP_BORDER,"Static",SS_GRAYFRAME | NOT 
+                    WS_VISIBLE,8,7,263,123
+END
+
+XT_IDD_COLORCUSTOM DIALOG DISCARDABLE  0, 0, 147, 161
+STYLE WS_CHILD | WS_DISABLED | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | 
+    WS_CAPTION
+CAPTION "Προσαρμοσμένη"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Χρώματα:",XT_IDC_TXT_COLORS,2,4,43,10
+    CONTROL         "",XT_IDC_CLR_WND,"Static",SS_BLACKFRAME | WS_TABSTOP,3,
+                    15,119,86
+    CONTROL         "",XT_IDC_CLR_LUM,"Static",SS_BLACKFRAME | WS_TABSTOP,
+                    126,15,20,86
+    LTEXT           "Απόχρωση:",XT_IDC_TXT_HUE,6,108,18,8
+    EDITTEXT        XT_IDC_EDIT_HUE,34,106,33,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",XT_IDC_SPIN_HUE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,58,105,
+                    10,14
+    LTEXT           "Κορεσμός:",XT_IDC_TXT_SAT,6,125,18,8
+    EDITTEXT        XT_IDC_EDIT_SAT,34,122,33,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin2",XT_IDC_SPIN_SAT,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,58,122,
+                    10,14
+    LTEXT           "Φωτεινότητα:",XT_IDC_TXT_LUM,6,140,25,8
+    EDITTEXT        XT_IDC_EDIT_LUM,34,138,33,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin3",XT_IDC_SPIN_LUM,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,58,137,
+                    10,14
+    LTEXT           "Κόκκινο:",XT_IDC_TXT_RED,74,108,23,8
+    EDITTEXT        XT_IDC_EDIT_RED,106,106,33,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",XT_IDC_SPIN_RED,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,130,105,
+                    11,14
+    LTEXT           "Πράσινο (G):",XT_IDC_TXT_GREEN,74,125,28,8
+    EDITTEXT        XT_IDC_EDIT_GREEN,106,122,33,13,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin2",XT_IDC_SPIN_GREEN,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,130,122,
+                    11,14
+    LTEXT           "Μπλε:",XT_IDC_TXT_BLUE,74,140,23,8
+    EDITTEXT        XT_IDC_EDIT_BLUE,106,138,33,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin3",XT_IDC_SPIN_BLUE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,130,137,
+                    11,14
+END
+
+XT_IDD_COLORSTANDARD DIALOG DISCARDABLE  0, 0, 147, 161
+STYLE WS_CHILD | WS_DISABLED | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | 
+    WS_CAPTION
+CAPTION "Βασική"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Χρώματα:",XT_IDC_TXT_COLORS,2,4,43,10
+    CONTROL         "",XT_IDC_CLR_HEX,"Static",SS_BLACKFRAME | WS_TABSTOP,0,
+                    15,147,145
+END
+
+XT_IDD_WINDOWLIST DIALOG DISCARDABLE  0, 0, 301, 164
+STYLE WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Τακτοποίηση παραθύρων"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Επιλογή παραθύρου:",IDC_STATIC,7,7,147,8
+    LISTBOX         XT_IDC_LBOX_WINDOWS,7,17,216,140,LBS_SORT | 
+                    LBS_OWNERDRAWFIXED | LBS_HASSTRINGS | 
+                    LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | WS_VSCROLL | 
+                    WS_HSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Ενεργοποίηση",XT_IDC_BTN_ACTIVATE,233,7,62,14
+    PUSHBUTTON      "ΟΚ",IDOK,233,24,62,14
+    PUSHBUTTON      "Αποθήκευση",XT_IDC_BTN_SAVE,233,41,62,14
+    PUSHBUTTON      "Κλείσιμο παραθύρου",XT_IDC_BTN_CLOSEWINDOWS,233,58,62,14
+    PUSHBUTTON      "Σε επικάλυψη",XT_IDC_BTN_CASCADE,233,75,62,14
+    PUSHBUTTON      "Οριζόντια παράθεση",XT_IDC_BTN_TILEHORZ,233,92,62,14
+    PUSHBUTTON      "Κατακόρυφη παράθεση",XT_IDC_BTN_TILEVERT,233,109,62,14
+    PUSHBUTTON      "Ελαχιστοποίηση",XT_IDC_BTN_MINIMIZE,233,126,62,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+XT_IDM_POPUP MENU DISCARDABLE 
+BEGIN
+    POPUP "RClickOutlookBar"
+    BEGIN
+        MENUITEM "Μικρά εικονίδια",                XT_IDC_SMALLICON
+        MENUITEM "Μεγάλα εικονίδια",                XT_IDC_LARGEICON
+    END
+    POPUP "RClickHexEdit"
+    BEGIN
+        MENUITEM "Αναίρεση",                       ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Αποκοπή",                        ID_EDIT_CUT
+        MENUITEM "Αντιγραφή",                       ID_EDIT_COPY
+        MENUITEM "Επικόλληση",                      ID_EDIT_PASTE
+        MENUITEM "Διαγραφή",                     ID_EDIT_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "Επιλογή όλων",                 ID_EDIT_SELECT_ALL
+    END
+    POPUP "RClickHeader"
+    BEGIN
+        MENUITEM "Αύξουσα ταξινόμηση",              XT_IDC_SORTASC
+        MENUITEM "Φθίνουσα ταξινόμηση",             XT_IDC_SORTDSC
+        MENUITEM SEPARATOR
+        POPUP "Στοίχιση"
+        BEGIN
+            MENUITEM "Στοίχιση αριστερά",                  XT_IDC_ALIGNLEFT
+            MENUITEM "Στοίχιση στο κέντρο",                XT_IDC_ALIGNCENTER
+            MENUITEM "Στοίχιση δεξιά",                 XT_IDC_ALIGNRIGHT
+        END
+    END
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "XTResource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDC_BTN_NEW          "Δημιουργία"
+    XT_IDC_BTN_DELETE       "Διαγραφή"
+    XT_IDC_BTN_UP           "Μετακίνηση επάνω"
+    XT_IDC_BTN_DOWN         "Μετακίνηση κάτω"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDS_REG_SETTINGS     "Settings"
+    XT_IDS_REG_WNDPOS       "Window Position"
+    XT_IDS_REG_COLINFO      "Column Info"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDS_NAME             "Όνομα"
+    XT_IDS_SIZE             "Μέγεθος"
+    XT_IDS_TYPE             "Τύπος"
+    XT_IDS_MODIFIED         "Τροποποιημένη"
+    XT_IDS_COLOR_AUTO       "Αυτόματο"
+    XT_IDS_COLOR_CUST       "Προσαρμογή..."
+    XT_IDS_SELDIR           "Επιλογή καταλόγου:"
+    XT_IDS_DOT              "..."
+    XT_IDS_DEFEXT           "*.*"
+    XT_IDS_DEFFILT          "Όλα τα αρχεία (*.*)|*.*||"
+    XT_IDS_DEFTITLE         "Όνομα καταλόγου:"
+    XT_IDS_CLICKKEEPOPEN    "Για μόνιμη προβολή, κάντε κλικ εδώ"
+    XT_IDS_SE_0             "Η μνήμη ή οι πόροι του λειτουργικού συστήματος δεν επαρκούν."
+    XT_IDS_SE_ERR_FNF       "Το καθορισμένο αρχείο δεν βρέθηκε."
+    XT_IDS_SE_ERR_PNF       "Η καθορισμένη διαδρομή δεν βρέθηκε."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDS_SE_ERR_ACCESSDENIED 
+                            "Το λειτουργικό σύστημα δεν επέτρεψε την πρόσβαση στο καθορισμένο αρχείο. "
+    XT_IDS_SE_ERR_OOM       "Η μνήμη δεν επαρκεί για την ολοκλήρωση της λειτουργίας."
+    XT_IDS_SE_ERR_BAD_FORMAT 
+                            "Το αρχείο .exe δεν είναι έγκυρο (αρχείο .exe που δεν ανήκει στα Win32® ή σφάλμα στο είδωλο του αρχείου .exe)."
+    XT_IDS_SE_ERR_SHARE     "Παρουσιάστηκε παραβίαση κοινής χρήσης."
+    XT_IDS_SE_ERR_ASSOCINCOMPLETE 
+                            "Η συσχέτιση του ονόματος αρχείου δεν είναι πλήρης ή έγκυρη."
+    XT_IDS_SE_ERR_DDETIMEOUT 
+                            "Η συναλλαγή DDE δεν ήταν δυνατό να ολοκληρωθεί, επειδή έληξε το χρονικό όριο της αίτησης."
+    XT_IDS_SE_ERR_DDEFAIL   "Η συναλλαγή DDE απέτυχε."
+    XT_IDS_SE_ERR_DDEBUSY   "Η συναλλαγή DDE δεν ήταν δυνατό να ολοκληρωθεί, επειδή  γινόταν επεξεργασία άλλων συναλλαγών DDE."
+    XT_IDS_SE_ERR_NOASSOC   "Δεν έχει συσχετιστεί εφαρμογή με τη δεδομένη επέκταση ονόματος αρχείου."
+    XT_IDS_SE_ERR_DLLNOTFOUND 
+                            "Η καθορισμένη  βιβλιοθήκη δυναμικής σύνδεσης δεν βρέθηκε."
+    XT_IDS_SE_ERR_UNKOWN    "Παρουσιάστηκε ένα άγνωστο σφάλμα: %d"
+    XT_IDS_CLR_BLACK        "Μαύρο"
+    XT_IDS_CLR_BROWN        "Καφέ"
+    XT_IDS_CLR_OLIVE_GREEN  "Λαδί"
+    XT_IDS_CLR_DARK_GREEN   "Σκούρο πράσινο"
+    XT_IDS_CLR_DARK_TEAL    "Μπλε ραφ"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDC_SORTASC          "Αύξουσα ταξινόμηση\nΑύξουσα ταξινόμηση"
+    XT_IDC_SORTDSC          "Φθίνουσα ταξινόμηση\nΦθίνουσα ταξινόμηση"
+    XT_IDC_ALIGNLEFT        "Στοιχίζει την παράγραφο στο αριστερό περιθώριο\nΣτοίχιση αριστερά"
+    XT_IDC_ALIGNCENTER      "Στοιχίζει την παράγραφο στο κέντρο μεταξύ των περιθωρίων\nΣτοίχιση στο κέντρο"
+    XT_IDC_ALIGNRIGHT       "Στοιχίζει την παράγραφο στο δεξιό περιθώριο\nΣτοίχιση δεξιά"
+    XT_IDC_LARGEICON        "Εμφάνιση μεγάλων εικονιδίων\nΜεγάλα εικονίδια"
+    XT_IDC_SMALLICON        "Εμφάνιση μικρών εικονιδίων\nΜικρά εικονίδια"
+    XT_IDC_REMOVEITEM       "Διαγραφή από τη Γραμμή του Outlook"
+    XT_IDC_RENAMEITEM       "Μετονομασία συντόμευσης"
+    XT_IDC_REMOVEGROUP      "Κατάργηση ομάδας"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDC_RENAMEGROUP      "Μετονομασία ομάδας"
+    XT_IDS_HEX              "Hex"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDS_STD_COLORS       "Βασικά χρώματα"
+    XT_IDS_TIPTEXT          "Κείμενο συμβουλής"
+    XT_IDS_DIDYOUKNOW       "Γνωρίζετε ότι..."
+    XT_IDS_FILE_ABSENT      "Το αρχείο που καθορίστηκε δεν υπάρχει."
+    XT_IDS_FILE_CORRUPT     "Παρουσιάστηκε σφάλμα κατά την ανάγνωση του αρχείου."
+    XT_IDS_COLOR_CAPTION    "Χρώματα"
+    XT_IDS_NEW              "Δημιουργία"
+    XT_IDS_CURRENT          "Τρέχoν"
+    XT_IDS_DIRECTORIES      "Κατάλογοι:"
+    XT_IDS_FILES            "Αρχεία:"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDS_CLR_DARK_BLUE    "Σκούρο μπλε"
+    XT_IDS_CLR_INDIGO       "Λουλακί"
+    XT_IDS_CLR_GRAY80       "Γκρι-80%"
+    XT_IDS_CLR_DARK_RED     "Σκούρο κόκκινο"
+    XT_IDS_CLR_ORANGE       "Πορτοκαλί"
+    XT_IDS_CLR_DARK_YELLOW  "Σκούρο κίτρινο"
+    XT_IDS_CLR_GREEN        "Πράσινο"
+    XT_IDS_CLR_TEAL         "Πετρόλ"
+    XT_IDS_CLR_BLUE         "Μπλε"
+    XT_IDS_CLR_BLUEGRAY     "Μπλε-γκρι"
+    XT_IDS_CLR_GRAY50       "Γκρι-50%"
+    XT_IDS_CLR_RED          "Κόκκινο"
+    XT_IDS_CLR_LIGHTORANGE  "Ανοιχτό πορτοκαλί"
+    XT_IDS_CLR_LIME         "Λαχανί"
+    XT_IDS_CLR_SEA_GREEN    "Πράσινο της θάλασσας"
+    XT_IDS_CLR_AQUA         "Θαλασσί"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDS_CLR_LIGHT_BLUE   "Ανοιχτό μπλε"
+    XT_IDS_CLR_VIOLET       "Βιολετί"
+    XT_IDS_CLR_GRAY40       "Γκρι-40%"
+    XT_IDS_CLR_PINK         "Ροζ"
+    XT_IDS_CLR_GOLD         "Χρυσός"
+    XT_IDS_CLR_YELLOW       "Κίτρινο"
+    XT_IDS_CLR_BRIGHT_GREEN "Φωτεινό πράσινο"
+    XT_IDS_CLR_TURQUOISE    "Τυρκουάζ"
+    XT_IDS_CLR_SKY_BLUE     "Μπλε του ουρανού"
+    XT_IDS_CLR_PLUM         "Δαμασκηνί"
+    XT_IDS_CLR_GRAY25       "Γκρι-25%"
+    XT_IDS_CLR_ROSE         "Τριανταφυλλί"
+    XT_IDS_CLR_TAN          "Ώχρα"
+    XT_IDS_CLR_LIGHT_YELLOW "Ανοιχτό κίτρινο"
+    XT_IDS_CLR_LIGHT_GREEN  "Ανοιχτό πράσινο"
+    XT_IDS_CLR_LIGHT_TURQUOISE "Ανοιχτό τυρκουάζ"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDS_CLR_PALE_BLUE    "Παλ μπλε"
+    XT_IDS_CLR_LAVENDER     "Λεβάντα"
+    XT_IDS_CLR_WHITE        "Λευκό"
+    XT_IDS_CLR_GRAY         "Γκρίζο"
+    XT_IDS_CLR_MAROON       "Καστανό"
+    XT_IDS_CLR_OLIVE        "Λαδί"
+    XT_IDS_CLR_NAVY         "Σκούρο μπλε"
+    XT_IDS_CLR_PURPLE       "Μοβ"
+    XT_IDS_CLR_SILVER       "Ασημί"
+    XT_IDS_CLR_FUCHSIA      "Φούξια"
+    XT_IDS_CLR_NOFILL       "Χωρίς γέμισμα"
+    XT_IDS_CLR_NOFILL_TIP   "Χωρίς χρώμα"
+    XT_IDS_AUTOMATIC        "Αυτόματο"
+    XT_IDS_AUTOMATIC_TIP    "Αυτόματο χρώμα"
+    XT_IDS_MORE_COLORS      "Περισσότερα χρώματα..."
+    XT_IDS_MORE_COLORS_TIP  "Περισσότερα χρώματα"
+END
+
+#endif
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_ID_SHORTCUT_SHOW_MORE "Προβολή περισσότερων επιλογών"
+    XTP_ID_SHORTCUT_SHOW_FEWER "Προβολή λιγότερων επιλογών"
+    XTP_IDS_SHORTCUT_CONFIGURE "Ρύθμιση παραμέτρων"
+END
+
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

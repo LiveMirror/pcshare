@@ -1,0 +1,60 @@
+//Microsoft Developer Studio generated resource script.
+//
+#ifndef _XTP_EXCLUDE_ALL
+#undef _XTP_INCLUDE_COMMANDBARS
+#undef _XTP_INCLUDE_DOCKINGPANE
+#undef _XTP_INCLUDE_PROPERTYGRID
+#undef _XTP_INCLUDE_CONTROLS
+#undef __XTPVERSION_H__
+#endif
+
+#include "XTPResource.h"
+#include "XTPVersion.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+#if !defined(_XTP_INCLUDE_RESOURCE_COMMON) && !defined(_XTP_NO_BINARY_RESOURCES)
+#define _XTP_INCLUDE_RESOURCE_COMMON
+ XTP_IDC_HSPLITBAR        CURSOR  DISCARDABLE     "res\\splith.cur"
+ XTP_IDC_VSPLITBAR        CURSOR  DISCARDABLE     "res\\splitv.cur"
+ XTP_IDC_VRESIZE          CURSOR  DISCARDABLE     "res\\resize.cur"
+ XTP_IDC_HAND          CURSOR  DISCARDABLE       "res\\hand.cur"
+#endif
+
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#ifdef _XTP_INCLUDE_PROPERTYGRID
+#include "PropertyGrid\\XTPPropertyGridResource.rc"
+#endif //_XTP_INCLUDE_PROPERTYGRID
+
+#ifdef _XTP_INCLUDE_COMMANDBARS
+#include "CommandBars\\XTPCommandBarsResource.rc"
+#endif //_XTP_INCLUDE_COMMANDBARS
+
+#ifdef _XTP_INCLUDE_DOCKINGPANE
+#include "DockingPane\\XTPDockingPaneResource.rc"
+#endif //_XTP_INCLUDE_DOCKINGPANE
+
+#ifdef _XTP_INCLUDE_CONTROLS
+#include "Controls\\XTResource.rc"
+#endif //_XTP_INCLUDE_CONTROLS
+
+#ifdef _XTP_INCLUDE_REPORTCONTROL
+#include "ReportControl\\XTPReportControlResource.rc"
+#endif //_XTP_INCLUDE_REPORTCONTROL

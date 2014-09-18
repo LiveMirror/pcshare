@@ -1,0 +1,47 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "XTPPropertyGridResource.h"
+
+/////////////////////////////////////////////////////////////////////////////
+// Language
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ITALIAN, SUBLANG_ITALIAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifndef _XTP_NO_BINARY_RESOURCES
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+XTP_IDR_TBAR_PROPGRID    BITMAP     DISCARDABLE        "PropertyGrid/res/tbar_propgrid.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+XTP_IDR_TBAR_PROPGRID TOOLBAR MOVEABLE PURE  16, 16
+BEGIN
+    BUTTON      XTP_IDC_SORT_CATEGORIZED
+    BUTTON      XTP_IDC_SORT_ALPHABETIC
+END
+
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDC_SORT_CATEGORIZED "Categorizzato\nCategorizzato"
+    XTP_IDC_SORT_ALPHABETIC  "Alfabetico\nAlfabetico"
+END
+
+#endif    // Language
+/////////////////////////////////////////////////////////////////////////////

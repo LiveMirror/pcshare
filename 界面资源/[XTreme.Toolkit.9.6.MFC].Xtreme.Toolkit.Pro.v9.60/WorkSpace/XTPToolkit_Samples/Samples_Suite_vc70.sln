@@ -1,0 +1,91 @@
+Microsoft Visual Studio Solution File, Format Version 7.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ActivePaneView", "..\..\Samples\DockingPane\ActivePaneView\ActivePaneView_vc70.vcproj", "{88296488-1331-2249-3272-941832426442}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Advanced", "..\..\Samples\Common\Advanced\Advanced_vc70.vcproj", "{54594784-8988-6846-2245-446657568291}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "BindSample", "..\..\Samples\PropertyGrid\BindSample\BindSample_vc70.vcproj", "{26357115-6141-3933-4242-132665443643}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CommandBarIcons", "..\..\Samples\CommandBars\CommandBarIcons\CommandBarIcons_vc70.vcproj", "{44727835-3793-7635-5169-169246911199}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CommandBarsDesigner", "..\..\Samples\Common\CommandBarsDesigner\CommandBarsDesigner_vc70.vcproj", "{78544678-1958-6828-2711-287199339149}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CommonControls", "..\..\Samples\CommandBars\CommonControls\CommonControls_vc70.vcproj", "{75581581-9499-6329-6887-732534522686}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CustomThemes", "..\..\Samples\CommandBars\CustomThemes\CustomThemes_vc70.vcproj", "{48334811-7551-4417-8784-427542495238}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CustomizeDlg", "..\..\Samples\CommandBars\CustomizeDlg\CustomizeDlg_vc70.vcproj", "{76714631-4223-8219-9691-455123963585}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DesignerSample", "..\..\Samples\CommandBars\DesignerSample\DesignerSample_vc70.vcproj", "{91621375-2479-6392-6352-673976482534}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DialogSample", "..\..\Samples\CommandBars\DialogSample\DialogSample_vc70.vcproj", "{66938671-9137-1988-4425-178792524483}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DockingContainers", "..\..\Samples\DockingPane\DockingContainers\DockingContainers_vc70.vcproj", "{38782992-7188-7185-6422-754711498835}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DrawCli", "..\..\Samples\PropertyGrid\DrawClient\drawcli_vc70.vcproj", "{56252721-4842-2777-7238-792382976282}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DynamicPanes", "..\..\Samples\DockingPane\DynamicPanes\DynamicPanes_vc70.vcproj", "{81978465-2997-1971-4979-929245385232}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DynamicPopups", "..\..\Samples\CommandBars\DynamicPopups\DynamicPopups_vc70.vcproj", "{46376862-9655-4666-2953-415961427181}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GUI_ACDSee", "..\..\Samples\GUI_Samples\GUI_ACDSee\GUI_ACDSee_vc70.vcproj", "{93973282-9753-9658-8571-761535725627}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GUI_Eclipse", "..\..\Samples\GUI_Samples\GUI_Eclipse\GUI_Eclipse_vc70.vcproj", "{31443912-7526-4441-9497-798116393174}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GUI_Gnome", "..\..\Samples\GUI_Samples\GUI_Gnome\GUI_Gnome_vc70.vcproj", "{55369655-4672-2543-5148-926969612124}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GUI_MsMoney", "..\..\Samples\GUI_Samples\GUI_MsMoney\GUI_MsMoney_vc70.vcproj", "{21667152-2339-6239-3212-422796754873}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GUI_OneNote", "..\..\Samples\GUI_Samples\GUI_OneNote\GUI_OneNote_vc70.vcproj", "{12823231-2265-8139-6634-261612717187}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GUI_VisualStudio7", "..\..\Samples\GUI_Samples\GUI_VisualStudio7\GUI_VisualStudio7_vc70.vcproj", "{15168223-9728-1629-1953-223692495347}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GUI_Whidbey", "..\..\Samples\GUI_Samples\GUI_Whidbey\GUI_Whidbey_vc70.vcproj", "{64119614-6983-1825-3282-337146794493}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GUI_WinZip", "..\..\Samples\GUI_Samples\GUI_WinZip\GUI_WinZip_vc70.vcproj", "{95382363-4533-3518-4766-846272856246}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "HelpContext", "..\..\Samples\CommandBars\HelpContext\HelpContext_vc70.vcproj", "{82271431-2793-2617-4262-517889711794}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "IntelligentMenus", "..\..\Samples\CommandBars\IntelligentMenus\IntelligentMenus_vc70.vcproj", "{85516413-9456-5397-8581-469861317945}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ListBoxSample", "..\..\Samples\CommandBars\ListBoxSample\ListBoxSample_vc70.vcproj", "{44567895-6612-5583-1729-673314697291}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MDIMenus", "..\..\Samples\CommandBars\MDIMenus\MDIMenus_vc70.vcproj", "{75739553-4261-7187-2395-183449869844}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MDIPanes", "..\..\Samples\DockingPane\MDIPanes\MDIPanes_vc70.vcproj", "{72628521-2421-6376-2789-854158614492}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MDITabWindow", "..\..\Samples\Common\MDITabWindow\MDITabWindow_vc70.vcproj", "{75854594-9175-8976-6118-716138311742}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MSDI", "..\..\Samples\CommandBars\MSDI\MSDI_vc70.vcproj", "{99779347-7231-7169-3869-934882631782}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MultiLanguage", "..\..\Samples\Common\MultiLanguage\MultiLanguage_vc70.vcproj", "{65177644-4888-1765-1933-439627763541}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Notifications", "..\..\Samples\CommandBars\Notifications\Notifications_vc70.vcproj", "{52966712-2149-9954-9428-191326627298}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OwnerDraw", "..\..\Samples\PropertyGrid\OwnerDraw\OwnerDraw_vc70.vcproj", "{56392784-9693-3554-4747-153396224449}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Pane", "..\..\Samples\DockingPane\PaneSample\Pane_vc70.vcproj", "{81127438-7858-1747-1487-371159634489}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PaneActions", "..\..\Samples\DockingPane\PaneActions\PaneActions_vc70.vcproj", "{11519217-1149-4937-8521-648969427883}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PrintPreview", "..\..\Samples\Common\PrintPreview\PrintPreview_vc70.vcproj", "{97499365-7299-4126-7925-319668262441}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PropertyGrid", "..\..\Samples\PropertyGrid\GridSample\PropertyGrid_vc70.vcproj", "{91734358-5854-6726-2344-262648869782}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ReBarSample", "..\..\Samples\CommandBars\ReBarSample\ReBarSample_vc70.vcproj", "{35551982-3919-5818-8185-481492288742}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ReportSample", "..\..\Samples\ReportControl\ReportSample\ReportSample_vc70.vcproj", "{81857498-1667-8515-6258-885238321581}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Scribble", "..\..\Samples\CommandBars\ScribbleMultiLang\scribble_vc70.vcproj", "{77847456-7827-7794-6644-656836175248}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "StatusBar", "..\..\Samples\CommandBars\StatusBar\StatusBar_vc70.vcproj", "{71172448-5572-1494-1963-518827772489}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TabManager", "..\..\Samples\Common\TabManager\TabManager_vc70.vcproj", "{15898283-3637-8587-6623-737661182449}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TabbedView", "..\..\Samples\Common\TabbedView\TabbedView_vc70.vcproj", "{71396588-1385-2283-4786-222496224387}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TearOffPopups", "..\..\Samples\CommandBars\TearOffPopups\TearOffPopups_vc70.vcproj", "{67285656-7556-1473-4272-883295178845}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VirtualList", "..\..\Samples\ReportControl\VirtualList\VirtualList_vc70.vcproj", "{61529638-5119-4963-8591-845185775186}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "WordPad", "..\..\Samples\GUI_Samples\GUI_Office11\wordpad_vc70.vcproj", "{85346373-3365-2265-4242-174948195246}"
+EndProject

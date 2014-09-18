@@ -1,0 +1,417 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "XTPCommandBarsResource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_HUNGARIAN, SUBLANG_DEFAULT
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifndef _XTP_NO_BINARY_RESOURCES
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+XTP_IDR_TOOLBAR_TOOLS   BITMAP     DISCARDABLE        "CommandBars/res/ImageEditorIcons.bmp"
+XTP_IDR_TOOLBAR_TOOLS32 BITMAP     DISCARDABLE        "CommandBars/res/ImageEditorIcons32.bmp "
+XTP_IDB_MENUBAR_ICONS   BITMAP     DISCARDABLE        "CommandBars/res/MenuBarIcons.bmp"
+XTP_ID_CUSTOMIZE_CHANGEBUTTONIMAGE BITMAP     DISCARDABLE        "CommandBars/res/UserIcons.bmp"
+XTP_ID_WORKSAPCE_NEWHORIZONTAL BITMAP     DISCARDABLE        "CommandBars/res/TabGroups.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+XTP_IDC_COMMANDBARS_DRAGCOPY CURSOR     DISCARDABLE        "CommandBars/res/dragcopypro.cur"
+XTP_IDC_COMMANDBARS_DRAGMOVE CURSOR     DISCARDABLE        "CommandBars/res/dragmovepro.cur"
+XTP_IDC_COMMANDBARS_DRAGDELETE CURSOR     DISCARDABLE        "CommandBars/res/dragdeletepro.cur"
+XTP_IDC_COMMANDBARS_LINE CURSOR     DISCARDABLE        "CommandBars/res/line.cur"
+XTP_IDC_COMMANDBARS_PICKCOLOR CURSOR     DISCARDABLE        "CommandBars/res/pickcolor.cur"
+XTP_IDC_COMMANDBARS_FILLCOLOR CURSOR     DISCARDABLE        "CommandBars/res/fillcolor.cur"
+XTP_IDC_COMMANDBARS_PENCIL CURSOR     DISCARDABLE        "CommandBars/res/pencil.cur"
+XTP_IDC_WORKSAPCE_NEW   CURSOR     DISCARDABLE        "CommandBars/res/WorksapceNew.cur"
+XTP_IDC_WORKSAPCE_DELETE CURSOR     DISCARDABLE        "CommandBars/res/WorksapceDelete.cur"
+
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+XTP_IDD_IMAGEEDITOR_DIALOG DIALOGEX 0, 0, 253, 185
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Gombszerkesztõ"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "Kép",IDC_STATIC,7,7,23,8
+    GROUPBOX        "Színek",IDC_STATIC,102,106,80,71
+    GROUPBOX        "Áthelyezés",IDC_STATIC,101,72,81,31
+    GROUPBOX        "Minta",IDC_STATIC,7,106,86,71
+    GROUPBOX        "Eszközök",IDC_STATIC,101,9,81,60
+    DEFPUSHBUTTON   "OK",IDOK,193,7,50,14
+    PUSHBUTTON      "Mégse",IDCANCEL,193,25,50,14
+    CONTROL         "",XTP_IDC_STATIC_PICTURE,"Static",SS_BLACKFRAME | 
+                    SS_NOTIFY,7,17,86,80
+    CTEXT           "",XTP_IDC_STATIC_PREVIEW,14,117,73,54,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    LTEXT           "Átlátszó",IDC_STATIC,135,156,39,8
+    LTEXT           "",XTP_ID_CLR_ERASE,116,153,15,15,SS_NOTIFY
+    CTEXT           "Eszközök",XTP_IDC_STATIC_TOOLS,112,21,60,43,SS_CENTERIMAGE | 
+                    NOT WS_VISIBLE | WS_BORDER
+    CTEXT           "Áthelyezés",XTP_IDC_STATIC_MOVE,111,83,62,12,SS_CENTERIMAGE | 
+                    NOT WS_VISIBLE | WS_BORDER
+    CONTROL         "",XTP_ID_CLR_PICKER,"Static",SS_LEFTNOWORDWRAP | 
+                    SS_NOTIFY | WS_GROUP,109,144,15,15
+    CTEXT           "Színek",XTP_IDC_STATIC_COLORS,107,121,68,12,
+                    SS_CENTERIMAGE | NOT WS_VISIBLE | WS_BORDER
+END
+
+XTP_IDD_PAGE_KEYBOARD DIALOG DISCARDABLE  0, 0, 230, 150
+STYLE WS_CHILD | WS_CAPTION
+CAPTION "Billentyûzet"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Menüparancsok:",XTP_IDC_TXT_COMMANDS,2,28,54,8
+    LISTBOX         XTP_IDC_LBOX_ACCEL_COMMANDS,2,39,93,74,LBS_HASSTRINGS | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Billentyûparancsok:",XTP_IDC_TXT_ASSIGNMENTS,100,28,67,8
+    LISTBOX         XTP_IDC_LBOX_KEYS,100,38,75,49,LBS_HASSTRINGS | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Új billentyûparancs:",XTP_IDC_TXT_NEWKEY,100,91,76,8
+    EDITTEXT        XTP_IDC_EDIT_SHORTCUTKEY,100,101,75,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Hozzárendel",XTP_IDC_BTN_ASSIGN,179,39,49,14
+    PUSHBUTTON      "Eltávolítás",XTP_IDC_BTN_REMOVE,179,56,49,14
+    PUSHBUTTON      "Alaphelyzet",XTP_IDC_BTN_ACCEL_RESET,179,73,49,14
+    LTEXT           "Leírás:",XTP_IDC_TXT_DESC_TITLE,2,119,38,8
+    LTEXT           "",XTP_IDC_TXT_DESC_OVERVIEW,2,129,173,19,0,
+                    WS_EX_STATICEDGE
+    LTEXT           "Kategória:",IDC_STATIC,2,5,33,8
+    COMBOBOX        XTP_IDC_COMBO_CATEGORY,2,15,93,147,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+XTP_IDD_PAGE_TOOLBARS DIALOG DISCARDABLE  0, 0, 230, 150
+STYLE WS_CHILD | WS_CAPTION
+CAPTION "Eszköztárak"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Eszköztárak:",IDC_STATIC,4,5,41,8
+    LISTBOX         XTP_IDC_LIST_TOOLBARS,4,15,150,131,LBS_OWNERDRAWFIXED | 
+                    LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "Új dokumentum...",XTP_IDC_BUTTON_NEW,158,15,70,14
+    PUSHBUTTON      "Átnevezés...",XTP_IDC_BUTTON_RENAME,158,33,70,14
+    PUSHBUTTON      "Törlés",XTP_IDC_BUTTON_DELETE,158,51,70,14
+    PUSHBUTTON      "Alaphelyzet...",XTP_IDC_BUTTON_RESET,158,69,70,14
+END
+
+XTP_IDD_PAGE_OPTIONS DIALOG DISCARDABLE  0, 0, 230, 150
+STYLE WS_CHILD | WS_CAPTION
+CAPTION "Beállítások"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Testreszabott menük és eszköztárak",IDC_STATIC,6,4,116,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,122,9,101,1
+    CONTROL         "Mindig a teljes menü megjelenítése",XTP_IDC_CHECK_FULL_MENUS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,17,123,10
+    CONTROL         "Kis késleltetéssel a teljes menü megjelenítése",
+                    XTP_IDC_CHECK_AFTERDELAY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,28,29,156,10
+    PUSHBUTTON      "Menü- és eszköztárhasználati adatok visszaállítása",
+                    XTP_IDC_BUTTON_RESETDATA,16,42,174,14
+    LTEXT           "Egyéb",IDC_STATIC,7,70,21,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,29,74,194,1
+    CONTROL         "Nagy gombok",XTP_IDC_CHECK_LARGEICONS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,16,82,57,10
+    CONTROL         "Elemleírások megjelenítése az eszköztáron",XTP_IDC_CHECK_SCREENTTIPS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,93,149,10
+    CONTROL         "Elemleírások kiegészítése a billentyûparanccsal",
+                    XTP_IDC_CHECK_SHORTCUTS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,28,104,164,10
+    LTEXT           "Menüanimálás:",IDC_STATIC,16,117,48,8
+    COMBOBOX        XTP_IDC_COMBO_ANIMATION,76,115,79,65,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+XTP_IDD_PAGE_COMMANDS DIALOG DISCARDABLE  0, 0, 230, 150
+STYLE WS_CHILD | WS_CAPTION
+CAPTION "Parancsok"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Parancsot úgy vehet fel egy eszköztárra",
+                    IDC_STATIC,4,5,220,19
+    LTEXT           "Kategóriák:",IDC_STATIC,4,25,38,8
+    LISTBOX         XTP_IDC_LIST_CATEGORIES,4,35,81,103,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Menüparancsok:",IDC_STATIC,90,25,54,8
+    LISTBOX         XTP_IDC_LIST_COMMANDS,90,35,140,103,LBS_OWNERDRAWFIXED | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+XTP_IDD_NEWTOOLBAR DIALOG DISCARDABLE  0, 0, 186, 52
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Új eszköztár"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Eszköztárnév:",IDC_STATIC,4,4,100,8
+    EDITTEXT        XTP_IDC_EDIT_TOOLBARNAME,4,15,178,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,78,34,50,14
+    PUSHBUTTON      "Mégse",IDCANCEL,132,34,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+XTP_IDR_CUSTOMIZEMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "Testreszabás"
+    BEGIN
+        MENUITEM "Alaphelyzet",                      XTP_ID_CUSTOMIZE_RESET
+        MENUITEM "Törlés",                     XTP_ID_CUSTOMIZE_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "Név:",                      XTP_ID_CUSTOMIZE_NAME
+        MENUITEM SEPARATOR
+        MENUITEM "Gombkép másolása",          XTP_ID_CUSTOMIZE_COPYBUTTONIMAGE
+
+        MENUITEM "Gombkép beillesztése",         XTP_ID_CUSTOMIZE_PASTEBUTTONIMAGE
+
+        MENUITEM "Gombkép visszaállítása",         XTP_ID_CUSTOMIZE_RESETBUTTONIMAGE
+
+        MENUITEM "Gombkép szerkesztése...",       XTP_ID_CUSTOMIZE_EDITBUTTONIMAGE
+
+        MENUITEM "Gombkép váltása",        XTP_ID_CUSTOMIZE_CHANGEBUTTONIMAGE
+
+        MENUITEM SEPARATOR
+        MENUITEM "Alapértelmezett",              XTP_ID_CUSTOMIZE_DEFAULTSTYLE
+
+        MENUITEM "Csak szöveg",                  XTP_ID_CUSTOMIZE_TEXTONLY
+        MENUITEM "Kép és szöveg",             XTP_ID_CUSTOMIZE_IMAGEANDTEXT
+
+        MENUITEM SEPARATOR
+        MENUITEM "Csoportkezdet",              XTP_ID_CUSTOMIZE_BEGINAGROUP
+    END
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "XTPCommandBarsResource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_ADDORREMOVE     "Gombok hozzáadása/eltávolítása"
+    XTP_IDS_CUSTOMIZE_CLOSE "Bezárás"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CUSTOMIZE       "Testreszabás"
+    XTP_IDS_NEWMENU         "Új menü"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CONFIRM_RESETDATA 
+                            "Ezzel törli az alkalmazásban eddig használt parancsok nyilvántartását"
+    XTP_IDS_INVALID_NUMBER  "Érvénytelen szám."
+    XTP_IDS_INVALID_FONTSIZE "A számnak 1 és 1638 közöttinek kell lennie."
+    XTP_IDS_CONFIRM_RESET   "Visszaállítja a(z) '%s' Th módosításait?"
+    XTP_IDS_BUILTINMENUS    "Beépített menük"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CUSTOM_BAR      "Felhasználói %d"
+    XTP_IDS_ERROR_BLANKNAME "Az eszközsornak nem lehet üres a neve. Válasszon valamilyen nevet."
+    XTP_IDS_ERROR_LIMIT     "Sajnos elérte a korlátot."
+    XTP_IDS_ERROR_EXISTS    "A(z) '%s' eszköztárnév már létezik.  Adjon meg egy másik nevet."
+    XTP_IDS_RENAMETOOLBAR   "Eszköztár átnevezése"
+    XTP_IDS_CONFIRM_DELETE  "Biztos benne, hogy törölni kívánja a(z) '%s' eszköztárat?"
+    XTP_IDS_ALLCOMMANDS     "Minden parancs"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_ID_CUSTOMIZE        "\n&Testreszabás..."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CLR_INDIGO      "Indigókék"
+    XTP_IDS_CLR_GRAY80      "80%-os szürke"
+    XTP_IDS_CLR_DARK_RED    "Sötétvörös"
+    XTP_IDS_CLR_ORANGE      "Narancs"
+    XTP_IDS_CLR_DARK_YELLOW "Sötétsárga"
+    XTP_IDS_CLR_GREEN       "Zöld"
+    XTP_IDS_CLR_TEAL        "Pávakék"
+    XTP_IDS_CLR_BLUE        "Kék"
+    XTP_IDS_CLR_BLUEGRAY    "Kékesszürke"
+    XTP_IDS_CLR_GRAY50      "50%-os szürke"
+    XTP_IDS_CLR_RED         "Vörös"
+    XTP_IDS_CLR_LIGHTORANGE "Világosnarancs"
+    XTP_IDS_CLR_LIME        "Zöldessárga"
+    XTP_IDS_CLR_SEA_GREEN   "Tengerzöld"
+    XTP_IDS_CLR_AQUA        "Vízkék"
+    XTP_IDS_CLR_LIGHT_BLUE  "Világoskék"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CLR_VIOLET      "Ibolyaszín"
+    XTP_IDS_CLR_GRAY40      "40%-os szürke"
+    XTP_IDS_CLR_PINK        "Rózsaszín"
+    XTP_IDS_CLR_GOLD        "Arany"
+    XTP_IDS_CLR_YELLOW      "Sárga"
+    XTP_IDS_CLR_BRIGHT_GREEN "Fényeszöld"
+    XTP_IDS_CLR_TURQUOISE   "Türkiz"
+    XTP_IDS_CLR_SKY_BLUE    "Égkék"
+    XTP_IDS_CLR_PLUM        "Szilvakék"
+    XTP_IDS_CLR_GRAY25      "25%-os szürke"
+    XTP_IDS_CLR_ROSE        "Rosé"
+    XTP_IDS_CLR_TAN         "Barackszínû"
+    XTP_IDS_CLR_LIGHT_YELLOW "Világossárga"
+    XTP_IDS_CLR_LIGHT_GREEN "Világoszöld"
+    XTP_IDS_CLR_LIGHT_TURQUOISE "Világostürkiz"
+    XTP_IDS_CLR_PALE_BLUE   "Halványkék"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CLR_BLACK       "Fekete"
+    XTP_IDS_CLR_BROWN       "Barna"
+    XTP_IDS_CLR_OLIVE_GREEN "Olívzöld"
+    XTP_IDS_CLR_DARK_GREEN  "Sötétzöld"
+    XTP_IDS_CLR_DARK_TEAL   "Sötét pávakék"
+    XTP_IDS_CLR_DARK_BLUE   "Sötétkék"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CLR_LAVENDER    "Levendula"
+    XTP_IDS_CLR_WHITE       "Fehér"
+    XTP_IDS_CLR_GRAY        "Szürke"
+    XTP_IDS_CLR_MAROON      "Sötétvörös"
+    XTP_IDS_CLR_OLIVE       "Okkersárga"
+    XTP_IDS_CLR_NAVY        "Sötétkék"
+    XTP_IDS_CLR_PURPLE      "Lila"
+    XTP_IDS_CLR_SILVER      "Ezüst"
+    XTP_IDS_CLR_FUCHSIA     "Lila"
+    XTP_IDS_CLR_NOFILL      "Nincs\nNincs"
+    XTP_IDS_AUTOMATIC       "Automatikus szín\nAutomatikus szín"
+    XTP_IDS_MORE_COLORS     "További színek..."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CONFIRM_KEYBOARD 
+                            "Biztos benne, hogy vissza akarja állítani alapértelmezettre a billentyuparancsokat?  Ez a muvelet minden szövegszintu felhasználói billentyu-hozzárendelést eltávolít. "
+    XTP_IDS_CONFIRM_REASSIGN 
+                            "This shortcut is currently assigned.\nDo you want to re-assign this shortcut?"
+    XTP_IDS_CONFIRM_UPDATE  "Due to a software update the toolbar '%s' has changed. Would you like to reset your customized toolbar and load the new one?"
+    XTP_IDS_CUSTOMIZE_RESET "Alaphelyzet"
+    XTP_IDS_IMAGEEDITOR_FILTER 
+                            "Minden képfájl|*.bmp;*.wmf;*.emf;*.ico;*.dib;*.cur;*.gif;*.jpg|Bitképek(*.Bmp;*.Dib)|*.bmp;*.dib|Metafájlok(*.Wmf;*.Emf)|*.wmf;*.emf|Icons(*.Ico;*.Cur)|*.ico;*.cur|GIF(*.Gif)|*.gif|JPEG(*.Jpg)|*.jpg|Minden fájl(*.*)|*.*||"
+    XTP_ID_TOOLBAR_EXPAND   "\nEszköztár beállításai"
+    XTP_ID_TOOLBAR_HIDE     "\nBezárás"
+    XTP_ID_MENUBAR_CLOSE    "\nAblak bezárása"
+    XTP_ID_MENUBAR_RESTORE  "\nAblak elõzõ mérete"
+    XTP_ID_MENUBAR_MINIMIZE "\nKisméretû ablak"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_ID_BUTTON_PENCIL    "\nCeruza"
+    XTP_ID_BUTTON_FILL      "\nKitöltõszín"
+    XTP_ID_BUTTON_GETCOLOR  "\nSzín kiválasztása"
+    XTP_ID_BUTTON_LINE      "\nGrafikon"
+    XTP_ID_BUTTON_RECTANGLE "\nTéglalap"
+    XTP_ID_BUTTON_CIRCLE    "\nEllipszis"
+    XTP_ID_BUTTON_COPY      "\nMásolás"
+    XTP_ID_BUTTON_PASTE     "\nBeillesztés"
+    XTP_ID_BUTTON_CLEAR     "\nTörlés"
+    XTP_ID_BUTTON_UNDO      "\nVisszavonás"
+    XTP_ID_BUTTON_REDO      "\nMégis"
+    XTP_ID_BUTTON_OPEN      "\nImportálás fájlból"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_ANIMATION_SYSDEF "(Alapértelmezett)"
+    XTP_IDS_ANIMATION_RANDOM "Véletlen"
+    XTP_IDS_ANIMATION_UNFOLD "Kibont"
+    XTP_IDS_ANIMATION_SLIDE "Dia"
+    XTP_IDS_ANIMATION_FADE  "Elsötétítés"
+    XTP_IDS_ANIMATION_NONE  "Nincs"
+    XTP_ID_WORKSAPCE_MOVEPREVIOUS "\nMove to P&revious Tab Group"
+    XTP_ID_WORKSAPCE_MOVENEXT "\nMove to Ne&xt Tab Group"
+    XTP_ID_WORKSAPCE_NEWHORIZONTAL "\nNew Hori&zontal Tab Group"
+    XTP_ID_WORKSAPCE_NEWVERTICAL "\nNew &Vertical Tab Group"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_ID_WORKSAPCE_CANCEL "Mégse"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

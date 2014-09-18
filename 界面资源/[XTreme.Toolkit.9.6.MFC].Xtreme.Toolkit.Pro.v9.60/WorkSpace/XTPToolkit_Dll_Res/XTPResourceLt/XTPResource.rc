@@ -1,0 +1,78 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include <XTPResourceDll.h>
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_LITHUANIAN, SUBLANG_LITHUANIAN
+#pragma code_page(1257)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDC_LANG_ARABIC         "Arabø (Saudo Arabija)"
+    XTP_IDC_LANG_CHINESE_PRC    "Kinø (KLR)"
+    XTP_IDC_LANG_CHINESE_TAIWAN "Kinø (Taivanis)"
+    XTP_IDC_LANG_CROATIAN       "Kroatø"
+    XTP_IDC_LANG_CZECH          "Èekø"
+    XTP_IDC_LANG_DANISH         "Danø"
+    XTP_IDC_LANG_DUTCH          "Olandø"
+    XTP_IDC_LANG_ENGLISH        "Anglø (JAV)"
+    XTP_IDC_LANG_ESTONIAN       "Estø"
+    XTP_IDC_LANG_FINNISH        "Suomiø"
+    XTP_IDC_LANG_FRENCH         "Prancûzø (Prancûzija)"
+    XTP_IDC_LANG_GERMAN         "Vokieèiø (Vokietija)"
+    XTP_IDC_LANG_GREEK          "Graikø"
+    XTP_IDC_LANG_HEBREW         "Hebrajø"
+    XTP_IDC_LANG_HUNGARIAN      "Vengrø"
+    XTP_IDC_LANG_ITALIAN        "Italø (Italija)"
+    XTP_IDC_LANG_JAPANESE       "Japonø"
+    XTP_IDC_LANG_KOREAN         "Korëjieèiø"
+    XTP_IDC_LANG_LATVIAN        "Latviø"
+    XTP_IDC_LANG_LITHUANIAN     "Lietuviø"
+    XTP_IDC_LANG_NORWEGIAN      "Norvegø (Bokmalas)"
+    XTP_IDC_LANG_POLISH         "Lenkø"
+    XTP_IDC_LANG_PORTUGUESE     "Portugalø (Portugalija)"
+    XTP_IDC_LANG_PORTUGUESE_BR  "Portugalø (Brazilija)"
+    XTP_IDC_LANG_ROMANIAN       "Rumunø"
+    XTP_IDC_LANG_RUSSIAN        "Rusø"
+    XTP_IDC_LANG_SLOVAK         "Slovakø"
+    XTP_IDC_LANG_SLOVENIAN      "Slovënø"
+    XTP_IDC_LANG_SPANISH        "Ispanø"
+    XTP_IDC_LANG_SWEDISH        "Ðvedø"
+    XTP_IDC_LANG_THAI           "Tajø"
+    XTP_IDC_LANG_UKRAINIAN      "Ukrainieèiø"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+#include "res\XTPResource.rc2"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,320 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\TrayIconDlg.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\CjSample.ico"
+IDI_TRAYICON            ICON    DISCARDABLE     "res\\icon1.ico"
+IDI_ICON2               ICON    DISCARDABLE     "res\\icon2.ico"
+IDI_ICON3               ICON    DISCARDABLE     "res\\icon3.ico"
+IDI_ICON4               ICON    DISCARDABLE     "res\\icon4.ico"
+IDI_ICON5               ICON    DISCARDABLE     "res\\icon5.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_TRAYICONDLG_DIALOG DIALOG DISCARDABLE  0, 0, 346, 236
+STYLE WS_POPUP | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "Codejock Tray Icon Dialog Sample"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Tooltip Te&xt:",IDC_TXT_TOOLTIP,7,7,40,8
+    EDITTEXT        IDC_EDIT_TOOLTIP,7,17,253,14,ES_AUTOHSCROLL
+    CONTROL         "Show &Icon",IDC_CHK_SHOWICON,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,39,50,10
+    CONTROL         "&Animate Icon",IDC_CHK_ANIMATEICON,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,50,57,10
+    PUSHBUTTON      "&Set Tooltip",IDC_BTN_TOOLTIP,266,17,73,14
+    PUSHBUTTON      "&Minimize to Tray...",IDC_BTN_MINIMIZETRAY,266,34,73,14
+    PUSHBUTTON      "&Done",IDOK,266,51,73,14
+    LTEXT           "The following features require Windows 2000 or later",
+                    IDC_TEXT_INFO,7,72,332,8
+    CONTROL         "",IDC_GBOX_FEATURES,"Static",SS_ETCHEDHORZ,7,85,332,1
+    CONTROL         "&Hide Icon",IDC_CHK_HIDEICON,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,93,47,10
+    LTEXT           "Balloon Tip",IDC_TXT_BALLOONTIP,7,110,46,8
+    CONTROL         "",IDC_GBOX_BALLOONTIP,"Static",SS_ETCHEDHORZ,57,115,282,
+                    1
+    LTEXT           "Tit&le:",IDC_TXT_BALLOONTITLE,7,125,16,8
+    EDITTEXT        IDC_EDIT_BALLOONTITLE,7,136,253,14,ES_AUTOHSCROLL
+    LTEXT           "&Timeout ( seconds )",IDC_TXT_TIMEOUT,266,125,63,8
+    EDITTEXT        IDC_EDIT_TIMEOUT,266,136,73,14,ES_AUTOHSCROLL
+    LTEXT           "Message:",IDC_TXT_BALLOONMSG,7,152,32,8
+    EDITTEXT        IDC_EDIT_BALLOONMSG,7,165,253,37,ES_MULTILINE | 
+                    ES_AUTOVSCROLL | ES_WANTRETURN
+    LTEXT           "Icon style:",IDC_TXT_BALLOONICON,7,205,33,8
+    COMBOBOX        IDC_COMBO_BALLOONICON,7,216,253,30,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Sh&ow...",IDC_BTN_SHOWBALLOON,266,214,73,14
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "TrayIconDlg MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "TrayIconDlg\0"
+            VALUE "LegalCopyright", "©1998-2004 Codejock Software, All Rights Reserved.\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "TrayIconDlg.EXE\0"
+            VALUE "ProductName", "TrayIconDlg Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_TRAYICONDLG_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 339
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 228
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_TRAYICONDLG_DIALOG DLGINIT
+BEGIN
+    IDC_COMBO_BALLOONICON, 0x403, 26, 0
+0x494e, 0x4649, 0x455f, 0x5252, 0x524f, 0x2820, 0x4520, 0x7272, 0x726f, 
+0x6920, 0x6f63, 0x206e, 0x0029, 
+    IDC_COMBO_BALLOONICON, 0x403, 31, 0
+0x494e, 0x4649, 0x495f, 0x464e, 0x204f, 0x2028, 0x6e49, 0x6f66, 0x6d72, 
+0x7461, 0x6f69, 0x206e, 0x6369, 0x6e6f, 0x2920, "\000" 
+    IDC_COMBO_BALLOONICON, 0x403, 22, 0
+0x494e, 0x4649, 0x4e5f, 0x4e4f, 0x2045, 0x2028, 0x6f4e, 0x6920, 0x6f63, 
+0x206e, 0x0029, 
+    IDC_COMBO_BALLOONICON, 0x403, 30, 0
+0x494e, 0x4649, 0x575f, 0x5241, 0x494e, 0x474e, 0x2820, 0x5720, 0x7261, 
+0x696e, 0x676e, 0x6920, 0x6f63, 0x206e, 0x0029, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_POPUP_TRAY MENU DISCARDABLE 
+BEGIN
+    POPUP "RClickTrayIcon"
+    BEGIN
+        MENUITEM "&Minimize / Maximize To Tray...", IDR_RESTORE
+        MENUITEM SEPARATOR
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+END
+
+IDR_MAINFRAME MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM SEPARATOR
+        MENUITEM "Office &XP Look",             ID_VIEW_XPMODE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About Tray Icon Dialog Sample...", ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR MOVEABLE PURE  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    SEPARATOR
+    BUTTON      ID_APP_ABOUT
+    SEPARATOR
+    BUTTON      ID_PROPERTIES
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About Tray Icon Dialog Sample..."
+    IDS_BALLOON_MESSAGE     "Please visit our website for additional product information including registration details.  You can click here to go there now!"
+    IDS_BALLOON_TITLE       "Codejock Software Information"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\TrayIconDlg.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

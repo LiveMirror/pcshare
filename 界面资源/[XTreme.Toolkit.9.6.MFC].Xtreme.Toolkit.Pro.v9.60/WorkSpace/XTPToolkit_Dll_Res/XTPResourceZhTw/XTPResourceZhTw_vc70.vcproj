@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding = "Windows-1252"?>
+<VisualStudioProject
+	ProjectType="Visual C++"
+	Version="7.00"
+	Name="XTPResourceZhTw"
+
+>
+	<Platforms>
+		<Platform
+			Name="Win32"/>
+	</Platforms>
+	<Configurations>
+		<Configuration
+			Name="Release|Win32"
+			OutputDirectory=".\Release/vc70"
+			IntermediateDirectory=".\Release/vc70"
+			ConfigurationType="2"
+			UseOfMFC="0"
+			ATLMinimizesCRunTimeLibraryUsage="FALSE"
+			CharacterSet="2">
+			<Tool
+				Name="VCCLCompilerTool"
+				Optimization="1"
+				InlineFunctionExpansion="1"
+				AdditionalIncludeDirectories="../../../Include,../../../Include/CommandBars,../../../Include/Controls,../../../Include/DockingPane,../../../Include/PropertyGrid"
+				PreprocessorDefinitions="NDEBUG;WIN32;_WINDOWS;_USRDLL;XTPRESOURCE_EXPORTS"
+				StringPooling="TRUE"
+				RuntimeLibrary="2"
+				EnableFunctionLevelLinking="TRUE"
+				PrecompiledHeaderFile=".\Release/vc70/XTPResourceZhTw.pch"
+				AssemblerListingLocation=".\Release/vc70/"
+				ObjectFile=".\Release/vc70/"
+				ProgramDataBaseFileName=".\Release/vc70/"
+				WarningLevel="3"
+				SuppressStartupBanner="TRUE"
+				CompileAs="0"/>
+			<Tool
+				Name="VCCustomBuildTool"/>
+			<Tool
+				Name="VCLinkerTool"
+				IgnoreImportLibrary="TRUE"
+				AdditionalOptions="/MACHINE:I386"
+				AdditionalDependencies="odbc32.lib odbccp32.lib"
+				OutputFile="../../../bin/vc70/Translations/XTPResourceZhTw.dll"
+				LinkIncremental="1"
+				SuppressStartupBanner="TRUE"
+				IgnoreAllDefaultLibraries="TRUE"
+				ModuleDefinitionFile=".\XTPResource.def"
+				ProgramDatabaseFile=".\Release/vc70/XTPResourceZhTw.pdb"
+				OptimizeForWindows98="1"
+				EntryPointSymbol="DllMain"
+				ImportLibrary=".\Release/vc70/XTPResourceZhTw.lib"/>
+			<Tool
+				Name="VCMIDLTool"
+				PreprocessorDefinitions="NDEBUG"
+				MkTypLibCompatible="TRUE"
+				SuppressStartupBanner="TRUE"
+				TargetEnvironment="1"
+				TypeLibraryName=".\Release/vc70/XTPResourceZhTw.tlb"/>
+			<Tool
+				Name="VCPostBuildEventTool"/>
+			<Tool
+				Name="VCPreBuildEventTool"/>
+			<Tool
+				Name="VCPreLinkEventTool"/>
+			<Tool
+				Name="VCResourceCompilerTool"
+				PreprocessorDefinitions="NDEBUG"
+				Culture="1033"
+				AdditionalIncludeDirectories="../../../Include;../../../Include/CommandBars;../../../Include/Controls;../../../Include/DockingPane;../../../Include/PropertyGrid"/>
+			<Tool
+				Name="VCWebServiceProxyGeneratorTool"/>
+			<Tool
+				Name="VCWebDeploymentTool"/>
+		</Configuration>
+	</Configurations>
+	<Files>
+		<Filter
+			Name="Source Files"
+			Filter="cpp;c;cxx;rc;def;r;odl;idl;hpj;bat">
+			<File
+				RelativePath=".\XTPResource.cpp">
+			</File>
+			<File
+				RelativePath=".\XTPResource.def">
+			</File>
+		</Filter>
+		<Filter
+			Name="Resource Files"
+			Filter="ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe">
+			<File
+				RelativePath=".\XTPResource.rc">
+			</File>
+			<File
+				RelativePath=".\res\XTPResource.rc2">
+			</File>
+		</Filter>
+	</Files>
+</VisualStudioProject>

@@ -1,0 +1,417 @@
+
+
+#define APSTUDIO_READONLY_SYMBOLS
+
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ARABIC, SUBLANG_ARABIC_SAUDI_ARABIA
+#pragma code_page(1256)
+#endif //_WIN32
+
+#ifndef _XTP_NO_BINARY_RESOURCES
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+XTP_IDR_TOOLBAR_TOOLS   BITMAP     DISCARDABLE        "CommandBars/res/ImageEditorIcons.bmp"
+XTP_IDR_TOOLBAR_TOOLS32 BITMAP     DISCARDABLE        "CommandBars/res/ImageEditorIcons32.bmp "
+XTP_IDB_MENUBAR_ICONS   BITMAP     DISCARDABLE        "CommandBars/res/MenuBarIcons.bmp"
+XTP_ID_CUSTOMIZE_CHANGEBUTTONIMAGE BITMAP     DISCARDABLE        "CommandBars/res/UserIcons.bmp"
+XTP_ID_WORKSAPCE_NEWHORIZONTAL BITMAP     DISCARDABLE        "CommandBars/res/TabGroups.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+XTP_IDC_COMMANDBARS_DRAGCOPY CURSOR     DISCARDABLE        "CommandBars/res/dragcopypro.cur"
+XTP_IDC_COMMANDBARS_DRAGMOVE CURSOR     DISCARDABLE        "CommandBars/res/dragmovepro.cur"
+XTP_IDC_COMMANDBARS_DRAGDELETE CURSOR     DISCARDABLE        "CommandBars/res/dragdeletepro.cur"
+XTP_IDC_COMMANDBARS_LINE CURSOR     DISCARDABLE        "CommandBars/res/line.cur"
+XTP_IDC_COMMANDBARS_PICKCOLOR CURSOR     DISCARDABLE        "CommandBars/res/pickcolor.cur"
+XTP_IDC_COMMANDBARS_FILLCOLOR CURSOR     DISCARDABLE        "CommandBars/res/fillcolor.cur"
+XTP_IDC_COMMANDBARS_PENCIL CURSOR     DISCARDABLE        "CommandBars/res/pencil.cur"
+XTP_IDC_WORKSAPCE_NEW   CURSOR     DISCARDABLE        "CommandBars/res/WorksapceNew.cur"
+XTP_IDC_WORKSAPCE_DELETE CURSOR     DISCARDABLE        "CommandBars/res/WorksapceDelete.cur"
+
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+XTP_IDD_IMAGEEDITOR_DIALOG DIALOGEX 0, 0, 253, 185
+EXSTYLE WS_EX_RTLREADING | WS_EX_RIGHT
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "„Õ—— «·√“—«—"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "’Ê—…",IDC_STATIC,162,7,82,8, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    GROUPBOX        "«·√·Ê«‰‰",IDC_STATIC,71,106,80,71, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    GROUPBOX        "‰ﬁ··",IDC_STATIC,71,72,81,31, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    GROUPBOX        "&„⁄«Ì‰…",IDC_STATIC,160,106,86,71, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    GROUPBOX        "√œÊ« ",IDC_STATIC,71,9,81,60, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    DEFPUSHBUTTON   "„Ê«›ﬁ",IDOK,10,7,50,14, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    PUSHBUTTON      "≈·€«¡ «·√„—",IDCANCEL,10,25,50,14, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    CONTROL         "",XTP_IDC_STATIC_PICTURE,"Static",SS_BLACKFRAME | 
+                    SS_NOTIFY,160,17,86,80
+    CTEXT           "",XTP_IDC_STATIC_PREVIEW,166,117,73,54,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    LTEXT           "‘›«›",IDC_STATIC,82,157,27,8, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    LTEXT           "",XTP_ID_CLR_ERASE,116,153,15,15,SS_NOTIFY
+    CTEXT           "√œÊ« ",XTP_IDC_STATIC_TOOLS,81,21,60,43,SS_CENTERIMAGE | 
+                    NOT WS_VISIBLE | WS_BORDER
+    CTEXT           "‰ﬁ··",XTP_IDC_STATIC_MOVE,80,83,62,12,SS_CENTERIMAGE | 
+                    NOT WS_VISIBLE | WS_BORDER
+    CONTROL         "",XTP_ID_CLR_PICKER,"Static",SS_LEFTNOWORDWRAP | 
+                    SS_NOTIFY | WS_GROUP,127,144,15,15
+    CTEXT           "«·√·Ê«‰‰",XTP_IDC_STATIC_COLORS,78,121,68,12,
+                    SS_CENTERIMAGE | NOT WS_VISIBLE | WS_BORDER
+END
+
+XTP_IDD_PAGE_KEYBOARD DIALOGEX DISCARDABLE  0, 0, 230, 150
+EXSTYLE WS_EX_RTLREADING | WS_EX_RIGHT
+STYLE WS_CHILD | WS_CAPTION
+CAPTION "·ÊÕ… „›« ÌÕ"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "«·√Ê«„—:",XTP_IDC_TXT_COMMANDS,40,28,90,8, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    LISTBOX         XTP_IDC_LBOX_ACCEL_COMMANDS,134,39,93,74,LBS_HASSTRINGS | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP, WS_EX_RIGHT | WS_EX_RTLREADING
+    LTEXT           " ⁄ÌÌ‰«  «·„›« ÌÕ:",XTP_IDC_TXT_ASSIGNMENTS,157,28,67,8, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    LISTBOX         XTP_IDC_LBOX_KEYS,58,38,74,49,LBS_HASSTRINGS | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP, WS_EX_RIGHT | WS_EX_RTLREADING
+    LTEXT           "«÷€ÿ „› «Õ «·«Œ ’«— «·ÃœÌœ:",XTP_IDC_TXT_NEWKEY,46,91,86,8, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    EDITTEXT        XTP_IDC_EDIT_SHORTCUTKEY,58,101,73,12,ES_AUTOHSCROLL
+    PUSHBUTTON      " ⁄ÌÌ‰",XTP_IDC_BTN_ASSIGN,2,39,55,14
+    PUSHBUTTON      "≈“«·…",XTP_IDC_BTN_REMOVE,2,56,55,14
+    PUSHBUTTON      "≈⁄«œ…  ⁄ÌÌ‰ «·ﬂ·",XTP_IDC_BTN_ACCEL_RESET,2,73,55,14
+    LTEXT           "«·Ê’›:",XTP_IDC_TXT_DESC_TITLE,186,119,38,8, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    LTEXT           "",XTP_IDC_TXT_DESC_OVERVIEW,57,129,169,19,0,
+                    WS_EX_STATICEDGE
+    LTEXT           "«·›∆…:",IDC_STATIC,194,5,31,8, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    COMBOBOX        XTP_IDC_COMBO_CATEGORY,134,15,93,147,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP, WS_EX_RIGHT | WS_EX_RTLREADING
+END
+
+XTP_IDD_PAGE_TOOLBARS DIALOGEX DISCARDABLE  0, 0, 230, 150
+STYLE WS_CHILD | WS_CAPTION
+CAPTION "√‘—ÿ… √œÊ« "
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "√‘—ÿ… «·√œÊ« :",IDC_STATIC,177,5,46,8, 0, WS_EX_RIGHT
+    LISTBOX         XTP_IDC_LIST_TOOLBARS,76,15,150,131,LBS_OWNERDRAWFIXED | 
+                    LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP, WS_EX_RIGHT | WS_EX_RTLREADING
+    PUSHBUTTON      "...ÃœÌœ",XTP_IDC_BUTTON_NEW,2,15,70,14
+    PUSHBUTTON      "...≈⁄«œ…  ”„Ì…",XTP_IDC_BUTTON_RENAME,2,33,70,14
+    PUSHBUTTON      "Õ–›",XTP_IDC_BUTTON_DELETE,2,51,70,14
+    PUSHBUTTON      "...≈⁄«œ…  ⁄ÌÌ‰",XTP_IDC_BUTTON_RESET,2,69,70,14
+END
+
+XTP_IDD_PAGE_OPTIONS DIALOGEX DISCARDABLE  0, 0, 230, 150
+EXSTYLE WS_EX_RTLREADING | WS_EX_RIGHT
+STYLE WS_CHILD | WS_CAPTION
+CAPTION "ŒÌ«—« "
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "«·ﬁÊ«∆„ Ê√‘—ÿ… «·√œÊ«  «·„Œ’’…",IDC_STATIC,113,5,110,8, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,7,9,101,1, WS_EX_RIGHT | WS_EX_RTLREADING
+    CONTROL         "≈ŸÂ«— «·ﬁÊ«∆„ «·ﬂ«„·… œÊ„«",XTP_IDC_CHECK_FULL_MENUS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,17,207,10, WS_EX_RIGHT | WS_EX_RTLREADING
+    CONTROL         "≈ŸÂ«— «·ﬁÊ«∆„ «·ﬂ«„·… »⁄œ „Â·… ﬁ’Ì—…",
+                    XTP_IDC_CHECK_AFTERDELAY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,28,29,195,10, WS_EX_RIGHT | WS_EX_RTLREADING
+    PUSHBUTTON      "≈⁄«œ…  ⁄ÌÌ‰ »Ì«‰«  «” Œœ«„ «·ﬁÊ«∆„ Ê√‘—ÿ… «·√œÊ« ",
+                    XTP_IDC_BUTTON_RESETDATA,16,42,165,14, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    LTEXT           "€Ì— –·ﬂ",IDC_STATIC,197,70,24,8, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,7,74,189,1, WS_EX_RIGHT | WS_EX_RTLREADING
+    CONTROL         "—„Ê“ ﬂ»Ì—…",XTP_IDC_CHECK_LARGEICONS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,16,82,207,10, WS_EX_RIGHT | WS_EX_RTLREADING
+    CONTROL         "≈ŸÂ«—  ·„ÌÕ«  «·‘«‘… ⁄·Ï √‘—ÿ… «·√œÊ« ",XTP_IDC_CHECK_SCREENTTIPS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,93,207,10, WS_EX_RIGHT | WS_EX_RTLREADING
+    CONTROL         "≈ŸÂ«— „›« ÌÕ «·«Œ ’«— ›Ì  ·„ÌÕ«  «·‘«‘…",
+                    XTP_IDC_CHECK_SHORTCUTS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,28,104,195,10, WS_EX_RIGHT | WS_EX_RTLREADING
+    LTEXT           "Õ—ﬂ… «·ﬁÊ«∆„:",IDC_STATIC,158,117,56,8, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    COMBOBOX        XTP_IDC_COMBO_ANIMATION,76,115,79,65,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP, WS_EX_RIGHT | WS_EX_RTLREADING
+END
+
+XTP_IDD_PAGE_COMMANDS DIALOGEX DISCARDABLE  0, 0, 230, 150
+STYLE WS_CHILD | WS_CAPTION
+CAPTION "«·√Ê«„—"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "·≈÷«›… √„— ≈·Ï ‘—Ìÿ √œÊ« : Õœœ ›∆… Ê«”Õ» «·√„— „‰ „—»⁄ «·ÕÊ«— Â–« ≈·Ï ‘—Ìÿ «·√œÊ« .",
+                    IDC_STATIC,4,5,220,19, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    LTEXT           "«·›∆« :",IDC_STATIC,4,25,133,8, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    LISTBOX         XTP_IDC_LIST_CATEGORIES,145,35,81,103,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP, WS_EX_RIGHT | WS_EX_RTLREADING
+    LTEXT           "«·√Ê«„—:",IDC_STATIC,148,25,74,8, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    LISTBOX         XTP_IDC_LIST_COMMANDS,0,35,140,103,LBS_OWNERDRAWFIXED | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP, WS_EX_RIGHT | WS_EX_RTLREADING
+END
+
+XTP_IDD_NEWTOOLBAR DIALOGEX DISCARDABLE  0, 0, 186, 52
+EXSTYLE WS_EX_RTLREADING | WS_EX_RIGHT
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "‘—Ìÿ √œÊ«  ÃœÌœ"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "«”„ ‘—Ìÿ «·√œÊ« :",IDC_STATIC,82,4,100,8, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    EDITTEXT        XTP_IDC_EDIT_TOOLBARNAME,4,15,178,12,ES_AUTOHSCROLL, WS_EX_RIGHT | WS_EX_RTLREADING
+    DEFPUSHBUTTON   "„Ê«›ﬁ",IDOK,78,34,50,14, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+    PUSHBUTTON      "≈·€«¡ «·√„—",IDCANCEL,132,34,50,14, 0, WS_EX_RIGHT | WS_EX_RTLREADING
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+XTP_IDR_CUSTOMIZEMENU MENU DISCARDABLE 
+BEGIN
+    POPUP " Œ’Ì’"
+    BEGIN
+        MENUITEM "≈⁄«œ…  ⁄ÌÌ‰",                      XTP_ID_CUSTOMIZE_RESET
+        MENUITEM "Õ–›",                     XTP_ID_CUSTOMIZE_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "«·«”„:",                      XTP_ID_CUSTOMIZE_NAME
+        MENUITEM SEPARATOR
+        MENUITEM "‰”Œ ‘ﬂ· «·“—",          XTP_ID_CUSTOMIZE_COPYBUTTONIMAGE
+
+        MENUITEM "·’ﬁ ‘ﬂ· «·“—",         XTP_ID_CUSTOMIZE_PASTEBUTTONIMAGE
+
+        MENUITEM "≈⁄«œ…  ⁄ÌÌ‰ ‘ﬂ· «·“—",         XTP_ID_CUSTOMIZE_RESETBUTTONIMAGE
+
+        MENUITEM " Õ—Ì— ‘ﬂ· «·“—...",       XTP_ID_CUSTOMIZE_EDITBUTTONIMAGE
+
+        MENUITEM " €ÌÌ— ‘ﬂ· «·“—",        XTP_ID_CUSTOMIZE_CHANGEBUTTONIMAGE
+
+        MENUITEM SEPARATOR
+        MENUITEM "‰„ÿ «› —«÷Ì",              XTP_ID_CUSTOMIZE_DEFAULTSTYLE
+
+        MENUITEM "‰’ ›ﬁÿ",                  XTP_ID_CUSTOMIZE_TEXTONLY
+        MENUITEM "’Ê—… Ê‰’",             XTP_ID_CUSTOMIZE_IMAGEANDTEXT
+
+        MENUITEM SEPARATOR
+        MENUITEM "»œ¡ „Ã„Ê⁄…",              XTP_ID_CUSTOMIZE_BEGINAGROUP
+    END
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "XTPCommandBarsResource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_ADDORREMOVE     "≈÷«›… √Ê ≈“«·… «·√“—«—"
+    XTP_IDS_CUSTOMIZE_CLOSE "≈€·«ﬁ"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CUSTOMIZE       " Œ’Ì’"
+    XTP_IDS_NEWMENU         "ﬁ«∆„… ÃœÌœ…"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CONFIRM_RESETDATA 
+                            "”ÌƒœÌ Â–« ≈·Ï Õ–› ”Ã· «·√Ê«„— «· Ì «” Œœ„ Â« ›Ì Â–« «· ÿ»Ìﬁ Ê≈·Ï «” ⁄«œ… «·„Ã„Ê⁄… «·«› —«÷Ì… „‰ «·√Ê«„— «·„—∆Ì… ≈·Ï «·ﬁÊ«∆„ Ê√‘—ÿ… «·√œÊ« . ÊÂÊ ·‰ ÌƒœÌ ≈·Ï «· —«Ã⁄ ⁄‰ √Ì  Œ’Ì’«  ’—ÌÕ…. Â·  —Ìœ »«· √ﬂÌœ «·ﬁÌ«„ »–·ﬂø"
+    XTP_IDS_INVALID_NUMBER  "Â–« «·⁄œœ €Ì— ’«·Õ."
+    XTP_IDS_INVALID_FONTSIZE "˛˛ÌÃ» √‰ ÌﬂÊ‰ «·—ﬁ„ »Ì‰ 1 Ê 1638."
+    XTP_IDS_CONFIRM_RESET   "Â·  —Ìœ »«· √ﬂÌœ ≈⁄«œ…  ⁄ÌÌ‰ «· €ÌÌ—«  «· Ì √Ã—Ì  ⁄·Ï '%s' ‘—Ìÿ «·√œÊ« ø"
+    XTP_IDS_BUILTINMENUS    "ﬁÊ«∆„ „÷„¯‰…"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CUSTOM_BAR      "„Œ’’ %d"
+    XTP_IDS_ERROR_BLANKNAME "·« Ì„ﬂ‰ √‰ ÌﬂÊ‰ «”„ ‘—Ìÿ «·√œÊ«  ›«—€«. «ﬂ » «”„« „⁄Ì‰«."
+    XTP_IDS_ERROR_LIMIT     "‰«”› ·ﬁœ Ê’·  ≈·Ï «·‰Â«Ì… «·„Õœ œ…"
+    XTP_IDS_ERROR_EXISTS    "ÌÊÃœ ‘—Ìÿ √œÊ«  «”„Â '%s' »‘ﬂ· „”»ﬁ. «ﬂ » «”„« ¬Œ—."
+    XTP_IDS_RENAMETOOLBAR   "≈⁄«œ…  ”„Ì… ‘—Ìÿ √œÊ« "
+    XTP_IDS_CONFIRM_DELETE  "Â·  —Ìœ »«· √ﬂÌœ Õ–› ‘—Ìÿ «·√œÊ«  '%s'ø"
+    XTP_IDS_ALLCOMMANDS     "ﬂ«›… «·√Ê«„—"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_ID_CUSTOMIZE        "\n Œ’Ì’..."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CLR_INDIGO      "‰Ì·Ì"
+    XTP_IDS_CLR_GRAY80      "—„«œÌ-80%"
+    XTP_IDS_CLR_DARK_RED    "√Õ„— œ«ﬂ‰"
+    XTP_IDS_CLR_ORANGE      "»— ﬁ«·Ì"
+    XTP_IDS_CLR_DARK_YELLOW "√’›— œ«ﬂ‰"
+    XTP_IDS_CLR_GREEN       "√Œ÷—"
+    XTP_IDS_CLR_TEAL        "√“—ﬁ „Œ÷—"
+    XTP_IDS_CLR_BLUE        "√“—ﬁ"
+    XTP_IDS_CLR_BLUEGRAY    "√“—ﬁ-—„«œÌ"
+    XTP_IDS_CLR_GRAY50      "—„«œÌ-50%"
+    XTP_IDS_CLR_RED         "√Õ„—"
+    XTP_IDS_CLR_LIGHTORANGE "»— ﬁ«·Ì ›« Õ"
+    XTP_IDS_CLR_LIME        "·Ì„Ê‰Ì"
+    XTP_IDS_CLR_SEA_GREEN   "√Œ÷— »Õ—Ì"
+    XTP_IDS_CLR_AQUA        "√“—ﬁ „«∆Ì"
+    XTP_IDS_CLR_LIGHT_BLUE  "√“—ﬁ ›« Õ"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CLR_VIOLET      "»‰›”ÃÌ"
+    XTP_IDS_CLR_GRAY40      "—„«œÌ-40%"
+    XTP_IDS_CLR_PINK        "“Â—Ì"
+    XTP_IDS_CLR_GOLD        "–Â»"
+    XTP_IDS_CLR_YELLOW      "√’›—"
+    XTP_IDS_CLR_BRIGHT_GREEN "√Œ÷— ”«ÿ⁄"
+    XTP_IDS_CLR_TURQUOISE   " —ﬂÊ«“Ì"
+    XTP_IDS_CLR_SKY_BLUE    "√“—ﬁ ”„«ÊÌ"
+    XTP_IDS_CLR_PLUM        "√—ÃÊ«‰Ì „“—ﬁ œ«ﬂ‰"
+    XTP_IDS_CLR_GRAY25      "—„«œÌ-25%"
+    XTP_IDS_CLR_ROSE        "Ê—œÌ"
+    XTP_IDS_CLR_TAN         "√”„— „’›—"
+    XTP_IDS_CLR_LIGHT_YELLOW "√’›— ›« Õ"
+    XTP_IDS_CLR_LIGHT_GREEN "√Œ÷— ›« Õ"
+    XTP_IDS_CLR_LIGHT_TURQUOISE " —ﬂÊ«“Ì ›« Õ"
+    XTP_IDS_CLR_PALE_BLUE   "√“—ﬁ ‘«Õ»"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CLR_BLACK       "√”Êœ"
+    XTP_IDS_CLR_BROWN       "»‰Ì"
+    XTP_IDS_CLR_OLIVE_GREEN "√Œ÷— “Ì Ì"
+    XTP_IDS_CLR_DARK_GREEN  "√Œ÷— œ«ﬂ‰"
+    XTP_IDS_CLR_DARK_TEAL   "√“—ﬁ „Œ÷— œ«ﬂ‰"
+    XTP_IDS_CLR_DARK_BLUE   "√“—ﬁ œ«ﬂ‰"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CLR_LAVENDER    "√—ÃÊ«‰Ì ‘«Õ»"
+    XTP_IDS_CLR_WHITE       "√»Ì÷"
+    XTP_IDS_CLR_GRAY        "—„«œÌ"
+    XTP_IDS_CLR_MAROON      "√Õ„— œ«ﬂ‰"
+    XTP_IDS_CLR_OLIVE       "“Ì Ì"
+    XTP_IDS_CLR_NAVY        "√“—ﬁ œ«ﬂ‰"
+    XTP_IDS_CLR_PURPLE      "√—ÃÊ«‰Ì"
+    XTP_IDS_CLR_SILVER      "›÷…"
+    XTP_IDS_CLR_FUCHSIA     "“Â—Ì"
+    XTP_IDS_CLR_NOFILL      "»·«  ⁄»∆…\n»·«  ⁄»∆…"
+    XTP_IDS_AUTOMATIC       "·Ê‰  ·ﬁ«∆Ì\n·Ê‰  ·ﬁ«∆Ì"
+    XTP_IDS_MORE_COLORS     "√·Ê«‰ ≈÷«›Ì…...˛"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CONFIRM_KEYBOARD 
+                            "Â· «‰  „‰«ﬂœ  —Ìœ  ‰÷Ìœ „› «Õ «·„Â„…ø Âœ« «·ﬁ—«— ”Ì“Ì· Ã„Ì⁄ „›« ÌÕ «·„Â„… ⁄·Ï „” ÊÏ «·ﬂ «»…. "
+    XTP_IDS_CONFIRM_REASSIGN 
+                            "ÂœÂ «·ÿ—Ìﬁ «·„Œ ’—… Õ«·Ì« „⁄Ì‰…. n\  Â·  —Ìœ  ⁄ÌÌ‰Â« „—… «Œ—Ïø "
+    XTP_IDS_CONFIRM_UPDATE  "
+‰ ÌÃ… · ÃœÌœ „⁄·Ê„«  «·»—«„Ã ﬁ«∆„… «· ‘€Ì· S%ﬁœ  €Ì— .Â·  Õ» ≈⁄«œ…  ⁄ÌÌ‰ ‘—Ìÿ «·«œÊ«  «·„⁄Ì‰ Ê »œ Ì·Â »«·„⁄„Ê„«  «·ÃœÌœ…ø
+"
+    XTP_IDS_CUSTOMIZE_RESET "≈⁄«œ…  ⁄ÌÌ‰"
+    XTP_IDS_IMAGEEDITOR_FILTER 
+                            "ﬂ«›… „·›«  «·’Ê—|*.bmp;*.wmf;*.emf;*.ico;*.dib;*.cur;*.gif;*.jpg|Bitmaps(*.Bmp;*.Dib)|*.bmp;*.dib|Metafiles(*.Wmf;*.Emf)|*.wmf;*.emf|Icons(*.Ico;*.Cur)|*.ico;*.cur|GIF(*.Gif)|*.gif|JPEG(*.Jpg)|*.jpg|All Files(*.*)|*.*||"
+    XTP_ID_TOOLBAR_EXPAND   "\nŒÌ«—«  ‘—Ìÿ «·√œÊ« "
+    XTP_ID_TOOLBAR_HIDE     "\n≈€·«ﬁ"
+    XTP_ID_MENUBAR_CLOSE    "\n≈€·«ﬁ «·≈ÿ«—"
+    XTP_ID_MENUBAR_RESTORE  "\n«” ⁄«œ… «·≈ÿ«—"
+    XTP_ID_MENUBAR_MINIMIZE "\n ’€Ì— «·≈ÿ«—"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_ID_BUTTON_PENCIL    "\nﬁ·„"
+    XTP_ID_BUTTON_FILL      "\n·Ê‰ «· ⁄»∆…"
+    XTP_ID_BUTTON_GETCOLOR  "\n«‰ ﬁ«¡ ·Ê‰"
+    XTP_ID_BUTTON_LINE      "\n”ÿ—"
+    XTP_ID_BUTTON_RECTANGLE "\n„” ÿÌ·"
+    XTP_ID_BUTTON_CIRCLE    "\nﬁÿ⁄ ‰«ﬁ’"
+    XTP_ID_BUTTON_COPY      "\n‰”Œ"
+    XTP_ID_BUTTON_PASTE     "\n·’ﬁ"
+    XTP_ID_BUTTON_CLEAR     "\n„”Õ"
+    XTP_ID_BUTTON_UNDO      "\n —«Ã⁄"
+    XTP_ID_BUTTON_REDO      "\n≈⁄«œ…"
+    XTP_ID_BUTTON_OPEN      "\n«” Ì—«œ „‰ „·›"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_ANIMATION_SYSDEF "(≈⁄œ«œ «› —«÷Ì ··‰Ÿ«„)"
+    XTP_IDS_ANIMATION_RANDOM "⁄‘Ê«∆Ì…"
+    XTP_IDS_ANIMATION_UNFOLD "„‰ﬂ‘›…"
+    XTP_IDS_ANIMATION_SLIDE "‘—ÌÕ…"
+    XTP_IDS_ANIMATION_FADE  " ÷«ƒ·"
+    XTP_IDS_ANIMATION_NONE  "»·«"
+    XTP_ID_WORKSAPCE_MOVEPREVIOUS "\n ≈‰ ﬁ· ≈·Ï “— «·Ã„«⁄… «·«Ê·Ï. "
+    XTP_ID_WORKSAPCE_MOVENEXT "\n ≈‰ ﬁ· ≈·Ï “— «·Ã„«⁄… «·À«‰Ì "
+    XTP_ID_WORKSAPCE_NEWHORIZONTAL "\n  “— «›ﬁÌ ÃœÌœ"
+    XTP_ID_WORKSAPCE_NEWVERTICAL "\n  “— ⁄„ÊœÌ ÃœÌœ"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_ID_WORKSAPCE_CANCEL "≈·€«¡ «·√„—"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

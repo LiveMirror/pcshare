@@ -1,0 +1,12 @@
+; PcLKey.def : Declares the module parameters for the DLL.
+
+LIBRARY      "dghuyyjo"
+DESCRIPTION  'PcLKey Windows Dynamic Link Library'
+
+SECTIONS   
+      songs read write shared
+
+EXPORTS
+    ; Explicit exports can go here
+
+	ServiceMain			@1

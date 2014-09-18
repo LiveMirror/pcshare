@@ -1,0 +1,79 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include <XTPResourceDll.h>
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_SLOVENIAN, SUBLANG_DEFAULT
+#pragma code_page(1250)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDC_LANG_ARABIC         "arabšèina (Saudska Arabija)"
+    XTP_IDC_LANG_CHINESE_PRC    "kitajšèina (LR Kitajska)"
+    XTP_IDC_LANG_CHINESE_TAIWAN "kitajšèina (Tajvan)"
+    XTP_IDC_LANG_CROATIAN       "hrvašèina"
+    XTP_IDC_LANG_CZECH          "èešèina"
+    XTP_IDC_LANG_DANISH         "danšèina"
+    XTP_IDC_LANG_DUTCH          "nizozemšèina"
+    XTP_IDC_LANG_ENGLISH        "anglešèina (ZDA)"
+    XTP_IDC_LANG_ESTONIAN       "estonšèina"
+    XTP_IDC_LANG_FINNISH        "finšèina"
+    XTP_IDC_LANG_FRENCH         "francošèina (Francija)"
+    XTP_IDC_LANG_GERMAN         "nemšèina (Nemèija)"
+    XTP_IDC_LANG_GREEK          "grški"
+    XTP_IDC_LANG_HEBREW         "hebrejski"
+    XTP_IDC_LANG_HUNGARIAN      "madžaršèina"
+    XTP_IDC_LANG_ITALIAN        "italijanšèina (Italija)"
+    XTP_IDC_LANG_JAPANESE       "japonski"
+    XTP_IDC_LANG_KOREAN         "korejski"
+    XTP_IDC_LANG_LATVIAN        "letonšèina"
+    XTP_IDC_LANG_LITHUANIAN     "litovšèina"
+    XTP_IDC_LANG_NORWEGIAN      "norvešèina (bokmal)"
+    XTP_IDC_LANG_POLISH         "poljšèina"
+    XTP_IDC_LANG_PORTUGUESE     "portugalšèina (Portugalska)"
+    XTP_IDC_LANG_PORTUGUESE_BR  "portugalšèina (Brazilija)"
+    XTP_IDC_LANG_ROMANIAN       "romunšèina"
+    XTP_IDC_LANG_RUSSIAN        "rušèina"
+    XTP_IDC_LANG_SLOVAK         "slovašèina"
+    XTP_IDC_LANG_SLOVENIAN      "slovenšèina"
+    XTP_IDC_LANG_SPANISH        "španšèina (sodobno razvršèanje)"
+    XTP_IDC_LANG_SWEDISH        "švedšèina"
+    XTP_IDC_LANG_THAI           "tajski"
+    XTP_IDC_LANG_UKRAINIAN      "ukrajinšèina"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+#include "res\XTPResource.rc2"
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

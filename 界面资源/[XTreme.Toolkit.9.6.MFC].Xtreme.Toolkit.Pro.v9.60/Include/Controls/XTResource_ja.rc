@@ -1,0 +1,441 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "XTResource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_JAPANESE, SUBLANG_DEFAULT
+#pragma code_page(932)
+#endif //_WIN32
+
+#ifndef _XTP_NO_BINARY_RESOURCES
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+XT_IDC_DRAGMOVE         CURSOR     DISCARDABLE        "Controls/res/dragmove.cur"
+XT_IDC_HAND             CURSOR     DISCARDABLE        "Controls/res/hand.cur"
+XT_IDC_DRAGNONE         CURSOR     DISCARDABLE        "Controls/res/dragnone.cur"
+XT_IDC_HANDNONE         CURSOR     DISCARDABLE        "Controls/res/handnone.cur"
+XT_IDC_DRAGCOPY         CURSOR     DISCARDABLE        "Controls/res/dragcopy.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+XT_IDB_BTN_OUT          BITMAP     DISCARDABLE        "Controls/res/btn_out.bmp"
+XT_IDB_LIGHTBULB        BITMAP     FIXED IMPURE       "Controls/res/lightbulb.bmp"
+XT_IDB_LISTEDIT         BITMAP     DISCARDABLE        "Controls/res/btn_listedit.bmp"
+XT_IDB_FONTTYPE         BITMAP     DISCARDABLE        "Controls/res/font.bmp"
+XT_IDB_SCROLL_ARW       BITMAP     DISCARDABLE        "Controls/res/scroll.bmp"
+XT_IDB_CHECKLISTBOX     BITMAP     FIXED IMPURE       "Controls/res/checklist.bmp"
+XT_IDB_CHECKLISTBOX_3D  BITMAP     FIXED IMPURE       "Controls/res/checklist_3d.bmp"
+XTP_IDB_TASKPANEL_GRIPPER BITMAP     DISCARDABLE        "Controls/res/TaskPanelGripper.bmp"
+XTP_IDB_TASKPANEL_GRIPPER_SPECIAL BITMAP     DISCARDABLE        "Controls/res/TaskPanelGripperSpecial.bmp"
+XT_IDR_TBAR_HDR         BITMAP     DISCARDABLE        "Controls/res/tbar_hdr.bmp"
+XT_IDR_TBAR_OUT         BITMAP     MOVEABLE PURE      "Controls/res/tbar_out.bmp"
+XT_IDR_TBAR_HEXEDIT     BITMAP     DISCARDABLE        "Controls/res/tbar_hex.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+XT_IDI_XTREME           ICON       DISCARDABLE        "res\\xtreme.ico"
+XTP_IDI_SHORTCUTS_EXPAND_ALPHA ICON       DISCARDABLE        "Controls/res/exp_alpha.ico"
+XTP_IDI_SHORTCUTS_EXPAND_NORMAL ICON       DISCARDABLE        "Controls/res/exp_normal.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+XT_IDR_TBAR_HDR TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      XT_IDC_SORTASC
+    BUTTON      XT_IDC_SORTDSC
+    SEPARATOR
+    BUTTON      XT_IDC_ALIGNLEFT
+    BUTTON      XT_IDC_ALIGNCENTER
+    BUTTON      XT_IDC_ALIGNRIGHT
+END
+
+XT_IDR_TBAR_OUT TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      XT_IDC_LARGEICON
+    BUTTON      XT_IDC_SMALLICON
+END
+
+XT_IDR_TBAR_HEXEDIT TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_EDIT_UNDO
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_EDIT_CLEAR
+END
+
+#endif
+
+#ifndef _XTP_NO_COMMONCONTROLS_RESOURCES
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+XT_IDD_TIPOFTHEDAY DIALOGEX 0, 0, 279, 157
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ﾜﾝﾎﾟｲﾝﾄ"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "閉じる",IDOK,221,136,50,14
+    CONTROL         "起動時にﾜﾝﾎﾟｲﾝﾄを表示",XT_IDC_CHK_DAYTIP_SHOW,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,140,82,10
+    PUSHBUTTON      "次を表示",XT_IDC_BTN_DAYTIP_NEXT,162,136,50,14
+    CONTROL         "",XT_IDC_BTN_DAYTIP_BORDER,"Static",SS_GRAYFRAME | NOT 
+                    WS_VISIBLE,8,7,263,123
+END
+
+XT_IDD_COLORCUSTOM DIALOG DISCARDABLE  0, 0, 147, 161
+STYLE WS_CHILD | WS_DISABLED | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | 
+    WS_CAPTION
+CAPTION "ユーザー設定"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "色:",XT_IDC_TXT_COLORS,2,4,43,10
+    CONTROL         "",XT_IDC_CLR_WND,"Static",SS_BLACKFRAME | WS_TABSTOP,3,
+                    15,119,86
+    CONTROL         "",XT_IDC_CLR_LUM,"Static",SS_BLACKFRAME | WS_TABSTOP,
+                    126,15,20,86
+    LTEXT           "色合い:",XT_IDC_TXT_HUE,7,108,21,8
+    EDITTEXT        XT_IDC_EDIT_HUE,34,106,33,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",XT_IDC_SPIN_HUE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,58,105,
+                    10,14
+    LTEXT           "鮮やかさ:",XT_IDC_TXT_SAT,7,125,25,8
+    EDITTEXT        XT_IDC_EDIT_SAT,34,122,33,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin2",XT_IDC_SPIN_SAT,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,58,122,
+                    10,14
+    LTEXT           "明るさ:",XT_IDC_TXT_LUM,7,140,19,8
+    EDITTEXT        XT_IDC_EDIT_LUM,34,138,33,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin3",XT_IDC_SPIN_LUM,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,58,137,
+                    10,14
+    LTEXT           "赤:",XT_IDC_TXT_RED,74,108,23,8
+    EDITTEXT        XT_IDC_EDIT_RED,98,106,33,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",XT_IDC_SPIN_RED,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,122,105,
+                    11,14
+    LTEXT           "緑:",XT_IDC_TXT_GREEN,74,125,23,8
+    EDITTEXT        XT_IDC_EDIT_GREEN,98,122,33,13,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "Spin2",XT_IDC_SPIN_GREEN,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,122,122,
+                    11,14
+    LTEXT           "青:",XT_IDC_TXT_BLUE,74,140,23,8
+    EDITTEXT        XT_IDC_EDIT_BLUE,98,138,33,13,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin3",XT_IDC_SPIN_BLUE,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_ARROWKEYS,122,137,
+                    11,14
+END
+
+XT_IDD_COLORSTANDARD DIALOG DISCARDABLE  0, 0, 147, 161
+STYLE WS_CHILD | WS_DISABLED | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | 
+    WS_CAPTION
+CAPTION "標準"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "色:",XT_IDC_TXT_COLORS,2,4,43,10
+    CONTROL         "",XT_IDC_CLR_HEX,"Static",SS_BLACKFRAME | WS_TABSTOP,0,
+                    15,147,145
+END
+
+XT_IDD_WINDOWLIST DIALOG DISCARDABLE  0, 0, 301, 164
+STYLE WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU | WS_THICKFRAME
+CAPTION "ウィンドウの整列"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "ｳｨﾝﾄﾞｳの選択:",IDC_STATIC,7,7,147,8
+    LISTBOX         XT_IDC_LBOX_WINDOWS,7,17,216,140,LBS_SORT | 
+                    LBS_OWNERDRAWFIXED | LBS_HASSTRINGS | 
+                    LBS_NOINTEGRALHEIGHT | LBS_EXTENDEDSEL | WS_VSCROLL | 
+                    WS_HSCROLL | WS_TABSTOP
+    PUSHBUTTON      "ウィンドウの選択",XT_IDC_BTN_ACTIVATE,233,7,62,14
+    PUSHBUTTON      "OK",IDOK,233,24,62,14
+    PUSHBUTTON      "上書き保存",XT_IDC_BTN_SAVE,233,41,62,14
+    PUSHBUTTON      "ウィンドウを閉じる",XT_IDC_BTN_CLOSEWINDOWS,233,58,62,14
+    PUSHBUTTON      "重ねて表示",XT_IDC_BTN_CASCADE,233,75,62,14
+    PUSHBUTTON      "上下に並べて表示",XT_IDC_BTN_TILEHORZ,233,92,62,14
+    PUSHBUTTON      "左右に並べて表示",XT_IDC_BTN_TILEVERT,233,109,62,14
+    PUSHBUTTON      "最小化",XT_IDC_BTN_MINIMIZE,233,126,62,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+XT_IDM_POPUP MENU DISCARDABLE 
+BEGIN
+    POPUP "RClickOutlookBar"
+    BEGIN
+        MENUITEM "小さいアイコン",                XT_IDC_SMALLICON
+        MENUITEM "大きいアイコン",                XT_IDC_LARGEICON
+    END
+    POPUP "RClickHexEdit"
+    BEGIN
+        MENUITEM "元に戻す",                       ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "切り取り",                        ID_EDIT_CUT
+        MENUITEM "コピー",                       ID_EDIT_COPY
+        MENUITEM "貼り付け",                      ID_EDIT_PASTE
+        MENUITEM "削除",                     ID_EDIT_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "すべて選択",                 ID_EDIT_SELECT_ALL
+    END
+    POPUP "RClickHeader"
+    BEGIN
+        MENUITEM "昇順で並べ替え",              XT_IDC_SORTASC
+        MENUITEM "降順で並べ替え",             XT_IDC_SORTDSC
+        MENUITEM SEPARATOR
+        POPUP "配置"
+        BEGIN
+            MENUITEM "左揃え",                  XT_IDC_ALIGNLEFT
+            MENUITEM "左右中央揃え",                XT_IDC_ALIGNCENTER
+            MENUITEM "右揃え",                 XT_IDC_ALIGNRIGHT
+        END
+    END
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "XTResource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDC_BTN_NEW          "新規作成"
+    XT_IDC_BTN_DELETE       "削除"
+    XT_IDC_BTN_UP           "1 つ上のレベルへ移動"
+    XT_IDC_BTN_DOWN         "1 つ下のレベルへ移動"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDS_REG_SETTINGS     "Settings"
+    XT_IDS_REG_WNDPOS       "Window Position"
+    XT_IDS_REG_COLINFO      "Column Info"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDS_NAME             "プロパティ名"
+    XT_IDS_SIZE             "サイズ"
+    XT_IDS_TYPE             "種類"
+    XT_IDS_MODIFIED         "更新日時"
+    XT_IDS_COLOR_AUTO       "自動"
+    XT_IDS_COLOR_CUST       "ユーザー設定..."
+    XT_IDS_SELDIR           "選択フォルダ:"
+    XT_IDS_DOT              "..."
+    XT_IDS_DEFEXT           "*.*"
+    XT_IDS_DEFFILT          "すべてのファイル (*.*)|*.*||"
+    XT_IDS_DEFTITLE         "ディレクトリ名:"
+    XT_IDS_CLICKKEEPOPEN    "ピンでフォルダ一覧を固定"
+    XT_IDS_SE_0             "オペレーティングシステムは、メモリ、またはリソースが不足しています。"
+    XT_IDS_SE_ERR_FNF       "指定されたファイルは見つかりませんでした。"
+    XT_IDS_SE_ERR_PNF       "指定されたパスは見つかりませんでした。"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDS_SE_ERR_ACCESSDENIED 
+                            "オペレーティングシステムは、指定されたファイルへのアクセスを拒否しました。"
+    XT_IDS_SE_ERR_OOM       "オペレーションを完了するための十分なメモリがありませんでした。"
+    XT_IDS_SE_ERR_BAD_FORMAT 
+                            "この.exeファイルは無効です(非Win32.exeあるいはエラーが含まれています)。"
+    XT_IDS_SE_ERR_SHARE     "共有違反が発生しました。"
+    XT_IDS_SE_ERR_ASSOCINCOMPLETE 
+                            "このファイル名は無効です。"
+    XT_IDS_SE_ERR_DDETIMEOUT 
+                            "タイムアウトのため、DDEトランザクションは完了しませんでした。"
+    XT_IDS_SE_ERR_DDEFAIL   "DDE処理は失敗しました。"
+    XT_IDS_SE_ERR_DDEBUSY   "他のDDEトランザクションが実行されていたので、DDEトランザクションは完了することができませんでした。"
+    XT_IDS_SE_ERR_NOASSOC   "指定したファイルの拡張子に関連付けられたアプリケーションはありません。"
+    XT_IDS_SE_ERR_DLLNOTFOUND 
+                            "指定されたDLLは見つかりませんでした。"
+    XT_IDS_SE_ERR_UNKOWN    "不明なエラー%d が起きました。"
+    XT_IDS_CLR_BLACK        "黒"
+    XT_IDS_CLR_BROWN        "茶"
+    XT_IDS_CLR_OLIVE_GREEN  "オリーブ"
+    XT_IDS_CLR_DARK_GREEN   "濃い緑"
+    XT_IDS_CLR_DARK_TEAL    "濃い青緑"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDC_SORTASC          "昇順並べ替え\n昇順並べ替え"
+    XT_IDC_SORTDSC          "降順並べ替え\n降順並べ替え"
+    XT_IDC_ALIGNLEFT        "段落を左に詰めて配置します。\n左詰め配置"
+    XT_IDC_ALIGNCENTER      "段落を中央に配置します。\n中央に配置"
+    XT_IDC_ALIGNRIGHT       "段落を右に詰めて配置します。\n右詰め配置"
+    XT_IDC_LARGEICON        "大きいアイコンで表示します。\n大きいアイコン"
+    XT_IDC_SMALLICON        "小さいアイコンで表示します\n小さいアイコン"
+    XT_IDC_REMOVEITEM       "削除"
+    XT_IDC_RENAMEITEM       "ショートカット名の変更"
+    XT_IDC_REMOVEGROUP      "グループの削除"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDC_RENAMEGROUP      "グループ名の変更"
+    XT_IDS_HEX              "16 進"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDS_STD_COLORS       "標準の色"
+    XT_IDS_TIPTEXT          "ヒント"
+    XT_IDS_DIDYOUKNOW       "ワンポイント"
+    XT_IDS_FILE_ABSENT      "指定のファイルは存在しません。"
+    XT_IDS_FILE_CORRUPT     "ファイルの読み込みエラーです。"
+    XT_IDS_COLOR_CAPTION    "色の設定"
+    XT_IDS_NEW              "新規作成"
+    XT_IDS_CURRENT          "最新"
+    XT_IDS_DIRECTORIES      "ファイルの場所:"
+    XT_IDS_FILES            "ファイル:"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDS_CLR_DARK_BLUE    "濃い青"
+    XT_IDS_CLR_INDIGO       "インディゴ"
+    XT_IDS_CLR_GRAY80       "80% 灰色"
+    XT_IDS_CLR_DARK_RED     "濃い赤"
+    XT_IDS_CLR_ORANGE       "オレンジ"
+    XT_IDS_CLR_DARK_YELLOW  "濃い黄"
+    XT_IDS_CLR_GREEN        "緑"
+    XT_IDS_CLR_TEAL         "青緑"
+    XT_IDS_CLR_BLUE         "青"
+    XT_IDS_CLR_BLUEGRAY     "ブルーグレー"
+    XT_IDS_CLR_GRAY50       "50% 灰色"
+    XT_IDS_CLR_RED          "赤"
+    XT_IDS_CLR_LIGHTORANGE  "薄いオレンジ"
+    XT_IDS_CLR_LIME         "ライム"
+    XT_IDS_CLR_SEA_GREEN    "シーグリーン"
+    XT_IDS_CLR_AQUA         "アクア"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDS_CLR_LIGHT_BLUE   "薄い青"
+    XT_IDS_CLR_VIOLET       "紫"
+    XT_IDS_CLR_GRAY40       "40% 灰色"
+    XT_IDS_CLR_PINK         "ピンク"
+    XT_IDS_CLR_GOLD         "ゴールド"
+    XT_IDS_CLR_YELLOW       "黄"
+    XT_IDS_CLR_BRIGHT_GREEN "明るい緑"
+    XT_IDS_CLR_TURQUOISE    "水色"
+    XT_IDS_CLR_SKY_BLUE     "スカイブルー"
+    XT_IDS_CLR_PLUM         "プラム"
+    XT_IDS_CLR_GRAY25       "25% 灰色"
+    XT_IDS_CLR_ROSE         "ローズ"
+    XT_IDS_CLR_TAN          "ベージュ"
+    XT_IDS_CLR_LIGHT_YELLOW "薄い黄"
+    XT_IDS_CLR_LIGHT_GREEN  "薄い緑"
+    XT_IDS_CLR_LIGHT_TURQUOISE "薄い水色"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XT_IDS_CLR_PALE_BLUE    "ペールブルー"
+    XT_IDS_CLR_LAVENDER     "ラベンダー"
+    XT_IDS_CLR_WHITE        "白"
+    XT_IDS_CLR_GRAY         "灰色"
+    XT_IDS_CLR_MAROON       "マロン"
+    XT_IDS_CLR_OLIVE        "オリーブ"
+    XT_IDS_CLR_NAVY         "紺"
+    XT_IDS_CLR_PURPLE       "紫"
+    XT_IDS_CLR_SILVER       "シルバー"
+    XT_IDS_CLR_FUCHSIA      "赤紫"
+    XT_IDS_CLR_NOFILL       "塗りつぶしなし"
+    XT_IDS_CLR_NOFILL_TIP   "色なし"
+    XT_IDS_AUTOMATIC        "自動"
+    XT_IDS_AUTOMATIC_TIP    "色の自動設定"
+    XT_IDS_MORE_COLORS      "その他の色..."
+    XT_IDS_MORE_COLORS_TIP  "色の設定"
+END
+
+#endif
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_ID_SHORTCUT_SHOW_MORE "表示するボタンを増やす"
+    XTP_ID_SHORTCUT_SHOW_FEWER "表示するボタンを減らす"
+    XTP_IDS_SHORTCUT_CONFIGURE "設定ボタン"
+END
+
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

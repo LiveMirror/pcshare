@@ -1,0 +1,10 @@
+; PcMain.def : Declares the module parameters for the DLL.
+
+LIBRARY      "PcMain"
+DESCRIPTION  'PcMain Windows Dynamic Link Library'
+
+EXPORTS
+    ; Explicit exports can go here
+	
+	Vip20101125			@1
+	WorkMainF			@2

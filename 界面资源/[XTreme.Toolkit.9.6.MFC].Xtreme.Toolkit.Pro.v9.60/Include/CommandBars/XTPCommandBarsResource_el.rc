@@ -1,0 +1,417 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "XTPCommandBarsResource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_GREEK, SUBLANG_DEFAULT
+#pragma code_page(1253)
+#endif //_WIN32
+
+#ifndef _XTP_NO_BINARY_RESOURCES
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+XTP_IDR_TOOLBAR_TOOLS   BITMAP     DISCARDABLE        "CommandBars/res/ImageEditorIcons.bmp"
+XTP_IDR_TOOLBAR_TOOLS32 BITMAP     DISCARDABLE        "CommandBars/res/ImageEditorIcons32.bmp "
+XTP_IDB_MENUBAR_ICONS   BITMAP     DISCARDABLE        "CommandBars/res/MenuBarIcons.bmp"
+XTP_ID_CUSTOMIZE_CHANGEBUTTONIMAGE BITMAP     DISCARDABLE        "CommandBars/res/UserIcons.bmp"
+XTP_ID_WORKSAPCE_NEWHORIZONTAL BITMAP     DISCARDABLE        "CommandBars/res/TabGroups.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+XTP_IDC_COMMANDBARS_DRAGCOPY CURSOR     DISCARDABLE        "CommandBars/res/dragcopypro.cur"
+XTP_IDC_COMMANDBARS_DRAGMOVE CURSOR     DISCARDABLE        "CommandBars/res/dragmovepro.cur"
+XTP_IDC_COMMANDBARS_DRAGDELETE CURSOR     DISCARDABLE        "CommandBars/res/dragdeletepro.cur"
+XTP_IDC_COMMANDBARS_LINE CURSOR     DISCARDABLE        "CommandBars/res/line.cur"
+XTP_IDC_COMMANDBARS_PICKCOLOR CURSOR     DISCARDABLE        "CommandBars/res/pickcolor.cur"
+XTP_IDC_COMMANDBARS_FILLCOLOR CURSOR     DISCARDABLE        "CommandBars/res/fillcolor.cur"
+XTP_IDC_COMMANDBARS_PENCIL CURSOR     DISCARDABLE        "CommandBars/res/pencil.cur"
+XTP_IDC_WORKSAPCE_NEW   CURSOR     DISCARDABLE        "CommandBars/res/WorksapceNew.cur"
+XTP_IDC_WORKSAPCE_DELETE CURSOR     DISCARDABLE        "CommandBars/res/WorksapceDelete.cur"
+
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+XTP_IDD_IMAGEEDITOR_DIALOG DIALOGEX 0, 0, 253, 185
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Επεξεργασία Κουμπιών"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "Εικόνα",IDC_STATIC,7,7,23,8
+    GROUPBOX        "Χρώματα",IDC_STATIC,102,106,80,71
+    GROUPBOX        "Μετακίνηση",IDC_STATIC,101,72,81,31
+    GROUPBOX        "Προεπισκόπηση",IDC_STATIC,7,106,86,71
+    GROUPBOX        "Εργαλεία",IDC_STATIC,101,9,81,60
+    DEFPUSHBUTTON   "ΟΚ",IDOK,193,7,50,14
+    PUSHBUTTON      "’κυρο",IDCANCEL,193,25,50,14
+    CONTROL         "",XTP_IDC_STATIC_PICTURE,"Static",SS_BLACKFRAME | 
+                    SS_NOTIFY,7,17,86,80
+    CTEXT           "",XTP_IDC_STATIC_PREVIEW,14,117,73,54,SS_CENTERIMAGE,
+                    WS_EX_STATICEDGE
+    LTEXT           "Διαφανές",IDC_STATIC,135,156,39,8
+    LTEXT           "",XTP_ID_CLR_ERASE,116,153,15,15,SS_NOTIFY
+    CTEXT           "Εργαλεία",XTP_IDC_STATIC_TOOLS,112,21,60,43,SS_CENTERIMAGE | 
+                    NOT WS_VISIBLE | WS_BORDER
+    CTEXT           "Μετακίνηση",XTP_IDC_STATIC_MOVE,111,83,62,12,SS_CENTERIMAGE | 
+                    NOT WS_VISIBLE | WS_BORDER
+    CONTROL         "",XTP_ID_CLR_PICKER,"Static",SS_LEFTNOWORDWRAP | 
+                    SS_NOTIFY | WS_GROUP,109,144,15,15
+    CTEXT           "Χρώματα",XTP_IDC_STATIC_COLORS,107,121,68,12,
+                    SS_CENTERIMAGE | NOT WS_VISIBLE | WS_BORDER
+END
+
+XTP_IDD_PAGE_KEYBOARD DIALOG DISCARDABLE  0, 0, 230, 150
+STYLE WS_CHILD | WS_CAPTION
+CAPTION "Πληκτρολόγιο"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Εντολές:",XTP_IDC_TXT_COMMANDS,2,28,38,8
+    LISTBOX         XTP_IDC_LBOX_ACCEL_COMMANDS,2,39,93,74,LBS_HASSTRINGS | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Αντιστοιχίσεις πλήκτρων:",XTP_IDC_TXT_ASSIGNMENTS,100,28,67,8
+    LISTBOX         XTP_IDC_LBOX_KEYS,100,38,75,49,LBS_HASSTRINGS | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Πλήκτρο συντόμευσης:",XTP_IDC_TXT_NEWKEY,100,91,76,8
+    EDITTEXT        XTP_IDC_EDIT_SHORTCUTKEY,100,101,75,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Αντιστοίχιση",XTP_IDC_BTN_ASSIGN,179,39,49,14
+    PUSHBUTTON      "Κατάργηση",XTP_IDC_BTN_REMOVE,179,56,49,14
+    PUSHBUTTON      "Επαναφορά όλων",XTP_IDC_BTN_ACCEL_RESET,179,73,49,14
+    LTEXT           "Περιγραφή:",XTP_IDC_TXT_DESC_TITLE,2,119,38,8
+    LTEXT           "",XTP_IDC_TXT_DESC_OVERVIEW,2,129,173,19,0,
+                    WS_EX_STATICEDGE
+    LTEXT           "Κατηγορία:",IDC_STATIC,2,5,31,8
+    COMBOBOX        XTP_IDC_COMBO_CATEGORY,2,15,93,147,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+XTP_IDD_PAGE_TOOLBARS DIALOG DISCARDABLE  0, 0, 230, 150
+STYLE WS_CHILD | WS_CAPTION
+CAPTION "Γραμμές εργαλείων"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Γραμμές εργαλείων:",IDC_STATIC,4,5,37,8
+    LISTBOX         XTP_IDC_LIST_TOOLBARS,4,15,150,131,LBS_OWNERDRAWFIXED | 
+                    LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "Δημιουργία...",XTP_IDC_BUTTON_NEW,158,15,70,14
+    PUSHBUTTON      "Μετονομασία...",XTP_IDC_BUTTON_RENAME,158,33,70,14
+    PUSHBUTTON      "Διαγραφή",XTP_IDC_BUTTON_DELETE,158,51,70,14
+    PUSHBUTTON      "Επαναφορά...",XTP_IDC_BUTTON_RESET,158,69,70,14
+END
+
+XTP_IDD_PAGE_OPTIONS DIALOG DISCARDABLE  0, 0, 230, 150
+STYLE WS_CHILD | WS_CAPTION
+CAPTION "Επιλογές"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Χρήση προσωπικών μενού",IDC_STATIC,7,5,110,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,122,9,101,1
+    CONTROL         "Πάντα εμφάνιση ολόκληρων των μενού",XTP_IDC_CHECK_FULL_MENUS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,17,207,10
+    CONTROL         "Εμφάνιση ολόκληρων των μενού έπειτα από σύντομη καθυστέρηση",
+                    XTP_IDC_CHECK_AFTERDELAY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,28,29,195,10
+    PUSHBUTTON      "Επαναφορά δεδομένων τελευταίας χρήσης",
+                    XTP_IDC_BUTTON_RESETDATA,16,42,125,14
+    LTEXT           "’λλα",IDC_STATIC,7,70,18,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,29,74,194,1
+    CONTROL         "Μεγάλα εικονίδια",XTP_IDC_CHECK_LARGEICONS,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,16,82,207,10
+    CONTROL         "Εμφάνιση συμβουλών οθόνης στις γραμμές εργαλείων",XTP_IDC_CHECK_SCREENTTIPS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,16,93,207,10
+    CONTROL         "Εμφάνιση πλήκτρων συντόμευσης στις συμβουλές οθόνης",
+                    XTP_IDC_CHECK_SHORTCUTS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,28,104,195,10
+    LTEXT           "Εφέ κίνησης στα μενού:",IDC_STATIC,16,117,56,8
+    COMBOBOX        XTP_IDC_COMBO_ANIMATION,76,115,79,65,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+XTP_IDD_PAGE_COMMANDS DIALOG DISCARDABLE  0, 0, 230, 150
+STYLE WS_CHILD | WS_CAPTION
+CAPTION "Εντολές"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Προσθήκη εντολής σε γραμμή εργαλείων: επιλέξτε μια κατηγορία και σύρετε την εντολή από το παράθυρο διαλόγου σε μια γραμμή εργαλείων.",
+                    IDC_STATIC,4,5,220,19
+    LTEXT           "Κατηγορίες:",IDC_STATIC,4,25,38,8
+    LISTBOX         XTP_IDC_LIST_CATEGORIES,4,35,81,103,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Εντολές:",IDC_STATIC,90,25,38,8
+    LISTBOX         XTP_IDC_LIST_COMMANDS,90,35,140,103,LBS_OWNERDRAWFIXED | 
+                    LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+END
+
+XTP_IDD_NEWTOOLBAR DIALOG DISCARDABLE  0, 0, 186, 52
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Δημιουργία γραμμής εργαλείων"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Όνομα γραμμής εργαλείων:",IDC_STATIC,4,4,100,8
+    EDITTEXT        XTP_IDC_EDIT_TOOLBARNAME,4,15,178,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "ΟΚ",IDOK,78,34,50,14
+    PUSHBUTTON      "’κυρο",IDCANCEL,132,34,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+XTP_IDR_CUSTOMIZEMENU MENU DISCARDABLE 
+BEGIN
+    POPUP "Προσαρμογή"
+    BEGIN
+        MENUITEM "Επαναφορά",                      XTP_ID_CUSTOMIZE_RESET
+        MENUITEM "Διαγραφή",                     XTP_ID_CUSTOMIZE_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "Όνομα:",                      XTP_ID_CUSTOMIZE_NAME
+        MENUITEM SEPARATOR
+        MENUITEM "Αντιγραφή εικόνας κουμπιού",          XTP_ID_CUSTOMIZE_COPYBUTTONIMAGE
+
+        MENUITEM "Επικόλληση εικόνας κουμπιού",         XTP_ID_CUSTOMIZE_PASTEBUTTONIMAGE
+
+        MENUITEM "Επαναφορά εικόνας κουμπιού",         XTP_ID_CUSTOMIZE_RESETBUTTONIMAGE
+
+        MENUITEM "Επεξεργασία εικόνας κουμπιού...",       XTP_ID_CUSTOMIZE_EDITBUTTONIMAGE
+
+        MENUITEM "Αλλαγή εικόνας κουμπιού",        XTP_ID_CUSTOMIZE_CHANGEBUTTONIMAGE
+
+        MENUITEM SEPARATOR
+        MENUITEM "Προεπιλεγμένο στυλ",              XTP_ID_CUSTOMIZE_DEFAULTSTYLE
+
+        MENUITEM "Μόνο κείμενο",                  XTP_ID_CUSTOMIZE_TEXTONLY
+        MENUITEM "Εικόνα και κείμενο",             XTP_ID_CUSTOMIZE_IMAGEANDTEXT
+
+        MENUITEM SEPARATOR
+        MENUITEM "Δημιουργία ομάδας",              XTP_ID_CUSTOMIZE_BEGINAGROUP
+    END
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "XTPCommandBarsResource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_ADDORREMOVE     "Προσθαφαίρεση κουμπιών"
+    XTP_IDS_CUSTOMIZE_CLOSE "Κλείσιμο"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CUSTOMIZE       "Προσαρμογή"
+    XTP_IDS_NEWMENU         "δημιουργία μενού"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CONFIRM_RESETDATA 
+                            "Αυτό θα διαγράψει την καταγραφή των εντολών σε αυτήν την εφαρμογή και θα επαναφέρει το προεπιλεγμένο σύνολο ορατών εντολών στα μενού και τις γραμμές εργαλείων.  Δεν θα αναιρέσει τις ρητές προσαρμογές.   Είστε βέβαιοι ότι θέλετε να γίνει αυτό;"
+    XTP_IDS_INVALID_NUMBER  "Αυτός είναι ένας λανθασμένος αριθμός."
+    XTP_IDS_INVALID_FONTSIZE "Ο αριθμός πρέπει να βρίσκεται μεταξύ 1 και 1638."
+    XTP_IDS_CONFIRM_RESET   "Είστε βέβαιοι ότι θέλετε να επαναφέρετε τις αλλαγές που έγιναν στη γραμμή εργαλείων '%s' ;"
+    XTP_IDS_BUILTINMENUS    "Ενσωματωμένα μενού"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CUSTOM_BAR      "Προσαρμοσμένη %d"
+    XTP_IDS_ERROR_BLANKNAME "Δεν είναι δυνατό το όνομα της γραμμής εργαλείων να είναι κενό. Πληκτρολογήστε ένα όνομα."
+    XTP_IDS_ERROR_LIMIT     "Sorry you have reached your limit."
+    XTP_IDS_ERROR_EXISTS    "Υπάρχει ήδη γραμμή εργαλείων με το όνομα '%s'. Πληκτρολογήστε ένα άλλο όνομα."
+    XTP_IDS_RENAMETOOLBAR   "Μετονομασία γραμμής εργαλείων"
+    XTP_IDS_CONFIRM_DELETE  "Είστε βέβαιοι ότι θέλετε να διαγράψετε τη γραμμή εργαλείων '%s';"
+    XTP_IDS_ALLCOMMANDS     "Όλες οι εντολές"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_ID_CUSTOMIZE        "\nΠροσαρμογή..."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CLR_INDIGO      "Λουλακί"
+    XTP_IDS_CLR_GRAY80      "Γκρι-80%"
+    XTP_IDS_CLR_DARK_RED    "Σκούρο κόκκινο"
+    XTP_IDS_CLR_ORANGE      "Πορτοκαλί"
+    XTP_IDS_CLR_DARK_YELLOW "Σκούρο κίτρινο"
+    XTP_IDS_CLR_GREEN       "Πράσινο"
+    XTP_IDS_CLR_TEAL        "Πετρόλ"
+    XTP_IDS_CLR_BLUE        "Μπλε"
+    XTP_IDS_CLR_BLUEGRAY    "Μπλε-γκρι"
+    XTP_IDS_CLR_GRAY50      "Γκρι-50%"
+    XTP_IDS_CLR_RED         "Κόκκινο"
+    XTP_IDS_CLR_LIGHTORANGE "Ανοιχτό πορτοκαλί"
+    XTP_IDS_CLR_LIME        "Λαχανί"
+    XTP_IDS_CLR_SEA_GREEN   "Πράσινο της θάλασσας"
+    XTP_IDS_CLR_AQUA        "Θαλασσί"
+    XTP_IDS_CLR_LIGHT_BLUE  "Ανοιχτό μπλε"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CLR_VIOLET      "Βιολετί"
+    XTP_IDS_CLR_GRAY40      "Γκρι-40%"
+    XTP_IDS_CLR_PINK        "Ροζ"
+    XTP_IDS_CLR_GOLD        "Χρυσός"
+    XTP_IDS_CLR_YELLOW      "Κίτρινο"
+    XTP_IDS_CLR_BRIGHT_GREEN "Φωτεινό πράσινο"
+    XTP_IDS_CLR_TURQUOISE   "Τυρκουάζ"
+    XTP_IDS_CLR_SKY_BLUE    "Μπλε του ουρανού"
+    XTP_IDS_CLR_PLUM        "Δαμασκηνί"
+    XTP_IDS_CLR_GRAY25      "Γκρι-25%"
+    XTP_IDS_CLR_ROSE        "Τριανταφυλλί"
+    XTP_IDS_CLR_TAN         "Ώχρα"
+    XTP_IDS_CLR_LIGHT_YELLOW "Ανοιχτό κίτρινο"
+    XTP_IDS_CLR_LIGHT_GREEN "Ανοιχτό πράσινο"
+    XTP_IDS_CLR_LIGHT_TURQUOISE "Ανοιχτό τυρκουάζ"
+    XTP_IDS_CLR_PALE_BLUE   "Παλ μπλε"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CLR_BLACK       "Μαύρο"
+    XTP_IDS_CLR_BROWN       "Καφέ"
+    XTP_IDS_CLR_OLIVE_GREEN "Λαδί"
+    XTP_IDS_CLR_DARK_GREEN  "Σκούρο πράσινο"
+    XTP_IDS_CLR_DARK_TEAL   "Μπλε ραφ"
+    XTP_IDS_CLR_DARK_BLUE   "Σκούρο μπλε"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CLR_LAVENDER    "Λεβάντα"
+    XTP_IDS_CLR_WHITE       "Λευκό"
+    XTP_IDS_CLR_GRAY        "Γκρίζο"
+    XTP_IDS_CLR_MAROON      "Καστανό"
+    XTP_IDS_CLR_OLIVE       "Λαδί"
+    XTP_IDS_CLR_NAVY        "Σκούρο μπλε"
+    XTP_IDS_CLR_PURPLE      "Μοβ"
+    XTP_IDS_CLR_SILVER      "Ασημί"
+    XTP_IDS_CLR_FUCHSIA     "Φούξια"
+    XTP_IDS_CLR_NOFILL      "Χωρίς γέμισμα\nΧωρίς γέμισμα"
+    XTP_IDS_AUTOMATIC       "Αυτόματο χρώμα\nΑυτόματο χρώμα"
+    XTP_IDS_MORE_COLORS     "Περισσότερα χρώματα..."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_CONFIRM_KEYBOARD 
+                            "Are you sure you want to reset the key assignments?  This action will remove all custom key assignments at the text level."
+    XTP_IDS_CONFIRM_REASSIGN 
+                            "This shortcut is currently assigned.\nDo you want to re-assign this shortcut?"
+    XTP_IDS_CONFIRM_UPDATE  "Due to a software update the toolbar '%s' has changed. Would you like to reset your customized toolbar and load the new one?"
+    XTP_IDS_CUSTOMIZE_RESET "Επαναφορά"
+    XTP_IDS_IMAGEEDITOR_FILTER 
+                            "Όλα τα αρχεία εικόνων|*.bmp;*.wmf;*.emf;*.ico;*.dib;*.cur;*.gif;*.jpg|Bitmap(*.Bmp;*.Dib)|*.bmp;*.dib|Μετα-αρχεία(*.Wmf;*.Emf)|*.wmf;*.emf|Εικονίδια(*.Ico;*.Cur)|*.ico;*.cur|GIF(*.Gif)|*.gif|JPEG(*.Jpg)|*.jpg|Όλα τα αρχεία(*.*)|*.*||"
+    XTP_ID_TOOLBAR_EXPAND   "\nΕπιλογές γραμμής εργαλείων"
+    XTP_ID_TOOLBAR_HIDE     "\nKλείσιμο"
+    XTP_ID_MENUBAR_CLOSE    "\nΚλείσιμο παραθύρου"
+    XTP_ID_MENUBAR_RESTORE  "\nΕπαναφορά παραθύρου"
+    XTP_ID_MENUBAR_MINIMIZE "\nΕλαχιστοποίηση παραθύρου"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_ID_BUTTON_PENCIL    "\nΜολύβι"
+    XTP_ID_BUTTON_FILL      "\nΧρώμα γεμίσματος"
+    XTP_ID_BUTTON_GETCOLOR  "\nΣυλλογή χρώματος"
+    XTP_ID_BUTTON_LINE      "\nΓραμμή"
+    XTP_ID_BUTTON_RECTANGLE "\nΟρθογώνιο"
+    XTP_ID_BUTTON_CIRCLE    "\nΈλλειψη"
+    XTP_ID_BUTTON_COPY      "\nΑντιγραφή"
+    XTP_ID_BUTTON_PASTE     "\nΕπικόλληση"
+    XTP_ID_BUTTON_CLEAR     "\nΔιαφανές"
+    XTP_ID_BUTTON_UNDO      "\nΑναίρεση"
+    XTP_ID_BUTTON_REDO      "\nΑκύρωση αναίρεσης:"
+    XTP_ID_BUTTON_OPEN      "\nΕισαγωγή από αρχείο:"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_IDS_ANIMATION_SYSDEF "(Προεπιλογή συστήματος)"
+    XTP_IDS_ANIMATION_RANDOM "Τυχαίο"
+    XTP_IDS_ANIMATION_UNFOLD "Ξεδίπλωμα"
+    XTP_IDS_ANIMATION_SLIDE "Διαφάνεια"
+    XTP_IDS_ANIMATION_FADE  "Σβήσιμο"
+    XTP_IDS_ANIMATION_NONE  "Κανένα"
+    XTP_ID_WORKSAPCE_MOVEPREVIOUS "\nMove to P&revious Tab Group"
+    XTP_ID_WORKSAPCE_MOVENEXT "\nMove to Ne&xt Tab Group"
+    XTP_ID_WORKSAPCE_NEWHORIZONTAL "\nNew Hori&zontal Tab Group"
+    XTP_ID_WORKSAPCE_NEWVERTICAL "\nNew &Vertical Tab Group"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    XTP_ID_WORKSAPCE_CANCEL "’κυρο"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

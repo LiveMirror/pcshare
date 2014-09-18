@@ -1,0 +1,641 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE MOVEABLE PURE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE MOVEABLE PURE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE MOVEABLE PURE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\GUI_VisualStudio7.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+ID_PROJECT_ADDNEWITEM MENU DISCARDABLE 
+BEGIN
+    POPUP "New item"
+    BEGIN
+        MENUITEM "Add New Item",                157
+        MENUITEM "Add Existing Item...",        158
+        MENUITEM "Add Class...",                ID_PROJECT_ADDCLASS
+    END
+END
+
+IDR_MAINFRAME MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About Microsoft® VisualStudio 2003 IDE Sample...", 
+                                                ID_APP_ABOUT
+    END
+END
+
+IDR_GUI_VITYPE MENU DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        POPUP "New"
+        BEGIN
+            MENUITEM "&Project\tCtrl+N",            ID_FILE_NEW_PROJECT
+            MENUITEM "File...",                     ID_FILE_NEW
+            MENUITEM "Blank Solution...",           ID_FILE_NEW_BLANK
+        END
+        POPUP "Open"
+        BEGIN
+            MENUITEM "&Project",                    ID_FILE_OPEN_PROJECT
+            MENUITEM "&File...\tCtrl+O",            ID_FILE_OPEN
+        END
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "Op&en Solution...",           ID_FILE_OPENSOLUTION
+        MENUITEM "Close Solu&tion",             ID_FILE_CLOSESOLUTION
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        POPUP "Recent &Files"
+        BEGIN
+            MENUITEM "Recent File",                 ID_FILE_MRU_FILE1
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM "Delete",                      ID_EDIT_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "Select &All",                 ID_EDIT_SELECTALL
+        POPUP "Find and Replace"
+        BEGIN
+            MENUITEM "Find",                        ID_FINDANDREPLACE_FIND
+            MENUITEM "Replace",                     ID_FINDANDREPLACE_REPLACE
+
+            MENUITEM "Find in Files",               ID_FINDANDREPLACE_FINDINFILES
+
+        END
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "Open",                        ID_VIEW_OPEN
+        MENUITEM SEPARATOR
+        MENUITEM "Solution &Explorer",          ID_VIEW_SOLUTIONEXPLORER
+        MENUITEM "Class View",                  ID_VIEW_CLASSVIEW
+        MENUITEM "&Resource View",              ID_VIEW_RESOURCEVIEW
+        MENUITEM "Properties &Window",          ID_VIEW_PROPERTIESWINDOW
+        MENUITEM "Toolbo&x",                    ID_VIEW_TOOLBOX
+        POPUP "Web Browser"
+        BEGIN
+            MENUITEM "Back",                        ID_WEBBROWSER_BACK
+            MENUITEM "Forward",                     ID_WEBBROWSER_FORWARD
+            MENUITEM "Home",                        ID_WEBBROWSER_HOME
+            MENUITEM "Search",                      ID_WEBBROWSER_SEARCH
+        END
+        MENUITEM SEPARATOR
+        POPUP "Toolbars"
+        BEGIN
+            MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        END
+        MENUITEM "Full Screen",                 ID_VIEW_FULLSCREEN
+    END
+    POPUP "Project"
+    BEGIN
+        MENUITEM "Add Class...",                182
+        MENUITEM "Add Resource...",             156
+        MENUITEM SEPARATOR
+        MENUITEM "Add Ne&w Item...",            ID_PROJECT_ADDNEWITEM
+        MENUITEM "Add Existin&g Item...",       ID_PROJECT_ADDEXISTINGITEM
+        MENUITEM SEPARATOR
+        MENUITEM "New Fol&der",                 ID_PROJECT_NEWFOLDER
+    END
+    POPUP "Build"
+    BEGIN
+        MENUITEM "&Build Solution",             ID_BUILD_BUILDSOLUTION
+        MENUITEM "&Rebuild Solution",           ID_BUILD_REBUILDSOLUTION
+        MENUITEM "&Clean Solution",             ID_BUILD_CLEANSOLUTION
+        MENUITEM SEPARATOR
+        MENUITEM "Compile...",                  ID_BUILD_COMPILE
+    END
+    POPUP "Debug"
+    BEGIN
+        POPUP "Windows"
+        BEGIN
+            MENUITEM "Output",                      ID_WINDOWS_OUTPUT
+        END
+        MENUITEM "&Start",                      181
+        MENUITEM "Start Without Debugging",     ID_DEBUG_STARTWITHOUTDEBUG
+        MENUITEM "&Processes...",               ID_DEBUG_PROSSESES
+        MENUITEM "E&xceptions...",              ID_DEBUG_EXCEPTIONS
+        MENUITEM SEPARATOR
+        MENUITEM "Step &Into",                  ID_DEBUG_STEPINTO
+        MENUITEM "Step &Over",                  ID_DEBUG_STEPOVER
+    END
+    POPUP "Tools"
+    BEGIN
+        MENUITEM "Options...",                  ID_TOOLS_OPTIONS
+    END
+    POPUP "&Window"
+    BEGIN
+        MENUITEM "&New Window",                 ID_WINDOW_NEW
+        MENUITEM SEPARATOR
+        MENUITEM "A&uto Hide All",              ID_WINDOW_AUTOHIDEALL
+        MENUITEM "Workspace Actions",           35002
+        MENUITEM "C&lose All Documents",        ID_WINDOW_CLOSE_ALL
+        MENUITEM SEPARATOR
+        MENUITEM "Windows List",                35000
+        MENUITEM SEPARATOR
+        MENUITEM "More Windows...",             ID_WINDOW_MORE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "Dynamic Help",                ID_HELP_DYNAMICHELP
+        MENUITEM SEPARATOR
+        MENUITEM "&Contents...",                ID_HELP_CONTENTS
+        MENUITEM "&Index...",                   ID_HELP_INDEX175
+        MENUITEM "&Search...",                  ID_HELP_SEARCH
+        MENUITEM SEPARATOR
+        MENUITEM "&About Microsoft® VisualStudio 2003 IDE Sample...", 
+                                                ID_APP_ABOUT
+    END
+END
+
+ID_FILE_NEW_PROJECT MENU DISCARDABLE 
+BEGIN
+    POPUP "New"
+    BEGIN
+        MENUITEM "New Project...",              130
+        MENUITEM "New Blank Solution...",       131
+    END
+END
+
+ID_VIEW_CLASSVIEW MENU DISCARDABLE 
+BEGIN
+    POPUP "Class View"
+    BEGIN
+        MENUITEM "Class View",                  201
+        MENUITEM "Output",                      205
+    END
+END
+
+IDR_WORKSAPCE_POPUP MENU DISCARDABLE 
+BEGIN
+    POPUP "&Popup"
+    BEGIN
+        MENUITEM "&Save",                       ID_FILE_SAVE
+        MENUITEM "&Close",                      ID_FILE_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "Workspace Actions",           35002
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_PANEICONS    BITMAP  MOVEABLE PURE   "res\\bitmap1.bmp"
+IDB_CLASSTREE           BITMAP  MOVEABLE PURE   "res\\img_classtree.bmp"
+IDB_FILETREE            BITMAP  MOVEABLE PURE   "res\\img_filetree.bmp"
+IDB_RESTREE             BITMAP  MOVEABLE PURE   "res\\img_restree.bmp"
+IDB_STARTPAGE           BITMAP  MOVEABLE PURE   "res\\startpage.bmp"
+IDR_TOOLBAR_WEB         BITMAP  MOVEABLE PURE   "res\\2003.bmp"
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+IDR_TOOLBAR_EXT         BITMAP  MOVEABLE PURE   "res\\toolbar1.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_TOOLBAR_WEB TOOLBAR MOVEABLE PURE  16, 16
+BEGIN
+    BUTTON      ID_WEBBROWSER_BACK
+    BUTTON      ID_WEBBROWSER_FORWARD
+    BUTTON      ID_WEBBROWSER_STOP
+    BUTTON      ID_WEBBROWSER_REFRESH
+    BUTTON      ID_WEBBROWSER_HOME
+    BUTTON      ID_WEBBROWSER_SEARCH
+    BUTTON      ID_WEBBROWSER_FAVORITES
+    BUTTON      ID_WEBBROWSER_ORGANIZE
+    SEPARATOR
+    BUTTON      ID_GOTO_URL
+    BUTTON      ID_WEBBROWSER_SYNC
+    BUTTON      ID_WEBBROWSER_PREV
+    BUTTON      ID_WEBBROWSER_NEXT
+    BUTTON      ID_WEBBROWSER_FONT
+END
+
+IDR_MAINFRAME TOOLBAR MOVEABLE PURE  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW_PROJECT
+    BUTTON      ID_PROJECT_ADDNEWITEM
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_DEBUG_START
+    SEPARATOR
+    BUTTON      ID_EDIT_STATE
+    BUTTON      ID_FINDANDREPLACE_FINDINFILES
+    BUTTON      ID_EDIT_FIND_EX
+    SEPARATOR
+    BUTTON      ID_VIEW_SOLUTIONEXPLORER
+    BUTTON      ID_VIEW_PROPERTIESWINDOW
+    BUTTON      ID_VIEW_TOOLBOX
+    BUTTON      ID_VIEW_CLASSVIEW
+END
+
+IDR_TOOLBAR_EXT TOOLBAR MOVEABLE PURE  16, 16
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_PROJECT_ADDEXISTINGITEM
+    SEPARATOR
+    BUTTON      ID_FILE_NEW_BLANK
+    BUTTON      ID_FILE_OPENSOLUTION
+    BUTTON      ID_FILE_CLOSESOLUTION
+    BUTTON      ID_PROJECT_ADDCLASS
+    BUTTON      ID_BUILD_BUILDSOLUTION
+    BUTTON      ID_BUILD_COMPILE
+    BUTTON      ID_DEBUG_STARTWITHOUTDEBUG
+    BUTTON      ID_WINDOW_NEW
+    BUTTON      ID_HELP_DYNAMICHELP
+    SEPARATOR
+    BUTTON      ID_VIEW_RESOURCEVIEW
+    BUTTON      ID_WINDOWS_OUTPUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\CjSample.ico"
+IDR_GUI_VITYPE          ICON    DISCARDABLE     "res\\GUI_VisualStudio7Doc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS MOVEABLE PURE 
+BEGIN
+    "N",            ID_FILE_NEW_PROJECT,    VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "FileDescription", "GUI_VisualStudio7 MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "GUI_VisualStudio7\0"
+            VALUE "LegalCopyright", "©2004 Codejock Software, All Rights Reserved\0"
+            VALUE "OriginalFilename", "GUI_VisualStudio7.EXE\0"
+            VALUE "ProductName", "GUI_VisualStudio7 Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// HTML
+//
+
+IDR_DYNAMIC_HELP        HTML    MOVEABLE PURE   "res\\dynamic_help.htm"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// 2110
+//
+
+CLEAR.GIF               2110    MOVEABLE PURE   "res\\clear.gif"
+CTXHELP_HIDE.GIF        2110    MOVEABLE PURE   "res\\ctxhelp_hide.gif"
+CTXHELP_SHOW.GIF        2110    MOVEABLE PURE   "res\\ctxhelp_show.gif"
+CTXSAMPLE_HIDE.GIF      2110    MOVEABLE PURE   "res\\ctxsample_hide.gif"
+CTXSAMPLE_SHOW.GIF      2110    MOVEABLE PURE   "res\\ctxsample_show.gif"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "Codejock Microsoft® VisualStudio 2003 IDE Sample"
+    IDR_GUI_VITYPE          "\nUntitled\nUntitled\n\n\nGUIVisualStudio7.Document\nGUI_Vi Document"
+    ID_FILE_NEW_PROJECT     "Create a new document\nNew"
+    ID_FINDANDREPLACE_FINDINFILES "Find in File"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WEBBROWSER_FAVORITES "Favorites\nFavorites"
+    ID_WEBBROWSER_ORGANIZE  "Organize Favorites\nFavorites"
+    ID_WEBBROWSER_FONT      "Font\nFont"
+    ID_WEBBROWSER_SYNC      "Sync\nSync"
+    ID_WEBBROWSER_PREV      "Previous\nPrevious"
+    ID_WEBBROWSER_NEXT      "Next\nNext"
+    ID_VIEW_SOLUTIONEXPLORER "Solution Explorer\nSolution Explorer"
+    ID_VIEW_CLASSVIEW       "Class View\nClass View"
+    ID_VIEW_RESOURCEVIEW    "Resource View\nResource View"
+    ID_VIEW_PROPERTIESWINDOW "Properties\nProperties"
+    ID_VIEW_TOOLBOX         "Toolbox\nToolbox"
+    ID_WINDOWS_OUTPUT       "Output\nOutput"
+    ID_HELP_DYNAMICHELP     "Dynamic Help\nDynamic Help"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Codejock Microsoft® VisualStudio 2003 IDE Sample"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap\nCascade Windows"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_TILE_VERT     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    AFX_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_STATE           "Configuration\nConfiguration"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_FIND_EX         "Find\nFind"
+    ID_GOTO_URL             "Url\nUrl"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WEBBROWSER_HOME      "Home\nHome"
+    ID_WEBBROWSER_SEARCH    "Search\nSearch"
+    ID_WEBBROWSER_BACK      "Back\nBack"
+    ID_WEBBROWSER_FORWARD   "Forward\nForward"
+    ID_PROJECT_ADDNEWITEM   "Add New Item\nAdd New Item"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_DEBUG_START          "Start\nStart"
+    ID_WEBBROWSER_STOP      "Stop\nStop"
+    ID_WEBBROWSER_REFRESH   "Refresh\nRefresh"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\GUI_VisualStudio7.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

@@ -1,0 +1,3 @@
+[Batch Build]
+PcMake - Win32 Debug=1
+PcMake - Win32 Release=1
